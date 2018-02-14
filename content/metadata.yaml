@@ -1,20 +1,24 @@
 ---
-title: "Manubot Rootstock: Manuscript Title"
+title: "Introducing yt 3.0: Analysis and Visualization of Volumetric Data"
 keywords:
   - markdown
   - publishing
   - manubot
 lang: en-US
 author_info:
+  # NOTE: These are not in any specific order.
+  # Authors are to add themselves, and we will order them as we approach
+  # submission.
   -
-    github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+    github: MatthewTurk
+    name: Matthew Turk
+    initials: MJT
+    orcid: 0000-0002-5294-0198
+    twitter: powersoffour
+    email: mjturk@illinois.edu
     affiliations:
-      - Department of Something, University of Whatever
+      - School of Information Sciences, University of Illinois at Urbana-Champaign
+      - Department of Astronomy, University of Illinois at Urbana-Champaign
     funders: Grant XXXXXXXX
   -
     github: janeroe
