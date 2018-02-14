@@ -10,6 +10,16 @@ author_info:
   # Authors are to add themselves, and we will order them as we approach
   # submission.
   -
+    github: yt-project
+    name: The yt Project
+    initials: YT
+    orcid: XXXX-XXXX-XXXX-XXXX
+    twitter: yt_astro
+    email: yt-dev@python.org
+    affiliations:
+      - NumFOCUS
+    funders: Grant XXXXXXXX
+  -
     github: MatthewTurk
     name: Matthew Turk
     initials: MJT
@@ -20,6 +30,15 @@ author_info:
       - School of Information Sciences, University of Illinois at Urbana-Champaign
       - Department of Astronomy, University of Illinois at Urbana-Champaign
     funders: Grant XXXXXXXX
+  -
+    github: yournamehere
+    name: Add Yourself
+    initials: YOU
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: you@example.com
+    affiliations:
+      - Department of Something, University of Whatever
+      - Department of Whatever, University of Something
   -
     github: janeroe
     name: Jane Roe
