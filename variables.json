@@ -1,19 +1,51 @@
 {
-  "date": "February 6, 2018",
+  "date": "February 15, 2018",
   "authors": [
     {
-      "github": "johndoe",
-      "name": "John Doe",
-      "initials": "JD",
+      "github": "yt-project",
+      "name": "The yt Project",
+      "initials": "YT",
       "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "twitter": "johndoe",
-      "email": "john.doe@something.com",
+      "twitter": "yt_astro",
+      "email": "yt-dev@python.org",
       "affiliations": [
-        "Department of Something, University of Whatever"
+        "NumFOCUS"
       ],
       "funders": "Grant XXXXXXXX",
       "affiliation_numbers": [
         1
+      ]
+    },
+    {
+      "github": "MatthewTurk",
+      "name": "Matthew Turk",
+      "initials": "MJT",
+      "orcid": "0000-0002-5294-0198",
+      "twitter": "powersoffour",
+      "email": "mjturk@illinois.edu",
+      "affiliations": [
+        "School of Information Sciences, University of Illinois at Urbana-Champaign",
+        "Department of Astronomy, University of Illinois at Urbana-Champaign"
+      ],
+      "funders": "Grant XXXXXXXX",
+      "affiliation_numbers": [
+        2,
+        3
+      ]
+    },
+    {
+      "github": "yournamehere",
+      "name": "Add Yourself",
+      "initials": "YOU",
+      "orcid": "XXXX-XXXX-XXXX-XXXX",
+      "email": "you@example.com",
+      "affiliations": [
+        "Department of Something, University of Whatever",
+        "Department of Whatever, University of Something"
+      ],
+      "affiliation_numbers": [
+        4,
+        5
       ]
     },
     {
@@ -27,32 +59,44 @@
         "Department of Whatever, University of Something"
       ],
       "affiliation_numbers": [
-        1,
-        2
+        4,
+        5
       ]
     }
   ],
   "affiliations": [
     {
-      "affiliation": "Department of Something, University of Whatever",
+      "affiliation": "NumFOCUS",
       "affiliation_number": 1
     },
     {
-      "affiliation": "Department of Whatever, University of Something",
+      "affiliation": "School of Information Sciences, University of Illinois at Urbana-Champaign",
       "affiliation_number": 2
+    },
+    {
+      "affiliation": "Department of Astronomy, University of Illinois at Urbana-Champaign",
+      "affiliation_number": 3
+    },
+    {
+      "affiliation": "Department of Something, University of Whatever",
+      "affiliation_number": 4
+    },
+    {
+      "affiliation": "Department of Whatever, University of Something",
+      "affiliation_number": 5
     }
   ],
   "ci_source": {
-    "repo_slug": "greenelab/manubot-rootstock",
-    "repo_owner": "greenelab",
-    "repo_name": "manubot-rootstock",
-    "commit": "310dd078c4c60bedd63442f93906f26a4ea25a4b"
+    "repo_slug": "yt-project/yt-3.0-paper",
+    "repo_owner": "yt-project",
+    "repo_name": "yt-3.0-paper",
+    "commit": "8accaad65515fce2aeaa56fd1aab0eac51fd8725"
   },
   "manuscript_stats": {
     "reference_counts": {
-      "doi": 2,
-      "total": 2
+      "doi": 1,
+      "total": 1
     },
-    "word_count": 323
+    "word_count": 5484
   }
 }
