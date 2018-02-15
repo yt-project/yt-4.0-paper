@@ -1,6 +1,4 @@
-# Automated scholarly manuscripts on GitHub
-
-<!-- usage note: edit the H1 title above to personalize the manuscript -->
+# Introducing yt 3.0: Analysis and Visualization of Volumetric Data
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://yt-project.github.io/yt-3.0-paper/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://yt-project.github.io/yt-3.0-paper/manuscript.pdf)
@@ -8,10 +6,47 @@
 
 ## Manuscript description
 
-<!-- usage note: edit this section. -->
+This repository is the manuscript for a forthcoming, far-too-overdue paper on
+the additions in yt 3.0 since the release of the [first yt
+paper](http://adsabs.harvard.edu/abs/2011ApJS..192....9T) in early 2011.
 
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+While this paper has "3.0" in the title, the authors are well-aware that it may
+not be completed before yt 4.0 has been released.  We'll address that when or
+if it becomes important.
+
+## Authorship Policy
+
+This paper has an inclusive authorship policy, by design.  Authorship is not
+restricted to "yt project members" or to changeset authors.
+
+If you would like to be an author on this paper, please follow these steps:
+
+ 1. Open a pull request adding yourself to `content/metadata.yaml`
+ 2. In that pull request, please indicate what components of the paper, if any,
+    you are willing to write.
+ 3. If you are not interested in writing, editing or providing content for the
+    paper, please indicate your involvement with yt.
+
+This is not intended as a method of gatekeeping, but rather a mechanism for
+ensuring that authors have been at a bare minimum actively engaged in the
+development of the manuscript.
+
+**Please do not submit authorship requests on behalf of other individuals.**
+
+Author ordering will be determined prior to submission; at present, this will
+likely involve:
+
+ * "The yt project" as first author on the paper.
+ * A set of authors (order to be determined, but possibly random or
+   alphabetical) that have contributed text or editing to the manuscript.
+ * Other non-textual authors, similarly ordered.
+
+A description of the authorship policy, when finalized, will be included in the
+manuscript.
+
+We hope that this will provide the opportunity for an inclusive, extensive
+author list that still enables those contributing text to the manuscript to be
+credited as such.
 
 ## Manubot
 
