@@ -20,7 +20,7 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript was automatically generated
-from [yt-project/yt-3.0-paper@8accaad](https://github.com/yt-project/yt-3.0-paper/tree/8accaad65515fce2aeaa56fd1aab0eac51fd8725)
+from [yt-project/yt-3.0-paper@88fad7e](https://github.com/yt-project/yt-3.0-paper/tree/88fad7e7ed86ed193005c9014ee0d7f36b30cb3b)
 on February 15, 2018.
 </em></small>
 
@@ -635,12 +635,12 @@ arrays might be created with inconsistent unit metadata. Once a unit
 object is created, it will not recieve updates if the original unit
 registry is modified.
 
-### Creating YTArray and YTQuantity instances {sec:creating-ytarray-and-ytquantity-instances}
+### Creating YTArray and YTQuantity instances {#sec:creating-ytarray-and-ytquantity-instances}
 
 There are two ways to create new array and quantity objects: via a constructor,
 and by multiplying scalar data by a unit quantity.
 
-#### Class Constructor {sec:class-constructor}
+#### Class Constructor {#sec:class-constructor}
 
 The primary internal interface for creating new arrays and quantities is through
 the class constructor for YTArray. The constructor takes three arguments. The
@@ -684,7 +684,7 @@ This example illustrates that the array is being created using
 `default_unit_registry`, for which `code_length` is
 equivalent to `cm`.
 
-#### Multiplication {sec:multiplication}
+#### Multiplication {#sec:multiplication}
 
 New `YTArray` and `YTQuantity` instances can also be created by
 multiplying `YTArray` or `YTQuantity` instances by `float`
@@ -722,7 +722,7 @@ Code units are tightly coupled to on-disk parameters. To handle this
 fact of life, the `yt` unit system can modify, add, and remove
 unit symbols via the `UnitRegistry`.
 
-#### Associating arrays with a coordinate system {sec:associating-arrays-with-a-coordinate-system}
+#### Associating arrays with a coordinate system {#sec:associating-arrays-with-a-coordinate-system}
 
 To create quantities and arrays in units defined by a simulation
 coordinate system, we associate a `UnitRegistry` instance with
@@ -740,7 +740,7 @@ the appropriate values and `length_unit`, `time_unit`,
 the `StaticOutput` instance. If there are frontend specific code
 units they should also be defined in subclasses by extending this function.
 
-#### Mixing modified unit registries {sec:mixing-modified-unit-registries}
+#### Mixing modified unit registries {#sec:mixing-modified-unit-registries}
 
 It becomes necessary to consider mixing unit registries whenever data
 needs to be compared between disparate datasets. The most
@@ -775,7 +775,7 @@ The examples below illustrate the consistency of this choice:
 ```
 
 For the last two examples, the answer is not the seemingly trivial
-$128^2\/=\/16384\,\rm{Mpccm}^2/h^2$. This is because the new quantity
+$128^2=16384,\rm{Mpccm}^2/h^2$. This is because the new quantity
 returned by the multiplication operation inherits the unit registry from
 the left object in binary operations. This convention is enforced for
 all binary operations on two `YTarray` objects. Results are
@@ -788,7 +788,7 @@ always consistent when referencing an unambiguous physical coordinate system:
 3.4783466935e+52 cm**2
 ```
 
-### Handling cosmological units {sec:handling-cosmological-units}
+### Handling cosmological units {#sec:handling-cosmological-units}
 
 If we detect that we are loading a cosmological simulation performed in comoving
 coordinates, extra comoving units are added to the dataset's unit
