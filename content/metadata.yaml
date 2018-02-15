@@ -31,20 +31,21 @@ author_info:
       - Department of Astronomy, University of Illinois at Urbana-Champaign
     funders: Grant XXXXXXXX
   -
+    github: ngoldbaum
+    name: Nathan J Goldbaum
+    initial: NJG
+    orcid: 0000-0001-5557-267X
+    twitter: njgoldbaum
+    email: ngoldbau@illinois.edu
+    affiliations:
+      - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
+    funders: Grant XXXXXXX
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
     orcid: XXXX-XXXX-XXXX-XXXX
     email: you@example.com
-    affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
-  -
-    github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
     affiliations:
       - Department of Something, University of Whatever
       - Department of Whatever, University of Something
