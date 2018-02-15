@@ -4,18 +4,86 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="John Doe" />
+  <meta name="author" content="The yt Project" />
+  <meta name="author" content="Matthew Turk" />
+  <meta name="author" content="Add Yourself" />
   <meta name="author" content="Jane Roe" />
-  <meta name="dcterms.date" content="2018-02-06" />
+  <meta name="dcterms.date" content="2018-02-15" />
   <meta name="keywords" content="markdown, publishing, manubot" />
-  <title>Manubot Rootstock: Manuscript Title</title>
+  <title>Introducing yt 3.0: Analysis and Visualization of Volumetric Data</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
+  <style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
   <link rel="stylesheet" href="github-pandoc.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -26,36 +94,227 @@
 </head>
 <body>
 <header>
-<h1 class="title">Manubot Rootstock: Manuscript Title</h1>
+<h1 class="title">Introducing yt 3.0: Analysis and Visualization of Volumetric Data</h1>
 </header>
-<p><small><em> This manuscript was automatically generated from <a href="https://github.com/greenelab/manubot-rootstock/tree/310dd078c4c60bedd63442f93906f26a4ea25a4b">greenelab/manubot-rootstock@310dd07</a> on February 6, 2018. </em></small></p>
+<p><small><em> This manuscript was automatically generated from <a href="https://github.com/yt-project/yt-3.0-paper/tree/8accaad65515fce2aeaa56fd1aab0eac51fd8725">yt-project/yt-3.0-paper@8accaad</a> on February 15, 2018. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
-<li><p><strong>John Doe</strong><br> <img src="images/orcid.svg" alt="ORCID icon" width="13" height="13" /> <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a> · <img src="images/github.svg" alt="GitHub icon" width="13" height="13" /> <a href="https://github.com/johndoe">johndoe</a> · <img src="images/twitter.svg" alt="Twitter icon" width="13" height="13" /> <a href="https://twitter.com/johndoe">johndoe</a><br> <small> Department of Something, University of Whatever · Funded by Grant XXXXXXXX </small></p></li>
+<li><p><strong>The yt Project</strong><br> <img src="images/orcid.svg" alt="ORCID icon" width="13" height="13" /> <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a> · <img src="images/github.svg" alt="GitHub icon" width="13" height="13" /> <a href="https://github.com/yt-project">yt-project</a> · <img src="images/twitter.svg" alt="Twitter icon" width="13" height="13" /> <a href="https://twitter.com/yt_astro">yt_astro</a><br> <small> NumFOCUS · Funded by Grant XXXXXXXX </small></p></li>
+<li><p><strong>Matthew Turk</strong><br> <img src="images/orcid.svg" alt="ORCID icon" width="13" height="13" /> <a href="https://orcid.org/0000-0002-5294-0198">0000-0002-5294-0198</a> · <img src="images/github.svg" alt="GitHub icon" width="13" height="13" /> <a href="https://github.com/MatthewTurk">MatthewTurk</a> · <img src="images/twitter.svg" alt="Twitter icon" width="13" height="13" /> <a href="https://twitter.com/powersoffour">powersoffour</a><br> <small> School of Information Sciences, University of Illinois at Urbana-Champaign; Department of Astronomy, University of Illinois at Urbana-Champaign · Funded by Grant XXXXXXXX </small></p></li>
+<li><p><strong>Add Yourself</strong><br> <img src="images/orcid.svg" alt="ORCID icon" width="13" height="13" /> <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a> · <img src="images/github.svg" alt="GitHub icon" width="13" height="13" /> <a href="https://github.com/yournamehere">yournamehere</a><br> <small> Department of Something, University of Whatever; Department of Whatever, University of Something </small></p></li>
 <li><p><strong>Jane Roe</strong><br> <img src="images/orcid.svg" alt="ORCID icon" width="13" height="13" /> <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a> · <img src="images/github.svg" alt="GitHub icon" width="13" height="13" /> <a href="https://github.com/janeroe">janeroe</a><br> <small> Department of Something, University of Whatever; Department of Whatever, University of Something </small></p></li>
 </ul>
 <h2 id="abstract" class="page_break_before">Abstract</h2>
-<h2 id="manubot-rootstock-information">Manubot Rootstock Information</h2>
-<p><strong>Note: Manubot instances should delete this file.</strong></p>
-<p>The Manubot is a system for automating scholarly publishing. Content is written in <a href="http://pandoc.org/MANUAL.html#pandocs-markdown">Pandoc Markdown</a> source files. See <a href="https://github.com/greenelab/manubot-rootstock/blob/master/USAGE.md"><code>USAGE.md</code></a> for more information on how to use the Manubot.</p>
-<p>The Manubot project began with the <a href="https://github.com/greenelab/deep-review">Deep Review</a>, where it was used to compose a highly-collaborative review article <span class="citation" data-cites="tJKvnIaZ">[<a href="#ref-tJKvnIaZ">1</a>]</span>. Other manuscripts that were created with Manubot include:</p>
+<p>Abstract here!</p>
+<h2 id="sec:introduction">Introduction</h2>
+<p>The process of transforming data into understanding constitutes the vast majority of time, energy, and intellectual effort spent during scientific inquiry. This is true across domains, whether data is the product of a computational simulation, a telescope observation, the synthesis of sensors distributed across the Earth, or a collection of images of the human brain. Data, by themselves, do not reflect an understanding of the Universe or its underlying physical properties; rather, they are recordings, or measurements, of the state of systems as observed. Even for computational simulations, such as simulations of star formation in the galaxy, this is true: these simulations encode information about a discretization of a model, rather than the model itself.</p>
+<p>Bridging the gap between this discretization and the physical understanding requires accessing data, manipulating and interrogating this data, and then applying to this data a sense of understanding. Somehow, bits stored on a disk must become, in our minds, a galaxy undergoing a starburst.</p>
+<p>This process is both mediated and impeded by computational tools. When those tools align with our mental model of how data exists, they can allow us to work more efficiently, asking questions of data and building sophisticated scientific inquiry. However, when they do not, they can cause frustration, delays, and most worryingly, incorrect or misinterpreted results. When viewing this from the perspective of the landscape of inquiry, the most startling realization is that the questions a computational tool enables individuals to ask shapes the questions they think to ask.</p>
+<p>In <span class="citation" data-cites="1GOm01ggN">[<a href="#ref-1GOm01ggN">1</a>]</span>, the analysis platform <code>yt</code> was described. At the time, <code>yt</code> was focused on analyzing and visualizing the output of grid-based adaptive mesh refinement hydrodynamic simulations; while these were used to study many different physical phenomena, they all were laid out in roughly the same way, in rectilinear meshes of data. In this paper, we present the current version of <code>yt</code>, which enables identical scripts to analyze and visualize data stored as rectilinear grids as before, but additionally particle or discrete data, octree-based data, and data stored as unstructured meshes. This has been the result of a large-scale effort to rewrite the underlying machinery within <code>yt</code> for accessing data, indexing that data, and providing it in efficient ways to higher-level routines, as discussed in Section Something. While this was underway, <code>yt</code> has also been considerably reinstrumented with <a href="#sec:units">metadata-aware array infrastructure</a>, the <a href="#sec:vr">volume rendering infrastructure</a> has been rewritten to be more user-friendly and capable, and support for <a href="#sec:noncartesian">non-Cartesian geometries</a> has been added.</p>
+<p>The single biggest change to <code>yt</code> since that paper was published has not been technical in nature. In the intervening years, a directed and intense community-building effort has resulted in the contributions from over a hundred different individuals, many of them early-stage researchers, and a <a href="#sec:community">thriving community of both users and developers</a>. This is the crowning achievement of development, as we have attempted to build <code>yt</code> into a tool that enables inquiry from a technical level as well as fosters a supportive, friendly community of individuals engaged in self-directed inquiry.</p>
+<h2 id="sec:community">Community Building</h2>
+<p>Choosing a software package for a particular purpose involves evaluating several differentiating factors; these factors include the functionality of a package, the performance of a package, the user-friendliness, and even the ability of an individual to find help, engage with others and feel a sense of participation. <strong>cite something here</strong> The development, fostering and design of the community around <code>yt</code> is deemed to be both crucial to the success or failure of <code>yt</code>, and in many ways inseparable from its functionality.</p>
+<h3 id="composition">Composition</h3>
+<p>There are several rough categories of individuals engaged in development and utilization of <code>yt</code>. As a result of its API-first design, there are few if any individuals who use <code>yt</code> that do not do so through the scripting interface; this means that the vast (if not exclusive) majority of individuals who interact with the functionality in <code>yt</code> are doing so by writing their own scripts, modules, and code, and arguably engaging in a value-added development process of their own. The majority of individuals using <code>yt</code> at present are in astronomy and astrophysics, typically fields of simulation, although there is an increasing group of individuals from other domains that are participating in development and using <code>yt</code> for their own domain-specific problems.</p>
+<p>Making the distinction somewhat more clearly, there are individuals who have built their own scripts and utilized them as well as individuals who have contributed changes or modules to the primary <code>yt</code> codebase. In addition, there is an emerging set of projects that build on <code>yt</code> as infrastructure to conduct scientific analysis. These developers are largely driven by their own pragmatic scientific needs, and they constitute the majority of developers (by number) that contribute to the code base. The majority of these individuals are early- to mid-career researchers, typically graduate students, postdocs, and assistant professors.</p>
+<p>In recent years, there has emerged a more coherent contingency of individuals who participate in both pragmatically-focused development of modules and functionality for their own benefit as well as modules or overall improvement that is supplemental or even external to their own research agenda. These improvements include improvements to the unit handling, to the plotting code, to infrastructure for loading disparate datasets, and so on. At this time we do not know of any individuals funded to work on <code>yt</code> completely independent of a scientific or scholarly goal.</p>
+<p>The composition of the community, particularly with a mixture of timelines for goal-setting and completion, can at times cause frustrations and difficulties. For instance, the response to “Can this feature be implemented?” often includes an invitation for the questioner to collaborate on developing that feature and submitting it to the codebase. Developing a schedule of releases is an act of consensus building, both deciding what bugs are critical to fix in the timeline of a release as well as building consensus on what features should be considered blockers for a new release. The intersection of this with academic deadlines (for instance job application season) requires balance and care.</p>
+<h3 id="types-of-tasks">Types of Tasks</h3>
+<p>When evaluating the level of engagement, we consider a few different classifications of tasks that are performed by individuals in the community, and evaluate these based on how they flow into greater engagement.</p>
 <ul>
-<li>The Sci-Hub Coverage Study (<a href="https://github.com/greenelab/scihub-manuscript">GitHub</a>, <a href="https://greenelab.github.io/scihub-manuscript/">HTML manuscript</a>)</li>
-<li>Michael Zietz’s Report for the Vagelos Scholars Program (<a href="https://github.com/zietzm/Vagelos2017">GitHub</a>, <a href="https://zietzm.github.io/Vagelos2017/">HTML manuscript</a>) <span class="citation" data-cites="15nwuvjrA">[<a href="#ref-15nwuvjrA">2</a>]</span></li>
+<li>Filing issues</li>
+<li>Participating in mailing list discussions</li>
+<li>Issuing a pull request</li>
+<li>Writing documentation</li>
+<li>Participating in code review</li>
+<li>Drafting an enhancement proposal</li>
+<li>Closing bug reports</li>
 </ul>
-<p>If you notice a problem with Manubot, it’s best to submit an upstream fix to the appropriate repository: <a href="https://github.com/greenelab/manubot-rootstock"><code>greenelab/manubot-rootstock</code></a> for the git repository stub or <a href="https://github.com/greenelab/manubot"><code>greenelab/manubot</code></a> for the Python package.</p>
+<p>While there are other activities that individuals can participate in, these are the typical activities we see among participants in the community. The order, flowing from the first to the last, is the typical flow we see for an individual coming to participate in the community. The first step is typically to file an issue or bug report (occasionally these are requests for new features), followed by partipating in development-focused discussion on mailing lists. The next level of engagement typically involves the development of a new piece of functionality, refinement of existing code, or issuing a fix for a bug or issue. These take the form of pull requests (described in greater detail <a href="#sec:development">here</a>) that can be reviewed and added to the code base.</p>
+<p>The next level of engagement centers around tasks that are not fully-aligned with pragmatic, code-driven scientific inquiry. The development of documentation is often viewed as orthogonal to the scientific process, and typically requires an iterative wrriting process. Participation in code review, providing comments, feedback and suggestions to other authors, is another somewhat orthogonal task; it doesn’t necessarily directly benefit the developer doing the reviewing (although it might) and it does not necessarily result in academic rewards (citations, authorship, etc). But, it does arise from a pragmatic (ensuring code reliability) or altruistic (the public good of the software) motivation, and is thus a deeper level of engagement.</p>
+<p>The final two activities, drafting enhancement proposals and closing bug reports, are the most engaged, and often the most removed from the academic motivation structure. Developing an <a href="#sec:ytep">enhancement proposal</a> for <code>yt</code> means iterating with other developers on the motivation behind and implementation of a large piece of functionality; it requires both motivation to engage with the community and the patience to build consensus amongst stakeholders. Closing bug reports – and the development work associated with identifying, tracking and fixing bugs – requires patience and often repeated engagement with stakeholders.</p>
+<h3 id="engagement-metrics">Engagement Metrics</h3>
+<p>We include here plots of the level of engagement on mailing list discussions and the citation count of the original method paper.</p>
+<h3 id="governance">Governance</h3>
+<h2 id="sec:development">Development Procedure</h2>
+<h3 id="answer-testing">Answer Testing</h3>
+<h3 id="code-review">Code Review</h3>
+<h3 id="sec:ytep">YTEP Process</h3>
+<h2 id="sec:data_objects">Data Objects</h2>
+<p>The basic principles by which <code>yt</code> operates are built on the notion of selecting data (through coarse and subsequent fine-grained indexing of data sources such as files), accessing that data in a memory-efficient fashion, and then processing that data into either a resultant set of quantitative data or a visualization.</p>
+<p>The mechanisms by which <code>yt</code> can select data are typically spatial in nature, although several non-spatial mechanisms focused on queries can be utilized as well. These objects which conduct selection are selectors, and are designed to provide as small of an API as possible, to enable ease of development and deployment of new selectors.</p>
+<p>Selectors require defining several functions, with the option of defining additional functions for optimization, that return true or false whether a given point is or is not included in the selected region. These functions include selection of a rectilinear grid (or any point within that grid), selection of a point with zero extent and selection of a point with a non-zero spherical radius.</p>
+<p>The base selector object utilizes these routines during a selection operation to maximize the amount of code reused between particle, patch, and octree selection of data. These three types of data are selected through specific routines designed to minimize the number of times that the selection function must be called, as they can be quite expensive.</p>
+<p>Selecting data from a grid is a two-step process. The first step is identifying which grids intersect a given data selector; this is done through a sequence of bounding box intersection checks. Within a given grid, the cells which are intersected are identified. This results in the selection routine being called once for each grid object in the simulation and once for each cell located within an intersecting grid. This can be conducted hierarchically, but due to implementation details around how the grid index is stored this is not yet cost effective.</p>
+<p>Selecting data from an octree-organized dataset utilizes a recursive scheme that selects individual oct nodes, then for each cell within that oct, determining which cells must be selected or child nodes recursed into. This system is designed to allow for having leaf nodes of varying cells-per-side, for instance 1, 2, 4, 8, etc. However, the number of nodes is fixed at 8, with subdivision always occurring at the midplane.</p>
+<p>The final mechanism by which data is selected is for discrete data points, typically particles in astrophysical simulations. At present, this is done by first identifying which data files intersect with a given selector, then selecting individual points. There is no hierarchical data selection conducted in this system, as we do not yet allow for re-ordering of data on disk or in-memory which would facilitate hierarchical selection through the use of operations such as morton indices.</p>
+<p><strong>add bitmap index stuff here</strong></p>
+<h2 id="processing-and-analysis-of-data">Processing and Analysis of Data</h2>
+<h2 id="abstracting-simulation-types">Abstracting Simulation Types</h2>
+<h3 id="chunking-and-decomposition-strategies">Chunking and Decomposition Strategies</h3>
+<p>Reading data, particularly data that will not be utilized in a computation, can incur susbtantial overhead, particularly if the data is spread over multiple files on a networked filesystem, where metadata queries can dominate the cost of IO. <code>yt</code> takes the approach of building a coarse-grained index based on the discretization method of the data (particle, grid, octree, unstructured mesh), combining this with datapoint-level indexing for selection processes.</p>
+<p>To supplement this, methods in <code>yt</code> that process data utilize a system of data “chunking,” whereby segments of data identified during coarse-grained indexing are subdivided by one of a few different schemes and yielded to the iterating function; these schemes can include a limited number of tuning parameters or arguments. These three chunking methods are <code>all</code>, <code>spatial</code> and <code>io</code>. The <code>all</code> method simply returns a single, one-dimensional array, and the number of chunks is always exactly one; this enables both non-parallel algorithms and simple access to small datasets. <code>spatial</code> chunking yields three-dimensional arrays. For grid-based datasets, these are the grids, while for particle and octree datasets they are leaf-by-leaf collections of particles or mesh values. Optionally, the <code>spatial</code> chunking method can return “ghost zones” around regions, for computation of stencils. The final type of chunking, <code>io</code>, is designed to iterate over sets of data in a manner that is most conducive to pipelined IO. These will not always be load-balanced in size of the returned chunks, however. In some cases, <code>io</code> chunking may return one file at a time (in the case of spreading items across many different files), while in others it may be returning sub-components of a single file. This chunking type is the most common strategy for parallel-decomposition.</p>
+<p>Necessarily, both indexing and selection methods must be implemented to expose these different chunking interfaces; <code>yt</code> utilizes specific methods for each of the primary data types that it can access. We detail these below, specifically describing how they are implemented and how they can be improved in future iterations.</p>
+<h3 id="grid-analysis">Grid Analysis</h3>
+<p><code>yt</code> was originally written to support the Enzo code, which is a patch-based Adaptive Mesh Refinement (AMR) simulation platform. Analysis of grid-based data is the most frequent application of <code>yt</code>. While we discuss much of the techniques implemented for datasets consisting of multiple, potentially overlapping grids, <code>yt</code> also supports single-grid datasets (such as FITS cubes) and is able to decompose them for parallel analysis.</p>
+<p><code>yt</code> also supports other grid patch codes <strong>insert list here</strong></p>
+<p><code>yt</code> supports several different “features” of patch-based codes. These include grids that span multiple parent objects, grids that overlap with coarser data (i.e., AMR), grids that overlap with other grids that provide the same level of resolution of data (i.e., grids at the same AMR level), refinement factors that vary based on level, and edge- and vertex-centered data. For the cases of overlapping grids (either on the same or higher refinement levels) masks are generated that indicate which data is considered authoritative.</p>
+<p>As noted in <a href="#sec:data_objects">Data Objects</a>, the process of selecting points is multi-step, starting at coarse selection that may be at the file level, and proceeding to selection of specific data points that are included in a selector. For grid-based data, the coarse selection stage proceeds in an extremely simple fashion, by iterating over flat arrays of left and right grid edges and creating a bitmap of the selected grids. Because this method – while not taking advantage of any data structures of even mild sophistication – is able to take advantage of pipelining and cache-optimization, we have found that it is sufficiently performant in most geometries up to approximately <span class="math inline">\(10^6\)</span> grid objects. In those cases, the distinction between “wide and shallow” grid structures (where refinement occurs essentially everywhere, but not to a great degree) and “thin and deep” grid structures (where refinement occurs in essentially one location but to very high levels), as well as the specific selection process, impact the overall performance. The second-stage selection occurs within individual grids, where points are selected based on the data point center. In the case of cell-centered data, this returns an array of size <span class="math inline">\(N\)</span> where <span class="math inline">\(N\)</span> is the number of points selected; in the case of 3D vertex-centered data, this would be <span class="math inline">\((N,8)\)</span>. <strong>Andrew Myers: check this?</strong></p>
+<p>Indexing grid data in <code>yt</code> is optimized for systems of grids that tend to have larger grid patches, rather than smaller; specifically, in <code>yt</code> each grid patch consists of a Python object, which adds a bit of overhead. In the limit of many more cells than grid objects, this overhead is small, but in cases where the number of grids is <span class="math inline">\(O(10^7)\)</span> this can become prohibitive. These cases are becoming more common even for medium-scale simulations.</p>
+<p>To address both the memory overhead and the python overhead, as well as more generally address potential scalability issues with grid selection, we have begun implementation of a more sophisticated “grid visitors” indexing and selection method. This draws on the approach used by the oct-visitors (described <a href="#sec:octree_analysis">below</a>). A spatial tree is constructed, wherein parent/child relationships are established between grids. Each process – selection, copying of data, generation of coordinates – is represented by an instance of a <code>GridVisitor</code> object. The tree is recursively traversed, and for all selected points the object is called. This allows grids, their relationships, and the data masks to be stored in structures and forms that are both optimized and compressed. This method is essential for scaling to a large number of grid patches; the storage requirements of a single grid patch Python object are around 1K per object (about one gigabyte per million grids), whereas the optimized storage reduces this to approximately 140 bytes (about one gigabyte per eight million grids), with further reductions possible; for selection operations, we are also able to reduce the number of temporary arrays and utilize compressed mask representation, bringing peak memory usage down further. The spatial-tree optimization substantially increases performance for “wide and shallow” dataset selection.</p>
+<h3 id="sec:octree_analysis">Octree Analysis</h3>
+<h3 id="sph-analysis">SPH Analysis</h3>
+<h3 id="unstructured-mesh-analysis">Unstructured Mesh Analysis</h3>
+<h3 id="sec:noncartesian">Non-Cartesian Coordinates</h3>
+<h2 id="sec:vr">Visualization and Volume Rendering</h2>
+<h2 id="sec:units">Units and Quantities</h2>
+<p>At a basic level, <code>yt</code> is an engine for converting data dumped to disk by a simulation code into a physically meaningful result. Attaching units to simulation data makes it possible to perform dimensional analysis on the simulation data, adding additional opportunities for catching errors in a data processing pipeline. In addition, it becomes straightforward to convert data from one unit system to another.</p>
+<p>In <code>yt</code> 3.0 we handle units in a an automatic fashion, leveraging the symbolic math library <code>sympy</code>. Instead of returning a NumPy <code>ndarray</code> when users query <code>yt</code> data objects for fields, return a <code>YTArray</code>, a subclass of <code>ndarray</code>. <code>YTArray</code> preserves <code>ndarray</code>’s array operations, including deep and shallow copies, broadcasting, and views. Augmenting <code>ndarray</code>, <code>YTArray</code> attaches unit metadata to the array data, enabling runtime checking of unit consistency in arithmetic operations between <code>YTArray</code> instances, and making it trivial to compose new units using algebraic operations.</p>
+<p>As a trivial example, when one queries a data object (here given the generic name <code>dd</code>) for the density field, we get back a YTArray, including both the simulation data for the density field, and the units of the density field, in this case <span class="math inline">\(\rm{g}/\rm{cm}^3\)</span>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="op">&gt;&gt;&gt;</span> dd[`density<span class="st">&#39;] </span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="st">YTArray([4.92e-31, 4.94e-31, 4.93e-31, ...,</span></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="st">         1.12e-25, 1.59e-25, 1.09e-24]) g/cm**3</span></a></code></pre></div>
+<p>One of the nicest aspects of this new unit system is that the symbolic algebra for unitful operations is performed automatically by sympy:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> dd[`cell_mass<span class="st">&#39;]/dd[`cell_volume&#39;</span>] </a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">  [<span class="fl">4.92e-31</span> <span class="fl">4.94e-31</span> <span class="fl">4.93e-31</span> ... </a>
+<a class="sourceLine" id="cb2-3" data-line-number="3">   <span class="fl">1.12e-25</span> <span class="fl">1.59e-25</span> <span class="fl">1.09e-24</span>] g<span class="op">/</span>cm<span class="op">**</span><span class="dv">3</span></a></code></pre></div>
+<p>YTArray is primarily useful for attaching units to NumPy <code>ndarray</code> instances. For scalar data, we have created the new <code>YTQuantity</code> class. <code>YTQuantity</code> is a subclass of <code>YTArray</code> with the requirement that the `<code>array data'' associated with the instance be limited to one element.</code>YTQuantity` is primarily useful for physical constants and ensures that the units are propogated correctly when composing quantities from arrays, physical constants, and unitless scalars:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.utilities.physical_constants <span class="im">import</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">        boltzmann_constant</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> dd[`temperature<span class="st">&#39;]*boltzmann_constant </span></a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="st">[ 1.28e-12 1.29e-12 1.29e-12 ... </span></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="st">  1.63e-12 1.59e-12 1.40e-12] erg</span></a></code></pre></div>
+<p>If a user needs the field in a different unit system, they can quickly convert using <code>convert_to_units</code> or <code>in_units</code>.</p>
+<p>When a <code>Dataset</code> object is instantiated, it will its self instantiate and set up a <code>UnitRegistry</code> class that contains a full set of units that are defined for the simulation. This registry includes both concrete physical units like <code>cm</code> or <code>K</code> but also units symbols that correspond to the unit system used internally in the simulation.</p>
+<p>The new unit systems lets us to encode the simulation coordinate system and scaling to physical coordinates directly into the unit system. We do this via ``code units’’.</p>
+<p>Every <code>Dataset</code> has a <code>length_unit</code>, <code>time_unit</code>, and <code>mass_unit</code>, attribute that the user can quickly and easily query to discover the base units of the simulation. For example:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> yt</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="op">&gt;&gt;&gt;</span> ds <span class="op">=</span> yt.load(<span class="st">&quot;Enzo_64/DD0043/data0043&quot;</span>)</a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> ds.length_unit </a>
+<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="dv">128</span> Mpccm<span class="op">/</span>h</a>
+<a class="sourceLine" id="cb4-5" data-line-number="5"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> ds.quan(<span class="fl">1.0</span>, <span class="st">&quot;code_length&quot;</span>).in_units(<span class="st">&quot;Mpccm/h&quot;</span>)</a>
+<a class="sourceLine" id="cb4-6" data-line-number="6"><span class="dv">128</span> Mpccm<span class="op">/</span>h</a>
+<a class="sourceLine" id="cb4-7" data-line-number="7"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> ds.length_unit.in_cgs()</a>
+<a class="sourceLine" id="cb4-8" data-line-number="8"><span class="fl">5.55517285026e+26</span> cm</a></code></pre></div>
+<p>Optionally <code>velocity_unit</code>, <code>pressure_unit</code>, <code>temperature_unit</code>, and <code>density_unit</code> may be defined as well if the units for these fields cannot be inferred from the mass, length, and time units.</p>
+<p>Additionally, we allow conversions to the simulation unit system. Data in code units are available by converting to <code>code_length</code>, <code>code_mass</code>, <code>code_time</code>, <code>code_velocity</code>, <code>code_density</code>, <code>code_magnetic</code>, <code>code_pressure</code>, <code>code_metallicity</code>, or any combination of those units. Code units preserve dimensionality: an array or quantity that has units of <code>cm</code> will be convertible to <code>code_length</code>, but not to <code>code_mass</code>.</p>
+<p>On-disk data are also be available to the user, presented in unconverted code units. To obtain on-disk data, a user need only query a data object using an on-disk field name:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> yt</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="op">&gt;&gt;&gt;</span> ds <span class="op">=</span> yt.load(``Enzo_64<span class="st">&#39;&#39;</span><span class="op">/</span>DD0043<span class="op">/</span>data0043<span class="st">&quot;)</span></a>
+<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="st">&gt;&gt;&gt; dd = ds.all_data()</span></a>
+<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="st">&gt;&gt;&gt; print dd[(&#39;enzo&#39;, &#39;Density&#39;)] </span></a>
+<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="st">[ 6.74e-02 6.12e-02 8.92e-02 ... </span></a>
+<a class="sourceLine" id="cb5-6" data-line-number="6"><span class="st">  9.09e+01 5.66e+01 4.27e+01] code_mass/code_length**3</span></a>
+<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="st">&gt;&gt;&gt; print dd[(&#39;gas&#39;, &#39;density&#39;)] </span></a>
+<a class="sourceLine" id="cb5-8" data-line-number="8"><span class="st">[ 1.92e-31 1.74e-31 2.54e-31 ... </span></a>
+<a class="sourceLine" id="cb5-9" data-line-number="9"><span class="st">  2.59e-28 1.61e-28 1.22e-28] g/cm**3</span></a></code></pre></div>
+<p>Here, the first data object query is returned in code units, while the second is returned in CGS units. This is because <code>(&quot;enzo&quot;, &quot;Density&quot;)</code> is an on-disk field, while <code>(&quot;gas&quot;, &quot;density&quot;)</code> is an internal <code>yt</code> field.</p>
+<h3 id="sec:units_implementation">Implementation}</h3>
+<p>Our unit system has 6 base dimensions, <code>mass</code>, <code>length</code>, <code>time</code>, <code>temperature</code>, and <code>angle</code>. The unitless <code>dimensionless</code> dimension, which we use to represent scalars is also technically a base dimension, although a trivial one. For convenience, we also create dimensionless unit symbols to represent quantities like metallicity that are formally dimensionless, but it is convenient to represent in a unit system.</p>
+<p>For each dimension, we choose a base unit. Our system’s base units are grams, centimeters, seconds, Kelvin, and radian. All units can be described as combinations of these base dimensions along with a conversion factor to equivalent base units.</p>
+<p>The choice of CGS as the base unit system is somewhat arbitrary. Most unit systems choose SI as the reference unit system. We use CGS to stay consistent with the rest of the <code>yt</code> codebase and to reflect the standard practice in astrophysics. In any case, using a <strong>physical</strong> coordinate system makes it possible to compare quantities and arrays produced by different datasets, possibly with different conversion factors to CGS and to code units. We go into more detail on this point below. In the future, we plan to make the preferred internal coordinate system a user-configurable option.</p>
+<p>We provide sympy <code>Symbol</code> objects for the base dimensions. The dimensionality of all other units should be <code>sympy</code> <code>Expr</code> objects made up of the base dimension objects and the <code>sympy</code> operation objects <code>Mul</code> and <code>Pow</code>.</p>
+<p>Let’s use some common units as examples: gram (<code>g</code>), erg (<code>erg</code>), and solar mass per cubic megaparsec (<code>Msun / Mpc</code><span class="math inline">\(^3\)</span>). <code>g</code> is an atomic, CGS base unit, <code>erg</code> is an atomic unit in CGS, but is not a base unit, and <code>Msun/Mpc</code><span class="math inline">\(^3\)</span> is a combination of atomic units, which are not in CGS, and one of them even has an SI prefix. The dimensions of <code>g</code> are <code>mass</code> and the cgs factor is 1. The dimensions of <code>erg</code> are <code>mass * length$^2</code>$ * <code>time</code><span class="math inline">\(^{-2}\)</span> and the cgs factor is 1. The dimensions of <code>Msun/Mpc</code><span class="math inline">\(^3\)</span> are <code>mass / length</code><span class="math inline">\(^3\)</span> and the cgs factor is about 6.8e-41.</p>
+<p>We use the <code>UnitRegistry</code> class to define all valid atomic units. All unit registries contain a unit symbol lookup table (dict) containing the valid units’ dimensionality and cgs conversion factor. Here is what it would look like with the above units:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" data-line-number="1">{ <span class="st">&quot;g&quot;</span>:    (mass, <span class="fl">1.0</span>),</a>
+<a class="sourceLine" id="cb6-2" data-line-number="2">  <span class="st">&quot;erg&quot;</span>:  (mass <span class="op">*</span> length<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> time<span class="op">**-</span><span class="dv">2</span>, <span class="fl">1.0</span>),</a>
+<a class="sourceLine" id="cb6-3" data-line-number="3">  <span class="st">&quot;Msun&quot;</span>: (mass, <span class="fl">1.98892e+33</span>),</a>
+<a class="sourceLine" id="cb6-4" data-line-number="4">  <span class="st">&quot;pc&quot;</span>:   (length, <span class="fl">3.08568e18</span>), }</a></code></pre></div>
+<p>Note that we only define <strong>atomic</strong> units here. There should be no operations in the registry symbol strings. When we parse non-atomic units like <code>Msun/Mpc**3</code>, we use the registry to look up the symbols. The unit system in yt knows how to handle units like <code>Mpc</code> by looking up unit symbols with and without prefixes and modify the conversion factor appropriately.</p>
+<p>We construct a <code>Unit</code> object by providing a string containing atomic unit symbols, combined with operations in Python syntax, and the registry those atomic unit symbols are defined in. We use sympy’s string parsing features to create the unit expression from the user-provided string.</p>
+<p><code>Unit</code> objects are associated with four instance members, a unit <code>Expression</code> object, a dimensionality <code>Expression</code> object, a <code>UnitRegistry</code> instance, and a scalar conversion factor to CGS units. These data are available for a <code>Unit</code> object by accessing the <code>expr</code>, <code>dimensions</code>, <code>registry</code>, and <code>cgs_value</code> attributes, respectively.</p>
+<p><code>Unit</code> provides the methods <code>same_dimensions_as</code>, which returns True if passed a <code>Unit</code> object that has equivalent dimensions, <code>get_cgs_equivalent</code>, which returns the equivalent cgs base units of the <code>Unit</code>, and the <code>is_code_unit</code> property, which is <code>True</code> if the unit is composed purely of code units and <code>False</code> otherwise. <code>Unit</code> also defines the <code>mul</code>, <code>div</code>, <code>pow</code>, and <code>eq</code> operations with other unit objects, making it easy to compose compound units algebraically.</p>
+<p>The <code>UnitRegistry</code> class provides the <code>add</code>, <code>remove</code>, and <code>modify</code> methods which allows users to add, remove, and modify atomic unit definitions present in <code>UnitRegistry</code> objects. A dictionary lookup table is also attached to the <code>UnitRegistry</code> object, providing an interface to look up unit symbols. In general, unit registries should only be adjusted inside of a code frontend, since otherwise quantities and arrays might be created with inconsistent unit metadata. Once a unit object is created, it will not recieve updates if the original unit registry is modified.</p>
+<h3 id="creating-ytarray-and-ytquantity-instances-seccreating-ytarray-and-ytquantity-instances">Creating YTArray and YTQuantity instances {sec:creating-ytarray-and-ytquantity-instances}</h3>
+<p>There are two ways to create new array and quantity objects: via a constructor, and by multiplying scalar data by a unit quantity.</p>
+<h4 id="class-constructor-secclass-constructor">Class Constructor {sec:class-constructor}</h4>
+<p>The primary internal interface for creating new arrays and quantities is through the class constructor for YTArray. The constructor takes three arguments. The first argument is the input scalar data, which can be an integer, float, list, or array. The second argument, <code>input_units</code>, is a unit specification which must be a string or <code>Unit</code> instance. Last, users may optionally supply a UnitRegistry instance, which will be attached to the array. If no UnitRegistry is supplied, a default unit registry is used instead. Unit specification strings must be algebraic combinations of unit symbol names, using standard Python mathematical syntax (i.e. <code>**</code> for the power function, not <code>^</code>).</p>
+<p>Here is a simple example of <code>YTArray</code> creation:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.units <span class="im">import</span> yt_array, YTQuantity </a>
+<a class="sourceLine" id="cb7-2" data-line-number="2"><span class="op">&gt;&gt;&gt;</span> YTArray([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], `cm<span class="st">&#39;) </span></a>
+<a class="sourceLine" id="cb7-3" data-line-number="3"><span class="st">YTArray([1, 2, 3]) cm</span></a>
+<a class="sourceLine" id="cb7-4" data-line-number="4"><span class="st">&gt;&gt;&gt; YTQuantity(3, `J&#39;</span>) </a>
+<a class="sourceLine" id="cb7-5" data-line-number="5"><span class="dv">3</span> J</a></code></pre></div>
+<p>In addition to the class constructor, we have also defined two convenience functions, <code>quan</code>, and <code>arr</code>, for quantity and array creation that are attached to the <code>Dataset</code> base class. These were added to syntactically simplify the creation of arrays with the UnitRegistry instance associated with a dataset. These functions work exactly like the <code>YTArray</code> and <code>YTQuantity</code> constructors, but pass the <code>UnitRegistry</code> instance attached to the dataset to the underlying constructor call. For example:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> yt</a>
+<a class="sourceLine" id="cb8-2" data-line-number="2"><span class="op">&gt;&gt;&gt;</span> ds <span class="op">=</span> yt.load(``Enzo_64<span class="op">/</span>DD0043<span class="op">/</span>data0043<span class="st">&#39;&#39;</span>)</a>
+<a class="sourceLine" id="cb8-3" data-line-number="3"><span class="op">&gt;&gt;&gt;</span> ds.arr([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], `code_length<span class="st">&#39;).in_cgs() </span></a>
+<a class="sourceLine" id="cb8-4" data-line-number="4"><span class="st">YTArray([ 5.55e+26, 1.11e+27, 1.66e+27]) cm</span></a></code></pre></div>
+<p>This example illustrates that the array is being created using <code>ds.unit_registry</code>, rather than the <code>default_unit_registry</code>, for which <code>code_length</code> is equivalent to <code>cm</code>.</p>
+<h4 id="multiplication-secmultiplication">Multiplication {sec:multiplication}</h4>
+<p>New <code>YTArray</code> and <code>YTQuantity</code> instances can also be created by multiplying <code>YTArray</code> or <code>YTQuantity</code> instances by <code>float</code> or <code>ndarray</code> instances. To make it easier to create arrays using this mechanism, we have populated the <code>yt.units</code> namespace with predefined <code>YTQuantity</code> instances that correspond to common unit symbol names. For example:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.units <span class="im">import</span> meter, gram, kilogram, second, joule </a>
+<a class="sourceLine" id="cb9-2" data-line-number="2"><span class="op">&gt;&gt;&gt;</span> kilogram <span class="op">*</span> meter<span class="op">**</span><span class="dv">2</span> <span class="op">==</span> joule </a>
+<a class="sourceLine" id="cb9-3" data-line-number="3"><span class="va">True</span></a>
+<a class="sourceLine" id="cb9-4" data-line-number="4"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.units <span class="im">import</span> m, kg, s, W </a>
+<a class="sourceLine" id="cb9-5" data-line-number="5"><span class="op">&gt;&gt;&gt;</span> kg<span class="op">*</span>m<span class="op">**</span><span class="dv">2</span><span class="op">/</span>s<span class="op">**</span><span class="dv">3</span> <span class="op">==</span> W</a>
+<a class="sourceLine" id="cb9-6" data-line-number="6"><span class="va">True</span></a>
+<a class="sourceLine" id="cb9-7" data-line-number="7"></a>
+<a class="sourceLine" id="cb9-8" data-line-number="8"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.units <span class="im">import</span> kilometer </a>
+<a class="sourceLine" id="cb9-9" data-line-number="9"><span class="op">&gt;&gt;&gt;</span> three_kilometers <span class="op">=</span> <span class="dv">3</span><span class="op">*</span>kilometer </a>
+<a class="sourceLine" id="cb9-10" data-line-number="10"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> three_kilometers </a>
+<a class="sourceLine" id="cb9-11" data-line-number="11"><span class="fl">3.0</span> km</a>
+<a class="sourceLine" id="cb9-12" data-line-number="12"></a>
+<a class="sourceLine" id="cb9-13" data-line-number="13"><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.units <span class="im">import</span> gram, kilogram </a>
+<a class="sourceLine" id="cb9-14" data-line-number="14"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> gram<span class="op">+</span>kilogram </a>
+<a class="sourceLine" id="cb9-15" data-line-number="15"><span class="fl">1001.0</span> g </a>
+<a class="sourceLine" id="cb9-16" data-line-number="16"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> kilogram<span class="op">+</span>gram </a>
+<a class="sourceLine" id="cb9-17" data-line-number="17"><span class="fl">1.001</span> kg </a>
+<a class="sourceLine" id="cb9-18" data-line-number="18"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> kilogram<span class="op">/</span>gram </a>
+<a class="sourceLine" id="cb9-19" data-line-number="19"><span class="fl">1000.0</span> dimensionless</a></code></pre></div>
+<h3 id="sec:handling-code-units">Handling code units</h3>
+<p>Code units are tightly coupled to on-disk parameters. To handle this fact of life, the <code>yt</code> unit system can modify, add, and remove unit symbols via the <code>UnitRegistry</code>.</p>
+<h4 id="associating-arrays-with-a-coordinate-system-secassociating-arrays-with-a-coordinate-system">Associating arrays with a coordinate system {sec:associating-arrays-with-a-coordinate-system}</h4>
+<p>To create quantities and arrays in units defined by a simulation coordinate system, we associate a <code>UnitRegistry</code> instance with <code>Dataset</code> instances. This unit registry contains the metadata necessary to convert the array to CGS from some other known unit system and is available via the <code>unit_registry</code> attribute that is attached to all <code>Dataset</code> instances.</p>
+<p>We have modified the definition for <code>set_code_units</code> in the <code>StaticOutput</code> base class. In this new implemenation, the predefined <code>code_mass</code>, <code>code_length</code>, <code>code_time</code>, and <code>code_velocity</code> symbols are adjusted to the appropriate values and <code>length_unit</code>, <code>time_unit</code>, <code>mass_unit</code>, <code>velocity_unit</code> attributes are attached to the <code>StaticOutput</code> instance. If there are frontend specific code units they should also be defined in subclasses by extending this function.</p>
+<h4 id="mixing-modified-unit-registries-secmixing-modified-unit-registries">Mixing modified unit registries {sec:mixing-modified-unit-registries}</h4>
+<p>It becomes necessary to consider mixing unit registries whenever data needs to be compared between disparate datasets. The most straightforward example where this comes up is a cosmological simulation time series, where the code units evolve with time. The problem is quite general — we want to be able to compare any two datasets, even if they are unrelated.</p>
+<p>We have designed the unit system to refer to a physical coordinate system based on CGS conversion factors. This means that operations on quantities with different unit registries will always agree since the final calculation is always performed in CGS.</p>
+<p>The examples below illustrate the consistency of this choice:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb10-1" data-line-number="1"><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> yt</a>
+<a class="sourceLine" id="cb10-2" data-line-number="2"><span class="op">&gt;&gt;&gt;</span> ds1 <span class="op">=</span> yt.load(`Enzo_64<span class="op">/</span>DD0002<span class="op">/</span>data0002<span class="st">&#39;)</span></a>
+<a class="sourceLine" id="cb10-3" data-line-number="3"><span class="st">&gt;&gt;&gt; ds2 = yt.load(`Enzo_64/DD0043/data0043&#39;</span>)</a>
+<a class="sourceLine" id="cb10-4" data-line-number="4"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> ds1.length_unit, ds2.length_unit </a>
+<a class="sourceLine" id="cb10-5" data-line-number="5"><span class="dv">128</span> Mpccm<span class="op">/</span>h, <span class="dv">128</span> Mpccm<span class="op">/</span>h</a>
+<a class="sourceLine" id="cb10-6" data-line-number="6"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> ds1.length_unit.in_cgs()</a>
+<a class="sourceLine" id="cb10-7" data-line-number="7"><span class="fl">6.26145538088e+25</span> cm</a>
+<a class="sourceLine" id="cb10-8" data-line-number="8"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> ds2.length_unit.in_cgs() </a>
+<a class="sourceLine" id="cb10-9" data-line-number="9"><span class="fl">5.55517285026e+26</span> cm </a>
+<a class="sourceLine" id="cb10-10" data-line-number="10"></a>
+<a class="sourceLine" id="cb10-11" data-line-number="11"></a>
+<a class="sourceLine" id="cb10-12" data-line-number="12"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> ds1.length_unit<span class="op">*</span>ds2.length_unit </a>
+<a class="sourceLine" id="cb10-13" data-line-number="13"><span class="fl">145359.100149</span> Mpccm<span class="op">**</span><span class="dv">2</span></a>
+<a class="sourceLine" id="cb10-14" data-line-number="14"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> ds2.length_unit<span class="op">*</span>ds1.length_unit </a>
+<a class="sourceLine" id="cb10-15" data-line-number="15"><span class="fl">1846.7055432</span> Mpccm<span class="op">**</span><span class="dv">2</span></a></code></pre></div>
+<p>For the last two examples, the answer is not the seemingly trivial <span class="math inline">\(128^2\/=\/16384\,\rm{Mpccm}^2/h^2\)</span>. This is because the new quantity returned by the multiplication operation inherits the unit registry from the left object in binary operations. This convention is enforced for all binary operations on two <code>YTarray</code> objects. Results are always consistent when referencing an unambiguous physical coordinate system:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> (pf1.length_unit <span class="op">*</span> pf2.length_unit).in_cgs() </a>
+<a class="sourceLine" id="cb11-2" data-line-number="2"><span class="fl">3.4783466935e+52</span> cm<span class="op">**</span><span class="dv">2</span> </a>
+<a class="sourceLine" id="cb11-3" data-line-number="3"><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span> pf1.length_unit.in_cgs() <span class="op">*</span> pf2.length_unit.in_cgs() </a>
+<a class="sourceLine" id="cb11-4" data-line-number="4"><span class="fl">3.4783466935e+52</span> cm<span class="op">**</span><span class="dv">2</span></a></code></pre></div>
+<h3 id="handling-cosmological-units-sechandling-cosmological-units">Handling cosmological units {sec:handling-cosmological-units}</h3>
+<p>If we detect that we are loading a cosmological simulation performed in comoving coordinates, extra comoving units are added to the dataset’s unit registry. Comoving length unit symbols are still named following the pattern <code>&lt;length symbol&gt;cm</code>, i.e. <code>Mpccm</code>.</p>
+<p>The <span class="math inline">\(h\)</span> symbol is treated as a base unit, <code>h</code>, which defaults to unity. The <code>Dataset.set_units</code> updates the <code>h</code> symbol to the correct value when loading a cosmological simulation.</p>
+<h2 id="user-friendliness">User-Friendliness</h2>
+<h3 id="publication-ready-figures">Publication-Ready Figures}</h3>
+<h3 id="ipython-integration-and-html-guis">IPython Integration and HTML GUIs</h3>
+<h2 id="halo-finding-and-catalogs">Halo-Finding and Catalogs</h2>
+<h2 id="scaling-and-parallelism">Scaling and Parallelism</h2>
+<h3 id="performance-of-operations">Performance of Operations</h3>
+<h3 id="inline-analysis">Inline Analysis</h3>
+<h3 id="simple-parallelism">Simple Parallelism</h3>
+<h2 id="analysis-modules">Analysis Modules</h2>
+<h2 id="future-directions">Future Directions</h2>
+<h2 id="conclusions">Conclusions</h2>
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>The authors of this paper would like to extend their deepest gratitude to the many, many individual and institutions that have contributed, directly or indirectly, to the growth of both <code>yt</code> and the <code>yt</code> community.</p>
+<p>We particularly thank KIPAC and SLAC at Stanford, the University of California at San Diego and Santa Cruz, the High-Performance Astro Computing Center, Columbia University, the University of Illinois, University of Colorado at Boulder, University of Edinburgh, the scientific python community, NumFOCUS,</p>
 <h2 id="references" class="page_break_before">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs">
-<div id="ref-tJKvnIaZ">
-<p>1. <strong>Opportunities And Obstacles For Deep Learning In Biology And Medicine</strong><br />
-Travers Ching, Daniel S. Himmelstein, Brett K. Beaulieu-Jones, Alexandr A. Kalinin, Brian T. Do, Gregory P. Way, Enrico Ferrero, Paul-Michael Agapow, Wei Xie, Gail L. Rosen, … Casey S. Greene<br />
-<em>Cold Spring Harbor Laboratory</em> (2017-05-28) <a href="https://doi.org/10.1101/142760" class="uri">https://doi.org/10.1101/142760</a></p>
-</div>
-<div id="ref-15nwuvjrA">
-<p>2. <strong>Vagelos Report Summer 2017</strong><br />
-Michael Zietz<br />
-<em>Figshare</em> (2017) <a href="https://doi.org/10.6084/m9.figshare.5346577" class="uri">https://doi.org/10.6084/m9.figshare.5346577</a></p>
+<div id="ref-1GOm01ggN">
+<p>1. <strong>yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA</strong><br />
+Matthew J. Turk, Britton D. Smith, Jeffrey S. Oishi, Stephen Skory, Samuel W. Skillman, Tom Abel, Michael L. Norman<br />
+<em>The Astrophysical Journal Supplement Series</em> (2010-12-28) <a href="https://doi.org/10.1088/0067-0049/192/1/9" class="uri">https://doi.org/10.1088/0067-0049/192/1/9</a></p>
 </div>
 </div>
 <script>

@@ -1,6 +1,6 @@
 # Output directory containing the formatted manuscript
 
-The [`gh-pages`](https://github.com/greenelab/manubot-rootstock/tree/gh-pages) branch hosts the contents of this directory at https://greenelab.github.io/manubot-rootstock/.
+The [`gh-pages`](https://github.com/yt-project/yt-3.0-paper/tree/gh-pages) branch hosts the contents of this directory at https://yt-project.github.io/yt-3.0-paper/.
 
 ## Files
 
@@ -15,4 +15,4 @@ This directory contains the following files, which are mostly ignored on the `ma
 ## Source
 
 The manuscripts in this directory were built from
-[`310dd078c4c60bedd63442f93906f26a4ea25a4b`](https://github.com/greenelab/manubot-rootstock/commit/310dd078c4c60bedd63442f93906f26a4ea25a4b).
+[`8accaad65515fce2aeaa56fd1aab0eac51fd8725`](https://github.com/yt-project/yt-3.0-paper/commit/8accaad65515fce2aeaa56fd1aab0eac51fd8725).
