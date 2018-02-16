@@ -8,6 +8,194 @@
           14
         ]
       ],
+      "date-time": "2018-02-14T17:22:23Z",
+      "timestamp": 1518628943558
+    },
+    "reference-count": 87,
+    "publisher": "Springer Nature",
+    "issue": "7570",
+    "license": [
+      {
+        "URL": "http://www.springer.com/tdm",
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              9,
+              1
+            ]
+          ],
+          "date-time": "2015-09-01T00:00:00Z",
+          "timestamp": 1441065600000
+        },
+        "delay-in-days": 0,
+        "content-version": "unspecified"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1038/nature15383",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          9,
+          22
+        ]
+      ],
+      "date-time": "2015-09-22T16:27:31Z",
+      "timestamp": 1442939251000
+    },
+    "page": "496-499",
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 44,
+    "title": "The formation of submillimetre-bright galaxies from gas infall over a billion years",
+    "prefix": "10.1038",
+    "volume": "525",
+    "author": [
+      {
+        "given": "Desika",
+        "family": "Narayanan",
+        "affiliation": []
+      },
+      {
+        "given": "Matthew",
+        "family": "Turk",
+        "affiliation": []
+      },
+      {
+        "given": "Robert",
+        "family": "Feldmann",
+        "affiliation": []
+      },
+      {
+        "given": "Thomas",
+        "family": "Robitaille",
+        "affiliation": []
+      },
+      {
+        "given": "Philip",
+        "family": "Hopkins",
+        "affiliation": []
+      },
+      {
+        "given": "Robert",
+        "family": "Thompson",
+        "affiliation": []
+      },
+      {
+        "given": "Christopher",
+        "family": "Hayward",
+        "affiliation": []
+      },
+      {
+        "given": "David",
+        "family": "Ball",
+        "affiliation": []
+      },
+      {
+        "given": "Claude-André",
+        "family": "Faucher-Giguère",
+        "affiliation": []
+      },
+      {
+        "given": "Dušan",
+        "family": "Kereš",
+        "affiliation": []
+      }
+    ],
+    "member": "339",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          9,
+          24
+        ]
+      ]
+    },
+    "container-title": "Nature",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://www.nature.com/articles/nature15383.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/nature15383",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/nature15383.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          2
+        ]
+      ],
+      "date-time": "2018-01-02T08:43:55Z",
+      "timestamp": 1514882635000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          9
+        ]
+      ]
+    },
+    "references-count": 87,
+    "alternative-id": [
+      "BFnature15383"
+    ],
+    "URL": "https://doi.org/10.1038/nature15383",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Multidisciplinary"
+    ],
+    "container-title-short": "Nature",
+    "short_url": "https://doi.org/f7r445",
+    "id": "1CgEbr6CQ"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          14
+        ]
+      ],
       "date-time": "2018-02-14T07:42:26Z",
       "timestamp": 1518594146020
     },
@@ -128,6 +316,225 @@
     "container-title-short": "ApJS",
     "short_url": "https://doi.org/ft6md2",
     "id": "1GOm01ggN"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          28
+        ]
+      ],
+      "date-time": "2017-10-28T01:02:24Z",
+      "timestamp": 1509152544958
+    },
+    "reference-count": 92,
+    "publisher": "American Astronomical Society",
+    "issue": "1",
+    "license": [
+      {
+        "URL": "http://iopscience.iop.org/info/page/text-and-data-mining",
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              9,
+              20
+            ]
+          ],
+          "date-time": "2017-09-20T00:00:00Z",
+          "timestamp": 1505865600000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://iopscience.iop.org/page/copyright",
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              9,
+              20
+            ]
+          ],
+          "date-time": "2017-09-20T00:00:00Z",
+          "timestamp": 1505865600000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "iopscience.iop.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "DOI": "10.3847/1538-4357/aa7e2d",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          20
+        ]
+      ],
+      "date-time": "2017-09-20T16:14:32Z",
+      "timestamp": 1505924072000
+    },
+    "page": "59",
+    "update-policy": "http://dx.doi.org/10.1088/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": "Trident: A Universal Tool for Generating Synthetic Absorption Spectra from Astrophysical Simulations",
+    "prefix": "10.3847",
+    "volume": "847",
+    "author": [
+      {
+        "ORCID": "http://orcid.org/0000-0002-3817-8133",
+        "authenticated-orcid": false,
+        "given": "Cameron B.",
+        "family": "Hummels",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-6804-630X",
+        "authenticated-orcid": false,
+        "given": "Britton D.",
+        "family": "Smith",
+        "affiliation": []
+      },
+      {
+        "ORCID": "http://orcid.org/0000-0002-4109-9313",
+        "authenticated-orcid": false,
+        "given": "Devin W.",
+        "family": "Silvia",
+        "affiliation": []
+      }
+    ],
+    "member": "2208",
+    "published-online": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          20
+        ]
+      ]
+    },
+    "container-title": "The Astrophysical Journal",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://stacks.iop.org/0004-637X/847/i=1/a=59/pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://stacks.iop.org/0004-637X/847/i=1/a=59?key=crossref.ba1884e98098278eb5adfc8b00572d6f",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://stacks.iop.org/0004-637X/847/i=1/a=59/pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      },
+      {
+        "URL": "http://stacks.iop.org/0004-637X/847/i=1/a=59?key=crossref.ba1884e98098278eb5adfc8b00572d6f",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          21
+        ]
+      ],
+      "date-time": "2017-09-21T08:19:22Z",
+      "timestamp": 1505981962000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          20
+        ]
+      ]
+    },
+    "references-count": 92,
+    "URL": "https://doi.org/10.3847/1538-4357/aa7e2d",
+    "relation": {},
+    "subject": [
+      "Space and Planetary Science",
+      "Astronomy and Astrophysics"
+    ],
+    "container-title-short": "ApJ",
+    "assertion": [
+      {
+        "value": "The Astrophysical Journal",
+        "name": "journal_title",
+        "label": "Journal title"
+      },
+      {
+        "value": "paper",
+        "name": "article_type",
+        "label": "Article type"
+      },
+      {
+        "value": "Trident: A Universal Tool for Generating Synthetic Absorption Spectra from Astrophysical Simulations",
+        "name": "article_title",
+        "label": "Article title"
+      },
+      {
+        "value": "© 2017. The American Astronomical Society. All rights reserved.",
+        "name": "copyright_information",
+        "label": "Copyright information"
+      },
+      {
+        "value": "2016-12-12",
+        "name": "date_received",
+        "label": "Date received",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      },
+      {
+        "value": "2017-07-04",
+        "name": "date_accepted",
+        "label": "Date accepted",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      },
+      {
+        "value": "2017-09-20",
+        "name": "date_epub",
+        "label": "Online publication date",
+        "group": {
+          "name": "publication_dates",
+          "label": "Publication dates"
+        }
+      }
+    ],
+    "short_url": "https://doi.org/gcx4th",
+    "id": "1DgKJy4lE"
   },
   {
     "URL": "https://github.com/greenelab/manubot",

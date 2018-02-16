@@ -20,7 +20,7 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript was automatically generated
-from [yt-project/yt-3.0-paper@30e3d75](https://github.com/yt-project/yt-3.0-paper/tree/30e3d75a8938267799f07b02a794547751370417)
+from [yt-project/yt-3.0-paper@e3fcc6a](https://github.com/yt-project/yt-3.0-paper/tree/e3fcc6a8e403a5123303c7daf027f5da9400a832)
 on February 16, 2018.
 </em></small>
 
@@ -325,6 +325,8 @@ operations such as morton indices.
 
 ## Processing and Analysis of Data
 
+### Array-like Operations
+
 
 ## Abstracting Simulation Types
 
@@ -442,6 +444,16 @@ selection.
 
 
 ## Visualization and Volume Rendering {#sec:vr}
+
+### Pixelizing Variable-Mesh Objects
+
+### Higher-Order Unstructured Mesh Elements
+
+### Software Volume Rendering
+
+### Hardware-accelerated Volume Rendering
+
+
 
 
 ## Units and Quantities {#sec:units}
@@ -820,7 +832,7 @@ the correct value when loading a cosmological simulation.
 
 ### Publication-Ready Figures
 
-### IPython Integration and HTML GUIs
+### Jupyter Integration
 
 
 
@@ -838,6 +850,26 @@ the correct value when loading a cosmological simulation.
 
 
 ## Analysis Modules
+
+
+## Extensions and Ecosystem
+
+### Trident
+
+Trident [@1DgKJy4lE] is a Python-based open-source tool for
+post-processing hydrodynamical simulations to produce synthetic absorption
+spectra and related data.  In many ways, Trident is the first external package
+that utilizes `yt` to provide data access and numerical operations, but then
+builds on those to develop detailed, astrophysically-aware systems for
+processing and analyzing that data.
+
+### Powderday
+
+[@1CgEbr6CQ]
+
+### ytree
+
+
 
 
 ## Future Directions
