@@ -96,7 +96,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header>
 <h1 class="title">Introducing yt 3.0: Analysis and Visualization of Volumetric Data</h1>
 </header>
-<p><small><em> This manuscript was automatically generated from <a href="https://github.com/yt-project/yt-3.0-paper/tree/30e3d75a8938267799f07b02a794547751370417">yt-project/yt-3.0-paper@30e3d75</a> on February 16, 2018. </em></small></p>
+<p><small><em> This manuscript was automatically generated from <a href="https://github.com/yt-project/yt-3.0-paper/tree/e3fcc6a8e403a5123303c7daf027f5da9400a832">yt-project/yt-3.0-paper@e3fcc6a</a> on February 16, 2018. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>The yt Project</strong><br> <img src="images/orcid.svg" alt="ORCID icon" width="13" height="13" /> <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a> · <img src="images/github.svg" alt="GitHub icon" width="13" height="13" /> <a href="https://github.com/yt-project">yt-project</a> · <img src="images/twitter.svg" alt="Twitter icon" width="13" height="13" /> <a href="https://twitter.com/yt_astro">yt_astro</a><br> <small> NumFOCUS · Funded by Grant XXXXXXXX </small></p></li>
@@ -153,6 +153,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The final mechanism by which data is selected is for discrete data points, typically particles in astrophysical simulations. At present, this is done by first identifying which data files intersect with a given selector, then selecting individual points. There is no hierarchical data selection conducted in this system, as we do not yet allow for re-ordering of data on disk or in-memory which would facilitate hierarchical selection through the use of operations such as morton indices.</p>
 <p><strong>add bitmap index stuff here</strong></p>
 <h2 id="processing-and-analysis-of-data">Processing and Analysis of Data</h2>
+<h3 id="array-like-operations">Array-like Operations</h3>
 <h2 id="abstracting-simulation-types">Abstracting Simulation Types</h2>
 <h3 id="chunking-and-decomposition-strategies">Chunking and Decomposition Strategies</h3>
 <p>Reading data, particularly data that will not be utilized in a computation, can incur susbtantial overhead, particularly if the data is spread over multiple files on a networked filesystem, where metadata queries can dominate the cost of IO. <code>yt</code> takes the approach of building a coarse-grained index based on the discretization method of the data (particle, grid, octree, unstructured mesh), combining this with datapoint-level indexing for selection processes.</p>
@@ -170,6 +171,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3 id="unstructured-mesh-analysis">Unstructured Mesh Analysis</h3>
 <h3 id="sec:noncartesian">Non-Cartesian Coordinates</h3>
 <h2 id="sec:vr">Visualization and Volume Rendering</h2>
+<h3 id="pixelizing-variable-mesh-objects">Pixelizing Variable-Mesh Objects</h3>
+<h3 id="higher-order-unstructured-mesh-elements">Higher-Order Unstructured Mesh Elements</h3>
+<h3 id="software-volume-rendering">Software Volume Rendering</h3>
+<h3 id="hardware-accelerated-volume-rendering">Hardware-accelerated Volume Rendering</h3>
 <h2 id="sec:units">Units and Quantities</h2>
 <p>At a basic level, <code>yt</code> is an engine for converting data dumped to disk by a simulation code into a physically meaningful result. Attaching units to simulation data makes it possible to perform dimensional analysis on the simulation data, adding additional opportunities for catching errors in a data processing pipeline. In addition, it becomes straightforward to convert data from one unit system to another.</p>
 <p>In <code>yt</code> 3.0 we handle units in a an automatic fashion, leveraging the symbolic math library <code>sympy</code>. Instead of returning a NumPy <code>ndarray</code> when users query <code>yt</code> data objects for fields, return a <code>YTArray</code>, a subclass of <code>ndarray</code>. <code>YTArray</code> preserves <code>ndarray</code>’s array operations, including deep and shallow copies, broadcasting, and views. Augmenting <code>ndarray</code>, <code>YTArray</code> attaches unit metadata to the array data, enabling runtime checking of unit consistency in arithmetic operations between <code>YTArray</code> instances, and making it trivial to compose new units using algebraic operations.</p>
@@ -299,13 +304,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The <span class="math inline">\(h\)</span> symbol is treated as a base unit, <code>h</code>, which defaults to unity. The <code>Dataset.set_units</code> updates the <code>h</code> symbol to the correct value when loading a cosmological simulation.</p>
 <h2 id="user-friendliness">User-Friendliness</h2>
 <h3 id="publication-ready-figures">Publication-Ready Figures</h3>
-<h3 id="ipython-integration-and-html-guis">IPython Integration and HTML GUIs</h3>
+<h3 id="jupyter-integration">Jupyter Integration</h3>
 <h2 id="halo-finding-and-catalogs">Halo-Finding and Catalogs</h2>
 <h2 id="scaling-and-parallelism">Scaling and Parallelism</h2>
 <h3 id="performance-of-operations">Performance of Operations</h3>
 <h3 id="inline-analysis">Inline Analysis</h3>
 <h3 id="simple-parallelism">Simple Parallelism</h3>
 <h2 id="analysis-modules">Analysis Modules</h2>
+<h2 id="extensions-and-ecosystem">Extensions and Ecosystem</h2>
+<h3 id="trident">Trident</h3>
+<p>Trident <span class="citation" data-cites="1DgKJy4lE">[<a href="#ref-1DgKJy4lE">3</a>]</span> is a Python-based open-source tool for post-processing hydrodynamical simulations to produce synthetic absorption spectra and related data. In many ways, Trident is the first external package that utilizes <code>yt</code> to provide data access and numerical operations, but then builds on those to develop detailed, astrophysically-aware systems for processing and analyzing that data.</p>
+<h3 id="powderday">Powderday</h3>
+<p><span class="citation" data-cites="1CgEbr6CQ">[<a href="#ref-1CgEbr6CQ">4</a>]</span></p>
+<h3 id="ytree">ytree</h3>
 <h2 id="future-directions">Future Directions</h2>
 <h2 id="conclusions">Conclusions</h2>
 <h2 id="acknowledgments">Acknowledgments</h2>
@@ -323,6 +334,16 @@ dhimmel<br />
 <p>2. <strong>yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA</strong><br />
 Matthew J. Turk, Britton D. Smith, Jeffrey S. Oishi, Stephen Skory, Samuel W. Skillman, Tom Abel, Michael L. Norman<br />
 <em>The Astrophysical Journal Supplement Series</em> (2010-12-28) <a href="https://doi.org/10.1088/0067-0049/192/1/9" class="uri">https://doi.org/10.1088/0067-0049/192/1/9</a></p>
+</div>
+<div id="ref-1DgKJy4lE">
+<p>3. <strong>Trident: A Universal Tool for Generating Synthetic Absorption Spectra from Astrophysical Simulations</strong><br />
+Cameron B. Hummels, Britton D. Smith, Devin W. Silvia<br />
+<em>The Astrophysical Journal</em> (2017-09-20) <a href="https://doi.org/10.3847/1538-4357/aa7e2d" class="uri">https://doi.org/10.3847/1538-4357/aa7e2d</a></p>
+</div>
+<div id="ref-1CgEbr6CQ">
+<p>4. <strong>The formation of submillimetre-bright galaxies from gas infall over a billion years</strong><br />
+Desika Narayanan, Matthew Turk, Robert Feldmann, Thomas Robitaille, Philip Hopkins, Robert Thompson, Christopher Hayward, David Ball, Claude-André Faucher-Giguère, Dušan Kereš<br />
+<em>Nature</em> (2015-09) <a href="https://doi.org/10.1038/nature15383" class="uri">https://doi.org/10.1038/nature15383</a></p>
 </div>
 </div>
 <script>
