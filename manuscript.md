@@ -20,7 +20,7 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript was automatically generated
-from [yt-project/yt-3.0-paper@7766bed](https://github.com/yt-project/yt-3.0-paper/tree/7766bed1473e1a7ddf08d80fb3225e06e1d6035e)
+from [yt-project/yt-3.0-paper@0ca82c7](https://github.com/yt-project/yt-3.0-paper/tree/0ca82c7b2a12372b89f4324aaddfdd09dea96d13)
 on February 16, 2018.
 </em></small>
 
