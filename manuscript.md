@@ -2,8 +2,8 @@
 author-meta:
 - The yt Project
 - Matthew Turk
+- Nathan J Goldbaum
 - Add Yourself
-- Jane Roe
 date-meta: '2018-02-16'
 keywords:
 - markdown
@@ -20,7 +20,7 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript was automatically generated
-from [yt-project/yt-3.0-paper@0ca82c7](https://github.com/yt-project/yt-3.0-paper/tree/0ca82c7b2a12372b89f4324aaddfdd09dea96d13)
+from [yt-project/yt-3.0-paper@3b6020e](https://github.com/yt-project/yt-3.0-paper/tree/3b6020e22a41e9532b1bab0725886d2c6a3e1859)
 on February 16, 2018.
 </em></small>
 
@@ -52,20 +52,23 @@ on February 16, 2018.
      · Funded by Grant XXXXXXXX
   </small>
 
++ **Nathan J Goldbaum**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0001-5557-267X](https://orcid.org/0000-0001-5557-267X)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [ngoldbaum](https://github.com/ngoldbaum)
+    · ![Twitter icon](images/twitter.svg){height="13px" width="13px"}
+    [njgoldbaum](https://twitter.com/njgoldbaum)<br>
+  <small>
+     National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
+     · Funded by Grant XXXXXXX
+  </small>
+
 + **Add Yourself**<br>
     ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){height="13px" width="13px"}
     [yournamehere](https://github.com/yournamehere)<br>
-  <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
-  </small>
-
-+ **Jane Roe**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [janeroe](https://github.com/janeroe)<br>
   <small>
      Department of Something, University of Whatever; Department of Whatever, University of Something
   </small>

@@ -34,6 +34,21 @@
       ]
     },
     {
+      "github": "ngoldbaum",
+      "name": "Nathan J Goldbaum",
+      "initial": "NJG",
+      "orcid": "0000-0001-5557-267X",
+      "twitter": "njgoldbaum",
+      "email": "ngoldbau@illinois.edu",
+      "affiliations": [
+        "National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign"
+      ],
+      "funders": "Grant XXXXXXX",
+      "affiliation_numbers": [
+        4
+      ]
+    },
+    {
       "github": "yournamehere",
       "name": "Add Yourself",
       "initials": "YOU",
@@ -44,23 +59,8 @@
         "Department of Whatever, University of Something"
       ],
       "affiliation_numbers": [
-        4,
-        5
-      ]
-    },
-    {
-      "github": "janeroe",
-      "name": "Jane Roe",
-      "initials": "JR",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "email": "jane.roe@whatever.edu",
-      "affiliations": [
-        "Department of Something, University of Whatever",
-        "Department of Whatever, University of Something"
-      ],
-      "affiliation_numbers": [
-        4,
-        5
+        5,
+        6
       ]
     }
   ],
@@ -78,19 +78,23 @@
       "affiliation_number": 3
     },
     {
-      "affiliation": "Department of Something, University of Whatever",
+      "affiliation": "National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign",
       "affiliation_number": 4
     },
     {
-      "affiliation": "Department of Whatever, University of Something",
+      "affiliation": "Department of Something, University of Whatever",
       "affiliation_number": 5
+    },
+    {
+      "affiliation": "Department of Whatever, University of Something",
+      "affiliation_number": 6
     }
   ],
   "ci_source": {
     "repo_slug": "yt-project/yt-3.0-paper",
     "repo_owner": "yt-project",
     "repo_name": "yt-3.0-paper",
-    "commit": "0ca82c7b2a12372b89f4324aaddfdd09dea96d13"
+    "commit": "3b6020e22a41e9532b1bab0725886d2c6a3e1859"
   },
   "manuscript_stats": {
     "reference_counts": {
