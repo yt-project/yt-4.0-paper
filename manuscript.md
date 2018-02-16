@@ -4,7 +4,7 @@ author-meta:
 - Matthew Turk
 - Add Yourself
 - Jane Roe
-date-meta: '2018-02-15'
+date-meta: '2018-02-16'
 keywords:
 - markdown
 - publishing
@@ -21,7 +21,7 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 <small><em>
 This manuscript was automatically generated
 from [yt-project/yt-3.0-paper@88fad7e](https://github.com/yt-project/yt-3.0-paper/tree/88fad7e7ed86ed193005c9014ee0d7f36b30cb3b)
-on February 15, 2018.
+on February 16, 2018.
 </em></small>
 
 ## Authors
