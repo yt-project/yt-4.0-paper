@@ -20,7 +20,7 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript was automatically generated
-from [yt-project/yt-3.0-paper@88fad7e](https://github.com/yt-project/yt-3.0-paper/tree/88fad7e7ed86ed193005c9014ee0d7f36b30cb3b)
+from [yt-project/yt-3.0-paper@7766bed](https://github.com/yt-project/yt-3.0-paper/tree/7766bed1473e1a7ddf08d80fb3225e06e1d6035e)
 on February 16, 2018.
 </em></small>
 
@@ -802,7 +802,7 @@ the correct value when loading a cosmological simulation.
 
 ## User-Friendliness
 
-### Publication-Ready Figures}
+### Publication-Ready Figures
 
 ### IPython Integration and HTML GUIs
 
