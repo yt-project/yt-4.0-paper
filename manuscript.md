@@ -20,7 +20,7 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript was automatically generated
-from [yt-project/yt-3.0-paper@3b6020e](https://github.com/yt-project/yt-3.0-paper/tree/3b6020e22a41e9532b1bab0725886d2c6a3e1859)
+from [yt-project/yt-3.0-paper@30e3d75](https://github.com/yt-project/yt-3.0-paper/tree/30e3d75a8938267799f07b02a794547751370417)
 on February 16, 2018.
 </em></small>
 
@@ -78,6 +78,19 @@ on February 16, 2018.
 ## Abstract {.page_break_before}
 
 Abstract here!
+
+
+# Authorship Policy
+
+We note that the author list for this paper is, by design, extensive.  We have
+separated the authors into those that contributed to the text (whose names are
+ordered **somehow TBD**) and those that are members of the `yt` community.
+The authors from each group have been indicated in the respective author
+affiliations.
+
+This paper was developed collaboratively, using the Manubot
+[@cTN2TQIL] system for collaborating on and
+reviewing contributed text.
 
 
 ## Introduction {#sec:introduction}

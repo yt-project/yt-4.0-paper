@@ -128,5 +128,20 @@
     "container-title-short": "ApJS",
     "short_url": "https://doi.org/ft6md2",
     "id": "1GOm01ggN"
+  },
+  {
+    "URL": "https://github.com/greenelab/manubot",
+    "title": "greenelab/manubot",
+    "container-title": "GitHub",
+    "author": [
+      {
+        "family": "dhimmel",
+        "given": ""
+      }
+    ],
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-07-30 21:06:03",
+    "type": "webpage",
+    "id": "cTN2TQIL"
   }
 ]

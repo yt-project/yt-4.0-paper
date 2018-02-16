@@ -94,13 +94,14 @@
     "repo_slug": "yt-project/yt-3.0-paper",
     "repo_owner": "yt-project",
     "repo_name": "yt-3.0-paper",
-    "commit": "3b6020e22a41e9532b1bab0725886d2c6a3e1859"
+    "commit": "30e3d75a8938267799f07b02a794547751370417"
   },
   "manuscript_stats": {
     "reference_counts": {
       "doi": 1,
-      "total": 1
+      "url": 1,
+      "total": 2
     },
-    "word_count": 5484
+    "word_count": 5557
   }
 }
