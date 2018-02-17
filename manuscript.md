@@ -4,7 +4,7 @@ author-meta:
 - Matthew Turk
 - Nathan J Goldbaum
 - Add Yourself
-date-meta: '2018-02-16'
+date-meta: '2018-02-17'
 keywords:
 - markdown
 - publishing
@@ -20,8 +20,8 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript was automatically generated
-from [yt-project/yt-3.0-paper@e3fcc6a](https://github.com/yt-project/yt-3.0-paper/tree/e3fcc6a8e403a5123303c7daf027f5da9400a832)
-on February 16, 2018.
+from [yt-project/yt-3.0-paper@1ed7383](https://github.com/yt-project/yt-3.0-paper/tree/1ed7383a1818952b35f7b8d7ae23dcfcff7e73b0)
+on February 17, 2018.
 </em></small>
 
 ## Authors
@@ -869,7 +869,18 @@ processing and analyzing that data.
 
 ### ytree
 
+Building on `yt` for access to halo catalogs, and implementing a similar system
+for derived fields as applied to graph datasets, ytree
+[@VB3RIyxd] is a system for analyzing merger trees from
+analysis of dark matter halos in cosmological simulations.
 
+ytree provides flexibility in determining the path that a given analysis takes
+through the graph of merger trees; for instance, it enables the user to select
+if they wish to follow the "most massive" progenitor halo backwards in time, or
+even to set their own criteria for this.  Connecting this to the raw,
+unprocessed data from the simulation (such as the unsampled particle or cell
+content that comprises the halos) allows researchers to deepen and guide their
+analysis based on the physical characteristics of the merger history.
 
 
 ## Future Directions

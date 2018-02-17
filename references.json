@@ -537,6 +537,33 @@
     "id": "1DgKJy4lE"
   },
   {
+    "type": "article",
+    "id": "VB3RIyxd",
+    "author": [
+      {
+        "family": "Smith",
+        "given": "Britton"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          16
+        ]
+      ]
+    },
+    "abstract": "This release contains significant file i/o optimizations for the ytree frontend.",
+    "DOI": "10.5281/zenodo.1174374",
+    "page": "-",
+    "publisher": "Zenodo",
+    "title": "Brittonsmith/Ytree: Ytree Version 2.0.2 Release",
+    "URL": "https://doi.org/10.5281/zenodo.1174374",
+    "version": "ytree-2.0.2",
+    "short_url": "https://doi.org/gcx4x2"
+  },
+  {
     "URL": "https://github.com/greenelab/manubot",
     "title": "greenelab/manubot",
     "container-title": "GitHub",
