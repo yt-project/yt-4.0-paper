@@ -41,6 +41,15 @@ author_info:
       - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
     funders: Grant XXXXXXX
   -
+    github: chummels
+    name: Cameron Hummels
+    initials: CBH
+    orcid: 0000-0002-3817-8133
+    email: chummels@gmail.com
+    affiliations:
+       - Department of Theoretical Astrophysics, California Institute of Technology
+    funders: Grant XXXXXXX
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
