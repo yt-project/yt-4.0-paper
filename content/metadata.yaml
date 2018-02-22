@@ -49,3 +49,20 @@ author_info:
     twitter: astrojaz
     affiliations:
       - Harvard-Smithsonian Center for Astrophysics
+  -
+    github: chummels
+    name: Cameron Hummels
+    initials: CBH
+    orcid: 0000-0002-3817-8133
+    email: chummels@gmail.com
+    affiliations:
+       - Department of Theoretical Astrophysics, California Institute of Technology
+    funders: Grant XXXXXXX
+  -
+    github: yournamehere
+    name: Add Yourself
+    initials: YOU
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: you@example.com
+    affiliations:
+      - Your University
