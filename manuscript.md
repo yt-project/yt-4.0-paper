@@ -3,8 +3,10 @@ author-meta:
 - The yt Project
 - Matthew Turk
 - Nathan J Goldbaum
+- John A. ZuHone
+- Cameron Hummels
 - Add Yourself
-date-meta: '2018-02-17'
+date-meta: '2018-02-22'
 keywords:
 - markdown
 - publishing
@@ -20,8 +22,8 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript was automatically generated
-from [yt-project/yt-3.0-paper@1ed7383](https://github.com/yt-project/yt-3.0-paper/tree/1ed7383a1818952b35f7b8d7ae23dcfcff7e73b0)
-on February 17, 2018.
+from [yt-project/yt-3.0-paper@91c2f9f](https://github.com/yt-project/yt-3.0-paper/tree/91c2f9fb78d5f9b8f4bde716dce7ff4bc6254de9)
+on February 22, 2018.
 </em></small>
 
 ## Authors
@@ -64,13 +66,34 @@ on February 17, 2018.
      · Funded by Grant XXXXXXX
   </small>
 
++ **John A. ZuHone**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0003-3175-2347](https://orcid.org/0000-0003-3175-2347)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [jzuhone](https://github.com/jzuhone)
+    · ![Twitter icon](images/twitter.svg){height="13px" width="13px"}
+    [astrojaz](https://twitter.com/astrojaz)<br>
+  <small>
+     Harvard-Smithsonian Center for Astrophysics
+  </small>
+
++ **Cameron Hummels**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0002-3817-8133](https://orcid.org/0000-0002-3817-8133)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [chummels](https://github.com/chummels)<br>
+  <small>
+     Department of Theoretical Astrophysics, California Institute of Technology
+     · Funded by Grant XXXXXXX
+  </small>
+
 + **Add Yourself**<br>
     ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){height="13px" width="13px"}
     [yournamehere](https://github.com/yournamehere)<br>
   <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     Your University
   </small>
 
 

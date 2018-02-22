@@ -1,5 +1,5 @@
 {
-  "date": "February 17, 2018",
+  "date": "February 22, 2018",
   "authors": [
     {
       "github": "yt-project",
@@ -49,18 +49,44 @@
       ]
     },
     {
+      "github": "jzuhone",
+      "name": "John A. ZuHone",
+      "initials": "JAZ",
+      "orcid": "0000-0003-3175-2347",
+      "email": "john.zuhone@cfa.harvard.edu",
+      "twitter": "astrojaz",
+      "affiliations": [
+        "Harvard-Smithsonian Center for Astrophysics"
+      ],
+      "affiliation_numbers": [
+        5
+      ]
+    },
+    {
+      "github": "chummels",
+      "name": "Cameron Hummels",
+      "initials": "CBH",
+      "orcid": "0000-0002-3817-8133",
+      "email": "chummels@gmail.com",
+      "affiliations": [
+        "Department of Theoretical Astrophysics, California Institute of Technology"
+      ],
+      "funders": "Grant XXXXXXX",
+      "affiliation_numbers": [
+        6
+      ]
+    },
+    {
       "github": "yournamehere",
       "name": "Add Yourself",
       "initials": "YOU",
       "orcid": "XXXX-XXXX-XXXX-XXXX",
       "email": "you@example.com",
       "affiliations": [
-        "Department of Something, University of Whatever",
-        "Department of Whatever, University of Something"
+        "Your University"
       ],
       "affiliation_numbers": [
-        5,
-        6
+        7
       ]
     }
   ],
@@ -82,19 +108,23 @@
       "affiliation_number": 4
     },
     {
-      "affiliation": "Department of Something, University of Whatever",
+      "affiliation": "Harvard-Smithsonian Center for Astrophysics",
       "affiliation_number": 5
     },
     {
-      "affiliation": "Department of Whatever, University of Something",
+      "affiliation": "Department of Theoretical Astrophysics, California Institute of Technology",
       "affiliation_number": 6
+    },
+    {
+      "affiliation": "Your University",
+      "affiliation_number": 7
     }
   ],
   "ci_source": {
     "repo_slug": "yt-project/yt-3.0-paper",
     "repo_owner": "yt-project",
     "repo_name": "yt-3.0-paper",
-    "commit": "1ed7383a1818952b35f7b8d7ae23dcfcff7e73b0"
+    "commit": "91c2f9fb78d5f9b8f4bde716dce7ff4bc6254de9"
   },
   "manuscript_stats": {
     "reference_counts": {
