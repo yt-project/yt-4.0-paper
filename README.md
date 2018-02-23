@@ -16,8 +16,14 @@ if it becomes important.
 
 ## Authorship Policy
 
-This paper has an inclusive authorship policy, by design.  Authorship is not
-restricted to "yt project members" or to changeset authors.
+This paper has an inclusive authorship policy, by design.  
+
+**Authorship is not restricted to "yt project members" or to changeset
+authors.** 
+
+Involvement in the paper is based strictly on the honor-system; if you believe
+you have contributed to the community, to the code, or to the ecosystem
+surrounding yt, we invite you to participate in the authorship of the paper.
 
 If you would like to be an author on this paper, please follow these steps:
 
