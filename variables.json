@@ -1,5 +1,5 @@
 {
-  "date": "February 22, 2018",
+  "date": "February 26, 2018",
   "authors": [
     {
       "github": "yt-project",
@@ -77,6 +77,20 @@
       ]
     },
     {
+      "github": "jisuoqing",
+      "name": "Suoqing Ji",
+      "initials": "SJ",
+      "orcid": "0000-0001-9658-0588",
+      "email": "suoqing@physics.ucsb.edu",
+      "affiliations": [
+        "Physics Department, University of California Santa Barbara"
+      ],
+      "funders": "Grant XXXXXXX",
+      "affiliation_numbers": [
+        7
+      ]
+    },
+    {
       "github": "yournamehere",
       "name": "Add Yourself",
       "initials": "YOU",
@@ -86,7 +100,7 @@
         "Your University"
       ],
       "affiliation_numbers": [
-        7
+        8
       ]
     }
   ],
@@ -116,15 +130,19 @@
       "affiliation_number": 6
     },
     {
-      "affiliation": "Your University",
+      "affiliation": "Physics Department, University of California Santa Barbara",
       "affiliation_number": 7
+    },
+    {
+      "affiliation": "Your University",
+      "affiliation_number": 8
     }
   ],
   "ci_source": {
     "repo_slug": "yt-project/yt-3.0-paper",
     "repo_owner": "yt-project",
     "repo_name": "yt-3.0-paper",
-    "commit": "91c2f9fb78d5f9b8f4bde716dce7ff4bc6254de9"
+    "commit": "ba7902f2f9e4677a2c1d66ebe2536f88daa68a27"
   },
   "manuscript_stats": {
     "reference_counts": {

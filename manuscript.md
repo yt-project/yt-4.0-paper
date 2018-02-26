@@ -5,8 +5,9 @@ author-meta:
 - Nathan J Goldbaum
 - John A. ZuHone
 - Cameron Hummels
+- Suoqing Ji
 - Add Yourself
-date-meta: '2018-02-22'
+date-meta: '2018-02-26'
 keywords:
 - markdown
 - publishing
@@ -22,8 +23,8 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript was automatically generated
-from [yt-project/yt-3.0-paper@91c2f9f](https://github.com/yt-project/yt-3.0-paper/tree/91c2f9fb78d5f9b8f4bde716dce7ff4bc6254de9)
-on February 22, 2018.
+from [yt-project/yt-3.0-paper@ba7902f](https://github.com/yt-project/yt-3.0-paper/tree/ba7902f2f9e4677a2c1d66ebe2536f88daa68a27)
+on February 26, 2018.
 </em></small>
 
 ## Authors
@@ -84,6 +85,16 @@ on February 22, 2018.
     [chummels](https://github.com/chummels)<br>
   <small>
      Department of Theoretical Astrophysics, California Institute of Technology
+     · Funded by Grant XXXXXXX
+  </small>
+
++ **Suoqing Ji**<br>
+    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    [0000-0001-9658-0588](https://orcid.org/0000-0001-9658-0588)
+    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    [jisuoqing](https://github.com/jisuoqing)<br>
+  <small>
+     Physics Department, University of California Santa Barbara
      · Funded by Grant XXXXXXX
   </small>
 
