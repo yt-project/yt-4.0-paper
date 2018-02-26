@@ -59,6 +59,15 @@ author_info:
        - Department of Theoretical Astrophysics, California Institute of Technology
     funders: Grant XXXXXXX
   -
+    github: jisuoqing
+    name: Suoqing Ji
+    initials: SJ
+    orcid: 0000-0001-9658-0588
+    email: suoqing@physics.ucsb.edu
+    affiliations:
+       - Physics Department, University of California Santa Barbara
+    funders: Grant XXXXXXX
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
