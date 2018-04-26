@@ -15,4 +15,4 @@ This directory contains the following files, which are mostly ignored on the `ma
 ## Source
 
 The manuscripts in this directory were built from
-[`ba7902f2f9e4677a2c1d66ebe2536f88daa68a27`](https://github.com/yt-project/yt-3.0-paper/commit/ba7902f2f9e4677a2c1d66ebe2536f88daa68a27).
+[`5b136dbc4cbaee8e8f1d875d006994840c618b11`](https://github.com/yt-project/yt-3.0-paper/commit/5b136dbc4cbaee8e8f1d875d006994840c618b11).
