@@ -4,12 +4,12 @@
       "date-parts": [
         [
           2018,
-          2,
-          14
+          4,
+          11
         ]
       ],
-      "date-time": "2018-02-14T17:22:23Z",
-      "timestamp": 1518628943558
+      "date-time": "2018-04-11T08:02:25Z",
+      "timestamp": 1523433745438
     },
     "reference-count": 87,
     "publisher": "Springer Nature",
@@ -62,7 +62,7 @@
     "page": "496-499",
     "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 44,
+    "is-referenced-by-count": 49,
     "title": "The formation of submillimetre-bright galaxies from gas infall over a billion years",
     "prefix": "10.1038",
     "volume": "525",
@@ -192,12 +192,12 @@
       "date-parts": [
         [
           2018,
-          2,
-          14
+          4,
+          10
         ]
       ],
-      "date-time": "2018-02-14T07:42:26Z",
-      "timestamp": 1518594146020
+      "date-time": "2018-04-10T07:42:30Z",
+      "timestamp": 1523346150837
     },
     "reference-count": 54,
     "publisher": "IOP Publishing",
@@ -230,7 +230,7 @@
     },
     "page": "9",
     "source": "Crossref",
-    "is-referenced-by-count": 344,
+    "is-referenced-by-count": 357,
     "title": "yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA",
     "prefix": "10.1088",
     "volume": "192",
@@ -321,13 +321,13 @@
     "indexed": {
       "date-parts": [
         [
-          2017,
-          10,
-          28
+          2018,
+          4,
+          17
         ]
       ],
-      "date-time": "2017-10-28T01:02:24Z",
-      "timestamp": 1509152544958
+      "date-time": "2018-04-17T08:02:38Z",
+      "timestamp": 1523952158880
     },
     "reference-count": 92,
     "publisher": "American Astronomical Society",
@@ -388,7 +388,7 @@
     "page": "59",
     "update-policy": "http://dx.doi.org/10.1088/crossmark-policy",
     "source": "Crossref",
-    "is-referenced-by-count": 0,
+    "is-referenced-by-count": 1,
     "title": "Trident: A Universal Tool for Generating Synthetic Absorption Spectra from Astrophysical Simulations",
     "prefix": "10.3847",
     "volume": "847",
@@ -543,6 +543,10 @@
       {
         "family": "Smith",
         "given": "Britton"
+      },
+      {
+        "family": "Lang",
+        "given": "Meagan"
       }
     ],
     "issued": {
@@ -554,13 +558,12 @@
         ]
       ]
     },
-    "abstract": "This release contains significant file i/o optimizations for the ytree frontend.",
+    "abstract": "This is ytree, a yt extension for generating and working with merger-tree data. ytree supports:\n\n\n\t\n\tloading merger-tree data from Consistent-Trees, Rockstar, and LHaloTree formats\n\t\n\t\n\tcreating merger trees from Gadget's inline FOF/SUBFIND catalogs\n\t\n\t\n\tfast, on-demand loading of trees and fields\n\t\n\t\n\tsymbolic units, derived fields, and alias fields\n\t\n\t\n\tsaving trees to a universal format",
     "DOI": "10.5281/zenodo.1174374",
     "page": "-",
     "publisher": "Zenodo",
-    "title": "Brittonsmith/Ytree: Ytree Version 2.0.2 Release",
+    "title": "Ytree: Merger-Tree Toolkit",
     "URL": "https://doi.org/10.5281/zenodo.1174374",
-    "version": "ytree-2.0.2",
     "short_url": "https://doi.org/gcx4x2"
   },
   {

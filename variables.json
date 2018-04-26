@@ -1,5 +1,5 @@
 {
-  "date": "February 26, 2018",
+  "date": "April 26, 2018",
   "authors": [
     {
       "github": "yt-project",
@@ -142,7 +142,7 @@
     "repo_slug": "yt-project/yt-3.0-paper",
     "repo_owner": "yt-project",
     "repo_name": "yt-3.0-paper",
-    "commit": "ba7902f2f9e4677a2c1d66ebe2536f88daa68a27"
+    "commit": "5b136dbc4cbaee8e8f1d875d006994840c618b11"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -150,6 +150,6 @@
       "url": 1,
       "total": 5
     },
-    "word_count": 5765
+    "word_count": 5783
   }
 }

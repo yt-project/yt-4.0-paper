@@ -7,7 +7,7 @@ author-meta:
 - Cameron Hummels
 - Suoqing Ji
 - Add Yourself
-date-meta: '2018-02-26'
+date-meta: '2018-04-26'
 keywords:
 - markdown
 - publishing
@@ -23,8 +23,8 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript was automatically generated
-from [yt-project/yt-3.0-paper@ba7902f](https://github.com/yt-project/yt-3.0-paper/tree/ba7902f2f9e4677a2c1d66ebe2536f88daa68a27)
-on February 26, 2018.
+from [yt-project/yt-3.0-paper@5b136db](https://github.com/yt-project/yt-3.0-paper/tree/5b136dbc4cbaee8e8f1d875d006994840c618b11)
+on April 26, 2018.
 </em></small>
 
 ## Authors
@@ -125,6 +125,11 @@ affiliations.
 This paper was developed collaboratively, using the Manubot
 [@cTN2TQIL] system for collaborating on and
 reviewing contributed text.
+
+> 
+> To add yourself to the author list, please follow the instructions in our
+> [README](https://github.com/yt-project/yt-3.0-paper/blob/master/README.md#authorship-policy).
+> 
 
 
 ## Introduction {#sec:introduction}
