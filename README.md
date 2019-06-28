@@ -1,6 +1,8 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/yt-project/yt-3.0-paper/tree/gh-pages) branch hosts the contents of this directory at https://yt-project.github.io/yt-3.0-paper/.
+The permalink for this webpage version is https://yt-project.github.io/yt-3.0-paper/v/3670b8da7b3705bb75d2a56a3225c0e455f8373b/.
+To redirect to the permalink for the latest manuscript version at anytime, use the link https://yt-project.github.io/yt-3.0-paper/v/freeze/.
 
 ## Files
 
@@ -9,10 +11,29 @@ This directory contains the following files, which are mostly ignored on the `ma
 + [`index.html`](index.html) is an HTML manuscript.
 + [`github-pandoc.css`](github-pandoc.css) sets the display style for `index.html`.
 + [`manuscript.pdf`](manuscript.pdf) is a PDF manuscript.
-+ `*.ots` files are OpenTimestamps which can be used to verify manuscript existence at or before a given time.
-  [OpenTimestamps](opentimestamps.org) uses the Bitcoin blockchain to attest to file hash existence.
+
+The `v` directory contains directories for each manuscript version.
+In general, a version is identified by the commit hash of the source content that created it.
+
+### Timestamps
+
+The `*.ots` files in version directories are OpenTimestamps which can be used to verify manuscript existence at or before a given time.
+[OpenTimestamps](https://opentimestamps.org/) uses the Bitcoin blockchain to attest to file hash existence.
+The `deploy.sh` script run during continuous deployment creates the `.ots` files.
+There is a delay before timestamps get confirmed by a Bitcoin block.
+Therefore, `.ots` files are initially incomplete and should be upgraded at a later time, so that they no longer rely on the availability of a calendar server to verify.
+`webpage.py`, which is run during continuous deployment, identifies files matched by `webpage/v/**/*.ots` and attempts to upgrade them.
+You can also manually upgrade timestamps, by running the following in the `gh-pages` branch:
+
+```sh
+ots upgrade v/*/*.ots
+rm v/*/*.ots.bak
+git add v/*/*.ots
+```
+
+Verifying timestamps with the `ots verify` command requires running a local bitcoin node with JSON-RPC configured, at this time.
 
 ## Source
 
 The manuscripts in this directory were built from
-[`5b136dbc4cbaee8e8f1d875d006994840c618b11`](https://github.com/yt-project/yt-3.0-paper/commit/5b136dbc4cbaee8e8f1d875d006994840c618b11).
+[`3670b8da7b3705bb75d2a56a3225c0e455f8373b`](https://github.com/yt-project/yt-3.0-paper/commit/3670b8da7b3705bb75d2a56a3225c0e455f8373b).
