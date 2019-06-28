@@ -7,7 +7,7 @@ author-meta:
 - Cameron Hummels
 - Suoqing Ji
 - Add Yourself
-date-meta: '2018-04-26'
+date-meta: '2019-06-28'
 keywords:
 - markdown
 - publishing
@@ -22,9 +22,11 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 
 <small><em>
-This manuscript was automatically generated
-from [yt-project/yt-3.0-paper@5b136db](https://github.com/yt-project/yt-3.0-paper/tree/5b136dbc4cbaee8e8f1d875d006994840c618b11)
-on April 26, 2018.
+This manuscript
+([permalink](https://yt-project.github.io/yt-3.0-paper/v/3670b8da7b3705bb75d2a56a3225c0e455f8373b/))
+was automatically generated
+from [yt-project/yt-3.0-paper@3670b8d](https://github.com/yt-project/yt-3.0-paper/tree/3670b8da7b3705bb75d2a56a3225c0e455f8373b)
+on June 28, 2019.
 </em></small>
 
 ## Authors
@@ -32,11 +34,11 @@ on April 26, 2018.
 
 
 + **The yt Project**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    · ![GitHub icon](images/github.svg){.inline_icon}
     [yt-project](https://github.com/yt-project)
-    · ![Twitter icon](images/twitter.svg){height="13px" width="13px"}
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
     [yt_astro](https://twitter.com/yt_astro)<br>
   <small>
      NumFOCUS
@@ -44,11 +46,11 @@ on April 26, 2018.
   </small>
 
 + **Matthew Turk**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    ![ORCID icon](images/orcid.svg){.inline_icon}
     [0000-0002-5294-0198](https://orcid.org/0000-0002-5294-0198)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    · ![GitHub icon](images/github.svg){.inline_icon}
     [MatthewTurk](https://github.com/MatthewTurk)
-    · ![Twitter icon](images/twitter.svg){height="13px" width="13px"}
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
     [powersoffour](https://twitter.com/powersoffour)<br>
   <small>
      School of Information Sciences, University of Illinois at Urbana-Champaign; Department of Astronomy, University of Illinois at Urbana-Champaign
@@ -56,11 +58,11 @@ on April 26, 2018.
   </small>
 
 + **Nathan J Goldbaum**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    ![ORCID icon](images/orcid.svg){.inline_icon}
     [0000-0001-5557-267X](https://orcid.org/0000-0001-5557-267X)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    · ![GitHub icon](images/github.svg){.inline_icon}
     [ngoldbaum](https://github.com/ngoldbaum)
-    · ![Twitter icon](images/twitter.svg){height="13px" width="13px"}
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
     [njgoldbaum](https://twitter.com/njgoldbaum)<br>
   <small>
      National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
@@ -68,20 +70,20 @@ on April 26, 2018.
   </small>
 
 + **John A. ZuHone**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    ![ORCID icon](images/orcid.svg){.inline_icon}
     [0000-0003-3175-2347](https://orcid.org/0000-0003-3175-2347)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    · ![GitHub icon](images/github.svg){.inline_icon}
     [jzuhone](https://github.com/jzuhone)
-    · ![Twitter icon](images/twitter.svg){height="13px" width="13px"}
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
     [astrojaz](https://twitter.com/astrojaz)<br>
   <small>
      Harvard-Smithsonian Center for Astrophysics
   </small>
 
 + **Cameron Hummels**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    ![ORCID icon](images/orcid.svg){.inline_icon}
     [0000-0002-3817-8133](https://orcid.org/0000-0002-3817-8133)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    · ![GitHub icon](images/github.svg){.inline_icon}
     [chummels](https://github.com/chummels)<br>
   <small>
      Department of Theoretical Astrophysics, California Institute of Technology
@@ -89,9 +91,9 @@ on April 26, 2018.
   </small>
 
 + **Suoqing Ji**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    ![ORCID icon](images/orcid.svg){.inline_icon}
     [0000-0001-9658-0588](https://orcid.org/0000-0001-9658-0588)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    · ![GitHub icon](images/github.svg){.inline_icon}
     [jisuoqing](https://github.com/jisuoqing)<br>
   <small>
      Physics Department, University of California Santa Barbara
@@ -99,9 +101,9 @@ on April 26, 2018.
   </small>
 
 + **Add Yourself**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    ![ORCID icon](images/orcid.svg){.inline_icon}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    · ![GitHub icon](images/github.svg){.inline_icon}
     [yournamehere](https://github.com/yournamehere)<br>
   <small>
      Your University
@@ -925,6 +927,12 @@ analysis based on the physical characteristics of the merger history.
 ## Future Directions
 
 
+## References {.page_break_before}
+
+<!-- Explicitly insert bibliography here -->
+<div id="refs"></div>
+
+
 ## Conclusions
 
 
@@ -940,9 +948,3 @@ We particularly thank KIPAC and SLAC at Stanford, the University of California
 at San Diego and Santa Cruz, the High-Performance Astro Computing Center,
 Columbia University, the University of Illinois, University of Colorado at
 Boulder, University of Edinburgh, the scientific python community, NumFOCUS, 
-
-
-## References {.page_break_before}
-
-<!-- Explicitly insert bibliography here -->
-<div id="refs"></div>
