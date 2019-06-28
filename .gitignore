@@ -2,7 +2,11 @@
 output/*
 !output/README.md
 
-webpage/*.ots
+webpage/v
+
+# When PDF building fails, a temporary symlink named images in the root
+# directory is not removed.
+/images
 
 # Manubot cache directory
 ci/cache
@@ -17,3 +21,20 @@ __pycache__/
 # Misc temporary files
 *.bak
 
+# System specific files
+
+## Linux
+*~
+.Trash-*
+
+## macOS
+.DS_Store
+._*
+.Trashes
+
+## Windows
+Thumbs.db
+[Dd]esktop.ini
+
+## Text Editors
+.vscode

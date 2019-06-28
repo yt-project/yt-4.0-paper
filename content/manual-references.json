@@ -1,14 +1,14 @@
 [
 {
+  "id": "url:https://github.com/manubot/rootstock",
   "type": "webpage",
-  "standard_citation": "url:https://github.com/greenelab/manubot-rootstock",
-  "URL": "https://github.com/greenelab/manubot-rootstock",
-  "title": "greenelab/manubot-rootstock GitHub repository",
+  "URL": "https://github.com/manubot/rootstock",
+  "title": "manubot/rootstock GitHub repository",
   "container-title": "GitHub",
   "issued": {
     "date-parts": [
       [
-        2017
+        2019
       ]
     ]
   },

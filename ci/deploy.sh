@@ -1,23 +1,25 @@
-# Exit on errors
-set -o errexit
+#!/usr/bin/env bash
+
+## deploy.sh: run during a Travis CI build to deploy manuscript outputs to the output and gh-pages branches on GitHub.
+
+# Set options for extra caution & debugging
+set -o errexit \
+    -o nounset \
+    -o pipefail
 
 # Add commit hash to the README
-export OWNER_NAME=`dirname $TRAVIS_REPO_SLUG`
-export REPO_NAME=`basename $TRAVIS_REPO_SLUG`
+OWNER_NAME="$(dirname "$TRAVIS_REPO_SLUG")"
+REPO_NAME="$(basename "$TRAVIS_REPO_SLUG")"
+export OWNER_NAME REPO_NAME
 envsubst < webpage/README.md > webpage/README-complete.md
 mv webpage/README-complete.md webpage/README.md
 
-# Generate OpenTimestamps
-ots stamp \
-  webpage/index.html \
-  webpage/manuscript.pdf
-
 # Configure git
 git config --global push.default simple
-git config --global user.email `git log --max-count=1 --format='%ae'`
-git config --global user.name `git log --max-count=1 --format='%an'`
-git checkout $TRAVIS_BRANCH
-git remote set-url origin git@github.com:$TRAVIS_REPO_SLUG.git
+git config --global user.email "$(git log --max-count=1 --format='%ae')"
+git config --global user.name "$(git log --max-count=1 --format='%an')"
+git checkout "$TRAVIS_BRANCH"
+git remote set-url origin "git@github.com:$TRAVIS_REPO_SLUG.git"
 
 # Decrypt and add SSH key
 openssl aes-256-cbc \
@@ -25,7 +27,7 @@ openssl aes-256-cbc \
   -iv $encrypted_f3f0c3c42ca0_iv \
   -in ci/deploy.key.enc \
   -out ci/deploy.key -d
-eval `ssh-agent -s`
+eval "$(ssh-agent -s)"
 chmod 600 ci/deploy.key
 ssh-add ci/deploy.key
 
@@ -34,16 +36,28 @@ ssh-add ci/deploy.key
 git remote set-branches --add origin gh-pages output
 git fetch origin gh-pages:gh-pages output:output
 
+# Configure versioned webpage
+python build/webpage.py \
+  --no-ots-cache \
+  --checkout=gh-pages \
+  --version="$TRAVIS_COMMIT"
+
+# Generate OpenTimestamps
+ots stamp "webpage/v/$TRAVIS_COMMIT/index.html"
+if [ "${BUILD_PDF:-}" != "false" ]; then
+  ots stamp "webpage/v/$TRAVIS_COMMIT/manuscript.pdf"
+fi
+
 # Commit message
 MESSAGE="\
-`git log --max-count=1 --format='%s'`
+$(git log --max-count=1 --format='%s')
 
 This build is based on
 https://github.com/$TRAVIS_REPO_SLUG/commit/$TRAVIS_COMMIT.
 
 This commit was created by the following Travis CI build and job:
-https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID
-https://travis-ci.org/$TRAVIS_REPO_SLUG/jobs/$TRAVIS_JOB_ID
+$TRAVIS_BUILD_WEB_URL
+$TRAVIS_JOB_WEB_URL
 
 [ci skip]
 

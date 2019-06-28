@@ -60,7 +60,8 @@ credited as such.
 
 Manubot is a system for writing scholarly manuscripts via GitHub.
 Manubot automates citations and references, versions manuscripts using git, and enables collaborative writing via GitHub.
-The [Manubot Rootstock repository](https://git.io/vQSvo) is a general purpose template for creating new Manubot instances, as detailed in [`SETUP.md`](SETUP.md).
+An [overview manuscript](https://greenelab.github.io/meta-review/ "Open collaborative writing with Manubot") presents the benefits of collaborative writing with Manubot and its unique features.
+The [rootstock repository](https://git.io/fhQH1) is a general purpose template for creating new Manubot instances, as detailed in [`SETUP.md`](SETUP.md).
 See [`USAGE.md`](USAGE.md) for documentation how to write a manuscript.
 
 Please open [an issue](https://github.com/yt-project/yt-3.0-paper/issues) for questions related to Manubot usage, bug reports, or general inquiries.
@@ -87,16 +88,25 @@ Then, you can build the manuscript on POSIX systems by running the following com
 # Activate the manubot conda environment (assumes conda version >= 4.4)
 conda activate manubot
 
-# Build the manuscript
-sh build/build.sh
+# Build the manuscript, saving outputs to the output directory
+bash build/build.sh
 
-# Or monitor the content directory, and automatically rebuild the manuscript
-# when a change is detected.
-sh build/autobuild.sh
+# At this point, the HTML & PDF outputs will have been created. The remaining
+# commands are for serving the webpage to view the HTML manuscript locally.
+
+# Configure the webpage directory
+python build/webpage.py
 
 # View the manuscript locally at http://localhost:8000/
 cd webpage
 python -m http.server
+```
+
+Sometimes it's helpful to monitor the content directory and automatically rebuild the manuscript when a change is detected.
+The following command, while running, will trigger both the `build.sh` and `webpage.py` scripts upon content changes:
+
+```sh
+bash build/autobuild.sh
 ```
 
 ### Continuous Integration
