@@ -10,8 +10,9 @@
   <meta name="author" content="John A. ZuHone" />
   <meta name="author" content="Cameron Hummels" />
   <meta name="author" content="Suoqing Ji" />
+  <meta name="author" content="Meagan Lang" />
   <meta name="author" content="Add Yourself" />
-  <meta name="dcterms.date" content="2019-06-28" />
+  <meta name="dcterms.date" content="2019-07-17" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Introducing yt 3.0: Analysis and Visualization of Volumetric Data</title>
   <style>
@@ -91,7 +92,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header">
 <h1 class="title">Introducing yt 3.0: Analysis and Visualization of Volumetric Data</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://yt-project.github.io/yt-3.0-paper/v/3670b8da7b3705bb75d2a56a3225c0e455f8373b/">permalink</a>) was automatically generated from <a href="https://github.com/yt-project/yt-3.0-paper/tree/3670b8da7b3705bb75d2a56a3225c0e455f8373b">yt-project/yt-3.0-paper@3670b8d</a> on June 28, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://yt-project.github.io/yt-3.0-paper/v/101d45365d9f74f9fc0fae60bad97e2ddfb3132f/">permalink</a>) was automatically generated from <a href="https://github.com/yt-project/yt-3.0-paper/tree/101d45365d9f74f9fc0fae60bad97e2ddfb3132f">yt-project/yt-3.0-paper@101d453</a> on July 17, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>The yt Project</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/yt-project">yt-project</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/yt_astro">yt_astro</a><br> <small> NumFOCUS · Funded by Grant XXXXXXXX </small></p></li>
@@ -100,6 +101,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p><strong>John A. ZuHone</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-3175-2347">0000-0003-3175-2347</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/jzuhone">jzuhone</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/astrojaz">astrojaz</a><br> <small> Harvard-Smithsonian Center for Astrophysics </small></p></li>
 <li><p><strong>Cameron Hummels</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0002-3817-8133">0000-0002-3817-8133</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/chummels">chummels</a><br> <small> Department of Theoretical Astrophysics, California Institute of Technology · Funded by Grant XXXXXXX </small></p></li>
 <li><p><strong>Suoqing Ji</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0001-9658-0588">0000-0001-9658-0588</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/jisuoqing">jisuoqing</a><br> <small> Physics Department, University of California Santa Barbara · Funded by Grant XXXXXXX </small></p></li>
+<li><p><strong>Meagan Lang</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0002-2058-2816">0000-0002-2058-2816</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/langmm">langmm</a><br> <small> National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign · Funded by Grant XXXXXXX </small></p></li>
 <li><p><strong>Add Yourself</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/yournamehere">yournamehere</a><br> <small> Your University </small></p></li>
 </ul>
 <h2 id="abstract" class="page_break_before">Abstract</h2>
@@ -171,6 +173,115 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3 id="sph-analysis">SPH Analysis</h3>
 <h3 id="unstructured-mesh-analysis">Unstructured Mesh Analysis</h3>
 <h3 id="sec:noncartesian">Non-Cartesian Coordinates</h3>
+<h2 id="sec:point_indexing">Indexing Discrete-Point Datasets</h2>
+<p>Advances in both hardware and software facilitate astrophysical datasets of growing complexity and size. The datasets produced by numerical simulations can currently reach sizes of $$100 Tbytes split across hundreds of files <span class="citation" data-cites="16PxHyMVP">[<a href="#ref-16PxHyMVP" role="doc-biblioref">3</a>]</span>. For even simple analysis tasks, the cost of incrementally reading datasets this large into memory is quite high. This problem is not limited to theoretical work. During operations the Large Synoptic Survey Telescope (LSST) will produce 15 Tbytes of data each night <span class="citation" data-cites="OUQuy4C8">[<a href="#ref-OUQuy4C8" role="doc-biblioref">4</a>]</span>. In order to analyze such large datasets, we need innovative techniques for quickly indexing and selecting data without loading the entire dataset into memory. We present a technique for using Morton bitmap indexes to map files and accelerate data analysis.</p>
+<h3 id="sec:bitmap_theory">Theory and Background</h3>
+<h4 id="domain-partitioning-between-files">Domain Partitioning Between Files</h4>
+<p>A common analysis task is the selection of data within a subset of the full domain; we use the term "selector" to refer to the selection operator. If the dataset is split across multiple files, either due to size constraints or to allow for parallel I/O, such selections require every file to be loaded and parsed in order to assemble all of the data within the selection criteria. This process can be very costly in terms of both the memory required to store the data and the time required to read each file. However, if the contents of the files are mapped in advanced, only the files touched by the selection will need to be loaded. This is particularly effective for partitioning schemes that are localized within the domain. If each file contains data that are localized to one part of the domain, selections of contiguous sub-sections within the domain will require fewer files to be loaded. Figure <a href="#fig:files">1</a> shows four examples of possible partitions of a two-dimensional spatial domain split equally between 8 files.</p>
+<figure>
+<img src="images/bitmap/files.png" alt="Figure 1: Examples of four different schemes for partitioning a 2D domain between 8 files. Each color represents a different file." id="fig:files" /><figcaption><span>Figure 1:</span> Examples of four different schemes for partitioning a 2D domain between 8 files. Each color represents a different file.</figcaption>
+</figure>
+<p>Panel (a) is an example where random parts of the domain are contained within each file. In such a case, many files will need to be loaded for contiguous selections within the domain. In panel (b), the domain was split between the files along the <span class="math inline">\(x\)</span> dimension. Fewer files will need to be loaded for queries along the <span class="math inline">\(y\)</span>-dimension, but contiguous selection in <span class="math inline">\(x\)</span> will still require a greater number of files since the partition is not well localized in that dimension. Panels (c) and (d) are both examples of partitioning the domain between the files along a space filling curve <span class="citation" data-cites="1Qfg818r TCp1VkBF">[<a href="#ref-1Qfg818r" role="doc-biblioref">5</a>,<a href="#ref-TCp1VkBF" role="doc-biblioref">6</a>]</span>. These partitions have the greatest chance of limiting the number of files that must be loaded for a contiguous selection with slightly improved localization for the Hilbert curve. Consequently, Hilbert curves have also been used for load-balancing in parallel simulation codes like Gadget-2 <span class="citation" data-cites="iAgWKzbq">[<a href="#ref-iAgWKzbq" role="doc-biblioref">7</a>]</span> and RAMSES <span class="citation" data-cites="f64usKAm">[<a href="#ref-f64usKAm" role="doc-biblioref">8</a>]</span>.</p>
+<p>Figure <a href="#fig:selector1">2</a> shows examples of three selections within the above domain partitions.</p>
+<figure>
+<img src="images/bitmap/selector1.png" alt="Figure 2: Examples of file selection for four different domain partitions and three different shaded selectors. The number of files above each images is the number of files that must be loaded in order to get all of the data within the selected region." id="fig:selector1" /><figcaption><span>Figure 2:</span> Examples of file selection for four different domain partitions and three different shaded selectors. The number of files above each images is the number of files that must be loaded in order to get all of the data within the selected region.</figcaption>
+</figure>
+<figure>
+<img src="images/bitmap/selector5.png" alt="Figure 3: Examples of file selection for four different domain partitions and three different shaded selectors. The number of files above each images is the number of files that must be loaded in order to get all of the data within the selected region." id="fig:selector5" /><figcaption><span>Figure 3:</span> Examples of file selection for four different domain partitions and three different shaded selectors. The number of files above each images is the number of files that must be loaded in order to get all of the data within the selected region.</figcaption>
+</figure>
+<figure>
+<img src="images/bitmap/selector4.png" alt="Figure 4: Examples of file selection for four different domain partitions and three different shaded selectors. The number of files above each images is the number of files that must be loaded in order to get all of the data within the selected region." id="fig:selectors4" /><figcaption><span>Figure 4:</span> Examples of file selection for four different domain partitions and three different shaded selectors. The number of files above each images is the number of files that must be loaded in order to get all of the data within the selected region.</figcaption>
+</figure>
+<p>For the smallest selector (first row), the random domain decomposition (a) already requires half of the files to be loaded while more localized schemes require much fewer. Similarly, while the sliced domain partition (b), requires the fewest files to be loaded when the selector is oriented in the same direction as the slicing (second row), it requires <em>all</em> of the files when the selector is perpendicular to the slicing (third row). While some datasets may have information on the domain range covered by each file, the partitioning scheme used for simulation output is often decided at runtime, can be system dependent, and may be imperfect.</p>
+<p>Files are often partitioned for parallel I/O such that each processor outputs data on the portion of the domain it is responsible for processing. To limit the cost of communication between processors, the domain will be split across processors such that neighboring processors are responsible for neighboring parts of the domain. This means that, although the overall partitioning scheme may be known for a given dataset, the exact order of the files will be dependent on the configuration of the processors at runtime.</p>
+<p>The partitioning can also be imperfect if the domain decomposition is not perfect at the time of output. For instance, in astrophysical N-body simulations, it is possible for particles to travel from one processor’s domain to another. In this case, the partition will only be perfect directly following an update to the domain decomposition.</p>
+<p>In cases where the exact file organization is not known or imperfect, it is advantageous to map the files post-process in order to speed up selections for analysis. Although the same result can be achieved by re-sorting the data itself, creating the map can be less computationally less expensive than re-sorting the data, can be saved for use with multiple selections, and does not required write access; this is typically not feasible, especially in the case of datasets shared by large, distributed communities.</p>
+<h2 id="morton-indices">Morton Indices</h2>
+<p>Morton ordering maps multidimensional data onto a one-dimensional space filling curve <span class="citation" data-cites="1Qfg818r">[<a href="#ref-1Qfg818r" role="doc-biblioref">5</a>]</span>. This is done by breaking up the domain into cells where each cell’s position within the <span class="math inline">\(N\)</span>-dimensional domain can be described by <span class="math inline">\(N\)</span> integers. The Morton index of the cell is then created by interleaving the bits of the <span class="math inline">\(N\)</span> integers to create a single integer that fully describes the cell’s position (see panel (b) Figure <a href="#fig:zorder">5</a>). As seen in panel (a) of Figure <a href="#fig:zorder">5</a>, ordering of the cells by their Morton indices forms a space filling Z-curve.</p>
+<figure>
+<img src="images/bitmap/zorder.png" alt="Figure 5: Example of 3rd order Morton curve in two dimensions. The bits of the x and y indices are interleaved to generate a single integer that fully describes the cell’s location within the two-dimensional domain to within 1/2^{3}th of the domain in each dimension." id="fig:zorder" /><figcaption><span>Figure 5:</span> Example of 3rd order Morton curve in two dimensions. The bits of the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> indices are interleaved to generate a single integer that fully describes the cell’s location within the two-dimensional domain to within <span class="math inline">\(1/2^{3}\)</span>th of the domain in each dimension.</figcaption>
+</figure>
+<p>The precision of a single Morton index is only limited by the size of the integer used to store it. For instance, 64-bit Morton indices in 3 dimensions can be localized to <span class="math inline">\(1/2^{21}\)</span>th of the domain in each dimension (<span class="math inline">\(3\times21\)</span> bits = 63 bits). If the domain is binarily divided into subcells to some order <span class="math inline">\(k\)</span> in each dimension (i.e. <span class="math inline">\(2^{Nk}\)</span> cells), coarser Morton indices can be obtained by simply masking lower bits. Morton ordering has been used to speed up quadtree construction <span class="citation" data-cites="xgKPq1ZP">[<a href="#ref-xgKPq1ZP" role="doc-biblioref">9</a>]</span>, nearest neighbor searches <span class="citation" data-cites="xegdsQsV">[<a href="#ref-xegdsQsV" role="doc-biblioref">10</a>]</span>, and range queries <span class="citation" data-cites="5xMntkfV">[<a href="#ref-5xMntkfV" role="doc-biblioref">11</a>]</span>. By recording the indices of the cells containing data from each file within a dataset, Morton indices can also be used to construct one-dimensional maps of an <span class="math inline">\(N\)</span>-dimensional dataset that can be represented as bitmaps.</p>
+<h4 id="bitmaps-ewah-compression">Bitmaps &amp; EWAH Compression</h4>
+<p>Bitmap indexes use the values of single bits within an array of bits to describe dataset properties. This form requires minimal memory and can be filtered using computationally inexpensive boolean operations. Bitmap indexes have long been popular for use with large data warehouses <span class="citation" data-cites="pD21Clif j5G2aK4G DjdlyjdU">[<a href="#ref-pD21Clif" role="doc-biblioref">12</a>,<a href="#ref-j5G2aK4G" role="doc-biblioref">13</a>,<a href="#ref-DjdlyjdU" role="doc-biblioref">14</a>]</span>. However, as scientific datasets have become larger and more complex, they have also begun to gain traction in a diverse array of scientific fields including geosciences <span class="citation" data-cites="knRC0GG3">[<a href="#ref-knRC0GG3" role="doc-biblioref">15</a>]</span>, earth sciences, rocket science <span class="citation" data-cites="oQYioniZ R2YXMXP5">[<a href="#ref-oQYioniZ" role="doc-biblioref">16</a>,<a href="#ref-R2YXMXP5" role="doc-biblioref">17</a>]</span>, high-energy physics <span class="citation" data-cites="OPgGF8mv">[<a href="#ref-OPgGF8mv" role="doc-biblioref">18</a>]</span>, and combustion <span class="citation" data-cites="f4xkZqfp">[<a href="#ref-f4xkZqfp" role="doc-biblioref">19</a>]</span>.</p>
+<p>In cases where data attributes can take on a finite set of values, one bitmap is constructed for each possible attribute value. Within the bitmap each bit specifies whether or not the corresponding data point has that value. In this way, queries for data with a single attribute value require consulting only one bitmap and queries of multiple attributes/values can be done using boolean AND operations on the corresponding bitmaps. In the case of scientific data, which often contains floating point value attributes, the attributes must be binned prior to constructing the bitmaps <span class="citation" data-cites="4bva9JK3 1AiUmiNA7 UNfYz0dl">[<a href="#ref-4bva9JK3" role="doc-biblioref">20</a>,<a href="#ref-1AiUmiNA7" role="doc-biblioref">21</a>,<a href="#ref-UNfYz0dl" role="doc-biblioref">22</a>]</span>. Here, Morton indices are used to bin N-dimensional floating point data onto one-dimension. As a result, each file can be described by one bitmap.</p>
+<p>For each file within a dataset, the Morton indices touched by the data within that file can then be stored in a bitmap index for future searches where the value of bit <span class="math inline">\(j\)</span> indicates whether or not Morton index <span class="math inline">\(j\)</span> is touched by the file in question. For Morton indexing of order <span class="math inline">\(k\)</span>, this would result in a bitmap of length <span class="math inline">\(2^{Nk}\)</span> bits per file. For large bitmaps, this can become costly in terms of memory and the time required to perform bitmap operations. However, Enhanced Word-Aligned Hybrid (EWAH) compression can be used to limit these costs, particularly when the domain is densely or sparsely populated in localized regions <span class="citation" data-cites="yPRtMEPZ VG0Kch70 nAqaxrJx">[<a href="#ref-yPRtMEPZ" role="doc-biblioref">23</a>,<a href="#ref-VG0Kch70" role="doc-biblioref">24</a>,<a href="#ref-nAqaxrJx" role="doc-biblioref">25</a>]</span>.</p>
+<p>An EWAH compressed bitmap will be smaller when there are long sequences, or “runs,” of identical values. This means that an EWAH compressed bitmap will be smallest if either all or none of its bits are set. An uncompressed bitmap would require the same, maximum, amount of memory in both of these cases. The locality of Morton indices takes advantage of the EWAH compression. If there are regions of the domain that are densely/sparsely populated, there Z-order space filling curve ensures that the bits denoting those regions will be adjacent, increasing the likelihood that there will be runs of identical (set/unset) bits and limiting the size of the compressed bitmaps.</p>
+<h4 id="collisions">Collisions</h4>
+<p>It is possible that two files will contain data within the same Morton cell. This would mean that any time that cell is touched by a selection, both files would need to be loaded even if the selection only touches data from one of the files. Figure <a href="#fig:collision">6</a> provides an example of collisions between two files. In panel (a) of Figure <a href="#fig:collision">6</a>, purple cells are those that contain data from both files, a collision, for a 3rd order Morton index. Any selector that contained one of those cells would need to load all of the data from both files, even if it only selected part of the cell. Where the data is highly-concentrated in a central region (for instance, in a galaxy formation simulation with particles centrally-concentrated) this can mean that some regions suffer from worst-case scenario collision.</p>
+<figure>
+<img src="images/bitmap/collisions.png" alt="Figure 6: Examples of a collision between two files. The red points and blue points are contained by two different files. The larger grid in both panels denotes the boundaries of 3rd order Morton cells. The cells containing points from either file are shaded accordingly such that cells containing points from both files are purple. The smaller grids within these cells on the right are the boundaries of 2nd order Morton cells refining the collisions." id="fig:collision" /><figcaption><span>Figure 6:</span> Examples of a collision between two files. The red points and blue points are contained by two different files. The larger grid in both panels denotes the boundaries of 3rd order Morton cells. The cells containing points from either file are shaded accordingly such that cells containing points from both files are purple. The smaller grids within these cells on the right are the boundaries of 2nd order Morton cells refining the collisions.</figcaption>
+</figure>
+<p>Collisions can be limited by either increasing the order of the index or allowing for multi-resolution indexes <span class="citation" data-cites="oQYioniZ R2YXMXP5">[<a href="#ref-oQYioniZ" role="doc-biblioref">16</a>,<a href="#ref-R2YXMXP5" role="doc-biblioref">17</a>]</span>. Panel (b) of Figure <a href="#fig:collision">6</a> demonstrates an example of nesting a second index within cells that contain collisions. In those cells which contained collisions, a 2nd order Morton index was added. Those cells with collisions at the level of the refined index (purple cells in panel (b)) cover a much smaller portion of the domain than the cells with collisions at the level of the coarse index (purple cells in panel (a)). This means that any given selection is less likely to contain a collision and it will be less likely for a selector to require both files to be loaded unless it actually touches data from both files.</p>
+<p>Increasing the order of the coarse index has the same effect as nesting a second refined index within cells with collisions, but can also increases the size of the resulting map and the time it takes to identify files touched by a selection. However, if the order of the coarse index is too small or the order of the refined index too large, this too can increase the cost of a selection in terms of memory and time. Section [sec:test_order] discusses this tradeoff and how to choose index orders.</p>
+<p>Collisions are more common for file partitioning schemes that are not localized. Figure <a href="#fig:collision_files">7</a> shows an example of collisions for the different partitioning schemes discussed in Section [sec:decomp].</p>
+<figure>
+<img src="images/bitmap/index.png" alt="Figure 7: Examples of collisions for four different domain partitioning schemes. The heavy black lines denote 1st order Morton cells. The presence of more that one file (color) within a Morton cell indicates a collision." id="fig:collision_files" /><figcaption><span>Figure 7:</span> Examples of collisions for four different domain partitioning schemes. The heavy black lines denote 1st order Morton cells. The presence of more that one file (color) within a Morton cell indicates a collision.</figcaption>
+</figure>
+<p>For the random domain partition in panel (a), every cell within a 1st order Morton index will contain data from all 8 files. This means that any selection using a 1st order bitmap index will require every file to be loaded. For the more localized partitions in panels (c) and (d), only two files touch each Morton cell.</p>
+<h4 id="ghost-zones">Ghost Zones</h4>
+<p>It is often the case that, in selecting a region, additional padding around the region should be included in the selection. This is particularly useful for algorithms that need information about neighboring points in the domain <span class="citation" data-cites="17RjQFiFB WYFIXERg iAgWKzbq">[<a href="#ref-17RjQFiFB" role="doc-biblioref">26</a>,<a href="#ref-WYFIXERg" role="doc-biblioref">27</a>,<a href="#ref-iAgWKzbq" role="doc-biblioref">7</a>]</span>. For Morton indices, this is straightforward as the indices neighboring Morton cells can be found by incrementing the bits corresponding to each dimension. We have included the ability to pad selectors with some number of Morton cells referred to as ‘ghost zones’. Those files that touch ghost zones, but not the selector itself are referred to below as ‘ghost files’.</p>
+<p>Depending on how the domain is split between files, the inclusion of ghost zones may or may not increase the number of files that need to be loaded. Figure <a href="#fig:ghosts">8</a> shows an example of a ghost zone around the first selector from Figure <a href="#fig:selector1">2</a>.</p>
+<figure>
+<img src="images/bitmap/ghosts.png" alt="Figure 8: Examples of a selector ghost zone with a width of one Morton cell at an index order of 3 for four different domain partitioning schemes. The shaded circular region is the selector and the shaded box is the ghost zone. Different partitioning schemes will lead to different numbers of ghost files." id="fig:ghosts" /><figcaption><span>Figure 8:</span> Examples of a selector ghost zone with a width of one Morton cell at an index order of 3 for four different domain partitioning schemes. The shaded circular region is the selector and the shaded box is the ghost zone. Different partitioning schemes will lead to different numbers of ghost files.</figcaption>
+</figure>
+<p>The ghost zone has a width of one Morton cell at an index order of 3 and contains the same part of the domain in each case. However, due to differences in how the domain was partitioned between the files in the four cases, the number of additional ghost files touched by the ghost zone in each case is different. This will also depend on the order of the index to which ghost zones are added. Ghost zones added at the order of the coarse index will be larger than those added at the order of the refined index and will have a higher probability of touching additional files. While including ghost zones is advantageous when neighbor info is needed, it also increases the computational cost of identifying files (see Section [sec:tests]).</p>
+<h3 id="sec:methods">Methods</h3>
+<p>The basic procedure for constructing the bitmap index is as follows:</p>
+<ol type="1">
+<li><p><strong>Compute coarse indices.</strong> For each file in the data set, read in the data and compute the indices of Morton cells at a given coarse order that are touched by data contained within that file. These coarse indices are then stored by setting the corresponding bits in an EWAH compressed bitmap.</p></li>
+<li><p><strong>Find collisions.</strong> The indices of coarse cells that are touched by data in more than one file (collisions) are located using bitwise operations on the file bitmaps. These indices are also stored in an EWAH compressed bitmap.</p></li>
+<li><p><strong>Compute refined indices.</strong> For each file in the data set, read in the data and compute the indices of Morton cells at a given refined order within coarse cells with collisions that are touched by that file. These refined indices are stored in a map from coarse Morton index to an EWAH compressed bitmap of refined Morton indices within that cell.</p></li>
+<li><p><strong>Output bitmaps.</strong> The EWAH compressed bitmaps for the coarse indices, refined indices, and collisions are saved to an external index file.</p></li>
+</ol>
+<p>For large datasets and/or high levels of refinement, this can be a time consuming process; fortunately, it must only be done once. For future selections, the bitmap can be quickly loaded and used to identify files in less time than would be required to load and query each file within the dataset individually. Selection using a loaded bitmap goes as follows:</p>
+<ol type="1">
+<li><p><strong>Construct selector bitmap.</strong> In the same way each file was mapped, the indices of Morton cells touched by the selector are stored in a bitmap. This is done by checking for intersection of the selector with Morton cells at the order of the coarse bitmaps. For contiguous selectors, this is done at lower order (parent) cells first and continued recursively until the order of the coarse bitmap is reached.</p>
+<ul>
+<li><p>If a cell is completely within the selector, all of its child cells at the coarse order are added to the bitmap.</p></li>
+<li><p>If a cell intersects the edge of the selector, child cells at increasing orders are checked until the order of the coarse bitmaps are reached. If the cell is at the coarse order and there is a collision between two files, a refined bitmap is the constructed for the selector in the same manner.</p></li>
+</ul></li>
+<li><p><strong>Find files intersecting the selector.</strong> Bitwise operations with the coarse file bitmaps are then used to efficiently identify files that intersect the selector within coarse cells. If the coarse cells within the intersection with a file all have collisions with other files, bitwise operations with the refined file bitmaps are then used to determine if the file is selected at the order of the refined index.</p></li>
+</ol>
+<p>If ghost zones are desired, the neighbors of cells that intersect the edge of the selector are added to a separate bitmap. For cells without collisions, the neighbors are added at the coarse bitmap order. If there are collisions, the neighbors are added at the refined bitmap order.</p>
+<h3 id="sec:tests">Tests</h3>
+<p>The utility of using Morton index bitmaps for mapping files to decrease query times was tested on artificial N-body simulation datasets containing <span class="math inline">\(1024^3\)</span> points in three dimensions, distributed between 512 files. For each test a Morton index bitmap was constructed for the dataset and used to identify files touched by cube shaped three-dimensional selectors. The performance is assessed in terms of the number of files identified and the average time required to identify them across 10 runs. If fewer files are touched, fewer files will need to be loaded during analysis of a selected region and the overall fraction of time spent on I/O will be lower. If less time is required to identify the files touched by a given selector, more selections can be made using the same computational resources. This was done for varying index orders (Section [sec:test_order]), selector sizes (Section [sec:test_size]), and partitions of the domain between files (Section [sec:test_decomp]).</p>
+<h4 id="sec:test_order">Index Order</h4>
+<h4 id="sec:test_order1">Overall Refinement</h4>
+<p>The order of the Morton indices used to map the files determines the time required to identify files and the number of collisions that will occur between files. Higher order indices will result in fewer collisions, but will take longer to query, as seen in Figure <a href="#fig:test_order1">9</a> Six selectors of varying sizes and positions within the domain where used to identify files based on Morton index bitmaps of varying order. The test dataset was split across the files using a Hilbert curve of order 6 with 10% scatter between Hilbert cells to simulate an imperfect domain decomposition as can occur if particle positions are updated and output prior to updating the domain decomposition.</p>
+<figure>
+<img src="images/bitmap/vary_order1_or0.png" alt="Figure 9: Dependence of query time (top), fraction of files selected/cells with collisions (middle), and index size (bottom) on the total refinement of the bitmap index. The solid black lines correspond to the query times and files identified by just the selectors. The dashed blue lines correspond to the query times and additional files selected when a ghost zone with the width of one Morton cell is added around the selectors. The dash-dotted line in the middle panel shows the fraction of cells with collisions between files." id="fig:test_order1" /><figcaption><span>Figure 9:</span> Dependence of query time (top), fraction of files selected/cells with collisions (middle), and index size (bottom) on the total refinement of the bitmap index. The solid black lines correspond to the query times and files identified by just the selectors. The dashed blue lines correspond to the query times and additional files selected when a ghost zone with the width of one Morton cell is added around the selectors. The dash-dotted line in the middle panel shows the fraction of cells with collisions between files.</figcaption>
+</figure>
+<p>Below a bitmap index order of 4, there are collisions between multiple files within every cell, resulting in a larger number of files being identified. However, as the order increases, the number of collisions drops and the file count plateaus at <span class="math inline">\(\sim25\)</span>%. This translates to a <span class="math inline">\(\sim75\)</span>% reduction in the memory and time required for processing files, a significant increase in performance. For a 7th order bitmap index, selection requires <span class="math inline">\(&gt;100\times\)</span> the time that the same selection took using a 6th order index, but there is no change in the number of files indicated. A 6th order index is sufficient to identify the minimal set of files touched by the selectors in this case because the dataset was partitioned between the files along a 6th order Hilbert space filling curve. While it is generally true that the time required to identify files using a bitmap index will increase exponentially with the size of the index, the order of the index that results in the minimal number of files for any dataset will depend upon how the domain is partitioned between files (see Section [sec:test_decomp]). The memory required to store the index for the test dataset scales according to <span class="math inline">\(\propto2^{2k}\)</span>, for a <span class="math inline">\(k^{\mbox{th}}\)</span> order index. If uncompressed bitmaps had been used instead of EWAH compressed bitmap, the memory would have scaled with the total number of cells contained within the 3-dimensional test domain (<span class="math inline">\(2^{3k}\)</span>).</p>
+<h4 id="sec:test_order2">Collision Refinement</h4>
+<p>Increasing the refinement of the primary index does so for the entire domain and, as seen in Section [sec:test_order1], can become costly in terms of the memory required to store the bitmap and the time required to perform operations. However, it is also possible to increase refinement by nesting a second Morton bitmap index within those cells of the primary index that contain collisions. As the nested indexes will contain a smaller portion of the domain and data, they will be less complex and can be compressed more efficiently than the primary index covering the entire domain. This enhanced compression mean that, although a greater overall number of EWAH compressed bitmaps will need to be utilized (one for the coarse index and one for each collision within the coarse index), less space will be needed to store the bitmap and bitwise operations will be faster. Figure <a href="#fig:test_order2">10</a> shows the results for adding a secondary index of varying order with the overall refinement order of the index (primary index order + secondary index order) held constant at 6. The test dataset and selectors applied were the same as in Section [sec:test_order1].</p>
+<figure>
+<img src="images/bitmap/vary_order2_to6.png" alt="Figure 10: Dependence of query time (top), fraction of files selected/cells with collisions (middle), and memory required to store the index (bottom) on the order of the secondary index used to refine collisions. In the middle panel, the solid black line corresponds with the fraction of files identified, the dash-dotted blue line is the fraction of cells at the first index level that have collisions, and the dotted red line is the fraction of cells at the second index level that have collisions." id="fig:test_order2" /><figcaption><span>Figure 10:</span> Dependence of query time (top), fraction of files selected/cells with collisions (middle), and memory required to store the index (bottom) on the order of the secondary index used to refine collisions. In the middle panel, the solid black line corresponds with the fraction of files identified, the dash-dotted blue line is the fraction of cells at the first index level that have collisions, and the dotted red line is the fraction of cells at the second index level that have collisions.</figcaption>
+</figure>
+<p>When the order of the second refined index is low, the first index is larger resulting in fewer cells with collisions at the first index and more at the second. The reverse is true when the order of second index is higher. As the overall order is held constant, the same number of files are identified regardless of the orders of the first and second indexes. The time required to identify the files is minimized when cells within the first index become saturated with collisions. For secondary indexes of order 2 or lower, the large increase in performance offered for increases in the index order results from the reduction in the total complexity of the index which translates to shorter times for bitwise operations and less memory required for storage. Above 2nd order, the overhead from storing and accessing more complex EWAH compressed bitmaps for each collision begins to flatten the memory scaling and increase the time required for queries. However, selections using higher order secondary indices still require less time than in the case where only a single index is used.</p>
+<p>The optimal value for the orders of the first and second indexes will depend upon the dataset in question. The density of data points within the test dataset used here is relatively uniform throughout the domain and does not need a high level of refinement at collisions. However, if a data set were less uniform with concentrations of points, the optimal order of the second index for performance may be higher.</p>
+<h4 id="sec:test_size">Selector Size</h4>
+<p>The time required to identify files touched by a selection will also depend upon the size of the region being selected. Larger selectors will intersect more indices and more files, resulting in more bitmap operations. Figure <a href="#fig:test_size">11</a> shows the result from varying the selector size. The same test data set from Section [sec:test_order] was used. A bitmap index with a 4th order primary Morton index and 2nd order secondary Morton index was used in all cases. Each cube selector was placed at the center of the domain and scaled along each dimension to some fraction of the total domain.</p>
+<figure>
+<img src="images/bitmap/vary_selector.png" alt="Figure 11: Dependence of query time (top) and number of files selected (bottom) on selector width in terms of the total domain width. The solid black lines correspond to the query times and files identified by the selectors alone. The dashed blue lines correspond the query times and additional files identified when a ghost zone with a width of one cell is added to the selector." id="fig:test_size" /><figcaption><span>Figure 11:</span> Dependence of query time (top) and number of files selected (bottom) on selector width in terms of the total domain width. The solid black lines correspond to the query times and files identified by the selectors alone. The dashed blue lines correspond the query times and additional files identified when a ghost zone with a width of one cell is added to the selector.</figcaption>
+</figure>
+<p>As the selector increases in size, it touches a greater number of files, resulting in longer query times. The number of files touched increases in steps due to the way the test dataset was partitioned between files. Using the Hilbert curve, the domain covered by any one file is localized and will have a rectangular shape. This results in an ordered structure that is similar along all dimensions. An increase in the number of files touched indicates that the selector has grown past a file boundary in all directions. It is just prior to these jumps that ghost files are present. If the selector edge is near a file boundary, ghost zones have the potential to overlap the domains contained by neighboring files that are not already touched by the selector. For such a highly ordered dataset, the ghost zones will only identify additional files for selectors that are nearing the edges of file boundaries. However, queries including ghost zones require slightly more time even when this is not the case.</p>
+<h4 id="sec:test_decomp">Domain Partitioning</h4>
+<p>As discussed in Section [sec:decomp], a bitmap index is more effective in cases where the domain is partitioned between files in a localized way. If files contain non-contiguous parts of the domain, contiguous selections will require more files to be loaded. Figure <a href="#fig:test_decomp">12</a> shows results for four different partitioning schemes. All four data sets cover the same three-dimensional domain with <span class="math inline">\(1024^3\)</span> points split across 512 files. The Hilbert dataset is the same one used in previous tests (see Section [sec:test_order] for a description). The Morton dataset is constructed in a similar way to the Hilbert dataset with file partitions occurring along a 6th order Morton curve and including a 10% scatter of points between Morton cells. The sliced dataset is partitioned in slices along one dimension with 10% scatter of points between adjacent slices. Files in the random dataset contain a random sample of points, uniformly distributed across the domain.</p>
+<figure>
+<img src="images/bitmap/vary_decomp_to0.png" alt="Figure 12: Dependence of query time (top), the number of files selected (middle), and the size of the index (bottom) on index order for different domain partitioning between files. The dotted magenta lines are for a randomly partitioned dataset, the cyan dashed-dotted lines are a dataset partitioned by equal slices alone one dimension, the dashed red lines are a dataset partitioned along an 6th order Morton curve, and the solid blue lines are a dataset partitioned along a 6th order Hilbert curve." id="fig:test_decomp" /><figcaption><span>Figure 12:</span> Dependence of query time (top), the number of files selected (middle), and the size of the index (bottom) on index order for different domain partitioning between files. The dotted magenta lines are for a randomly partitioned dataset, the cyan dashed-dotted lines are a dataset partitioned by equal slices alone one dimension, the dashed red lines are a dataset partitioned along an 6th order Morton curve, and the solid blue lines are a dataset partitioned along a 6th order Hilbert curve.</figcaption>
+</figure>
+<p>Many more files are identified for the random dataset than those datasets with localized partitioning of the domain. Above an order of 3, very few files could be excluded for the random dataset. This was not true for the localized partitioning schemes. At the highest order, only <span class="math inline">\(\sim20-30\)</span>% of the files within these datasets would need to be loaded in order to get all of the data within the selected regions, while <span class="math inline">\(\sim80\)</span>% of the files in the random dataset would be required. The smallest fraction of files were identified for the Hilbert and Morton datasets, with a slightly greater fraction being identified for the sliced dataset. For a 6th order index and below, queries on the Morton and Hilbert partitioned datasets are the fastest. An index order of 7 provides refinement beyond the 6th order curves used to partition the dataset between the files and the required for queries on these datasets increases dramatically. The sliced dataset performed particularly well in this case because the selectors used were cubes and did not preferentially select along any one dimension.</p>
+<p>Overall, this technique offers a considerable improvement in performance over other methods that require reading, evaluating and discarding all of the particles.</p>
+<h3 id="sec:discuss">Summary &amp; Discussion</h3>
+<p>Mapping files using Morton bitmap indexes speeds up analysis of large datasets split across multiple files by reducing the number of files that need to be loaded in order to perform operations on a subset of the full domain. The time required for making selections using the bitmap index is minimal for even large datasets and can be optimized by partitioning the domain between files in a localized way and using an index or indexes of appropriate order for the dataset.</p>
+<p>Without an index, queries require loading the data contained in every file into memory and then searching the data for those points that are selected by the query. With a bitmap index, queries require loading the index, using it to identify the files touched by the query, reading in the data contained within the identified files, and searching the data for points selected by the query. In this way, the bitmap index can decrease the computational cost of reading in the data and selecting data points if it identifies a subset of the total number of files. While using an existing bitmap index decreases the time required for queries in this case, constructing a bitmap index can be more computationally expensive than directly querying the data without a bitmap index. Therefore, in the case where only a small number of selections need to be made, it will be more efficient to perform direct queries of the data than to construct and utilize the bitmap index.</p>
+<p>Bitmap indexing is particularly useful in astronomy and astrophysics. Output from N-body simulations is often split between multiple files to take advantage of parallel I/O and the domain decomposition generally leads to localized partitioning between files <span class="citation" data-cites="WYFIXERg iAgWKzbq 12N6y8v31">[<a href="#ref-WYFIXERg" role="doc-biblioref">27</a>,<a href="#ref-12N6y8v31" role="doc-biblioref">28</a>,<a href="#ref-iAgWKzbq" role="doc-biblioref">7</a>]</span>.</p>
+<p>Currently, this technique is most useful for datasets split across multiple files. However, it can also be applied to single files by dividing the file’s contents into chunks. As in the multi-file case, the single file would need to be organized such that chunks were localized within the domain to take full advantage of the bitmaps. In addition, while the current implementation of this method is designed for three-dimensional spatial datasets like those produced by astrophysical simulations, the same methods can be applied to non-spatial datasets with arbitrary dimensionality.</p>
+<h3 id="sec:code">Code</h3>
+<p>These procedures have been implemented as part of the yt python package <span class="citation" data-cites="VT1ZtF4H">[<a href="#ref-VT1ZtF4H" role="doc-biblioref">29</a>]</span> in order to facilitate the analysis of large astrophysical N-body simulations; currently undergoing review for inclusion in a future version of yt (3.4 or later), our implementation is available at https://bitbucket.org/langmm/yt-bitmap. The open source EWAHBoolArray C++ package is used for implementing EWAH bitmaps <span class="citation" data-cites="VG0Kch70 nAqaxrJx">[<a href="#ref-VG0Kch70" role="doc-biblioref">24</a>,<a href="#ref-nAqaxrJx" role="doc-biblioref">25</a>]</span> and exposed to Python using Cython <span class="citation" data-cites="DCcYsKha">[<a href="#ref-DCcYsKha" role="doc-biblioref">30</a>]</span>.</p>
+<h3 id="acknowledgment" class="unnumbered">Acknowledgment</h3>
+<p>The authors would like to thank Daniel Lemire for his open source EWAH implementation. yt is developed by a large number of independent researchers from numerous institutions around the world. Their commitment to open science has helped make this work possible.</p>
 <h2 id="sec:vr">Visualization and Volume Rendering</h2>
 <h3 id="pixelizing-variable-mesh-objects">Pixelizing Variable-Mesh Objects</h3>
 <h3 id="higher-order-unstructured-mesh-elements">Higher-Order Unstructured Mesh Elements</h3>
@@ -314,20 +425,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 id="analysis-modules">Analysis Modules</h2>
 <h2 id="extensions-and-ecosystem">Extensions and Ecosystem</h2>
 <h3 id="trident">Trident</h3>
-<p>Trident <span class="citation" data-cites="1DgKJy4lE">[<a href="#ref-1DgKJy4lE" role="doc-biblioref">3</a>]</span> is a Python-based open-source tool for post-processing hydrodynamical simulations to produce synthetic absorption spectra and related data. In many ways, Trident is the first external package that utilizes <code>yt</code> to provide data access and numerical operations, but then builds on those to develop detailed, astrophysically-aware systems for processing and analyzing that data.</p>
+<p>Trident <span class="citation" data-cites="1DgKJy4lE">[<a href="#ref-1DgKJy4lE" role="doc-biblioref">31</a>]</span> is a Python-based open-source tool for post-processing hydrodynamical simulations to produce synthetic absorption spectra and related data. In many ways, Trident is the first external package that utilizes <code>yt</code> to provide data access and numerical operations, but then builds on those to develop detailed, astrophysically-aware systems for processing and analyzing that data.</p>
 <h3 id="powderday">Powderday</h3>
-<p><span class="citation" data-cites="1CgEbr6CQ">[<a href="#ref-1CgEbr6CQ" role="doc-biblioref">4</a>]</span></p>
+<p><span class="citation" data-cites="1CgEbr6CQ">[<a href="#ref-1CgEbr6CQ" role="doc-biblioref">32</a>]</span></p>
 <h3 id="ytree">ytree</h3>
-<p>Building on <code>yt</code> for access to halo catalogs, and implementing a similar system for derived fields as applied to graph datasets, ytree <span class="citation" data-cites="VB3RIyxd">[<a href="#ref-VB3RIyxd" role="doc-biblioref">5</a>]</span> is a system for analyzing merger trees from analysis of dark matter halos in cosmological simulations.</p>
+<p>Building on <code>yt</code> for access to halo catalogs, and implementing a similar system for derived fields as applied to graph datasets, ytree <span class="citation" data-cites="VB3RIyxd">[<a href="#ref-VB3RIyxd" role="doc-biblioref">33</a>]</span> is a system for analyzing merger trees from analysis of dark matter halos in cosmological simulations.</p>
 <p>ytree provides flexibility in determining the path that a given analysis takes through the graph of merger trees; for instance, it enables the user to select if they wish to follow the “most massive” progenitor halo backwards in time, or even to set their own criteria for this. Connecting this to the raw, unprocessed data from the simulation (such as the unsampled particle or cell content that comprises the halos) allows researchers to deepen and guide their analysis based on the physical characteristics of the merger history.</p>
 <h2 id="future-directions">Future Directions</h2>
 <h2 id="references" class="page_break_before">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
 <div id="ref-cTN2TQIL">
-<p>1. <strong>The manuscript bot for automated scholarly publishing (Python package): manubot/manubot</strong><br />
+<p>1. <strong>Python utilities for Manubot: Manuscripts, open and automated: manubot/manubot</strong><br />
 Manubot<br />
-(2019-06-28) <a href="https://github.com/manubot/manubot">https://github.com/manubot/manubot</a></p>
+(2019-07-11) <a href="https://github.com/manubot/manubot">https://github.com/manubot/manubot</a></p>
 </div>
 <div id="ref-1GOm01ggN">
 <p>2. <strong>yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA</strong><br />
@@ -335,20 +446,185 @@ Matthew J. Turk, Britton D. Smith, Jeffrey S. Oishi, Stephen Skory, Samuel W. Sk
 <em>The Astrophysical Journal Supplement Series</em> (2010-12-28) <a href="https://doi.org/ft6md2">https://doi.org/ft6md2</a><br />
 DOI: <a href="https://doi.org/10.1088/0067-0049/192/1/9">10.1088/0067-0049/192/1/9</a></p>
 </div>
+<div id="ref-16PxHyMVP">
+<p>3. <strong>Petascale Cosmology: Simulations of Structure Formation</strong><br />
+Rupert Croft, Tiziana Di Matteo, Nishikanta Khandai<br />
+<em>Comput. Sci. Eng.</em> (2015-03) <a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=7006381">http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=7006381</a><br />
+DOI: <a href="https://doi.org/10.1109/MCSE.2015.5">10.1109/mcse.2015.5</a></p>
+</div>
+<div id="ref-OUQuy4C8">
+<p>4. <strong>The LSST Data Management System</strong><br />
+Mario Jurić, Jeffrey Kantor, K-T Lim, Robert H. Lupton, Gregory Dubois-Felsmann, Tim Jenness, Tim S. Axelrod, Jovan Aleksić, Roberta A. Allsman, Yusra AlSayyad, … LSST Project<br />
+<em>eprint arXiv:1512.07914</em> (2015) <a href="http://adsabs.harvard.edu/abs/2015arXiv151207914J">http://adsabs.harvard.edu/abs/2015arXiv151207914J</a></p>
+</div>
+<div id="ref-1Qfg818r">
+<p>5. <strong>A computer oriented geodetic data base and a new technique in file sequencing</strong><br />
+G. M. Morton<br />
+<em>IBM Ltd.</em> (1996)</p>
+</div>
+<div id="ref-TCp1VkBF">
+<p>6. <strong>Gesammelte Abhandlungen: Band III: Analysis - Grundlagen der Mathematik Physik - Verschiedenes Lebensgeschichte</strong><br />
+David Hilbert<br />
+<em>Springer Berlin Heidelberg</em> (1970) <a href="http://dx.doi.org/10.1007/978-3-662-25726-5%7B\_%7D1">http://dx.doi.org/10.1007/978-3-662-25726-5{\_}1</a><br />
+DOI: <a href="https://doi.org/10.1007/978-3-662-25726-5_1">10.1007/978-3-662-25726-5_1</a> · ISBN: <a href="https://worldcat.org/isbn/978-3-662-25726-5">978-3-662-25726-5</a></p>
+</div>
+<div id="ref-iAgWKzbq">
+<p>7. <strong>The cosmological simulation code gadget-2</strong><br />
+Volker Springel<br />
+<em>Mon. Not. R. Astron. Soc.</em> (2005-12) <a href="http://adsabs.harvard.edu/abs/2005MNRAS.364.1105S">http://adsabs.harvard.edu/abs/2005MNRAS.364.1105S</a><br />
+DOI: <a href="https://doi.org/10.1111/j.1365-2966.2005.09655.x">10.1111/j.1365-2966.2005.09655.x</a></p>
+</div>
+<div id="ref-f64usKAm">
+<p>8. <strong>Cosmological Hydrodynamics with Adaptive Mesh Refinement: a new high resolution code called RAMSES</strong><br />
+Romain Teyssier<br />
+<em>Astron. Astrophys. v.385, p.337-364</em> (2001-11) <a href="http://arxiv.org/abs/astro-ph/0111367%20http://dx.doi.org/10.1051/0004-6361:20011817">http://arxiv.org/abs/astro-ph/0111367 http://dx.doi.org/10.1051/0004-6361:20011817</a><br />
+DOI: <a href="https://doi.org/10.1051/0004-6361:20011817">10.1051/0004-6361:20011817</a></p>
+</div>
+<div id="ref-xgKPq1ZP">
+<p>9. <strong>Speeding up construction of PMR quadtree-based spatial indexes</strong><br />
+Gisli R. Hjaltason, Hanan Samet<br />
+<em>VLDB J. Int. J. Very Large Data Bases</em> (2002-10) <a href="http://link.springer.com/10.1007/s00778-002-0067-8">http://link.springer.com/10.1007/s00778-002-0067-8</a><br />
+DOI: <a href="https://doi.org/10.1007/s00778-002-0067-8">10.1007/s00778-002-0067-8</a></p>
+</div>
+<div id="ref-xegdsQsV">
+<p>10. <strong>Fast construction of k-nearest neighbor graphs for point clouds.</strong><br />
+Michael Connor, Piyush Kumar<br />
+<em>IEEE Trans. Vis. Comput. Graph.</em> (2010-01) <a href="http://www.ncbi.nlm.nih.gov/pubmed/20467058">http://www.ncbi.nlm.nih.gov/pubmed/20467058</a><br />
+DOI: <a href="https://doi.org/10.1109/TVCG.2010.9">10.1109/tvcg.2010.9</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20467058">20467058</a></p>
+</div>
+<div id="ref-5xMntkfV">
+<p>11. <strong>A class of data structures for associative searching</strong><br />
+J. A. Orenstein, T. H. Merrett<br />
+<em>Proc. 3rd acm sigact-sigmod symp. Princ. Database syst. - pod. ’84</em> (1984-04) <a href="http://dl.acm.org/citation.cfm?id=588011.588037">http://dl.acm.org/citation.cfm?id=588011.588037</a><br />
+DOI: <a href="https://doi.org/10.1145/588011.588037">10.1145/588011.588037</a> · ISBN: <a href="https://worldcat.org/isbn/0897911288">0897911288</a></p>
+</div>
+<div id="ref-pD21Clif">
+<p>12. <strong>Encoded bitmap indexing for data warehouses</strong><br />
+Ming-Chuan Wu, A. P. Buchmann<br />
+<em>Proc. 14th int. Conf. Data eng.</em> (1998) <a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=655780">http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=655780</a><br />
+DOI: <a href="https://doi.org/10.1109/ICDE.1998.655780">10.1109/icde.1998.655780</a> · ISBN: <a href="https://worldcat.org/isbn/0-8186-8289-2">0-8186-8289-2</a></p>
+</div>
+<div id="ref-j5G2aK4G">
+<p>13. <strong>Bitmap index design and evaluation</strong><br />
+Chee-Yong Chan, Yannis E. Ioannidis<br />
+<em>ACM SIGMOD Rec.</em> (1998-06) <a href="http://dl.acm.org/citation.cfm?id=276305.276336">http://dl.acm.org/citation.cfm?id=276305.276336</a><br />
+DOI: <a href="https://doi.org/10.1145/276305.276336">10.1145/276305.276336</a> · ISBN: <a href="https://worldcat.org/isbn/0-89791-995-5">0-89791-995-5</a></p>
+</div>
+<div id="ref-DjdlyjdU">
+<p>14. <strong>An efficient bitmap encoding scheme for selection queries</strong><br />
+Chee-Yong Chan, Yannis E. Ioannidis<br />
+<em>ACM SIGMOD Rec.</em> (1999-06) <a href="http://dl.acm.org/citation.cfm?id=304181.304201">http://dl.acm.org/citation.cfm?id=304181.304201</a><br />
+DOI: <a href="https://doi.org/10.1145/304181.304201">10.1145/304181.304201</a> · ISBN: <a href="https://worldcat.org/isbn/1-58113-084-8">1-58113-084-8</a></p>
+</div>
+<div id="ref-knRC0GG3">
+<p>15. <strong>Evaluating Geospatial Geometry and Proximity Queries Using Distributed Hash Tables</strong><br />
+Matthew Malensek, Sangmi Pallickara, Shrideep Pallickara<br />
+<em>Comput. Sci. Eng.</em> (2014-07) <a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6785924">http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6785924</a><br />
+DOI: <a href="https://doi.org/10.1109/MCSE.2014.48">10.1109/mcse.2014.48</a></p>
+</div>
+<div id="ref-oQYioniZ">
+<p>16. <strong>Bitmap indexes for large scientific data sets: a case study</strong><br />
+R. R. Sinha, S. Mitra, M. Winslett<br />
+<em>Proc. 20th ieee int. Parallel distrib. Process. Symp.</em> (2006) <a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1639304">http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1639304</a><br />
+DOI: <a href="https://doi.org/10.1109/IPDPS.2006.1639304">10.1109/ipdps.2006.1639304</a> · ISBN: <a href="https://worldcat.org/isbn/1-4244-0054-6">1-4244-0054-6</a></p>
+</div>
+<div id="ref-R2YXMXP5">
+<p>17. <strong>Multi-resolution bitmap indexes for scientific data</strong><br />
+Rishi Rakesh Sinha, Marianne Winslett<br />
+<em>ACM Trans. Database Syst.</em> (2007-08) <a href="http://portal.acm.org/citation.cfm?doid=1272743.1272746">http://portal.acm.org/citation.cfm?doid=1272743.1272746</a><br />
+DOI: <a href="https://doi.org/10.1145/1272743.1272746">10.1145/1272743.1272746</a></p>
+</div>
+<div id="ref-OPgGF8mv">
+<p>18. <strong>Improving the Performance of High-Energy Physics Analysis through Bitmap Indices</strong><br />
+Kurt Stockinger, Dirk Duellmann, Wolfgang Hoschek, Erich Schikuta<br />
+<em>Database expert syst. Appl. 11th int. Conf. DEXA 2000 london, uk, sept. 4–8, 2000 proc.</em> (2000-06) <a href="http://link.springer.com/10.1007/3-540-44469-6">http://link.springer.com/10.1007/3-540-44469-6</a><br />
+DOI: <a href="https://doi.org/10.1007/3-540-44469-6">10.1007/3-540-44469-6</a> · ISBN: <a href="https://worldcat.org/isbn/978-3-540-67978-3">978-3-540-67978-3</a></p>
+</div>
+<div id="ref-f4xkZqfp">
+<p>19. <strong>Using bitmap index for interactive exploration of large datasets</strong><br />
+Kesheng Wu, W. Koegler, J. Chen, A. Shoshani<br />
+<em>15th int. Conf. Sci. Stat. Database manag. 2003.</em> (2003) <a href="http://ieeexplore.ieee.org/articleDetails.jsp?arnumber=1214955">http://ieeexplore.ieee.org/articleDetails.jsp?arnumber=1214955</a><br />
+DOI: <a href="https://doi.org/10.1109/SSDM.2003.1214955">10.1109/ssdm.2003.1214955</a> · ISBN: <a href="https://worldcat.org/isbn/0-7695-1964-4">0-7695-1964-4</a></p>
+</div>
+<div id="ref-4bva9JK3">
+<p>20. <strong>Range-based bitmap indexing for high cardinality attributes with skew</strong><br />
+P. S. Yu<br />
+<em>Proceedings. Twenty-second annu. Int. Comput. Softw. Appl. Conf. (Compsac ’98) (cat. No.98CB 36241)</em> (1998) <a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=716637">http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=716637</a><br />
+DOI: <a href="https://doi.org/10.1109/CMPSAC.1998.716637">10.1109/cmpsac.1998.716637</a> · ISBN: <a href="https://worldcat.org/isbn/0-8186-8585-9">0-8186-8585-9</a></p>
+</div>
+<div id="ref-1AiUmiNA7">
+<p>21. <strong>Multidimensional indexing and query coordination for tertiary storage management</strong><br />
+A. Shoshani, L. M. Bernardo, H. Nordberg, D. Rotem, A. Sim<br />
+<em>Proceedings. Elev. Int. Conf. Sci. Stat. Database manag.</em> (1999) <a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=787637">http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=787637</a><br />
+DOI: <a href="https://doi.org/10.1109/SSDM.1999.787637">10.1109/ssdm.1999.787637</a> · ISBN: <a href="https://worldcat.org/isbn/0-7695-0046-3">0-7695-0046-3</a></p>
+</div>
+<div id="ref-UNfYz0dl">
+<p>22. <strong>Evaluation Strategies for Bitmap Indices with Binning</strong><br />
+Kurt Stockinger, Kesheng Wu, Arie Shoshani<br />
+<em>Database expert syst. Appl. 15th int. Conf. DEXA 2004, zaragoza, spain, august 30-september 3, 2004. Proc.</em> (2004) <a href="http://dx.doi.org/10.1007/978-3-540-30075-5%7B\_%7D12">http://dx.doi.org/10.1007/978-3-540-30075-5{\_}12</a><br />
+DOI: <a href="https://doi.org/10.1007/978-3-540-30075-5_12">10.1007/978-3-540-30075-5_12</a> · ISBN: <a href="https://worldcat.org/isbn/978-3-540-30075-5">978-3-540-30075-5</a></p>
+</div>
+<div id="ref-yPRtMEPZ">
+<p>23. <strong>Compressed bitmap indices for efficient query processing</strong><br />
+Kesheng Wu, Ekow Otoo, Arie Shoshani<br />
+<em>Lawrence Berkeley Natl. Lab.</em> (2001-09) <a href="http://escholarship.org/uc/item/8k22w7q2">http://escholarship.org/uc/item/8k22w7q2</a></p>
+</div>
+<div id="ref-VG0Kch70">
+<p>24. <strong>Sorting improves word-aligned bitmap indexes</strong><br />
+Daniel Lemire, Owen Kaser, Kamel Aouiche<br />
+<em>Data Knowl. Eng.</em> (2010-01) <a href="http://dl.acm.org/citation.cfm?id=1663645.1663682">http://dl.acm.org/citation.cfm?id=1663645.1663682</a><br />
+DOI: <a href="https://doi.org/10.1016/j.datak.2009.08.006">10.1016/j.datak.2009.08.006</a></p>
+</div>
+<div id="ref-nAqaxrJx">
+<p>25. <strong>Compressed bitmap indexes: beyond unions and intersections</strong><br />
+Owen Kaser, Daniel Lemire<br />
+<em>Softw. Pract. Exp.</em> (2016-02) <a href="http://doi.wiley.com/10.1002/spe.2289">http://doi.wiley.com/10.1002/spe.2289</a><br />
+DOI: <a href="https://doi.org/10.1002/spe.2289">10.1002/spe.2289</a></p>
+</div>
+<div id="ref-17RjQFiFB">
+<p>26. <strong>Smoothed Particle Hydrodynamics</strong><br />
+J. J. Monaghan<br />
+<em>Annu. Rev. Astron. Astrophys.</em> (1992-09) <a href="http://adsabs.harvard.edu/abs/1992ARA%7B\&amp;%7DA..30..543M">http://adsabs.harvard.edu/abs/1992ARA{\&amp;}A..30..543M</a><br />
+DOI: <a href="https://doi.org/10.1146/annurev.aa.30.090192.002551">10.1146/annurev.aa.30.090192.002551</a></p>
+</div>
+<div id="ref-WYFIXERg">
+<p>27. <strong>GADGET: a code for collisionless and gasdynamical cosmological simulations</strong><br />
+Volker Springel, Naoki Yoshida, Simon D. M. White<br />
+<em>New Astron.</em> (2001-04) <a href="http://adsabs.harvard.edu/abs/2001NewA....6...79S">http://adsabs.harvard.edu/abs/2001NewA....6...79S</a><br />
+DOI: <a href="https://doi.org/10.1016/S1384-1076(01)00042-2">10.1016/s1384-1076(01)00042-2</a></p>
+</div>
+<div id="ref-12N6y8v31">
+<p>28. <strong>A new class of accurate, mesh-free hydrodynamic simulation methods</strong><br />
+P. F. Hopkins<br />
+<em>Mon. Not. R. Astron. Soc.</em> (2015-04) <a href="http://adsabs.harvard.edu/abs/2014arXiv1409.7395H">http://adsabs.harvard.edu/abs/2014arXiv1409.7395H</a><br />
+DOI: <a href="https://doi.org/10.1093/mnras/stv195">10.1093/mnras/stv195</a></p>
+</div>
+<div id="ref-VT1ZtF4H">
+<p>29. <strong>yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA</strong><br />
+Matthew J. Turk, Britton D. Smith, Jeffrey S. Oishi, Stephen Skory, Samuel W. Skillman, Tom Abel, Michael L. Norman<br />
+<em>Astrophys. J. Suppl. Ser.</em> (2011-01) <a href="http://stacks.iop.org/0067-0049/192/i=1/a=9?key=crossref.ad58f4fc8c6272d93975507bf0238006">http://stacks.iop.org/0067-0049/192/i=1/a=9?key=crossref.ad58f4fc8c6272d93975507bf0238006</a><br />
+DOI: <a href="https://doi.org/10.1088/0067-0049/192/1/9">10.1088/0067-0049/192/1/9</a></p>
+</div>
+<div id="ref-DCcYsKha">
+<p>30. <strong>Cython: The Best of Both Worlds</strong><br />
+Stefan Behnel, Robert Bradshaw, Craig Citro, Lisandro Dalcin, Dag Sverre Seljebotn, Kurt Smith<br />
+<em>Comput. Sci. Eng.</em> (2011-03) <a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5582062">http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5582062</a><br />
+DOI: <a href="https://doi.org/10.1109/MCSE.2010.118">10.1109/mcse.2010.118</a></p>
+</div>
 <div id="ref-1DgKJy4lE">
-<p>3. <strong>Trident: A Universal Tool for Generating Synthetic Absorption Spectra from Astrophysical Simulations</strong><br />
+<p>31. <strong>Trident: A Universal Tool for Generating Synthetic Absorption Spectra from Astrophysical Simulations</strong><br />
 Cameron B. Hummels, Britton D. Smith, Devin W. Silvia<br />
 <em>The Astrophysical Journal</em> (2017-09-20) <a href="https://doi.org/gcx4th">https://doi.org/gcx4th</a><br />
 DOI: <a href="https://doi.org/10.3847/1538-4357/aa7e2d">10.3847/1538-4357/aa7e2d</a></p>
 </div>
 <div id="ref-1CgEbr6CQ">
-<p>4. <strong>The formation of submillimetre-bright galaxies from gas infall over a billion years</strong><br />
+<p>32. <strong>The formation of submillimetre-bright galaxies from gas infall over a billion years</strong><br />
 Desika Narayanan, Matthew Turk, Robert Feldmann, Thomas Robitaille, Philip Hopkins, Robert Thompson, Christopher Hayward, David Ball, Claude-André Faucher-Giguère, Dušan Kereš<br />
 <em>Nature</em> (2015-09) <a href="https://doi.org/f7r445">https://doi.org/f7r445</a><br />
 DOI: <a href="https://doi.org/10.1038/nature15383">10.1038/nature15383</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26399829">26399829</a></p>
 </div>
 <div id="ref-VB3RIyxd">
-<p>5. <strong>Ytree: Merger-Tree Toolkit</strong><br />
+<p>33. <strong>Ytree: Merger-Tree Toolkit</strong><br />
 Britton Smith, Meagan Lang<br />
 <em>Zenodo</em> (2018-02-16) <a href="https://doi.org/gcx4x2">https://doi.org/gcx4x2</a><br />
 DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a></p>

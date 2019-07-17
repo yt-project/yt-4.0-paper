@@ -1,5 +1,5 @@
 {
-  "date": "June 28, 2019",
+  "date": "July 17, 2019",
   "authors": [
     {
       "github": "yt-project",
@@ -91,6 +91,20 @@
       ]
     },
     {
+      "github": "langmm",
+      "name": "Meagan Lang",
+      "initial": "ML",
+      "orcid": "0000-0002-2058-2816",
+      "email": "langmm@illinois.edu",
+      "affiliations": [
+        "National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign"
+      ],
+      "funders": "Grant XXXXXXX",
+      "affiliation_numbers": [
+        4
+      ]
+    },
+    {
       "github": "yournamehere",
       "name": "Add Yourself",
       "initials": "YOU",
@@ -142,14 +156,15 @@
     "repo_slug": "yt-project/yt-3.0-paper",
     "repo_owner": "yt-project",
     "repo_name": "yt-3.0-paper",
-    "commit": "3670b8da7b3705bb75d2a56a3225c0e455f8373b"
+    "commit": "101d45365d9f74f9fc0fae60bad97e2ddfb3132f"
   },
   "manuscript_stats": {
     "reference_counts": {
       "doi": 4,
+      "raw": 28,
       "url": 1,
-      "total": 5
+      "total": 33
     },
-    "word_count": 5809
+    "word_count": 11260
   }
 }
