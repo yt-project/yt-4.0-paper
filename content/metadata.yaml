@@ -68,6 +68,15 @@ author_info:
        - Physics Department, University of California Santa Barbara
     funders: Grant XXXXXXX
   -
+    github: langmm
+    name: Meagan Lang
+    initial: ML
+    orcid: 0000-0002-2058-2816
+    email: langmm@illinois.edu
+    affiliations:
+      - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
+    funders: Grant XXXXXXX
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
