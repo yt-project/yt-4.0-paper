@@ -1,5 +1,5 @@
 {
-  "date": "July 17, 2019",
+  "date": "August 2, 2019",
   "authors": [
     {
       "github": "yt-project",
@@ -156,7 +156,7 @@
     "repo_slug": "yt-project/yt-3.0-paper",
     "repo_owner": "yt-project",
     "repo_name": "yt-3.0-paper",
-    "commit": "101d45365d9f74f9fc0fae60bad97e2ddfb3132f"
+    "commit": "0cea417bf885f338838df45367be3bf2f331de31"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -165,6 +165,6 @@
       "url": 1,
       "total": 33
     },
-    "word_count": 11260
+    "word_count": 12588
   }
 }

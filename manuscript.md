@@ -8,7 +8,7 @@ author-meta:
 - Suoqing Ji
 - Meagan Lang
 - Add Yourself
-date-meta: '2019-07-17'
+date-meta: '2019-08-02'
 keywords:
 - markdown
 - publishing
@@ -24,10 +24,10 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-3.0-paper/v/101d45365d9f74f9fc0fae60bad97e2ddfb3132f/))
+([permalink](https://yt-project.github.io/yt-3.0-paper/v/0cea417bf885f338838df45367be3bf2f331de31/))
 was automatically generated
-from [yt-project/yt-3.0-paper@101d453](https://github.com/yt-project/yt-3.0-paper/tree/101d45365d9f74f9fc0fae60bad97e2ddfb3132f)
-on July 17, 2019.
+from [yt-project/yt-3.0-paper@0cea417](https://github.com/yt-project/yt-3.0-paper/tree/0cea417bf885f338838df45367be3bf2f331de31)
+on August 2, 2019.
 </em></small>
 
 ## Authors
@@ -124,7 +124,9 @@ on July 17, 2019.
 
 ## Abstract {.page_break_before}
 
-Abstract here!
+We present the current version of the `yt` software package.
+`yt` is an open-source, community-developed platform for analysis of volumetric data, with readers for several dozen data formats, indexing systems for gridded data, adaptive mesh refinement data, unstructured mesh data, discrete and particle formats, and octree-based data, as well as the combination of these.
+We describe the systems implemented in `yt` to facilitate a "science-first" approach to data analysis, wherein the emphasis is on the meaning and interpretation of the data as opposed to its discretization or layout.
 
 
 # Authorship Policy
@@ -307,16 +309,92 @@ and the citation count of the original method paper.
 
 ### Governance
 
+Between the publication of the first paper and this paper, the `yt` project instituted a form of governance involving a steering committee, a set of "members" of the project, and a defined process for developing improvements and enhancements (the YTEP, or `yt`-enhancement-proposal process).  YTEPs are discussed in [sec:ytep].
+The systems developed account for a number of important procedures, mostly related to decision-making, but do not address pressing community needs such as community standards for conduct, changes in committee composition, sub-project coordination, or the transition of members and developers to "emeritus" status.
 
 
 
 ## Development Procedure {#sec:development}
 
-### Answer Testing
+`yt` is developed openly.
+During the Spring of 2017, development transitioned from occuring on [Bitbucket](https://bitbucket.org/yt_analysis/) to [GitHub](https://github.com/yt-project/), and the source code management system was changed from [Mercurial](https://www.mercurial-scm.org/) to [git](https://git-scm.org/).
+Development occurs through the "pull request" model, wherein changes to the codebase are made and then requested to be included in the primary repository.
+Typically, there are two branches of development, and occasionally three.  The first of these is the "stable" branch, which is much slower-paced, and typically only modified during the release periods.
+The second is that of "master" (which is the conventional term in git terminology; the corresponding mercurial term would be "default") which is where current development takes place.
+The "master" branch is meant to be for development proceeding that does not drastically disrupt usage patterns.
+Occasionally, such as during the development of `yt` 4.0, a third branch is included in the primary repository.
+This development branch is open for large and potentially disruptive changes, but in order to centralize code review and developer attention it takes place there.
+For instance, during the development of `yt` 4.0, the branch `yt-4.0` was where the global mesh was removed and where the units subsystem was removed and replaced with `unyt`.
+
+This three-pronged approach generally has suited the community; the process of backporting changes from the "master" branch to the "stable" branch can be time-consuming.
+However, balancing the needs of a community requiring stable methods for analyzing data against the ease of development suggests that this is a toll worth paying.
+
+In general, the development of `yt` is reasonably top-heavy, with the majority of contributionscoming from a core group of individuals.
+We discuss the implications of this on sustainability in Section [sec:sustainability].
+
+### Unit Testing {#sec:unit_testing}
+
+The `yt` codebase includes a number of unit tests; although extensive, their existence post-dates the initial development of the code, and they largely work around the extant APIs at the time of their creation.
+Most modern recommendations for developing scientific software emphasize isolated components, well-structured interfaces, and few side effects.
+While the development process attempts to emphasize development of isolated APIs and well-constrained unit tests, the balance struck between enabling contribution from junior developers and ensuring the (subjective) standards of the code base does not always fall on the side of rigid design.
+
+### Answer Testing {#sec:answer_testing}
+
+
 
 ### Code Review
 
+Code review in `yt` is conducted on a line-by-line basis, as well as on a higher-level regarding pull requests.  
+
 ### YTEP Process {#sec:ytep}
+
+YTEPs, or "`yt`-enhancement proposal" are vehicles for collaborative decision-making in the project.
+Implemented shortly after the first paper on `yt` was released, the YTEP process experienced a fairly pronounced period of usage during the transition between versions 2.0 and 3.0 of `yt`, and has since been utilized considerably less.
+During periods of rapid development, the needs of the community for stability have to be balanced against desires for change; the YTEP process was implemented to facilitate stakeholder feedback, allow for discussion of design decisions, and to prompt detailed thinking about how and why things should be implemented.
+We have modeled this process against that used in the AstroPy community ("APE").
+To create a new proposal for a large change to `yt`, or to document a decision-making process, individuals prepare a description of the background, motivation for the change, the steps to implementation, and potential alternative approaches.
+The proposal is discussed through the pull-request process, and once discussion has concluded it is added to the [repository](https://github.com/yt-project/ytep) of YTEPs that is auto-built and [deployed](https://ytep.readthedocs.org/).
+The accepted YTEPs have included implementing the chunking system, developing a units system, removing legacy components, and implementing a code of conduct.
+
+Below, we include a table of current YTEPs as of this writing.
+
+| Number   | YTEP Title                                            | Created            | Authors                                                             |
+|----------|-------------------------------------------------------|--------------------|---------------------------------------------------------------------|
+| 0001     | IO Chunking                                           | November 26, 2012  | Matthew Turk                                                        |
+| 0002     | Profile Plotter                                       | December 5, 2012   | Matthew Turk                                                        |
+| 0003     | Standardizing field names                             | December 11, 2012  | Casey Stark, Nathan Goldbaum, Matt Turk                             |
+| 0005     | Octrees for Fluids and Particles                      | December 24, 2012  | Matthew Turk                                                        |
+| 0006     | Periodicity                                           | January 10, 2013   | Matthew Turk, Nathan Goldbaum                                       |
+| 0007     | Automatic Pull Requests' validation                   | February 21, 2013  | Kacper Kowalik                                                      |
+| 0008     | Release Schedule                                      | February 21, 2013  | Matthew Turk                                                        |
+| 0009     | AMRKDTree for Data Sources                            | February 28, 2012  | Sam Skillman                                                        |
+| 0010     | Refactoring for Volume Rendering and Movie Generation | March 3, 2013      | Cameron Hummels                                                     |
+| 0011     | Symbol units in yt                                    | March 7, 2013      |                                                                     |
+| 0012     | Halo Redesign                                         | March 7, 2013      | Britton Smith, Cameron Hummels, Chris Moody, Mark Richardson, Yu Lu |
+| 0013     | Deposited Particle Fields                             | April 25, 2013     | Chris Moody, Matthew Turk, Britton Smith, Doug Rudd, Sam Leitner    |
+| 0014     | Field Filters                                         | July 2nd, 2013     | Matthew Turk                                                        |
+| 0015     | Transfer Function Refactor                            | August 13, 2013    | Sam Skillman                                                        |
+| 0016     | Volume Traversal                                      | September 10, 2013 | Matthew Turk                                                        |
+| 0017     | Domain-Specific Output Types                          | September 18, 2013 | Matthew Turk and Anthony Scopatz                                    |
+| 0018     | Changing dict-like access to Static Output            | September 18, 2013 | Matthew Turk                                                        |
+| 0019     | Reduce items in main import                           | October 2, 2013    | Matthew Turk                                                        |
+| 0020     | Removing PlotCollection                               | March 18, 2014     | Matthew Turk                                                        |
+| 0021     | Particle-Only Plots                                   | August 29, 2014    | Andrew Myers                                                        |
+| 0022     | Benchmarks                                            | January 19, 2015   | Matthew Turk                                                        |
+| 0023     | yt Community Code of Conduct                          | July 11, 2015      | Britton Smith                                                       |
+| 0024     | Alternative Smoothing Kernels                         | August 1, 2015     | Bili Dong                                                           |
+| 0025     | The ytdata Frontend                                   | August 31, 2015    | Britton Smith                                                       |
+| 0026     | NumPy-like Operations                                 | September 21, 2015 | Matthew Turk                                                        |
+| 0027     | Non-Spatial Data                                      | December 1, 2015   | Matthew Turk, Nathan Goldbaum, John ZuHone                          |
+| 0028     | Alternative Unit Systems                              | December 8, 2015   | John ZuHone, Nathan Goldbaum, Matthew Turk                          |
+| 0029     | Extension Packages                                    | January 25, 2016   | Matthew Turk                                                        |
+| 0031     | Unstructured Mesh                                     | December 18, 2014  | Matthew Turk                                                        |
+| 0032     | Removing the global octree mesh for particle data     | February 9 2017    | Nathan Goldbaum, Meagan Lang, Matthew Turk                          |
+| 0033     | Dropping Python2 Support                              | November 28, 2017  | Nathan Goldbaum                                                     |
+| 0034     | yt FITS Image Standard                                | September 9, 2018  | John ZuHone                                                         |
+| 1000     | GitHub Migration                                      | March 25, 2017     | Lots of folks                                                       |
+| 1776     | Team Infrastructure                                   | August 24, 2014    | Britton Smith                                                       |
+| 3000     | Let's all start using yt 3.0!                         | October 30, 2013   | Matthew Turk                                                        |
 
 
 
@@ -1536,6 +1614,9 @@ analysis based on the physical characteristics of the merger history.
 
 
 ## Future Directions
+
+
+## Sustainability {#sec:sustainability}
 
 
 ## References {.page_break_before}

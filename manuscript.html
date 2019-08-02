@@ -12,7 +12,7 @@
   <meta name="author" content="Suoqing Ji" />
   <meta name="author" content="Meagan Lang" />
   <meta name="author" content="Add Yourself" />
-  <meta name="dcterms.date" content="2019-07-17" />
+  <meta name="dcterms.date" content="2019-08-02" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Introducing yt 3.0: Analysis and Visualization of Volumetric Data</title>
   <style>
@@ -92,7 +92,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header">
 <h1 class="title">Introducing yt 3.0: Analysis and Visualization of Volumetric Data</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://yt-project.github.io/yt-3.0-paper/v/101d45365d9f74f9fc0fae60bad97e2ddfb3132f/">permalink</a>) was automatically generated from <a href="https://github.com/yt-project/yt-3.0-paper/tree/101d45365d9f74f9fc0fae60bad97e2ddfb3132f">yt-project/yt-3.0-paper@101d453</a> on July 17, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://yt-project.github.io/yt-3.0-paper/v/0cea417bf885f338838df45367be3bf2f331de31/">permalink</a>) was automatically generated from <a href="https://github.com/yt-project/yt-3.0-paper/tree/0cea417bf885f338838df45367be3bf2f331de31">yt-project/yt-3.0-paper@0cea417</a> on August 2, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>The yt Project</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/yt-project">yt-project</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/yt_astro">yt_astro</a><br> <small> NumFOCUS · Funded by Grant XXXXXXXX </small></p></li>
@@ -105,7 +105,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p><strong>Add Yourself</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/yournamehere">yournamehere</a><br> <small> Your University </small></p></li>
 </ul>
 <h2 id="abstract" class="page_break_before">Abstract</h2>
-<p>Abstract here!</p>
+<p>We present the current version of the <code>yt</code> software package. <code>yt</code> is an open-source, community-developed platform for analysis of volumetric data, with readers for several dozen data formats, indexing systems for gridded data, adaptive mesh refinement data, unstructured mesh data, discrete and particle formats, and octree-based data, as well as the combination of these. We describe the systems implemented in <code>yt</code> to facilitate a “science-first” approach to data analysis, wherein the emphasis is on the meaning and interpretation of the data as opposed to its discretization or layout.</p>
 <h1 id="authorship-policy">Authorship Policy</h1>
 <p>We note that the author list for this paper is, by design, extensive. We have separated the authors into those that contributed to the text (whose names are ordered <strong>somehow TBD</strong>) and those that are members of the <code>yt</code> community. The authors from each group have been indicated in the respective author affiliations.</p>
 <p>This paper was developed collaboratively, using the Manubot <span class="citation" data-cites="cTN2TQIL">[<a href="#ref-cTN2TQIL" role="doc-biblioref">1</a>]</span> system for collaborating on and reviewing contributed text.</p>
@@ -142,10 +142,247 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3 id="engagement-metrics">Engagement Metrics</h3>
 <p>We include here plots of the level of engagement on mailing list discussions and the citation count of the original method paper.</p>
 <h3 id="governance">Governance</h3>
+<p>Between the publication of the first paper and this paper, the <code>yt</code> project instituted a form of governance involving a steering committee, a set of “members” of the project, and a defined process for developing improvements and enhancements (the YTEP, or <code>yt</code>-enhancement-proposal process). YTEPs are discussed in [sec:ytep]. The systems developed account for a number of important procedures, mostly related to decision-making, but do not address pressing community needs such as community standards for conduct, changes in committee composition, sub-project coordination, or the transition of members and developers to “emeritus” status.</p>
 <h2 id="sec:development">Development Procedure</h2>
-<h3 id="answer-testing">Answer Testing</h3>
+<p><code>yt</code> is developed openly. During the Spring of 2017, development transitioned from occuring on <a href="https://bitbucket.org/yt_analysis/">Bitbucket</a> to <a href="https://github.com/yt-project/">GitHub</a>, and the source code management system was changed from <a href="https://www.mercurial-scm.org/">Mercurial</a> to <a href="https://git-scm.org/">git</a>. Development occurs through the “pull request” model, wherein changes to the codebase are made and then requested to be included in the primary repository. Typically, there are two branches of development, and occasionally three. The first of these is the “stable” branch, which is much slower-paced, and typically only modified during the release periods. The second is that of “master” (which is the conventional term in git terminology; the corresponding mercurial term would be “default”) which is where current development takes place. The “master” branch is meant to be for development proceeding that does not drastically disrupt usage patterns. Occasionally, such as during the development of <code>yt</code> 4.0, a third branch is included in the primary repository. This development branch is open for large and potentially disruptive changes, but in order to centralize code review and developer attention it takes place there. For instance, during the development of <code>yt</code> 4.0, the branch <code>yt-4.0</code> was where the global mesh was removed and where the units subsystem was removed and replaced with <code>unyt</code>.</p>
+<p>This three-pronged approach generally has suited the community; the process of backporting changes from the “master” branch to the “stable” branch can be time-consuming. However, balancing the needs of a community requiring stable methods for analyzing data against the ease of development suggests that this is a toll worth paying.</p>
+<p>In general, the development of <code>yt</code> is reasonably top-heavy, with the majority of contributionscoming from a core group of individuals. We discuss the implications of this on sustainability in Section [sec:sustainability].</p>
+<h3 id="sec:unit_testing">Unit Testing</h3>
+<p>The <code>yt</code> codebase includes a number of unit tests; although extensive, their existence post-dates the initial development of the code, and they largely work around the extant APIs at the time of their creation. Most modern recommendations for developing scientific software emphasize isolated components, well-structured interfaces, and few side effects. While the development process attempts to emphasize development of isolated APIs and well-constrained unit tests, the balance struck between enabling contribution from junior developers and ensuring the (subjective) standards of the code base does not always fall on the side of rigid design.</p>
+<h3 id="sec:answer_testing">Answer Testing</h3>
 <h3 id="code-review">Code Review</h3>
+<p>Code review in <code>yt</code> is conducted on a line-by-line basis, as well as on a higher-level regarding pull requests.</p>
 <h3 id="sec:ytep">YTEP Process</h3>
+<p>YTEPs, or “<code>yt</code>-enhancement proposal” are vehicles for collaborative decision-making in the project. Implemented shortly after the first paper on <code>yt</code> was released, the YTEP process experienced a fairly pronounced period of usage during the transition between versions 2.0 and 3.0 of <code>yt</code>, and has since been utilized considerably less. During periods of rapid development, the needs of the community for stability have to be balanced against desires for change; the YTEP process was implemented to facilitate stakeholder feedback, allow for discussion of design decisions, and to prompt detailed thinking about how and why things should be implemented. We have modeled this process against that used in the AstroPy community (“APE”). To create a new proposal for a large change to <code>yt</code>, or to document a decision-making process, individuals prepare a description of the background, motivation for the change, the steps to implementation, and potential alternative approaches. The proposal is discussed through the pull-request process, and once discussion has concluded it is added to the <a href="https://github.com/yt-project/ytep">repository</a> of YTEPs that is auto-built and <a href="https://ytep.readthedocs.org/">deployed</a>. The accepted YTEPs have included implementing the chunking system, developing a units system, removing legacy components, and implementing a code of conduct.</p>
+<p>Below, we include a table of current YTEPs as of this writing.</p>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 35%" />
+<col style="width: 12%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Number</th>
+<th>YTEP Title</th>
+<th>Created</th>
+<th>Authors</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0001</td>
+<td>IO Chunking</td>
+<td>November 26, 2012</td>
+<td>Matthew Turk</td>
+</tr>
+<tr class="even">
+<td>0002</td>
+<td>Profile Plotter</td>
+<td>December 5, 2012</td>
+<td>Matthew Turk</td>
+</tr>
+<tr class="odd">
+<td>0003</td>
+<td>Standardizing field names</td>
+<td>December 11, 2012</td>
+<td>Casey Stark, Nathan Goldbaum, Matt Turk</td>
+</tr>
+<tr class="even">
+<td>0005</td>
+<td>Octrees for Fluids and Particles</td>
+<td>December 24, 2012</td>
+<td>Matthew Turk</td>
+</tr>
+<tr class="odd">
+<td>0006</td>
+<td>Periodicity</td>
+<td>January 10, 2013</td>
+<td>Matthew Turk, Nathan Goldbaum</td>
+</tr>
+<tr class="even">
+<td>0007</td>
+<td>Automatic Pull Requests’ validation</td>
+<td>February 21, 2013</td>
+<td>Kacper Kowalik</td>
+</tr>
+<tr class="odd">
+<td>0008</td>
+<td>Release Schedule</td>
+<td>February 21, 2013</td>
+<td>Matthew Turk</td>
+</tr>
+<tr class="even">
+<td>0009</td>
+<td>AMRKDTree for Data Sources</td>
+<td>February 28, 2012</td>
+<td>Sam Skillman</td>
+</tr>
+<tr class="odd">
+<td>0010</td>
+<td>Refactoring for Volume Rendering and Movie Generation</td>
+<td>March 3, 2013</td>
+<td>Cameron Hummels</td>
+</tr>
+<tr class="even">
+<td>0011</td>
+<td>Symbol units in yt</td>
+<td>March 7, 2013</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>0012</td>
+<td>Halo Redesign</td>
+<td>March 7, 2013</td>
+<td>Britton Smith, Cameron Hummels, Chris Moody, Mark Richardson, Yu Lu</td>
+</tr>
+<tr class="even">
+<td>0013</td>
+<td>Deposited Particle Fields</td>
+<td>April 25, 2013</td>
+<td>Chris Moody, Matthew Turk, Britton Smith, Doug Rudd, Sam Leitner</td>
+</tr>
+<tr class="odd">
+<td>0014</td>
+<td>Field Filters</td>
+<td>July 2nd, 2013</td>
+<td>Matthew Turk</td>
+</tr>
+<tr class="even">
+<td>0015</td>
+<td>Transfer Function Refactor</td>
+<td>August 13, 2013</td>
+<td>Sam Skillman</td>
+</tr>
+<tr class="odd">
+<td>0016</td>
+<td>Volume Traversal</td>
+<td>September 10, 2013</td>
+<td>Matthew Turk</td>
+</tr>
+<tr class="even">
+<td>0017</td>
+<td>Domain-Specific Output Types</td>
+<td>September 18, 2013</td>
+<td>Matthew Turk and Anthony Scopatz</td>
+</tr>
+<tr class="odd">
+<td>0018</td>
+<td>Changing dict-like access to Static Output</td>
+<td>September 18, 2013</td>
+<td>Matthew Turk</td>
+</tr>
+<tr class="even">
+<td>0019</td>
+<td>Reduce items in main import</td>
+<td>October 2, 2013</td>
+<td>Matthew Turk</td>
+</tr>
+<tr class="odd">
+<td>0020</td>
+<td>Removing PlotCollection</td>
+<td>March 18, 2014</td>
+<td>Matthew Turk</td>
+</tr>
+<tr class="even">
+<td>0021</td>
+<td>Particle-Only Plots</td>
+<td>August 29, 2014</td>
+<td>Andrew Myers</td>
+</tr>
+<tr class="odd">
+<td>0022</td>
+<td>Benchmarks</td>
+<td>January 19, 2015</td>
+<td>Matthew Turk</td>
+</tr>
+<tr class="even">
+<td>0023</td>
+<td>yt Community Code of Conduct</td>
+<td>July 11, 2015</td>
+<td>Britton Smith</td>
+</tr>
+<tr class="odd">
+<td>0024</td>
+<td>Alternative Smoothing Kernels</td>
+<td>August 1, 2015</td>
+<td>Bili Dong</td>
+</tr>
+<tr class="even">
+<td>0025</td>
+<td>The ytdata Frontend</td>
+<td>August 31, 2015</td>
+<td>Britton Smith</td>
+</tr>
+<tr class="odd">
+<td>0026</td>
+<td>NumPy-like Operations</td>
+<td>September 21, 2015</td>
+<td>Matthew Turk</td>
+</tr>
+<tr class="even">
+<td>0027</td>
+<td>Non-Spatial Data</td>
+<td>December 1, 2015</td>
+<td>Matthew Turk, Nathan Goldbaum, John ZuHone</td>
+</tr>
+<tr class="odd">
+<td>0028</td>
+<td>Alternative Unit Systems</td>
+<td>December 8, 2015</td>
+<td>John ZuHone, Nathan Goldbaum, Matthew Turk</td>
+</tr>
+<tr class="even">
+<td>0029</td>
+<td>Extension Packages</td>
+<td>January 25, 2016</td>
+<td>Matthew Turk</td>
+</tr>
+<tr class="odd">
+<td>0031</td>
+<td>Unstructured Mesh</td>
+<td>December 18, 2014</td>
+<td>Matthew Turk</td>
+</tr>
+<tr class="even">
+<td>0032</td>
+<td>Removing the global octree mesh for particle data</td>
+<td>February 9 2017</td>
+<td>Nathan Goldbaum, Meagan Lang, Matthew Turk</td>
+</tr>
+<tr class="odd">
+<td>0033</td>
+<td>Dropping Python2 Support</td>
+<td>November 28, 2017</td>
+<td>Nathan Goldbaum</td>
+</tr>
+<tr class="even">
+<td>0034</td>
+<td>yt FITS Image Standard</td>
+<td>September 9, 2018</td>
+<td>John ZuHone</td>
+</tr>
+<tr class="odd">
+<td>1000</td>
+<td>GitHub Migration</td>
+<td>March 25, 2017</td>
+<td>Lots of folks</td>
+</tr>
+<tr class="even">
+<td>1776</td>
+<td>Team Infrastructure</td>
+<td>August 24, 2014</td>
+<td>Britton Smith</td>
+</tr>
+<tr class="odd">
+<td>3000</td>
+<td>Let’s all start using yt 3.0!</td>
+<td>October 30, 2013</td>
+<td>Matthew Turk</td>
+</tr>
+</tbody>
+</table>
 <h2 id="sec:data_objects">Data Objects</h2>
 <p>The basic principles by which <code>yt</code> operates are built on the notion of selecting data (through coarse and subsequent fine-grained indexing of data sources such as files), accessing that data in a memory-efficient fashion, and then processing that data into either a resultant set of quantitative data or a visualization.</p>
 <p>The mechanisms by which <code>yt</code> can select data are typically spatial in nature, although several non-spatial mechanisms focused on queries can be utilized as well. These objects which conduct selection are selectors, and are designed to provide as small of an API as possible, to enable ease of development and deployment of new selectors.</p>
@@ -432,13 +669,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Building on <code>yt</code> for access to halo catalogs, and implementing a similar system for derived fields as applied to graph datasets, ytree <span class="citation" data-cites="VB3RIyxd">[<a href="#ref-VB3RIyxd" role="doc-biblioref">33</a>]</span> is a system for analyzing merger trees from analysis of dark matter halos in cosmological simulations.</p>
 <p>ytree provides flexibility in determining the path that a given analysis takes through the graph of merger trees; for instance, it enables the user to select if they wish to follow the “most massive” progenitor halo backwards in time, or even to set their own criteria for this. Connecting this to the raw, unprocessed data from the simulation (such as the unsampled particle or cell content that comprises the halos) allows researchers to deepen and guide their analysis based on the physical characteristics of the merger history.</p>
 <h2 id="future-directions">Future Directions</h2>
+<h2 id="sec:sustainability">Sustainability</h2>
 <h2 id="references" class="page_break_before">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
 <div id="ref-cTN2TQIL">
 <p>1. <strong>Python utilities for Manubot: Manuscripts, open and automated: manubot/manubot</strong><br />
 Manubot<br />
-(2019-07-11) <a href="https://github.com/manubot/manubot">https://github.com/manubot/manubot</a></p>
+(2019-07-23) <a href="https://github.com/manubot/manubot">https://github.com/manubot/manubot</a></p>
 </div>
 <div id="ref-1GOm01ggN">
 <p>2. <strong>yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA</strong><br />
