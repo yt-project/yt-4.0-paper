@@ -7,8 +7,9 @@ author-meta:
 - Cameron Hummels
 - Suoqing Ji
 - Meagan Lang
+- Madicken Munk
 - Add Yourself
-date-meta: '2020-02-27'
+date-meta: '2020-03-05'
 keywords:
 - markdown
 - publishing
@@ -24,10 +25,10 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-3.0-paper/v/f0fd907ae1cdec74e4b7bf880c812d9046bfcc44/))
+([permalink](https://yt-project.github.io/yt-3.0-paper/v/10c254999ac5ee10f182d83280f60511d4819dd9/))
 was automatically generated
-from [yt-project/yt-3.0-paper@f0fd907](https://github.com/yt-project/yt-3.0-paper/tree/f0fd907ae1cdec74e4b7bf880c812d9046bfcc44)
-on February 27, 2020.
+from [yt-project/yt-3.0-paper@10c2549](https://github.com/yt-project/yt-3.0-paper/tree/10c254999ac5ee10f182d83280f60511d4819dd9)
+on March 5, 2020.
 </em></small>
 
 ## Authors
@@ -106,6 +107,16 @@ on February 27, 2020.
     [0000-0002-2058-2816](https://orcid.org/0000-0002-2058-2816)
     · ![GitHub icon](images/github.svg){.inline_icon}
     [langmm](https://github.com/langmm)<br>
+  <small>
+     National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
+     · Funded by Grant XXXXXXX
+  </small>
+
++ **Madicken Munk**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0003-0117-5366](https://orcid.org/0000-0003-0117-5366)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [munkm](https://github.com/munkm)<br>
   <small>
      National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
      · Funded by Grant XXXXXXX
