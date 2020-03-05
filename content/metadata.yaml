@@ -77,6 +77,15 @@ author_info:
       - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
     funders: Grant XXXXXXX
   -
+    github: munkm
+    name: Madicken Munk
+    initials: MM
+    orcid: 0000-0003-0117-5366
+    email: mmunk2@illinois.edu
+    affiliations:
+      - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
+    funders: Grant XXXXXXX
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
