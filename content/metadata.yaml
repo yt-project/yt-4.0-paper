@@ -86,6 +86,14 @@ author_info:
       - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
     funders: Grant XXXXXXX
   -
+    github: brittonsmith
+    name: Britton Smith
+    initials: BDS
+    orcid: 0000-0002-6804-630X
+    email: britton.smith@ed.ac.uk
+    affiliations:
+      - University of Edinburgh
+-
     github: yournamehere
     name: Add Yourself
     initials: YOU
