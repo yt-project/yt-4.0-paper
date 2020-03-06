@@ -8,8 +8,9 @@ author-meta:
 - Suoqing Ji
 - Meagan Lang
 - Madicken Munk
+- Britton Smith
 - Add Yourself
-date-meta: '2020-03-05'
+date-meta: '2020-03-06'
 keywords:
 - markdown
 - publishing
@@ -25,10 +26,10 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-3.0-paper/v/10c254999ac5ee10f182d83280f60511d4819dd9/))
+([permalink](https://yt-project.github.io/yt-3.0-paper/v/edf1081319309a04760b9752fc3d40b780e7bf99/))
 was automatically generated
-from [yt-project/yt-3.0-paper@10c2549](https://github.com/yt-project/yt-3.0-paper/tree/10c254999ac5ee10f182d83280f60511d4819dd9)
-on March 5, 2020.
+from [yt-project/yt-3.0-paper@edf1081](https://github.com/yt-project/yt-3.0-paper/tree/edf1081319309a04760b9752fc3d40b780e7bf99)
+on March 6, 2020.
 </em></small>
 
 ## Authors
@@ -120,6 +121,15 @@ on March 5, 2020.
   <small>
      National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
      · Funded by Grant XXXXXXX
+  </small>
+
++ **Britton Smith**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0002-6804-630X](https://orcid.org/0000-0002-6804-630X)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [brittonsmith](https://github.com/brittonsmith)<br>
+  <small>
+     University of Edinburgh
   </small>
 
 + **Add Yourself**<br>

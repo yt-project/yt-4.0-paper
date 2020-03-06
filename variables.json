@@ -1,5 +1,5 @@
 {
-  "date": "March 5, 2020",
+  "date": "March 6, 2020",
   "authors": [
     {
       "github": "yt-project",
@@ -119,6 +119,19 @@
       ]
     },
     {
+      "github": "brittonsmith",
+      "name": "Britton Smith",
+      "initials": "BDS",
+      "orcid": "0000-0002-6804-630X",
+      "email": "britton.smith@ed.ac.uk",
+      "affiliations": [
+        "University of Edinburgh"
+      ],
+      "affiliation_numbers": [
+        8
+      ]
+    },
+    {
       "github": "yournamehere",
       "name": "Add Yourself",
       "initials": "YOU",
@@ -128,7 +141,7 @@
         "Your University"
       ],
       "affiliation_numbers": [
-        8
+        9
       ]
     }
   ],
@@ -162,15 +175,19 @@
       "affiliation_number": 7
     },
     {
-      "affiliation": "Your University",
+      "affiliation": "University of Edinburgh",
       "affiliation_number": 8
+    },
+    {
+      "affiliation": "Your University",
+      "affiliation_number": 9
     }
   ],
   "ci_source": {
     "repo_slug": "yt-project/yt-3.0-paper",
     "repo_owner": "yt-project",
     "repo_name": "yt-3.0-paper",
-    "commit": "10c254999ac5ee10f182d83280f60511d4819dd9"
+    "commit": "edf1081319309a04760b9752fc3d40b780e7bf99"
   },
   "manuscript_stats": {
     "reference_counts": {
