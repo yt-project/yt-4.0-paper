@@ -9,6 +9,7 @@ author-meta:
 - Meagan Lang
 - Madicken Munk
 - Britton Smith
+- Kacper Kowalik
 - Add Yourself
 date-meta: '2020-03-06'
 keywords:
@@ -26,9 +27,9 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-3.0-paper/v/edf1081319309a04760b9752fc3d40b780e7bf99/))
+([permalink](https://yt-project.github.io/yt-3.0-paper/v/f92a4bfc71b24fe550a5af70977796ed00b3fd9c/))
 was automatically generated
-from [yt-project/yt-3.0-paper@edf1081](https://github.com/yt-project/yt-3.0-paper/tree/edf1081319309a04760b9752fc3d40b780e7bf99)
+from [yt-project/yt-3.0-paper@f92a4bf](https://github.com/yt-project/yt-3.0-paper/tree/f92a4bfc71b24fe550a5af70977796ed00b3fd9c)
 on March 6, 2020.
 </em></small>
 
@@ -130,6 +131,16 @@ on March 6, 2020.
     [brittonsmith](https://github.com/brittonsmith)<br>
   <small>
      University of Edinburgh
+  </small>
+
++ **Kacper Kowalik**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0003-1709-3744](https://orcid.org/0000-0003-1709-3744)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [Xarthisius](https://github.com/Xarthisius)<br>
+  <small>
+     National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
+     · Funded by Grant XXXXXXX
   </small>
 
 + **Add Yourself**<br>

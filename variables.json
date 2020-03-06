@@ -132,6 +132,20 @@
       ]
     },
     {
+      "github": "Xarthisius",
+      "name": "Kacper Kowalik",
+      "initial": "KK",
+      "orcid": "0000-0003-1709-3744",
+      "email": "kowalikk@illinois.edu",
+      "affiliations": [
+        "National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign"
+      ],
+      "funders": "Grant XXXXXXX",
+      "affiliation_numbers": [
+        4
+      ]
+    },
+    {
       "github": "yournamehere",
       "name": "Add Yourself",
       "initials": "YOU",
@@ -187,7 +201,7 @@
     "repo_slug": "yt-project/yt-3.0-paper",
     "repo_owner": "yt-project",
     "repo_name": "yt-3.0-paper",
-    "commit": "edf1081319309a04760b9752fc3d40b780e7bf99"
+    "commit": "f92a4bfc71b24fe550a5af70977796ed00b3fd9c"
   },
   "manuscript_stats": {
     "reference_counts": {
