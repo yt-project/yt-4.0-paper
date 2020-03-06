@@ -94,6 +94,15 @@ author_info:
     affiliations:
       - University of Edinburgh
   -
+    github: Xarthisius
+    name: Kacper Kowalik
+    initial: KK
+    orcid: 0000-0003-1709-3744
+    email: kowalikk@illinois.edu
+    affiliations:
+      - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
+    funders: Grant XXXXXXX
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
