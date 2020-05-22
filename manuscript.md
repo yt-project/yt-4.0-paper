@@ -10,8 +10,9 @@ author-meta:
 - Madicken Munk
 - Britton Smith
 - Kacper Kowalik
+- Miguel de Val-Borro
 - Add Yourself
-date-meta: '2020-03-06'
+date-meta: '2020-05-22'
 keywords:
 - markdown
 - publishing
@@ -27,10 +28,10 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-3.0-paper/v/f92a4bfc71b24fe550a5af70977796ed00b3fd9c/))
+([permalink](https://yt-project.github.io/yt-3.0-paper/v/76881d257021ce00efe16b24966c6e291f4a1d34/))
 was automatically generated
-from [yt-project/yt-3.0-paper@f92a4bf](https://github.com/yt-project/yt-3.0-paper/tree/f92a4bfc71b24fe550a5af70977796ed00b3fd9c)
-on March 6, 2020.
+from [yt-project/yt-3.0-paper@76881d2](https://github.com/yt-project/yt-3.0-paper/tree/76881d257021ce00efe16b24966c6e291f4a1d34)
+on May 22, 2020.
 </em></small>
 
 ## Authors
@@ -141,6 +142,15 @@ on March 6, 2020.
   <small>
      National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
      · Funded by Grant XXXXXXX
+  </small>
+
++ **Miguel de Val-Borro**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [000-0002-0455-9384](https://orcid.org/000-0002-0455-9384)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [migueldvb](https://github.com/migueldvb)<br>
+  <small>
+     Planetary Science Institute
   </small>
 
 + **Add Yourself**<br>

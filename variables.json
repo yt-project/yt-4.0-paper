@@ -1,5 +1,5 @@
 {
-  "date": "March 6, 2020",
+  "date": "May 22, 2020",
   "authors": [
     {
       "github": "yt-project",
@@ -146,6 +146,19 @@
       ]
     },
     {
+      "github": "migueldvb",
+      "name": "Miguel de Val-Borro",
+      "initials": "MVB",
+      "orcid": "000-0002-0455-9384",
+      "email": "mdeval@psi.edu",
+      "affiliations": [
+        "Planetary Science Institute"
+      ],
+      "affiliation_numbers": [
+        9
+      ]
+    },
+    {
       "github": "yournamehere",
       "name": "Add Yourself",
       "initials": "YOU",
@@ -155,7 +168,7 @@
         "Your University"
       ],
       "affiliation_numbers": [
-        9
+        10
       ]
     }
   ],
@@ -193,15 +206,19 @@
       "affiliation_number": 8
     },
     {
-      "affiliation": "Your University",
+      "affiliation": "Planetary Science Institute",
       "affiliation_number": 9
+    },
+    {
+      "affiliation": "Your University",
+      "affiliation_number": 10
     }
   ],
   "ci_source": {
     "repo_slug": "yt-project/yt-3.0-paper",
     "repo_owner": "yt-project",
     "repo_name": "yt-3.0-paper",
-    "commit": "f92a4bfc71b24fe550a5af70977796ed00b3fd9c"
+    "commit": "76881d257021ce00efe16b24966c6e291f4a1d34"
   },
   "manuscript_stats": {
     "reference_counts": {
