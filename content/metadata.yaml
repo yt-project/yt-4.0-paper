@@ -103,6 +103,14 @@ author_info:
       - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
     funders: Grant XXXXXXX
   -
+    github: migueldvb
+    name: Miguel de Val-Borro
+    initials: MVB
+    orcid: 000-0002-0455-9384
+    email: mdeval@psi.edu
+    affiliations:
+      - Planetary Science Institute
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
