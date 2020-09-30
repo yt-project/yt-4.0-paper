@@ -1,232 +1,270 @@
 {
-  "date": "May 22, 2020",
-  "authors": [
-    {
-      "github": "yt-project",
-      "name": "The yt Project",
-      "initials": "YT",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "twitter": "yt_astro",
-      "email": "yt-dev@python.org",
-      "affiliations": [
-        "NumFOCUS"
-      ],
-      "funders": "Grant XXXXXXXX",
-      "affiliation_numbers": [
-        1
-      ]
-    },
-    {
-      "github": "MatthewTurk",
-      "name": "Matthew Turk",
-      "initials": "MJT",
-      "orcid": "0000-0002-5294-0198",
-      "twitter": "powersoffour",
-      "email": "mjturk@illinois.edu",
-      "affiliations": [
-        "School of Information Sciences, University of Illinois at Urbana-Champaign",
-        "Department of Astronomy, University of Illinois at Urbana-Champaign"
-      ],
-      "funders": "Grant XXXXXXXX",
-      "affiliation_numbers": [
-        2,
-        3
-      ]
-    },
-    {
-      "github": "ngoldbaum",
-      "name": "Nathan J Goldbaum",
-      "initial": "NJG",
-      "orcid": "0000-0001-5557-267X",
-      "twitter": "njgoldbaum",
-      "email": "ngoldbau@illinois.edu",
-      "affiliations": [
-        "National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign"
-      ],
-      "funders": "Grant XXXXXXX",
-      "affiliation_numbers": [
-        4
-      ]
-    },
-    {
-      "github": "jzuhone",
-      "name": "John A. ZuHone",
-      "initials": "JAZ",
-      "orcid": "0000-0003-3175-2347",
-      "email": "john.zuhone@cfa.harvard.edu",
-      "twitter": "astrojaz",
-      "affiliations": [
-        "Harvard-Smithsonian Center for Astrophysics"
-      ],
-      "affiliation_numbers": [
-        5
-      ]
-    },
-    {
-      "github": "chummels",
-      "name": "Cameron Hummels",
-      "initials": "CBH",
-      "orcid": "0000-0002-3817-8133",
-      "email": "chummels@gmail.com",
-      "affiliations": [
-        "Department of Theoretical Astrophysics, California Institute of Technology"
-      ],
-      "funders": "Grant XXXXXXX",
-      "affiliation_numbers": [
-        6
-      ]
-    },
-    {
-      "github": "jisuoqing",
-      "name": "Suoqing Ji",
-      "initials": "SJ",
-      "orcid": "0000-0001-9658-0588",
-      "email": "suoqing@physics.ucsb.edu",
-      "affiliations": [
-        "Physics Department, University of California Santa Barbara"
-      ],
-      "funders": "Grant XXXXXXX",
-      "affiliation_numbers": [
-        7
-      ]
-    },
-    {
-      "github": "langmm",
-      "name": "Meagan Lang",
-      "initial": "ML",
-      "orcid": "0000-0002-2058-2816",
-      "email": "langmm@illinois.edu",
-      "affiliations": [
-        "National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign"
-      ],
-      "funders": "Grant XXXXXXX",
-      "affiliation_numbers": [
-        4
-      ]
-    },
-    {
-      "github": "munkm",
-      "name": "Madicken Munk",
-      "initials": "MM",
-      "orcid": "0000-0003-0117-5366",
-      "email": "mmunk2@illinois.edu",
-      "affiliations": [
-        "National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign"
-      ],
-      "funders": "Grant XXXXXXX",
-      "affiliation_numbers": [
-        4
-      ]
-    },
-    {
-      "github": "brittonsmith",
-      "name": "Britton Smith",
-      "initials": "BDS",
-      "orcid": "0000-0002-6804-630X",
-      "email": "britton.smith@ed.ac.uk",
-      "affiliations": [
-        "University of Edinburgh"
-      ],
-      "affiliation_numbers": [
-        8
-      ]
-    },
-    {
-      "github": "Xarthisius",
-      "name": "Kacper Kowalik",
-      "initial": "KK",
-      "orcid": "0000-0003-1709-3744",
-      "email": "kowalikk@illinois.edu",
-      "affiliations": [
-        "National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign"
-      ],
-      "funders": "Grant XXXXXXX",
-      "affiliation_numbers": [
-        4
-      ]
-    },
-    {
-      "github": "migueldvb",
-      "name": "Miguel de Val-Borro",
-      "initials": "MVB",
-      "orcid": "000-0002-0455-9384",
-      "email": "mdeval@psi.edu",
-      "affiliations": [
-        "Planetary Science Institute"
-      ],
-      "affiliation_numbers": [
-        9
-      ]
-    },
-    {
-      "github": "yournamehere",
-      "name": "Add Yourself",
-      "initials": "YOU",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "email": "you@example.com",
-      "affiliations": [
-        "Your University"
-      ],
-      "affiliation_numbers": [
-        10
-      ]
-    }
-  ],
-  "affiliations": [
-    {
-      "affiliation": "NumFOCUS",
-      "affiliation_number": 1
-    },
-    {
-      "affiliation": "School of Information Sciences, University of Illinois at Urbana-Champaign",
-      "affiliation_number": 2
-    },
-    {
-      "affiliation": "Department of Astronomy, University of Illinois at Urbana-Champaign",
-      "affiliation_number": 3
-    },
-    {
-      "affiliation": "National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign",
-      "affiliation_number": 4
-    },
-    {
-      "affiliation": "Harvard-Smithsonian Center for Astrophysics",
-      "affiliation_number": 5
-    },
-    {
-      "affiliation": "Department of Theoretical Astrophysics, California Institute of Technology",
-      "affiliation_number": 6
-    },
-    {
-      "affiliation": "Physics Department, University of California Santa Barbara",
-      "affiliation_number": 7
-    },
-    {
-      "affiliation": "University of Edinburgh",
-      "affiliation_number": 8
-    },
-    {
-      "affiliation": "Planetary Science Institute",
-      "affiliation_number": 9
-    },
-    {
-      "affiliation": "Your University",
-      "affiliation_number": 10
-    }
-  ],
-  "ci_source": {
-    "repo_slug": "yt-project/yt-3.0-paper",
-    "repo_owner": "yt-project",
-    "repo_name": "yt-3.0-paper",
-    "commit": "76881d257021ce00efe16b24966c6e291f4a1d34"
+  "pandoc": {
+    "title": "Introducing yt 3.0: Analysis and Visualization of Volumetric Data",
+    "keywords": [
+      "markdown",
+      "publishing",
+      "manubot"
+    ],
+    "lang": "en-US",
+    "date-meta": "2020-09-30",
+    "author-meta": [
+      "The yt Project",
+      "Matthew Turk",
+      "Nathan J Goldbaum",
+      "John A. ZuHone",
+      "Cameron Hummels",
+      "Suoqing Ji",
+      "Meagan Lang",
+      "Madicken Munk",
+      "Britton Smith",
+      "Kacper Kowalik",
+      "Miguel de Val-Borro",
+      "Add Yourself"
+    ],
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Introducing yt 3.0: Analysis and Visualization of Volumetric Data\" />\n<meta name=\"citation_title\" content=\"Introducing yt 3.0: Analysis and Visualization of Volumetric Data\" />\n<meta property=\"og:title\" content=\"Introducing yt 3.0: Analysis and Visualization of Volumetric Data\" />\n<meta property=\"twitter:title\" content=\"Introducing yt 3.0: Analysis and Visualization of Volumetric Data\" />\n<meta name=\"dc.date\" content=\"2020-09-30\" />\n<meta name=\"citation_publication_date\" content=\"2020-09-30\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"The yt Project\" />\n<meta name=\"citation_author_institution\" content=\"NumFOCUS\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@yt_astro\" />\n<meta name=\"citation_author\" content=\"Matthew Turk\" />\n<meta name=\"citation_author_institution\" content=\"School of Information Sciences, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_institution\" content=\"Department of Astronomy, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5294-0198\" />\n<meta name=\"twitter:creator\" content=\"@powersoffour\" />\n<meta name=\"citation_author\" content=\"Nathan J Goldbaum\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5557-267X\" />\n<meta name=\"twitter:creator\" content=\"@njgoldbaum\" />\n<meta name=\"citation_author\" content=\"John A. ZuHone\" />\n<meta name=\"citation_author_institution\" content=\"Harvard-Smithsonian Center for Astrophysics\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3175-2347\" />\n<meta name=\"twitter:creator\" content=\"@astrojaz\" />\n<meta name=\"citation_author\" content=\"Cameron Hummels\" />\n<meta name=\"citation_author_institution\" content=\"Department of Theoretical Astrophysics, California Institute of Technology\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3817-8133\" />\n<meta name=\"citation_author\" content=\"Suoqing Ji\" />\n<meta name=\"citation_author_institution\" content=\"Physics Department, University of California Santa Barbara\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9658-0588\" />\n<meta name=\"citation_author\" content=\"Meagan Lang\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2058-2816\" />\n<meta name=\"citation_author\" content=\"Madicken Munk\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0117-5366\" />\n<meta name=\"citation_author\" content=\"Britton Smith\" />\n<meta name=\"citation_author_institution\" content=\"University of Edinburgh\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6804-630X\" />\n<meta name=\"citation_author\" content=\"Kacper Kowalik\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1709-3744\" />\n<meta name=\"citation_author\" content=\"Miguel de Val-Borro\" />\n<meta name=\"citation_author_institution\" content=\"Planetary Science Institute\" />\n<meta name=\"citation_author_orcid\" content=\"000-0002-0455-9384\" />\n<meta name=\"citation_author\" content=\"Add Yourself\" />\n<meta name=\"citation_author_institution\" content=\"Your University\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://yt-project.github.io/yt-3.0-paper/\" />\n<meta property=\"og:url\" content=\"https://yt-project.github.io/yt-3.0-paper/\" />\n<meta property=\"twitter:url\" content=\"https://yt-project.github.io/yt-3.0-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://yt-project.github.io/yt-3.0-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://yt-project.github.io/yt-3.0-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://yt-project.github.io/yt-3.0-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://yt-project.github.io/yt-3.0-paper/v/2c3aa16550f51f58da74c7c1dd9499401660120f/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://yt-project.github.io/yt-3.0-paper/v/2c3aa16550f51f58da74c7c1dd9499401660120f/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://yt-project.github.io/yt-3.0-paper/v/2c3aa16550f51f58da74c7c1dd9499401660120f/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "bibliography": [
+      "content/manual-references.json"
+    ],
+    "manubot-output-bibliography": "output/references.json",
+    "manubot-output-citekeys": "output/citations.tsv",
+    "manubot-requests-cache-path": "ci/cache/requests-cache",
+    "manubot-clear-requests-cache": false
   },
-  "manuscript_stats": {
-    "reference_counts": {
-      "doi": 4,
-      "raw": 28,
-      "url": 1,
-      "total": 33
+  "manubot": {
+    "date": "September 30, 2020",
+    "authors": [
+      {
+        "github": "yt-project",
+        "name": "The yt Project",
+        "initials": "YT",
+        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "twitter": "yt_astro",
+        "email": "yt-dev@python.org",
+        "affiliations": [
+          "NumFOCUS"
+        ],
+        "funders": "Grant XXXXXXXX",
+        "affiliation_numbers": [
+          1
+        ]
+      },
+      {
+        "github": "MatthewTurk",
+        "name": "Matthew Turk",
+        "initials": "MJT",
+        "orcid": "0000-0002-5294-0198",
+        "twitter": "powersoffour",
+        "email": "mjturk@illinois.edu",
+        "affiliations": [
+          "School of Information Sciences, University of Illinois at Urbana-Champaign",
+          "Department of Astronomy, University of Illinois at Urbana-Champaign"
+        ],
+        "funders": "Grant XXXXXXXX",
+        "affiliation_numbers": [
+          2,
+          3
+        ]
+      },
+      {
+        "github": "ngoldbaum",
+        "name": "Nathan J Goldbaum",
+        "initial": "NJG",
+        "orcid": "0000-0001-5557-267X",
+        "twitter": "njgoldbaum",
+        "email": "ngoldbau@illinois.edu",
+        "affiliations": [
+          "National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign"
+        ],
+        "funders": "Grant XXXXXXX",
+        "affiliation_numbers": [
+          4
+        ]
+      },
+      {
+        "github": "jzuhone",
+        "name": "John A. ZuHone",
+        "initials": "JAZ",
+        "orcid": "0000-0003-3175-2347",
+        "email": "john.zuhone@cfa.harvard.edu",
+        "twitter": "astrojaz",
+        "affiliations": [
+          "Harvard-Smithsonian Center for Astrophysics"
+        ],
+        "affiliation_numbers": [
+          5
+        ]
+      },
+      {
+        "github": "chummels",
+        "name": "Cameron Hummels",
+        "initials": "CBH",
+        "orcid": "0000-0002-3817-8133",
+        "email": "chummels@gmail.com",
+        "affiliations": [
+          "Department of Theoretical Astrophysics, California Institute of Technology"
+        ],
+        "funders": "Grant XXXXXXX",
+        "affiliation_numbers": [
+          6
+        ]
+      },
+      {
+        "github": "jisuoqing",
+        "name": "Suoqing Ji",
+        "initials": "SJ",
+        "orcid": "0000-0001-9658-0588",
+        "email": "suoqing@physics.ucsb.edu",
+        "affiliations": [
+          "Physics Department, University of California Santa Barbara"
+        ],
+        "funders": "Grant XXXXXXX",
+        "affiliation_numbers": [
+          7
+        ]
+      },
+      {
+        "github": "langmm",
+        "name": "Meagan Lang",
+        "initial": "ML",
+        "orcid": "0000-0002-2058-2816",
+        "email": "langmm@illinois.edu",
+        "affiliations": [
+          "National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign"
+        ],
+        "funders": "Grant XXXXXXX",
+        "affiliation_numbers": [
+          4
+        ]
+      },
+      {
+        "github": "munkm",
+        "name": "Madicken Munk",
+        "initials": "MM",
+        "orcid": "0000-0003-0117-5366",
+        "email": "mmunk2@illinois.edu",
+        "affiliations": [
+          "National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign"
+        ],
+        "funders": "Grant XXXXXXX",
+        "affiliation_numbers": [
+          4
+        ]
+      },
+      {
+        "github": "brittonsmith",
+        "name": "Britton Smith",
+        "initials": "BDS",
+        "orcid": "0000-0002-6804-630X",
+        "email": "britton.smith@ed.ac.uk",
+        "affiliations": [
+          "University of Edinburgh"
+        ],
+        "affiliation_numbers": [
+          8
+        ]
+      },
+      {
+        "github": "Xarthisius",
+        "name": "Kacper Kowalik",
+        "initial": "KK",
+        "orcid": "0000-0003-1709-3744",
+        "email": "kowalikk@illinois.edu",
+        "affiliations": [
+          "National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign"
+        ],
+        "funders": "Grant XXXXXXX",
+        "affiliation_numbers": [
+          4
+        ]
+      },
+      {
+        "github": "migueldvb",
+        "name": "Miguel de Val-Borro",
+        "initials": "MVB",
+        "orcid": "000-0002-0455-9384",
+        "email": "mdeval@psi.edu",
+        "affiliations": [
+          "Planetary Science Institute"
+        ],
+        "affiliation_numbers": [
+          9
+        ]
+      },
+      {
+        "github": "yournamehere",
+        "name": "Add Yourself",
+        "initials": "YOU",
+        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "email": "you@example.com",
+        "affiliations": [
+          "Your University"
+        ],
+        "affiliation_numbers": [
+          10
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "affiliation": "NumFOCUS",
+        "affiliation_number": 1
+      },
+      {
+        "affiliation": "School of Information Sciences, University of Illinois at Urbana-Champaign",
+        "affiliation_number": 2
+      },
+      {
+        "affiliation": "Department of Astronomy, University of Illinois at Urbana-Champaign",
+        "affiliation_number": 3
+      },
+      {
+        "affiliation": "National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign",
+        "affiliation_number": 4
+      },
+      {
+        "affiliation": "Harvard-Smithsonian Center for Astrophysics",
+        "affiliation_number": 5
+      },
+      {
+        "affiliation": "Department of Theoretical Astrophysics, California Institute of Technology",
+        "affiliation_number": 6
+      },
+      {
+        "affiliation": "Physics Department, University of California Santa Barbara",
+        "affiliation_number": 7
+      },
+      {
+        "affiliation": "University of Edinburgh",
+        "affiliation_number": 8
+      },
+      {
+        "affiliation": "Planetary Science Institute",
+        "affiliation_number": 9
+      },
+      {
+        "affiliation": "Your University",
+        "affiliation_number": 10
+      }
+    ],
+    "ci_source": {
+      "provider": "github",
+      "repo_slug": "yt-project/yt-3.0-paper",
+      "repo_owner": "yt-project",
+      "repo_name": "yt-3.0-paper",
+      "commit": "2c3aa16550f51f58da74c7c1dd9499401660120f",
+      "triggering_commit": "2c3aa16550f51f58da74c7c1dd9499401660120f",
+      "build_url": "https://github.com/yt-project/yt-3.0-paper/commit/2c3aa16550f51f58da74c7c1dd9499401660120f/checks",
+      "job_url": "https://github.com/yt-project/yt-3.0-paper/runs/run2"
     },
-    "word_count": 13287
+    "html_url": "https://yt-project.github.io/yt-3.0-paper/",
+    "pdf_url": "https://yt-project.github.io/yt-3.0-paper/manuscript.pdf",
+    "html_url_versioned": "https://yt-project.github.io/yt-3.0-paper/v/2c3aa16550f51f58da74c7c1dd9499401660120f/",
+    "pdf_url_versioned": "https://yt-project.github.io/yt-3.0-paper/v/2c3aa16550f51f58da74c7c1dd9499401660120f/manuscript.pdf",
+    "manubot_version": "0.3.1",
+    "rootstock_commit": "1780fac0ac6bba1260a9da3886061730fa5d2765",
+    "manuscript_stats": {
+      "word_count": 13298
+    }
   }
 }

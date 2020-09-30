@@ -12,12 +12,163 @@ author-meta:
 - Kacper Kowalik
 - Miguel de Val-Borro
 - Add Yourself
-date-meta: '2020-05-22'
+bibliography:
+- content/manual-references.json
+date-meta: '2020-09-30'
+header-includes: '<!--
+
+  Manubot generated metadata rendered from header-includes-template.html.
+
+  Suggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html
+
+  -->
+
+  <meta name="dc.format" content="text/html" />
+
+  <meta name="dc.title" content="Introducing yt 3.0: Analysis and Visualization of Volumetric Data" />
+
+  <meta name="citation_title" content="Introducing yt 3.0: Analysis and Visualization of Volumetric Data" />
+
+  <meta property="og:title" content="Introducing yt 3.0: Analysis and Visualization of Volumetric Data" />
+
+  <meta property="twitter:title" content="Introducing yt 3.0: Analysis and Visualization of Volumetric Data" />
+
+  <meta name="dc.date" content="2020-09-30" />
+
+  <meta name="citation_publication_date" content="2020-09-30" />
+
+  <meta name="dc.language" content="en-US" />
+
+  <meta name="citation_language" content="en-US" />
+
+  <meta name="dc.relation.ispartof" content="Manubot" />
+
+  <meta name="dc.publisher" content="Manubot" />
+
+  <meta name="citation_journal_title" content="Manubot" />
+
+  <meta name="citation_technical_report_institution" content="Manubot" />
+
+  <meta name="citation_author" content="The yt Project" />
+
+  <meta name="citation_author_institution" content="NumFOCUS" />
+
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+
+  <meta name="twitter:creator" content="@yt_astro" />
+
+  <meta name="citation_author" content="Matthew Turk" />
+
+  <meta name="citation_author_institution" content="School of Information Sciences, University of Illinois at Urbana-Champaign" />
+
+  <meta name="citation_author_institution" content="Department of Astronomy, University of Illinois at Urbana-Champaign" />
+
+  <meta name="citation_author_orcid" content="0000-0002-5294-0198" />
+
+  <meta name="twitter:creator" content="@powersoffour" />
+
+  <meta name="citation_author" content="Nathan J Goldbaum" />
+
+  <meta name="citation_author_institution" content="National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign" />
+
+  <meta name="citation_author_orcid" content="0000-0001-5557-267X" />
+
+  <meta name="twitter:creator" content="@njgoldbaum" />
+
+  <meta name="citation_author" content="John A. ZuHone" />
+
+  <meta name="citation_author_institution" content="Harvard-Smithsonian Center for Astrophysics" />
+
+  <meta name="citation_author_orcid" content="0000-0003-3175-2347" />
+
+  <meta name="twitter:creator" content="@astrojaz" />
+
+  <meta name="citation_author" content="Cameron Hummels" />
+
+  <meta name="citation_author_institution" content="Department of Theoretical Astrophysics, California Institute of Technology" />
+
+  <meta name="citation_author_orcid" content="0000-0002-3817-8133" />
+
+  <meta name="citation_author" content="Suoqing Ji" />
+
+  <meta name="citation_author_institution" content="Physics Department, University of California Santa Barbara" />
+
+  <meta name="citation_author_orcid" content="0000-0001-9658-0588" />
+
+  <meta name="citation_author" content="Meagan Lang" />
+
+  <meta name="citation_author_institution" content="National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign" />
+
+  <meta name="citation_author_orcid" content="0000-0002-2058-2816" />
+
+  <meta name="citation_author" content="Madicken Munk" />
+
+  <meta name="citation_author_institution" content="National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign" />
+
+  <meta name="citation_author_orcid" content="0000-0003-0117-5366" />
+
+  <meta name="citation_author" content="Britton Smith" />
+
+  <meta name="citation_author_institution" content="University of Edinburgh" />
+
+  <meta name="citation_author_orcid" content="0000-0002-6804-630X" />
+
+  <meta name="citation_author" content="Kacper Kowalik" />
+
+  <meta name="citation_author_institution" content="National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign" />
+
+  <meta name="citation_author_orcid" content="0000-0003-1709-3744" />
+
+  <meta name="citation_author" content="Miguel de Val-Borro" />
+
+  <meta name="citation_author_institution" content="Planetary Science Institute" />
+
+  <meta name="citation_author_orcid" content="000-0002-0455-9384" />
+
+  <meta name="citation_author" content="Add Yourself" />
+
+  <meta name="citation_author_institution" content="Your University" />
+
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+
+  <link rel="canonical" href="https://yt-project.github.io/yt-3.0-paper/" />
+
+  <meta property="og:url" content="https://yt-project.github.io/yt-3.0-paper/" />
+
+  <meta property="twitter:url" content="https://yt-project.github.io/yt-3.0-paper/" />
+
+  <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-3.0-paper/" />
+
+  <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
+
+  <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
+
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/2c3aa16550f51f58da74c7c1dd9499401660120f/" />
+
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/2c3aa16550f51f58da74c7c1dd9499401660120f/" />
+
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/2c3aa16550f51f58da74c7c1dd9499401660120f/manuscript.pdf" />
+
+  <meta property="og:type" content="article" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
+
+  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
+
+  <meta name="theme-color" content="#ad1457" />
+
+  <!-- end Manubot generated metadata -->'
 keywords:
 - markdown
 - publishing
 - manubot
 lang: en-US
+manubot-clear-requests-cache: false
+manubot-output-bibliography: output/references.json
+manubot-output-citekeys: output/citations.tsv
+manubot-requests-cache-path: ci/cache/requests-cache
 title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 ...
 
@@ -28,10 +179,10 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-3.0-paper/v/76881d257021ce00efe16b24966c6e291f4a1d34/))
+([permalink](https://yt-project.github.io/yt-3.0-paper/v/2c3aa16550f51f58da74c7c1dd9499401660120f/))
 was automatically generated
-from [yt-project/yt-3.0-paper@76881d2](https://github.com/yt-project/yt-3.0-paper/tree/76881d257021ce00efe16b24966c6e291f4a1d34)
-on May 22, 2020.
+from [yt-project/yt-3.0-paper@2c3aa16](https://github.com/yt-project/yt-3.0-paper/tree/2c3aa16550f51f58da74c7c1dd9499401660120f)
+on September 30, 2020.
 </em></small>
 
 ## Authors
@@ -177,7 +328,7 @@ We note that the author list for this paper is, by design, extensive.
 We have separated the authors into those that contributed to the text (whose names are ordered **somehow TBD**) and those that are members of the `yt` community.
 The authors from each group have been indicated in the respective author affiliations.
 
-This paper was developed collaboratively, using the Manubot [@cTN2TQIL] system for collaborating on and reviewing contributed text.
+This paper was developed collaboratively, using the Manubot [@url:https://github.com/greenelab/manubot] system for collaborating on and reviewing contributed text.
 
 > 
 > To add yourself to the author list, please follow the instructions in our
@@ -200,7 +351,7 @@ When those tools align with our mental model of how data exists, they can allow 
 However, when they do not, they can cause frustration, delays, and most worryingly, incorrect or misinterpreted results.
 When viewing this from the perspective of the landscape of inquiry, the most startling realization is that the questions a computational tool enables individuals to ask shapes the questions they think to ask.
 
-In [@1GOm01ggN], the analysis platform `yt` was described.
+In [@doi:10.1088/0067-0049/192/1/9], the analysis platform `yt` was described.
 At the time, `yt` was focused on analyzing and visualizing the output of grid-based adaptive mesh refinement hydrodynamic simulations; while these were used to study many different physical phenomena, they all were laid out in roughly the same way, in rectilinear meshes of data.
 In this paper, we present the current version of `yt`, which enables identical scripts to analyze and visualize data stored as rectilinear grids as before, but additionally particle or discrete data, octree-based data, and data stored as unstructured meshes.
 This has been the result of a large-scale effort to rewrite the underlying machinery within `yt` for accessing data, indexing that data, and providing it in efficient ways to higher-level routines, as discussed in Section Something.
@@ -488,10 +639,10 @@ The spatial-tree optimization substantially increases performance for "wide and 
 
 Advances in both hardware and software facilitate astrophysical datasets of growing complexity and size.
 The datasets produced by numerical simulations can currently reach sizes of $\sim$100 Tbytes split across hundreds of files [e.g.
-@16PxHyMVP].
+@raw:Croft2015].
 For even simple analysis tasks, the cost of incrementally reading datasets this large into memory is quite high.
 This problem is not limited to theoretical work.
-During operations the Large Synoptic Survey Telescope (LSST) will produce 15 Tbytes of data each night [@OUQuy4C8].
+During operations the Large Synoptic Survey Telescope (LSST) will produce 15 Tbytes of data each night [@raw:Juric2015a].
 In order to analyze such large datasets, we need innovative techniques for quickly indexing and selecting data without loading the entire dataset into memory.
 We present a technique for using Morton bitmap indexes to map files and accelerate data analysis.
 
@@ -517,9 +668,9 @@ Panel (a) is an example where random parts of the domain are contained within ea
 In such a case, many files will need to be loaded for contiguous selections within the domain.
 In panel (b), the domain was split between the files along the $x$ dimension.
 Fewer files will need to be loaded for queries along the $y$-dimension, but contiguous selection in $x$ will still require a greater number of files since the partition is not well localized in that dimension.
-Panels (c) and (d) are both examples of partitioning the domain between the files along a space filling curve [Morton and Hilbert curves respectively; @1Qfg818r; @TCp1VkBF].
+Panels (c) and (d) are both examples of partitioning the domain between the files along a space filling curve [Morton and Hilbert curves respectively; @raw:Morton1996; @raw:Hilbert1970].
 These partitions have the greatest chance of limiting the number of files that must be loaded for a contiguous selection with slightly improved localization for the Hilbert curve.
-Consequently, Hilbert curves have also been used for load-balancing in parallel simulation codes like Gadget-2 [@iAgWKzbq] and RAMSES [@f64usKAm].
+Consequently, Hilbert curves have also been used for load-balancing in parallel simulation codes like Gadget-2 [@raw:Springel2005b] and RAMSES [@raw:Teyssier2001].
 
 Figure @fig:selector1 shows examples of three selections within the above domain partitions.
 
@@ -556,7 +707,7 @@ Although the same result can be achieved by re-sorting the data itself, creating
 Morton Indices
 --------------
 
-Morton ordering maps multidimensional data onto a one-dimensional space filling curve [@1Qfg818r].
+Morton ordering maps multidimensional data onto a one-dimensional space filling curve [@raw:Morton1996].
 This is done by breaking up the domain into cells where each cell's position within the $N$-dimensional domain can be described by $N$ integers.
 The Morton index of the cell is then created by interleaving the bits of the $N$ integers to create a single integer that fully describes the cell's position (see panel (b) Figure @fig:zorder).
 As seen in panel (a) of Figure @fig:zorder, ordering of the cells by their Morton indices forms a space filling Z-curve.
@@ -570,27 +721,27 @@ The precision of a single Morton index is only limited by the size of the intege
 For instance, 64-bit Morton indices in 3 dimensions can be localized to $1/2^{21}$th of the domain in each dimension ($3\times21$ bits = 63 bits).
 If the domain is binarily divided into subcells to some order $k$ in each dimension (i.e.
 $2^{Nk}$ cells), coarser Morton indices can be obtained by simply masking lower bits.
-Morton ordering has been used to speed up quadtree construction [@xgKPq1ZP], nearest neighbor searches [@xegdsQsV], and range queries [@5xMntkfV].
+Morton ordering has been used to speed up quadtree construction [@raw:Hjaltason2002], nearest neighbor searches [@raw:Connor2010], and range queries [@raw:Orenstein1984].
 By recording the indices of the cells containing data from each file within a dataset, Morton indices can also be used to construct one-dimensional maps of an $N$-dimensional dataset that can be represented as bitmaps.
 
 #### Bitmaps & EWAH Compression
 
 Bitmap indexes use the values of single bits within an array of bits to describe dataset properties.
 This form requires minimal memory and can be filtered using computationally inexpensive boolean operations.
-Bitmap indexes have long been popular for use with large data warehouses [@pD21Clif; @j5G2aK4G; @DjdlyjdU].
-However, as scientific datasets have become larger and more complex, they have also begun to gain traction in a diverse array of scientific fields including geosciences [@knRC0GG3], earth sciences, rocket science [@oQYioniZ; @R2YXMXP5], high-energy physics [@OPgGF8mv], and combustion [@f4xkZqfp].
+Bitmap indexes have long been popular for use with large data warehouses [@raw:Wu1998; @raw:Chan1998; @raw:Chan1999].
+However, as scientific datasets have become larger and more complex, they have also begun to gain traction in a diverse array of scientific fields including geosciences [@raw:Malensek2014], earth sciences, rocket science [@raw:Sinha2006; @raw:Sinha2007], high-energy physics [@raw:Stockinger2000], and combustion [@raw:Wu2003].
 
 In cases where data attributes can take on a finite set of values, one bitmap is constructed for each possible attribute value.
 Within the bitmap each bit specifies whether or not the corresponding data point has that value.
 In this way, queries for data with a single attribute value require consulting only one bitmap and queries of multiple attributes/values can be done using boolean AND operations on the corresponding bitmaps.
-In the case of scientific data, which often contains floating point value attributes, the attributes must be binned prior to constructing the bitmaps [@4bva9JK3; @1AiUmiNA7; @UNfYz0dl].
+In the case of scientific data, which often contains floating point value attributes, the attributes must be binned prior to constructing the bitmaps [@raw:Yu1998; @raw:Shoshani1999; @raw:Stockinger2004].
 Here, Morton indices are used to bin N-dimensional floating point data onto one-dimension.
 As a result, each file can be described by one bitmap.
 
 For each file within a dataset, the Morton indices touched by the data within that file can then be stored in a bitmap index for future searches where the value of bit $j$ indicates whether or not Morton index $j$ is touched by the file in question.
 For Morton indexing of order $k$, this would result in a bitmap of length $2^{Nk}$ bits per file.
 For large bitmaps, this can become costly in terms of memory and the time required to perform bitmap operations.
-However, Enhanced Word-Aligned Hybrid (EWAH) compression can be used to limit these costs, particularly when the domain is densely or sparsely populated in localized regions [@yPRtMEPZ; @VG0Kch70; @nAqaxrJx].
+However, Enhanced Word-Aligned Hybrid (EWAH) compression can be used to limit these costs, particularly when the domain is densely or sparsely populated in localized regions [@raw:Wu2001; @raw:Lemire2010; @raw:Kaser2016].
 
 An EWAH compressed bitmap will be smaller when there are long sequences, or "runs," of identical values.
 This means that an EWAH compressed bitmap will be smallest if either all or none of its bits are set.
@@ -615,7 +766,7 @@ The cells containing points from either file are shaded accordingly such that ce
 The smaller grids within these cells on the right are the boundaries of 2nd order Morton cells refining the collisions.
 ](images/bitmap/collisions.png){#fig:collision}
 
-Collisions can be limited by either increasing the order of the index or allowing for multi-resolution indexes [@oQYioniZ; @R2YXMXP5].
+Collisions can be limited by either increasing the order of the index or allowing for multi-resolution indexes [@raw:Sinha2006; @raw:Sinha2007].
 Panel (b) of Figure @fig:collision demonstrates an example of nesting a second index within cells that contain collisions.
 In those cells which contained collisions, a 2nd order Morton index was added.
 Those cells with collisions at the level of the refined index (purple cells in panel (b)) cover a much smaller portion of the domain than the cells with collisions at the level of the coarse index (purple cells in panel (a)).
@@ -642,7 +793,7 @@ For the more localized partitions in panels (c) and (d), only two files touch ea
 
 It is often the case that, in selecting a region, additional padding around the region should be included in the selection.
 This is particularly useful for algorithms that need information about neighboring points in the domain [e.g.
-gas properties in simulations using Smoothed Particle Hydrodynamics; SPH; @17RjQFiFB; @WYFIXERg; @iAgWKzbq].
+gas properties in simulations using Smoothed Particle Hydrodynamics; SPH; @raw:Monaghan1992; @raw:Springel2001; @raw:Springel2005b].
 For Morton indices, this is straightforward as the indices neighboring Morton cells can be found by incrementing the bits corresponding to each dimension.
 We have included the ability to pad selectors with some number of Morton cells referred to as 'ghost zones'.
 Those files that touch ghost zones, but not the selector itself are referred to below as 'ghost files'.
@@ -845,7 +996,7 @@ While using an existing bitmap index decreases the time required for queries in 
 Therefore, in the case where only a small number of selections need to be made, it will be more efficient to perform direct queries of the data than to construct and utilize the bitmap index.
 
 Bitmap indexing is particularly useful in astronomy and astrophysics.
-Output from N-body simulations is often split between multiple files to take advantage of parallel I/O and the domain decomposition generally leads to localized partitioning between files [@WYFIXERg; @iAgWKzbq; @12N6y8v31].
+Output from N-body simulations is often split between multiple files to take advantage of parallel I/O and the domain decomposition generally leads to localized partitioning between files [@raw:Springel2001; @raw:Springel2005b; @raw:Hopkins2015].
 
 Currently, this technique is most useful for datasets split across multiple files.
 However, it can also be applied to single files by dividing the file's contents into chunks.
@@ -854,8 +1005,8 @@ In addition, while the current implementation of this method is designed for thr
 
 ### Code {#sec:code}
 
-These procedures have been implemented as part of the yt python package [@VT1ZtF4H] in order to facilitate the analysis of large astrophysical N-body simulations; currently undergoing review for inclusion in a future version of yt (3.4 or later), our implementation is available at https://bitbucket.org/langmm/yt-bitmap.
-The open source EWAHBoolArray C++ package is used for implementing EWAH bitmaps [@VG0Kch70; @nAqaxrJx] and exposed to Python using Cython [@DCcYsKha].
+These procedures have been implemented as part of the yt python package [@raw:Turk20d11a] in order to facilitate the analysis of large astrophysical N-body simulations; currently undergoing review for inclusion in a future version of yt (3.4 or later), our implementation is available at https://bitbucket.org/langmm/yt-bitmap.
+The open source EWAHBoolArray C++ package is used for implementing EWAH bitmaps [@raw:Lemire2010; @raw:Kaser2016] and exposed to Python using Cython [@raw:Behnel2011].
 
 ### Acknowledgment {#acknowledgment .unnumbered}
 
@@ -1180,16 +1331,16 @@ The `Dataset.set_units` updates the `h` symbol to the correct value when loading
 
 ### Trident
 
-Trident [@1DgKJy4lE] is a Python-based open-source tool for post-processing hydrodynamical simulations to produce synthetic absorption spectra and related data.
+Trident [@doi:10.3847/1538-4357/aa7e2d] is a Python-based open-source tool for post-processing hydrodynamical simulations to produce synthetic absorption spectra and related data.
 In many ways, Trident is the first external package that utilizes `yt` to provide data access and numerical operations, but then builds on those to develop detailed, astrophysically-aware systems for processing and analyzing that data.
 
 ### Powderday
 
-[@1CgEbr6CQ]
+[@doi:10.1038/nature15383]
 
 ### ytree
 
-Building on `yt` for access to halo catalogs, and implementing a similar system for derived fields as applied to graph datasets, ytree [@VB3RIyxd] is a system for analyzing merger trees from analysis of dark matter halos in cosmological simulations.
+Building on `yt` for access to halo catalogs, and implementing a similar system for derived fields as applied to graph datasets, ytree [@doi:10.5281/zenodo.1174374] is a system for analyzing merger trees from analysis of dark matter halos in cosmological simulations.
 
 ytree provides flexibility in determining the path that a given analysis takes through the graph of merger trees; for instance, it enables the user to select if they wish to follow the "most massive" progenitor halo backwards in time, or even to set their own criteria for this.
 Connecting this to the raw, unprocessed data from the simulation (such as the unsampled particle or cell content that comprises the halos) allows researchers to deepen and guide their analysis based on the physical characteristics of the merger history.
