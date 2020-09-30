@@ -110,6 +110,16 @@ authors:
     email: mdeval@psi.edu
     affiliations:
       - Planetary Science Institute
+
+  -
+    github: jcoughlin11
+    name: Jared W. Coughlin
+    initials: JWC
+    orcid: 0000-0002-4373-4114 
+    email: jcoughl3@illinois.edu
+    affiliations:
+      - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
+    funders: Grant XXXXXXX
   -
     github: yournamehere
     name: Add Yourself
