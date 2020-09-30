@@ -154,6 +154,14 @@ authors:
     affiliations:
       - Cooperative Institute for Meteorological Satellite Studies, The University of Wisconsin, Madison
   -
+    github: neutrinoceros
+    name: Clément Robert
+    initials: CMTR
+    orcid: 0000-0001-8629-7068
+    email: clement.robert@oca.eu
+    affiliations:
+      - Observatoire de la Côte d'Azur, Université de Nice
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
