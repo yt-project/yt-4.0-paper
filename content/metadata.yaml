@@ -119,6 +119,14 @@ authors:
     affiliations:
       - Stony Brook University
   -
+    github: leighorf
+    name: Leigh Orf
+    initials: ORF
+    orcid: 0000-0002-2677-6427
+    email: leigh.orf@ssec.wisc.edu
+    affiliations:
+      - Space Science and Engineering Center, University of Wisconsin - Madison
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
