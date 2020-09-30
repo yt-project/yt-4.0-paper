@@ -21,7 +21,7 @@ author-meta:
 bibliography:
 - content/manual-references.json
 date-meta: '2020-09-30'
-header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Introducing yt 3.0: Analysis and Visualization of Volumetric Data\" />\n<meta name=\"citation_title\" content=\"Introducing yt 3.0: Analysis and Visualization of Volumetric Data\" />\n<meta property=\"og:title\" content=\"Introducing yt 3.0: Analysis and Visualization of Volumetric Data\" />\n<meta property=\"twitter:title\" content=\"Introducing yt 3.0: Analysis and Visualization of Volumetric Data\" />\n<meta name=\"dc.date\" content=\"2020-09-30\" />\n<meta name=\"citation_publication_date\" content=\"2020-09-30\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"The yt Project\" />\n<meta name=\"citation_author_institution\" content=\"NumFOCUS\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@yt_astro\" />\n<meta name=\"citation_author\" content=\"Matthew Turk\" />\n<meta name=\"citation_author_institution\" content=\"School of Information Sciences, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_institution\" content=\"Department of Astronomy, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5294-0198\" />\n<meta name=\"twitter:creator\" content=\"@powersoffour\" />\n<meta name=\"citation_author\" content=\"Nathan J Goldbaum\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5557-267X\" />\n<meta name=\"twitter:creator\" content=\"@njgoldbaum\" />\n<meta name=\"citation_author\" content=\"John A. ZuHone\" />\n<meta name=\"citation_author_institution\" content=\"Harvard-Smithsonian Center for Astrophysics\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3175-2347\" />\n<meta name=\"twitter:creator\" content=\"@astrojaz\" />\n<meta name=\"citation_author\" content=\"Cameron Hummels\" />\n<meta name=\"citation_author_institution\" content=\"Department of Theoretical Astrophysics, California Institute of Technology\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3817-8133\" />\n<meta name=\"citation_author\" content=\"Suoqing Ji\" />\n<meta name=\"citation_author_institution\" content=\"Physics Department, University of California Santa Barbara\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9658-0588\" />\n<meta name=\"citation_author\" content=\"Meagan Lang\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2058-2816\" />\n<meta name=\"citation_author\" content=\"Madicken Munk\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0117-5366\" />\n<meta name=\"citation_author\" content=\"Britton Smith\" />\n<meta name=\"citation_author_institution\" content=\"University of Edinburgh\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6804-630X\" />\n<meta name=\"citation_author\" content=\"Kacper Kowalik\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1709-3744\" />\n<meta name=\"citation_author\" content=\"Miguel de Val-Borro\" />\n<meta name=\"citation_author_institution\" content=\"Planetary Science Institute\" />\n<meta name=\"citation_author_orcid\" content=\"000-0002-0455-9384\" />\n<meta name=\"citation_author\" content=\"Jared W. Coughlin\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-4373-4114\" />\n<meta name=\"citation_author\" content=\"Corentin Cadiou\" />\n<meta name=\"citation_author_institution\" content=\"Department of Physics and Astrophysics, University College London\" />\n<meta name=\"citation_author_institution\" content=\"Institut d&#39;Astrophysique de Paris\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2285-0332\" />\n<meta name=\"twitter:creator\" content=\"@cphyc\" />\n<meta name=\"citation_author\" content=\"Michael Zingale\" />\n<meta name=\"citation_author_institution\" content=\"Stony Brook University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8401-030X\" />\n<meta name=\"citation_author\" content=\"Leigh Orf\" />\n<meta name=\"citation_author_institution\" content=\"Space Science and Engineering Center, University of Wisconsin - Madison\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2677-6427\" />\n<meta name=\"citation_author\" content=\"Kelton Halbert\" />\n<meta name=\"citation_author_institution\" content=\"Cooperative Institute for Meteorological Satellite Studies, The University of Wisconsin, Madison\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6898-2731\" />\n<meta name=\"citation_author\" content=\"Cl\xE9ment Robert\" />\n<meta name=\"citation_author_institution\" content=\"Observatoire de la C\xF4te d&#39;Azur, Universit\xE9 de Nice\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8629-7068\" />\n<meta name=\"citation_author\" content=\"Add Yourself\" />\n<meta name=\"citation_author_institution\" content=\"Your University\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://yt-project.github.io/yt-3.0-paper/\" />\n<meta property=\"og:url\" content=\"https://yt-project.github.io/yt-3.0-paper/\" />\n<meta property=\"twitter:url\" content=\"https://yt-project.github.io/yt-3.0-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://yt-project.github.io/yt-3.0-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://yt-project.github.io/yt-3.0-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://yt-project.github.io/yt-3.0-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://yt-project.github.io/yt-3.0-paper/v/79a6bf1e2789bde572795877dd337f5ffb91d49f/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://yt-project.github.io/yt-3.0-paper/v/79a6bf1e2789bde572795877dd337f5ffb91d49f/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://yt-project.github.io/yt-3.0-paper/v/79a6bf1e2789bde572795877dd337f5ffb91d49f/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
+header-includes: "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Introducing yt 3.0: Analysis and Visualization of Volumetric Data\" />\n<meta name=\"citation_title\" content=\"Introducing yt 3.0: Analysis and Visualization of Volumetric Data\" />\n<meta property=\"og:title\" content=\"Introducing yt 3.0: Analysis and Visualization of Volumetric Data\" />\n<meta property=\"twitter:title\" content=\"Introducing yt 3.0: Analysis and Visualization of Volumetric Data\" />\n<meta name=\"dc.date\" content=\"2020-09-30\" />\n<meta name=\"citation_publication_date\" content=\"2020-09-30\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"The yt Project\" />\n<meta name=\"citation_author_institution\" content=\"NumFOCUS\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@yt_astro\" />\n<meta name=\"citation_author\" content=\"Matthew Turk\" />\n<meta name=\"citation_author_institution\" content=\"School of Information Sciences, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_institution\" content=\"Department of Astronomy, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5294-0198\" />\n<meta name=\"twitter:creator\" content=\"@powersoffour\" />\n<meta name=\"citation_author\" content=\"Nathan J Goldbaum\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5557-267X\" />\n<meta name=\"twitter:creator\" content=\"@njgoldbaum\" />\n<meta name=\"citation_author\" content=\"John A. ZuHone\" />\n<meta name=\"citation_author_institution\" content=\"Harvard-Smithsonian Center for Astrophysics\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3175-2347\" />\n<meta name=\"twitter:creator\" content=\"@astrojaz\" />\n<meta name=\"citation_author\" content=\"Cameron Hummels\" />\n<meta name=\"citation_author_institution\" content=\"Department of Theoretical Astrophysics, California Institute of Technology\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3817-8133\" />\n<meta name=\"citation_author\" content=\"Suoqing Ji\" />\n<meta name=\"citation_author_institution\" content=\"Physics Department, University of California Santa Barbara\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9658-0588\" />\n<meta name=\"citation_author\" content=\"Meagan Lang\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2058-2816\" />\n<meta name=\"citation_author\" content=\"Madicken Munk\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0117-5366\" />\n<meta name=\"citation_author\" content=\"Britton Smith\" />\n<meta name=\"citation_author_institution\" content=\"University of Edinburgh\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6804-630X\" />\n<meta name=\"citation_author\" content=\"Kacper Kowalik\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1709-3744\" />\n<meta name=\"citation_author\" content=\"Miguel de Val-Borro\" />\n<meta name=\"citation_author_institution\" content=\"Planetary Science Institute\" />\n<meta name=\"citation_author_orcid\" content=\"000-0002-0455-9384\" />\n<meta name=\"citation_author\" content=\"Jared W. Coughlin\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-4373-4114\" />\n<meta name=\"citation_author\" content=\"Corentin Cadiou\" />\n<meta name=\"citation_author_institution\" content=\"Department of Physics and Astrophysics, University College London\" />\n<meta name=\"citation_author_institution\" content=\"Institut d&#39;Astrophysique de Paris\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2285-0332\" />\n<meta name=\"twitter:creator\" content=\"@cphyc\" />\n<meta name=\"citation_author\" content=\"Michael Zingale\" />\n<meta name=\"citation_author_institution\" content=\"Stony Brook University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8401-030X\" />\n<meta name=\"citation_author\" content=\"Leigh Orf\" />\n<meta name=\"citation_author_institution\" content=\"Space Science and Engineering Center, University of Wisconsin - Madison\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2677-6427\" />\n<meta name=\"citation_author\" content=\"Kelton Halbert\" />\n<meta name=\"citation_author_institution\" content=\"Cooperative Institute for Meteorological Satellite Studies, The University of Wisconsin, Madison\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6898-2731\" />\n<meta name=\"citation_author\" content=\"Cl\xE9ment Robert\" />\n<meta name=\"citation_author_institution\" content=\"Observatoire de la C\xF4te d&#39;Azur, Universit\xE9 de Nice\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8629-7068\" />\n<meta name=\"citation_author\" content=\"Add Yourself\" />\n<meta name=\"citation_author_institution\" content=\"Your University\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://yt-project.github.io/yt-3.0-paper/\" />\n<meta property=\"og:url\" content=\"https://yt-project.github.io/yt-3.0-paper/\" />\n<meta property=\"twitter:url\" content=\"https://yt-project.github.io/yt-3.0-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://yt-project.github.io/yt-3.0-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://yt-project.github.io/yt-3.0-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://yt-project.github.io/yt-3.0-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://yt-project.github.io/yt-3.0-paper/v/709193b6ebcd7195bf093f1f39c841655a9a45bd/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://yt-project.github.io/yt-3.0-paper/v/709193b6ebcd7195bf093f1f39c841655a9a45bd/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://yt-project.github.io/yt-3.0-paper/v/709193b6ebcd7195bf093f1f39c841655a9a45bd/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->"
 keywords:
 - markdown
 - publishing
@@ -41,9 +41,9 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-3.0-paper/v/79a6bf1e2789bde572795877dd337f5ffb91d49f/))
+([permalink](https://yt-project.github.io/yt-3.0-paper/v/709193b6ebcd7195bf093f1f39c841655a9a45bd/))
 was automatically generated
-from [yt-project/yt-3.0-paper@79a6bf1](https://github.com/yt-project/yt-3.0-paper/tree/79a6bf1e2789bde572795877dd337f5ffb91d49f)
+from [yt-project/yt-3.0-paper@709193b](https://github.com/yt-project/yt-3.0-paper/tree/709193b6ebcd7195bf093f1f39c841655a9a45bd)
 on September 30, 2020.
 </em></small>
 
@@ -230,6 +230,7 @@ on September 30, 2020.
     [yournamehere](https://github.com/yournamehere)<br>
   <small>
      Your University
+     · Funded by Grant XXXXXXXX
   </small>
 
 
@@ -1388,7 +1389,7 @@ YTArray([4.92e-31, 4.94e-31, 4.93e-31, ...,
 One of the nicest aspects of this new unit system is that the symbolic algebra for unitful operations is performed automatically by sympy:
 
 ```python
->>> print dd[`cell_mass']/dd[`cell_volume'] 
+>>> print(dd[`cell_mass']/dd[`cell_volume'])
   [4.92e-31 4.94e-31 4.93e-31 ... 
    1.12e-25 1.59e-25 1.09e-24] g/cm**3
 ```
@@ -1401,7 +1402,7 @@ For scalar data, we have created the new `YTQuantity` class.
 ```python
 >>> from yt.utilities.physical_constants import
         boltzmann_constant
->>> print dd[`temperature']*boltzmann_constant 
+>>> print(dd[`temperature']*boltzmann_constant)
 [ 1.28e-12 1.29e-12 1.29e-12 ... 
   1.63e-12 1.59e-12 1.40e-12] erg
 ```
@@ -1417,11 +1418,11 @@ Every `Dataset` has a `length_unit`, `time_unit`, and `mass_unit`, attribute tha
 ```python
 >>> import yt
 >>> ds = yt.load("Enzo_64/DD0043/data0043")
->>> print ds.length_unit 
+>>> print(ds.length_unit)
 128 Mpccm/h
->>> print ds.quan(1.0, "code_length").in_units("Mpccm/h")
+>>> print(ds.quan(1.0, "code_length").in_units("Mpccm/h"))
 128 Mpccm/h
->>> print ds.length_unit.in_cgs()
+>>> print(ds.length_unit.in_cgs())
 5.55517285026e+26 cm
 ```
 
@@ -1438,10 +1439,10 @@ To obtain on-disk data, a user need only query a data object using an on-disk fi
 >>> import yt
 >>> ds = yt.load("Enzo_64/DD0043/data0043")
 >>> dd = ds.all_data()
->>> print dd[('enzo', 'Density')] 
+>>> print(dd[('enzo', 'Density')])
 [ 6.74e-02 6.12e-02 8.92e-02 ... 
   9.09e+01 5.66e+01 4.27e+01] code_mass/code_length**3
->>> print dd[('gas', 'density')] 
+>>> print(dd[('gas', 'density')])
 [ 1.92e-31 1.74e-31 2.54e-31 ... 
   2.59e-28 1.61e-28 1.22e-28] g/cm**3
 ```
@@ -1560,15 +1561,15 @@ True
 
 >>> from yt.units import kilometer 
 >>> three_kilometers = 3*kilometer 
->>> print three_kilometers 
+>>> print(three_kilometers)
 3.0 km
 
 >>> from yt.units import gram, kilogram 
->>> print gram+kilogram 
+>>> print(gram+kilogram)
 1001.0 g 
->>> print kilogram+gram 
+>>> print(kilogram+gram)
 1.001 kg 
->>> print kilogram/gram 
+>>> print(kilogram/gram)
 1000.0 dimensionless
 ```
 
@@ -1601,17 +1602,17 @@ The examples below illustrate the consistency of this choice:
 >>> import yt
 >>> ds1 = yt.load(`Enzo_64/DD0002/data0002')
 >>> ds2 = yt.load(`Enzo_64/DD0043/data0043')
->>> print ds1.length_unit, ds2.length_unit 
+>>> print(ds1.length_unit, ds2.length_unit)
 128 Mpccm/h, 128 Mpccm/h
->>> print ds1.length_unit.in_cgs()
+>>> print(ds1.length_unit.in_cgs())
 6.26145538088e+25 cm
->>> print ds2.length_unit.in_cgs() 
+>>> print(ds2.length_unit.in_cgs())
 5.55517285026e+26 cm 
 
 
->>> print ds1.length_unit*ds2.length_unit 
+>>> print(ds1.length_unit*ds2.length_unit)
 145359.100149 Mpccm**2
->>> print ds2.length_unit*ds1.length_unit 
+>>> print(ds2.length_unit*ds1.length_unit)
 1846.7055432 Mpccm**2
 ```
 
@@ -1621,9 +1622,9 @@ This convention is enforced for all binary operations on two `YTarray` objects.
 Results are always consistent when referencing an unambiguous physical coordinate system:
 
 ```python
->>> print (pf1.length_unit * pf2.length_unit).in_cgs() 
+>>> print((pf1.length_unit * pf2.length_unit).in_cgs())
 3.4783466935e+52 cm**2 
->>> print pf1.length_unit.in_cgs() * pf2.length_unit.in_cgs() 
+>>> print(pf1.length_unit.in_cgs() * pf2.length_unit.in_cgs())
 3.4783466935e+52 cm**2
 ```
 
