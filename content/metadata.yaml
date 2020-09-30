@@ -111,6 +111,14 @@ authors:
     affiliations:
       - Planetary Science Institute
   -
+    github: keltonhalbert
+    name: Kelton Halbert
+    initials: KTH
+    orcid: 0000-0001-6898-2731
+    email: kthalbert@wisc.edu
+    affiliations:
+      - Cooperative Institute for Meteorological Satellite Studies, The University of Wisconsin, Madison
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
