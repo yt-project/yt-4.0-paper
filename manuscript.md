@@ -143,11 +143,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/faabdcb177bcbfe2f430c79121a7826e37eedffb/" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/2b5cd60b93ddead43812cad94f4bb3b4a0975f87/" />
 
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/faabdcb177bcbfe2f430c79121a7826e37eedffb/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/2b5cd60b93ddead43812cad94f4bb3b4a0975f87/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/faabdcb177bcbfe2f430c79121a7826e37eedffb/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/2b5cd60b93ddead43812cad94f4bb3b4a0975f87/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -179,9 +179,9 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-3.0-paper/v/faabdcb177bcbfe2f430c79121a7826e37eedffb/))
+([permalink](https://yt-project.github.io/yt-3.0-paper/v/2b5cd60b93ddead43812cad94f4bb3b4a0975f87/))
 was automatically generated
-from [yt-project/yt-3.0-paper@faabdcb](https://github.com/yt-project/yt-3.0-paper/tree/faabdcb177bcbfe2f430c79121a7826e37eedffb)
+from [yt-project/yt-3.0-paper@2b5cd60](https://github.com/yt-project/yt-3.0-paper/tree/2b5cd60b93ddead43812cad94f4bb3b4a0975f87)
 on September 30, 2020.
 </em></small>
 
