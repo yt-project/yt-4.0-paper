@@ -111,6 +111,14 @@ authors:
     affiliations:
       - Planetary Science Institute
   -
+    github: zingale
+    name: Michael Zingale
+    initials: MZ
+    orcid: 0000-0001-8401-030X
+    email: michael.zingale@stonybrook.edu
+    affiliations:
+      - Stony Brook University
+  -
     github: leighorf
     name: Leigh Orf
     initials: ORF
