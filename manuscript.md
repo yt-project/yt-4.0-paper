@@ -143,11 +143,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/2b5cd60b93ddead43812cad94f4bb3b4a0975f87/" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/e941b400596c3001857a39b67c721582bf75996b/" />
 
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/2b5cd60b93ddead43812cad94f4bb3b4a0975f87/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/e941b400596c3001857a39b67c721582bf75996b/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/2b5cd60b93ddead43812cad94f4bb3b4a0975f87/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/e941b400596c3001857a39b67c721582bf75996b/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -179,9 +179,9 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-3.0-paper/v/2b5cd60b93ddead43812cad94f4bb3b4a0975f87/))
+([permalink](https://yt-project.github.io/yt-3.0-paper/v/e941b400596c3001857a39b67c721582bf75996b/))
 was automatically generated
-from [yt-project/yt-3.0-paper@2b5cd60](https://github.com/yt-project/yt-3.0-paper/tree/2b5cd60b93ddead43812cad94f4bb3b4a0975f87)
+from [yt-project/yt-3.0-paper@e941b40](https://github.com/yt-project/yt-3.0-paper/tree/e941b400596c3001857a39b67c721582bf75996b)
 on September 30, 2020.
 </em></small>
 
@@ -671,9 +671,10 @@ In columns to the right, we provide information as to whether there is an availa
 Table: Selection objects and their types. {#tbl:selection-objects}
 
 
-#### Arbitrary_grid {#sec:dobj-arbitrary_grid}
+#### Arbitrary grid {#sec:dobj-arbitrary_grid}
 
 *Arguments*: 
+
  * Left edge
  * Right edge
  * Active Dimensions
@@ -690,6 +691,7 @@ fields.
 #### Bool {#sec:dobj-bool}
 
 *Arguments*: 
+
  * Operation
  * Data object 1
  * Data object 2
@@ -701,9 +703,10 @@ of the bitwise operations (&, \|, ^, \~) on one or two other data
 objects.  These correspond to the appropriate boolean operations, and
 the resultant object can be nested.
 
-#### Covering_grid {#sec:dobj-covering_grid}
+#### Covering grid {#sec:dobj-covering_grid}
 
 *Arguments*: 
+
  * Level
  * Left edge
  * Active Dimensions
@@ -712,9 +715,10 @@ A 3D region with all data extracted to a single, specified resolution.
 Left edge should align with a cell boundary, but defaults to the
 closest cell boundary.
 
-#### Cut_region {#sec:dobj-cut_region}
+#### Cut region {#sec:dobj-cut_region}
 
 *Arguments*: 
+
  * Base object
  * Conditionals
 
@@ -724,6 +728,7 @@ operations to fields and filter as a result of those cuts.
 #### Cutting {#sec:dobj-cutting}
 
 *Arguments*: 
+
  * Normal
  * Center
 
@@ -735,9 +740,10 @@ coordinate.  It attempts to guess an 'north' vector, which can be
 overridden, and then it pixelizes the appropriate data onto the plane
 without interpolation.
 
-#### Data_collection {#sec:dobj-data_collection}
+#### Data collection {#sec:dobj-data_collection}
 
 *Arguments*: 
+
  * Object List
 
 By selecting an arbitrary *object_list*, we can act on those grids.
@@ -746,6 +752,7 @@ Child cells are not returned.
 #### Disk {#sec:dobj-disk}
 
 *Arguments*: 
+
  * Center
  * Normal vector
  * Radius
@@ -758,6 +765,7 @@ within the cylinder will be selected.
 #### Ellipsoid {#sec:dobj-ellipsoid}
 
 *Arguments*: 
+
  * Center
  *  a
  *  b
@@ -772,6 +780,7 @@ ellipsoid will be selected.
 #### Intersection {#sec:dobj-intersection}
 
 *Arguments*: 
+
  * Data objects
 
 This is a more efficient method of selecting the intersection of
@@ -780,9 +789,31 @@ returns the intersection of all of the sub-objects; it is designed to
 be a faster method than chaining & ("and") operations to create a
 single, large intersection.
 
-#### Ortho_ray {#sec:dobj-ortho_ray}
+#### Minimal sphere {#sec:dobj-minimal_sphere}
 
 *Arguments*: 
+
+ * Center
+ * Radius
+
+Build the smallest sphere that encompasses a set of points.
+
+#### Octree {#sec:dobj-octree}
+
+*Arguments*: 
+
+ * Left edge
+ * Right edge
+ * Particle count refinement criteria
+
+A 3D region with all the data filled into an octree.  This container
+will mean deposit particle fields onto octs using a kernel and SPH
+smoothing.
+
+#### Ortho ray {#sec:dobj-ortho_ray}
+
+*Arguments*: 
+
  * Axis
  * Coords
 
@@ -792,16 +823,28 @@ specific coordinate.  This object is typically accessed through the
 arrays have their dimensionality reduced to one, and an ordered list
 of points at an (x,y) tuple along `axis` are available.
 
+#### Particle proj {#sec:dobj-particle_proj}
+
+*Arguments*: 
+
+ * Axis
+ * Field
+ * Weight field
+
+A projection operation optimized for SPH particle data.
+
 #### Point {#sec:dobj-point}
 
 *Arguments*: 
+
  * P
 
 A 0-dimensional object defined by a single point
 
-#### Proj {#sec:dobj-proj}
+#### Quad proj {#sec:dobj-quad_proj}
 
 *Arguments*: 
+
  * Axis
  * Field
  * Weight field
@@ -823,6 +866,7 @@ are integrated at every projected finest-level cell.
 #### Ray {#sec:dobj-ray}
 
 *Arguments*: 
+
  * Start point
  * End point
 
@@ -837,6 +881,7 @@ start to end.
 #### Region {#sec:dobj-region}
 
 *Arguments*: 
+
  * Center
  * Left edge
  * Right edge
@@ -850,6 +895,7 @@ though the object's `left_edge` or `right_edge` are not modified.
 #### Slice {#sec:dobj-slice}
 
 *Arguments*: 
+
  * Axis
  * Coord
 
@@ -861,9 +907,10 @@ then indexing them.  It is more appropriately thought of as a slice
 'operator' than an object, however, as its field and coordinate can
 both change.
 
-#### Smoothed_covering_grid {#sec:dobj-smoothed_covering_grid}
+#### Smoothed covering grid {#sec:dobj-smoothed_covering_grid}
 
 *Arguments*: 
+
  * Level
  * Left edge
  * Active Dimensions
@@ -878,6 +925,7 @@ process until it reaches the specified `level`.
 #### Sphere {#sec:dobj-sphere}
 
 *Arguments*: 
+
  * Center
  * Radius
 
@@ -886,6 +934,7 @@ A sphere of points defined by a *center* and a *radius*.
 #### Streamline {#sec:dobj-streamline}
 
 *Arguments*: 
+
  * Positions
 
 This is a streamline, which is a set of points defined as being
@@ -898,6 +947,7 @@ corresponds to a unitless measurement along the ray from start to end.
 #### Surface {#sec:dobj-surface}
 
 *Arguments*: 
+
  * Data source
  * Surface field
  * Field value
@@ -918,6 +968,7 @@ interpolated to the center of a given face.
 #### Union {#sec:dobj-union}
 
 *Arguments*: 
+
  * Data objects
 
 This is a more efficient method of selecting the union of multiple

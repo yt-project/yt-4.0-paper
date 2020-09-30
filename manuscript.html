@@ -156,9 +156,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-3.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/2b5cd60b93ddead43812cad94f4bb3b4a0975f87/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/2b5cd60b93ddead43812cad94f4bb3b4a0975f87/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/2b5cd60b93ddead43812cad94f4bb3b4a0975f87/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/e941b400596c3001857a39b67c721582bf75996b/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/e941b400596c3001857a39b67c721582bf75996b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/e941b400596c3001857a39b67c721582bf75996b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -172,9 +172,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-3.0-paper/v/2b5cd60b93ddead43812cad94f4bb3b4a0975f87/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-3.0-paper/v/e941b400596c3001857a39b67c721582bf75996b/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-3.0-paper/tree/2b5cd60b93ddead43812cad94f4bb3b4a0975f87">yt-project/yt-3.0-paper@2b5cd60</a>
+from <a href="https://github.com/yt-project/yt-3.0-paper/tree/e941b400596c3001857a39b67c721582bf75996b">yt-project/yt-3.0-paper@e941b40</a>
 on September 30, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -861,11 +861,13 @@ In columns to the right, we provide information as to whether there is an availa
 </tbody>
 </table>
 </div>
-<h4 id="sec:dobj-arbitrary_grid">Arbitrary_grid</h4>
-<p><em>Arguments</em>:
-* Left edge
-* Right edge
-* Active Dimensions</p>
+<h4 id="sec:dobj-arbitrary_grid">Arbitrary grid</h4>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Left edge</li>
+<li>Right edge</li>
+<li>Active Dimensions</li>
+</ul>
 <p>A 3D region with arbitrary bounds and dimensions. In contrast to the
 Covering Grid, this object accepts a left edge, a right edge, and
 dimensions. This allows it to be used for creating 3D particle
@@ -875,34 +877,42 @@ arbitrary boxes around particles can be drawn and particle deposition
 fields can be created. This object will refuse to generate any fluid
 fields.</p>
 <h4 id="sec:dobj-bool">Bool</h4>
-<p><em>Arguments</em>:
-* Operation
-* Data object 1
-* Data object 2</p>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Operation</li>
+<li>Data object 1</li>
+<li>Data object 2</li>
+</ul>
 <p>This is a boolean operation, accepting AND, OR, XOR, and NOT for
 combining multiple data objects. This object is not designed to be
 created directly; it is designed to be created implicitly by using one
 of the bitwise operations (&amp;, |, ^, ~) on one or two other data
 objects. These correspond to the appropriate boolean operations, and
 the resultant object can be nested.</p>
-<h4 id="sec:dobj-covering_grid">Covering_grid</h4>
-<p><em>Arguments</em>:
-* Level
-* Left edge
-* Active Dimensions</p>
+<h4 id="sec:dobj-covering_grid">Covering grid</h4>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Level</li>
+<li>Left edge</li>
+<li>Active Dimensions</li>
+</ul>
 <p>A 3D region with all data extracted to a single, specified resolution.
 Left edge should align with a cell boundary, but defaults to the
 closest cell boundary.</p>
-<h4 id="sec:dobj-cut_region">Cut_region</h4>
-<p><em>Arguments</em>:
-* Base object
-* Conditionals</p>
+<h4 id="sec:dobj-cut_region">Cut region</h4>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Base object</li>
+<li>Conditionals</li>
+</ul>
 <p>This is a data object designed to allow individuals to apply logical
 operations to fields and filter as a result of those cuts.</p>
 <h4 id="sec:dobj-cutting">Cutting</h4>
-<p><em>Arguments</em>:
-* Normal
-* Center</p>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Normal</li>
+<li>Center</li>
+</ul>
 <p>This is a data object corresponding to an oblique slice through the
 simulation domain. This object is typically accessed through the
 <code>cutting</code> object that hangs off of index objects. A cutting plane is
@@ -910,57 +920,96 @@ an oblique plane through the data, defined by a normal vector and a
 coordinate. It attempts to guess an ‘north’ vector, which can be
 overridden, and then it pixelizes the appropriate data onto the plane
 without interpolation.</p>
-<h4 id="sec:dobj-data_collection">Data_collection</h4>
-<p><em>Arguments</em>:
-* Object List</p>
+<h4 id="sec:dobj-data_collection">Data collection</h4>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Object List</li>
+</ul>
 <p>By selecting an arbitrary <em>object_list</em>, we can act on those grids.
 Child cells are not returned.</p>
 <h4 id="sec:dobj-disk">Disk</h4>
-<p><em>Arguments</em>:
-* Center
-* Normal vector
-* Radius
-* Height</p>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Center</li>
+<li>Normal vector</li>
+<li>Radius</li>
+<li>Height</li>
+</ul>
 <p>By providing a <em>center</em>, a <em>normal</em>, a <em>radius</em> and a <em>height</em> we can
 define a cylinder of any proportion. Only cells whose centers are
 within the cylinder will be selected.</p>
 <h4 id="sec:dobj-ellipsoid">Ellipsoid</h4>
-<p><em>Arguments</em>:
-* Center
-* a
-* b
-* c
-* e0
-* tilt</p>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Center</li>
+<li>a</li>
+<li>b</li>
+<li>c</li>
+<li>e0</li>
+<li>tilt</li>
+</ul>
 <p>By providing a <em>center</em>,<em>A</em>,<em>B</em>,<em>C</em>,<em>e0</em>,<em>tilt</em> we can define a
 ellipsoid of any proportion. Only cells whose centers are within the
 ellipsoid will be selected.</p>
 <h4 id="sec:dobj-intersection">Intersection</h4>
-<p><em>Arguments</em>:
-* Data objects</p>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Data objects</li>
+</ul>
 <p>This is a more efficient method of selecting the intersection of
 multiple data selection objects. Creating one of these objects
 returns the intersection of all of the sub-objects; it is designed to
 be a faster method than chaining &amp; (“and”) operations to create a
 single, large intersection.</p>
-<h4 id="sec:dobj-ortho_ray">Ortho_ray</h4>
-<p><em>Arguments</em>:
-* Axis
-* Coords</p>
+<h4 id="sec:dobj-minimal_sphere">Minimal sphere</h4>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Center</li>
+<li>Radius</li>
+</ul>
+<p>Build the smallest sphere that encompasses a set of points.</p>
+<h4 id="sec:dobj-octree">Octree</h4>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Left edge</li>
+<li>Right edge</li>
+<li>Particle count refinement criteria</li>
+</ul>
+<p>A 3D region with all the data filled into an octree. This container
+will mean deposit particle fields onto octs using a kernel and SPH
+smoothing.</p>
+<h4 id="sec:dobj-ortho_ray">Ortho ray</h4>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Axis</li>
+<li>Coords</li>
+</ul>
 <p>This is an orthogonal ray cast through the entire domain, at a
 specific coordinate. This object is typically accessed through the
 <code>ortho_ray</code> object that hangs off of index objects. The resulting
 arrays have their dimensionality reduced to one, and an ordered list
 of points at an (x,y) tuple along <code>axis</code> are available.</p>
+<h4 id="sec:dobj-particle_proj">Particle proj</h4>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Axis</li>
+<li>Field</li>
+<li>Weight field</li>
+</ul>
+<p>A projection operation optimized for SPH particle data.</p>
 <h4 id="sec:dobj-point">Point</h4>
-<p><em>Arguments</em>:
-* P</p>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>P</li>
+</ul>
 <p>A 0-dimensional object defined by a single point</p>
-<h4 id="sec:dobj-proj">Proj</h4>
-<p><em>Arguments</em>:
-* Axis
-* Field
-* Weight field</p>
+<h4 id="sec:dobj-quad_proj">Quad proj</h4>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Axis</li>
+<li>Field</li>
+<li>Weight field</li>
+</ul>
 <p>This is a data object corresponding to a line integral through the
 simulation domain. This object is typically accessed through the
 <code>proj</code> object that hangs off of index objects. YTQuadTreeProj is a
@@ -975,9 +1024,11 @@ mechanism for projections. It will not run in parallel, but serial
 runs should be substantially faster. Note also that lines of sight
 are integrated at every projected finest-level cell.</p>
 <h4 id="sec:dobj-ray">Ray</h4>
-<p><em>Arguments</em>:
-* Start point
-* End point</p>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Start point</li>
+<li>End point</li>
+</ul>
 <p>This is an arbitrarily-aligned ray cast through the entire domain, at
 a specific coordinate. This object is typically accessed through the
 <code>ray</code> object that hangs off of index objects. The resulting arrays
@@ -986,19 +1037,23 @@ points at an (x,y) tuple along <code>axis</code> are available, as is the <code>
 field, which corresponds to a unitless measurement along the ray from
 start to end.</p>
 <h4 id="sec:dobj-region">Region</h4>
-<p><em>Arguments</em>:
-* Center
-* Left edge
-* Right edge</p>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Center</li>
+<li>Left edge</li>
+<li>Right edge</li>
+</ul>
 <p>A 3D region of data with an arbitrary center. Takes an array of three
 <em>left_edge</em> coordinates, three <em>right_edge</em> coordinates, and a
 <em>center</em> that can be anywhere in the domain. If the selected region
 extends past the edges of the domain, no data will be found there,
 though the object’s <code>left_edge</code> or <code>right_edge</code> are not modified.</p>
 <h4 id="sec:dobj-slice">Slice</h4>
-<p><em>Arguments</em>:
-* Axis
-* Coord</p>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Axis</li>
+<li>Coord</li>
+</ul>
 <p>This is a data object corresponding to a slice through the simulation
 domain. This object is typically accessed through the <code>slice</code> object
 that hangs off of index objects. Slice is an orthogonal slice through
@@ -1006,11 +1061,13 @@ the data, taking all the points at the finest resolution available and
 then indexing them. It is more appropriately thought of as a slice
 ‘operator’ than an object, however, as its field and coordinate can
 both change.</p>
-<h4 id="sec:dobj-smoothed_covering_grid">Smoothed_covering_grid</h4>
-<p><em>Arguments</em>:
-* Level
-* Left edge
-* Active Dimensions</p>
+<h4 id="sec:dobj-smoothed_covering_grid">Smoothed covering grid</h4>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Level</li>
+<li>Left edge</li>
+<li>Active Dimensions</li>
+</ul>
 <p>A 3D region with all data extracted and interpolated to a single,
 specified resolution. (Identical to covering_grid, except that it
 interpolates.) Smoothed covering grids start at level 0,
@@ -1018,13 +1075,17 @@ interpolating to fill the region to level 1, replacing any cells
 actually covered by level 1 data, and then recursively repeating this
 process until it reaches the specified <code>level</code>.</p>
 <h4 id="sec:dobj-sphere">Sphere</h4>
-<p><em>Arguments</em>:
-* Center
-* Radius</p>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Center</li>
+<li>Radius</li>
+</ul>
 <p>A sphere of points defined by a <em>center</em> and a <em>radius</em>.</p>
 <h4 id="sec:dobj-streamline">Streamline</h4>
-<p><em>Arguments</em>:
-* Positions</p>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Positions</li>
+</ul>
 <p>This is a streamline, which is a set of points defined as being
 parallel to some vector field. This object is typically accessed
 through the Streamlines.path function. The resulting arrays have
@@ -1032,10 +1093,12 @@ their dimensionality reduced to one, and an ordered list of points at
 an (x,y) tuple along <code>axis</code> are available, as is the <code>t</code> field, which
 corresponds to a unitless measurement along the ray from start to end.</p>
 <h4 id="sec:dobj-surface">Surface</h4>
-<p><em>Arguments</em>:
-* Data source
-* Surface field
-* Field value</p>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Data source</li>
+<li>Surface field</li>
+<li>Field value</li>
+</ul>
 <p>This surface object identifies isocontours on a cell-by-cell basis,
 with no consideration of global connectedness, and returns the
 vertices of the Triangles in that isocontour. This object simply
@@ -1047,8 +1110,10 @@ area, or visualizing in an external program (such as <code>MeshLab &lt;http://ww
 and will sample values if a field is requested. The values are
 interpolated to the center of a given face.</p>
 <h4 id="sec:dobj-union">Union</h4>
-<p><em>Arguments</em>:
-* Data objects</p>
+<p><em>Arguments</em>:</p>
+<ul>
+<li>Data objects</li>
+</ul>
 <p>This is a more efficient method of selecting the union of multiple
 data selection objects. Creating one of these objects returns the
 union of all of the sub-objects; it is designed to be a faster method
