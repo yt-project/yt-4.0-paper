@@ -11,6 +11,7 @@ author-meta:
 - Britton Smith
 - Kacper Kowalik
 - Miguel de Val-Borro
+- Leigh Orf
 - Add Yourself
 bibliography:
 - content/manual-references.json
@@ -125,6 +126,12 @@ header-includes: '<!--
 
   <meta name="citation_author_orcid" content="000-0002-0455-9384" />
 
+  <meta name="citation_author" content="Leigh Orf" />
+
+  <meta name="citation_author_institution" content="Space Science and Engineering Center, University of Wisconsin - Madison" />
+
+  <meta name="citation_author_orcid" content="0000-0002-2677-6427" />
+
   <meta name="citation_author" content="Add Yourself" />
 
   <meta name="citation_author_institution" content="Your University" />
@@ -143,11 +150,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/e941b400596c3001857a39b67c721582bf75996b/" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/277e6984d9d76254451e6fcbb1d90512d9aa9b27/" />
 
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/e941b400596c3001857a39b67c721582bf75996b/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/277e6984d9d76254451e6fcbb1d90512d9aa9b27/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/e941b400596c3001857a39b67c721582bf75996b/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/277e6984d9d76254451e6fcbb1d90512d9aa9b27/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -179,9 +186,9 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-3.0-paper/v/e941b400596c3001857a39b67c721582bf75996b/))
+([permalink](https://yt-project.github.io/yt-3.0-paper/v/277e6984d9d76254451e6fcbb1d90512d9aa9b27/))
 was automatically generated
-from [yt-project/yt-3.0-paper@e941b40](https://github.com/yt-project/yt-3.0-paper/tree/e941b400596c3001857a39b67c721582bf75996b)
+from [yt-project/yt-3.0-paper@277e698](https://github.com/yt-project/yt-3.0-paper/tree/277e6984d9d76254451e6fcbb1d90512d9aa9b27)
 on September 30, 2020.
 </em></small>
 
@@ -302,6 +309,15 @@ on September 30, 2020.
     [migueldvb](https://github.com/migueldvb)<br>
   <small>
      Planetary Science Institute
+  </small>
+
++ **Leigh Orf**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0002-2677-6427](https://orcid.org/0000-0002-2677-6427)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [leighorf](https://github.com/leighorf)<br>
+  <small>
+     Space Science and Engineering Center, University of Wisconsin - Madison
   </small>
 
 + **Add Yourself**<br>
