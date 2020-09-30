@@ -23,8 +23,8 @@ def extract_description(docstring):
     return tw.fill(" ".join([_.strip() for _ in description.splitlines()]))
 
 for n, obj in sorted(data_object_registry.items()):
-    print("#### {} {{#sec:dobj-{}}}".format(n.capitalize(), n))
-    print("\n*Arguments*: ")
+    print("#### {} {{#sec:dobj-{}}}".format(n.replace("_", " ").capitalize(), n))
+    print("\n*Arguments*: \n")
     for arg in obj._con_args:
         aname = arg.replace("_"," ").capitalize()
         print(" * {}".format(replacement_dict.get(aname, aname)))
