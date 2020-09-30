@@ -161,3 +161,5 @@ authors:
     email: you@example.com
     affiliations:
       - Your University
+    funders:
+      - Grant XXXXXXXX
