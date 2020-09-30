@@ -11,7 +11,11 @@ author-meta:
 - Britton Smith
 - Kacper Kowalik
 - Miguel de Val-Borro
+- Jared W. Coughlin
+- Corentin Cadiou
+- Michael Zingale
 - Leigh Orf
+- Kelton Halbert
 - Add Yourself
 bibliography:
 - content/manual-references.json
@@ -126,11 +130,39 @@ header-includes: '<!--
 
   <meta name="citation_author_orcid" content="000-0002-0455-9384" />
 
+  <meta name="citation_author" content="Jared W. Coughlin" />
+
+  <meta name="citation_author_institution" content="National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign" />
+
+  <meta name="citation_author_orcid" content="0000-0002-4373-4114" />
+
+  <meta name="citation_author" content="Corentin Cadiou" />
+
+  <meta name="citation_author_institution" content="Department of Physics and Astrophysics, University College London" />
+
+  <meta name="citation_author_institution" content="Institut d&#39;Astrophysique de Paris" />
+
+  <meta name="citation_author_orcid" content="0000-0003-2285-0332" />
+
+  <meta name="twitter:creator" content="@cphyc" />
+
+  <meta name="citation_author" content="Michael Zingale" />
+
+  <meta name="citation_author_institution" content="Stony Brook University" />
+
+  <meta name="citation_author_orcid" content="0000-0001-8401-030X" />
+
   <meta name="citation_author" content="Leigh Orf" />
 
   <meta name="citation_author_institution" content="Space Science and Engineering Center, University of Wisconsin - Madison" />
 
   <meta name="citation_author_orcid" content="0000-0002-2677-6427" />
+
+  <meta name="citation_author" content="Kelton Halbert" />
+
+  <meta name="citation_author_institution" content="Cooperative Institute for Meteorological Satellite Studies, The University of Wisconsin, Madison" />
+
+  <meta name="citation_author_orcid" content="0000-0001-6898-2731" />
 
   <meta name="citation_author" content="Add Yourself" />
 
@@ -150,11 +182,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/277e6984d9d76254451e6fcbb1d90512d9aa9b27/" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/c8427e7593332375261e9a0d807fec89caf6876d/" />
 
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/277e6984d9d76254451e6fcbb1d90512d9aa9b27/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/c8427e7593332375261e9a0d807fec89caf6876d/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/277e6984d9d76254451e6fcbb1d90512d9aa9b27/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/c8427e7593332375261e9a0d807fec89caf6876d/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -186,9 +218,9 @@ title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-3.0-paper/v/277e6984d9d76254451e6fcbb1d90512d9aa9b27/))
+([permalink](https://yt-project.github.io/yt-3.0-paper/v/c8427e7593332375261e9a0d807fec89caf6876d/))
 was automatically generated
-from [yt-project/yt-3.0-paper@277e698](https://github.com/yt-project/yt-3.0-paper/tree/277e6984d9d76254451e6fcbb1d90512d9aa9b27)
+from [yt-project/yt-3.0-paper@c8427e7](https://github.com/yt-project/yt-3.0-paper/tree/c8427e7593332375261e9a0d807fec89caf6876d)
 on September 30, 2020.
 </em></small>
 
@@ -311,6 +343,36 @@ on September 30, 2020.
      Planetary Science Institute
   </small>
 
++ **Jared W. Coughlin**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0002-4373-4114](https://orcid.org/0000-0002-4373-4114)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [jcoughlin11](https://github.com/jcoughlin11)<br>
+  <small>
+     National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
+     · Funded by Grant XXXXXXX
+  </small>
+
++ **Corentin Cadiou**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0003-2285-0332](https://orcid.org/0000-0003-2285-0332)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [cphyc](https://github.com/cphyc)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [cphyc](https://twitter.com/cphyc)<br>
+  <small>
+     Department of Physics and Astrophysics, University College London; Institut d'Astrophysique de Paris
+  </small>
+
++ **Michael Zingale**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0001-8401-030X](https://orcid.org/0000-0001-8401-030X)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [zingale](https://github.com/zingale)<br>
+  <small>
+     Stony Brook University
+  </small>
+
 + **Leigh Orf**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
     [0000-0002-2677-6427](https://orcid.org/0000-0002-2677-6427)
@@ -318,6 +380,15 @@ on September 30, 2020.
     [leighorf](https://github.com/leighorf)<br>
   <small>
      Space Science and Engineering Center, University of Wisconsin - Madison
+  </small>
+
++ **Kelton Halbert**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0001-6898-2731](https://orcid.org/0000-0001-6898-2731)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [keltonhalbert](https://github.com/keltonhalbert)<br>
+  <small>
+     Cooperative Institute for Meteorological Satellite Studies, The University of Wisconsin, Madison
   </small>
 
 + **Add Yourself**<br>
