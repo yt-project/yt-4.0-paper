@@ -156,9 +156,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-3.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/2c3aa16550f51f58da74c7c1dd9499401660120f/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/2c3aa16550f51f58da74c7c1dd9499401660120f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/2c3aa16550f51f58da74c7c1dd9499401660120f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/faabdcb177bcbfe2f430c79121a7826e37eedffb/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/faabdcb177bcbfe2f430c79121a7826e37eedffb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/faabdcb177bcbfe2f430c79121a7826e37eedffb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -172,9 +172,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-3.0-paper/v/2c3aa16550f51f58da74c7c1dd9499401660120f/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-3.0-paper/v/faabdcb177bcbfe2f430c79121a7826e37eedffb/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-3.0-paper/tree/2c3aa16550f51f58da74c7c1dd9499401660120f">yt-project/yt-3.0-paper@2c3aa16</a>
+from <a href="https://github.com/yt-project/yt-3.0-paper/tree/faabdcb177bcbfe2f430c79121a7826e37eedffb">yt-project/yt-3.0-paper@faabdcb</a>
 on September 30, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -413,7 +413,16 @@ And for projections, it would mean that integrating the path with a weight of �
 <p>The most time-consuming part of the testing process is what we refer to as “answer testing.”
 Because so much of <code>yt</code> is focused on computing analysis results, and because some of these analysis results simultaneously depend on specific IO routines, selection routines, and many “frontend-specific” pieces of code, we have built a system for ensuring that for a given set of analysis operations, the result of a set of operations does not change beyond a fixed (typically quite small) tolerance.</p>
 <h3 id="code-review">Code Review</h3>
-<p>Code review in <code>yt</code> is conducted on a line-by-line basis, as well as on a higher-level regarding pull requests.</p>
+<p>Code review in <code>yt</code> is conducted on a line-by-line basis, as well as on a higher-level regarding pull requests.
+The workflow for code review roughly follows this outline:</p>
+<ol type="1">
+<li>A pull request is issued. When a new pull request is issued, a template is provided that includes a description of the change, requesting information about its compliance with coding standards, etc.</li>
+<li>The label “triage” is automatically applied, and removed when a team member applies the correct component label.</li>
+<li>Code is reviewed, line-by-line, and suggestions made for either stylistic or algorithmic reasons.</li>
+<li>This process is iterated, ensuring that tests, style and accuracy are maintained.</li>
+</ol>
+<p>One increasing issue with the code review process is ensuring that changes are reviewed with appropriate urgency; larger pull requests tend to languish without review, as the requirements for review necessarily add burden to the maintainers.
+“Bugfix” changes formally require only one reviewer, whereas the <code>yt</code> guidelines suggest that larger changes require review from three different team members.</p>
 <h3 id="sec:ytep">YTEP Process</h3>
 <p>YTEPs, or “<code>yt</code>-enhancement proposal” are vehicles for collaborative decision-making in the project.
 Implemented shortly after the first paper on <code>yt</code> was released, the YTEP process experienced a fairly pronounced period of usage during the transition between versions 2.0 and 3.0 of <code>yt</code>, and has since been utilized considerably less.
@@ -651,9 +660,61 @@ The accepted YTEPs have included implementing the chunking system, developing a 
 </tr>
 </tbody>
 </table>
+<h2 id="indexing-and-geometry">Indexing and Geometry</h2>
+<p>yt is designed for analysis and visualization of datasets that describe “natural” or “physical” phenomena; more generally, yt is designed to analyze data that can be characterized by a metric of some type.
+The most common use case, by far, is that of data that is described in a Cartesian space, by the orthogonal axes of x, y and z.
+However, for reasons related to naturalness of coordinate systems and relevance to physical phenomena, datasets are also frequently organized in other coordinate systems, such as cylindrical polar (<span class="math inline">\(r\)</span>, <span class="math inline">\(z\)</span> and <span class="math inline">\(\theta\)</span>), spherical (<span class="math inline">\(r\)</span>, <span class="math inline">\(\theta\)</span> and <span class="math inline">\(\phi\)</span>) and variants such as geographic (latitude, longitude and altitude).</p>
+<p>Importantly, however, yt distinguishes between the <em>coordinate</em> space a dataset describes and the natural or <em>index</em> space by which its organization is described.
+This distinction is the most relevant among datasets and data formats where the organization is <em>implicit</em>, rather than <em>explicit</em>; for instance, in a grid patch dataset, data variable locations are often only specified implicitly.
+For a grid volume that covers a given region, the relationship between the “index” value of a cell (for instance, <span class="math inline">\(i,j,k\)</span>) and its position in space (for instance, <span class="math inline">\(x, y, z\)</span> or <span class="math inline">\(r, \theta, \phi\)</span>) requires transformation between a logically-Cartesian decomposition of the space and the potentially-non Cartesian space that it represents.</p>
+<p><strong>This needs a diagram</strong></p>
+<h3 id="abstraction-of-coordinate-systems">Abstraction of Coordinate Systems</h3>
+<p>yt provides a system for defining relationships between index-space and coordinate-space.
+During instantiation of a <code>Dataset</code> object, a helper object (<code>coordinates</code>, a subclass of <code>CoordinateHandler</code>) is created.
+This helper object tracks the correspondance between numerical axes and spatial axes (for instance, even in some Cartesian datasets, axis 0 corresponds to <span class="math inline">\(z\)</span> rather than <span class="math inline">\(x\)</span>), the names of axes, and the transformation and pixelization methods for visualization.
+In addition to these helper functions, the coordinate handler provides definitions for derived fields that describe local cell width (and orthogonal path length), positions in coordinate space as computed by index space coordinates, volumes, and surface areas.
+These coordinate handlers also provide transformations between different spaces, albeit using the somewhat undesirable method of conversion to reference cartesian frames and subsequent conversion to local coordinate frames.</p>
+<p>At present, coordinate spaces are defined in the following spaces:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Coordinate system</th>
+<th>Axes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cartesian coordinates</td>
+<td><span class="math inline">\(x, y, z\)</span></td>
+</tr>
+<tr class="even">
+<td>Cylindrical polar coordinates</td>
+<td>$r, z, $</td>
+</tr>
+<tr class="odd">
+<td>Spherical coordinates</td>
+<td><span class="math inline">\(r, \theta, \phi\)</span></td>
+</tr>
+<tr class="even">
+<td>Geographic coordinates</td>
+<td>latitude $$, longitude <span class="math inline">\(\in []\)</span>, altitude</td>
+</tr>
+<tr class="odd">
+<td>Internal geographic coordinates</td>
+<td>latitude, longitude, depth</td>
+</tr>
+<tr class="even">
+<td>Spectral cube</td>
+<td>Image <span class="math inline">\(x\)</span>, Image <span class="math inline">\(y\)</span> and <span class="math inline">\(\nu\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Future developments may involve code generation for arbitrary coordinate systems, using SymPy or other libraries.
+Independent of the visualization methods (which can often be reused), the development of coordinate systems is largely rote, applying straightforward mathematics to construct derived field definitions.
+As such, using mechanisms in SymPy for construction of relationships between coordinate systems may be a feasible method of developing code-generation for coordinate system handlers in yt.</p>
 <h2 id="sec:data_objects">Data Objects</h2>
 <p>The basic principles by which <code>yt</code> operates are built on the notion of selecting data (through coarse and subsequent fine-grained indexing of data sources such as files), accessing that data in a memory-efficient fashion, and then processing that data into either a resultant set of quantitative data or a visualization.</p>
-<p>The mechanisms by which <code>yt</code> can select data are typically spatial in nature, although several non-spatial mechanisms focused on queries can be utilized as well.
+<p>Selections in <code>yt</code> are usually spatial in nature, although several non-spatial mechanisms focused on queries can be utilized as well.
 These objects which conduct selection are selectors, and are designed to provide as small of an API as possible, to enable ease of development and deployment of new selectors.</p>
 <p>Selectors require defining several functions, with the option of defining additional functions for optimization, that return true or false whether a given point is or is not included in the selected region.
 These functions include selection of a rectilinear grid (or any point within that grid), selection of a point with zero extent and selection of a point with a non-zero spherical radius.</p>
@@ -670,7 +731,328 @@ However, the number of nodes is fixed at 8, with subdivision always occurring at
 <p>The final mechanism by which data is selected is for discrete data points, typically particles in astrophysical simulations.
 At present, this is done by first identifying which data files intersect with a given selector, then selecting individual points.
 There is no hierarchical data selection conducted in this system, as we do not yet allow for re-ordering of data on disk or in-memory which would facilitate hierarchical selection through the use of operations such as morton indices.</p>
-<p><strong>add bitmap index stuff here</strong></p>
+<h3 id="selection-routines">Selection Routines</h3>
+<p>Given these set of hierarchical selection methods, all of which are designed to provide opportunities for early-termination, each <em>geometric</em> selector object is required to implement a small set of methods to expose its functionality to the hierarchical selection process.
+Duplicative functions often result from attempts to avoid expensive calculations that take into account boundry conditions such as periodicity and reflectivity unless necessary.
+Additionally, by providing some routines as options, we can in some instances specialize them for the specific geometric operation.</p>
+<ul>
+<li><code>select_cell(cell_center, cell_width)</code>: this function, which is somewhat degenerate with <code>select_bbox</code>, returns whether a given “cell,” defined by its center and its width along each dimension, is included within the selection. In situations where the cells are spaced logarithmically, rather than linearly, this may produce slightly reduced accuracy for near-misses and glancing-selections.</li>
+<li><code>select_point(position)</code>: this function returns whether or not a point of zero-extent is included within the selection. This has some degeneracy with <code>select_sphere</code>.</li>
+<li><code>select_sphere(position, radius)</code>: This is equivalent to the <code>select_point</code> function, except that any point within the specified radius is included within the selector object.</li>
+<li><code>select_bbox(lower_left, upper_right)</code>: Determine overlap with an axis-aligned bounding box. Particularly for hierarchical selection methods, determining whether or not a bounding box overlaps with a geometric selector can lead to early-termination of some selection operations.<br />
+</li>
+<li><code>select_bbox_edge(lower_left, upper_right)</code>: This is a special-case of the bounding box routine that provides information as to whether or not the <em>entire</em> bounding box is included or just a <em>partial</em> portion of the bounding box.</li>
+</ul>
+<h3 id="fast-and-slow-paths">Fast and Slow Paths</h3>
+<p>Given an ensemble of objects, the simplest way of testing for inclusion in a selector is to call the operation <code>select_cell</code> on each individual object.
+Where the objects are organized in a regular fashion, for instance a “grid” that contains many “cells,” we can apply both “first pass” and “second pass” fast-path operations.
+The “first pass” checks whether or not the given ensemble of objects is included, and only iterates inward if there is partial or total inclusion.
+The “second pass” fast pass is specialized to both the organization of the objects <em>and</em> the selector itself, and is used to determine whether either only a specific (and well-defined) subset of the objects is included or the entirety of them.</p>
+<p>For instance, we can examine the specific case of selecting grid cells within a rectangular prism.
+When we select a “grid” of cells within a rectangular prism, we can have either total inclusion, partial inclusion, or full exclusion.
+In the case of full inclusion, where the entire grid is included within the selector, we simply sidestep the specific inclusion checks completely and return a full mask of cells to utilize.
+In the case of partial inclusion, we can often determine the “start” and “end” indices of inclusion in the rectangular prism by examining the intersection volume.
+This allows us to avoid many costly individual <code>select_cell</code> calls.</p>
+<p>With discrete point selection (and for our purposes, often unstructured mesh falls into this category) we often do not have the same organizing principle on which we can rely.
+However, utilizing hierarchical bitmap indexing we can often organize subsets of particles into collections of cells which may or may not be contiguous.
+In this situation, we can check for full inclusion within data objects, although we are not able to identify start and stop indices as the data are not assumed to be organized spatially independent of how we have indexed them.</p>
+<p>At present, the objects listed in <a href="#tbl:selection-objects">1</a> are provided as selectors in yt.
+We do make a distinction between “selection” operations and “reduction” or “construction” operations (such as projections and smoothing/resampling), but have included both here for consistency.
+Additionally, some have been marked as not “user-facing,” in the sense that they are not expected to be constructed directly by users, but instead are utilized internally for indexing purposes.
+In columns to the right, we provide information as to whether there is an available “fast” path for grid objects.</p>
+<div id="tbl:selection-objects" class="tablenos">
+<table>
+<caption><span>Table 1:</span> Selection objects and their types. </caption>
+<thead>
+<tr class="header">
+<th>Object Name</th>
+<th>Object Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Arbitrary grid</td>
+<td>Resampling</td>
+</tr>
+<tr class="even">
+<td>Boolean object</td>
+<td>Selection (Base Class)</td>
+</tr>
+<tr class="odd">
+<td>Covering grid</td>
+<td>Resampling</td>
+</tr>
+<tr class="even">
+<td>Cut region</td>
+<td>Selection</td>
+</tr>
+<tr class="odd">
+<td>Cutting plane</td>
+<td>Selection</td>
+</tr>
+<tr class="even">
+<td>Data collection</td>
+<td>Selection</td>
+</tr>
+<tr class="odd">
+<td>Disk</td>
+<td>Selection</td>
+</tr>
+<tr class="even">
+<td>Ellipsoid</td>
+<td>Selection</td>
+</tr>
+<tr class="odd">
+<td>Intersection</td>
+<td>Selection (Bool)</td>
+</tr>
+<tr class="even">
+<td>Octree</td>
+<td>Internal index</td>
+</tr>
+<tr class="odd">
+<td>Orthogonal ray</td>
+<td>Selection</td>
+</tr>
+<tr class="even">
+<td>Particle projection</td>
+<td>Reduction</td>
+</tr>
+<tr class="odd">
+<td>Point</td>
+<td>Selection</td>
+</tr>
+<tr class="even">
+<td>Quadtree projection</td>
+<td>Reduction</td>
+</tr>
+<tr class="odd">
+<td>Ray</td>
+<td>Selection</td>
+</tr>
+<tr class="even">
+<td>Rectangular Prism</td>
+<td>Selection</td>
+</tr>
+<tr class="odd">
+<td>Slice</td>
+<td>Selection</td>
+</tr>
+<tr class="even">
+<td>Smoothed covering grid</td>
+<td>Resampling</td>
+</tr>
+<tr class="odd">
+<td>Sphere</td>
+<td>Selection</td>
+</tr>
+<tr class="even">
+<td>Streamline</td>
+<td>Selection</td>
+</tr>
+<tr class="odd">
+<td>Surface</td>
+<td>Selection</td>
+</tr>
+<tr class="even">
+<td>Union</td>
+<td>Selection (Bool)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="sec:dobj-arbitrary_grid">Arbitrary_grid</h4>
+<p><em>Arguments</em>:
+* Left edge
+* Right edge
+* Active Dimensions</p>
+<p>A 3D region with arbitrary bounds and dimensions. In contrast to the
+Covering Grid, this object accepts a left edge, a right edge, and
+dimensions. This allows it to be used for creating 3D particle
+deposition fields that are independent of the underlying mesh, whether
+that is yt-generated or from the simulation data. For example,
+arbitrary boxes around particles can be drawn and particle deposition
+fields can be created. This object will refuse to generate any fluid
+fields.</p>
+<h4 id="sec:dobj-bool">Bool</h4>
+<p><em>Arguments</em>:
+* Operation
+* Data object 1
+* Data object 2</p>
+<p>This is a boolean operation, accepting AND, OR, XOR, and NOT for
+combining multiple data objects. This object is not designed to be
+created directly; it is designed to be created implicitly by using one
+of the bitwise operations (&amp;, |, ^, ~) on one or two other data
+objects. These correspond to the appropriate boolean operations, and
+the resultant object can be nested.</p>
+<h4 id="sec:dobj-covering_grid">Covering_grid</h4>
+<p><em>Arguments</em>:
+* Level
+* Left edge
+* Active Dimensions</p>
+<p>A 3D region with all data extracted to a single, specified resolution.
+Left edge should align with a cell boundary, but defaults to the
+closest cell boundary.</p>
+<h4 id="sec:dobj-cut_region">Cut_region</h4>
+<p><em>Arguments</em>:
+* Base object
+* Conditionals</p>
+<p>This is a data object designed to allow individuals to apply logical
+operations to fields and filter as a result of those cuts.</p>
+<h4 id="sec:dobj-cutting">Cutting</h4>
+<p><em>Arguments</em>:
+* Normal
+* Center</p>
+<p>This is a data object corresponding to an oblique slice through the
+simulation domain. This object is typically accessed through the
+<code>cutting</code> object that hangs off of index objects. A cutting plane is
+an oblique plane through the data, defined by a normal vector and a
+coordinate. It attempts to guess an ‘north’ vector, which can be
+overridden, and then it pixelizes the appropriate data onto the plane
+without interpolation.</p>
+<h4 id="sec:dobj-data_collection">Data_collection</h4>
+<p><em>Arguments</em>:
+* Object List</p>
+<p>By selecting an arbitrary <em>object_list</em>, we can act on those grids.
+Child cells are not returned.</p>
+<h4 id="sec:dobj-disk">Disk</h4>
+<p><em>Arguments</em>:
+* Center
+* Normal vector
+* Radius
+* Height</p>
+<p>By providing a <em>center</em>, a <em>normal</em>, a <em>radius</em> and a <em>height</em> we can
+define a cylinder of any proportion. Only cells whose centers are
+within the cylinder will be selected.</p>
+<h4 id="sec:dobj-ellipsoid">Ellipsoid</h4>
+<p><em>Arguments</em>:
+* Center
+* a
+* b
+* c
+* e0
+* tilt</p>
+<p>By providing a <em>center</em>,<em>A</em>,<em>B</em>,<em>C</em>,<em>e0</em>,<em>tilt</em> we can define a
+ellipsoid of any proportion. Only cells whose centers are within the
+ellipsoid will be selected.</p>
+<h4 id="sec:dobj-intersection">Intersection</h4>
+<p><em>Arguments</em>:
+* Data objects</p>
+<p>This is a more efficient method of selecting the intersection of
+multiple data selection objects. Creating one of these objects
+returns the intersection of all of the sub-objects; it is designed to
+be a faster method than chaining &amp; (“and”) operations to create a
+single, large intersection.</p>
+<h4 id="sec:dobj-ortho_ray">Ortho_ray</h4>
+<p><em>Arguments</em>:
+* Axis
+* Coords</p>
+<p>This is an orthogonal ray cast through the entire domain, at a
+specific coordinate. This object is typically accessed through the
+<code>ortho_ray</code> object that hangs off of index objects. The resulting
+arrays have their dimensionality reduced to one, and an ordered list
+of points at an (x,y) tuple along <code>axis</code> are available.</p>
+<h4 id="sec:dobj-point">Point</h4>
+<p><em>Arguments</em>:
+* P</p>
+<p>A 0-dimensional object defined by a single point</p>
+<h4 id="sec:dobj-proj">Proj</h4>
+<p><em>Arguments</em>:
+* Axis
+* Field
+* Weight field</p>
+<p>This is a data object corresponding to a line integral through the
+simulation domain. This object is typically accessed through the
+<code>proj</code> object that hangs off of index objects. YTQuadTreeProj is a
+projection of a <code>field</code> along an <code>axis</code>. The field can have an
+associated <code>weight_field</code>, in which case the values are multiplied by
+a weight before being summed, and then divided by the sum of that
+weight; the two fundamental modes of operating are direct line
+integral (no weighting) and average along a line of sight (weighting.)
+What makes <code>proj</code> different from the standard projection mechanism is
+that it utilizes a quadtree data structure, rather than the old
+mechanism for projections. It will not run in parallel, but serial
+runs should be substantially faster. Note also that lines of sight
+are integrated at every projected finest-level cell.</p>
+<h4 id="sec:dobj-ray">Ray</h4>
+<p><em>Arguments</em>:
+* Start point
+* End point</p>
+<p>This is an arbitrarily-aligned ray cast through the entire domain, at
+a specific coordinate. This object is typically accessed through the
+<code>ray</code> object that hangs off of index objects. The resulting arrays
+have their dimensionality reduced to one, and an ordered list of
+points at an (x,y) tuple along <code>axis</code> are available, as is the <code>t</code>
+field, which corresponds to a unitless measurement along the ray from
+start to end.</p>
+<h4 id="sec:dobj-region">Region</h4>
+<p><em>Arguments</em>:
+* Center
+* Left edge
+* Right edge</p>
+<p>A 3D region of data with an arbitrary center. Takes an array of three
+<em>left_edge</em> coordinates, three <em>right_edge</em> coordinates, and a
+<em>center</em> that can be anywhere in the domain. If the selected region
+extends past the edges of the domain, no data will be found there,
+though the object’s <code>left_edge</code> or <code>right_edge</code> are not modified.</p>
+<h4 id="sec:dobj-slice">Slice</h4>
+<p><em>Arguments</em>:
+* Axis
+* Coord</p>
+<p>This is a data object corresponding to a slice through the simulation
+domain. This object is typically accessed through the <code>slice</code> object
+that hangs off of index objects. Slice is an orthogonal slice through
+the data, taking all the points at the finest resolution available and
+then indexing them. It is more appropriately thought of as a slice
+‘operator’ than an object, however, as its field and coordinate can
+both change.</p>
+<h4 id="sec:dobj-smoothed_covering_grid">Smoothed_covering_grid</h4>
+<p><em>Arguments</em>:
+* Level
+* Left edge
+* Active Dimensions</p>
+<p>A 3D region with all data extracted and interpolated to a single,
+specified resolution. (Identical to covering_grid, except that it
+interpolates.) Smoothed covering grids start at level 0,
+interpolating to fill the region to level 1, replacing any cells
+actually covered by level 1 data, and then recursively repeating this
+process until it reaches the specified <code>level</code>.</p>
+<h4 id="sec:dobj-sphere">Sphere</h4>
+<p><em>Arguments</em>:
+* Center
+* Radius</p>
+<p>A sphere of points defined by a <em>center</em> and a <em>radius</em>.</p>
+<h4 id="sec:dobj-streamline">Streamline</h4>
+<p><em>Arguments</em>:
+* Positions</p>
+<p>This is a streamline, which is a set of points defined as being
+parallel to some vector field. This object is typically accessed
+through the Streamlines.path function. The resulting arrays have
+their dimensionality reduced to one, and an ordered list of points at
+an (x,y) tuple along <code>axis</code> are available, as is the <code>t</code> field, which
+corresponds to a unitless measurement along the ray from start to end.</p>
+<h4 id="sec:dobj-surface">Surface</h4>
+<p><em>Arguments</em>:
+* Data source
+* Surface field
+* Field value</p>
+<p>This surface object identifies isocontours on a cell-by-cell basis,
+with no consideration of global connectedness, and returns the
+vertices of the Triangles in that isocontour. This object simply
+returns the vertices of all the triangles calculated by the <code>marching cubes &lt;https://en.wikipedia.org/wiki/Marching_cubes&gt;</code>_ algorithm; for
+more complex operations, such as identifying connected sets of cells
+above a given threshold, see the extract_connected_sets function.
+This is more useful for calculating, for instance, total isocontour
+area, or visualizing in an external program (such as <code>MeshLab &lt;http://www.meshlab.net&gt;</code>_.) The object has the properties .vertices
+and will sample values if a field is requested. The values are
+interpolated to the center of a given face.</p>
+<h4 id="sec:dobj-union">Union</h4>
+<p><em>Arguments</em>:
+* Data objects</p>
+<p>This is a more efficient method of selecting the union of multiple
+data selection objects. Creating one of these objects returns the
+union of all of the sub-objects; it is designed to be a faster method
+than chaining | (or) operations to create a single, large union.</p>
 <h2 id="processing-and-analysis-of-data">Processing and Analysis of Data</h2>
 <h3 id="array-like-operations">Array-like Operations</h3>
 <h2 id="abstracting-simulation-types">Abstracting Simulation Types</h2>
