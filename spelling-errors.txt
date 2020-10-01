@@ -12,7 +12,7 @@ backporting
 Bili
 binarily
 Bitbucket
-Bitwise
+bitwise
 Bool
 Borro
 boundry
@@ -22,11 +22,12 @@ Bugfix
 Cadiou
 CGS
 Champaign
+chrishavlin
 chummels
 chunking
 Clément
 codebase
-Comoving
+comoving
 connectedness
 contributionscoming
 Coord
@@ -56,6 +57,7 @@ geosciences
 Goldbaum
 gridded
 Halbert
+Havlin
 Hummels
 hydrodynamical
 implemenation
@@ -132,7 +134,7 @@ Refactor
 Refactoring
 reflectivity
 reinstrumented
-Resampling
+resampling
 Rudd
 runtime
 scalability
@@ -174,12 +176,12 @@ XXXXXXXX
 yournamehere
 YTArray
 ytdata
-YTEP
+ytep
 YTEPs
 YTQuadTreeProj
 YTQuantity
 ytree
 Yu
-zingale
+Zingale
 zorder
 ZuHone
