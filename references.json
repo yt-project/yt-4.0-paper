@@ -1,5 +1,1232 @@
 [
   {
+    "DOI": "10.1109/MCSE.2010.118",
+    "ISSN": "1521-9615",
+    "URL": "http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5582062",
+    "abstract": "Cython is a Python language extension that allows explicit type declarations and is compiled directly to C. As such, it addresses Python’s large overhead for numerical loops and the difficulty of efficiently using existing C and Fortran code, which Cython can interact with natively.",
+    "author": [
+      {
+        "family": "Behnel",
+        "given": "Stefan"
+      },
+      {
+        "family": "Bradshaw",
+        "given": "Robert"
+      },
+      {
+        "family": "Citro",
+        "given": "Craig"
+      },
+      {
+        "family": "Dalcin",
+        "given": "Lisandro"
+      },
+      {
+        "family": "Seljebotn",
+        "given": "Dag Sverre"
+      },
+      {
+        "family": "Smith",
+        "given": "Kurt"
+      }
+    ],
+    "container-title": "Comput. Sci. Eng.",
+    "id": "RNeSxk82",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          3
+        ]
+      ]
+    },
+    "keyword": "Cython,Python,numerics,scientific computing",
+    "page": "31-39",
+    "publisher": "IEEE Computer Society",
+    "title": "<span class=\"nocase\">Cython: The Best of Both Worlds</span>",
+    "type": "article-journal",
+    "volume": "13",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Behnel2011"
+  },
+  {
+    "DOI": "10.1145/276305.276336",
+    "ISBN": "0-89791-995-5",
+    "ISSN": "01635808",
+    "URL": "http://dl.acm.org/citation.cfm?id=276305.276336",
+    "author": [
+      {
+        "family": "Chan",
+        "given": "Chee-Yong"
+      },
+      {
+        "family": "Ioannidis",
+        "given": "Yannis E."
+      }
+    ],
+    "container-title": "ACM SIGMOD Rec.",
+    "id": "YV4eT8wZ",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          1998,
+          6
+        ]
+      ]
+    },
+    "page": "355-366",
+    "publisher": "ACM",
+    "title": "<span class=\"nocase\">Bitmap index design and evaluation</span>",
+    "type": "article-journal",
+    "volume": "27",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Chan1998"
+  },
+  {
+    "DOI": "10.1145/304181.304201",
+    "ISBN": "1-58113-084-8",
+    "ISSN": "01635808",
+    "URL": "http://dl.acm.org/citation.cfm?id=304181.304201",
+    "author": [
+      {
+        "family": "Chan",
+        "given": "Chee-Yong"
+      },
+      {
+        "family": "Ioannidis",
+        "given": "Yannis E."
+      }
+    ],
+    "container-title": "ACM SIGMOD Rec.",
+    "id": "DMkimxcD",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          1999,
+          6
+        ]
+      ]
+    },
+    "page": "215-226",
+    "publisher": "ACM",
+    "title": "<span class=\"nocase\">An efficient bitmap encoding scheme for selection queries</span>",
+    "type": "article-journal",
+    "volume": "28",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Chan1999"
+  },
+  {
+    "DOI": "10.1109/TVCG.2010.9",
+    "ISSN": "1077-2626",
+    "PMID": "20467058",
+    "URL": "http://www.ncbi.nlm.nih.gov/pubmed/20467058",
+    "abstract": "We present a parallel algorithm for k-nearest neighbor graph construction that uses Morton ordering. Experiments show that our approach has the following advantages over existing methods: 1) faster construction of k-nearest neighbor graphs in practice on multicore machines, 2) less space usage, 3) better cache efficiency, 4) ability to handle large data sets, and 5) ease of parallelization and implementation. If the point set has a bounded expansion constant, our algorithm requires one-comparison-based parallel sort of points, according to Morton order plus near-linear additional steps to output the k-nearest neighbor graph.",
+    "author": [
+      {
+        "family": "Connor",
+        "given": "Michael"
+      },
+      {
+        "family": "Kumar",
+        "given": "Piyush"
+      }
+    ],
+    "container-title": "IEEE Trans. Vis. Comput. Graph.",
+    "id": "12vJ72aHG",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          1
+        ]
+      ]
+    },
+    "keyword": "Algorithms,Computer Graphics,Computer Simulation,Image Interpretation, Computer-Assisted,Image Interpretation, Computer-Assisted: methods,Imaging, Three-Dimensional,Imaging, Three-Dimensional: methods,Models, Theoretical,User-Computer Interface",
+    "page": "599-608",
+    "title": "<span class=\"nocase\">Fast construction of k-nearest neighbor graphs for point clouds.</span>",
+    "title-short": "IEEE transactions on visualization and computer gr",
+    "type": "article-journal",
+    "volume": "16",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Connor2010"
+  },
+  {
+    "DOI": "10.1109/MCSE.2015.5",
+    "ISSN": "1521-9615",
+    "URL": "http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=7006381",
+    "abstract": "Simulations of the entire universe are by definition models of the largest and most complex physical system that exists. In carrying them out, simulators seek to discretize the matter (and radiation) in a model universe and follow their evolution from the Big Bang to the present day.",
+    "author": [
+      {
+        "family": "Croft",
+        "given": "Rupert"
+      },
+      {
+        "family": "Di Matteo",
+        "given": "Tiziana"
+      },
+      {
+        "family": "Khandai",
+        "given": "Nishikanta"
+      }
+    ],
+    "container-title": "Comput. Sci. Eng.",
+    "id": "xbCL1tS1",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          3
+        ]
+      ]
+    },
+    "keyword": "Big Bang,Computational modeling,Cosmological Simulations,Gravity,HPC,High performance computing,Hydrodynamics,Instruction sets,Message systems,Scientific computing,Solid modeling,Universe,complex physical system,cosmology,high-performance computing,model universe,petascale cosmology,scientific computing,structure formation,supercomputer",
+    "page": "40-46",
+    "title": "<span class=\"nocase\">Petascale Cosmology: Simulations of Structure Formation</span>",
+    "title-short": "Computing in science & engineering",
+    "type": "article-journal",
+    "volume": "17",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Croft2015"
+  },
+  {
+    "DOI": "10.1007/978-3-662-25726-5_1",
+    "ISBN": "978-3-662-25726-5",
+    "URL": "http://dx.doi.org/10.1007/978-3-662-25726-5{\\_}1",
+    "author": [
+      {
+        "family": "Hilbert",
+        "given": "David"
+      }
+    ],
+    "chapter-number": "{Ü}ber die",
+    "id": "oIYFC4kD",
+    "issued": {
+      "date-parts": [
+        [
+          1970
+        ]
+      ]
+    },
+    "page": "1-2",
+    "publisher": "Springer Berlin Heidelberg",
+    "publisher-place": "Berlin, Heidelberg",
+    "title": "<span class=\"nocase\">Gesammelte Abhandlungen: Band III: Analysis - Grundlagen der Mathematik Physik - Verschiedenes Lebensgeschichte</span>",
+    "type": "chapter",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Hilbert1970"
+  },
+  {
+    "DOI": "10.1007/s00778-002-0067-8",
+    "ISSN": "10668888",
+    "URL": "http://link.springer.com/10.1007/s00778-002-0067-8",
+    "author": [
+      {
+        "family": "Hjaltason",
+        "given": "Gisli R."
+      },
+      {
+        "family": "Samet",
+        "given": "Hanan"
+      }
+    ],
+    "container-title": "VLDB J. Int. J. Very Large Data Bases",
+    "id": "LpXfagAT",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2002,
+          10
+        ]
+      ]
+    },
+    "page": "109-137",
+    "title": "<span class=\"nocase\">Speeding up construction of PMR quadtree-based spatial indexes</span>",
+    "type": "article-journal",
+    "volume": "11",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Hjaltason2002"
+  },
+  {
+    "DOI": "10.1093/mnras/stv195",
+    "ISSN": "0035-8711",
+    "URL": "http://adsabs.harvard.edu/abs/2014arXiv1409.7395H",
+    "abstract": "We present two new Lagrangian methods for hydrodynamics, in a systematic comparison with moving-mesh, smoothed particle hydrodynamics (SPH), and stationary (non-moving) grid methods. The new methods are designed to simultaneously capture advantages of both SPH and grid-based/adaptive mesh refinement (AMR) schemes. They are based on a kernel discretization of the volume coupled to a high-order matrix gradient estimator and a Riemann solver acting over the volume ‘overlap’. We implement and test a parallel, second-order version of the method with self-gravity and cosmological integration, in the code GIZMO:1 this maintains exact mass, energy and momentum conservation; exhibits superior angular momentum conservation compared to all other methods we study; does not require ‘artificial diffusion’ terms; and allows the fluid elements to move with the flow, so resolution is automatically adaptive. We consider a large suite of test problems, and find that on all problems the new methods appear competitive with moving-mesh schemes, with some advantages (particularly in angular momentum conservation), at the cost of enhanced noise. The new methods have many advantages versus SPH: proper convergence, good capturing of fluid-mixing instabilities, dramatically reduced ‘particle noise’ and numerical viscosity, more accurate sub-sonic flow evolution, and sharp shock-capturing. Advantages versus non-moving meshes include: automatic adaptivity, dramatically reduced advection errors and numerical overmixing, velocity-independent errors, accurate coupling to gravity, good angular momentum conservation and elimination of ‘grid alignment’ effects. We can, for example, follow hundreds of orbits of gaseous discs, while AMR and SPH methods break down in a few orbits. However, fixed meshes minimize ‘grid noise’. These differences are important for a range of astrophysical problems.",
+    "author": [
+      {
+        "family": "Hopkins",
+        "given": "P. F."
+      }
+    ],
+    "container-title": "Mon. Not. R. Astron. Soc.",
+    "id": "18bL4U0kM",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          4
+        ]
+      ]
+    },
+    "keyword": "cosmology: theory,hydrodynamics,instabilities,methods: numerical,turbulence",
+    "page": "53-110",
+    "title": "<span class=\"nocase\">A new class of accurate, mesh-free hydrodynamic simulation methods</span>",
+    "type": "article-journal",
+    "volume": "450",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Hopkins2015"
+  },
+  {
+    "URL": "http://adsabs.harvard.edu/abs/2015arXiv151207914J",
+    "abstract": "The Large Synoptic Survey Telescope (LSST) is a large-aperture, wide-field, ground-based survey system that will image the sky in six optical bands from 320 to 1050 nm, uniformly covering approximately \\$18,000\\$deg\\$\\^2\\$ of the sky over 800 times. The LSST is currently under construction on Cerro Pach$\\backslash$’on in Chile, and expected to enter operations in 2022. Once operational, the LSST will explore a wide range of astrophysical questions, from discovering \"killer\" asteroids to examining the nature of Dark Energy. The LSST will generate on average 15 TB of data per night, and will require a comprehensive Data Management system to reduce the raw data to scientifically useful catalogs and images with minimum human intervention. These reductions will result in a real-time alert stream, and eleven data releases over the 10-year duration of LSST operations. To enable this processing, the LSST project is developing a new, general-purpose, high-performance, scalable, well documented, open source data processing software stack for O/IR surveys. Prototypes of this stack are already capable of processing data from existing cameras (e.g., SDSS, DECam, MegaCam), and form the basis of the Hyper-Suprime Cam (HSC) Survey data reduction pipeline.",
+    "author": [
+      {
+        "family": "Jurić",
+        "given": "Mario"
+      },
+      {
+        "family": "Kantor",
+        "given": "Jeffrey"
+      },
+      {
+        "family": "Lim",
+        "given": "K-T"
+      },
+      {
+        "family": "Lupton",
+        "given": "Robert H."
+      },
+      {
+        "family": "Dubois-Felsmann",
+        "given": "Gregory"
+      },
+      {
+        "family": "Jenness",
+        "given": "Tim"
+      },
+      {
+        "family": "Axelrod",
+        "given": "Tim S."
+      },
+      {
+        "family": "Aleksić",
+        "given": "Jovan"
+      },
+      {
+        "family": "Allsman",
+        "given": "Roberta A."
+      },
+      {
+        "family": "AlSayyad",
+        "given": "Yusra"
+      },
+      {
+        "family": "Alt",
+        "given": "Jason"
+      },
+      {
+        "family": "Armstrong",
+        "given": "Robert"
+      },
+      {
+        "family": "Basney",
+        "given": "Jim"
+      },
+      {
+        "family": "Becker",
+        "given": "Andrew C."
+      },
+      {
+        "family": "Becla",
+        "given": "Jacek"
+      },
+      {
+        "family": "Bickerton",
+        "given": "Steven J."
+      },
+      {
+        "family": "Biswas",
+        "given": "Rahul"
+      },
+      {
+        "family": "Bosch",
+        "given": "James"
+      },
+      {
+        "family": "Boutigny",
+        "given": "Dominique"
+      },
+      {
+        "family": "Carrasco Kind",
+        "given": "Matias"
+      },
+      {
+        "family": "Ciardi",
+        "given": "David R."
+      },
+      {
+        "family": "Connolly",
+        "given": "Andrew J."
+      },
+      {
+        "family": "Daniel",
+        "given": "Scott F."
+      },
+      {
+        "family": "Daues",
+        "given": "Gregory E."
+      },
+      {
+        "family": "Economou",
+        "given": "Frossie"
+      },
+      {
+        "family": "Chiang",
+        "given": "Hsin-Fang"
+      },
+      {
+        "family": "Fausti",
+        "given": "Angelo"
+      },
+      {
+        "family": "Fisher-Levine",
+        "given": "Merlin"
+      },
+      {
+        "family": "Freemon",
+        "given": "D. Michael"
+      },
+      {
+        "family": "Gee",
+        "given": "Perry"
+      },
+      {
+        "family": "Gris",
+        "given": "Philippe"
+      },
+      {
+        "family": "Hernandez",
+        "given": "Fabio"
+      },
+      {
+        "family": "Hoblitt",
+        "given": "Joshua"
+      },
+      {
+        "family": "Ivezić",
+        "given": "Željko"
+      },
+      {
+        "family": "Jammes",
+        "given": "Fabrice"
+      },
+      {
+        "family": "Jevremović",
+        "given": "Darko"
+      },
+      {
+        "family": "Jones",
+        "given": "R. Lynne"
+      },
+      {
+        "family": "Bryce Kalmbach",
+        "given": "J."
+      },
+      {
+        "family": "Kasliwal",
+        "given": "Vishal P."
+      },
+      {
+        "family": "Krughoff",
+        "given": "K. Simon"
+      },
+      {
+        "family": "Lang",
+        "given": "Dustin"
+      },
+      {
+        "family": "Lurie",
+        "given": "John"
+      },
+      {
+        "family": "Lust",
+        "given": "Nate B."
+      },
+      {
+        "family": "Mullally",
+        "given": "Fergal"
+      },
+      {
+        "family": "MacArthur",
+        "given": "Lauren A."
+      },
+      {
+        "family": "Melchior",
+        "given": "Peter"
+      },
+      {
+        "family": "Moeyens",
+        "given": "Joachim"
+      },
+      {
+        "family": "Nidever",
+        "given": "David L."
+      },
+      {
+        "family": "Owen",
+        "given": "Russell"
+      },
+      {
+        "family": "Parejko",
+        "given": "John K"
+      },
+      {
+        "family": "Peterson",
+        "given": "J. Matt"
+      },
+      {
+        "family": "Petravick",
+        "given": "Donald"
+      },
+      {
+        "family": "Pietrowicz",
+        "given": "Stephen R."
+      },
+      {
+        "family": "Price",
+        "given": "Paul A."
+      },
+      {
+        "family": "Reiss",
+        "given": "David J."
+      },
+      {
+        "family": "Shaw",
+        "given": "Richard A."
+      },
+      {
+        "family": "Sick",
+        "given": "Jonathan"
+      },
+      {
+        "family": "Slater",
+        "given": "Colin T."
+      },
+      {
+        "family": "Strauss",
+        "given": "Michael A."
+      },
+      {
+        "family": "Sullivan",
+        "given": "Ian S."
+      },
+      {
+        "family": "Swinbank",
+        "given": "John D."
+      },
+      {
+        "family": "Van Dyk",
+        "given": "Schuyler"
+      },
+      {
+        "family": "Vujčić",
+        "given": "Veljko"
+      },
+      {
+        "family": "Withers",
+        "given": "Alexander"
+      },
+      {
+        "family": "Yoachim",
+        "given": "Peter"
+      },
+      {
+        "literal": "LSST Project"
+      }
+    ],
+    "container-title": "eprint arXiv:1512.07914",
+    "id": "gw5rMEhN",
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "keyword": "Astrophysics - Instrumentation and Methods for Ast",
+    "title": "The LSST Data Management System",
+    "type": "article-journal",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Juric2015a"
+  },
+  {
+    "DOI": "10.1002/spe.2289",
+    "ISSN": "00380644",
+    "URL": "http://doi.wiley.com/10.1002/spe.2289",
+    "author": [
+      {
+        "family": "Kaser",
+        "given": "Owen"
+      },
+      {
+        "family": "Lemire",
+        "given": "Daniel"
+      }
+    ],
+    "container-title": "Softw. Pract. Exp.",
+    "id": "2qfATif3",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          2
+        ]
+      ]
+    },
+    "page": "167-198",
+    "title": "<span class=\"nocase\">Compressed bitmap indexes: beyond unions and intersections</span>",
+    "type": "article-journal",
+    "volume": "46",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Kaser2016"
+  },
+  {
+    "DOI": "10.1016/j.datak.2009.08.006",
+    "ISSN": "0169023X",
+    "URL": "http://dl.acm.org/citation.cfm?id=1663645.1663682",
+    "author": [
+      {
+        "family": "Lemire",
+        "given": "Daniel"
+      },
+      {
+        "family": "Kaser",
+        "given": "Owen"
+      },
+      {
+        "family": "Aouiche",
+        "given": "Kamel"
+      }
+    ],
+    "container-title": "Data Knowl. Eng.",
+    "id": "zXsFmNjY",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          1
+        ]
+      ]
+    },
+    "keyword": "Compression,EWAH,Gray codes,Indexing,Multidimensional databases",
+    "page": "3-28",
+    "publisher": "Elsevier Science Publishers B. V.",
+    "title": "<span class=\"nocase\">Sorting improves word-aligned bitmap indexes</span>",
+    "type": "article-journal",
+    "volume": "69",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Lemire2010"
+  },
+  {
+    "DOI": "10.1109/MCSE.2014.48",
+    "ISSN": "1521-9615",
+    "URL": "http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6785924",
+    "author": [
+      {
+        "family": "Malensek",
+        "given": "Matthew"
+      },
+      {
+        "family": "Pallickara",
+        "given": "Sangmi"
+      },
+      {
+        "family": "Pallickara",
+        "given": "Shrideep"
+      }
+    ],
+    "container-title": "Comput. Sci. Eng.",
+    "id": "itaUSTKC",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          7
+        ]
+      ]
+    },
+    "page": "53-61",
+    "title": "<span class=\"nocase\">Evaluating Geospatial Geometry and Proximity Queries Using Distributed Hash Tables</span>",
+    "type": "article-journal",
+    "volume": "16",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Malensek2014"
+  },
+  {
+    "DOI": "10.1146/annurev.aa.30.090192.002551",
+    "ISSN": "0066-4146",
+    "URL": "http://adsabs.harvard.edu/abs/1992ARA{\\&}A..30..543M",
+    "abstract": "The fundamentals of the smoothed particle hydrodynamics (SPH) method and its applications in astrophysics are reviewed. The discussion covers equations of motion, viscosity amd thermal conduction, spatially varying resolution, kernels, magnetic fields, special relativity, and implementation. Applications of the SPH method are discussed with reference to gas dynamics, binary stars and stellar collisions, formation of the moon and impact problems, fragmentation and cloud collisions, and cosmological and galactic problems. Other applications discussed include disks and rings, radio jets, motion near black holes, supernovae, magnetic phenomena, and nearly incompressible flow.",
+    "author": [
+      {
+        "family": "Monaghan",
+        "given": "J. J."
+      }
+    ],
+    "container-title": "Annu. Rev. Astron. Astrophys.",
+    "id": "1C6sv2xA4",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          1992,
+          9
+        ]
+      ]
+    },
+    "keyword": "ANGULAR MOMENTUM,COMPUTATIONAL FLUID DYNAMICS,FINITE DIFFERENCE THEORY,HYDRODYNAMICS,KERNEL FUNCTIONS,PARTIAL DIFFERENTIAL EQUATIONS,PARTICLE ENERGY,PARTICLE IN CELL TECHNIQUE,PARTICLE MASS,PRESSURE GRADIENTS,simulation tech: SPH",
+    "page": "543-574",
+    "title": "Smoothed Particle Hydrodynamics",
+    "type": "article-journal",
+    "volume": "30",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Monaghan1992"
+  },
+  {
+    "author": [
+      {
+        "family": "Morton",
+        "given": "G. M."
+      }
+    ],
+    "id": "PSH5f9xg",
+    "issued": {
+      "date-parts": [
+        [
+          1996
+        ]
+      ]
+    },
+    "publisher": "IBM Ltd.",
+    "publisher-place": "Ottawa, Ontario",
+    "title": "<span class=\"nocase\">A computer oriented geodetic data base and a new technique in file sequencing</span>",
+    "type": "report",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Morton1996"
+  },
+  {
+    "DOI": "10.1145/588011.588037",
+    "ISBN": "0897911288",
+    "URL": "http://dl.acm.org/citation.cfm?id=588011.588037",
+    "author": [
+      {
+        "family": "Orenstein",
+        "given": "J. A."
+      },
+      {
+        "family": "Merrett",
+        "given": "T. H."
+      }
+    ],
+    "container-title": "Proc. 3rd acm sigact-sigmod symp. Princ. Database syst. - pod. ’84",
+    "id": "4mimKxQe",
+    "issued": {
+      "date-parts": [
+        [
+          1984,
+          4
+        ]
+      ]
+    },
+    "page": "181",
+    "publisher": "ACM Press",
+    "publisher-place": "New York, New York, USA",
+    "title": "<span class=\"nocase\">A class of data structures for associative searching</span>",
+    "type": "paper-conference",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Orenstein1984"
+  },
+  {
+    "DOI": "10.1109/SSDM.1999.787637",
+    "ISBN": "0-7695-0046-3",
+    "URL": "http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=787637",
+    "abstract": "In many scientific domains, experimental devices or simulation programs generate large volumes of data. The volumes of data may reach hundreds of terabytes and therefore it is impractical to store them on disk systems. Rather they are stored on robotic tape systems that are managed by some mass storage system (MSS). A major bottleneck in analyzing the simulated/collected data is the retrieval of subsets from the tertiary storage system. We describe the architecture and implementation of a Storage Access Coordination System (STACS) designed to optimize the use of a disk cache, and thus minimize the number of files read from tape. We achieve this by using a specialized index to locate the relevant data on tapes, and by coordinating file caching over multiple queries. We focus on a specific application area, a high energy physics data management and analysis environment. STACS was implemented and is being incorporated in an operational system, scheduled to go online at the end of 1999. We also include the results of various tests that demonstrate the benefits and efficiency gained of using the STACS",
+    "author": [
+      {
+        "family": "Shoshani",
+        "given": "A."
+      },
+      {
+        "family": "Bernardo",
+        "given": "L. M."
+      },
+      {
+        "family": "Nordberg",
+        "given": "H."
+      },
+      {
+        "family": "Rotem",
+        "given": "D."
+      },
+      {
+        "family": "Sim",
+        "given": "A."
+      }
+    ],
+    "container-title": "Proceedings. Elev. Int. Conf. Sci. Stat. Database manag.",
+    "id": "uibMnWfE",
+    "issued": {
+      "date-parts": [
+        [
+          1999
+        ]
+      ]
+    },
+    "keyword": "Analytical models,Cache storage,Data analysis,Design optimization,Energy management,Environmental management,Indexing,Information retrieval,Multidimensional systems,Robot kinematics,STACS,Storage Access Coordination System,cache storage,database indexing,disk cache,disk systems,experimental devices,file caching,high energy physics data management,mass storage system,multidimensional indexing,multiple queries,operational system,physics computing,query coordination,query processing,robotic tape systems,scientific domains,scientific information systems,simulation programs,specialized index,storage management,subset retrieval,tertiary storage management,tertiary storage system",
+    "page": "214-225",
+    "publisher": "IEEE Comput. Soc",
+    "title": "<span class=\"nocase\">Multidimensional indexing and query coordination for tertiary storage management</span>",
+    "title-short": "Scientific and statistical database management, 19",
+    "type": "paper-conference",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Shoshani1999"
+  },
+  {
+    "DOI": "10.1109/IPDPS.2006.1639304",
+    "ISBN": "1-4244-0054-6",
+    "URL": "http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1639304",
+    "author": [
+      {
+        "family": "Sinha",
+        "given": "R. R."
+      },
+      {
+        "family": "Mitra",
+        "given": "S."
+      },
+      {
+        "family": "Winslett",
+        "given": "M."
+      }
+    ],
+    "container-title": "Proc. 20th ieee int. Parallel distrib. Process. Symp.",
+    "id": "QMaCupmb",
+    "issued": {
+      "date-parts": [
+        [
+          2006
+        ]
+      ]
+    },
+    "page": "10 pp.",
+    "publisher": "IEEE",
+    "title": "<span class=\"nocase\">Bitmap indexes for large scientific data sets: a case study</span>",
+    "type": "paper-conference",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Sinha2006"
+  },
+  {
+    "DOI": "10.1145/1272743.1272746",
+    "ISSN": "03625915",
+    "URL": "http://portal.acm.org/citation.cfm?doid=1272743.1272746",
+    "author": [
+      {
+        "family": "Sinha",
+        "given": "Rishi Rakesh"
+      },
+      {
+        "family": "Winslett",
+        "given": "Marianne"
+      }
+    ],
+    "container-title": "ACM Trans. Database Syst.",
+    "id": "mMJ3UeWp",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          2007,
+          8
+        ]
+      ]
+    },
+    "page": "16-es",
+    "title": "<span class=\"nocase\">Multi-resolution bitmap indexes for scientific data</span>",
+    "type": "article-journal",
+    "volume": "32",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Sinha2007"
+  },
+  {
+    "DOI": "10.1016/S1384-1076(01)00042-2",
+    "ISSN": "13841076",
+    "URL": "http://adsabs.harvard.edu/abs/2001NewA....6...79S",
+    "abstract": "We describe the newly written code GADGET which is suitable both for cosmological simulations of structure formation and for the simulation of interacting galaxies. GADGET evolves self-gravitating collisionless fluids with the traditional N-body approach, and a collisional gas by smoothed particle hydrodynamics. Along with the serial version of the code, we discuss a parallel version that has been designed to run on massively parallel supercomputers with distributed memory. While both versions use a tree algorithm to compute gravitational forces, the serial version of GADGET can optionally employ the special-purpose hardware GRAPE instead of the tree. Periodic boundary conditions are supported by means of an Ewald summation technique. The code uses individual and adaptive timesteps for all particles, and it combines this with a scheme for dynamic tree updates. Due to its Lagrangian nature, GADGET thus allows a very large dynamic range to be bridged, both in space and time. So far, GADGET has been successfully used to run simulations with up to 7.5×107 particles, including cosmological studies of large-scale structure formation, high-resolution simulations of the formation of clusters of galaxies, as well as workstation-sized problems of interacting galaxies. In this study, we detail the numerical algorithms employed, and show various tests of the code. We publicly release both the serial and the massively parallel version of the code.",
+    "author": [
+      {
+        "family": "Springel",
+        "given": "Volker"
+      },
+      {
+        "family": "Yoshida",
+        "given": "Naoki"
+      },
+      {
+        "family": "White",
+        "given": "Simon D. M."
+      }
+    ],
+    "container-title": "New Astron.",
+    "id": "DQa79Dfo",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2001,
+          4
+        ]
+      ]
+    },
+    "keyword": "codes: GADGET",
+    "page": "79-117",
+    "title": "<span class=\"nocase\">GADGET: a code for collisionless and gasdynamical cosmological simulations</span>",
+    "type": "article-journal",
+    "volume": "6",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Springel2001"
+  },
+  {
+    "DOI": "10.1111/j.1365-2966.2005.09655.x",
+    "ISSN": "0035-8711",
+    "URL": "http://adsabs.harvard.edu/abs/2005MNRAS.364.1105S",
+    "abstract": "We discuss the cosmological simulation code GADGET-2, a new massively parallel TreeSPH code, capable of following a collisionless fluid with the N-body method, and an ideal gas by means of smoothed particle hydrodynamics (SPH). Our implementation of SPH manifestly conserves energy and entropy in regions free of dissipation, while allowing for fully adaptive smoothing lengths. Gravitational forces are computed with a hierarchical multipole expansion, which can optionally be applied in the form of a TreePM algorithm, where only short-range forces are computed with the ‘tree’ method while long-range forces are determined with Fourier techniques. Time integration is based on a quasi-symplectic scheme where long-range and short-range forces can be integrated with different time-steps. Individual and adaptive short-range time-steps may also be employed. The domain decomposition used in the parallelization algorithm is based on a space-filling curve, resulting in high flexibility and tree force errors that do not depend on the way the domains are cut. The code is efficient in terms of memory consumption and required communication bandwidth. It has been used to compute the first cosmological N-body simulation with more than 1010 dark matter particles, reaching a homogeneous spatial dynamic range of 105 per dimension in a three-dimensional box. It has also been used to carry out very large cosmological SPH simulations that account for radiative cooling and star formation, reaching total particle numbers of more than 250 million. We present the algorithms used by the code and discuss their accuracy and performance using a number of test problems. GADGET-2 is publicly released to the research community.",
+    "author": [
+      {
+        "family": "Springel",
+        "given": "Volker"
+      }
+    ],
+    "container-title": "Mon. Not. R. Astron. Soc.",
+    "id": "I01oLUIj",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          2005,
+          12
+        ]
+      ]
+    },
+    "keyword": "codes: GADGET,dark matter,galaxies: interactions,methods: numerical",
+    "page": "1105-1134",
+    "title": "<span class=\"nocase\">The cosmological simulation code gadget-2</span>",
+    "type": "article-journal",
+    "volume": "364",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Springel2005b"
+  },
+  {
+    "DOI": "10.1007/3-540-44469-6",
+    "ISBN": "978-3-540-67978-3",
+    "URL": "http://link.springer.com/10.1007/3-540-44469-6",
+    "author": [
+      {
+        "family": "Stockinger",
+        "given": "Kurt"
+      },
+      {
+        "family": "Duellmann",
+        "given": "Dirk"
+      },
+      {
+        "family": "Hoschek",
+        "given": "Wolfgang"
+      },
+      {
+        "family": "Schikuta",
+        "given": "Erich"
+      }
+    ],
+    "chapter-number": "Improving",
+    "collection-title": "Lecture notes in computer science",
+    "container-title": "Database expert syst. Appl. 11th int. Conf. DEXA 2000 london, uk, sept. 4–8, 2000 proc.",
+    "editor": [
+      {
+        "family": "Ibrahim",
+        "given": "Mohamed"
+      },
+      {
+        "family": "Küng",
+        "given": "Josef"
+      },
+      {
+        "family": "Revell",
+        "given": "Norman"
+      }
+    ],
+    "id": "VzYAeBg3",
+    "issued": {
+      "date-parts": [
+        [
+          2000,
+          6
+        ]
+      ]
+    },
+    "page": "835-845",
+    "publisher": "Springer Berlin Heidelberg",
+    "publisher-place": "Berlin, Heidelberg",
+    "title": "<span class=\"nocase\">Improving the Performance of High-Energy Physics Analysis through Bitmap Indices</span>",
+    "type": "chapter",
+    "volume": "1873",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Stockinger2000"
+  },
+  {
+    "DOI": "10.1007/978-3-540-30075-5_12",
+    "ISBN": "978-3-540-30075-5",
+    "URL": "http://dx.doi.org/10.1007/978-3-540-30075-5{\\_}12",
+    "author": [
+      {
+        "family": "Stockinger",
+        "given": "Kurt"
+      },
+      {
+        "family": "Wu",
+        "given": "Kesheng"
+      },
+      {
+        "family": "Shoshani",
+        "given": "Arie"
+      }
+    ],
+    "chapter-number": "Evaluation",
+    "container-title": "Database expert syst. Appl. 15th int. Conf. DEXA 2004, zaragoza, spain, august 30-september 3, 2004. Proc.",
+    "editor": [
+      {
+        "family": "Galindo",
+        "given": "Fernando"
+      },
+      {
+        "family": "Takizawa",
+        "given": "Makoto"
+      },
+      {
+        "family": "Traunmüller",
+        "given": "Roland"
+      }
+    ],
+    "id": "pe5S32KG",
+    "issued": {
+      "date-parts": [
+        [
+          2004
+        ]
+      ]
+    },
+    "page": "120-129",
+    "publisher": "Springer Berlin Heidelberg",
+    "publisher-place": "Berlin, Heidelberg",
+    "title": "<span class=\"nocase\">Evaluation Strategies for Bitmap Indices with Binning</span>",
+    "type": "paper-conference",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Stockinger2004"
+  },
+  {
+    "DOI": "10.1051/0004-6361:20011817",
+    "ISSN": "0004-6361",
+    "URL": "http://arxiv.org/abs/astro-ph/0111367 http://dx.doi.org/10.1051/0004-6361:20011817",
+    "abstract": "A new N-body and hydrodynamical code, called RAMSES, is presented. It has been designed to study structure formation in the universe with high spatial resolution. The code is based on Adaptive Mesh Refinement (AMR) technique, with a tree based data structure allowing recursive grid refinements on a cell-by-cell basis. The N-body solver is very similar to the one developed for the ART code (Kravtsov et al. 97), with minor differences in the exact implementation. The hydrodynamical solver is based on a second-order Godunov method, a modern shock-capturing scheme known to compute accurately the thermal history of the fluid component. The accuracy of the code is carefully estimated using various test cases, from pure gas dynamical tests to cosmological ones. The specific refinement strategy used in cosmological simulations is described, and potential spurious effects associated to shock waves propagation in the resulting AMR grid are discussed and found to be negligible. Results obtained in a large N-body and hydrodynamical simulation of structure formation in a low density LCDM universe are finally reported, with 256\\^3 particles and 4.1 10\\^7 cells in the AMR grid, reaching a formal resolution of 8192\\^3. A convergence analysis of different quantities, such as dark matter density power spectrum, gas pressure power spectrum and individual haloes temperature profiles, shows that numerical results are converging down to the actual resolution limit of the code, and are well reproduced by recent analytical predictions in the framework of the halo model.",
+    "author": [
+      {
+        "family": "Teyssier",
+        "given": "Romain"
+      }
+    ],
+    "container-title": "Astron. Astrophys. v.385, p.337-364",
+    "id": "1D5nekPGx",
+    "issued": {
+      "date-parts": [
+        [
+          2001,
+          11
+        ]
+      ]
+    },
+    "keyword": "COSMOLOGY: LARGE-SCALE STRUCTURE OF UNIVERSE,COSMOLOGY: THEORY,GRAVITATION,HYDRODYNAMICS,METHODS: NUMERICAL",
+    "page": "337-364",
+    "title": "<span class=\"nocase\">Cosmological Hydrodynamics with Adaptive Mesh Refinement: a new high resolution code called RAMSES</span>",
+    "type": "article-journal",
+    "volume": "385",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Teyssier2001"
+  },
+  {
+    "DOI": "10.1088/0067-0049/192/1/9",
+    "ISSN": "0067-0049",
+    "URL": "http://stacks.iop.org/0067-0049/192/i=1/a=9?key=crossref.ad58f4fc8c6272d93975507bf0238006",
+    "author": [
+      {
+        "family": "Turk",
+        "given": "Matthew J."
+      },
+      {
+        "family": "Smith",
+        "given": "Britton D."
+      },
+      {
+        "family": "Oishi",
+        "given": "Jeffrey S."
+      },
+      {
+        "family": "Skory",
+        "given": "Stephen"
+      },
+      {
+        "family": "Skillman",
+        "given": "Samuel W."
+      },
+      {
+        "family": "Abel",
+        "given": "Tom"
+      },
+      {
+        "family": "Norman",
+        "given": "Michael L."
+      }
+    ],
+    "container-title": "Astrophys. J. Suppl. Ser.",
+    "id": "GqCvYs0n",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          1
+        ]
+      ]
+    },
+    "page": "9",
+    "title": "<span class=\"nocase\">yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA</span>",
+    "type": "article-journal",
+    "volume": "192",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Turk20d11a"
+  },
+  {
+    "DOI": "10.1109/ICDE.1998.655780",
+    "ISBN": "0-8186-8289-2",
+    "URL": "http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=655780",
+    "author": [
+      {
+        "family": "Wu",
+        "given": "Ming-Chuan"
+      },
+      {
+        "family": "Buchmann",
+        "given": "A. P."
+      }
+    ],
+    "container-title": "Proc. 14th int. Conf. Data eng.",
+    "id": "f1rS5tZk",
+    "issued": {
+      "date-parts": [
+        [
+          1998
+        ]
+      ]
+    },
+    "page": "220-230",
+    "publisher": "IEEE Comput. Soc",
+    "title": "<span class=\"nocase\">Encoded bitmap indexing for data warehouses</span>",
+    "type": "paper-conference",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Wu1998"
+  },
+  {
+    "URL": "http://escholarship.org/uc/item/8k22w7q2",
+    "author": [
+      {
+        "family": "Wu",
+        "given": "Kesheng"
+      },
+      {
+        "family": "Otoo",
+        "given": "Ekow"
+      },
+      {
+        "family": "Shoshani",
+        "given": "Arie"
+      }
+    ],
+    "container-title": "Lawrence Berkeley Natl. Lab.",
+    "id": "yuSdhiDQ",
+    "issued": {
+      "date-parts": [
+        [
+          2001,
+          9
+        ]
+      ]
+    },
+    "keyword": "EWAH,database index compression bitmap",
+    "title": "<span class=\"nocase\">Compressed bitmap indices for efficient query processing</span>",
+    "type": "article-journal",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Wu2001"
+  },
+  {
+    "DOI": "10.1109/SSDM.2003.1214955",
+    "ISBN": "0-7695-1964-4",
+    "ISSN": "1099-3371",
+    "URL": "http://ieeexplore.ieee.org/articleDetails.jsp?arnumber=1214955",
+    "author": [
+      {
+        "family": "Wu",
+        "given": "Kesheng"
+      },
+      {
+        "family": "Koegler",
+        "given": "W."
+      },
+      {
+        "family": "Chen",
+        "given": "J."
+      },
+      {
+        "family": "Shoshani",
+        "given": "A."
+      }
+    ],
+    "container-title": "15th int. Conf. Sci. Stat. Database manag. 2003.",
+    "id": "AFyCFou3",
+    "issued": {
+      "date-parts": [
+        [
+          2003
+        ]
+      ]
+    },
+    "keyword": "Analytical models,Combustion,Data visualization,Energy management,Indexing,Laboratories,Octree,Performance analysis,Spatiotemporal phenomena,Temperature,Testing,bitmap compression,bitmap index,combustion simulation,content-based retrieval,data analysis,data exploration,data tracking,database indexing,image coding,interactive exploration,isocontouring algorithm,spatial data structures,spatio-temporal dataset,temporal databases,tree data structures,tree searching,tree-based indexing,visual databases",
+    "page": "65-74",
+    "publisher": "IEEE Comput. Soc",
+    "title": "<span class=\"nocase\">Using bitmap index for interactive exploration of large datasets</span>",
+    "type": "paper-conference",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Wu2003"
+  },
+  {
+    "DOI": "10.1109/CMPSAC.1998.716637",
+    "ISBN": "0-8186-8585-9",
+    "ISSN": "0730-3157",
+    "URL": "http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=716637",
+    "abstract": "Bitmap indexing, though effective for low cardinality attributes, can be rather costly in storage overhead for high cardinality attributes. Range-based bitmap (RBM) indexing can be used to reduce this storage overhead. The attribute values are partitioned into ranges and a bitmap vector is used to represent a range. With RBM, however, the number of records assigned to different ranges can be highly uneven, resulting in non-uniform search times for different queries. We present and evaluate a dynamic bucket expansion and contraction (DBEC) approach to simultaneously constructing range-based bitmap indexes for multiple high-cardinality attributes. Simulations are conducted to evaluate this DBEC approach. Both synthetic and real data are used in the simulations. The results show that (1) with highly skewed data, DBEC performs quite well compared with a simple approach and (2) DBEC compares favorably with the optimal approach",
+    "author": [
+      {
+        "family": "Yu",
+        "given": "P. S."
+      }
+    ],
+    "container-title": "Proceedings. Twenty-second annu. Int. Comput. Softw. Appl. Conf. (Compsac ’98) (cat. No.98CB 36241)",
+    "id": "Sju7gfgZ",
+    "issued": {
+      "date-parts": [
+        [
+          1998
+        ]
+      ]
+    },
+    "keyword": "Data analysis,Decision support systems,Decoding,Indexing,Multidimensional systems,RBM,Simultaneous localization and mapping,attribute values,bitmap indexing,data analysis,decision support systems,multidimensional data analysis,multidimensional index structure,non-uniform search times,range-based bitmap,storage management",
+    "page": "61-66",
+    "publisher": "IEEE Comput. Soc",
+    "title": "<span class=\"nocase\">Range-based bitmap indexing for high cardinality attributes with skew</span>",
+    "title-short": "Computer software and applications conference, 199",
+    "type": "paper-conference",
+    "note": "This CSL JSON Item was loaded by Manubot v0.3.1 from a manual reference file.\nmanual_reference_filename: manual-references.json\nstandard_id: Yu1998"
+  },
+  {
     "type": "article-journal",
     "id": "1CgEbr6CQ",
     "author": [

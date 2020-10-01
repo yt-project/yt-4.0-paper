@@ -186,9 +186,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-3.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/50450a7264eeb986bc7d30a1e53b0bbd9ce3ee39/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/50450a7264eeb986bc7d30a1e53b0bbd9ce3ee39/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/50450a7264eeb986bc7d30a1e53b0bbd9ce3ee39/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/140aea85cd8f2ba891df4be1f24bab35ee9cceca/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/140aea85cd8f2ba891df4be1f24bab35ee9cceca/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/140aea85cd8f2ba891df4be1f24bab35ee9cceca/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -202,9 +202,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-3.0-paper/v/50450a7264eeb986bc7d30a1e53b0bbd9ce3ee39/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-3.0-paper/v/140aea85cd8f2ba891df4be1f24bab35ee9cceca/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-3.0-paper/tree/50450a7264eeb986bc7d30a1e53b0bbd9ce3ee39">yt-project/yt-3.0-paper@50450a7</a>
+from <a href="https://github.com/yt-project/yt-3.0-paper/tree/140aea85cd8f2ba891df4be1f24bab35ee9cceca">yt-project/yt-3.0-paper@140aea8</a>
 on October 1, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -1265,10 +1265,10 @@ The spatial-tree optimization substantially increases performance for “wide an
 <h3 id="sec:noncartesian">Non-Cartesian Coordinates</h3>
 <h2 id="sec:point_indexing">Indexing Discrete-Point Datasets</h2>
 <p>Advances in both hardware and software facilitate astrophysical datasets of growing complexity and size.
-The datasets produced by numerical simulations can currently reach sizes of $$100 Tbytes split across hundreds of files <span class="citation" data-cites="raw:Croft2015">[e.g. <span class="citeproc-not-found" data-reference-id="raw:Croft2015"><strong>???</strong></span>]</span>.
+The datasets produced by numerical simulations can currently reach sizes of $$100 Tbytes split across hundreds of files <span class="citation" data-cites="xbCL1tS1">[<a href="#ref-xbCL1tS1" role="doc-biblioref">3</a>]</span>.
 For even simple analysis tasks, the cost of incrementally reading datasets this large into memory is quite high.
 This problem is not limited to theoretical work.
-During operations the Large Synoptic Survey Telescope (LSST) will produce 15 Tbytes of data each night <span class="citation" data-cites="raw:Juric2015a">[<span class="citeproc-not-found" data-reference-id="raw:Juric2015a"><strong>???</strong></span>]</span>.
+During operations the Large Synoptic Survey Telescope (LSST) will produce 15 Tbytes of data each night <span class="citation" data-cites="gw5rMEhN">[<a href="#ref-gw5rMEhN" role="doc-biblioref">4</a>]</span>.
 In order to analyze such large datasets, we need innovative techniques for quickly indexing and selecting data without loading the entire dataset into memory.
 We present a technique for using Morton bitmap indexes to map files and accelerate data analysis.</p>
 <h3 id="sec:bitmap_theory">Theory and Background</h3>
@@ -1290,9 +1290,9 @@ Each color represents a different file.</figcaption>
 In such a case, many files will need to be loaded for contiguous selections within the domain.
 In panel (b), the domain was split between the files along the <span class="math inline">\(x\)</span> dimension.
 Fewer files will need to be loaded for queries along the <span class="math inline">\(y\)</span>-dimension, but contiguous selection in <span class="math inline">\(x\)</span> will still require a greater number of files since the partition is not well localized in that dimension.
-Panels (c) and (d) are both examples of partitioning the domain between the files along a space filling curve <span class="citation" data-cites="raw:Morton1996 raw:Hilbert1970">[Morton and Hilbert curves respectively; <span class="citeproc-not-found" data-reference-id="raw:Morton1996"><strong>???</strong></span>,<span class="citeproc-not-found" data-reference-id="raw:Hilbert1970"><strong>??</strong></span>]</span>.
+Panels (c) and (d) are both examples of partitioning the domain between the files along a space filling curve <span class="citation" data-cites="PSH5f9xg oIYFC4kD">[<a href="#ref-PSH5f9xg" role="doc-biblioref">5</a>,<a href="#ref-oIYFC4kD" role="doc-biblioref">6</a>]</span>.
 These partitions have the greatest chance of limiting the number of files that must be loaded for a contiguous selection with slightly improved localization for the Hilbert curve.
-Consequently, Hilbert curves have also been used for load-balancing in parallel simulation codes like Gadget-2 <span class="citation" data-cites="raw:Springel2005b">[<span class="citeproc-not-found" data-reference-id="raw:Springel2005b"><strong>???</strong></span>]</span> and RAMSES <span class="citation" data-cites="raw:Teyssier2001">[<span class="citeproc-not-found" data-reference-id="raw:Teyssier2001"><strong>???</strong></span>]</span>.</p>
+Consequently, Hilbert curves have also been used for load-balancing in parallel simulation codes like Gadget-2 <span class="citation" data-cites="I01oLUIj">[<a href="#ref-I01oLUIj" role="doc-biblioref">7</a>]</span> and RAMSES <span class="citation" data-cites="1D5nekPGx">[<a href="#ref-1D5nekPGx" role="doc-biblioref">8</a>]</span>.</p>
 <p>Figure <a href="#fig:selector1">2</a> shows examples of three selections within the above domain partitions.</p>
 <div id="fig:selector1" class="fignos">
 <figure>
@@ -1324,7 +1324,7 @@ In this case, the partition will only be perfect directly following an update to
 <p>In cases where the exact file organization is not known or imperfect, it is advantageous to map the files post-process in order to speed up selections for analysis.
 Although the same result can be achieved by re-sorting the data itself, creating the map can be less computationally less expensive than re-sorting the data, can be saved for use with multiple selections, and does not required write access; this is typically not feasible, especially in the case of datasets shared by large, distributed communities.</p>
 <h2 id="morton-indices">Morton Indices</h2>
-<p>Morton ordering maps multidimensional data onto a one-dimensional space filling curve <span class="citation" data-cites="raw:Morton1996">[<span class="citeproc-not-found" data-reference-id="raw:Morton1996"><strong>???</strong></span>]</span>.
+<p>Morton ordering maps multidimensional data onto a one-dimensional space filling curve <span class="citation" data-cites="PSH5f9xg">[<a href="#ref-PSH5f9xg" role="doc-biblioref">5</a>]</span>.
 This is done by breaking up the domain into cells where each cell’s position within the <span class="math inline">\(N\)</span>-dimensional domain can be described by <span class="math inline">\(N\)</span> integers.
 The Morton index of the cell is then created by interleaving the bits of the <span class="math inline">\(N\)</span> integers to create a single integer that fully describes the cell’s position (see panel (b) Figure <a href="#fig:zorder">5</a>).
 As seen in panel (a) of Figure <a href="#fig:zorder">5</a>, ordering of the cells by their Morton indices forms a space filling Z-curve.</p>
@@ -1338,23 +1338,23 @@ The bits of the <span class="math inline">\(x\)</span> and <span class="math inl
 For instance, 64-bit Morton indices in 3 dimensions can be localized to <span class="math inline">\(1/2^{21}\)</span>th of the domain in each dimension (<span class="math inline">\(3\times21\)</span> bits = 63 bits).
 If the domain is binarily divided into subcells to some order <span class="math inline">\(k\)</span> in each dimension (i.e.
 <span class="math inline">\(2^{Nk}\)</span> cells), coarser Morton indices can be obtained by simply masking lower bits.
-Morton ordering has been used to speed up quadtree construction <span class="citation" data-cites="raw:Hjaltason2002">[<span class="citeproc-not-found" data-reference-id="raw:Hjaltason2002"><strong>???</strong></span>]</span>, nearest neighbor searches <span class="citation" data-cites="raw:Connor2010">[<span class="citeproc-not-found" data-reference-id="raw:Connor2010"><strong>???</strong></span>]</span>, and range queries <span class="citation" data-cites="raw:Orenstein1984">[<span class="citeproc-not-found" data-reference-id="raw:Orenstein1984"><strong>???</strong></span>]</span>.
+Morton ordering has been used to speed up quadtree construction <span class="citation" data-cites="LpXfagAT">[<a href="#ref-LpXfagAT" role="doc-biblioref">9</a>]</span>, nearest neighbor searches <span class="citation" data-cites="12vJ72aHG">[<a href="#ref-12vJ72aHG" role="doc-biblioref">10</a>]</span>, and range queries <span class="citation" data-cites="4mimKxQe">[<a href="#ref-4mimKxQe" role="doc-biblioref">11</a>]</span>.
 By recording the indices of the cells containing data from each file within a dataset, Morton indices can also be used to construct one-dimensional maps of an <span class="math inline">\(N\)</span>-dimensional dataset that can be represented as bitmaps.</p>
 <h4 id="bitmaps-ewah-compression">Bitmaps &amp; EWAH Compression</h4>
 <p>Bitmap indexes use the values of single bits within an array of bits to describe dataset properties.
 This form requires minimal memory and can be filtered using computationally inexpensive boolean operations.
-Bitmap indexes have long been popular for use with large data warehouses <span class="citation" data-cites="raw:Wu1998 raw:Chan1998 raw:Chan1999">[<span class="citeproc-not-found" data-reference-id="raw:Wu1998"><strong>???</strong></span>,<span class="citeproc-not-found" data-reference-id="raw:Chan1998"><strong>??</strong></span>,<span class="citeproc-not-found" data-reference-id="raw:Chan1999"><strong>??</strong></span>]</span>.
-However, as scientific datasets have become larger and more complex, they have also begun to gain traction in a diverse array of scientific fields including geosciences <span class="citation" data-cites="raw:Malensek2014">[<span class="citeproc-not-found" data-reference-id="raw:Malensek2014"><strong>???</strong></span>]</span>, earth sciences, rocket science <span class="citation" data-cites="raw:Sinha2006 raw:Sinha2007">[<span class="citeproc-not-found" data-reference-id="raw:Sinha2006"><strong>???</strong></span>,<span class="citeproc-not-found" data-reference-id="raw:Sinha2007"><strong>??</strong></span>]</span>, high-energy physics <span class="citation" data-cites="raw:Stockinger2000">[<span class="citeproc-not-found" data-reference-id="raw:Stockinger2000"><strong>???</strong></span>]</span>, and combustion <span class="citation" data-cites="raw:Wu2003">[<span class="citeproc-not-found" data-reference-id="raw:Wu2003"><strong>???</strong></span>]</span>.</p>
+Bitmap indexes have long been popular for use with large data warehouses <span class="citation" data-cites="f1rS5tZk YV4eT8wZ DMkimxcD">[<a href="#ref-f1rS5tZk" role="doc-biblioref">12</a>,<a href="#ref-YV4eT8wZ" role="doc-biblioref">13</a>,<a href="#ref-DMkimxcD" role="doc-biblioref">14</a>]</span>.
+However, as scientific datasets have become larger and more complex, they have also begun to gain traction in a diverse array of scientific fields including geosciences <span class="citation" data-cites="itaUSTKC">[<a href="#ref-itaUSTKC" role="doc-biblioref">15</a>]</span>, earth sciences, rocket science <span class="citation" data-cites="QMaCupmb mMJ3UeWp">[<a href="#ref-QMaCupmb" role="doc-biblioref">16</a>,<a href="#ref-mMJ3UeWp" role="doc-biblioref">17</a>]</span>, high-energy physics <span class="citation" data-cites="VzYAeBg3">[<a href="#ref-VzYAeBg3" role="doc-biblioref">18</a>]</span>, and combustion <span class="citation" data-cites="AFyCFou3">[<a href="#ref-AFyCFou3" role="doc-biblioref">19</a>]</span>.</p>
 <p>In cases where data attributes can take on a finite set of values, one bitmap is constructed for each possible attribute value.
 Within the bitmap each bit specifies whether or not the corresponding data point has that value.
 In this way, queries for data with a single attribute value require consulting only one bitmap and queries of multiple attributes/values can be done using boolean AND operations on the corresponding bitmaps.
-In the case of scientific data, which often contains floating point value attributes, the attributes must be binned prior to constructing the bitmaps <span class="citation" data-cites="raw:Yu1998 raw:Shoshani1999 raw:Stockinger2004">[<span class="citeproc-not-found" data-reference-id="raw:Yu1998"><strong>???</strong></span>,<span class="citeproc-not-found" data-reference-id="raw:Shoshani1999"><strong>??</strong></span>,<span class="citeproc-not-found" data-reference-id="raw:Stockinger2004"><strong>??</strong></span>]</span>.
+In the case of scientific data, which often contains floating point value attributes, the attributes must be binned prior to constructing the bitmaps <span class="citation" data-cites="Sju7gfgZ uibMnWfE pe5S32KG">[<a href="#ref-Sju7gfgZ" role="doc-biblioref">20</a>,<a href="#ref-uibMnWfE" role="doc-biblioref">21</a>,<a href="#ref-pe5S32KG" role="doc-biblioref">22</a>]</span>.
 Here, Morton indices are used to bin N-dimensional floating point data onto one-dimension.
 As a result, each file can be described by one bitmap.</p>
 <p>For each file within a dataset, the Morton indices touched by the data within that file can then be stored in a bitmap index for future searches where the value of bit <span class="math inline">\(j\)</span> indicates whether or not Morton index <span class="math inline">\(j\)</span> is touched by the file in question.
 For Morton indexing of order <span class="math inline">\(k\)</span>, this would result in a bitmap of length <span class="math inline">\(2^{Nk}\)</span> bits per file.
 For large bitmaps, this can become costly in terms of memory and the time required to perform bitmap operations.
-However, Enhanced Word-Aligned Hybrid (EWAH) compression can be used to limit these costs, particularly when the domain is densely or sparsely populated in localized regions <span class="citation" data-cites="raw:Wu2001 raw:Lemire2010 raw:Kaser2016">[<span class="citeproc-not-found" data-reference-id="raw:Wu2001"><strong>???</strong></span>,<span class="citeproc-not-found" data-reference-id="raw:Lemire2010"><strong>??</strong></span>,<span class="citeproc-not-found" data-reference-id="raw:Kaser2016"><strong>??</strong></span>]</span>.</p>
+However, Enhanced Word-Aligned Hybrid (EWAH) compression can be used to limit these costs, particularly when the domain is densely or sparsely populated in localized regions <span class="citation" data-cites="yuSdhiDQ zXsFmNjY 2qfATif3">[<a href="#ref-yuSdhiDQ" role="doc-biblioref">23</a>,<a href="#ref-zXsFmNjY" role="doc-biblioref">24</a>,<a href="#ref-2qfATif3" role="doc-biblioref">25</a>]</span>.</p>
 <p>An EWAH compressed bitmap will be smaller when there are long sequences, or “runs,” of identical values.
 This means that an EWAH compressed bitmap will be smallest if either all or none of its bits are set.
 An uncompressed bitmap would require the same, maximum, amount of memory in both of these cases.
@@ -1376,7 +1376,7 @@ The cells containing points from either file are shaded accordingly such that ce
 The smaller grids within these cells on the right are the boundaries of 2nd order Morton cells refining the collisions.</figcaption>
 </figure>
 </div>
-<p>Collisions can be limited by either increasing the order of the index or allowing for multi-resolution indexes <span class="citation" data-cites="raw:Sinha2006 raw:Sinha2007">[<span class="citeproc-not-found" data-reference-id="raw:Sinha2006"><strong>???</strong></span>,<span class="citeproc-not-found" data-reference-id="raw:Sinha2007"><strong>??</strong></span>]</span>.
+<p>Collisions can be limited by either increasing the order of the index or allowing for multi-resolution indexes <span class="citation" data-cites="QMaCupmb mMJ3UeWp">[<a href="#ref-QMaCupmb" role="doc-biblioref">16</a>,<a href="#ref-mMJ3UeWp" role="doc-biblioref">17</a>]</span>.
 Panel (b) of Figure <a href="#fig:collision">6</a> demonstrates an example of nesting a second index within cells that contain collisions.
 In those cells which contained collisions, a 2nd order Morton index was added.
 Those cells with collisions at the level of the refined index (purple cells in panel (b)) cover a much smaller portion of the domain than the cells with collisions at the level of the coarse index (purple cells in panel (a)).
@@ -1398,8 +1398,7 @@ This means that any selection using a 1st order bitmap index will require every 
 For the more localized partitions in panels (c) and (d), only two files touch each Morton cell.</p>
 <h4 id="ghost-zones">Ghost Zones</h4>
 <p>It is often the case that, in selecting a region, additional padding around the region should be included in the selection.
-This is particularly useful for algorithms that need information about neighboring points in the domain <span class="citation" data-cites="raw:Monaghan1992 raw:Springel2001 raw:Springel2005b">[e.g.
-gas properties in simulations using Smoothed Particle Hydrodynamics; SPH; <span class="citeproc-not-found" data-reference-id="raw:Monaghan1992"><strong>???</strong></span>,<span class="citeproc-not-found" data-reference-id="raw:Springel2001"><strong>??</strong></span>,<span class="citeproc-not-found" data-reference-id="raw:Springel2005b"><strong>??</strong></span>]</span>.
+This is particularly useful for algorithms that need information about neighboring points in the domain <span class="citation" data-cites="1C6sv2xA4 DQa79Dfo I01oLUIj">[<a href="#ref-1C6sv2xA4" role="doc-biblioref">26</a>,<a href="#ref-I01oLUIj" role="doc-biblioref">7</a>,<a href="#ref-DQa79Dfo" role="doc-biblioref">27</a>]</span>.
 For Morton indices, this is straightforward as the indices neighboring Morton cells can be found by incrementing the bits corresponding to each dimension.
 We have included the ability to pad selectors with some number of Morton cells referred to as ‘ghost zones’.
 Those files that touch ghost zones, but not the selector itself are referred to below as ‘ghost files’.</p>
@@ -1577,14 +1576,14 @@ In this way, the bitmap index can decrease the computational cost of reading in 
 While using an existing bitmap index decreases the time required for queries in this case, constructing a bitmap index can be more computationally expensive than directly querying the data without a bitmap index.
 Therefore, in the case where only a small number of selections need to be made, it will be more efficient to perform direct queries of the data than to construct and utilize the bitmap index.</p>
 <p>Bitmap indexing is particularly useful in astronomy and astrophysics.
-Output from N-body simulations is often split between multiple files to take advantage of parallel I/O and the domain decomposition generally leads to localized partitioning between files <span class="citation" data-cites="raw:Springel2001 raw:Springel2005b raw:Hopkins2015">[<span class="citeproc-not-found" data-reference-id="raw:Springel2001"><strong>???</strong></span>,<span class="citeproc-not-found" data-reference-id="raw:Springel2005b"><strong>??</strong></span>,<span class="citeproc-not-found" data-reference-id="raw:Hopkins2015"><strong>??</strong></span>]</span>.</p>
+Output from N-body simulations is often split between multiple files to take advantage of parallel I/O and the domain decomposition generally leads to localized partitioning between files <span class="citation" data-cites="DQa79Dfo I01oLUIj 18bL4U0kM">[<a href="#ref-I01oLUIj" role="doc-biblioref">7</a>,<a href="#ref-DQa79Dfo" role="doc-biblioref">27</a>,<a href="#ref-18bL4U0kM" role="doc-biblioref">28</a>]</span>.</p>
 <p>Currently, this technique is most useful for datasets split across multiple files.
 However, it can also be applied to single files by dividing the file’s contents into chunks.
 As in the multi-file case, the single file would need to be organized such that chunks were localized within the domain to take full advantage of the bitmaps.
 In addition, while the current implementation of this method is designed for three-dimensional spatial datasets like those produced by astrophysical simulations, the same methods can be applied to non-spatial datasets with arbitrary dimensionality.</p>
 <h3 id="sec:code">Code</h3>
-<p>These procedures have been implemented as part of the yt python package <span class="citation" data-cites="raw:Turk20d11a">[<span class="citeproc-not-found" data-reference-id="raw:Turk20d11a"><strong>???</strong></span>]</span> in order to facilitate the analysis of large astrophysical N-body simulations; currently undergoing review for inclusion in a future version of yt (3.4 or later), our implementation is available at https://bitbucket.org/langmm/yt-bitmap.
-The open source EWAHBoolArray C++ package is used for implementing EWAH bitmaps <span class="citation" data-cites="raw:Lemire2010 raw:Kaser2016">[<span class="citeproc-not-found" data-reference-id="raw:Lemire2010"><strong>???</strong></span>,<span class="citeproc-not-found" data-reference-id="raw:Kaser2016"><strong>??</strong></span>]</span> and exposed to Python using Cython <span class="citation" data-cites="raw:Behnel2011">[<span class="citeproc-not-found" data-reference-id="raw:Behnel2011"><strong>???</strong></span>]</span>.</p>
+<p>These procedures have been implemented as part of the yt python package <span class="citation" data-cites="GqCvYs0n">[<a href="#ref-GqCvYs0n" role="doc-biblioref">29</a>]</span> in order to facilitate the analysis of large astrophysical N-body simulations; currently undergoing review for inclusion in a future version of yt (3.4 or later), our implementation is available at https://bitbucket.org/langmm/yt-bitmap.
+The open source EWAHBoolArray C++ package is used for implementing EWAH bitmaps <span class="citation" data-cites="zXsFmNjY 2qfATif3">[<a href="#ref-zXsFmNjY" role="doc-biblioref">24</a>,<a href="#ref-2qfATif3" role="doc-biblioref">25</a>]</span> and exposed to Python using Cython <span class="citation" data-cites="RNeSxk82">[<a href="#ref-RNeSxk82" role="doc-biblioref">30</a>]</span>.</p>
 <h3 class="unnumbered" id="acknowledgment">Acknowledgment</h3>
 <p>The authors would like to thank Daniel Lemire for his open source EWAH implementation.
 yt is developed by a large number of independent researchers from numerous institutions around the world.
@@ -1797,12 +1796,12 @@ The <code>Dataset.set_units</code> updates the <code>h</code> symbol to the corr
 <h2 id="analysis-modules">Analysis Modules</h2>
 <h2 id="extensions-and-ecosystem">Extensions and Ecosystem</h2>
 <h3 id="trident">Trident</h3>
-<p>Trident <span class="citation" data-cites="1DgKJy4lE">[<a href="#ref-1DgKJy4lE" role="doc-biblioref">3</a>]</span> is a Python-based open-source tool for post-processing hydrodynamical simulations to produce synthetic absorption spectra and related data.
+<p>Trident <span class="citation" data-cites="1DgKJy4lE">[<a href="#ref-1DgKJy4lE" role="doc-biblioref">31</a>]</span> is a Python-based open-source tool for post-processing hydrodynamical simulations to produce synthetic absorption spectra and related data.
 In many ways, Trident is the first external package that utilizes <code>yt</code> to provide data access and numerical operations, but then builds on those to develop detailed, astrophysically-aware systems for processing and analyzing that data.</p>
 <h3 id="powderday">Powderday</h3>
-<p><span class="citation" data-cites="1CgEbr6CQ">[<a href="#ref-1CgEbr6CQ" role="doc-biblioref">4</a>]</span></p>
+<p><span class="citation" data-cites="1CgEbr6CQ">[<a href="#ref-1CgEbr6CQ" role="doc-biblioref">32</a>]</span></p>
 <h3 id="ytree">ytree</h3>
-<p>Building on <code>yt</code> for access to halo catalogs, and implementing a similar system for derived fields as applied to graph datasets, ytree <span class="citation" data-cites="VB3RIyxd">[<a href="#ref-VB3RIyxd" role="doc-biblioref">5</a>]</span> is a system for analyzing merger trees from analysis of dark matter halos in cosmological simulations.</p>
+<p>Building on <code>yt</code> for access to halo catalogs, and implementing a similar system for derived fields as applied to graph datasets, ytree <span class="citation" data-cites="VB3RIyxd">[<a href="#ref-VB3RIyxd" role="doc-biblioref">33</a>]</span> is a system for analyzing merger trees from analysis of dark matter halos in cosmological simulations.</p>
 <p>ytree provides flexibility in determining the path that a given analysis takes through the graph of merger trees; for instance, it enables the user to select if they wish to follow the “most massive” progenitor halo backwards in time, or even to set their own criteria for this.
 Connecting this to the raw, unprocessed data from the simulation (such as the unsampled particle or cell content that comprises the halos) allows researchers to deepen and guide their analysis based on the physical characteristics of the merger history.</p>
 <h2 id="future-directions">Future Directions</h2>
@@ -1821,20 +1820,185 @@ Matthew J. Turk, Britton D. Smith, Jeffrey S. Oishi, Stephen Skory, Samuel W. Sk
 <em>The Astrophysical Journal Supplement Series</em> (2011-01-01) <a href="https://doi.org/ft6md2">https://doi.org/ft6md2</a> <br />
 DOI: <a href="https://doi.org/10.1088/0067-0049/192/1/9">10.1088/0067-0049/192/1/9</a></p>
 </div>
+<div id="ref-xbCL1tS1">
+<p>3. <strong>Petascale Cosmology: Simulations of Structure Formation</strong> <br />
+Rupert Croft, Tiziana Di Matteo, Nishikanta Khandai<br />
+<em>Comput. Sci. Eng.</em> (2015-03) <a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=7006381">http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=7006381</a> <br />
+DOI: <a href="https://doi.org/10.1109/MCSE.2015.5">10.1109/mcse.2015.5</a></p>
+</div>
+<div id="ref-gw5rMEhN">
+<p>4. <strong>The LSST Data Management System</strong> <br />
+Mario Jurić, Jeffrey Kantor, K-T Lim, Robert H. Lupton, Gregory Dubois-Felsmann, Tim Jenness, Tim S. Axelrod, Jovan Aleksić, Roberta A. Allsman, Yusra AlSayyad, … LSST Project<br />
+<em>eprint arXiv:1512.07914</em> (2015) <a href="http://adsabs.harvard.edu/abs/2015arXiv151207914J">http://adsabs.harvard.edu/abs/2015arXiv151207914J</a></p>
+</div>
+<div id="ref-PSH5f9xg">
+<p>5. <strong>A computer oriented geodetic data base and a new technique in file sequencing</strong> <br />
+G. M. Morton<br />
+<em>IBM Ltd.</em> (1996)</p>
+</div>
+<div id="ref-oIYFC4kD">
+<p>6. <strong>Gesammelte Abhandlungen: Band III: Analysis - Grundlagen der Mathematik Physik - Verschiedenes Lebensgeschichte</strong> <br />
+David Hilbert<br />
+<em>Springer Berlin Heidelberg</em> (1970) <a href="http://dx.doi.org/10.1007/978-3-662-25726-5%7B\_%7D1">http://dx.doi.org/10.1007/978-3-662-25726-5{\_}1</a> <br />
+DOI: <a href="https://doi.org/10.1007/978-3-662-25726-5_1">10.1007/978-3-662-25726-5_1</a> · ISBN: <a href="https://worldcat.org/isbn/978-3-662-25726-5">978-3-662-25726-5</a></p>
+</div>
+<div id="ref-I01oLUIj">
+<p>7. <strong>The cosmological simulation code gadget-2</strong> <br />
+Volker Springel<br />
+<em>Mon. Not. R. Astron. Soc.</em> (2005-12) <a href="http://adsabs.harvard.edu/abs/2005MNRAS.364.1105S">http://adsabs.harvard.edu/abs/2005MNRAS.364.1105S</a> <br />
+DOI: <a href="https://doi.org/10.1111/j.1365-2966.2005.09655.x">10.1111/j.1365-2966.2005.09655.x</a></p>
+</div>
+<div id="ref-1D5nekPGx">
+<p>8. <strong>Cosmological Hydrodynamics with Adaptive Mesh Refinement: a new high resolution code called RAMSES</strong> <br />
+Romain Teyssier<br />
+<em>Astron. Astrophys. v.385, p.337-364</em> (2001-11) <a href="http://arxiv.org/abs/astro-ph/0111367%20http://dx.doi.org/10.1051/0004-6361:20011817">http://arxiv.org/abs/astro-ph/0111367 http://dx.doi.org/10.1051/0004-6361:20011817</a> <br />
+DOI: <a href="https://doi.org/10.1051/0004-6361:20011817">10.1051/0004-6361:20011817</a></p>
+</div>
+<div id="ref-LpXfagAT">
+<p>9. <strong>Speeding up construction of PMR quadtree-based spatial indexes</strong> <br />
+Gisli R. Hjaltason, Hanan Samet<br />
+<em>VLDB J. Int. J. Very Large Data Bases</em> (2002-10) <a href="http://link.springer.com/10.1007/s00778-002-0067-8">http://link.springer.com/10.1007/s00778-002-0067-8</a> <br />
+DOI: <a href="https://doi.org/10.1007/s00778-002-0067-8">10.1007/s00778-002-0067-8</a></p>
+</div>
+<div id="ref-12vJ72aHG">
+<p>10. <strong>Fast construction of k-nearest neighbor graphs for point clouds.</strong> <br />
+Michael Connor, Piyush Kumar<br />
+<em>IEEE Trans. Vis. Comput. Graph.</em> (2010-01) <a href="http://www.ncbi.nlm.nih.gov/pubmed/20467058">http://www.ncbi.nlm.nih.gov/pubmed/20467058</a> <br />
+DOI: <a href="https://doi.org/10.1109/TVCG.2010.9">10.1109/tvcg.2010.9</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20467058">20467058</a></p>
+</div>
+<div id="ref-4mimKxQe">
+<p>11. <strong>A class of data structures for associative searching</strong> <br />
+J. A. Orenstein, T. H. Merrett<br />
+<em>Proc. 3rd acm sigact-sigmod symp. Princ. Database syst. - pod. ’84</em> (1984-04) <a href="http://dl.acm.org/citation.cfm?id=588011.588037">http://dl.acm.org/citation.cfm?id=588011.588037</a> <br />
+DOI: <a href="https://doi.org/10.1145/588011.588037">10.1145/588011.588037</a> · ISBN: <a href="https://worldcat.org/isbn/0897911288">0897911288</a></p>
+</div>
+<div id="ref-f1rS5tZk">
+<p>12. <strong>Encoded bitmap indexing for data warehouses</strong> <br />
+Ming-Chuan Wu, A. P. Buchmann<br />
+<em>Proc. 14th int. Conf. Data eng.</em> (1998) <a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=655780">http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=655780</a> <br />
+DOI: <a href="https://doi.org/10.1109/ICDE.1998.655780">10.1109/icde.1998.655780</a> · ISBN: <a href="https://worldcat.org/isbn/0-8186-8289-2">0-8186-8289-2</a></p>
+</div>
+<div id="ref-YV4eT8wZ">
+<p>13. <strong>Bitmap index design and evaluation</strong> <br />
+Chee-Yong Chan, Yannis E. Ioannidis<br />
+<em>ACM SIGMOD Rec.</em> (1998-06) <a href="http://dl.acm.org/citation.cfm?id=276305.276336">http://dl.acm.org/citation.cfm?id=276305.276336</a> <br />
+DOI: <a href="https://doi.org/10.1145/276305.276336">10.1145/276305.276336</a> · ISBN: <a href="https://worldcat.org/isbn/0-89791-995-5">0-89791-995-5</a></p>
+</div>
+<div id="ref-DMkimxcD">
+<p>14. <strong>An efficient bitmap encoding scheme for selection queries</strong> <br />
+Chee-Yong Chan, Yannis E. Ioannidis<br />
+<em>ACM SIGMOD Rec.</em> (1999-06) <a href="http://dl.acm.org/citation.cfm?id=304181.304201">http://dl.acm.org/citation.cfm?id=304181.304201</a> <br />
+DOI: <a href="https://doi.org/10.1145/304181.304201">10.1145/304181.304201</a> · ISBN: <a href="https://worldcat.org/isbn/1-58113-084-8">1-58113-084-8</a></p>
+</div>
+<div id="ref-itaUSTKC">
+<p>15. <strong>Evaluating Geospatial Geometry and Proximity Queries Using Distributed Hash Tables</strong> <br />
+Matthew Malensek, Sangmi Pallickara, Shrideep Pallickara<br />
+<em>Comput. Sci. Eng.</em> (2014-07) <a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6785924">http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6785924</a> <br />
+DOI: <a href="https://doi.org/10.1109/MCSE.2014.48">10.1109/mcse.2014.48</a></p>
+</div>
+<div id="ref-QMaCupmb">
+<p>16. <strong>Bitmap indexes for large scientific data sets: a case study</strong> <br />
+R. R. Sinha, S. Mitra, M. Winslett<br />
+<em>Proc. 20th ieee int. Parallel distrib. Process. Symp.</em> (2006) <a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1639304">http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=1639304</a> <br />
+DOI: <a href="https://doi.org/10.1109/IPDPS.2006.1639304">10.1109/ipdps.2006.1639304</a> · ISBN: <a href="https://worldcat.org/isbn/1-4244-0054-6">1-4244-0054-6</a></p>
+</div>
+<div id="ref-mMJ3UeWp">
+<p>17. <strong>Multi-resolution bitmap indexes for scientific data</strong> <br />
+Rishi Rakesh Sinha, Marianne Winslett<br />
+<em>ACM Trans. Database Syst.</em> (2007-08) <a href="http://portal.acm.org/citation.cfm?doid=1272743.1272746">http://portal.acm.org/citation.cfm?doid=1272743.1272746</a> <br />
+DOI: <a href="https://doi.org/10.1145/1272743.1272746">10.1145/1272743.1272746</a></p>
+</div>
+<div id="ref-VzYAeBg3">
+<p>18. <strong>Improving the Performance of High-Energy Physics Analysis through Bitmap Indices</strong> <br />
+Kurt Stockinger, Dirk Duellmann, Wolfgang Hoschek, Erich Schikuta<br />
+<em>Database expert syst. Appl. 11th int. Conf. DEXA 2000 london, uk, sept. 4–8, 2000 proc.</em> (2000-06) <a href="http://link.springer.com/10.1007/3-540-44469-6">http://link.springer.com/10.1007/3-540-44469-6</a> <br />
+DOI: <a href="https://doi.org/10.1007/3-540-44469-6">10.1007/3-540-44469-6</a> · ISBN: <a href="https://worldcat.org/isbn/978-3-540-67978-3">978-3-540-67978-3</a></p>
+</div>
+<div id="ref-AFyCFou3">
+<p>19. <strong>Using bitmap index for interactive exploration of large datasets</strong> <br />
+Kesheng Wu, W. Koegler, J. Chen, A. Shoshani<br />
+<em>15th int. Conf. Sci. Stat. Database manag. 2003.</em> (2003) <a href="http://ieeexplore.ieee.org/articleDetails.jsp?arnumber=1214955">http://ieeexplore.ieee.org/articleDetails.jsp?arnumber=1214955</a> <br />
+DOI: <a href="https://doi.org/10.1109/SSDM.2003.1214955">10.1109/ssdm.2003.1214955</a> · ISBN: <a href="https://worldcat.org/isbn/0-7695-1964-4">0-7695-1964-4</a></p>
+</div>
+<div id="ref-Sju7gfgZ">
+<p>20. <strong>Range-based bitmap indexing for high cardinality attributes with skew</strong> <br />
+P. S. Yu<br />
+<em>Proceedings. Twenty-second annu. Int. Comput. Softw. Appl. Conf. (Compsac ’98) (cat. No.98CB 36241)</em> (1998) <a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=716637">http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=716637</a> <br />
+DOI: <a href="https://doi.org/10.1109/CMPSAC.1998.716637">10.1109/cmpsac.1998.716637</a> · ISBN: <a href="https://worldcat.org/isbn/0-8186-8585-9">0-8186-8585-9</a></p>
+</div>
+<div id="ref-uibMnWfE">
+<p>21. <strong>Multidimensional indexing and query coordination for tertiary storage management</strong> <br />
+A. Shoshani, L. M. Bernardo, H. Nordberg, D. Rotem, A. Sim<br />
+<em>Proceedings. Elev. Int. Conf. Sci. Stat. Database manag.</em> (1999) <a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=787637">http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=787637</a> <br />
+DOI: <a href="https://doi.org/10.1109/SSDM.1999.787637">10.1109/ssdm.1999.787637</a> · ISBN: <a href="https://worldcat.org/isbn/0-7695-0046-3">0-7695-0046-3</a></p>
+</div>
+<div id="ref-pe5S32KG">
+<p>22. <strong>Evaluation Strategies for Bitmap Indices with Binning</strong> <br />
+Kurt Stockinger, Kesheng Wu, Arie Shoshani<br />
+<em>Database expert syst. Appl. 15th int. Conf. DEXA 2004, zaragoza, spain, august 30-september 3, 2004. Proc.</em> (2004) <a href="http://dx.doi.org/10.1007/978-3-540-30075-5%7B\_%7D12">http://dx.doi.org/10.1007/978-3-540-30075-5{\_}12</a> <br />
+DOI: <a href="https://doi.org/10.1007/978-3-540-30075-5_12">10.1007/978-3-540-30075-5_12</a> · ISBN: <a href="https://worldcat.org/isbn/978-3-540-30075-5">978-3-540-30075-5</a></p>
+</div>
+<div id="ref-yuSdhiDQ">
+<p>23. <strong>Compressed bitmap indices for efficient query processing</strong> <br />
+Kesheng Wu, Ekow Otoo, Arie Shoshani<br />
+<em>Lawrence Berkeley Natl. Lab.</em> (2001-09) <a href="http://escholarship.org/uc/item/8k22w7q2">http://escholarship.org/uc/item/8k22w7q2</a></p>
+</div>
+<div id="ref-zXsFmNjY">
+<p>24. <strong>Sorting improves word-aligned bitmap indexes</strong> <br />
+Daniel Lemire, Owen Kaser, Kamel Aouiche<br />
+<em>Data Knowl. Eng.</em> (2010-01) <a href="http://dl.acm.org/citation.cfm?id=1663645.1663682">http://dl.acm.org/citation.cfm?id=1663645.1663682</a> <br />
+DOI: <a href="https://doi.org/10.1016/j.datak.2009.08.006">10.1016/j.datak.2009.08.006</a></p>
+</div>
+<div id="ref-2qfATif3">
+<p>25. <strong>Compressed bitmap indexes: beyond unions and intersections</strong> <br />
+Owen Kaser, Daniel Lemire<br />
+<em>Softw. Pract. Exp.</em> (2016-02) <a href="http://doi.wiley.com/10.1002/spe.2289">http://doi.wiley.com/10.1002/spe.2289</a> <br />
+DOI: <a href="https://doi.org/10.1002/spe.2289">10.1002/spe.2289</a></p>
+</div>
+<div id="ref-1C6sv2xA4">
+<p>26. <strong>Smoothed Particle Hydrodynamics</strong> <br />
+J. J. Monaghan<br />
+<em>Annu. Rev. Astron. Astrophys.</em> (1992-09) <a href="http://adsabs.harvard.edu/abs/1992ARA%7B\&amp;%7DA..30..543M">http://adsabs.harvard.edu/abs/1992ARA{\&amp;}A..30..543M</a> <br />
+DOI: <a href="https://doi.org/10.1146/annurev.aa.30.090192.002551">10.1146/annurev.aa.30.090192.002551</a></p>
+</div>
+<div id="ref-DQa79Dfo">
+<p>27. <strong>GADGET: a code for collisionless and gasdynamical cosmological simulations</strong> <br />
+Volker Springel, Naoki Yoshida, Simon D. M. White<br />
+<em>New Astron.</em> (2001-04) <a href="http://adsabs.harvard.edu/abs/2001NewA....6...79S">http://adsabs.harvard.edu/abs/2001NewA....6...79S</a> <br />
+DOI: <a href="https://doi.org/10.1016/S1384-1076(01)00042-2">10.1016/s1384-1076(01)00042-2</a></p>
+</div>
+<div id="ref-18bL4U0kM">
+<p>28. <strong>A new class of accurate, mesh-free hydrodynamic simulation methods</strong> <br />
+P. F. Hopkins<br />
+<em>Mon. Not. R. Astron. Soc.</em> (2015-04) <a href="http://adsabs.harvard.edu/abs/2014arXiv1409.7395H">http://adsabs.harvard.edu/abs/2014arXiv1409.7395H</a> <br />
+DOI: <a href="https://doi.org/10.1093/mnras/stv195">10.1093/mnras/stv195</a></p>
+</div>
+<div id="ref-GqCvYs0n">
+<p>29. <strong>yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA</strong> <br />
+Matthew J. Turk, Britton D. Smith, Jeffrey S. Oishi, Stephen Skory, Samuel W. Skillman, Tom Abel, Michael L. Norman<br />
+<em>Astrophys. J. Suppl. Ser.</em> (2011-01) <a href="http://stacks.iop.org/0067-0049/192/i=1/a=9?key=crossref.ad58f4fc8c6272d93975507bf0238006">http://stacks.iop.org/0067-0049/192/i=1/a=9?key=crossref.ad58f4fc8c6272d93975507bf0238006</a> <br />
+DOI: <a href="https://doi.org/10.1088/0067-0049/192/1/9">10.1088/0067-0049/192/1/9</a></p>
+</div>
+<div id="ref-RNeSxk82">
+<p>30. <strong>Cython: The Best of Both Worlds</strong> <br />
+Stefan Behnel, Robert Bradshaw, Craig Citro, Lisandro Dalcin, Dag Sverre Seljebotn, Kurt Smith<br />
+<em>Comput. Sci. Eng.</em> (2011-03) <a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5582062">http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5582062</a> <br />
+DOI: <a href="https://doi.org/10.1109/MCSE.2010.118">10.1109/mcse.2010.118</a></p>
+</div>
 <div id="ref-1DgKJy4lE">
-<p>3. <strong>Trident: A Universal Tool for Generating Synthetic Absorption Spectra from Astrophysical Simulations</strong> <br />
+<p>31. <strong>Trident: A Universal Tool for Generating Synthetic Absorption Spectra from Astrophysical Simulations</strong> <br />
 Cameron B. Hummels, Britton D. Smith, Devin W. Silvia<br />
 <em>The Astrophysical Journal</em> (2017-09-20) <a href="https://doi.org/gcx4th">https://doi.org/gcx4th</a> <br />
 DOI: <a href="https://doi.org/10.3847/1538-4357/aa7e2d">10.3847/1538-4357/aa7e2d</a></p>
 </div>
 <div id="ref-1CgEbr6CQ">
-<p>4. <strong>The formation of submillimetre-bright galaxies from gas infall over a billion years</strong> <br />
+<p>32. <strong>The formation of submillimetre-bright galaxies from gas infall over a billion years</strong> <br />
 Desika Narayanan, Matthew Turk, Robert Feldmann, Thomas Robitaille, Philip Hopkins, Robert Thompson, Christopher Hayward, David Ball, Claude-André Faucher-Giguère, Dušan Kereš<br />
 <em>Nature</em> (2015-09-23) <a href="https://doi.org/f7r445">https://doi.org/f7r445</a> <br />
 DOI: <a href="https://doi.org/10.1038/nature15383">10.1038/nature15383</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26399829">26399829</a></p>
 </div>
 <div id="ref-VB3RIyxd">
-<p>5. <strong>Ytree: Merger-Tree Toolkit</strong> <br />
+<p>33. <strong>Ytree: Merger-Tree Toolkit</strong> <br />
 Britton Smith, Meagan Lang<br />
 <em>Zenodo</em> (2018-02-16) <a href="https://doi.org/gcx4x2">https://doi.org/gcx4x2</a> <br />
 DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a></p>
