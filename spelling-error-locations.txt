@@ -102,7 +102,8 @@ content/15.development_procedure.md:112:Goldbaum
 content/15.development_procedure.md:112:octree
 content/15.development_procedure.md:113:Goldbaum
 content/15.development_procedure.md:114:ZuHone
-content/15.development_procedure.md:116:Britton
+content/15.development_procedure.md:115:Clément
+content/15.development_procedure.md:117:Britton
 content/17.geometry_and_indexing.md:3:datasets
 content/17.geometry_and_indexing.md:5:datasets
 content/17.geometry_and_indexing.md:7:dataset
