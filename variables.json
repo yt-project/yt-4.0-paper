@@ -399,14 +399,14 @@
       }
     ],
     "ci_source": {
-      "provider": "travis",
+      "provider": "github",
       "repo_slug": "yt-project/yt-3.0-paper",
       "repo_owner": "yt-project",
       "repo_name": "yt-3.0-paper",
       "commit": "140aea85cd8f2ba891df4be1f24bab35ee9cceca",
       "triggering_commit": "140aea85cd8f2ba891df4be1f24bab35ee9cceca",
-      "build_url": "https://travis-ci.org/yt-project/yt-3.0-paper/builds/732058558",
-      "job_url": "https://travis-ci.org/yt-project/yt-3.0-paper/jobs/732058559"
+      "build_url": "https://github.com/yt-project/yt-3.0-paper/commit/140aea85cd8f2ba891df4be1f24bab35ee9cceca/checks",
+      "job_url": "https://github.com/yt-project/yt-3.0-paper/runs/run3"
     },
     "html_url": "https://yt-project.github.io/yt-3.0-paper/",
     "pdf_url": "https://yt-project.github.io/yt-3.0-paper/manuscript.pdf",
