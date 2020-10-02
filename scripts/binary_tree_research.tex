@@ -1,0 +1,65 @@
+% This script, by Corentin Cadiou, creates the binary_tree_research diagram.
+% I've updated it to use the suggestions at
+% https://tex.stackexchange.com/questions/51757/how-can-i-use-tikz-to-make-standalone-svg-graphics
+% Running this with pdflatex -shell-escape binary_tree_research.tex will produce the svg
+\documentclass[crop,tikz,convert=pdf2svg]{standalone}[2012/04/13]
+\usepackage{tikz}
+\usetikzlibrary{arrows,decorations.pathreplacing,positioning,calc}
+\usepackage{ifthen}
+\usepackage{siunitx}
+\begin{document}
+\def\w{8}
+\def\Nstep{6}
+\def\dh{0.5}
+\begin{tikzpicture}
+    \foreach \step in {-1,...,\Nstep-1} {
+        \pgfmathparse{int(\step)} \let\label\pgfmathresult;
+        \ifthenelse{\step=-1}{}{
+            \node[anchor=east] () at (-0.1, \dh*\Nstep-\dh*\step-0.5*\dh) {\footnotesize $l=\label$};
+        }
+        \draw (-0.1, \step*\dh+\dh) -- (\w+0.1, \step*\dh+\dh);
+    }
+    % Bottom line
+    \draw (-0.1, 0) -- (\w+.1, 0);
+    \pgfmathparse{\w/pow(2, \Nstep)} \pgfmathresult \let\dx\pgfmathresult;
+    \foreach \x in {0,\dx,...,\w}
+        \draw[ultra thin, dashed] (\x, -0.3*\dh) -- (\x, 0);
+
+    % \node[anchor=north] at (\w/2, -0.6) {$x$};
+
+    \foreach \step in {0,...,\Nstep} {
+        \pgfmathparse{\w/pow(2, \Nstep-\step)} \pgfmathresult \let\dx\pgfmathresult;
+        \foreach \x in {0,\dx,...,\w}
+            \draw[ultra thin] (\x, 0) -- (\x, \step*\dh);
+    }
+    % Example line
+    \foreach \x/\col in {0.193/blue, 0.653125/red, 0.33/black!50!green} {
+        \foreach \step in {0,...,\Nstep-1} {
+            \pgfmathparse{pow(2, \step+1)} \pgfmathresult \let\Ncell\pgfmathresult;
+            \pgfmathparse{(floor(\x*\Ncell)+0.5)/\Ncell*\w}      \pgfmathresult \let\ix\pgfmathresult;
+            \pgfmathparse{(floor(\x*\Ncell/2)+0.5)/\Ncell*2*\w}  \pgfmathresult \let\ixprev\pgfmathresult;
+            \pgfmathparse{(\ix-\ixprev)}                            \pgfmathresult \let\dx\pgfmathresult;
+
+            % Draw boxes
+            \ifthenelse{\step>1}{
+                \fill[\col!50, opacity=0.5] (\ix-3*\dx, \dh*\Nstep-\dh*\step) rectangle ++(\dx*4, -\dh);
+            }{}
+
+            % Draw lines
+            \ifthenelse{\step=5}{%
+                \filldraw[\col] (\ixprev, \dh*\Nstep-\dh*\step-\dh*0.5)  circle (1pt)
+                           -- ++(\dx/2, -0.5*\dh) node (A) {};
+                \filldraw[\col, dotted]
+                       (A) -- ++(\dx/2, -0.5*\dh);
+            }{%
+                \filldraw[\col] (\ixprev, \dh*\Nstep-\dh*\step-\dh*0.5)  circle (1pt) -- ++(\dx, -\dh);
+            }
+        }
+
+        % x axis
+        \draw[->, thick] (-0.4, -.6*\dh) -- (\w+.4, -.6*\dh) node[midway, below] {$x$};
+        % Target value
+        \filldraw[dashed,\col,<-] (\x*\w, -0.6*\dh) circle (1pt) node[anchor=north] (lbl) {\footnotesize \num[round-mode=places, round-precision=2]{\x}} -- ++(0, \dh*\Nstep+0.6*\dh) ;
+    }
+\end{tikzpicture}
+\end{document}
