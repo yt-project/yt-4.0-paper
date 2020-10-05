@@ -173,6 +173,14 @@ authors:
       - School of Information Sciences, University of Illinois at Urbana-Champaign
     funders: Grant XXXXXXX
   -
+    github: stonnes
+    name: Stephanie Tonnesen
+    initials: ST
+    orcid: 0000-0002-8710-9206
+    email: stonnesen@flatironinstitute.org
+    affiliations:
+      - Center for Computational Astrophysics, Flatiron Institute
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
