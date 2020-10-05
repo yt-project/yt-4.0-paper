@@ -15,6 +15,7 @@ include-after-body:
 - build/plugins/math.html
 - build/plugins/hypothesis.html
 - build/plugins/analytics.html
+- build/plugins/d3.html
 variables:
   math: ''
 html-math-method:
