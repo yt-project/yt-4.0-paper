@@ -24,7 +24,7 @@ chrishavlin
 chummels
 Clément
 codebase
-comoving
+Comoving
 connectedness
 contributionscoming
 Coord
@@ -141,7 +141,7 @@ subclasses
 Suoqing
 Supercomputing
 susbtantial
-SymPy
+sympy
 sympy’s
 TBD
 Tbytes
@@ -161,12 +161,12 @@ XXXXXXXX
 yournamehere
 YTArray
 ytdata
-ytep
+YTEP
 YTEPs
 YTQuadTreeProj
 YTQuantity
 ytree
 Yu
-Zingale
+zingale
 zorder
 ZuHone
