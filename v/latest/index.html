@@ -24,7 +24,7 @@
   <meta name="author" content="Christopher Havlin" />
   <meta name="author" content="Stephanie Tonnesen" />
   <meta name="author" content="Add Yourself" />
-  <meta name="dcterms.date" content="2020-10-05" />
+  <meta name="dcterms.date" content="2020-10-22" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Introducing yt 3.0: Analysis and Visualization of Volumetric Data</title>
   <style>
@@ -109,8 +109,8 @@
   <meta name="citation_title" content="Introducing yt 3.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 3.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 3.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2020-10-05" />
-  <meta name="citation_publication_date" content="2020-10-05" />
+  <meta name="dc.date" content="2020-10-22" />
+  <meta name="citation_publication_date" content="2020-10-22" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -190,9 +190,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-3.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/39e3d205ab7dafeab37ab84c6ff6d208610a0925/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/39e3d205ab7dafeab37ab84c6ff6d208610a0925/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/39e3d205ab7dafeab37ab84c6ff6d208610a0925/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/2df7b78c47d0ab83a7ab1e6fb011560e80514f8d/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/2df7b78c47d0ab83a7ab1e6fb011560e80514f8d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/2df7b78c47d0ab83a7ab1e6fb011560e80514f8d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -206,10 +206,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-3.0-paper/v/39e3d205ab7dafeab37ab84c6ff6d208610a0925/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-3.0-paper/v/2df7b78c47d0ab83a7ab1e6fb011560e80514f8d/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-3.0-paper/tree/39e3d205ab7dafeab37ab84c6ff6d208610a0925">yt-project/yt-3.0-paper@39e3d20</a>
-on October 5, 2020.
+from <a href="https://github.com/yt-project/yt-3.0-paper/tree/2df7b78c47d0ab83a7ab1e6fb011560e80514f8d">yt-project/yt-3.0-paper@2df7b78</a>
+on October 22, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -1824,7 +1824,7 @@ Connecting this to the raw, unprocessed data from the simulation (such as the un
 <div id="ref-cTN2TQIL">
 <p>1. <strong>manubot/manubot</strong> <br />
 Manubot<br />
-(2020-10-04) <a href="https://github.com/manubot/manubot">https://github.com/manubot/manubot</a></p>
+(2020-10-14) <a href="https://github.com/manubot/manubot">https://github.com/manubot/manubot</a></p>
 </div>
 <div id="ref-1GOm01ggN">
 <p>2. <strong>yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA</strong> <br />
@@ -2238,7 +2238,8 @@ DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a>
     }
 
     /* figure image element */
-    figure img {
+    figure > img,
+    figure > svg {
         max-width: 100%;
         display: block;
         margin-left: auto;
@@ -2246,7 +2247,8 @@ DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a>
     }
 
     /* figure auto-number */
-    img + figcaption > span:first-of-type {
+    img + figcaption > span:first-of-type,
+    svg + figcaption > span:first-of-type {
         font-weight: bold;
         margin-right: 5px;
     }
@@ -2828,7 +2830,8 @@ DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a>
         }
 
         /* tooltip copy of <img> */
-        #tooltip_content > figure > img {
+        #tooltip_content > figure > img,
+        #tooltip_content > figure > svg {
             max-height: 260px;
         }
 
@@ -3079,7 +3082,7 @@ DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a>
 
     @media only screen {
         /* regular <img> in document when hovered */
-        .lightbox_document_img:hover {
+        img.lightbox_document_img:hover {
             cursor: pointer;
         }
 
@@ -4761,8 +4764,6 @@ DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a>
             window.addEventListener('load', start);
     })();
 </script>
-<!-- table of contents plugin -->
-
 <script>
     (function() {
         // /////////////////////////
@@ -4785,10 +4786,13 @@ DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a>
             // which types of elements to add links for, in
             // "document.querySelector" format
             typesQuery: 'h1, h2, h3',
-            // whether default behavior is to be closed ('false'), open
-            // ('true'), or only open when screen wide enough to fit panel
-            // ('auto'). note: still always starts closed when page loads.
-            open: 'auto',
+            // whether toc starts open. use 'true' or 'false', or 'auto' to
+            // use 'true' behavior when screen wide enough and 'false' when not
+            startOpen: 'false',
+            // whether toc closes when clicking on toc link. use 'true' or
+            // 'false', or 'auto' to use 'false' behavior when screen wide
+            // enough and 'true' when not
+            clickClose: 'auto',
             // if list item is more than this many characters, text will be
             // truncated
             charLimit: '50',
@@ -4813,13 +4817,21 @@ DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a>
             if (!panel)
                 return;
             makeEntries(panel);
+            // attach panel to document after making entries, so 'toc' heading
+            // in panel isn't included in toc
             document.body.insertBefore(panel, document.body.firstChild);
 
-            closePanel();
+            // initial panel state
+            if (
+                options.startOpen === 'true' ||
+                (options.startOpen === 'auto' && !isSmallScreen())
+            )
+                openPanel();
+            else
+                closePanel();
 
             // attach click, scroll, and hash change listeners to window
             window.addEventListener('click', onClick);
-            window.addEventListener('touchstart', onClick);
             window.addEventListener('scroll', onScroll);
             window.addEventListener('hashchange', onScroll);
             window.addEventListener('keyup', onKeyUp);
@@ -4837,25 +4849,10 @@ DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a>
             return window.innerWidth < 816 + 260 * 2;
         }
 
-        // open/close panel based on option and screen size
-        function openOrClosePanel() {
-            if (
-                options.open === 'true' ||
-                (options.open === 'auto' && !isSmallScreen())
-            )
-                openPanel();
-            else
-                closePanel();
-        }
-
         // when mouse is clicked anywhere in window
         function onClick() {
-            const panel = document.getElementById('toc_panel');
-            if (!panel)
-                return;
-
-            if (panel.dataset.open === 'true')
-                openOrClosePanel();
+            if (isSmallScreen())
+                closePanel();
         }
 
         // when window is scrolled or hash changed
@@ -4937,8 +4934,8 @@ DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a>
             button.classList.add('icon_button');
 
             // create header text
-            const text = document.createElement('h3');
-            text.innerHTML = 'View Table of Contents';
+            const text = document.createElement('h4');
+            text.innerHTML = 'Table of Contents';
 
             // create container for toc list
             const list = document.createElement('div');
@@ -5015,8 +5012,14 @@ DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a>
         }
 
         // when link is clicked
-        function onLinkClick() {
-            openOrClosePanel();
+        function onLinkClick(event) {
+            if (
+                options.clickClose === 'true' ||
+                (options.clickClose === 'auto' && isSmallScreen())
+            )
+                closePanel();
+            else
+                openPanel();
         }
 
         // open panel if closed, close if opened
@@ -5826,7 +5829,7 @@ DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a>
             window.addEventListener('load', start);
     })();
 </script>
-<!-- math plugin configuration -->
+<!-- mathjax plugin configuration -->
 
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -5834,12 +5837,16 @@ DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a>
         "HTML-CSS": { linebreaks: { automatic: true } },
         "SVG": { linebreaks: { automatic: true } },
         "fast-preview": { disabled: true }
-    });
+  });
 </script>
 
-<!-- math plugin -->
+<!-- mathjax plugin -->
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-MML-AM_CHTML.js"
+    integrity="sha512-sRJwTwSmIAJfESgwGDn84X0s72u/n6qBjPShCGXi307x3ZFynu/u2A8652KZhmvjP0U0zeOFCxoMtj9imy9nOQ=="
+    crossorigin="anonymous"
+>
     // /////////////////////////
     // DESCRIPTION
     // /////////////////////////
