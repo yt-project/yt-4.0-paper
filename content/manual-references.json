@@ -1398,5 +1398,25 @@
     "title": "PARALLEL CONSTRUCTION OF QUADTREES AND QUALITY TRIANGULATIONS",
     "type": "article-journal",
     "volume": "09"
+  },
+  {
+    "URL": "http://wscg.zcu.cz/wscg2000/Papers_2000/X31.pdf",
+    "id": "revelles_efficient_parametric_algorithm_2000",
+    "author": [
+      {
+        "family": "Revelles",
+        "given": "Jorge"
+      }, {
+        "family": "Ureña",
+        "given": "Carlos"
+      }, {
+        "family": "Lastra",
+        "given": "Miguel"
+      }
+    ],
+    "title": "An Efficient Parametric Algorithm for Octree Traversal",
+    "container-title": "Journal of WSCG",
+    "year": 2000,
+    "page": "212-219"
   }
 ]
