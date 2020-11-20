@@ -32,6 +32,14 @@ jobs:
           key: ci-cache-${{ github.ref }}
           restore-keys: |
             ci-cache-refs/heads/master
+      - name: Anaconda cache
+        uses: actions/cache@v1
+        env:
+          # Increase this value to reset cache if etc/example-environment.yml has not changed
+          CACHE_NUMBER: 0
+        with:
+          path: ~/conda_pkgs_dir
+          key: conda-cache-${{ runner.os }}-conda-${{ env.CACHE_NUMBER }}-${{ hashFiles('build/environment.yml') }}
       - name: Install Environment
         uses: goanpeca/setup-miniconda@v1
         with:
@@ -39,6 +47,8 @@ jobs:
           environment-file: build/environment.yml
           auto-activate-base: false
           miniconda-version: 'latest'
+          channel-priority: strict
+          use-only-tar-bz2: true  # IMPORTANT: This needs to be set for caching to work properly!
       - name: Install Spellcheck
         shell: bash --login {0}
         run: |
