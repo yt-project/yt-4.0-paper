@@ -41,13 +41,12 @@ jobs:
           path: ~/conda_pkgs_dir
           key: conda-cache-${{ runner.os }}-conda-${{ env.CACHE_NUMBER }}-${{ hashFiles('build/environment.yml') }}
       - name: Install Environment
-        uses: goanpeca/setup-miniconda@v1
+        uses: conda-incubator/setup-miniconda@v2
         with:
           activate-environment: manubot
           environment-file: build/environment.yml
           auto-activate-base: false
           miniconda-version: 'latest'
-          channel-priority: strict
           use-only-tar-bz2: true  # IMPORTANT: This needs to be set for caching to work properly!
       - name: Install Spellcheck
         shell: bash --login {0}
