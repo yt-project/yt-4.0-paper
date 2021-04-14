@@ -113,15 +113,15 @@ header-includes: |-
   <meta name="citation_author" content="Add Yourself" />
   <meta name="citation_author_institution" content="Your University" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <link rel="canonical" href="https://yt-project.github.io/yt-3.0-paper/" />
-  <meta property="og:url" content="https://yt-project.github.io/yt-3.0-paper/" />
-  <meta property="twitter:url" content="https://yt-project.github.io/yt-3.0-paper/" />
-  <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-3.0-paper/" />
-  <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/09efc2feca20c0644f306a0248c89ba1b2b01c47/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/09efc2feca20c0644f306a0248c89ba1b2b01c47/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/09efc2feca20c0644f306a0248c89ba1b2b01c47/manuscript.pdf" />
+  <link rel="canonical" href="https://yt-project.github.io/yt-4.0-paper/" />
+  <meta property="og:url" content="https://yt-project.github.io/yt-4.0-paper/" />
+  <meta property="twitter:url" content="https://yt-project.github.io/yt-4.0-paper/" />
+  <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
+  <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/2339df2954369c499d8ddb6880e054f2ac1f2236/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/2339df2954369c499d8ddb6880e054f2ac1f2236/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/2339df2954369c499d8ddb6880e054f2ac1f2236/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,9 +143,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-3.0-paper/v/09efc2feca20c0644f306a0248c89ba1b2b01c47/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/2339df2954369c499d8ddb6880e054f2ac1f2236/))
 was automatically generated
-from [yt-project/yt-3.0-paper@09efc2f](https://github.com/yt-project/yt-3.0-paper/tree/09efc2feca20c0644f306a0248c89ba1b2b01c47)
+from [yt-project/yt-4.0-paper@2339df2](https://github.com/yt-project/yt-4.0-paper/tree/2339df2954369c499d8ddb6880e054f2ac1f2236)
 on April 14, 2021.
 </em></small>
 
@@ -1051,6 +1051,77 @@ than chaining | (or) operations to create a single, large union.
 
 
 ### Array-like Operations
+
+In `yt`, a newly-constructed data selector contains no data -- this enables data selectors for large regions, in extremely large datasets, to be lightweight and cheap to construct.
+By ensuring that these objects don't immediately consume resources, they can be manipulated and operated on in a high-level fashion, without taxing the computational power.
+While these data objects *can* return the full set of data they include, `yt` also provides array-like operations that do not require immediate access to the full set of numerical values, and which align with the mental-model for data processing that `yt` exposes.
+As an example, consider the following two operations:
+
+```python
+dd = ds.all_data()
+dd["gas", "density"].max()
+```
+
+and
+
+```python
+dd = ds.all_data()
+dd.max(("gas", "density"))
+```
+
+Both are available in `yt`.
+As a side-effect of Python's object model, the first will access the `("gas", "density")` item in the object `dd`, itself a concatenated numpy array, and then execute the `max` method on it.
+The second will call the `max` method on the data object, supplying to it the name of the field.
+This allows `yt` to decide how to decompose, parallelize and process the data in a memory-efficient way, and spread across multiple processors.
+Additionally, by emphasizing that the "maximum" is being taken on the data object, rather than the numerical data, other operations can be exposed that build on the underlying data organization.
+For instance, taking the maximum along a given (spatial) axis:
+
+```python
+sp = ds.sphere("center", (10.0, "m"))
+sp.max(("gas", "temperature"), axis="z")
+```
+
+This translates our meaning -- find the maximum value along the z-axis -- into a dimensionality reduction operation that uses `yt`'s built-in "projection" method.
+These operations, on data objects (rather than the underlying arrays of values that are accessible through them) provide dataframe-like methods for querying very large, spatially registered data.
+
+The array-like operations utilized in `yt` attempt to map to conceptually similar operations in numpy.
+Unlike numpy, however, these utilize `yt`'s dataset-aware "chunking" operations, in a manner philosophically similar to the chunking operations used in dask.
+Below, we outline the three classes of operations that are available, based on the type of their return value.
+
+#### Reduction to Scalars  {#sec:arrayops-scalar}
+
+Traditional array operations that map from an array to a scalar are accessible utilizing familiar syntax.  These include:
+
+ * `min(field_specification)`, `max(field_specification)`, and `ptp(field_specification)`
+ * `argmin(field_specification, axis)`, and `argmax(field_specification, axis)`
+ * `mean(field_specification, weight)`, `std(field_specification, weight)`, and `sum(field_specification)`
+
+In addition to the advantages of allowing the parallelism and memory management be handled by `yt`, these operations are also able to accept multiple fields.
+This allows multiple fields to be queried in a single pass over the data, rather than multiple passes.
+Additionally, the `min` and `max` operations will automatically cache the results during a single pass, which means that calling `max` immediately after `min` (and vice versa) on the same data object and field will not require a recomputation.
+
+In the case of `argmin` and `argmax`, the default returned "axis" will be the spatial coordinates of the minimum or maximum field value (respectively).  
+However, by specifying an axis or set of axes that correspond to fields, the field values will be queried at these minimum or maximum points.
+This allows, for instance, to query the value of "density" at the minimum "temperature."
+The operations `mean` and `sum` are available here in a non-spatial form, where they simply compute the scalar reduction independent of the spatial registration of the dataset.
+
+#### Reduction to Vectors {#sec:arrayops-vector}
+
+ * `profile(axes, fields, profile_specification)`
+
+The `profile` operation provides weighted or unweighted histogramming in one or two dimensions.
+This function accepts the axes along which to compute the histogram as well as the fields to compute, and information about whether the binning should be an accumulation, an average, or a weighted average.
+These operations are described in more detail in **reference profile section**.
+
+#### Remapping Operations {#sec:arrayops-remap}
+
+ * `mean(field_specification, weight, axis)`
+ * `sum(field_specification, axis)`
+ * `integrate(field_specification, weight, axis)`
+
+These functions map directly to different methods used by the projection data object.
+Both `mean` and `sum`, when supplied a spatial axis, will compute a dimensionally-reduced projection, remapped into a pixel coordinate plane.
+Importantly, if the dataset is a finite-volume dataset (grid, octree, etc), the results of these operations will be a variable-resolution mesh, rather than a fixed resolution image buffer.
 
 
 ## Abstracting Simulation Types
