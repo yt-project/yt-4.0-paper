@@ -1,5 +1,5 @@
 ---
-title: "Introducing yt 3.0: Analysis and Visualization of Volumetric Data"
+title: "Introducing yt 4.0: Analysis and Visualization of Volumetric Data"
 keywords:
   - markdown
   - publishing
@@ -20,7 +20,7 @@ authors:
     email: yt-dev@python.org
     affiliations:
       - NumFOCUS
-    funders: Grant XXXXXXXX
+    funders: []
   -
     github: MatthewTurk
     name: Matthew Turk
@@ -31,7 +31,7 @@ authors:
     affiliations:
       - School of Information Sciences, University of Illinois at Urbana-Champaign
       - Department of Astronomy, University of Illinois at Urbana-Champaign
-    funders: Grant XXXXXXXX
+    funders: []
   -
     github: ngoldbaum
     name: Nathan J Goldbaum
@@ -41,7 +41,7 @@ authors:
     email: ngoldbau@illinois.edu
     affiliations:
       - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
-    funders: Grant XXXXXXX
+    funders: []
   -
     github: jzuhone
     name: John A. ZuHone
@@ -59,7 +59,7 @@ authors:
     email: chummels@gmail.com
     affiliations:
        - Department of Theoretical Astrophysics, California Institute of Technology
-    funders: Grant XXXXXXX
+    funders: []
   -
     github: jisuoqing
     name: Suoqing Ji
@@ -68,7 +68,7 @@ authors:
     email: suoqing@physics.ucsb.edu
     affiliations:
        - Physics Department, University of California Santa Barbara
-    funders: Grant XXXXXXX
+    funders: []
   -
     github: langmm
     name: Meagan Lang
@@ -77,7 +77,7 @@ authors:
     email: langmm@illinois.edu
     affiliations:
       - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
-    funders: Grant XXXXXXX
+    funders: []
   -
     github: munkm
     name: Madicken Munk
@@ -86,7 +86,7 @@ authors:
     email: mmunk2@illinois.edu
     affiliations:
       - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
-    funders: Grant XXXXXXX
+    funders: []
   -
     github: brittonsmith
     name: Britton Smith
@@ -103,7 +103,7 @@ authors:
     email: kowalikk@illinois.edu
     affiliations:
       - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
-    funders: Grant XXXXXXX
+    funders: []
   -
     github: migueldvb
     name: Miguel de Val-Borro
@@ -120,7 +120,7 @@ authors:
     email: jcoughl3@illinois.edu
     affiliations:
       - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
-    funders: Grant XXXXXXX
+    funders: []
   -
     github: cphyc
     name: Corentin Cadiou
@@ -171,7 +171,7 @@ authors:
     email: chavlin@illinois.edu
     affiliations:
       - School of Information Sciences, University of Illinois at Urbana-Champaign
-    funders: Grant XXXXXXX
+    funders: []
   -
     github: stonnes
     name: Stephanie Tonnesen
