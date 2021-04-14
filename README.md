@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/yt-project/yt-3.0-paper/tree/gh-pages) branch hosts the contents of this directory at <https://yt-project.github.io/yt-3.0-paper/>.
-The permalink for this webpage version is <https://yt-project.github.io/yt-3.0-paper/v/cfbfa59e97dad9d256289a7566152b5d77570db7/>.
+The permalink for this webpage version is <https://yt-project.github.io/yt-3.0-paper/v/09efc2feca20c0644f306a0248c89ba1b2b01c47/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://yt-project.github.io/yt-3.0-paper/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`cfbfa59e97dad9d256289a7566152b5d77570db7`](https://github.com/yt-project/yt-3.0-paper/commit/cfbfa59e97dad9d256289a7566152b5d77570db7).
+[`09efc2feca20c0644f306a0248c89ba1b2b01c47`](https://github.com/yt-project/yt-3.0-paper/commit/09efc2feca20c0644f306a0248c89ba1b2b01c47).
