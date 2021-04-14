@@ -24,7 +24,7 @@ chrishavlin
 chummels
 Clément
 codebase
-comoving
+Comoving
 connectedness
 contributionscoming
 coord
@@ -47,6 +47,7 @@ decomp
 dimensionality
 dimensionally
 discretization
+dobj
 Duplicative
 Enzo
 EWAH
@@ -117,7 +118,7 @@ performant
 pipelined
 pipelining
 pixelization
-Pixelizers
+pixelizers
 pixelizes
 Pixelizing
 PlotCollection
@@ -173,7 +174,7 @@ XXXXXXXX
 yournamehere
 YTArray
 ytdata
-ytep
+YTEP
 YTEPs
 YTQuadTreeProj
 YTQuantity

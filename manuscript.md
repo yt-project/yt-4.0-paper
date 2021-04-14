@@ -119,9 +119,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/56637900211fe6814ae9ecd57581aca2d4016c47/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/56637900211fe6814ae9ecd57581aca2d4016c47/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/56637900211fe6814ae9ecd57581aca2d4016c47/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/772b2f2e401ea659bbf2a8e96e31698713101a86/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/772b2f2e401ea659bbf2a8e96e31698713101a86/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/772b2f2e401ea659bbf2a8e96e31698713101a86/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,9 +143,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/56637900211fe6814ae9ecd57581aca2d4016c47/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/772b2f2e401ea659bbf2a8e96e31698713101a86/))
 was automatically generated
-from [yt-project/yt-4.0-paper@5663790](https://github.com/yt-project/yt-4.0-paper/tree/56637900211fe6814ae9ecd57581aca2d4016c47)
+from [yt-project/yt-4.0-paper@772b2f2](https://github.com/yt-project/yt-4.0-paper/tree/772b2f2e401ea659bbf2a8e96e31698713101a86)
 on April 14, 2021.
 </em></small>
 
@@ -689,6 +689,24 @@ Additionally, by providing some routines as options, we can in some instances sp
  * `select_bbox(lower_left, upper_right)`: Determine overlap with an axis-aligned bounding box.  Particularly for hierarchical selection methods, determining whether or not a bounding box overlaps with a geometric selector can lead to early-termination of some selection operations.  
  * `select_bbox_edge(lower_left, upper_right)`: This is a special-case of the bounding box routine that provides information as to whether or not the *entire* bounding box is included or just a *partial* portion of the bounding box.
 
+We demonstrate a handful of selection operations on a low-resolution dataset below.
+In Figure @fig:reg2 we illustrate the selection of a rectangular prism (i.e., a `region`, like in Section [sec:dobj-region].
+In Figure @fig:sp2, we illustrate the selection of a sphere (i.e., a `sphere`, like in Section [sec:dobj-sphere].
+And, to demonstrate the ability of yt to construct boolean selectors from these objects (i.e., Section [sec:dobj-bool] we show what the logical `NOT` of these two objects would produce in @fig:reg2_not_sp2.
+
+![
+A selection of data in a low-resolution simulation from a rectangular prism.
+](images/selectors/reg2.svg){#fig:reg2}
+
+![
+A selection of data in a low-resolution simulation from a sphere.
+](images/selectors/sp2.svg){#fig:sp2}
+
+![
+The logical `NOT` of the regions from Figures @fig:reg2 and @fig:sp2.
+](images/selectors/reg2_not_sp2.svg){#fig:reg2_not_sp2}
+
+
 ### Fast and Slow Paths
 
 Given an ensemble of objects, the simplest way of testing for inclusion in a selector is to call the operation `select_cell` on each individual object.
@@ -737,6 +755,8 @@ In columns to the right, we provide information as to whether there is an availa
 | Union                    | Selection (Bool)         |
 
 Table: Selection objects and their types. {#tbl:selection-objects}
+
+
 
 
 #### Arbitrary grid {#sec:dobj-arbitrary_grid}
