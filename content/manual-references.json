@@ -1398,5 +1398,43 @@
     "title": "PARALLEL CONSTRUCTION OF QUADTREES AND QUALITY TRIANGULATIONS",
     "type": "article-journal",
     "volume": "09"
+  },
+  {
+    "URL": "http://wscg.zcu.cz/wscg2000/Papers_2000/X31.pdf",
+    "id": "revelles_efficient_parametric_algorithm_2000",
+    "author": [
+      {
+        "family": "Revelles",
+        "given": "Jorge"
+      }, {
+        "family": "Ureña",
+        "given": "Carlos"
+      }, {
+        "family": "Lastra",
+        "given": "Miguel"
+      }
+    ],
+    "title": "An Efficient Parametric Algorithm for Octree Traversal",
+    "container-title": "Journal of WSCG",
+    "year": 2000,
+    "page": "212-219"
+  },
+  {
+    "id": "cadiou_angular_momentum_2021",
+    "author": [
+      {
+        "family": "Cadiou",
+        "given": "Corentin"
+      }, {
+        "family": "Dubois",
+        "given": "Yohan"
+      }, {
+        "family": "Pichon",
+        "given": "Christophe"
+      }
+    ],
+    "title": "Gravitational torques dominate the dynamics of angular momentum of the accreted gas at $z>2$",
+    "container-title": "in prep.",
+    "year": 2021
   }
 ]
