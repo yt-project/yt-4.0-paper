@@ -119,9 +119,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/772b2f2e401ea659bbf2a8e96e31698713101a86/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/772b2f2e401ea659bbf2a8e96e31698713101a86/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/772b2f2e401ea659bbf2a8e96e31698713101a86/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/119d05fb61610c16f0d9bd6345e7f58e5465483c/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/119d05fb61610c16f0d9bd6345e7f58e5465483c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/119d05fb61610c16f0d9bd6345e7f58e5465483c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,9 +143,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/772b2f2e401ea659bbf2a8e96e31698713101a86/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/119d05fb61610c16f0d9bd6345e7f58e5465483c/))
 was automatically generated
-from [yt-project/yt-4.0-paper@772b2f2](https://github.com/yt-project/yt-4.0-paper/tree/772b2f2e401ea659bbf2a8e96e31698713101a86)
+from [yt-project/yt-4.0-paper@119d05f](https://github.com/yt-project/yt-4.0-paper/tree/119d05fb61610c16f0d9bd6345e7f58e5465483c)
 on April 14, 2021.
 </em></small>
 
@@ -442,17 +442,17 @@ When evaluating the level of engagement, we consider a few different classificat
 
 While there are other activities that individuals can participate in, these are the typical activities we see among participants in the community.
 The order, flowing from the first to the last, is the typical flow we see for an individual coming to participate in the community.
-The first step is typically to file an issue or bug report (occasionally these are requests for new features), followed by partipating in development-focused discussion on mailing lists.
+The first step is typically to file an issue or bug report (occasionally these are requests for new features), followed by participating in development-focused discussion on mailing lists.
 The next level of engagement typically involves the development of a new piece of functionality, refinement of existing code, or issuing a fix for a bug or issue.
 These take the form of pull requests (described in greater detail [here](#sec:development)) that can be reviewed and added to the code base.
 
 The next level of engagement centers around tasks that are not fully-aligned with pragmatic, code-driven scientific inquiry.
-The development of documentation is often viewed as orthogonal to the scientific process, and typically requires an iterative wrriting process.
+The development of documentation is often viewed as orthogonal to the scientific process, and typically requires an iterative writing process.
 Participation in code review, providing comments, feedback and suggestions to other authors, is another somewhat orthogonal task; it doesn't necessarily directly benefit the developer doing the reviewing (although it might) and it does not necessarily result in academic rewards (citations, authorship, etc).
 But, it does arise from a pragmatic (ensuring code reliability) or altruistic (the public good of the software) motivation, and is thus a deeper level of engagement.
 
 The final two activities, drafting enhancement proposals and closing bug reports, are the most engaged, and often the most removed from the academic motivation structure.
-Developing an [enhancement proposal](#sec:ytep)  for `yt` means iterating with other developers on the motivation behind and implementation of a large piece of functionality; it requires both motivation to engage with the community and the patience to build consensus amongst stakeholders.
+Developing an [enhancement proposal](#sec:ytep)  for `yt` means iterating with other developers on the motivation behind and implementation of a large piece of functionality; it requires both motivation to engage with the community and the patience to build consensus among stakeholders.
 Closing bug reports -- and the development work associated with identifying, tracking and fixing bugs -- requires patience and often repeated engagement with stakeholders.
 
 ### Engagement Metrics
@@ -469,7 +469,7 @@ The systems developed account for a number of important procedures, mostly relat
 ## Development Procedure {#sec:development}
 
 `yt` is developed openly.
-During the Spring of 2017, development transitioned from occuring on [Bitbucket](https://bitbucket.org/yt_analysis/) to [GitHub](https://github.com/yt-project/), and the source code management system was changed from [Mercurial](https://www.mercurial-scm.org/) to [git](https://git-scm.org/).
+During the Spring of 2017, development transitioned from occurring on [Bitbucket](https://bitbucket.org/yt_analysis/) to [GitHub](https://github.com/yt-project/), and the source code management system was changed from [Mercurial](https://www.mercurial-scm.org/) to [git](https://git-scm.org/).
 Development occurs through the "pull request" model, wherein changes to the codebase are made and then requested to be included in the primary repository.
 Typically, there are two branches of development, and occasionally three.  The first of these is the "stable" branch, which is much slower-paced, and typically only modified during the release periods.
 The second is that of "master" (which is the conventional term in git terminology; the corresponding mercurial term would be "default") which is where current development takes place.
@@ -481,7 +481,7 @@ For instance, during the development of `yt` 4.0, the branch `yt-4.0` was where 
 This three-pronged approach generally has suited the community; the process of backporting changes from the "master" branch to the "stable" branch can be time-consuming.
 However, balancing the needs of a community requiring stable methods for analyzing data against the ease of development suggests that this is a toll worth paying.
 
-In general, the development of `yt` is reasonably top-heavy, with the majority of contributionscoming from a core group of individuals.
+In general, the development of `yt` is reasonably top-heavy, with the majority of contributions coming from a core group of individuals.
 We discuss the implications of this on sustainability in Section [sec:sustainability].
 
 ### Unit Testing {#sec:unit_testing}
@@ -625,7 +625,7 @@ document.addEventListener("SVGLoaded", function(event) {
 
 yt provides a system for defining relationships between index-space and coordinate-space.
 During instantiation of a `Dataset` object, a helper object (`coordinates`, a subclass of `CoordinateHandler`) is created.
-This helper object tracks the correspondance between numerical axes and spatial axes (for instance, even in some  Cartesian datasets, axis 0 corresponds to $z$ rather than $x$), the names of axes, and the transformation and pixelization methods for visualization.
+This helper object tracks the correspondence between numerical axes and spatial axes (for instance, even in some  Cartesian datasets, axis 0 corresponds to $z$ rather than $x$), the names of axes, and the transformation and pixelization methods for visualization.
 In addition to these helper functions, the coordinate handler provides definitions for derived fields that describe local cell width (and orthogonal path length), positions in coordinate space as computed by index space coordinates, volumes, and surface areas.
 These coordinate handlers also provide transformations between different spaces, albeit using the somewhat undesirable method of conversion to reference cartesian frames and subsequent conversion to local coordinate frames.
 
@@ -680,7 +680,7 @@ There is no hierarchical data selection conducted in this system, as we do not y
 ### Selection Routines
 
 Given these set of hierarchical selection methods, all of which are designed to provide opportunities for early-termination, each *geometric* selector object is required to implement a small set of methods to expose its functionality to the hierarchical selection process.
-Duplicative functions often result from attempts to avoid expensive calculations that take into account boundry conditions such as periodicity and reflectivity unless necessary.
+Duplicative functions often result from attempts to avoid expensive calculations that take into account boundary conditions such as periodicity and reflectivity unless necessary.
 Additionally, by providing some routines as options, we can in some instances specialize them for the specific geometric operation.
 
  * `select_cell(cell_center, cell_width)`: this function, which is somewhat degenerate with `select_bbox`, returns whether a given "cell," defined by its center and its width along each dimension, is included within the selection.  In situations where the cells are spaced logarithmically, rather than linearly, this may produce slightly reduced accuracy for near-misses and glancing-selections.
@@ -1189,24 +1189,51 @@ Indexing grid data in `yt` is optimized for systems of grids that tend to have l
 In the limit of many more cells than grid objects, this overhead is small, but in cases where the number of grids is $O(10^7)$ this can become prohibitive.
 These cases are becoming more common even for medium-scale simulations.
 
-To address both the memory overhead and the python overhead, as well as more generally address potential scalability issues with grid selection, we have begun implementation of a more sophisticated "grid visitors" indexing and selection method.
-This draws on the approach used by the oct-visitors (described [below](#sec:octree_analysis)).
-A spatial tree is constructed, wherein parent/child relationships are established between grids.
+To address both the memory overhead and the python overhead, as well as more generally address potential scalability issues with grid selection, several tentative explorations have been made into an implementation of a more sophisticated "grid visitors" indexing and selection method, drawing on the approach used by the oct-visitors (described [below](#sec:octree_analysis)).
+These were an attempt to unify the selection methods between octrees and grids, to reduce the overall code duplication and implementation overhead.
 Each process -- selection, copying of data, generation of coordinates -- is represented by an instance of a `GridVisitor` object.
 The tree is recursively traversed, and for all selected points the object is called.
 This allows grids, their relationships, and the data masks to be stored in structures and forms that are both optimized and compressed.
 This method is essential for scaling to a large number of grid patches; the storage requirements of a single grid patch Python object are around 1K per object (about one gigabyte per million grids), whereas the optimized storage reduces this to approximately 140 bytes (about one gigabyte per eight million grids), with further reductions possible; for selection operations, we are also able to reduce the number of temporary arrays and utilize compressed mask representation, bringing peak memory usage down further.
 The spatial-tree optimization substantially increases performance for "wide and shallow" dataset selection.
+However, while such an implementation may be possible, the previous attempts were stymied by performance and maintenance considerations for the grid code, in particular related to the masking of "child" zones in an efficient and straightforward manner.
+A spatial tree is constructed, wherein parent/child relationships are established between grids.
 
 ### Octree Analysis {#sec:octree_analysis}
+
+`yt` supports octree-based AMR datasets (primarily RAMSES and ART, but also the output from the octree-based radiative transfer code Hyperion).
+`yt` stores a copy of the octree using a pointer-based approach, where each oct points to its eight children (if refined).
+The octs living at the coarsest level of the simulation are stored as a uniform grid. For domain-decomposed datasets, each domain is represented as a sparse octree, where the root octs are stored as a list and efficiently accessed using a binary search, ensuring each root oct is found in $O(log(N))$ time, where $N$ is the number of root octs in the domain.
+Each oct is represented as structure that contains the on-file location of the oct (`file_ind`) and its in-memory location (`domain_ind`), the index of the domain it belongs to (`domain`) and a list of pointers to its children (up to eight in 3D). This requires at most 88 bytes per oct.
+
+In order to load data within a given region, a two-step approach is followed.
+First, the cells interesting with the region of interest, as described in [Data Objects](#sec:data_objects) are selected. `yt` relies on an oct-visitor machinery combined with selection routines.
+The tree is recursively traversed depth-first starting from the root grid, following only those branches that may intersect with the selected region.
+At the tip of each branch, the up-to-eight leaf cells are visited.
+In a first pass, the number of selected cells is computed and in a second pass, the on-file location of their parent oct is stored.
+Second, `yt` relies on the on-file location obtained from the octree traversal to lazily read data from disk.
+This ensures that only the minimal amount of data is being read and is particularly efficient when accessing a region spanning a small number of domains and/or a small number of refinement levels.
+
+Recently, `yt` has been extended to fully supports accessing neighboring cells.
+This is achieved by computing one-cell thick quantities around each oct, which emulates the "ghost zones" found in patch-based codes. This approach has the advantage of abstracting the octree structure and provides a common interface to create derived fields, as described in **CC: any section describing this?**.
+The 56 neighbors ($4^3 - 2^3$) surrounding each oct are found by performing a search in the octree, which finds any neighbor in $O(\mathrm{level})$, where $\mathrm{level}$ is the level of the central oct.
+The search is illustrated on Figure {@fig:binary-search}.
+Other optimizations are possible that trade computational time with memory, for example by storing the tree as a fully-threaded structure (i.e. store pointers to the 6 neighbors sharing a face with each oct), or by starting at a central oct and searching "upwards and outwards."
+
+![
+Illustration of a binary search through a quadtree. The search starts at the root level (level = 1 here) and recursively selects the quad that contains the point until reaching a leaf.
+The procedure is easily generalized in 3D.
+](images/octree/binary_tree_research_2D.pdf){#fig:binary-search}
+
+![
+Scheme of the AMR structure used to estimate the gradient of a quantity in the central oct (red). Octs are represented in thick lines, cells in thin lines and virtual cells in dashed lines. _Left panel:_ The virtual cell values on a $4^3$ grid are interpolated from the nearest cell in the AMR grid. If the nearest cell is at the same level, its value is directly used. If the cell is at a coarser level, its value is directly used (for example $f_{31}$ and $f_{32}$ have the value of the green cell). If the cell is refined, the mean of its children is used (for example $f_{20}$ is the mean of all the blue cells). _Right panel:_ Gradients are estimated using a first-order finite difference centered scheme on the $4^3$ virtual cells.
+](images/octree/gradient_computation.pdf){#fig:octree-gradient}
 
 ### SPH Analysis
 
 ### Unstructured Mesh Analysis
 
 ### Non-Cartesian Coordinates {#sec:noncartesian}
-
-
 
 
 ## Indexing Discrete-Point Datasets {#sec:point_indexing}
@@ -1595,6 +1622,8 @@ The primary method by which researchers interact with their data in `yt` is via 
 Nearly all of the visualization that is done using `yt` utilizes the matplotlib library for actual deposition of pixels into an image format, although all of the *input* to that deposition is conducted by `yt`.
 Making this distinction is important, because it underscores the relationship between the different libraries and how they exist in the ecosystem of scientific software; `yt` does not replace matplotlib, but rather, augments it by providing a grammar of analysis of volumetric data and defining how that grammar is translated into visual representations as presented by matplotlib.
 
+**CC: discuss ray traversal for patch-based datasets + oct-based datasets.**
+
 ### Pixelizing Variable-Mesh Objects
 
 The results of either projecting or slicing through a logically-cartesian finite volume dataset is represented in `yt` as a collection of pixel positions and widths.
@@ -1621,7 +1650,46 @@ Widgyts provides a browser-side Jupyterlab interface to the pixelization routine
 
 ### Higher-Order Unstructured Mesh Elements
 
+
 ### Software Volume Rendering
+
+The volume rendering is based on classical concepts for rendering 3D objects, and relies on the notion of a scene, a camera and an object to render.
+The object to render can be any data container of supported AMR datasets (either patch-based and octree-based datasets).
+The implementation of the volume rendering is based on integrating a transfer function along the direction of ray.
+
+#### Patch-based ray traversal
+
+TODO
+
+#### Octree ray traversal
+
+Casting rays through an octree can be achieved efficiently by relying on the octree structure.
+In order to abstract away the underlying layout of the data, we first construct an octree that contains all leaf cells in the data container.
+We store all cells as octs with no children, and mark them with their position within the data container, going from $0$ to $N_\mathrm{cell}-1$.
+Octs that are inserted in the process of building the tree are not marked nor indexed.
+We also compute the vertex-centered data for all cells in the container.
+Note that, contrary to the octree utilized to index the data from octree datasets, this octree may span multiple domains and contains all levels from the root level (that contains a single oct the size of the simulation domain) all the way down to the leaf cells.
+We then cast rays off the camera, and for each ray, we compute the ordered list of the $N$ cells it intersects with together with the intersection points along the ray [@revelles_efficient_parametric_algorithm_2000].
+In the following, we will write the coordinate along the ray as $t$, with the camera located at $t=0$.
+In general the tree may contain holes (this may happen if the data container is a region selector), so that the exit coordinate out of a cell may not coincide with the entry coordinate through the next cell. In practice, we solve this by storing for each cell both the entry and exit coordinates of the ray.
+
+The algorithm relies on the fact that if a ray passes through an oct and intersects with its six faces at coordinate along the ray $t_{xi}, t_{yi}, t_{zi}$ (on entry) and $t_{xo}, t_{yo}, t_{zo}$ (on exit), then its intersection with the inner cells' faces can be computed explicitly from these six values and their half point $(t_{xi}+t_{xo})/2, (t_{yi}+t_{yo})/2, (t_{zi}+t_{zo})/2$. This implies that each call to the algorithm only need computing one division and a few simple arithmetic comparisons.
+It also uses the fact that for a given oct, we can compute which cell the ray will intersect with first, and from any given cell, which cell the the ray will intersect next.
+
+The algorithm then works as follows. If the ray does not intersect with the root oct, then the algorithm returns an empty list of cell crossed and $t$ values.
+Otherwise, initialize an empty list of cells traversed and $t$-values. _a)_ Find the intersection of the ray with all six faces of the oct. _b)_ If the current oct is marked, store the entry and exit $t$-values and the index of the oct in their respective list and return. _c)_ If the current oct is not marked, find the first cell the ray intersects with and call the algorithm recursively (starting at step _a)_ with the oct contained in the cell, if any). _d)_ Find the next cell within the oct. If there is no next cell, return. Otherwise, call the algorithm recursively (starting at step _a)_ with the oct contained in the cell, if any) then go back to _d)_.
+On exit of the algorithm, we then have a list of cells and $t$-values.
+For each cell in the list, we then call the sampler with the vertex-centered values and the entry and exit coordinates.
+
+An example of the volume rendering of a galaxy in a zoom-in cosmological simulation made with RAMSES is shown on Figure {@fig:ramses-volume-rendering}.
+
+![
+Volume rendering of gas density isocontours around a galaxy in a cosmological zoom-in simulation performed with RAMSES. Adapted from [@cadiou_angular_momentum_2021].
+](images/volume_rendering/ramses-volume-rendering-galaxy.png){#fig:ramses-volume-rendering}
+
+#### Sampling functions
+
+TODO
 
 ### Hardware-accelerated Volume Rendering
 
@@ -1658,7 +1726,7 @@ One of the nicest aspects of this new unit system is that the symbolic algebra f
 YTArray is primarily useful for attaching units to NumPy `ndarray` instances.
 For scalar data, we have created the new `YTQuantity` class.
 `YTQuantity` is a subclass of `YTArray` with the requirement that the "array data" associated with the instance be limited to one element.
-`YTQuantity` is primarily useful for physical constants and ensures that the units are propogated correctly when composing quantities from arrays, physical constants, and unitless scalars:
+`YTQuantity` is primarily useful for physical constants and ensures that the units are propagated correctly when composing quantities from arrays, physical constants, and unitless scalars:
 
 ```python
 >>> from yt.utilities.physical_constants import
@@ -1765,7 +1833,7 @@ These data are available for a `Unit` object by accessing the `expr`, `dimension
 The `UnitRegistry` class provides the `add`, `remove`, and `modify` methods which allows users to add, remove, and modify atomic unit definitions present in `UnitRegistry` objects.
 A dictionary lookup table is also attached to the `UnitRegistry` object, providing an interface to look up unit symbols.
 In general, unit registries should only be adjusted inside of a code frontend, since otherwise quantities and arrays might be created with inconsistent unit metadata.
-Once a unit object is created, it will not recieve updates if the original unit registry is modified.
+Once a unit object is created, it will not receive updates if the original unit registry is modified.
 
 ### Creating YTArray and YTQuantity instances {#sec:creating-ytarray-and-ytquantity-instances}
 
@@ -1845,7 +1913,7 @@ To create quantities and arrays in units defined by a simulation coordinate syst
 This unit registry contains the metadata necessary to convert the array to CGS from some other known unit system and is available via the `unit_registry` attribute that is attached to all `Dataset` instances.
 
 We have modified the definition for `set_code_units` in the `StaticOutput` base class.
-In this new implemenation, the predefined `code_mass`, `code_length`, `code_time`, and `code_velocity` symbols are adjusted to the appropriate values and `length_unit`, `time_unit`, `mass_unit`, `velocity_unit` attributes are attached to the `StaticOutput` instance.
+In this new implementation, the predefined `code_mass`, `code_length`, `code_time`, and `code_velocity` symbols are adjusted to the appropriate values and `length_unit`, `time_unit`, `mass_unit`, `velocity_unit` attributes are attached to the `StaticOutput` instance.
 If there are frontend specific code units they should also be defined in subclasses by extending this function.
 
 #### Mixing modified unit registries {#sec:mixing-modified-unit-registries}
