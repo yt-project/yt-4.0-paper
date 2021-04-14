@@ -119,9 +119,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-3.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/cfbfa59e97dad9d256289a7566152b5d77570db7/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/cfbfa59e97dad9d256289a7566152b5d77570db7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/cfbfa59e97dad9d256289a7566152b5d77570db7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/09efc2feca20c0644f306a0248c89ba1b2b01c47/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/09efc2feca20c0644f306a0248c89ba1b2b01c47/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/09efc2feca20c0644f306a0248c89ba1b2b01c47/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,9 +143,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-3.0-paper/v/cfbfa59e97dad9d256289a7566152b5d77570db7/))
+([permalink](https://yt-project.github.io/yt-3.0-paper/v/09efc2feca20c0644f306a0248c89ba1b2b01c47/))
 was automatically generated
-from [yt-project/yt-3.0-paper@cfbfa59](https://github.com/yt-project/yt-3.0-paper/tree/cfbfa59e97dad9d256289a7566152b5d77570db7)
+from [yt-project/yt-3.0-paper@09efc2f](https://github.com/yt-project/yt-3.0-paper/tree/09efc2feca20c0644f306a0248c89ba1b2b01c47)
 on April 14, 2021.
 </em></small>
 
@@ -373,7 +373,7 @@ This paper was developed collaboratively, using the Manubot [@url:https://github
 
 > 
 > To add yourself to the author list, please follow the instructions in our
-> [README](https://github.com/yt-project/yt-3.0-paper/blob/master/README.md#authorship-policy).
+> [README](https://github.com/yt-project/yt-4.0-paper/blob/master/README.md#authorship-policy).
 > 
 
 

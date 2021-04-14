@@ -10,7 +10,7 @@ backporting
 Bili
 binarily
 Bitbucket
-Bitwise
+bitwise
 Bool
 Borro
 boundry
