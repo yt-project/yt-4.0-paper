@@ -10,7 +10,7 @@ backporting
 Bili
 binarily
 Bitbucket
-bitwise
+Bitwise
 Bool
 Borro
 boundry
@@ -24,7 +24,7 @@ chrishavlin
 chummels
 Clément
 codebase
-comoving
+Comoving
 connectedness
 contributionscoming
 coord
@@ -39,7 +39,7 @@ d’Astrophysique
 datapoint
 dataset
 dataset’s
-Datasets
+datasets
 d’Azur
 decomp
 dimensionality
@@ -117,7 +117,7 @@ powersoffour
 proj
 propogated
 pytest
-Quadtree
+quadtree
 README
 recieve
 recursed
@@ -160,12 +160,12 @@ XXXXXXXX
 yournamehere
 YTArray
 ytdata
-ytep
+YTEP
 YTEPs
 YTQuadTreeProj
 YTQuantity
 ytree
 Yu
-zingale
+Zingale
 zorder
 ZuHone
