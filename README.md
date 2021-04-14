@@ -1,18 +1,14 @@
-# Introducing yt 3.0: Analysis and Visualization of Volumetric Data
+# Introducing yt 4.0: Analysis and Visualization of Volumetric Data
 
-[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://yt-project.github.io/yt-3.0-paper/)
-[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://yt-project.github.io/yt-3.0-paper/manuscript.pdf)
-[![Build Status](https://travis-ci.org/yt-project/yt-3.0-paper.svg?branch=master)](https://travis-ci.org/yt-project/yt-3.0-paper)
+[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://yt-project.github.io/yt-4.0-paper/)
+[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://yt-project.github.io/yt-4.0-paper/manuscript.pdf)
+[![Build Status](https://travis-ci.org/yt-project/yt-4.0-paper.svg?branch=master)](https://travis-ci.org/yt-project/yt-4.0-paper)
 
 ## Manuscript description
 
 This repository is the manuscript for a forthcoming, far-too-overdue paper on
-the additions in yt 3.0 since the release of the [first yt
+the additions in yt 4.0 since the release of the [first yt
 paper](http://adsabs.harvard.edu/abs/2011ApJS..192....9T) in early 2011.
-
-While this paper has "3.0" in the title, the authors are well-aware that it may
-not be completed before yt 4.0 has been released.  We'll address that when or
-if it becomes important.
 
 ## Authorship Policy
 
@@ -64,7 +60,7 @@ An [overview manuscript](https://greenelab.github.io/meta-review/ "Open collabor
 The [rootstock repository](https://git.io/fhQH1) is a general purpose template for creating new Manubot instances, as detailed in [`SETUP.md`](SETUP.md).
 See [`USAGE.md`](USAGE.md) for documentation how to write a manuscript.
 
-Please open [an issue](https://github.com/yt-project/yt-3.0-paper/issues) for questions related to Manubot usage, bug reports, or general inquiries.
+Please open [an issue](https://github.com/yt-project/yt-4.0-paper/issues) for questions related to Manubot usage, bug reports, or general inquiries.
 
 ### Repository directories & files
 
@@ -114,17 +110,17 @@ bash build/autobuild.sh
 
 ### Continuous Integration
 
-[![Build Status](https://travis-ci.org/yt-project/yt-3.0-paper.svg?branch=master)](https://travis-ci.org/yt-project/yt-3.0-paper)
+[![Build Status](https://travis-ci.org/yt-project/yt-4.0-paper.svg?branch=master)](https://travis-ci.org/yt-project/yt-4.0-paper)
 
 Whenever a pull request is opened, Travis CI will test whether the changes break the build process to generate a formatted manuscript.
 The build process aims to detect common errors, such as invalid citations.
 If your pull request build fails, see the CI logs for the cause of failure and revise your pull request accordingly.
 
-When a commit to the `master` branch occurs (for example, when a pull request is merged), Travis CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/yt-project/yt-3.0-paper/tree/gh-pages) and [`output`](https://github.com/yt-project/yt-3.0-paper/tree/output) branches.
+When a commit to the `master` branch occurs (for example, when a pull request is merged), Travis CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/yt-project/yt-4.0-paper/tree/gh-pages) and [`output`](https://github.com/yt-project/yt-4.0-paper/tree/output) branches.
 The `gh-pages` branch uses [GitHub Pages](https://pages.github.com/) to host the following URLs:
 
-+ **HTML manuscript** at https://yt-project.github.io/yt-3.0-paper/
-+ **PDF manuscript** at https://yt-project.github.io/yt-3.0-paper/manuscript.pdf
++ **HTML manuscript** at https://yt-project.github.io/yt-4.0-paper/
++ **PDF manuscript** at https://yt-project.github.io/yt-4.0-paper/manuscript.pdf
 
 For continuous integration configuration details, see [`.github/workflows/manubot.yaml`](.github/workflows/manubot.yaml) if using GitHub Actions or [`.travis.yml`](.travis.yml) if using Travis CI.
 
@@ -139,7 +135,7 @@ We encourage users to openly license their manuscripts, which is the default as 
 [![License: CC0 1.0](https://img.shields.io/badge/License%20Parts-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 Except when noted otherwise, the entirety of this repository is licensed under a CC BY 4.0 License ([`LICENSE.md`](LICENSE.md)), which allows reuse with attribution.
-Please attribute by linking to https://github.com/yt-project/yt-3.0-paper.
+Please attribute by linking to https://github.com/yt-project/yt-4.0-paper.
 
 Since CC BY is not ideal for code and data, certain repository components are also released under the CC0 1.0 public domain dedication ([`LICENSE-CC0.md`](LICENSE-CC0.md)).
 All files matched by the following glob patterns are dual licensed under CC BY 4.0 and CC0 1.0:
@@ -163,4 +159,4 @@ Except for the following files with different licenses:
 
 + `build/assets/anchors.js` which is [released](https://www.bryanbraun.com/anchorjs/) under an [MIT License](https://opensource.org/licenses/MIT)
 
-Please open [an issue](https://github.com/yt-project/yt-3.0-paper/issues) for any question related to licensing.
+Please open [an issue](https://github.com/yt-project/yt-4.0-paper/issues) for any question related to licensing.
