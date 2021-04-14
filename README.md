@@ -2,6 +2,7 @@
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://yt-project.github.io/yt-3.0-paper/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://yt-project.github.io/yt-3.0-paper/manuscript.pdf)
+[![GitHub Actions Status](https://github.com/yt-project/yt-3.0-paper/workflows/Manubot/badge.svg)](https://github.com/yt-project/yt-3.0-paper/actions)
 [![Build Status](https://travis-ci.org/yt-project/yt-3.0-paper.svg?branch=master)](https://travis-ci.org/yt-project/yt-3.0-paper)
 
 ## Manuscript description
@@ -120,7 +121,7 @@ Whenever a pull request is opened, Travis CI will test whether the changes break
 The build process aims to detect common errors, such as invalid citations.
 If your pull request build fails, see the CI logs for the cause of failure and revise your pull request accordingly.
 
-When a commit to the `master` branch occurs (for example, when a pull request is merged), Travis CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/yt-project/yt-3.0-paper/tree/gh-pages) and [`output`](https://github.com/yt-project/yt-3.0-paper/tree/output) branches.
+When a commit to the `main` branch occurs (for example, when a pull request is merged), Travis CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/yt-project/yt-3.0-paper/tree/gh-pages) and [`output`](https://github.com/yt-project/yt-3.0-paper/tree/output) branches.
 The `gh-pages` branch uses [GitHub Pages](https://pages.github.com/) to host the following URLs:
 
 + **HTML manuscript** at https://yt-project.github.io/yt-3.0-paper/
