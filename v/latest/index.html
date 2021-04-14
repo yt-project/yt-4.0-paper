@@ -184,15 +184,15 @@
   <meta name="citation_author" content="Add Yourself" />
   <meta name="citation_author_institution" content="Your University" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <link rel="canonical" href="https://yt-project.github.io/yt-3.0-paper/" />
-  <meta property="og:url" content="https://yt-project.github.io/yt-3.0-paper/" />
-  <meta property="twitter:url" content="https://yt-project.github.io/yt-3.0-paper/" />
-  <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-3.0-paper/" />
-  <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-3.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-3.0-paper/v/09efc2feca20c0644f306a0248c89ba1b2b01c47/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/09efc2feca20c0644f306a0248c89ba1b2b01c47/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-3.0-paper/v/09efc2feca20c0644f306a0248c89ba1b2b01c47/manuscript.pdf" />
+  <link rel="canonical" href="https://yt-project.github.io/yt-4.0-paper/" />
+  <meta property="og:url" content="https://yt-project.github.io/yt-4.0-paper/" />
+  <meta property="twitter:url" content="https://yt-project.github.io/yt-4.0-paper/" />
+  <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
+  <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/2339df2954369c499d8ddb6880e054f2ac1f2236/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/2339df2954369c499d8ddb6880e054f2ac1f2236/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/2339df2954369c499d8ddb6880e054f2ac1f2236/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -222,9 +222,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-3.0-paper/v/09efc2feca20c0644f306a0248c89ba1b2b01c47/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-4.0-paper/v/2339df2954369c499d8ddb6880e054f2ac1f2236/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-3.0-paper/tree/09efc2feca20c0644f306a0248c89ba1b2b01c47">yt-project/yt-3.0-paper@09efc2f</a>
+from <a href="https://github.com/yt-project/yt-4.0-paper/tree/2339df2954369c499d8ddb6880e054f2ac1f2236">yt-project/yt-4.0-paper@2339df2</a>
 on April 14, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -1275,6 +1275,58 @@ union of all of the sub-objects; it is designed to be a faster method
 than chaining | (or) operations to create a single, large union.</p>
 <h2 id="processing-and-analysis-of-data">Processing and Analysis of Data</h2>
 <h3 id="array-like-operations">Array-like Operations</h3>
+<p>In <code>yt</code>, a newly-constructed data selector contains no data – this enables data selectors for large regions, in extremely large datasets, to be lightweight and cheap to construct.
+By ensuring that these objects don’t immediately consume resources, they can be manipulated and operated on in a high-level fashion, without taxing the computational power.
+While these data objects <em>can</em> return the full set of data they include, <code>yt</code> also provides array-like operations that do not require immediate access to the full set of numerical values, and which align with the mental-model for data processing that <code>yt</code> exposes.
+As an example, consider the following two operations:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>dd <span class="op">=</span> ds.all_data()</span>
+<span id="cb1-2"><a href="#cb1-2"></a>dd[<span class="st">&quot;gas&quot;</span>, <span class="st">&quot;density&quot;</span>].<span class="bu">max</span>()</span></code></pre></div>
+<p>and</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>dd <span class="op">=</span> ds.all_data()</span>
+<span id="cb2-2"><a href="#cb2-2"></a>dd.<span class="bu">max</span>((<span class="st">&quot;gas&quot;</span>, <span class="st">&quot;density&quot;</span>))</span></code></pre></div>
+<p>Both are available in <code>yt</code>.
+As a side-effect of Python’s object model, the first will access the <code>("gas", "density")</code> item in the object <code>dd</code>, itself a concatenated numpy array, and then execute the <code>max</code> method on it.
+The second will call the <code>max</code> method on the data object, supplying to it the name of the field.
+This allows <code>yt</code> to decide how to decompose, parallelize and process the data in a memory-efficient way, and spread across multiple processors.
+Additionally, by emphasizing that the “maximum” is being taken on the data object, rather than the numerical data, other operations can be exposed that build on the underlying data organization.
+For instance, taking the maximum along a given (spatial) axis:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>sp <span class="op">=</span> ds.sphere(<span class="st">&quot;center&quot;</span>, (<span class="fl">10.0</span>, <span class="st">&quot;m&quot;</span>))</span>
+<span id="cb3-2"><a href="#cb3-2"></a>sp.<span class="bu">max</span>((<span class="st">&quot;gas&quot;</span>, <span class="st">&quot;temperature&quot;</span>), axis<span class="op">=</span><span class="st">&quot;z&quot;</span>)</span></code></pre></div>
+<p>This translates our meaning – find the maximum value along the z-axis – into a dimensionality reduction operation that uses <code>yt</code>’s built-in “projection” method.
+These operations, on data objects (rather than the underlying arrays of values that are accessible through them) provide dataframe-like methods for querying very large, spatially registered data.</p>
+<p>The array-like operations utilized in <code>yt</code> attempt to map to conceptually similar operations in numpy.
+Unlike numpy, however, these utilize <code>yt</code>’s dataset-aware “chunking” operations, in a manner philosophically similar to the chunking operations used in dask.
+Below, we outline the three classes of operations that are available, based on the type of their return value.</p>
+<h4 id="sec:arrayops-scalar">Reduction to Scalars</h4>
+<p>Traditional array operations that map from an array to a scalar are accessible utilizing familiar syntax. These include:</p>
+<ul>
+<li><code>min(field_specification)</code>, <code>max(field_specification)</code>, and <code>ptp(field_specification)</code></li>
+<li><code>argmin(field_specification, axis)</code>, and <code>argmax(field_specification, axis)</code></li>
+<li><code>mean(field_specification, weight)</code>, <code>std(field_specification, weight)</code>, and <code>sum(field_specification)</code></li>
+</ul>
+<p>In addition to the advantages of allowing the parallelism and memory management be handled by <code>yt</code>, these operations are also able to accept multiple fields.
+This allows multiple fields to be queried in a single pass over the data, rather than multiple passes.
+Additionally, the <code>min</code> and <code>max</code> operations will automatically cache the results during a single pass, which means that calling <code>max</code> immediately after <code>min</code> (and vice versa) on the same data object and field will not require a recomputation.</p>
+<p>In the case of <code>argmin</code> and <code>argmax</code>, the default returned “axis” will be the spatial coordinates of the minimum or maximum field value (respectively).<br />
+However, by specifying an axis or set of axes that correspond to fields, the field values will be queried at these minimum or maximum points.
+This allows, for instance, to query the value of “density” at the minimum “temperature.”
+The operations <code>mean</code> and <code>sum</code> are available here in a non-spatial form, where they simply compute the scalar reduction independent of the spatial registration of the dataset.</p>
+<h4 id="sec:arrayops-vector">Reduction to Vectors</h4>
+<ul>
+<li><code>profile(axes, fields, profile_specification)</code></li>
+</ul>
+<p>The <code>profile</code> operation provides weighted or unweighted histogramming in one or two dimensions.
+This function accepts the axes along which to compute the histogram as well as the fields to compute, and information about whether the binning should be an accumulation, an average, or a weighted average.
+These operations are described in more detail in <strong>reference profile section</strong>.</p>
+<h4 id="sec:arrayops-remap">Remapping Operations</h4>
+<ul>
+<li><code>mean(field_specification, weight, axis)</code></li>
+<li><code>sum(field_specification, axis)</code></li>
+<li><code>integrate(field_specification, weight, axis)</code></li>
+</ul>
+<p>These functions map directly to different methods used by the projection data object.
+Both <code>mean</code> and <code>sum</code>, when supplied a spatial axis, will compute a dimensionally-reduced projection, remapped into a pixel coordinate plane.
+Importantly, if the dataset is a finite-volume dataset (grid, octree, etc), the results of these operations will be a variable-resolution mesh, rather than a fixed resolution image buffer.</p>
 <h2 id="abstracting-simulation-types">Abstracting Simulation Types</h2>
 <h3 id="chunking-and-decomposition-strategies">Chunking and Decomposition Strategies</h3>
 <p>Reading data, particularly data that will not be utilized in a computation, can incur susbtantial overhead, particularly if the data is spread over multiple files on a networked filesystem, where metadata queries can dominate the cost of IO.
@@ -1663,49 +1715,49 @@ Instead of returning a NumPy <code>ndarray</code> when users query <code>yt</cod
 <code>YTArray</code> preserves <code>ndarray</code>’s array operations, including deep and shallow copies, broadcasting, and views.
 Augmenting <code>ndarray</code>, <code>YTArray</code> attaches unit metadata to the array data, enabling runtime checking of unit consistency in arithmetic operations between <code>YTArray</code> instances, and making it trivial to compose new units using algebraic operations.</p>
 <p>As a trivial example, when one queries a data object (here given the generic name <code>dd</code>) for the density field, we get back a YTArray, including both the simulation data for the density field, and the units of the density field, in this case <span class="math inline">\(\rm{g}/\rm{cm}^3\)</span>:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="op">&gt;&gt;&gt;</span> dd[`density<span class="st">&#39;] </span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="st">YTArray([4.92e-31, 4.94e-31, 4.93e-31, ...,</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="st">         1.12e-25, 1.59e-25, 1.09e-24]) g/cm**3</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="op">&gt;&gt;&gt;</span> dd[`density<span class="st">&#39;] </span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="st">YTArray([4.92e-31, 4.94e-31, 4.93e-31, ...,</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="st">         1.12e-25, 1.59e-25, 1.09e-24]) g/cm**3</span></span></code></pre></div>
 <p>One of the nicest aspects of this new unit system is that the symbolic algebra for unitful operations is performed automatically by sympy:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(dd[`cell_mass<span class="st">&#39;]/dd[`cell_volume&#39;</span>])</span>
-<span id="cb2-2"><a href="#cb2-2"></a>  [<span class="fl">4.92e-31</span> <span class="fl">4.94e-31</span> <span class="fl">4.93e-31</span> ... </span>
-<span id="cb2-3"><a href="#cb2-3"></a>   <span class="fl">1.12e-25</span> <span class="fl">1.59e-25</span> <span class="fl">1.09e-24</span>] g<span class="op">/</span>cm<span class="op">**</span><span class="dv">3</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(dd[`cell_mass<span class="st">&#39;]/dd[`cell_volume&#39;</span>])</span>
+<span id="cb5-2"><a href="#cb5-2"></a>  [<span class="fl">4.92e-31</span> <span class="fl">4.94e-31</span> <span class="fl">4.93e-31</span> ... </span>
+<span id="cb5-3"><a href="#cb5-3"></a>   <span class="fl">1.12e-25</span> <span class="fl">1.59e-25</span> <span class="fl">1.09e-24</span>] g<span class="op">/</span>cm<span class="op">**</span><span class="dv">3</span></span></code></pre></div>
 <p>YTArray is primarily useful for attaching units to NumPy <code>ndarray</code> instances.
 For scalar data, we have created the new <code>YTQuantity</code> class.
 <code>YTQuantity</code> is a subclass of <code>YTArray</code> with the requirement that the “array data” associated with the instance be limited to one element.
 <code>YTQuantity</code> is primarily useful for physical constants and ensures that the units are propogated correctly when composing quantities from arrays, physical constants, and unitless scalars:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.utilities.physical_constants <span class="im">import</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>        boltzmann_constant</span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(dd[`temperature<span class="st">&#39;]*boltzmann_constant)</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="st">[ 1.28e-12 1.29e-12 1.29e-12 ... </span></span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="st">  1.63e-12 1.59e-12 1.40e-12] erg</span></span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.utilities.physical_constants <span class="im">import</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>        boltzmann_constant</span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(dd[`temperature<span class="st">&#39;]*boltzmann_constant)</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="st">[ 1.28e-12 1.29e-12 1.29e-12 ... </span></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="st">  1.63e-12 1.59e-12 1.40e-12] erg</span></span></code></pre></div>
 <p>If a user needs the field in a different unit system, they can quickly convert using <code>convert_to_units</code> or <code>in_units</code>.</p>
 <p>When a <code>Dataset</code> object is instantiated, it will its self instantiate and set up a <code>UnitRegistry</code> class that contains a full set of units that are defined for the simulation. This registry includes both concrete physical units like <code>cm</code> or <code>K</code> but also units symbols that correspond to the unit system used internally in the simulation.</p>
 <p>The new unit systems lets us to encode the simulation coordinate system and scaling to physical coordinates directly into the unit system. We do this via “code units”.</p>
 <p>Every <code>Dataset</code> has a <code>length_unit</code>, <code>time_unit</code>, and <code>mass_unit</code>, attribute that the user can quickly and easily query to discover the base units of the simulation. For example:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> yt</span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="op">&gt;&gt;&gt;</span> ds <span class="op">=</span> yt.load(<span class="st">&quot;Enzo_64/DD0043/data0043&quot;</span>)</span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(ds.length_unit)</span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="dv">128</span> Mpccm<span class="op">/</span>h</span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(ds.quan(<span class="fl">1.0</span>, <span class="st">&quot;code_length&quot;</span>).in_units(<span class="st">&quot;Mpccm/h&quot;</span>))</span>
-<span id="cb4-6"><a href="#cb4-6"></a><span class="dv">128</span> Mpccm<span class="op">/</span>h</span>
-<span id="cb4-7"><a href="#cb4-7"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(ds.length_unit.in_cgs())</span>
-<span id="cb4-8"><a href="#cb4-8"></a><span class="fl">5.55517285026e+26</span> cm</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> yt</span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="op">&gt;&gt;&gt;</span> ds <span class="op">=</span> yt.load(<span class="st">&quot;Enzo_64/DD0043/data0043&quot;</span>)</span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(ds.length_unit)</span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="dv">128</span> Mpccm<span class="op">/</span>h</span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(ds.quan(<span class="fl">1.0</span>, <span class="st">&quot;code_length&quot;</span>).in_units(<span class="st">&quot;Mpccm/h&quot;</span>))</span>
+<span id="cb7-6"><a href="#cb7-6"></a><span class="dv">128</span> Mpccm<span class="op">/</span>h</span>
+<span id="cb7-7"><a href="#cb7-7"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(ds.length_unit.in_cgs())</span>
+<span id="cb7-8"><a href="#cb7-8"></a><span class="fl">5.55517285026e+26</span> cm</span></code></pre></div>
 <p>Optionally <code>velocity_unit</code>, <code>pressure_unit</code>, <code>temperature_unit</code>, and <code>density_unit</code> may be defined as well if the units for these fields cannot be inferred from the mass, length, and time units.</p>
 <p>Additionally, we allow conversions to the simulation unit system.
 Data in code units are available by converting to <code>code_length</code>, <code>code_mass</code>, <code>code_time</code>, <code>code_velocity</code>, <code>code_density</code>, <code>code_magnetic</code>, <code>code_pressure</code>, <code>code_metallicity</code>, or any combination of those units.
 Code units preserve dimensionality: an array or quantity that has units of <code>cm</code> will be convertible to <code>code_length</code>, but not to <code>code_mass</code>.</p>
 <p>On-disk data are also be available to the user, presented in unconverted code units.
 To obtain on-disk data, a user need only query a data object using an on-disk field name:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> yt</span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="op">&gt;&gt;&gt;</span> ds <span class="op">=</span> yt.load(<span class="st">&quot;Enzo_64/DD0043/data0043&quot;</span>)</span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="op">&gt;&gt;&gt;</span> dd <span class="op">=</span> ds.all_data()</span>
-<span id="cb5-4"><a href="#cb5-4"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(dd[(<span class="st">&#39;enzo&#39;</span>, <span class="st">&#39;Density&#39;</span>)])</span>
-<span id="cb5-5"><a href="#cb5-5"></a>[ <span class="fl">6.74e-02</span> <span class="fl">6.12e-02</span> <span class="fl">8.92e-02</span> ... </span>
-<span id="cb5-6"><a href="#cb5-6"></a>  <span class="fl">9.09e+01</span> <span class="fl">5.66e+01</span> <span class="fl">4.27e+01</span>] code_mass<span class="op">/</span>code_length<span class="op">**</span><span class="dv">3</span></span>
-<span id="cb5-7"><a href="#cb5-7"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(dd[(<span class="st">&#39;gas&#39;</span>, <span class="st">&#39;density&#39;</span>)])</span>
-<span id="cb5-8"><a href="#cb5-8"></a>[ <span class="fl">1.92e-31</span> <span class="fl">1.74e-31</span> <span class="fl">2.54e-31</span> ... </span>
-<span id="cb5-9"><a href="#cb5-9"></a>  <span class="fl">2.59e-28</span> <span class="fl">1.61e-28</span> <span class="fl">1.22e-28</span>] g<span class="op">/</span>cm<span class="op">**</span><span class="dv">3</span></span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> yt</span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="op">&gt;&gt;&gt;</span> ds <span class="op">=</span> yt.load(<span class="st">&quot;Enzo_64/DD0043/data0043&quot;</span>)</span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="op">&gt;&gt;&gt;</span> dd <span class="op">=</span> ds.all_data()</span>
+<span id="cb8-4"><a href="#cb8-4"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(dd[(<span class="st">&#39;enzo&#39;</span>, <span class="st">&#39;Density&#39;</span>)])</span>
+<span id="cb8-5"><a href="#cb8-5"></a>[ <span class="fl">6.74e-02</span> <span class="fl">6.12e-02</span> <span class="fl">8.92e-02</span> ... </span>
+<span id="cb8-6"><a href="#cb8-6"></a>  <span class="fl">9.09e+01</span> <span class="fl">5.66e+01</span> <span class="fl">4.27e+01</span>] code_mass<span class="op">/</span>code_length<span class="op">**</span><span class="dv">3</span></span>
+<span id="cb8-7"><a href="#cb8-7"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(dd[(<span class="st">&#39;gas&#39;</span>, <span class="st">&#39;density&#39;</span>)])</span>
+<span id="cb8-8"><a href="#cb8-8"></a>[ <span class="fl">1.92e-31</span> <span class="fl">1.74e-31</span> <span class="fl">2.54e-31</span> ... </span>
+<span id="cb8-9"><a href="#cb8-9"></a>  <span class="fl">2.59e-28</span> <span class="fl">1.61e-28</span> <span class="fl">1.22e-28</span>] g<span class="op">/</span>cm<span class="op">**</span><span class="dv">3</span></span></code></pre></div>
 <p>Here, the first data object query is returned in code units, while the second is returned in CGS units.
 This is because <code>("enzo", "Density")</code> is an on-disk field, while <code>("gas", "density")</code> is an internal <code>yt</code> field.</p>
 <h3 id="sec:units_implementation">Implementation}</h3>
@@ -1731,10 +1783,10 @@ The dimensions of <code>Msun/Mpc</code><span class="math inline">\(^3\)</span> a
 <p>We use the <code>UnitRegistry</code> class to define all valid atomic units.
 All unit registries contain a unit symbol lookup table (dict) containing the valid units’ dimensionality and cgs conversion factor.
 Here is what it would look like with the above units:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>{ <span class="st">&quot;g&quot;</span>:    (mass, <span class="fl">1.0</span>),</span>
-<span id="cb6-2"><a href="#cb6-2"></a>  <span class="st">&quot;erg&quot;</span>:  (mass <span class="op">*</span> length<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> time<span class="op">**-</span><span class="dv">2</span>, <span class="fl">1.0</span>),</span>
-<span id="cb6-3"><a href="#cb6-3"></a>  <span class="st">&quot;Msun&quot;</span>: (mass, <span class="fl">1.98892e+33</span>),</span>
-<span id="cb6-4"><a href="#cb6-4"></a>  <span class="st">&quot;pc&quot;</span>:   (length, <span class="fl">3.08568e18</span>), }</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>{ <span class="st">&quot;g&quot;</span>:    (mass, <span class="fl">1.0</span>),</span>
+<span id="cb9-2"><a href="#cb9-2"></a>  <span class="st">&quot;erg&quot;</span>:  (mass <span class="op">*</span> length<span class="op">**</span><span class="dv">2</span> <span class="op">*</span> time<span class="op">**-</span><span class="dv">2</span>, <span class="fl">1.0</span>),</span>
+<span id="cb9-3"><a href="#cb9-3"></a>  <span class="st">&quot;Msun&quot;</span>: (mass, <span class="fl">1.98892e+33</span>),</span>
+<span id="cb9-4"><a href="#cb9-4"></a>  <span class="st">&quot;pc&quot;</span>:   (length, <span class="fl">3.08568e18</span>), }</span></code></pre></div>
 <p>Note that we only define <strong>atomic</strong> units here.
 There should be no operations in the registry symbol strings.
 When we parse non-atomic units like <code>Msun/Mpc**3</code>, we use the registry to look up the symbols.
@@ -1761,43 +1813,43 @@ If no UnitRegistry is supplied, a default unit registry is used instead.
 Unit specification strings must be algebraic combinations of unit symbol names, using standard Python mathematical syntax (i.e.
 <code>**</code> for the power function, not <code>^</code>).</p>
 <p>Here is a simple example of <code>YTArray</code> creation:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.units <span class="im">import</span> yt_array, YTQuantity </span>
-<span id="cb7-2"><a href="#cb7-2"></a><span class="op">&gt;&gt;&gt;</span> YTArray([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], `cm<span class="st">&#39;) </span></span>
-<span id="cb7-3"><a href="#cb7-3"></a><span class="st">YTArray([1, 2, 3]) cm</span></span>
-<span id="cb7-4"><a href="#cb7-4"></a><span class="st">&gt;&gt;&gt; YTQuantity(3, `J&#39;</span>) </span>
-<span id="cb7-5"><a href="#cb7-5"></a><span class="dv">3</span> J</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.units <span class="im">import</span> yt_array, YTQuantity </span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="op">&gt;&gt;&gt;</span> YTArray([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], `cm<span class="st">&#39;) </span></span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="st">YTArray([1, 2, 3]) cm</span></span>
+<span id="cb10-4"><a href="#cb10-4"></a><span class="st">&gt;&gt;&gt; YTQuantity(3, `J&#39;</span>) </span>
+<span id="cb10-5"><a href="#cb10-5"></a><span class="dv">3</span> J</span></code></pre></div>
 <p>In addition to the class constructor, we have also defined two convenience functions, <code>quan</code>, and <code>arr</code>, for quantity and array creation that are attached to the <code>Dataset</code> base class.
 These were added to syntactically simplify the creation of arrays with the UnitRegistry instance associated with a dataset.
 These functions work exactly like the <code>YTArray</code> and <code>YTQuantity</code> constructors, but pass the <code>UnitRegistry</code> instance attached to the dataset to the underlying constructor call.
 For example:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> yt</span>
-<span id="cb8-2"><a href="#cb8-2"></a><span class="op">&gt;&gt;&gt;</span> ds <span class="op">=</span> yt.load(<span class="st">&quot;Enzo_64/DD0043/data0043&quot;</span>)</span>
-<span id="cb8-3"><a href="#cb8-3"></a><span class="op">&gt;&gt;&gt;</span> ds.arr([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], `code_length<span class="st">&#39;).in_cgs() </span></span>
-<span id="cb8-4"><a href="#cb8-4"></a><span class="st">YTArray([ 5.55e+26, 1.11e+27, 1.66e+27]) cm</span></span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> yt</span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="op">&gt;&gt;&gt;</span> ds <span class="op">=</span> yt.load(<span class="st">&quot;Enzo_64/DD0043/data0043&quot;</span>)</span>
+<span id="cb11-3"><a href="#cb11-3"></a><span class="op">&gt;&gt;&gt;</span> ds.arr([<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>], `code_length<span class="st">&#39;).in_cgs() </span></span>
+<span id="cb11-4"><a href="#cb11-4"></a><span class="st">YTArray([ 5.55e+26, 1.11e+27, 1.66e+27]) cm</span></span></code></pre></div>
 <p>This example illustrates that the array is being created using <code>ds.unit_registry</code>, rather than the <code>default_unit_registry</code>, for which <code>code_length</code> is equivalent to <code>cm</code>.</p>
 <h4 id="sec:multiplication">Multiplication</h4>
 <p>New <code>YTArray</code> and <code>YTQuantity</code> instances can also be created by multiplying <code>YTArray</code> or <code>YTQuantity</code> instances by <code>float</code> or <code>ndarray</code> instances.
 To make it easier to create arrays using this mechanism, we have populated the <code>yt.units</code> namespace with predefined <code>YTQuantity</code> instances that correspond to common unit symbol names.
 For example:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.units <span class="im">import</span> meter, gram, kilogram, second, joule </span>
-<span id="cb9-2"><a href="#cb9-2"></a><span class="op">&gt;&gt;&gt;</span> kilogram <span class="op">*</span> meter<span class="op">**</span><span class="dv">2</span> <span class="op">==</span> joule </span>
-<span id="cb9-3"><a href="#cb9-3"></a><span class="va">True</span></span>
-<span id="cb9-4"><a href="#cb9-4"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.units <span class="im">import</span> m, kg, s, W </span>
-<span id="cb9-5"><a href="#cb9-5"></a><span class="op">&gt;&gt;&gt;</span> kg<span class="op">*</span>m<span class="op">**</span><span class="dv">2</span><span class="op">/</span>s<span class="op">**</span><span class="dv">3</span> <span class="op">==</span> W</span>
-<span id="cb9-6"><a href="#cb9-6"></a><span class="va">True</span></span>
-<span id="cb9-7"><a href="#cb9-7"></a></span>
-<span id="cb9-8"><a href="#cb9-8"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.units <span class="im">import</span> kilometer </span>
-<span id="cb9-9"><a href="#cb9-9"></a><span class="op">&gt;&gt;&gt;</span> three_kilometers <span class="op">=</span> <span class="dv">3</span><span class="op">*</span>kilometer </span>
-<span id="cb9-10"><a href="#cb9-10"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(three_kilometers)</span>
-<span id="cb9-11"><a href="#cb9-11"></a><span class="fl">3.0</span> km</span>
-<span id="cb9-12"><a href="#cb9-12"></a></span>
-<span id="cb9-13"><a href="#cb9-13"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.units <span class="im">import</span> gram, kilogram </span>
-<span id="cb9-14"><a href="#cb9-14"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(gram<span class="op">+</span>kilogram)</span>
-<span id="cb9-15"><a href="#cb9-15"></a><span class="fl">1001.0</span> g </span>
-<span id="cb9-16"><a href="#cb9-16"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(kilogram<span class="op">+</span>gram)</span>
-<span id="cb9-17"><a href="#cb9-17"></a><span class="fl">1.001</span> kg </span>
-<span id="cb9-18"><a href="#cb9-18"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(kilogram<span class="op">/</span>gram)</span>
-<span id="cb9-19"><a href="#cb9-19"></a><span class="fl">1000.0</span> dimensionless</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.units <span class="im">import</span> meter, gram, kilogram, second, joule </span>
+<span id="cb12-2"><a href="#cb12-2"></a><span class="op">&gt;&gt;&gt;</span> kilogram <span class="op">*</span> meter<span class="op">**</span><span class="dv">2</span> <span class="op">==</span> joule </span>
+<span id="cb12-3"><a href="#cb12-3"></a><span class="va">True</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.units <span class="im">import</span> m, kg, s, W </span>
+<span id="cb12-5"><a href="#cb12-5"></a><span class="op">&gt;&gt;&gt;</span> kg<span class="op">*</span>m<span class="op">**</span><span class="dv">2</span><span class="op">/</span>s<span class="op">**</span><span class="dv">3</span> <span class="op">==</span> W</span>
+<span id="cb12-6"><a href="#cb12-6"></a><span class="va">True</span></span>
+<span id="cb12-7"><a href="#cb12-7"></a></span>
+<span id="cb12-8"><a href="#cb12-8"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.units <span class="im">import</span> kilometer </span>
+<span id="cb12-9"><a href="#cb12-9"></a><span class="op">&gt;&gt;&gt;</span> three_kilometers <span class="op">=</span> <span class="dv">3</span><span class="op">*</span>kilometer </span>
+<span id="cb12-10"><a href="#cb12-10"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(three_kilometers)</span>
+<span id="cb12-11"><a href="#cb12-11"></a><span class="fl">3.0</span> km</span>
+<span id="cb12-12"><a href="#cb12-12"></a></span>
+<span id="cb12-13"><a href="#cb12-13"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">from</span> yt.units <span class="im">import</span> gram, kilogram </span>
+<span id="cb12-14"><a href="#cb12-14"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(gram<span class="op">+</span>kilogram)</span>
+<span id="cb12-15"><a href="#cb12-15"></a><span class="fl">1001.0</span> g </span>
+<span id="cb12-16"><a href="#cb12-16"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(kilogram<span class="op">+</span>gram)</span>
+<span id="cb12-17"><a href="#cb12-17"></a><span class="fl">1.001</span> kg </span>
+<span id="cb12-18"><a href="#cb12-18"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(kilogram<span class="op">/</span>gram)</span>
+<span id="cb12-19"><a href="#cb12-19"></a><span class="fl">1000.0</span> dimensionless</span></code></pre></div>
 <h3 id="sec:handling-code-units">Handling code units</h3>
 <p>Code units are tightly coupled to on-disk parameters.
 To handle this fact of life, the <code>yt</code> unit system can modify, add, and remove unit symbols via the <code>UnitRegistry</code>.</p>
@@ -1814,29 +1866,29 @@ The problem is quite general — we want to be able to compare any two datasets,
 <p>We have designed the unit system to refer to a physical coordinate system based on CGS conversion factors.
 This means that operations on quantities with different unit registries will always agree since the final calculation is always performed in CGS.</p>
 <p>The examples below illustrate the consistency of this choice:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> yt</span>
-<span id="cb10-2"><a href="#cb10-2"></a><span class="op">&gt;&gt;&gt;</span> ds1 <span class="op">=</span> yt.load(`Enzo_64<span class="op">/</span>DD0002<span class="op">/</span>data0002<span class="st">&#39;)</span></span>
-<span id="cb10-3"><a href="#cb10-3"></a><span class="st">&gt;&gt;&gt; ds2 = yt.load(`Enzo_64/DD0043/data0043&#39;</span>)</span>
-<span id="cb10-4"><a href="#cb10-4"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(ds1.length_unit, ds2.length_unit)</span>
-<span id="cb10-5"><a href="#cb10-5"></a><span class="dv">128</span> Mpccm<span class="op">/</span>h, <span class="dv">128</span> Mpccm<span class="op">/</span>h</span>
-<span id="cb10-6"><a href="#cb10-6"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(ds1.length_unit.in_cgs())</span>
-<span id="cb10-7"><a href="#cb10-7"></a><span class="fl">6.26145538088e+25</span> cm</span>
-<span id="cb10-8"><a href="#cb10-8"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(ds2.length_unit.in_cgs())</span>
-<span id="cb10-9"><a href="#cb10-9"></a><span class="fl">5.55517285026e+26</span> cm </span>
-<span id="cb10-10"><a href="#cb10-10"></a></span>
-<span id="cb10-11"><a href="#cb10-11"></a></span>
-<span id="cb10-12"><a href="#cb10-12"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(ds1.length_unit<span class="op">*</span>ds2.length_unit)</span>
-<span id="cb10-13"><a href="#cb10-13"></a><span class="fl">145359.100149</span> Mpccm<span class="op">**</span><span class="dv">2</span></span>
-<span id="cb10-14"><a href="#cb10-14"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(ds2.length_unit<span class="op">*</span>ds1.length_unit)</span>
-<span id="cb10-15"><a href="#cb10-15"></a><span class="fl">1846.7055432</span> Mpccm<span class="op">**</span><span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="im">import</span> yt</span>
+<span id="cb13-2"><a href="#cb13-2"></a><span class="op">&gt;&gt;&gt;</span> ds1 <span class="op">=</span> yt.load(`Enzo_64<span class="op">/</span>DD0002<span class="op">/</span>data0002<span class="st">&#39;)</span></span>
+<span id="cb13-3"><a href="#cb13-3"></a><span class="st">&gt;&gt;&gt; ds2 = yt.load(`Enzo_64/DD0043/data0043&#39;</span>)</span>
+<span id="cb13-4"><a href="#cb13-4"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(ds1.length_unit, ds2.length_unit)</span>
+<span id="cb13-5"><a href="#cb13-5"></a><span class="dv">128</span> Mpccm<span class="op">/</span>h, <span class="dv">128</span> Mpccm<span class="op">/</span>h</span>
+<span id="cb13-6"><a href="#cb13-6"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(ds1.length_unit.in_cgs())</span>
+<span id="cb13-7"><a href="#cb13-7"></a><span class="fl">6.26145538088e+25</span> cm</span>
+<span id="cb13-8"><a href="#cb13-8"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(ds2.length_unit.in_cgs())</span>
+<span id="cb13-9"><a href="#cb13-9"></a><span class="fl">5.55517285026e+26</span> cm </span>
+<span id="cb13-10"><a href="#cb13-10"></a></span>
+<span id="cb13-11"><a href="#cb13-11"></a></span>
+<span id="cb13-12"><a href="#cb13-12"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(ds1.length_unit<span class="op">*</span>ds2.length_unit)</span>
+<span id="cb13-13"><a href="#cb13-13"></a><span class="fl">145359.100149</span> Mpccm<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb13-14"><a href="#cb13-14"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(ds2.length_unit<span class="op">*</span>ds1.length_unit)</span>
+<span id="cb13-15"><a href="#cb13-15"></a><span class="fl">1846.7055432</span> Mpccm<span class="op">**</span><span class="dv">2</span></span></code></pre></div>
 <p>For the last two examples, the answer is not the seemingly trivial <span class="math inline">\(128^2=16384,\rm{Mpccm}^2/h^2\)</span>.
 This is because the new quantity returned by the multiplication operation inherits the unit registry from the left object in binary operations.
 This convention is enforced for all binary operations on two <code>YTarray</code> objects.
 Results are always consistent when referencing an unambiguous physical coordinate system:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>((pf1.length_unit <span class="op">*</span> pf2.length_unit).in_cgs())</span>
-<span id="cb11-2"><a href="#cb11-2"></a><span class="fl">3.4783466935e+52</span> cm<span class="op">**</span><span class="dv">2</span> </span>
-<span id="cb11-3"><a href="#cb11-3"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(pf1.length_unit.in_cgs() <span class="op">*</span> pf2.length_unit.in_cgs())</span>
-<span id="cb11-4"><a href="#cb11-4"></a><span class="fl">3.4783466935e+52</span> cm<span class="op">**</span><span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>((pf1.length_unit <span class="op">*</span> pf2.length_unit).in_cgs())</span>
+<span id="cb14-2"><a href="#cb14-2"></a><span class="fl">3.4783466935e+52</span> cm<span class="op">**</span><span class="dv">2</span> </span>
+<span id="cb14-3"><a href="#cb14-3"></a><span class="op">&gt;&gt;&gt;</span> <span class="bu">print</span>(pf1.length_unit.in_cgs() <span class="op">*</span> pf2.length_unit.in_cgs())</span>
+<span id="cb14-4"><a href="#cb14-4"></a><span class="fl">3.4783466935e+52</span> cm<span class="op">**</span><span class="dv">2</span></span></code></pre></div>
 <h3 id="sec:handling-cosmological-units">Handling cosmological units</h3>
 <p>If we detect that we are loading a cosmological simulation performed in comoving coordinates, extra comoving units are added to the dataset’s unit registry.
 Comoving length unit symbols are still named following the pattern <code>&lt;length symbol&gt;cm</code>, i.e.
