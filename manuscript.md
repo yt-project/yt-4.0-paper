@@ -119,9 +119,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/2339df2954369c499d8ddb6880e054f2ac1f2236/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/2339df2954369c499d8ddb6880e054f2ac1f2236/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/2339df2954369c499d8ddb6880e054f2ac1f2236/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/56637900211fe6814ae9ecd57581aca2d4016c47/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/56637900211fe6814ae9ecd57581aca2d4016c47/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/56637900211fe6814ae9ecd57581aca2d4016c47/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,9 +143,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/2339df2954369c499d8ddb6880e054f2ac1f2236/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/56637900211fe6814ae9ecd57581aca2d4016c47/))
 was automatically generated
-from [yt-project/yt-4.0-paper@2339df2](https://github.com/yt-project/yt-4.0-paper/tree/2339df2954369c499d8ddb6880e054f2ac1f2236)
+from [yt-project/yt-4.0-paper@5663790](https://github.com/yt-project/yt-4.0-paper/tree/56637900211fe6814ae9ecd57581aca2d4016c47)
 on April 14, 2021.
 </em></small>
 
@@ -1576,6 +1576,28 @@ Nearly all of the visualization that is done using `yt` utilizes the matplotlib 
 Making this distinction is important, because it underscores the relationship between the different libraries and how they exist in the ecosystem of scientific software; `yt` does not replace matplotlib, but rather, augments it by providing a grammar of analysis of volumetric data and defining how that grammar is translated into visual representations as presented by matplotlib.
 
 ### Pixelizing Variable-Mesh Objects
+
+The results of either projecting or slicing through a logically-cartesian finite volume dataset is represented in `yt` as a collection of pixel positions and widths.
+These objects, hereafter referred to as exposing the "variable mesh" interface (as originated in HippoDraw), are not typically suitable for direct visualization.
+Many visualization libraries, including matplotlib, would necessarily regard these as collections of patches of fixed size, supplying them to the underlying engine.
+To optimize for repeated rendering, `yt` provides its own "pixelization" routines that take advantage of the input data structures.
+These "pixelizers" (or "rasterizers") can account for periodic data, variable resolution, overlapping and disjoint datasets, and non-Cartesian coordinate systems.
+
+The pixelizers in `yt` are implemented in Cython, and they accept an input "image plane" buffer (with extent) as well as the variable mesh to be deposited.
+Pixelizers exist for cartesian coordinates, cylindrical and spherical coordinates, off-axis cartesian planes, and for the Mollweide orthographic projection.
+Each of these pixelizers follows a roughly identical process for depositing source pixels into the image plane.
+The outer loop is over the input pixels, $p_i$, composed of $x_i, y_i, dx_i, dy_i, v_i$, where $x$ and $y$ refer to the coordinate system; in practice this means they may actually represent the $r$, $\theta$, $\phi$ or other coordinates.
+
+ 1. Compute left and right edges of the bounding box for this pixel in the resolution of the image plane
+ 2. Iterate over the first image plane coordinate from the left edge to the right edge of the bounding box
+ 3. Iterate over the second image plane coordinate from the left edge to the right edge of the bounding box
+ 4. Map from the coordinate system to the image plane and deposit $v$
+
+In practice, this is a fast operation, as long as the inner loops are sufficiently well determined; for instance, when depositing an input pixel with a width of $w$ into an image plane where the pixel width corresponds to a width of $w/16$, only $16^2$ pixels (with a high-degree of sequential ordering) have to be iterated over.
+The spherical and cylindrical pixelization routines operate similarly, but are somewhat degraded by a lower degree of locality in the final mapping from coordinate system to image plane.
+
+Recent work has been done to port the pixelization routines to Rust and compiling these to WebAssembly, resulting in the development of the Widgyts project.
+Widgyts provides a browser-side Jupyterlab interface to the pixelization routines, enabling extremely low-latency exploration of datasets.
 
 ### Higher-Order Unstructured Mesh Elements
 

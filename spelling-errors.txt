@@ -2,7 +2,7 @@ amongst
 AMR
 AMRKDTree
 APIs
-Astro
+astro
 astrojaz
 astrophysically
 AstroPy
@@ -18,7 +18,7 @@ Britton
 brittonsmith
 Bugfix
 Cadiou
-cgs
+CGS
 Champaign
 chrishavlin
 chummels
@@ -52,12 +52,13 @@ Enzo
 EWAH
 EWAHBoolArray
 filesystem
-Frontend
+frontend
 geosciences
 Goldbaum
 gridded
 Halbert
 Havlin
+HippoDraw
 histogramming
 Hummels
 hydrodynamical
@@ -71,6 +72,7 @@ jcoughlin
 Ji
 jisuoqing
 Jupyter
+Jupyterlab
 jzuhone
 Kacper
 Kaser
@@ -91,6 +93,7 @@ megaparsec
 metallicity
 midplane
 migueldvb
+Mollweide
 Monaghan
 Munk
 munkm
@@ -103,7 +106,7 @@ NumFOCUS
 NumPy
 Observatoire
 occuring
-Octree
+octree
 Octrees
 octs
 Orf
@@ -114,6 +117,7 @@ performant
 pipelined
 pipelining
 pixelization
+Pixelizers
 pixelizes
 Pixelizing
 PlotCollection
@@ -123,6 +127,7 @@ proj
 propogated
 pytest
 Quadtree
+rasterizers
 README
 recieve
 recomputation
@@ -158,6 +163,8 @@ UnitRegistry
 Université
 unsampled
 Urbana
+WebAssembly
+Widgyts
 wrriting
 Xarthisius
 XXXX
@@ -166,7 +173,7 @@ XXXXXXXX
 yournamehere
 YTArray
 ytdata
-YTEP
+ytep
 YTEPs
 YTQuadTreeProj
 YTQuantity
