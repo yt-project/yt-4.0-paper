@@ -1,5 +1,5 @@
 ---
-title: 'Introducing yt 3.0: Analysis and Visualization of Volumetric Data'
+title: 'Introducing yt 4.0: Analysis and Visualization of Volumetric Data'
 keywords:
 - markdown
 - publishing
@@ -34,10 +34,10 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Introducing yt 3.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="citation_title" content="Introducing yt 3.0: Analysis and Visualization of Volumetric Data" />
-  <meta property="og:title" content="Introducing yt 3.0: Analysis and Visualization of Volumetric Data" />
-  <meta property="twitter:title" content="Introducing yt 3.0: Analysis and Visualization of Volumetric Data" />
+  <meta name="dc.title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
+  <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
+  <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
+  <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta name="dc.date" content="2021-04-14" />
   <meta name="citation_publication_date" content="2021-04-14" />
   <meta name="dc.language" content="en-US" />
@@ -119,9 +119,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/119d05fb61610c16f0d9bd6345e7f58e5465483c/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/119d05fb61610c16f0d9bd6345e7f58e5465483c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/119d05fb61610c16f0d9bd6345e7f58e5465483c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/1300ade67ba036e1f5b99d24f075b7fc3b35dc7d/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/1300ade67ba036e1f5b99d24f075b7fc3b35dc7d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/1300ade67ba036e1f5b99d24f075b7fc3b35dc7d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,9 +143,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/119d05fb61610c16f0d9bd6345e7f58e5465483c/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/1300ade67ba036e1f5b99d24f075b7fc3b35dc7d/))
 was automatically generated
-from [yt-project/yt-4.0-paper@119d05f](https://github.com/yt-project/yt-4.0-paper/tree/119d05fb61610c16f0d9bd6345e7f58e5465483c)
+from [yt-project/yt-4.0-paper@1300ade](https://github.com/yt-project/yt-4.0-paper/tree/1300ade67ba036e1f5b99d24f075b7fc3b35dc7d)
 on April 14, 2021.
 </em></small>
 
@@ -162,7 +162,6 @@ on April 14, 2021.
     [yt_astro](https://twitter.com/yt_astro)<br>
   <small>
      NumFOCUS
-     · Funded by Grant XXXXXXXX
   </small>
 
 + **Matthew Turk**<br>
@@ -174,7 +173,6 @@ on April 14, 2021.
     [powersoffour](https://twitter.com/powersoffour)<br>
   <small>
      School of Information Sciences, University of Illinois at Urbana-Champaign; Department of Astronomy, University of Illinois at Urbana-Champaign
-     · Funded by Grant XXXXXXXX
   </small>
 
 + **Nathan J Goldbaum**<br>
@@ -186,7 +184,6 @@ on April 14, 2021.
     [njgoldbaum](https://twitter.com/njgoldbaum)<br>
   <small>
      National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
-     · Funded by Grant XXXXXXX
   </small>
 
 + **John A. ZuHone**<br>
@@ -207,7 +204,6 @@ on April 14, 2021.
     [chummels](https://github.com/chummels)<br>
   <small>
      Department of Theoretical Astrophysics, California Institute of Technology
-     · Funded by Grant XXXXXXX
   </small>
 
 + **Suoqing Ji**<br>
@@ -217,7 +213,6 @@ on April 14, 2021.
     [jisuoqing](https://github.com/jisuoqing)<br>
   <small>
      Physics Department, University of California Santa Barbara
-     · Funded by Grant XXXXXXX
   </small>
 
 + **Meagan Lang**<br>
@@ -227,7 +222,6 @@ on April 14, 2021.
     [langmm](https://github.com/langmm)<br>
   <small>
      National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
-     · Funded by Grant XXXXXXX
   </small>
 
 + **Madicken Munk**<br>
@@ -237,7 +231,6 @@ on April 14, 2021.
     [munkm](https://github.com/munkm)<br>
   <small>
      National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
-     · Funded by Grant XXXXXXX
   </small>
 
 + **Britton Smith**<br>
@@ -256,7 +249,6 @@ on April 14, 2021.
     [Xarthisius](https://github.com/Xarthisius)<br>
   <small>
      National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
-     · Funded by Grant XXXXXXX
   </small>
 
 + **Miguel de Val-Borro**<br>
@@ -275,7 +267,6 @@ on April 14, 2021.
     [jcoughlin11](https://github.com/jcoughlin11)<br>
   <small>
      National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
-     · Funded by Grant XXXXXXX
   </small>
 
 + **Corentin Cadiou**<br>
@@ -332,7 +323,6 @@ on April 14, 2021.
     [chrishavlin](https://github.com/chrishavlin)<br>
   <small>
      School of Information Sciences, University of Illinois at Urbana-Champaign
-     · Funded by Grant XXXXXXX
   </small>
 
 + **Stephanie Tonnesen**<br>

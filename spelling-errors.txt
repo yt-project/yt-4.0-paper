@@ -10,7 +10,7 @@ Bili
 binarily
 Bitbucket
 Bitwise
-bool
+Bool
 Borro
 Britton
 brittonsmith
@@ -22,7 +22,7 @@ chrishavlin
 chummels
 Clément
 codebase
-comoving
+Comoving
 connectedness
 coord
 Coords
@@ -37,7 +37,7 @@ dataframe
 datapoint
 dataset
 dataset’s
-datasets
+Datasets
 d’Azur
 decomp
 dimensionality
@@ -49,7 +49,7 @@ Enzo
 EWAH
 EWAHBoolArray
 filesystem
-Frontend
+frontend
 geosciences
 Goldbaum
 gridded
@@ -99,10 +99,10 @@ ngoldbaum
 njgoldbaum
 nosetests
 NumFOCUS
-NumPy
+numpy
 Observatoire
 octree
-octrees
+Octrees
 octs
 Orf
 Ortho
@@ -119,7 +119,7 @@ Powderday
 powersoffour
 proj
 pytest
-Quadtree
+quadtree
 radiative
 rasterizers
 README
@@ -161,7 +161,6 @@ WebAssembly
 Widgyts
 Xarthisius
 XXXX
-XXXXXXX
 XXXXXXXX
 yournamehere
 YTArray
@@ -172,6 +171,6 @@ YTQuadTreeProj
 YTQuantity
 ytree
 Yu
-Zingale
+zingale
 zorder
 ZuHone
