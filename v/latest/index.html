@@ -190,9 +190,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/f5ef32750c3222d2fc97a189fb33ea3925b4ab27/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/f5ef32750c3222d2fc97a189fb33ea3925b4ab27/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/f5ef32750c3222d2fc97a189fb33ea3925b4ab27/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/4f74a2abdcb5d00f7efb3cfb2713b4ebaf5e5b90/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/4f74a2abdcb5d00f7efb3cfb2713b4ebaf5e5b90/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/4f74a2abdcb5d00f7efb3cfb2713b4ebaf5e5b90/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -222,9 +222,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-4.0-paper/v/f5ef32750c3222d2fc97a189fb33ea3925b4ab27/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-4.0-paper/v/4f74a2abdcb5d00f7efb3cfb2713b4ebaf5e5b90/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-4.0-paper/tree/f5ef32750c3222d2fc97a189fb33ea3925b4ab27">yt-project/yt-4.0-paper@f5ef327</a>
+from <a href="https://github.com/yt-project/yt-4.0-paper/tree/4f74a2abdcb5d00f7efb3cfb2713b4ebaf5e5b90">yt-project/yt-4.0-paper@4f74a2a</a>
 on April 21, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -526,12 +526,12 @@ Because so much of <code>yt</code> is focused on computing analysis results, and
 The workflow for code review roughly follows this outline:</p>
 <ol type="1">
 <li>A pull request is issued. When a new pull request is issued, a template is provided that includes a description of the change, requesting information about its compliance with coding standards, etc.</li>
-<li>The label “triage” is automatically applied, and removed when a team member applies the correct component label.</li>
-<li>Code is reviewed, line-by-line, and suggestions made for either stylistic or algorithmic reasons.</li>
-<li>This process is iterated, ensuring that tests, style and accuracy are maintained.</li>
+<li>The pull request is automatically marked as unmergeable until a team member applies the correct component label.</li>
+<li>Code is reviewed, line-by-line, and suggestions are made by humans. Code linting is automated.</li>
+<li>This process is iterated, ensuring that tests, results accuracy and coding standards are maintained.</li>
 </ol>
 <p>One increasing issue with the code review process is ensuring that changes are reviewed with appropriate urgency; larger pull requests tend to languish without review, as the requirements for review necessarily add burden to the maintainers.
-“Bugfix” changes formally require only one reviewer, whereas the <code>yt</code> guidelines suggest that larger changes require review from three different team members.</p>
+“Bugfix” changes formally require only one reviewer, whereas the <code>yt</code> guidelines suggest that larger changes require review from two different team members.</p>
 <h3 id="sec:ytep">YTEP Process</h3>
 <p>YTEPs, or “<code>yt</code>-enhancement proposal” are vehicles for collaborative decision-making in the project.
 Implemented shortly after the first paper on <code>yt</code> was released, the YTEP process experienced a fairly pronounced period of usage during the transition between versions 2.0 and 3.0 of <code>yt</code>, and has since been utilized considerably less.
