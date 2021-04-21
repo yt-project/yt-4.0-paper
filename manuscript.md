@@ -119,9 +119,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/f5ef32750c3222d2fc97a189fb33ea3925b4ab27/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/f5ef32750c3222d2fc97a189fb33ea3925b4ab27/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/f5ef32750c3222d2fc97a189fb33ea3925b4ab27/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/4f74a2abdcb5d00f7efb3cfb2713b4ebaf5e5b90/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/4f74a2abdcb5d00f7efb3cfb2713b4ebaf5e5b90/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/4f74a2abdcb5d00f7efb3cfb2713b4ebaf5e5b90/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,9 +143,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/f5ef32750c3222d2fc97a189fb33ea3925b4ab27/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/4f74a2abdcb5d00f7efb3cfb2713b4ebaf5e5b90/))
 was automatically generated
-from [yt-project/yt-4.0-paper@f5ef327](https://github.com/yt-project/yt-4.0-paper/tree/f5ef32750c3222d2fc97a189fb33ea3925b4ab27)
+from [yt-project/yt-4.0-paper@4f74a2a](https://github.com/yt-project/yt-4.0-paper/tree/4f74a2abdcb5d00f7efb3cfb2713b4ebaf5e5b90)
 on April 21, 2021.
 </em></small>
 
@@ -517,12 +517,12 @@ Code review in `yt` is conducted on a line-by-line basis, as well as on a higher
 The workflow for code review roughly follows this outline:
 
  1. A pull request is issued.  When a new pull request is issued, a template is provided that includes a description of the change, requesting information about its compliance with coding standards, etc.
- 2. The label "triage" is automatically applied, and removed when a team member applies the correct component label.
- 3. Code is reviewed, line-by-line, and suggestions made for either stylistic or algorithmic reasons.
- 4. This process is iterated, ensuring that tests, style and accuracy are maintained.
+ 2. The pull request is automatically marked as unmergeable until a team member applies the correct component label.
+ 3. Code is reviewed, line-by-line, and suggestions are made by humans. Code linting is automated.
+ 4. This process is iterated, ensuring that tests, results accuracy and coding standards are maintained.
 
 One increasing issue with the code review process is ensuring that changes are reviewed with appropriate urgency; larger pull requests tend to languish without review, as the requirements for review necessarily add burden to the maintainers.
-"Bugfix" changes formally require only one reviewer, whereas the `yt` guidelines suggest that larger changes require review from three different team members.
+"Bugfix" changes formally require only one reviewer, whereas the `yt` guidelines suggest that larger changes require review from two different team members.
 
 ### YTEP Process {#sec:ytep}
 

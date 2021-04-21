@@ -9,7 +9,7 @@ backporting
 Bili
 binarily
 Bitbucket
-bitwise
+Bitwise
 bool
 Borro
 Britton
@@ -145,7 +145,7 @@ subclasses
 Suoqing
 Supercomputing
 susbtantial
-sympy
+SymPy
 sympy’s
 TBD
 Tbytes
@@ -156,6 +156,7 @@ unitful
 unitless
 UnitRegistry
 Université
+unmergeable
 unsampled
 Urbana
 WebAssembly
