@@ -119,9 +119,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/4f74a2abdcb5d00f7efb3cfb2713b4ebaf5e5b90/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/4f74a2abdcb5d00f7efb3cfb2713b4ebaf5e5b90/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/4f74a2abdcb5d00f7efb3cfb2713b4ebaf5e5b90/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/10e47bf3c445f8a6f06b0ae6301fbe512216f987/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/10e47bf3c445f8a6f06b0ae6301fbe512216f987/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/10e47bf3c445f8a6f06b0ae6301fbe512216f987/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,9 +143,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/4f74a2abdcb5d00f7efb3cfb2713b4ebaf5e5b90/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/10e47bf3c445f8a6f06b0ae6301fbe512216f987/))
 was automatically generated
-from [yt-project/yt-4.0-paper@4f74a2a](https://github.com/yt-project/yt-4.0-paper/tree/4f74a2abdcb5d00f7efb3cfb2713b4ebaf5e5b90)
+from [yt-project/yt-4.0-paper@10e47bf](https://github.com/yt-project/yt-4.0-paper/tree/10e47bf3c445f8a6f06b0ae6301fbe512216f987)
 on April 21, 2021.
 </em></small>
 
@@ -462,13 +462,13 @@ The systems developed account for a number of important procedures, mostly relat
 During the Spring of 2017, development transitioned from occurring on [Bitbucket](https://bitbucket.org/yt_analysis/) to [GitHub](https://github.com/yt-project/), and the source code management system was changed from [Mercurial](https://www.mercurial-scm.org/) to [git](https://git-scm.org/).
 Development occurs through the "pull request" model, wherein changes to the codebase are made and then requested to be included in the primary repository.
 Typically, there are two branches of development, and occasionally three.  The first of these is the "stable" branch, which is much slower-paced, and typically only modified during the release periods.
-The second is that of "master" (which is the conventional term in git terminology; the corresponding mercurial term would be "default") which is where current development takes place.
-The "master" branch is meant to be for development proceeding that does not drastically disrupt usage patterns.
+The second is that of "main" (formerly "master", which is the conventional term in git terminology, and renamed in early 2021; the corresponding mercurial term would be "default") which is where current development takes place.
+The "main" branch is meant to be for development proceeding that does not drastically disrupt usage patterns.
 Occasionally, such as during the development of `yt` 4.0, a third branch is included in the primary repository.
 This development branch is open for large and potentially disruptive changes, but in order to centralize code review and developer attention it takes place there.
 For instance, during the development of `yt` 4.0, the branch `yt-4.0` was where the global mesh was removed and where the units subsystem was removed and replaced with `unyt`.
 
-This three-pronged approach generally has suited the community; the process of backporting changes from the "master" branch to the "stable" branch can be time-consuming.
+This three-pronged approach generally has suited the community; the process of backporting changes from the "main" branch to the "stable" branch can be time-consuming.
 However, balancing the needs of a community requiring stable methods for analyzing data against the ease of development suggests that this is a toll worth paying.
 
 In general, the development of `yt` is reasonably top-heavy, with the majority of contributions coming from a core group of individuals.
@@ -575,7 +575,6 @@ Below, we include a table of current YTEPs as of this writing.
 | 1000     | GitHub Migration                                      | March 25, 2017     | Lots of folks                                                       |
 | 1776     | Team Infrastructure                                   | August 24, 2014    | Britton Smith                                                       |
 | 3000     | Let's all start using yt 3.0!                         | October 30, 2013   | Matthew Turk                                                        |
-
 
 
 ## Indexing and Geometry

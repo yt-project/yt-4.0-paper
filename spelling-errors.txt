@@ -9,8 +9,8 @@ backporting
 Bili
 binarily
 Bitbucket
-Bitwise
-bool
+bitwise
+Bool
 Borro
 Britton
 brittonsmith
@@ -24,7 +24,7 @@ Clément
 codebase
 Comoving
 connectedness
-coord
+Coord
 Coords
 Corentin
 Côte
@@ -102,8 +102,8 @@ NumFOCUS
 numpy
 Observatoire
 octree
-octrees
-octs
+Octrees
+Octs
 Orf
 Ortho
 parallelize
@@ -111,7 +111,7 @@ performant
 pipelined
 pipelining
 pixelization
-Pixelizers
+pixelizers
 pixelizes
 Pixelizing
 PlotCollection
@@ -119,14 +119,14 @@ Powderday
 powersoffour
 proj
 pytest
-quadtree
+Quadtree
 radiative
 rasterizers
 README
 recomputation
 recursed
 reinstrumented
-Resampling
+resampling
 Rosen
 Rudd
 runtime
@@ -145,7 +145,7 @@ subclasses
 Suoqing
 Supercomputing
 susbtantial
-SymPy
+sympy
 sympy’s
 TBD
 Tbytes
@@ -173,6 +173,6 @@ YTQuadTreeProj
 YTQuantity
 ytree
 Yu
-zingale
+Zingale
 zorder
 ZuHone
