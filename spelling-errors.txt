@@ -9,8 +9,8 @@ backporting
 Bili
 binarily
 Bitbucket
-Bitwise
-Bool
+bitwise
+bool
 Borro
 Britton
 brittonsmith
@@ -37,7 +37,7 @@ dataframe
 datapoint
 dataset
 dataset’s
-Datasets
+datasets
 d’Azur
 decomp
 dimensionality
@@ -102,7 +102,7 @@ NumFOCUS
 numpy
 Observatoire
 octree
-Octrees
+octrees
 octs
 Orf
 Ortho
@@ -111,7 +111,7 @@ performant
 pipelined
 pipelining
 pixelization
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 PlotCollection
@@ -126,7 +126,8 @@ README
 recomputation
 recursed
 reinstrumented
-resampling
+Resampling
+Rosen
 Rudd
 runtime
 scalability
@@ -165,7 +166,7 @@ XXXXXXXX
 yournamehere
 YTArray
 ytdata
-ytep
+YTEP
 YTEPs
 YTQuadTreeProj
 YTQuantity

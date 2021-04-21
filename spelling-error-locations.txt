@@ -58,6 +58,8 @@ content/15.development_procedure.md:88:Kowalik
 content/15.development_procedure.md:90:AMRKDTree
 content/15.development_procedure.md:90:Skillman
 content/15.development_procedure.md:91:Hummels
+content/15.development_procedure.md:92:Goldbaum
+content/15.development_procedure.md:92:Rosen
 content/15.development_procedure.md:93:Britton
 content/15.development_procedure.md:93:Hummels
 content/15.development_procedure.md:93:Yu
@@ -81,8 +83,10 @@ content/15.development_procedure.md:112:Goldbaum
 content/15.development_procedure.md:112:octree
 content/15.development_procedure.md:113:Goldbaum
 content/15.development_procedure.md:114:ZuHone
-content/15.development_procedure.md:115:Clément
-content/15.development_procedure.md:117:Britton
+content/15.development_procedure.md:115:Coughlin
+content/15.development_procedure.md:115:pytest
+content/15.development_procedure.md:116:Clément
+content/15.development_procedure.md:118:Britton
 content/17.geometry_and_indexing.md:3:datasets
 content/17.geometry_and_indexing.md:5:datasets
 content/17.geometry_and_indexing.md:7:dataset

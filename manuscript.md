@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2021-04-14'
+date-meta: '2021-04-21'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -38,8 +38,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2021-04-14" />
-  <meta name="citation_publication_date" content="2021-04-14" />
+  <meta name="dc.date" content="2021-04-21" />
+  <meta name="citation_publication_date" content="2021-04-21" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -119,9 +119,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/1300ade67ba036e1f5b99d24f075b7fc3b35dc7d/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/1300ade67ba036e1f5b99d24f075b7fc3b35dc7d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/1300ade67ba036e1f5b99d24f075b7fc3b35dc7d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/f5ef32750c3222d2fc97a189fb33ea3925b4ab27/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/f5ef32750c3222d2fc97a189fb33ea3925b4ab27/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/f5ef32750c3222d2fc97a189fb33ea3925b4ab27/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,10 +143,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/1300ade67ba036e1f5b99d24f075b7fc3b35dc7d/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/f5ef32750c3222d2fc97a189fb33ea3925b4ab27/))
 was automatically generated
-from [yt-project/yt-4.0-paper@1300ade](https://github.com/yt-project/yt-4.0-paper/tree/1300ade67ba036e1f5b99d24f075b7fc3b35dc7d)
-on April 14, 2021.
+from [yt-project/yt-4.0-paper@f5ef327](https://github.com/yt-project/yt-4.0-paper/tree/f5ef32750c3222d2fc97a189fb33ea3925b4ab27)
+on April 21, 2021.
 </em></small>
 
 ## Authors
@@ -540,14 +540,14 @@ Below, we include a table of current YTEPs as of this writing.
 |----------|-------------------------------------------------------|--------------------|---------------------------------------------------------------------|
 | 0001     | IO Chunking                                           | November 26, 2012  | Matthew Turk                                                        |
 | 0002     | Profile Plotter                                       | December 5, 2012   | Matthew Turk                                                        |
-| 0003     | Standardizing field names                             | December 11, 2012  | Casey Stark, Nathan Goldbaum, Matt Turk                             |
+| 0003     | Standardizing field names                             | December 11, 2012  | Casey Stark, Nathan Goldbaum, Matthew Turk                          |
 | 0005     | Octrees for Fluids and Particles                      | December 24, 2012  | Matthew Turk                                                        |
 | 0006     | Periodicity                                           | January 10, 2013   | Matthew Turk, Nathan Goldbaum                                       |
 | 0007     | Automatic Pull Requests' validation                   | February 21, 2013  | Kacper Kowalik                                                      |
 | 0008     | Release Schedule                                      | February 21, 2013  | Matthew Turk                                                        |
 | 0009     | AMRKDTree for Data Sources                            | February 28, 2012  | Sam Skillman                                                        |
 | 0010     | Refactoring for Volume Rendering and Movie Generation | March 3, 2013      | Cameron Hummels                                                     |
-| 0011     | Symbol units in yt                                    | March 7, 2013      |                                                                     |
+| 0011     | Symbol units in yt                                    | March 7, 2013      | Nathan Goldbaum, Casey Stark, Anna Rosen, Matthew Turk              |
 | 0012     | Halo Redesign                                         | March 7, 2013      | Britton Smith, Cameron Hummels, Chris Moody, Mark Richardson, Yu Lu |
 | 0013     | Deposited Particle Fields                             | April 25, 2013     | Chris Moody, Matthew Turk, Britton Smith, Doug Rudd, Sam Leitner    |
 | 0014     | Field Filters                                         | July 2nd, 2013     | Matthew Turk                                                        |
@@ -569,8 +569,9 @@ Below, we include a table of current YTEPs as of this writing.
 | 0031     | Unstructured Mesh                                     | December 18, 2014  | Matthew Turk                                                        |
 | 0032     | Removing the global octree mesh for particle data     | February 9 2017    | Nathan Goldbaum, Meagan Lang, Matthew Turk                          |
 | 0033     | Dropping Python2 Support                              | November 28, 2017  | Nathan Goldbaum                                                     |
-| 0034     | yt FITS Image Standard                                | September 9, 2018  | John ZuHone 
-| 0037     | Code Styling                                          | May 18, 2020       | Clément Robert                                                       |
+| 0034     | yt FITS Image Standard                                | September 9, 2018  | John ZuHone                                                         |
+| 0036     | Migrating from nose to pytest                         | September 30, 2019 | Jared Coughlin                                                      |
+| 0037     | Code Styling                                          | May 18, 2020       | Clément Robert                                                      |
 | 1000     | GitHub Migration                                      | March 25, 2017     | Lots of folks                                                       |
 | 1776     | Team Infrastructure                                   | August 24, 2014    | Britton Smith                                                       |
 | 3000     | Let's all start using yt 3.0!                         | October 30, 2013   | Matthew Turk                                                        |
