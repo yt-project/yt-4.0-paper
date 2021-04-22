@@ -190,9 +190,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/4f566248179caaff56da3046112b36c4bcff4b2e/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/4f566248179caaff56da3046112b36c4bcff4b2e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/4f566248179caaff56da3046112b36c4bcff4b2e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/138396894b06824b53a98373c76f200f28ceade6/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/138396894b06824b53a98373c76f200f28ceade6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/138396894b06824b53a98373c76f200f28ceade6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -222,9 +222,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-4.0-paper/v/4f566248179caaff56da3046112b36c4bcff4b2e/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-4.0-paper/v/138396894b06824b53a98373c76f200f28ceade6/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-4.0-paper/tree/4f566248179caaff56da3046112b36c4bcff4b2e">yt-project/yt-4.0-paper@4f56624</a>
+from <a href="https://github.com/yt-project/yt-4.0-paper/tree/138396894b06824b53a98373c76f200f28ceade6">yt-project/yt-4.0-paper@1383968</a>
 on April 22, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -439,13 +439,13 @@ This is the crowning achievement of development, as we have attempted to build <
 <h3 id="composition">Composition</h3>
 <p>There are several rough categories of individuals engaged in development and utilization of <code>yt</code>.
 As a result of its API-first design, there are few if any individuals who use <code>yt</code> that do not do so through the scripting interface; this means that the vast (if not exclusive) majority of individuals who interact with the functionality in <code>yt</code> are doing so by writing their own scripts, modules, and code, and arguably engaging in a value-added development process of their own.
-The majority of individuals using <code>yt</code> at present are in astronomy and astrophysics, typically fields of simulation, although there is an increasing group of individuals from other domains that are participating in development and using <code>yt</code> for their own domain-specific problems.</p>
+The majority of individuals using <code>yt</code> at present are in astronomy and astrophysics, typically fields of simulation, although representatives from other domains are increasingly participating in development and using yt for their own domain-specific problems</p>
 <p>Making the distinction somewhat more clearly, there are individuals who have built their own scripts and utilized them as well as individuals who have contributed changes or modules to the primary <code>yt</code> codebase.
 In addition, there is an emerging set of projects that build on <code>yt</code> as infrastructure to conduct scientific analysis.
 These developers are largely driven by their own pragmatic scientific needs, and they constitute the majority of developers (by number) that contribute to the code base.
 The majority of these individuals are early- to mid-career researchers, typically graduate students, postdocs, and assistant professors.</p>
 <p>In recent years, there has emerged a more coherent contingency of individuals who participate in both pragmatically-focused development of modules and functionality for their own benefit as well as modules or overall improvement that is supplemental or even external to their own research agenda.
-These improvements include improvements to the unit handling, to the plotting code, to infrastructure for loading disparate datasets, and so on.
+Sections of the code base receiving such improvements include unit handling, plotting code, infrastructure for loading disparate datasets, and so on.
 At this time we do not know of any individuals funded to work on <code>yt</code> completely independent of a scientific or scholarly goal.</p>
 <p>The composition of the community, particularly with a mixture of timelines for goal-setting and completion, can at times cause frustrations and difficulties.
 For instance, the response to “Can this feature be implemented?” often includes an invitation for the questioner to collaborate on developing that feature and submitting it to the codebase.
@@ -517,7 +517,7 @@ Like in the example above, the “momentum” field for a fixed set of values sh
 For processes like surface extraction, this might include ensuring that fixed radii extraction produce the correct spherical region.
 For streamlines, it might include computing the analytical solution to an integration along a known vector field.
 And for projections, it would mean that integrating the path with a weight of “one” should result in a uniform set of values equal to the path length across the domain.</p>
-<p>At present, the unit tests in <code>yt</code> take a considerable amount of time to run, and are using the nosetests framework. Modern python practice is to use the newer pytest framework, and efforts are underway to port <code>yt</code> to utilize pytest, and in the process, attempt to reduce overall runtime.</p>
+<p>At present, the unit tests in <code>yt</code> take a considerable amount of time to run, and are using the nosetests framework. Modern Python practice is to use the newer pytest framework, and efforts are underway to port <code>yt</code> to utilize pytest, and in the process, attempt to reduce overall runtime.</p>
 <h3 id="sec:answer_testing">Answer Testing</h3>
 <p>The most time-consuming part of the testing process is what we refer to as “answer testing.”
 Because so much of <code>yt</code> is focused on computing analysis results, and because some of these analysis results simultaneously depend on specific IO routines, selection routines, and many “frontend-specific” pieces of code, we have built a system for ensuring that for a given set of analysis operations, the result of a set of operations does not change beyond a fixed (typically quite small) tolerance.</p>
@@ -839,7 +839,7 @@ While these are representative of the most common spatial representations, addit
 </tr>
 <tr class="even">
 <td>Cylindrical polar coordinates</td>
-<td>$r, z, $</td>
+<td><span class="math inline">\(r, \theta \in [0, 2 \pi], z\)</span></td>
 </tr>
 <tr class="odd">
 <td>Spherical coordinates</td>
@@ -881,7 +881,7 @@ This system is designed to allow for having leaf nodes of varying cells-per-side
 However, the number of nodes is fixed at 8, with subdivision always occurring at the midplane.</p>
 <p>The final mechanism by which data is selected is for discrete data points, typically particles in astrophysical simulations.
 At present, this is done by first identifying which data files intersect with a given selector, then selecting individual points.
-There is no hierarchical data selection conducted in this system, as we do not yet allow for re-ordering of data on disk or in-memory which would facilitate hierarchical selection through the use of operations such as morton indices.</p>
+There is no hierarchical data selection conducted in this system, as we do not yet allow for re-ordering of data on disk or in-memory which would facilitate hierarchical selection through the use of operations such as Morton indices.</p>
 <h3 id="selection-routines">Selection Routines</h3>
 <p>Given these set of hierarchical selection methods, all of which are designed to provide opportunities for early-termination, each <em>geometric</em> selector object is required to implement a small set of methods to expose its functionality to the hierarchical selection process.
 Duplicative functions often result from attempts to avoid expensive calculations that take into account boundary conditions such as periodicity and reflectivity unless necessary.
@@ -897,7 +897,7 @@ Additionally, by providing some routines as options, we can in some instances sp
 <p>We demonstrate a handful of selection operations on a low-resolution dataset below.
 In Figure <a href="#fig:reg2">2</a> we illustrate the selection of a rectangular prism (i.e., a <code>region</code>, like in Section [sec:dobj-region].
 In Figure <a href="#fig:sp2">3</a>, we illustrate the selection of a sphere (i.e., a <code>sphere</code>, like in Section [sec:dobj-sphere].
-And, to demonstrate the ability of yt to construct boolean selectors from these objects (i.e., Section [sec:dobj-bool] we show what the logical <code>NOT</code> of these two objects would produce in <a href="#fig:reg2_not_sp2">4</a>.</p>
+And, to demonstrate yt’s ability to construct boolean selectors from these objects (i.e., Section [sec:dobj-bool] we show what the logical <code>NOT</code> of these two objects would produce in <a href="#fig:reg2_not_sp2">4</a>.</p>
 <div id="fig:reg2" class="fignos">
 <figure>
 <img src="images/selectors/reg2.svg" alt="" /><figcaption><span>Figure 2:</span> A selection of data in a low-resolution simulation from a rectangular prism.</figcaption>
@@ -910,7 +910,7 @@ And, to demonstrate the ability of yt to construct boolean selectors from these 
 </div>
 <div id="fig:reg2_not_sp2" class="fignos">
 <figure>
-<img src="images/selectors/reg2_not_sp2.svg" alt="" /><figcaption><span>Figure 4:</span> The logical <code>NOT</code> of the regions from Figures <a href="#fig:reg2">2</a> and <a href="#fig:sp2">3</a>.</figcaption>
+<img src="images/selectors/reg2_not_sp2.svg" alt="" /><figcaption><span>Figure 4:</span> The logical <code>A AND NOT B</code> for regions <code>A</code> and <code>B</code> from Figures <a href="#fig:reg2">2</a> and <a href="#fig:sp2">3</a> respectively.</figcaption>
 </figure>
 </div>
 <h3 id="fast-and-slow-paths">Fast and Slow Paths</h3>
@@ -1364,7 +1364,7 @@ Analysis of grid-based data is the most frequent application of <code>yt</code>.
 While we discuss much of the techniques implemented for datasets consisting of multiple, potentially overlapping grids, <code>yt</code> also supports single-grid datasets (such as FITS cubes) and is able to decompose them for parallel analysis.</p>
 <p><code>yt</code> also supports other grid patch codes <strong>insert list here</strong></p>
 <p><code>yt</code> supports several different “features” of patch-based codes.
-These include grids that span multiple parent objects, grids that overlap with coarser data (i.e., AMR), grids that overlap with other grids that provide the same level of resolution of data (i.e., grids at the same AMR level), refinement factors that vary based on level, and edge- and vertex-centered data.
+These include grids that span multiple parent objects, grids that overlap with coarser data (i.e., AMR), grids that overlap with other grids that provide the same level of resolution of data (i.e., grids at the same AMR level), refinement factors that vary based on level, and edge, and vertex-centered data.
 For the cases of overlapping grids (either on the same or higher refinement levels) masks are generated that indicate which data is considered authoritative.</p>
 <p>As noted in <a href="#sec:data_objects">Data Objects</a>, the process of selecting points is multi-step, starting at coarse selection that may be at the file level, and proceeding to selection of specific data points that are included in a selector.
 For grid-based data, the coarse selection stage proceeds in an extremely simple fashion, by iterating over flat arrays of left and right grid edges and creating a bitmap of the selected grids.
@@ -1374,9 +1374,9 @@ The second-stage selection occurs within individual grids, where points are sele
 In the case of cell-centered data, this returns an array of size <span class="math inline">\(N\)</span> where <span class="math inline">\(N\)</span> is the number of points selected; in the case of 3D vertex-centered data, this would be <span class="math inline">\((N,8)\)</span>.
 <strong>Andrew Myers: check this?</strong></p>
 <p>Indexing grid data in <code>yt</code> is optimized for systems of grids that tend to have larger grid patches, rather than smaller; specifically, in <code>yt</code> each grid patch consists of a Python object, which adds a bit of overhead.
-In the limit of many more cells than grid objects, this overhead is small, but in cases where the number of grids is <span class="math inline">\(O(10^7)\)</span> this can become prohibitive.
+In the limit of many more cells than grid objects, this overhead is small, but in cases where the number of grids is <span class="math inline">\(\sim 10^7\)</span> this can become prohibitive.
 These cases are becoming more common even for medium-scale simulations.</p>
-<p>To address both the memory overhead and the python overhead, as well as more generally address potential scalability issues with grid selection, several tentative explorations have been made into an implementation of a more sophisticated “grid visitors” indexing and selection method, drawing on the approach used by the oct-visitors (described <a href="#sec:octree_analysis">below</a>).
+<p>To address both the memory overhead and the Python overhead, as well as more generally address potential scalability issues with grid selection, several tentative explorations have been made into an implementation of a more sophisticated “grid visitors” indexing and selection method, drawing on the approach used by the oct-visitors (described <a href="#sec:octree_analysis">below</a>).
 These were an attempt to unify the selection methods between octrees and grids, to reduce the overall code duplication and implementation overhead.
 Each process – selection, copying of data, generation of coordinates – is represented by an instance of a <code>GridVisitor</code> object.
 The tree is recursively traversed, and for all selected points the object is called.
@@ -1388,10 +1388,10 @@ A spatial tree is constructed, wherein parent/child relationships are establishe
 <h3 id="sec:octree_analysis">Octree Analysis</h3>
 <p><code>yt</code> supports octree-based AMR datasets (primarily RAMSES and ART, but also the output from the octree-based radiative transfer code Hyperion).
 <code>yt</code> stores a copy of the octree using a pointer-based approach, where each oct points to its eight children (if refined).
-The octs living at the coarsest level of the simulation are stored as a uniform grid. For domain-decomposed datasets, each domain is represented as a sparse octree, where the root octs are stored as a list and efficiently accessed using a binary search, ensuring each root oct is found in <span class="math inline">\(O(log(N))\)</span> time, where <span class="math inline">\(N\)</span> is the number of root octs in the domain.
+The octs living at the coarsest level of the simulation are stored as a uniform grid. For domain-decomposed datasets, each domain is represented as a sparse octree, where the root octs are stored as a list and efficiently accessed using a binary search, ensuring each root oct is found in <span class="math inline">\(O(\log(N))\)</span> time, where <span class="math inline">\(N\)</span> is the number of root octs in the domain.
 Each oct is represented as structure that contains the on-file location of the oct (<code>file_ind</code>) and its in-memory location (<code>domain_ind</code>), the index of the domain it belongs to (<code>domain</code>) and a list of pointers to its children (up to eight in 3D). This requires at most 88 bytes per oct.</p>
 <p>In order to load data within a given region, a two-step approach is followed.
-First, the cells interesting with the region of interest, as described in <a href="#sec:data_objects">Data Objects</a> are selected. <code>yt</code> relies on an oct-visitor machinery combined with selection routines.
+First, the cells within the region of interest, as described in <a href="#sec:data_objects">Data Objects</a> are selected. <code>yt</code> relies on an oct-visitor machinery combined with selection routines.
 The tree is recursively traversed depth-first starting from the root grid, following only those branches that may intersect with the selected region.
 At the tip of each branch, the up-to-eight leaf cells are visited.
 In a first pass, the number of selected cells is computed and in a second pass, the on-file location of their parent oct is stored.
@@ -1410,7 +1410,8 @@ The procedure is easily generalized in 3D.</figcaption>
 </div>
 <div id="fig:octree-gradient" class="fignos">
 <figure>
-<embed src="images/octree/gradient_computation.pdf" /><figcaption><span>Figure 6:</span> Scheme of the AMR structure used to estimate the gradient of a quantity in the central oct (red). Octs are represented in thick lines, cells in thin lines and virtual cells in dashed lines. <em>Left panel:</em> The virtual cell values on a <span class="math inline">\(4^3\)</span> grid are interpolated from the nearest cell in the AMR grid. If the nearest cell is at the same level, its value is directly used. If the cell is at a coarser level, its value is directly used (for example <span class="math inline">\(f_{31}\)</span> and <span class="math inline">\(f_{32}\)</span> have the value of the green cell). If the cell is refined, the mean of its children is used (for example <span class="math inline">\(f_{20}\)</span> is the mean of all the blue cells). <em>Right panel:</em> Gradients are estimated using a first-order finite difference centered scheme on the <span class="math inline">\(4^3\)</span> virtual cells.</figcaption>
+<embed src="images/octree/gradient_computation.pdf" /><figcaption><span>Figure 6:</span> Scheme of the AMR structure used to estimate the gradient of a quantity in the central oct (red). Octs are represented in thick lines, cells in thin lines and virtual cells in dashed lines. <em>Left panel:</em> The virtual cell values on a <span class="math inline">\(4^3\)</span> grid are interpolated from the nearest cell in the AMR grid. If the nearest cell is at the same (or coarser) level, its value is used directly. Note that virtual cells <span class="math inline">\(f_{31}\)</span> and <span class="math inline">\(f_{32}\)</span> have the value of the the actual coarser cell (green). If the cell is refined, the mean of its children is used (for example <span class="math inline">\(f_{20}\)</span> is the mean of all the blue cells). <em>Right panel:</em> Gradients are estimated using a first-order finite difference centered scheme on the <span class="math inline">\(4^3\)</span> virtual cells, here illustrated for a gradient along the <span class="math inline">\(x\)</span> direction.
+<strong>NOTE: the blue cell should be used in the example (for instance make it the <span class="math inline">\(f_{01}\)</span> cell, rather than the <span class="math inline">\(f_{20}\)</span> one since the <span class="math inline">\(y\)</span> direction ends up not being used in the actual computation</strong></figcaption>
 </figure>
 </div>
 <h3 id="sph-analysis">SPH Analysis</h3>
@@ -1484,7 +1485,8 @@ As seen in panel (a) of Figure <a href="#fig:zorder">11</a>, ordering of the cel
 <div id="fig:zorder" class="fignos">
 <figure>
 <img src="images/bitmap/zorder.png" alt="" /><figcaption><span>Figure 11:</span> Example of 3rd order Morton curve in two dimensions.
-The bits of the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> indices are interleaved to generate a single integer that fully describes the cell’s location within the two-dimensional domain to within <span class="math inline">\(1/2^{3}\)</span>th of the domain in each dimension.</figcaption>
+The bits of the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> indices are interleaved to generate a single integer that fully describes the cell’s location within the two-dimensional domain to within <span class="math inline">\(1/2^{3}\)</span>th of the domain in each dimension.
+<strong>NOTE: wouldn’t it make more sense to write <span class="math inline">\(y\)</span> and <span class="math inline">\(x\)</span> is this order, so that the interleaving could be represented with arrows without crossing them ?</strong></figcaption>
 </figure>
 </div>
 <p>The precision of a single Morton index is only limited by the size of the integer used to store it.
@@ -1497,7 +1499,7 @@ By recording the indices of the cells containing data from each file within a da
 <p>Bitmap indexes use the values of single bits within an array of bits to describe dataset properties.
 This form requires minimal memory and can be filtered using computationally inexpensive boolean operations.
 Bitmap indexes have long been popular for use with large data warehouses <span class="citation" data-cites="f1rS5tZk YV4eT8wZ DMkimxcD">[<a href="#ref-f1rS5tZk" role="doc-biblioref">12</a>,<a href="#ref-YV4eT8wZ" role="doc-biblioref">13</a>,<a href="#ref-DMkimxcD" role="doc-biblioref">14</a>]</span>.
-However, as scientific datasets have become larger and more complex, they have also begun to gain traction in a diverse array of scientific fields including geosciences <span class="citation" data-cites="itaUSTKC">[<a href="#ref-itaUSTKC" role="doc-biblioref">15</a>]</span>, earth sciences, rocket science <span class="citation" data-cites="QMaCupmb mMJ3UeWp">[<a href="#ref-QMaCupmb" role="doc-biblioref">16</a>,<a href="#ref-mMJ3UeWp" role="doc-biblioref">17</a>]</span>, high-energy physics <span class="citation" data-cites="VzYAeBg3">[<a href="#ref-VzYAeBg3" role="doc-biblioref">18</a>]</span>, and combustion <span class="citation" data-cites="AFyCFou3">[<a href="#ref-AFyCFou3" role="doc-biblioref">19</a>]</span>.</p>
+However, as scientific datasets have become larger and more complex, they have also begun to gain traction in a diverse array of scientific fields including geosciences <span class="citation" data-cites="itaUSTKC">[<a href="#ref-itaUSTKC" role="doc-biblioref">15</a>]</span>, earth sciences <em>TODO: insert citation here ?</em>, rocket science <span class="citation" data-cites="QMaCupmb mMJ3UeWp">[<a href="#ref-QMaCupmb" role="doc-biblioref">16</a>,<a href="#ref-mMJ3UeWp" role="doc-biblioref">17</a>]</span>, high-energy physics <span class="citation" data-cites="VzYAeBg3">[<a href="#ref-VzYAeBg3" role="doc-biblioref">18</a>]</span>, and combustion <span class="citation" data-cites="AFyCFou3">[<a href="#ref-AFyCFou3" role="doc-biblioref">19</a>]</span>.</p>
 <p>In cases where data attributes can take on a finite set of values, one bitmap is constructed for each possible attribute value.
 Within the bitmap each bit specifies whether or not the corresponding data point has that value.
 In this way, queries for data with a single attribute value require consulting only one bitmap and queries of multiple attributes/values can be done using boolean AND operations on the corresponding bitmaps.
@@ -1543,7 +1545,8 @@ Figure <a href="#fig:collision_files">13</a> shows an example of collisions for 
 <figure>
 <img src="images/bitmap/index.png" alt="" /><figcaption><span>Figure 13:</span> Examples of collisions for four different domain partitioning schemes.
 The heavy black lines denote 1st order Morton cells.
-The presence of more that one file (color) within a Morton cell indicates a collision.</figcaption>
+The presence of more that one file (color) within a Morton cell indicates a collision.
+<strong>NOTE: from an accessibility standpoint, I must note that using a smooth color gradient may be counter productive for colorblind readers as it makes it a lot harder to perveice that neighbouring regions belong to different files.</strong></figcaption>
 </figure>
 </div>
 <p>For the random domain partition in panel (a), every cell within a 1st order Morton index will contain data from all 8 files.
@@ -1561,7 +1564,8 @@ Figure <a href="#fig:ghosts">14</a> shows an example of a ghost zone around the 
 <figure>
 <img src="images/bitmap/ghosts.png" alt="" /><figcaption><span>Figure 14:</span> Examples of a selector ghost zone with a width of one Morton cell at an index order of 3 for four different domain partitioning schemes.
 The shaded circular region is the selector and the shaded box is the ghost zone.
-Different partitioning schemes will lead to different numbers of ghost files.</figcaption>
+Different partitioning schemes will lead to different numbers of ghost files.
+<strong>NOTE: same as figure 13</strong></figcaption>
 </figure>
 </div>
 <p>The ghost zone has a width of one Morton cell at an index order of 3 and contains the same part of the domain in each case.
@@ -1591,7 +1595,7 @@ that cell.</p></li>
 indices, refined indices, and collisions are saved to an external
 index file.</p></li>
 </ol>
-<p>For large datasets and/or high levels of refinement, this can be a time consuming process; fortunately, it must only be done once.
+<p>For large datasets and/or high levels of refinement, this can be a time consuming process; however, it must only be done once.
 For future selections, the bitmap can be quickly loaded and used to identify files in less time than would be required to load and query each file within the dataset individually.
 Selection using a loaded bitmap goes as follows:</p>
 <ol type="1">
@@ -1639,7 +1643,8 @@ The test dataset was split across the files using a Hilbert curve of order 6 wit
 <img src="images/bitmap/vary_order1_or0.png" alt="" /><figcaption><span>Figure 15:</span> Dependence of query time (top), fraction of files selected/cells with collisions (middle), and index size (bottom) on the total refinement of the bitmap index.
 The solid black lines correspond to the query times and files identified by just the selectors.
 The dashed blue lines correspond to the query times and additional files selected when a ghost zone with the width of one Morton cell is added around the selectors.
-The dash-dotted line in the middle panel shows the fraction of cells with collisions between files.</figcaption>
+The dash-dotted line in the middle panel shows the fraction of cells with collisions between files.
+<strong>NOTE: maybe this would make more sense as scatter plots ? (connecting dots to fill a continuous yet unreachable space of non-integer-limited x values seems unappropriate.</strong></figcaption>
 </figure>
 </div>
 <p>Below a bitmap index order of 4, there are collisions between multiple files within every cell, resulting in a larger number of files being identified.
@@ -1654,7 +1659,7 @@ If uncompressed bitmaps had been used instead of EWAH compressed bitmap, the mem
 <p>Increasing the refinement of the primary index does so for the entire domain and, as seen in Section [sec:test_order1], can become costly in terms of the memory required to store the bitmap and the time required to perform operations.
 However, it is also possible to increase refinement by nesting a second Morton bitmap index within those cells of the primary index that contain collisions.
 As the nested indexes will contain a smaller portion of the domain and data, they will be less complex and can be compressed more efficiently than the primary index covering the entire domain.
-This enhanced compression mean that, although a greater overall number of EWAH compressed bitmaps will need to be utilized (one for the coarse index and one for each collision within the coarse index), less space will be needed to store the bitmap and bitwise operations will be faster.
+This enhanced compression means that, although a greater overall number of EWAH compressed bitmaps will need to be utilized (one for the coarse index and one for each collision within the coarse index), less space will be needed to store the bitmap and bitwise operations will be faster.
 Figure <a href="#fig:test_order2">16</a> shows the results for adding a secondary index of varying order with the overall refinement order of the index (primary index order + secondary index order) held constant at 6.
 The test dataset and selectors applied were the same as in Section [sec:test_order1].</p>
 <div id="fig:test_order2" class="fignos">
@@ -1672,12 +1677,12 @@ Above 2nd order, the overhead from storing and accessing more complex EWAH compr
 However, selections using higher order secondary indices still require less time than in the case where only a single index is used.</p>
 <p>The optimal value for the orders of the first and second indexes will depend upon the dataset in question.
 The density of data points within the test dataset used here is relatively uniform throughout the domain and does not need a high level of refinement at collisions.
-However, if a data set were less uniform with concentrations of points, the optimal order of the second index for performance may be higher.</p>
+However, if a datasetwere less uniform with concentrations of points, the optimal order of the second index for performance may be higher.</p>
 <h4 id="sec:test_size">Selector Size</h4>
 <p>The time required to identify files touched by a selection will also depend upon the size of the region being selected.
 Larger selectors will intersect more indices and more files, resulting in more bitmap operations.
 Figure <a href="#fig:test_size">17</a> shows the result from varying the selector size.
-The same test data set from Section [sec:test_order] was used.
+The same test datasetfrom Section [sec:test_order] was used.
 A bitmap index with a 4th order primary Morton index and 2nd order secondary Morton index was used in all cases.
 Each cube selector was placed at the center of the domain and scaled along each dimension to some fraction of the total domain.</p>
 <div id="fig:test_size" class="fignos">
@@ -1708,7 +1713,8 @@ Files in the random dataset contain a random sample of points, uniformly distrib
 <div id="fig:test_decomp" class="fignos">
 <figure>
 <img src="images/bitmap/vary_decomp_to0.png" alt="" /><figcaption><span>Figure 18:</span> Dependence of query time (top), the number of files selected (middle), and the size of the index (bottom) on index order for different domain partitioning between files.
-The dotted magenta lines are for a randomly partitioned dataset, the cyan dashed-dotted lines are a dataset partitioned by equal slices alone one dimension, the dashed red lines are a dataset partitioned along an 6th order Morton curve, and the solid blue lines are a dataset partitioned along a 6th order Hilbert curve.</figcaption>
+The dotted magenta lines are for a randomly partitioned dataset, the cyan dashed-dotted lines are a dataset partitioned by equal slices alone one dimension, the dashed red lines are a dataset partitioned along an 6th order Morton curve, and the solid blue lines are a dataset partitioned along a 6th order Hilbert curve.
+<strong>NOTE: it looks like the Morton curve is almost always behind the Hilbert one. Can you use zorder to put it at the frontrow instead so that we can see both ?</strong></figcaption>
 </figure>
 </div>
 <p>Many more files are identified for the random dataset than those datasets with localized partitioning of the domain.
@@ -1735,7 +1741,8 @@ However, it can also be applied to single files by dividing the file’s content
 As in the multi-file case, the single file would need to be organized such that chunks were localized within the domain to take full advantage of the bitmaps.
 In addition, while the current implementation of this method is designed for three-dimensional spatial datasets like those produced by astrophysical simulations, the same methods can be applied to non-spatial datasets with arbitrary dimensionality.</p>
 <h3 id="sec:code">Code</h3>
-<p>These procedures have been implemented as part of the yt python package <span class="citation" data-cites="GqCvYs0n">[<a href="#ref-GqCvYs0n" role="doc-biblioref">29</a>]</span> in order to facilitate the analysis of large astrophysical N-body simulations; currently undergoing review for inclusion in a future version of yt (3.4 or later), our implementation is available at https://bitbucket.org/langmm/yt-bitmap.
+<p>These procedures have been implemented as part of the yt Python package <span class="citation" data-cites="GqCvYs0n">[<a href="#ref-GqCvYs0n" role="doc-biblioref">29</a>]</span> in order to facilitate the analysis of large astrophysical N-body simulations; currently undergoing review for inclusion in a future version of yt (4.0 or later), our implementation is available at https://bitbucket.org/langmm/yt-bitmap.
+<strong>NOTE: This use to say “3.4 or later”. Now it’s pretty clear this section is a bit dated. Hasn’t the bitmap stuff been merged by now ?</strong>
 The open source EWAHBoolArray C++ package is used for implementing EWAH bitmaps <span class="citation" data-cites="zXsFmNjY 2qfATif3">[<a href="#ref-zXsFmNjY" role="doc-biblioref">24</a>,<a href="#ref-2qfATif3" role="doc-biblioref">25</a>]</span> and exposed to Python using Cython <span class="citation" data-cites="RNeSxk82">[<a href="#ref-RNeSxk82" role="doc-biblioref">30</a>]</span>.</p>
 <h3 class="unnumbered" id="acknowledgment">Acknowledgment</h3>
 <p>The authors would like to thank Daniel Lemire for his open source EWAH implementation.
@@ -2219,7 +2226,7 @@ DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a>
 <h2 id="conclusions">Conclusions</h2>
 <h2 id="acknowledgments">Acknowledgments</h2>
 <p>The authors of this paper would like to extend their deepest gratitude to the many, many individual and institutions that have contributed, directly or indirectly, to the growth of both <code>yt</code> and the <code>yt</code> community.</p>
-<p>We particularly thank KIPAC and SLAC at Stanford, the University of California at San Diego and Santa Cruz, the High-Performance Astro Computing Center, Columbia University, the University of Illinois, University of Colorado at Boulder, University of Edinburgh, the scientific python community, NumFOCUS,</p>
+<p>We particularly thank KIPAC and SLAC at Stanford, the University of California at San Diego and Santa Cruz, the High-Performance Astro Computing Center, Columbia University, the University of Illinois, University of Colorado at Boulder, University of Edinburgh, the scientific Python community, NumFOCUS,</p>
 <!-- default theme -->
 
 <style>
