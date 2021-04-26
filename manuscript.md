@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2021-04-22'
+date-meta: '2021-04-26'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -38,8 +38,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2021-04-22" />
-  <meta name="citation_publication_date" content="2021-04-22" />
+  <meta name="dc.date" content="2021-04-26" />
+  <meta name="citation_publication_date" content="2021-04-26" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -119,9 +119,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/138396894b06824b53a98373c76f200f28ceade6/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/138396894b06824b53a98373c76f200f28ceade6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/138396894b06824b53a98373c76f200f28ceade6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/39ea65871aa4b955399c4d663b002c90a43f1016/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/39ea65871aa4b955399c4d663b002c90a43f1016/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/39ea65871aa4b955399c4d663b002c90a43f1016/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,10 +143,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/138396894b06824b53a98373c76f200f28ceade6/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/39ea65871aa4b955399c4d663b002c90a43f1016/))
 was automatically generated
-from [yt-project/yt-4.0-paper@1383968](https://github.com/yt-project/yt-4.0-paper/tree/138396894b06824b53a98373c76f200f28ceade6)
-on April 22, 2021.
+from [yt-project/yt-4.0-paper@39ea658](https://github.com/yt-project/yt-4.0-paper/tree/39ea65871aa4b955399c4d663b002c90a43f1016)
+on April 26, 2021.
 </em></small>
 
 ## Authors
@@ -1213,12 +1213,12 @@ Other optimizations are possible that trade computational time with memory, for 
 ![
 Illustration of a binary search through a quadtree. The search starts at the root level (level = 1 here) and recursively selects the quad that contains the point until reaching a leaf.
 The procedure is easily generalized in 3D.
-](images/octree/binary_tree_research_2D.pdf){#fig:binary-search}
+](images/octree/binary_tree_research_2D.svg){#fig:binary-search}
 
 ![
 Scheme of the AMR structure used to estimate the gradient of a quantity in the central oct (red). Octs are represented in thick lines, cells in thin lines and virtual cells in dashed lines. _Left panel:_ The virtual cell values on a $4^3$ grid are interpolated from the nearest cell in the AMR grid. If the nearest cell is at the same (or coarser) level, its value is used directly. Note that virtual cells $f_{31}$ and $f_{32}$ have the value of the the actual coarser cell (green). If the cell is refined, the mean of its children is used (for example $f_{20}$ is the mean of all the blue cells). _Right panel:_ Gradients are estimated using a first-order finite difference centered scheme on the $4^3$ virtual cells, here illustrated for a gradient along the $x$ direction.
 **NOTE: the blue cell should be used in the example (for instance make it the $f_{01}$ cell, rather than the $f_{20}$ one since the $y$ direction ends up not being used in the actual computation**
-](images/octree/gradient_computation.pdf){#fig:octree-gradient}
+](images/octree/gradient_computation.svg){#fig:octree-gradient}
 
 ### SPH Analysis
 

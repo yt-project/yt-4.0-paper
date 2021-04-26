@@ -9,8 +9,8 @@ backporting
 Bili
 binarily
 Bitbucket
-bitwise
-bool
+Bitwise
+Bool
 Borro
 Britton
 brittonsmith
@@ -22,9 +22,9 @@ chrishavlin
 chummels
 Clément
 codebase
-Comoving
+comoving
 connectedness
-Coord
+coord
 Coords
 Corentin
 Côte
@@ -116,7 +116,7 @@ perveice
 pipelined
 pipelining
 pixelization
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 PlotCollection
@@ -131,7 +131,7 @@ README
 recomputation
 recursed
 reinstrumented
-Resampling
+resampling
 Rosen
 Rudd
 runtime
@@ -180,6 +180,6 @@ YTQuantity
 ytree
 yt’s
 Yu
-Zingale
+zingale
 zorder
 ZuHone

@@ -24,7 +24,7 @@
   <meta name="author" content="Christopher Havlin" />
   <meta name="author" content="Stephanie Tonnesen" />
   <meta name="author" content="Add Yourself" />
-  <meta name="dcterms.date" content="2021-04-22" />
+  <meta name="dcterms.date" content="2021-04-26" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Introducing yt 4.0: Analysis and Visualization of Volumetric Data</title>
   <style>
@@ -109,8 +109,8 @@
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2021-04-22" />
-  <meta name="citation_publication_date" content="2021-04-22" />
+  <meta name="dc.date" content="2021-04-26" />
+  <meta name="citation_publication_date" content="2021-04-26" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -190,9 +190,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/138396894b06824b53a98373c76f200f28ceade6/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/138396894b06824b53a98373c76f200f28ceade6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/138396894b06824b53a98373c76f200f28ceade6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/39ea65871aa4b955399c4d663b002c90a43f1016/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/39ea65871aa4b955399c4d663b002c90a43f1016/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/39ea65871aa4b955399c4d663b002c90a43f1016/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -222,10 +222,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-4.0-paper/v/138396894b06824b53a98373c76f200f28ceade6/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-4.0-paper/v/39ea65871aa4b955399c4d663b002c90a43f1016/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-4.0-paper/tree/138396894b06824b53a98373c76f200f28ceade6">yt-project/yt-4.0-paper@1383968</a>
-on April 22, 2021.
+from <a href="https://github.com/yt-project/yt-4.0-paper/tree/39ea65871aa4b955399c4d663b002c90a43f1016">yt-project/yt-4.0-paper@39ea658</a>
+on April 26, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -1404,13 +1404,13 @@ The search is illustrated on Figure <a href="#fig:binary-search">5</a>.
 Other optimizations are possible that trade computational time with memory, for example by storing the tree as a fully-threaded structure (i.e. store pointers to the 6 neighbors sharing a face with each oct), or by starting at a central oct and searching “upwards and outwards.”</p>
 <div id="fig:binary-search" class="fignos">
 <figure>
-<embed src="images/octree/binary_tree_research_2D.pdf" /><figcaption><span>Figure 5:</span> Illustration of a binary search through a quadtree. The search starts at the root level (level = 1 here) and recursively selects the quad that contains the point until reaching a leaf.
+<img src="images/octree/binary_tree_research_2D.svg" alt="" /><figcaption><span>Figure 5:</span> Illustration of a binary search through a quadtree. The search starts at the root level (level = 1 here) and recursively selects the quad that contains the point until reaching a leaf.
 The procedure is easily generalized in 3D.</figcaption>
 </figure>
 </div>
 <div id="fig:octree-gradient" class="fignos">
 <figure>
-<embed src="images/octree/gradient_computation.pdf" /><figcaption><span>Figure 6:</span> Scheme of the AMR structure used to estimate the gradient of a quantity in the central oct (red). Octs are represented in thick lines, cells in thin lines and virtual cells in dashed lines. <em>Left panel:</em> The virtual cell values on a <span class="math inline">\(4^3\)</span> grid are interpolated from the nearest cell in the AMR grid. If the nearest cell is at the same (or coarser) level, its value is used directly. Note that virtual cells <span class="math inline">\(f_{31}\)</span> and <span class="math inline">\(f_{32}\)</span> have the value of the the actual coarser cell (green). If the cell is refined, the mean of its children is used (for example <span class="math inline">\(f_{20}\)</span> is the mean of all the blue cells). <em>Right panel:</em> Gradients are estimated using a first-order finite difference centered scheme on the <span class="math inline">\(4^3\)</span> virtual cells, here illustrated for a gradient along the <span class="math inline">\(x\)</span> direction.
+<img src="images/octree/gradient_computation.svg" alt="" /><figcaption><span>Figure 6:</span> Scheme of the AMR structure used to estimate the gradient of a quantity in the central oct (red). Octs are represented in thick lines, cells in thin lines and virtual cells in dashed lines. <em>Left panel:</em> The virtual cell values on a <span class="math inline">\(4^3\)</span> grid are interpolated from the nearest cell in the AMR grid. If the nearest cell is at the same (or coarser) level, its value is used directly. Note that virtual cells <span class="math inline">\(f_{31}\)</span> and <span class="math inline">\(f_{32}\)</span> have the value of the the actual coarser cell (green). If the cell is refined, the mean of its children is used (for example <span class="math inline">\(f_{20}\)</span> is the mean of all the blue cells). <em>Right panel:</em> Gradients are estimated using a first-order finite difference centered scheme on the <span class="math inline">\(4^3\)</span> virtual cells, here illustrated for a gradient along the <span class="math inline">\(x\)</span> direction.
 <strong>NOTE: the blue cell should be used in the example (for instance make it the <span class="math inline">\(f_{01}\)</span> cell, rather than the <span class="math inline">\(f_{20}\)</span> one since the <span class="math inline">\(y\)</span> direction ends up not being used in the actual computation</strong></figcaption>
 </figure>
 </div>
@@ -2021,7 +2021,7 @@ Connecting this to the raw, unprocessed data from the simulation (such as the un
 <div id="ref-cTN2TQIL">
 <p>1. <strong>manubot/manubot</strong> <br />
 Manubot<br />
-(2021-04-22) <a href="https://github.com/manubot/manubot">https://github.com/manubot/manubot</a></p>
+(2021-04-25) <a href="https://github.com/manubot/manubot">https://github.com/manubot/manubot</a></p>
 </div>
 <div id="ref-1GOm01ggN">
 <p>2. <strong>yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA</strong> <br />
