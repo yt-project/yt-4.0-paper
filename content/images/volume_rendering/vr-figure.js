@@ -9,6 +9,89 @@ var rayStyle = {
     strokeColor: "#00000055"
 }
 
+class RayPlane{
+
+    constructor(start, stop, Nrays) {
+        this.rays = [];
+        this.planeElement = new Path.Line(start, stop);
+        this.planeElement.strokeColor = "#000000";
+        this.planeElement.strokeWidth = 5;
+        this.c1 = new Path.Circle(start, 5);
+        this.c1.fillColor = "#000000";
+        this.c2 = new Path.Circle(stop, 5);
+        this.c2.fillColor = "#000000";
+        this.c1.onMouseDrag = this.c2.onMouseDrag = this.dragPoint.bind(this);
+        this.rayPlaneGroup = new Group([this.planeElement, this.c1, this.c2])
+        this.planeElement.onMouseDrag = this.dragPlane.bind(this);
+        for (let i = 0; i < Nrays ; i++) {
+            this.rays.push(new Ray());
+        }
+        this.updateRays();
+    }
+
+    dragPlane(event) {
+        this.rayPlaneGroup.position += event.delta;
+        this.updateRays();
+    }
+
+    dragPoint(event) {
+        event.target.position += event.delta;
+        this.planeElement.firstSegment.point = this.c1.position;
+        this.planeElement.lastSegment.point = this.c2.position;
+        this.updateRays();
+    }
+
+    updateRays() {
+        var N = this.rays.length;
+        var dt = this.planeElement.length / (N - 1);
+        this.rays.forEach( (ray, i) => {
+            var p = this.planeElement.getPointAt(i*dt);
+            var n = this.planeElement.getNormalAt(i*dt);
+            // trace their intersection
+            ray.start = p;
+            ray.stop = p + n * L;
+            ray.trace();
+        })
+    }
+}
+
+class Ray {
+    constructor() {
+        this.lineElement = new Path.Line({x: 0, y: 0}, {x: 0, y: 0});
+        this.lineElement.style = rayStyle;
+        this.intersections = new Group(); 
+        this.data = [];
+    }
+
+    set start(p) {
+        this.lineElement.firstSegment.point = p;
+    }
+
+    get start() {
+        return this.lineElement.firstSegment.point;
+    }
+
+    set stop(p) {
+        this.lineElement.lastSegment.point = p;
+    }
+
+    get stop() {
+        return this.lineElement.lastSegment.point;
+    }
+
+    trace() {
+        // This is the slowest part, which may still be OK and not too slow.
+        this.intersections.removeChildren();
+        for (const cell of bigCells.getItems({overlapping: this.lineElement.bounds})) {
+            for (const intersection of cell.getIntersections(this.lineElement)) {
+                var c = new Path.Circle(intersection.point, intersectionRadius)
+                c.style = intersectionStyle;
+                this.intersections.addChild(c);
+            }   
+        }
+    }
+}
+
 function drawGrid(origin, size, nx, ny, margin) {
     margin = margin || 0;
     var cells = [];
@@ -32,69 +115,15 @@ function drawGrid(origin, size, nx, ny, margin) {
     return cellGroup;
 }
 
-function traceRay(ray, rayData) {
-    // This is the slowest part, which may still be OK and not too slow.
-    rayData.removeChildren();
-    for (const cell of bigCells.getItems({overlapping: ray.bounds})) {
-        for (const intersection of cell.getIntersections(ray)) {
-            var c = new Path.Circle(intersection.point, intersectionRadius)
-            c.style = intersectionStyle;
-            rayData.addChild(c);
-        }   
-    }
-}
-
-function updateRays(planePath, rays, rayData) {
-    var N = rays.length;
-    dt = planePath.length / (N - 1);
-    rays.forEach( (ray, i) => {
-        var p = planePath.getPointAt(i*dt);
-        var n =planePath.getNormalAt( i * dt);
-        ray.firstSegment.point = p;
-        ray.lastSegment.point = p + n * L;
-        // trace their intersection
-        traceRay(ray, rayData[i]);
-    })
-}
-
-function drawPlane(start, stop, Nrays) {
-    var rays = [];
-    var rayData = [];
-    var plane = new Path.Line(start, stop);
-    plane.strokeColor = "#000000";
-    plane.strokeWidth = 5;
-    c1 = new Path.Circle(start, 5);
-    c1.fillColor = "#000000";
-    c2 = new Path.Circle(stop, 5);
-    c2.fillColor = "#000000";
-    c1.onMouseDrag = c2.onMouseDrag = function(event) {
-        this.position += event.delta;
-        plane.firstSegment.point = c1.position;
-        plane.lastSegment.point = c2.position;
-        updateRays(plane, rays, rayData);
-    }
-    var rayPlane = new Group([plane, c1, c2])
-    plane.onMouseDrag = function(event) {
-        rayPlane.position += event.delta;
-        updateRays(plane, rays, rayData);
-    }
-    for (let i = 0; i < Nrays ; i++) {
-        var r = new Path.Line({x: 0, y: 0}, {x: 0, y: 0});
-        r.style = rayStyle;
-        rays.push(r);
-        rayData.push(new Group());
-    }
-    updateRays(plane, rays, rayData);
-    return {plane: rayPlane, rays: rays, rayData: rayData};
-}
-
 var bigCells = drawGrid(new Point(200, 160), new Size(50, 50), 14, 10);
-var plane = drawPlane( {x: 140, y: 180}, {x: 340, y: 380}, 10);
+//var plane = drawPlane( {x: 140, y: 180}, {x: 340, y: 380}, 10);
+
+var plane = new RayPlane({x: 140, y: 180}, {x: 340, y: 380}, 10);
 
 bigCells.onMouseDrag = function(event) {
     bigCells.position += event.delta;
-    for (let i = 0; i < plane.rayData.length; i++) {
-        traceRay(plane.rays[i], plane.rayData[i]);
+    for (const ray of plane.rays) {
+        ray.trace();
     }    
 }
 
