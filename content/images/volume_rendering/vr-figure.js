@@ -1,6 +1,14 @@
 const L = 200;
 const intersectionRadius = 3;
 
+var grids = [];
+var planes = [];
+
+var cellStyle = {
+    strokeColor: "#000000",
+    fillColor: "#FFFFFF"
+};
+
 var intersectionStyle = {
     fillColor: "#FF0000"
 };
@@ -82,49 +90,59 @@ class Ray {
     trace() {
         // This is the slowest part, which may still be OK and not too slow.
         this.intersections.removeChildren();
-        for (const cell of bigCells.getItems({overlapping: this.lineElement.bounds})) {
-            for (const intersection of cell.getIntersections(this.lineElement)) {
-                var c = new Path.Circle(intersection.point, intersectionRadius)
-                c.style = intersectionStyle;
-                this.intersections.addChild(c);
-            }   
+        for (const grid of grids) {
+            for (const cell of grid.cellElement.getItems({overlapping: this.lineElement.bounds})) {
+                for (const intersection of cell.getIntersections(this.lineElement)) {
+                    var c = new Path.Circle(intersection.point, intersectionRadius)
+                    c.style = intersectionStyle;
+                    this.intersections.addChild(c);
+                }   
+            }
         }
     }
 }
 
-function drawGrid(origin, size, nx, ny, margin) {
-    margin = margin || 0;
-    var cells = [];
-    var point = origin.clone();
-    var cellGroup = new Group();
-    for (i = 0; i < nx ; i++) {
-        point.y = origin.y;
-        var row = [];
-        cells.push(row);
-        for (j = 0; j < ny ; j++) {
+class GridPatch {
+    constructor(origin, size, nx, ny) {
+        this.cells = [];
+        this.cellElement = new Group();
+        this.plane = [];
+        var point = origin.clone();
+        for (var i = 0; i < nx ; i++) {
+            point.y = origin.y;
+            var row = [];
+            this.cells.push(row);
+            for (var j = 0; j < ny ; j++) {
                 var cell = new Path.Rectangle(point, size);
-                cell.strokeColor = '#000000';
-                cell.fillColor = '#FFFFFF';
+                cell.style = cellStyle;
                 cell.cellIndex = [i, j];
-                cells[i].push(cell)
-                cellGroup.addChild(cell);
-                point.y += size.height + margin;
+                this.cells[i].push(cell)
+                this.cellElement.addChild(cell);
+                point.y += size.height;
+            }
+            point.x += size.width;
         }
-        point.x += size.width + margin;
+        this.cellElement.onMouseDrag = this.dragGrid.bind(this);
+
     }
-    return cellGroup;
+
+    dragGrid(event) {
+        this.cellElement.position += event.delta;
+        for (const p of planes) {
+            for (const r of p.rays) {
+                r.trace();
+            }
+        }
+    }
 }
 
-var bigCells = drawGrid(new Point(200, 160), new Size(50, 50), 14, 10);
-//var plane = drawPlane( {x: 140, y: 180}, {x: 340, y: 380}, 10);
+var grid1 = new GridPatch(new Point(200, 160), new Size(50, 50), 14, 10);
+var grid2 = new GridPatch(new Point(300, 160), new Size(25, 25), 8, 5);
+
+grids.push(grid1);
+grids.push(grid2);
 
 var plane = new RayPlane({x: 140, y: 180}, {x: 340, y: 380}, 10);
-
-bigCells.onMouseDrag = function(event) {
-    bigCells.position += event.delta;
-    for (const ray of plane.rays) {
-        ray.trace();
-    }    
-}
+planes.push(plane);
 
 globals.plane = plane;
