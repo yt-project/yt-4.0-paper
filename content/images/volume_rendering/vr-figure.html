@@ -9,7 +9,19 @@ window.globals = {};
 <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.15/paper-full.min.js" integrity="sha512-ovjLI1ZcZe6bw+ImQ21r+sv8q/Vwob2kq7tFidK6E1LWfi0T4uobbmpfEU1//a9h9o5Kkt+MnMWf6rWlg0EiMw==" crossorigin="anonymous"></script>
 <script type="text/paperscript" canvas="vrFigure" src="vr-figure.js"></script>
 </head>
+<style>
+html,
+body {
+    height: 100%;
+}
+
+/* Scale canvas with resize attribute to full size */
+canvas[resize] {
+    width: 100%;
+    height: 100%;
+}
+</style>
 <body>
-    <canvas id="vrFigure" resize width=800 height=800></canvas>
+    <canvas id="vrFigure" resize="true" hidpi="true"></canvas>
 </body>
 </html>
