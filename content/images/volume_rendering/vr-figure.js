@@ -1,5 +1,6 @@
 const L = 200;
 const intersectionRadius = 3;
+const Nrays = 10;
 
 var grids = [];
 var planes = [];
@@ -60,6 +61,7 @@ class RayPlane{
             ray.stop = p + n * L;
             ray.trace();
         })
+        globals.updateRays();
     }
 }
 
@@ -90,15 +92,39 @@ class Ray {
     trace() {
         // This is the slowest part, which may still be OK and not too slow.
         this.intersections.removeChildren();
+        this.data.length = 0;
         for (const grid of grids) {
             for (const cell of grid.cellElement.getItems({overlapping: this.lineElement.bounds})) {
-                for (const intersection of cell.getIntersections(this.lineElement)) {
+                var times = [];
+                const cellInts = this.lineElement.getIntersections(cell);
+                if (cellInts.length < 2) {
+                    if (cell.contains(this.lineElement.firstSegment.point)) {
+                        times.push(0.0);
+                    }
+                    if (cell.contains(this.lineElement.lastSegment.point)) {
+                        times.push(1.0);
+                    }
+                }
+                for (const intersection of cellInts) {
                     var c = new Path.Circle(intersection.point, intersectionRadius)
                     c.style = intersectionStyle;
                     this.intersections.addChild(c);
-                }   
+                    times.push(intersection.time);
+                }
+                if (times.length > 0) {
+                    this.data.push({
+                        i: cell.cellIndex[0], j: cell.cellIndex[1],
+                    dt: Math.abs(times[0] - times[1]),
+                    t0: Math.min(times[0], times[1]),
+                    t1: Math.max(times[0], times[1]),
+                    v: cell.cellValue
+                });
+                }
             }
         }
+        this.data.sort((d1, d2) => d1.t0 - d2.t0);
+        var total = 0.0;
+        this.data.forEach(d => {d.startTotal = total; total += d.dt * d.v; d.endTotal = total;});
     }
 }
 
@@ -115,7 +141,10 @@ class GridPatch {
             for (var j = 0; j < ny ; j++) {
                 var cell = new Path.Rectangle(point, size);
                 cell.style = cellStyle;
+                var v = Math.pow((i*i) + (j*j), 0.5) / Math.pow((nx - 1) * (nx - 1) + (ny -1) * (ny - 1), 0.5);
+                cell.style.fillColor = globals.cellColor(v);
                 cell.cellIndex = [i, j];
+                cell.cellValue = v;
                 this.cells[i].push(cell)
                 this.cellElement.addChild(cell);
                 point.y += size.height;
@@ -133,16 +162,18 @@ class GridPatch {
                 r.trace();
             }
         }
+        globals.updateRays();
     }
 }
 
-var grid1 = new GridPatch(new Point(200, 160), new Size(50, 50), 14, 10);
-var grid2 = new GridPatch(new Point(300, 160), new Size(25, 25), 8, 5);
+var grid1 = new GridPatch(new Point(200, 160), new Size(20, 20), 24, 20);
+//var grid2 = new GridPatch(new Point(300, 160), new Size(25, 25), 8, 5);
 
 grids.push(grid1);
-grids.push(grid2);
+//grids.push(grid2);
 
-var plane = new RayPlane({x: 140, y: 180}, {x: 340, y: 380}, 10);
+var plane = new RayPlane({x: 140, y: 180}, {x: 340, y: 380}, Nrays);
+globals.setupPlots();
 planes.push(plane);
 
 globals.plane = plane;
