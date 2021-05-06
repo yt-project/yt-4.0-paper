@@ -60,7 +60,7 @@ const galaxy = [
 ];
    
 
-const L = 200;
+var L = 200;
 const intersectionRadius = 3;
 const Nrays = 10;
 
@@ -91,9 +91,10 @@ var plotStyle = {
 
 class RayPlane {
 
-    constructor(start, stop, Nrays, rayPlot) {
+    constructor(start, stop, Nrays, rayPlot, lineWidget) {
         this.rays = [];
         this.rayPlot = rayPlot;
+        this.lineWidget = lineWidget;
         this.planeElement = new Path.Line(start, stop);
         this.planeElement.strokeColor = "#000000";
         this.planeElement.strokeWidth = 5;
@@ -130,7 +131,7 @@ class RayPlane {
             var n = this.planeElement.getNormalAt(i*dt);
             // trace their intersection
             ray.start = p;
-            ray.stop = p + n * L;
+            ray.stop = p + n * this.lineWidget.currentLength * L;
             ray.trace();
         });
         this.rayPlot.updatePlots();
@@ -301,6 +302,10 @@ class LengthWidget {
         newPos.x = Math.max(this.position.x, newPos.x);
         newPos.x = Math.min(this.position.x + this.size, newPos.x);
         this.circle.position = newPos;
+        this.currentLength = this.minLength + (this.maxLength - this.minLength) * (this.circle.position.x - this.position.x)/this.size;
+        for (const p of planes) {
+            p.updateRays();
+        }
     }
 }
 
@@ -318,14 +323,12 @@ var rp = new RayPlot(
     { width: 300, height: 300 }
 );
 
-console.log(rp.origin);
 var lw = new LengthWidget(
     { x: rp.origin.x,
         y: rp.origin.y - 10 }
         , 300, 1.0, 10.0, 1.0, 5.0);
-console.log(lw);
 
-var plane = new RayPlane({x: 140, y: 180}, {x: 340, y: 380}, Nrays, rp);
+var plane = new RayPlane({x: 140, y: 180}, {x: 340, y: 380}, Nrays, rp, lw);
 planes.push(plane);
 
 // this is the arbre colormap
