@@ -277,6 +277,33 @@ class RayPlot {
     }
 }
 
+class LengthWidget {
+    constructor (position, size, minLength, maxLength, currentLength, radius) {
+        this.position = position;
+        this.size = size;
+        this.minLength = minLength;
+        this.maxLength = maxLength;
+        this.currentLength = currentLength;
+        this.line = new Path.Line( position, new Point(position.x + size, position.y));
+        this.line.style = {strokeColor: '#888888', strokeWidth: 2};
+        const cPos = {x: position.x + size * (currentLength - minLength) / (maxLength - minLength),
+                      y: this.line.position.y};
+        this.circle = new Path.Circle(cPos, radius);
+        this.circle.style = {fillColor: '#111111', strokeColor: '#444444'};
+        this.circle.onMouseDrag = this.dragCircle.bind(this);
+    }
+
+    dragCircle(event) {
+        var newPos = new Point({
+            x: this.circle.position.x + event.delta.x,
+            y: this.circle.position.y
+        });
+        newPos.x = Math.max(this.position.x, newPos.x);
+        newPos.x = Math.min(this.position.x + this.size, newPos.x);
+        this.circle.position = newPos;
+    }
+}
+
 var grid1 = new GridPatch(new Point(200, 160), new Size(16, 16), 32, 32);
 //var grid2 = new GridPatch(new Point(300, 160), new Size(25, 25), 8, 5);
 
@@ -290,6 +317,13 @@ var rp = new RayPlot(
     },
     { width: 300, height: 300 }
 );
+
+console.log(rp.origin);
+var lw = new LengthWidget(
+    { x: rp.origin.x,
+        y: rp.origin.y - 10 }
+        , 300, 1.0, 10.0, 1.0, 5.0);
+console.log(lw);
 
 var plane = new RayPlane({x: 140, y: 180}, {x: 340, y: 380}, Nrays, rp);
 planes.push(plane);
