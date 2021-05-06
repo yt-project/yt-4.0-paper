@@ -18,10 +18,20 @@ var rayStyle = {
     strokeColor: "#00000055"
 }
 
-class RayPlane{
+var frameStyle = {
+    strokeColor: "#000000",
+    fillColor: "#FFFFFF"
+}
 
-    constructor(start, stop, Nrays) {
+var plotStyle = {
+    strokeColor: "#000000"
+}
+
+class RayPlane {
+
+    constructor(start, stop, Nrays, rayPlot) {
         this.rays = [];
+        this.rayPlot = rayPlot;
         this.planeElement = new Path.Line(start, stop);
         this.planeElement.strokeColor = "#000000";
         this.planeElement.strokeWidth = 5;
@@ -60,8 +70,8 @@ class RayPlane{
             ray.start = p;
             ray.stop = p + n * L;
             ray.trace();
-        })
-        globals.updateRays();
+        });
+        this.rayPlot.updatePlots();
     }
 }
 
@@ -142,7 +152,9 @@ class GridPatch {
                 var cell = new Path.Rectangle(point, size);
                 cell.style = cellStyle;
                 var v = Math.pow((i*i) + (j*j), 0.5) / Math.pow((nx - 1) * (nx - 1) + (ny -1) * (ny - 1), 0.5);
-                cell.style.fillColor = globals.cellColor(v);
+                if (globals.cellColor !== undefined) {
+                    cell.style.fillColor = globals.cellColor(v);
+                }
                 cell.cellIndex = [i, j];
                 cell.cellValue = v;
                 this.cells[i].push(cell)
@@ -162,7 +174,45 @@ class GridPatch {
                 r.trace();
             }
         }
-        globals.updateRays();
+    }
+}
+
+class RayPlot {
+    constructor(origin, size) {
+        this.origin = origin;
+        this.size = size;
+        this.frame = new Path.Rectangle(origin, size);
+        this.frame.style = frameStyle;
+        this.lines = [];
+    }
+
+    updatePlots() {
+        var i = 0;
+        for (const plane of planes) {
+            for (const r of plane.rays) {
+                if (this.lines.length <= i) {
+                    var p = new Path([]);
+                    p.style = plotStyle;
+                    this.lines.push(p);
+                }
+                var p = this.lines[i];
+                p.removeSegments();
+                for (const seg of r.data) {
+                    p.add([this.xScale(seg.t0), this.yScale(seg.startTotal)],
+                        [this.xScale(seg.t1), this.yScale(seg.endTotal)]);
+                }
+                i += 1;
+            }
+        }
+        this.lines.length = i;
+    }
+
+    xScale(x) {
+        return this.origin.x + x * this.size.width;
+    }
+
+    yScale(y) {
+        return this.origin.y + (1.0 - y) * this.size.height;
     }
 }
 
@@ -172,8 +222,13 @@ var grid1 = new GridPatch(new Point(200, 160), new Size(20, 20), 24, 20);
 grids.push(grid1);
 //grids.push(grid2);
 
-var plane = new RayPlane({x: 140, y: 180}, {x: 340, y: 380}, Nrays);
-globals.setupPlots();
-planes.push(plane);
+var rp = new RayPlot(
+    {
+        x: grid1.cellElement.bounds.right + 20,
+        y: grid1.cellElement.bounds.top
+    },
+    { width: 300, height: 300 }
+);
 
-globals.plane = plane;
+var plane = new RayPlane({x: 140, y: 180}, {x: 340, y: 380}, Nrays, rp);
+planes.push(plane);
