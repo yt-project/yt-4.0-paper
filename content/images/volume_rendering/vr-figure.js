@@ -78,16 +78,22 @@ var intersectionStyle = {
 
 var rayStyle = {
     strokeColor: "#00000055"
-}
+};
 
 var frameStyle = {
     strokeColor: "#000000",
     fillColor: "#FFFFFF"
-}
+};
 
 var plotStyle = {
-    strokeColor: "#000000"
-}
+    strokeColor: "#000000",
+    strokeWidth: 1.5
+};
+
+var rayBoxStyle = {
+    strokeColor: "#999999",
+    strokeWidth: 0.5
+};
 
 const _intCircle = new Path.Circle({x: 0, y:0}, intersectionRadius)
 _intCircle.style = intersectionStyle;
@@ -250,9 +256,10 @@ class RayPlot {
         this.frame = new Path.Rectangle(origin, size);
         this.frame.style = frameStyle;
         this.lines = [];
+        this.boxes = [];
     }
 
-    updatePlots() {
+    updateElements() {
         var i = 0;
         for (const plane of planes) {
             for (const r of plane.rays) {
@@ -261,24 +268,59 @@ class RayPlot {
                     p.style = plotStyle;
                     this.lines.push(p);
                 }
-                var p = this.lines[i];
-                p.removeSegments();
-                for (const seg of r.data) {
-                    p.add([this.xScale(seg.t0), this.yScale(seg.startTotal)],
-                        [this.xScale(seg.t1), this.yScale(seg.endTotal)]);
+                i += 1;
+            }
+        }
+        i = 0;
+        for (const plane of planes) {
+            for (const r of plane.rays) {
+                if (this.boxes.length <= i) {
+                    var b = new Path.Rectangle(
+                        {
+                            x: this.xScale(0),
+                            y: this.yScale(0.0, i)
+                        },
+                        {
+                            x: this.xScale(1.0),
+                            y: this.yScale(1.0, i)
+                        });
+                    b.style = rayBoxStyle;
+                    this.boxes.push(b);
                 }
                 i += 1;
             }
         }
         this.lines.length = i;
+        this.boxes.length = i;
+    }
+
+    updatePlots() {
+        var i = 0;
+        for (const plane of planes) {
+            for (const r of plane.rays) {
+                var p = this.lines[i];
+                p.removeSegments();
+                for (const seg of r.data) {
+                    p.add([this.xScale(seg.t0), this.yScale(seg.startTotal, i)],
+                        [this.xScale(seg.t1), this.yScale(seg.endTotal, i)]);
+                }
+                i += 1;
+            }
+        }
     }
 
     xScale(x) {
         return this.origin.x + x * this.size.width;
     }
 
-    yScale(y) {
-        return this.origin.y + (1.0 - y) * this.size.height;
+    yScale(y, i) {
+        // total size for each plot is height divided by N segments
+        // note that this gets all messed up when we resize the number of rays,
+        // but updatePlots should work with resizing the number of rays, so, uh,
+        // let's avoid that
+        const height = this.size.height / this.lines.length;
+        const offset = height * i;
+        return this.origin.y + (1.0 - y) * height + offset;
     }
 }
 
@@ -334,6 +376,7 @@ var lw = new LengthWidget(
 
 var plane = new RayPlane({x: 140, y: 180}, {x: 340, y: 380}, Nrays, rp, lw);
 planes.push(plane);
+rp.updateElements();
 
 // this is the arbre colormap
 function colormap(v) {
