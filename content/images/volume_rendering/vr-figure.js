@@ -89,6 +89,11 @@ var plotStyle = {
     strokeColor: "#000000"
 }
 
+const _intCircle = new Path.Circle({x: 0, y:0}, intersectionRadius)
+_intCircle.style = intersectionStyle;
+
+const intersectionCircle = new SymbolDefinition(_intCircle);
+
 class RayPlane {
 
     constructor(start, stop, Nrays, rayPlot, lineWidget) {
@@ -179,8 +184,7 @@ class Ray {
                     }
                 }
                 for (const intersection of cellInts) {
-                    var c = new Path.Circle(intersection.point, intersectionRadius)
-                    c.style = intersectionStyle;
+                    var c = intersectionCircle.place(intersection.point);
                     this.intersections.addChild(c);
                     times.push(intersection.time);
                 }
