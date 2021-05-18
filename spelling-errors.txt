@@ -9,7 +9,7 @@ backporting
 Bili
 binarily
 Bitbucket
-Bitwise
+bitwise
 Bool
 Borro
 Britton
@@ -22,6 +22,7 @@ chrishavlin
 chummels
 Clément
 codebase
+colocation
 comoving
 connectedness
 coord
@@ -42,6 +43,7 @@ datasets
 datasetwere
 d’Azur
 decomp
+demeshening
 dimensionality
 dimensionally
 discretization
@@ -56,6 +58,7 @@ frontrow
 geosciences
 Goldbaum
 gridded
+gridding
 Halbert
 Havlin
 HippoDraw
@@ -75,6 +78,7 @@ Jupyterlab
 jzuhone
 Kacper
 Kaser
+kD
 Kelton
 keltonhalbert
 KIPAC
@@ -89,9 +93,11 @@ Madicken
 matplotlib
 MatthewTurk
 megaparsec
+meshened
 metallicity
 midplane
 migueldvb
+MJT
 Mollweide
 Monaghan
 Munk
@@ -103,11 +109,12 @@ ngoldbaum
 njgoldbaum
 nosetests
 NumFOCUS
-NumPy
+numpy
 Observatoire
+octants
 octree
-Octrees
-Octs
+octrees
+octs
 Orf
 Ortho
 parallelize
@@ -116,7 +123,8 @@ perveice
 pipelined
 pipelining
 pixelization
-Pixelizers
+pixelize
+pixelizers
 pixelizes
 Pixelizing
 PlotCollection
@@ -163,6 +171,7 @@ unitless
 UnitRegistry
 Université
 unmergeable
+unphysical
 unsampled
 Urbana
 WebAssembly
@@ -180,6 +189,6 @@ YTQuantity
 ytree
 yt’s
 Yu
-zingale
+Zingale
 zorder
 ZuHone

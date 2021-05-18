@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2021-04-26'
+date-meta: '2021-05-18'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -38,8 +38,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2021-04-26" />
-  <meta name="citation_publication_date" content="2021-04-26" />
+  <meta name="dc.date" content="2021-05-18" />
+  <meta name="citation_publication_date" content="2021-05-18" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -119,9 +119,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/39ea65871aa4b955399c4d663b002c90a43f1016/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/39ea65871aa4b955399c4d663b002c90a43f1016/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/39ea65871aa4b955399c4d663b002c90a43f1016/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/9ad793c62db71d6c9376aa2cb4839e2187e4a206/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/9ad793c62db71d6c9376aa2cb4839e2187e4a206/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/9ad793c62db71d6c9376aa2cb4839e2187e4a206/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,10 +143,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/39ea65871aa4b955399c4d663b002c90a43f1016/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/9ad793c62db71d6c9376aa2cb4839e2187e4a206/))
 was automatically generated
-from [yt-project/yt-4.0-paper@39ea658](https://github.com/yt-project/yt-4.0-paper/tree/39ea65871aa4b955399c4d663b002c90a43f1016)
-on April 26, 2021.
+from [yt-project/yt-4.0-paper@9ad793c](https://github.com/yt-project/yt-4.0-paper/tree/9ad793c62db71d6c9376aa2cb4839e2187e4a206)
+on May 18, 2021.
 </em></small>
 
 ## Authors
@@ -1221,6 +1221,52 @@ Scheme of the AMR structure used to estimate the gradient of a quantity in the c
 ](images/octree/gradient_computation.svg){#fig:octree-gradient}
 
 ### SPH Analysis
+
+Smoothed Particle Hydrodynamics (SPH) is **MJT: We need a very brief explanation of SPH here!**
+
+Previous versions of `yt` provided analysis of SPH data through a hybrid approach that mixed pure-SPH analysis with octree-based gridding and indexing that used particle density as a guide for the necessary resolution.
+Although the present, yt 4.0 series does not utilize octrees for particles, a description of the previous implementation is useful to provide both historical information and modern motivation for the "demeshening" initiative that led to the current code base.
+
+In practice, what this meant was that when a dataset was loaded, the particles positions were converted into one dimensional Morton index values, sorted, and by using a process of identifying the longest prefix in their bitwise representations, an octree (that mapped directly onto the Morton index values) was constructed.
+This octree was controlled by two parameters: `n_ref`, which specified the number of particles in an octree leaf node necessary to refine that node into eight sub-octants, and `over_refine_factor`, which specified the number of cells that each leaf node represented.
+For instance, if `n_ref` was set to 64 (the default), any octree node containing 64 particles would be refined into eight child nodes; if `over_refine_factor` was set to N, each leaf node would consist of a set of zones that were $2^N$ zones on a side (i.e., the default `over_refine_factor` produced eight mesh elements total).
+
+Constructing these octrees using morton indices, if the entire set of particles could be stored in memory simultaneously, was *extremely* efficient.
+To do so, the particles merely needed to be converted into a morton index via fast, bit-level operations, those index values sorted, and then processed in order to identify the greatest common bit-prefix.
+Because two successive particles with identical index values would share an octree location, looking for sequences of identical prefix values (i.e., lower-level octree colocation) naturally produces an octree.
+When fluid quantities such as density were requested in the yt 3.0 series, the values were computed on the mesh defined by the octree; increasing the `over_refine_factor` and decreasing the `n_ref` would serve to increase the resolution.
+While this produced mostly-acceptable visualizations, and particular produced dynamically-resolved visualizations, it posed several problems for both visualization and analysis.
+The first, and arguably the most important, is that the strict locality requirements for refinement produced artifacts at leaf node boundaries.
+This resulted in incorrect and unphysical visualizations of hydrodynamic quantities, affecting most obviously those regions at the edges of clusters of gas particles.
+These were mitigated in regions of highly-clustered gas particles, but visual artifacts were still clear, as `yt` was applying a visualization suited for finite volume elements to Lagrangian particles.
+
+With the 4.0 series, `yt` no longer utilizes octrees for analyzing, meshing or visualizing SPH data.
+Indexing, for the purposes of fast, memory-efficient access to subsets of the data, is provided by a bitmap index using the Morton indices of the particles, as described in [Bitmap Indexing](#sec:point_indexing).
+For the purposes of visualization, any quantity requiring smoothing over nearest neighbors is computed on-demand at each pixel in the output image; this provides much higher resolution than the previous method, which was both subject to free parameters and required the construction of a 3D fluid field that was then collapsed to 2D for visualization.
+In many cases, this is also considerably more performant, as constructing a full-domain 3D fluid field is avoided, thus reducing both memory requirements and the number of floating point calculations.
+
+Development of this new method was referred to internally as "the demeshening," as it served to eliminate the global (octree) mesh.
+In order to facilitate the massive, type and dimensionality-specific spatial queries necessary for performing millions of queries as efficiently as possible, and with as little overhead as possible, `yt` packages a kD-tree written in Cython that can be called from either Cython or Python, and which provides low-level APIs for querying from within tight loops.
+Whereas previously, constructing a projection or a slice would slice through an octree mesh and provide the results from that variable resolution mesh, the current version of `yt`'s SPH machinery will instead construct a pixel plane and smooth the appropriately identified particles onto that pixel plane.
+This produces much higher-fidelity results, but a current limitation is that whenever the pixel plane is changed, the particles must be re-deposited; this puts it at odds with the similar machinery for octree and patch-based datasets, which provide a "read-once-pixelize-many" approach.
+
+The octree method -- while not incapable of utilizing different normalization and particle search methods -- was less flexible than the current, de-meshened approach.
+For instance, the method of SPH particle identification (i.e., so-called "scatter" or "gather" methods for correlating particles with positions) is now flexible and able to be set at runtime.
+The normalization (if used) can take into account global quantities, local quantities, and is flexible based on the field being smoothed.
+
+**MJT: Add before/after images of demeshening**
+
+Some additional differences between SPH analysis and the analysis of finite volume data are present when utilizing data selectors.
+For instance, 3D data selectors as applied to finite volume codes only select those cells whose centers fall within the data selector.
+2D and 1D data selectors (such as slices and rays) also include those finite volume cells that the selector passes through.
+However, with SPH data, the selection methods in 2D and 3D will always include those particles whose spheres of influence, defined by the appropriate smoothing lengths, are within or overlapping with the data selector.
+This is somewhat counter to the expectations set by the grid codes, but aligns with the need to have a fully self-contained data-container for computing field values.
+For instance, this means that a "ray" object (often used to compute, for instance, the column density in a cosmological simulation) will in fact include a set of particles within a (potentially) varying impact parameter.
+
+**MJT: Needs a diagram, could be drawn from the contrived test case**
+
+Other than these differences, which have been intentionally made to align the results with the expected results from the underlying discretization method, the APIs for access to particle data and finite volume data are identical, and they provide broadly identical functionality, where the disparities are typically in functionality such as volume rendering.
+This allows a single analysis script, or package (such as Trident), to utilize a high-level API to address both gridded and Lagrangian data while still ensuring that the results are high-fidelity and representative of the underlying methods.
 
 ### Unstructured Mesh Analysis
 
