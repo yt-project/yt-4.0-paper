@@ -119,9 +119,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/4e69f929aedfbbc9689376809f62ead4d6e6e8a9/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/4e69f929aedfbbc9689376809f62ead4d6e6e8a9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/4e69f929aedfbbc9689376809f62ead4d6e6e8a9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/b6ef4278c1cbb852e61d2acd12973d5546cb4f3c/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/b6ef4278c1cbb852e61d2acd12973d5546cb4f3c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/b6ef4278c1cbb852e61d2acd12973d5546cb4f3c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,9 +143,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/4e69f929aedfbbc9689376809f62ead4d6e6e8a9/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/b6ef4278c1cbb852e61d2acd12973d5546cb4f3c/))
 was automatically generated
-from [yt-project/yt-4.0-paper@4e69f92](https://github.com/yt-project/yt-4.0-paper/tree/4e69f929aedfbbc9689376809f62ead4d6e6e8a9)
+from [yt-project/yt-4.0-paper@b6ef427](https://github.com/yt-project/yt-4.0-paper/tree/b6ef4278c1cbb852e61d2acd12973d5546cb4f3c)
 on October 15, 2021.
 </em></small>
 
@@ -541,6 +541,7 @@ One increasing issue with the code review process is ensuring that changes are r
 "Bugfix" changes formally require only one reviewer, whereas the `yt` guidelines suggest that larger changes require review from two different team members.
 
 One of the most pressing bottlenecks with code review is that the time it takes for tests to pass is much longer than the typical time span during which code review takes place.
+Because tests are often required to be run on the *current* version of the code, not the version of the code against which the pull request has been issued, they are often re-initiated following a merge.
 This results in a pull request being merged, and then whatever pull request is next to be reviewed has to wait until the tests (now updated with the newly accepted pull request) pass.
 To alleviate this, we have recently begun utilizing the ["auto-merge" feature](https://github.blog/changelog/2021-02-04-pull-request-auto-merge-is-now-generally-available/) provided by GitHub.
 This allows a maintainer to mark a pull request as "queued" to be merged once a set of requirements -- such as tests passing, approval messages, comment resolution and so forth -- are met.
