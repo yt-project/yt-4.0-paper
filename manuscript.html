@@ -24,7 +24,7 @@
   <meta name="author" content="Christopher Havlin" />
   <meta name="author" content="Stephanie Tonnesen" />
   <meta name="author" content="Add Yourself" />
-  <meta name="dcterms.date" content="2021-05-18" />
+  <meta name="dcterms.date" content="2021-10-15" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Introducing yt 4.0: Analysis and Visualization of Volumetric Data</title>
   <style>
@@ -109,8 +109,8 @@
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2021-05-18" />
-  <meta name="citation_publication_date" content="2021-05-18" />
+  <meta name="dc.date" content="2021-10-15" />
+  <meta name="citation_publication_date" content="2021-10-15" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -190,9 +190,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/9ad793c62db71d6c9376aa2cb4839e2187e4a206/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/9ad793c62db71d6c9376aa2cb4839e2187e4a206/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/9ad793c62db71d6c9376aa2cb4839e2187e4a206/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/4e69f929aedfbbc9689376809f62ead4d6e6e8a9/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/4e69f929aedfbbc9689376809f62ead4d6e6e8a9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/4e69f929aedfbbc9689376809f62ead4d6e6e8a9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -222,10 +222,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-4.0-paper/v/9ad793c62db71d6c9376aa2cb4839e2187e4a206/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-4.0-paper/v/4e69f929aedfbbc9689376809f62ead4d6e6e8a9/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-4.0-paper/tree/9ad793c62db71d6c9376aa2cb4839e2187e4a206">yt-project/yt-4.0-paper@9ad793c</a>
-on May 18, 2021.
+from <a href="https://github.com/yt-project/yt-4.0-paper/tree/4e69f929aedfbbc9689376809f62ead4d6e6e8a9">yt-project/yt-4.0-paper@4e69f92</a>
+on October 15, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -521,6 +521,22 @@ And for projections, it would mean that integrating the path with a weight of �
 <h3 id="sec:answer_testing">Answer Testing</h3>
 <p>The most time-consuming part of the testing process is what we refer to as “answer testing.”
 Because so much of <code>yt</code> is focused on computing analysis results, and because some of these analysis results simultaneously depend on specific IO routines, selection routines, and many “frontend-specific” pieces of code, we have built a system for ensuring that for a given set of analysis operations, the result of a set of operations does not change beyond a fixed (typically quite small) tolerance.</p>
+<p>In general, we allow three different classes of answers, against which we compare results from the current version of the code:</p>
+<ol type="1">
+<li>Data values which should not ever change unless an explicit decision is made (i.e., raw data values accessed from on-disk fields)</li>
+<li>Lightly-processed data values which we do not anticipate any deviation from exact, ordered values (i.e., averages, extrema, etc.)</li>
+<li>Higher-level processed values which may differently accumulate error across platforms and architectures but are still within fine-grained (<span class="math inline">\(\equiv 10^{-7}\)</span>) tolerance (i.e., images, pixelized projections, etc.)</li>
+</ol>
+<p>In the first case, we can utilize hashing functions (such as MD5 and SHA) to guarantee consistency across executions.
+Typically, however, we store the full set of values to facilitate easy comparison.
+In the latter two cases, we apply unit-aware relative tolerances.
+This allows for changes in unit assignment to be isolated from changes in value, and furthermore allows minor migration of values.
+A recent incident in which these tests needed to be changed resulted from minor differences as a result of consolidating operations within a loop to conserve memory; the code in question was converted to Cython and the drift was on the scale of <span class="math inline">\(10^{-10}\)</span>.</p>
+<p>For small-scale answer tests, results are stored in a separate repository that is cloned as a subrepository of the principle <code>yt</code> repository.
+When a new set of answers are needed, they are submitted via pull request, and the changeset hash used for answer validation is updated in the main repository.
+This allows a different cadence, and also enables individuals <em>not</em> interested in updating answer values to avoid cloning the subrepository and its full history.
+Larger dataset answers are stored in on our continuous integration servers; a YAML file in the main <code>yt</code> repository stores the current version number for those answers, which is incremented (via a pull request) when needed.
+Requiring this clear decision-making process allows for both collaborative discussion and community governance over the degree of answer drift allowed.</p>
 <h3 id="code-review">Code Review</h3>
 <p>Code review in <code>yt</code> is conducted on a line-by-line basis, as well as on a higher-level regarding pull requests.
 The workflow for code review roughly follows this outline:</p>
@@ -532,6 +548,23 @@ The workflow for code review roughly follows this outline:</p>
 </ol>
 <p>One increasing issue with the code review process is ensuring that changes are reviewed with appropriate urgency; larger pull requests tend to languish without review, as the requirements for review necessarily add burden to the maintainers.
 “Bugfix” changes formally require only one reviewer, whereas the <code>yt</code> guidelines suggest that larger changes require review from two different team members.</p>
+<p>One of the most pressing bottlenecks with code review is that the time it takes for tests to pass is much longer than the typical time span during which code review takes place.
+This results in a pull request being merged, and then whatever pull request is next to be reviewed has to wait until the tests (now updated with the newly accepted pull request) pass.
+To alleviate this, we have recently begun utilizing the <a href="https://github.blog/changelog/2021-02-04-pull-request-auto-merge-is-now-generally-available/">“auto-merge” feature</a> provided by GitHub.
+This allows a maintainer to mark a pull request as “queued” to be merged once a set of requirements – such as tests passing, approval messages, comment resolution and so forth – are met.
+By queuing up pull requests for merging, it allows maintainers to mark a set of pull requests as ready to be merged, and then when they meet the appropriate (automated and asynchronous) criteria, they will be merged.</p>
+<h3 id="code-styling-and-linting">Code Styling and Linting</h3>
+<p>For code included in <code>yt</code>, a set of styles are enforced.
+We use the automated code styling tool <a href="https://black.readthedocs.io/en/stable/"><code>black</code></a>, which has been designed to maximize readability with as few free parameters as possible.
+(In many ways, the fact that most of the <code>yt</code> code developers did not utilize this style before it was enforced likely enabled its uptake, as it was seen as an choice that “made everyone compromise.”)
+In addition to code formatting, other automated methods for code consistency are applied; at present, this includes ensuring that all <code>import</code> statements are sorted (according to alphabetical order within a first/second/third-party categorization).
+Past iterations of this automated formatting have also included ensuring that <a href="https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals">“f-strings”</a> are used wherever possible, but at present we have slightly loosened this requirement.</p>
+<p>For the purposes of checking for common code mistakes, we apply <a href="https://flake8.pycqa.org/en/latest/"><code>flake8</code></a>, which reports unused variables, undefined variables, and other style violations that cannot be automatically corrected.</p>
+<p>All changes that can be applied via automation (specifically, code formatting) are accessible from within the GitHub pull request interface.
+This allows “drive-by” contributions to have their pull requests updated inline by an automated process, reducing the need to manually install packages to apply the changes.</p>
+<h3 id="type-hinting">Type Hinting</h3>
+<p>Code included in <code>yt</code> is not required to utilize <a href="https://docs.python.org/3/library/typing.html">type hinting</a>.
+However, new contributions are allowed to include type hinting, and work is underway to develop an ontology of types as well as a base set of utilities and types that would be used both internally, and possibly be made available to external package developers.</p>
 <h3 id="sec:ytep">YTEP Process</h3>
 <p>YTEPs, or “<code>yt</code>-enhancement proposal” are vehicles for collaborative decision-making in the project.
 Implemented shortly after the first paper on <code>yt</code> was released, the YTEP process experienced a fairly pronounced period of usage during the transition between versions 2.0 and 3.0 of <code>yt</code>, and has since been utilized considerably less.
@@ -2054,9 +2087,9 @@ Connecting this to the raw, unprocessed data from the simulation (such as the un
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references hanging-indent" role="doc-bibliography">
 <div id="ref-cTN2TQIL">
-<p>1. <strong>manubot/manubot</strong> <br />
-Manubot<br />
-(2021-05-15) <a href="https://github.com/manubot/manubot">https://github.com/manubot/manubot</a></p>
+<p>1. <strong>GitHub - manubot/manubot: Python utilities for Manubot: Manuscripts, open and automated</strong> <br />
+GitHub<br />
+<a href="https://github.com/manubot/manubot">https://github.com/manubot/manubot</a></p>
 </div>
 <div id="ref-1GOm01ggN">
 <p>2. <strong>yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA</strong> <br />

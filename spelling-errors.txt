@@ -1,7 +1,7 @@
 AMR
 AMRKDTree
 APIs
-Astro
+astro
 astrojaz
 astrophysically
 AstroPy
@@ -9,7 +9,7 @@ backporting
 Bili
 binarily
 Bitbucket
-bitwise
+Bitwise
 Bool
 Borro
 Britton
@@ -18,12 +18,13 @@ Bugfix
 Cadiou
 CGS
 Champaign
+changeset
 chrishavlin
 chummels
 Clément
 codebase
 colocation
-comoving
+Comoving
 connectedness
 coord
 Coords
@@ -52,8 +53,9 @@ Duplicative
 Enzo
 EWAH
 EWAHBoolArray
+extrema
 filesystem
-frontend
+Frontend
 frontrow
 geosciences
 Goldbaum
@@ -124,7 +126,8 @@ pipelined
 pipelining
 pixelization
 pixelize
-pixelizers
+pixelized
+Pixelizers
 pixelizes
 Pixelizing
 PlotCollection
@@ -145,6 +148,7 @@ Rudd
 runtime
 scalability
 Scopatz
+SHA
 Shoshani
 Sinha
 Skillman
@@ -155,6 +159,7 @@ Stockinger
 stonnes
 subcells
 subclasses
+subrepository
 Suoqing
 Supercomputing
 susbtantial
@@ -179,6 +184,7 @@ Widgyts
 Xarthisius
 XXXX
 XXXXXXXX
+YAML
 yournamehere
 YTArray
 ytdata
@@ -189,6 +195,6 @@ YTQuantity
 ytree
 yt’s
 Yu
-Zingale
+zingale
 zorder
 ZuHone
