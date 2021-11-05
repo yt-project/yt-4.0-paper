@@ -4,6 +4,7 @@ to: html5
 output-file: output/manuscript.html
 include-before-body:
 - build/plugins/d3.html
+- build/plugins/paperjs.html
 include-after-body:
 - build/themes/default.html
 - build/plugins/inline-svg.html
