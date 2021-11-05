@@ -190,9 +190,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/8ed1a5b2e2dfa721eb18169ca14be56473e5d6cc/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/8ed1a5b2e2dfa721eb18169ca14be56473e5d6cc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/8ed1a5b2e2dfa721eb18169ca14be56473e5d6cc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/6bd90d167860898fe4d65e93cccd3ed069d0d833/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/6bd90d167860898fe4d65e93cccd3ed069d0d833/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/6bd90d167860898fe4d65e93cccd3ed069d0d833/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -217,14 +217,46 @@
 
     // https://d3js.org/
 </script>
+<!-- PaperJS plugin -->
+
+<script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/acorn/8.2.1/acorn.min.js"
+    integrity="sha512-SaR3AskCC6XMUHYTuq+O7Pat3lTYepJeW/yaMA1nXl8y6i2B5F1NpkJ/qM5RcXcL9MQ8VOdGvvww7Dp7rDR3aw=="
+    crossorigin="anonymous"
+>
+    // /////////////////////////
+    // DESCRIPTION
+    // /////////////////////////
+
+    // Acorn is a parser for javascript used by PaperJS.  Loading a recent
+    // version of it enables PaperJS scripts to include modern ECMAScript 
+    // features such as arrow functions.
+
+    // https://github.com/acornjs/acorn/
+</script>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.15/paper-full.min.js"
+    integrity="sha512-ovjLI1ZcZe6bw+ImQ21r+sv8q/Vwob2kq7tFidK6E1LWfi0T4uobbmpfEU1//a9h9o5Kkt+MnMWf6rWlg0EiMw=="
+    crossorigin="anonymous"
+>
+    // /////////////////////////
+    // DESCRIPTION
+    // /////////////////////////
+
+    // PaperJS is an implementation of PaperScript that enables interactive
+    // geometric diagrams.
+
+    // https://paperjs.org/
+</script>
 <header id="title-block-header">
 <h1 class="title">Introducing yt 4.0: Analysis and Visualization of Volumetric Data</h1>
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-4.0-paper/v/8ed1a5b2e2dfa721eb18169ca14be56473e5d6cc/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-4.0-paper/v/6bd90d167860898fe4d65e93cccd3ed069d0d833/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-4.0-paper/tree/8ed1a5b2e2dfa721eb18169ca14be56473e5d6cc">yt-project/yt-4.0-paper@8ed1a5b</a>
+from <a href="https://github.com/yt-project/yt-4.0-paper/tree/6bd90d167860898fe4d65e93cccd3ed069d0d833">yt-project/yt-4.0-paper@6bd90d1</a>
 on November 5, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -1858,6 +1890,8 @@ The object to render can be any data container of supported AMR datasets (either
 The implementation of the volume rendering is based on integrating a transfer function along the direction of ray.</p>
 <h4 id="patch-based-ray-traversal">Patch-based ray traversal</h4>
 <p>TODO</p>
+<canvas id="vrFigure" style="width:100%;height:100%;min-height: 500px;" hidpi="true">
+<script type="text/paperscript" canvas="vrFigure" src="images/volume_rendering/vr-figure.js"></script>
 <h4 id="octree-ray-traversal">Octree ray traversal</h4>
 <p>Casting rays through an octree can be achieved efficiently by relying on the octree structure.
 In order to abstract away the underlying layout of the data, we first construct an octree that contains all leaf cells in the data container.

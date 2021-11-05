@@ -1,7 +1,7 @@
 AMR
 AMRKDTree
 APIs
-astro
+Astro
 astrojaz
 astrophysically
 AstroPy
@@ -10,7 +10,7 @@ Bili
 binarily
 Bitbucket
 bitwise
-bool
+Bool
 Borro
 Britton
 brittonsmith
@@ -117,7 +117,7 @@ NumPy
 Observatoire
 octants
 octree
-octrees
+Octrees
 Octs
 Orf
 Ortho
@@ -192,7 +192,7 @@ YAML
 yournamehere
 YTArray
 ytdata
-ytep
+YTEP
 YTEPs
 YTQuadTreeProj
 YTQuantity
