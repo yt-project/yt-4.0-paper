@@ -9,8 +9,8 @@ backporting
 Bili
 binarily
 Bitbucket
-Bitwise
-Bool
+bitwise
+bool
 Borro
 Britton
 brittonsmith
@@ -26,7 +26,7 @@ codebase
 colocation
 Comoving
 connectedness
-Coord
+coord
 Coords
 Corentin
 Côte
@@ -55,6 +55,8 @@ EWAH
 EWAHBoolArray
 extrema
 filesystem
+formatter
+formatters
 frontend
 frontrow
 geosciences
@@ -116,7 +118,7 @@ Observatoire
 octants
 octree
 octrees
-octs
+Octs
 Orf
 Ortho
 parallelize
@@ -133,9 +135,11 @@ Pixelizing
 PlotCollection
 Powderday
 powersoffour
+pre
+proeminently
 proj
 pytest
-Quadtree
+quadtree
 radiative
 rasterizers
 README
@@ -188,13 +192,13 @@ YAML
 yournamehere
 YTArray
 ytdata
-YTEP
+ytep
 YTEPs
 YTQuadTreeProj
 YTQuantity
 ytree
 yt’s
 Yu
-Zingale
+zingale
 zorder
 ZuHone

@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2021-10-15'
+date-meta: '2021-11-05'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -38,8 +38,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2021-10-15" />
-  <meta name="citation_publication_date" content="2021-10-15" />
+  <meta name="dc.date" content="2021-11-05" />
+  <meta name="citation_publication_date" content="2021-11-05" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -119,9 +119,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/b6ef4278c1cbb852e61d2acd12973d5546cb4f3c/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/b6ef4278c1cbb852e61d2acd12973d5546cb4f3c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/b6ef4278c1cbb852e61d2acd12973d5546cb4f3c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/8ed1a5b2e2dfa721eb18169ca14be56473e5d6cc/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/8ed1a5b2e2dfa721eb18169ca14be56473e5d6cc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/8ed1a5b2e2dfa721eb18169ca14be56473e5d6cc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,10 +143,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/b6ef4278c1cbb852e61d2acd12973d5546cb4f3c/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/8ed1a5b2e2dfa721eb18169ca14be56473e5d6cc/))
 was automatically generated
-from [yt-project/yt-4.0-paper@b6ef427](https://github.com/yt-project/yt-4.0-paper/tree/b6ef4278c1cbb852e61d2acd12973d5546cb4f3c)
-on October 15, 2021.
+from [yt-project/yt-4.0-paper@8ed1a5b](https://github.com/yt-project/yt-4.0-paper/tree/8ed1a5b2e2dfa721eb18169ca14be56473e5d6cc)
+on November 5, 2021.
 </em></small>
 
 ## Authors
@@ -550,15 +550,27 @@ By queuing up pull requests for merging, it allows maintainers to mark a set of 
 ### Code Styling and Linting
 
 For code included in ``yt``, a set of styles are enforced.
-We use the automated code styling tool [``black``](https://black.readthedocs.io/en/stable/), which has been designed to maximize readability with as few free parameters as possible.
-(In many ways, the fact that most of the ``yt`` code developers did not utilize this style before it was enforced likely enabled its uptake, as it was seen as an choice that "made everyone compromise.")
-In addition to code formatting, other automated methods for code consistency are applied; at present, this includes ensuring that all ``import`` statements are sorted (according to alphabetical order within a first/second/third-party categorization).
-Past iterations of this automated formatting have also included ensuring that ["f-strings"](https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals) are used wherever possible, but at present we have slightly loosened this requirement.
 
-For the purposes of checking for common code mistakes, we apply [``flake8``](https://flake8.pycqa.org/en/latest/), which reports unused variables, undefined variables, and other style violations that cannot be automatically corrected.
+We rely on the [``pre-commit``](https://pre-commit.com) framework, which enables automated checks as well as automatic fixes at commit time.
+This tool is an opt-in so not every "drive-by" contributor has to learn and install it, but continuous linting is provided by [pre-commit.ci](https://pre-commit.ci) so styling errors cannot slip in.
 
-All changes that can be applied via automation (specifically, code formatting) are accessible from within the GitHub pull request interface.
-This allows "drive-by" contributions to have their pull requests updated inline by an automated process, reducing the need to manually install packages to apply the changes.
+We configure `pre-commit` to run a mixture of formatters and static checkers.
+The former modify the code in place, while the latter only report errors and so-called "code smells" (such as undefined variables, unused imports, bare `except` statements...) but require human developers fix them.
+
+Our suite of formatter most proeminently includes
+[``black``](https://black.readthedocs.io/en/stable/),
+[``isort``](https://pycqa.github.io/isort/) and
+[``pyupgrade``](https://github.com/asottile/pyupgrade).
+``black`` has been designed to maximize readability with as few free parameters as possible
+(In many ways, the fact that most of the ``yt`` code developers did not utilize this style before it was enforced likely enabled its uptake, as it was seen as a choice that "made everyone compromise."),
+while ``isort`` ensures that all ``import`` statements are sorted (according to alphabetical order within a first/second/third-party categorization), and ``pyupgrade`` modernizes some Python idioms according to our minimal support version of the language.
+In particular, ``pyupgrade`` enforces the usage of modern Python ["f-strings"](https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals) since we do not support Python version older than 3.6.
+
+For static code analysis we rely on the [``flake8``](https://flake8.pycqa.org/en/latest/) framework.
+Effort is underway to enable using `mypy` for the specialized task of type checking.
+
+All changes that can be applied via automation (specifically, code formatting) are accessible from within the GitHub pull request interface, and are again provided by [pre-commit.ci](https://pre-commit.ci).
+This allows drive-by contributions to have their pull requests updated inline by an automated process, reducing the need to manually install packages to apply the changes.
 
 ### Type Hinting
 
