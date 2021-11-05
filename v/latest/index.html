@@ -24,7 +24,7 @@
   <meta name="author" content="Christopher Havlin" />
   <meta name="author" content="Stephanie Tonnesen" />
   <meta name="author" content="Add Yourself" />
-  <meta name="dcterms.date" content="2021-10-15" />
+  <meta name="dcterms.date" content="2021-11-05" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Introducing yt 4.0: Analysis and Visualization of Volumetric Data</title>
   <style>
@@ -109,8 +109,8 @@
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2021-10-15" />
-  <meta name="citation_publication_date" content="2021-10-15" />
+  <meta name="dc.date" content="2021-11-05" />
+  <meta name="citation_publication_date" content="2021-11-05" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -190,9 +190,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/b6ef4278c1cbb852e61d2acd12973d5546cb4f3c/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/b6ef4278c1cbb852e61d2acd12973d5546cb4f3c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/b6ef4278c1cbb852e61d2acd12973d5546cb4f3c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/8ed1a5b2e2dfa721eb18169ca14be56473e5d6cc/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/8ed1a5b2e2dfa721eb18169ca14be56473e5d6cc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/8ed1a5b2e2dfa721eb18169ca14be56473e5d6cc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -222,10 +222,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-4.0-paper/v/b6ef4278c1cbb852e61d2acd12973d5546cb4f3c/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-4.0-paper/v/8ed1a5b2e2dfa721eb18169ca14be56473e5d6cc/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-4.0-paper/tree/b6ef4278c1cbb852e61d2acd12973d5546cb4f3c">yt-project/yt-4.0-paper@b6ef427</a>
-on October 15, 2021.
+from <a href="https://github.com/yt-project/yt-4.0-paper/tree/8ed1a5b2e2dfa721eb18169ca14be56473e5d6cc">yt-project/yt-4.0-paper@8ed1a5b</a>
+on November 5, 2021.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -555,14 +555,23 @@ To alleviate this, we have recently begun utilizing the <a href="https://github.
 This allows a maintainer to mark a pull request as “queued” to be merged once a set of requirements – such as tests passing, approval messages, comment resolution and so forth – are met.
 By queuing up pull requests for merging, it allows maintainers to mark a set of pull requests as ready to be merged, and then when they meet the appropriate (automated and asynchronous) criteria, they will be merged.</p>
 <h3 id="code-styling-and-linting">Code Styling and Linting</h3>
-<p>For code included in <code>yt</code>, a set of styles are enforced.
-We use the automated code styling tool <a href="https://black.readthedocs.io/en/stable/"><code>black</code></a>, which has been designed to maximize readability with as few free parameters as possible.
-(In many ways, the fact that most of the <code>yt</code> code developers did not utilize this style before it was enforced likely enabled its uptake, as it was seen as an choice that “made everyone compromise.”)
-In addition to code formatting, other automated methods for code consistency are applied; at present, this includes ensuring that all <code>import</code> statements are sorted (according to alphabetical order within a first/second/third-party categorization).
-Past iterations of this automated formatting have also included ensuring that <a href="https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals">“f-strings”</a> are used wherever possible, but at present we have slightly loosened this requirement.</p>
-<p>For the purposes of checking for common code mistakes, we apply <a href="https://flake8.pycqa.org/en/latest/"><code>flake8</code></a>, which reports unused variables, undefined variables, and other style violations that cannot be automatically corrected.</p>
-<p>All changes that can be applied via automation (specifically, code formatting) are accessible from within the GitHub pull request interface.
-This allows “drive-by” contributions to have their pull requests updated inline by an automated process, reducing the need to manually install packages to apply the changes.</p>
+<p>For code included in <code>yt</code>, a set of styles are enforced.</p>
+<p>We rely on the <a href="https://pre-commit.com"><code>pre-commit</code></a> framework, which enables automated checks as well as automatic fixes at commit time.
+This tool is an opt-in so not every “drive-by” contributor has to learn and install it, but continuous linting is provided by <a href="https://pre-commit.ci">pre-commit.ci</a> so styling errors cannot slip in.</p>
+<p>We configure <code>pre-commit</code> to run a mixture of formatters and static checkers.
+The former modify the code in place, while the latter only report errors and so-called “code smells” (such as undefined variables, unused imports, bare <code>except</code> statements…) but require human developers fix them.</p>
+<p>Our suite of formatter most proeminently includes
+<a href="https://black.readthedocs.io/en/stable/"><code>black</code></a>,
+<a href="https://pycqa.github.io/isort/"><code>isort</code></a> and
+<a href="https://github.com/asottile/pyupgrade"><code>pyupgrade</code></a>.
+<code>black</code> has been designed to maximize readability with as few free parameters as possible
+(In many ways, the fact that most of the <code>yt</code> code developers did not utilize this style before it was enforced likely enabled its uptake, as it was seen as a choice that “made everyone compromise.”),
+while <code>isort</code> ensures that all <code>import</code> statements are sorted (according to alphabetical order within a first/second/third-party categorization), and <code>pyupgrade</code> modernizes some Python idioms according to our minimal support version of the language.
+In particular, <code>pyupgrade</code> enforces the usage of modern Python <a href="https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals">“f-strings”</a> since we do not support Python version older than 3.6.</p>
+<p>For static code analysis we rely on the <a href="https://flake8.pycqa.org/en/latest/"><code>flake8</code></a> framework.
+Effort is underway to enable using <code>mypy</code> for the specialized task of type checking.</p>
+<p>All changes that can be applied via automation (specifically, code formatting) are accessible from within the GitHub pull request interface, and are again provided by <a href="https://pre-commit.ci">pre-commit.ci</a>.
+This allows drive-by contributions to have their pull requests updated inline by an automated process, reducing the need to manually install packages to apply the changes.</p>
 <h3 id="type-hinting">Type Hinting</h3>
 <p>Code included in <code>yt</code> is not required to utilize <a href="https://docs.python.org/3/library/typing.html">type hinting</a>.
 However, new contributions are allowed to include type hinting, and work is underway to develop an ontology of types as well as a base set of utilities and types that would be used both internally, and possibly be made available to external package developers.</p>
