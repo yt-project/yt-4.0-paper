@@ -355,7 +355,7 @@ class LengthWidget {
     }
 }
 
-var grid1 = new GridPatch(new Point(200, 160), new Size(16, 16), 32, 32);
+var grid1 = new GridPatch(new Point(20, 20), new Size(12, 12), 32, 32);
 //var grid2 = new GridPatch(new Point(300, 160), new Size(25, 25), 8, 5);
 
 grids.push(grid1);
@@ -374,7 +374,7 @@ var lw = new LengthWidget(
         y: rp.origin.y - 10 }
         , 300, 1.0, 10.0, 1.0, 5.0);
 
-var plane = new RayPlane({x: 140, y: 180}, {x: 340, y: 380}, Nrays, rp, lw);
+var plane = new RayPlane({x: 40, y: 80}, {x: 240, y: 280}, Nrays, rp, lw);
 planes.push(plane);
 rp.updateElements();
 
