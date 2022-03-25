@@ -349,7 +349,6 @@ content/31.bitmap.md:111:EWAH
 content/31.bitmap.md:113:EWAH
 content/31.bitmap.md:141:tradeoff
 content/31.bitmap.md:144:decomp
-content/31.bitmap.md:150:neighbouring
 content/31.bitmap.md:150:perveice
 content/31.bitmap.md:161:SPH
 content/31.bitmap.md:162:incrementing

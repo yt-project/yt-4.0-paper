@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2021-11-05'
+date-meta: '2022-03-25'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -38,8 +38,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2021-11-05" />
-  <meta name="citation_publication_date" content="2021-11-05" />
+  <meta name="dc.date" content="2022-03-25" />
+  <meta name="citation_publication_date" content="2022-03-25" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -119,9 +119,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/6bd90d167860898fe4d65e93cccd3ed069d0d833/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/6bd90d167860898fe4d65e93cccd3ed069d0d833/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/6bd90d167860898fe4d65e93cccd3ed069d0d833/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/19052c19446b7209b23bab61858bc0d353da5006/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/19052c19446b7209b23bab61858bc0d353da5006/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/19052c19446b7209b23bab61858bc0d353da5006/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,10 +143,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/6bd90d167860898fe4d65e93cccd3ed069d0d833/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/19052c19446b7209b23bab61858bc0d353da5006/))
 was automatically generated
-from [yt-project/yt-4.0-paper@6bd90d1](https://github.com/yt-project/yt-4.0-paper/tree/6bd90d167860898fe4d65e93cccd3ed069d0d833)
-on November 5, 2021.
+from [yt-project/yt-4.0-paper@19052c1](https://github.com/yt-project/yt-4.0-paper/tree/19052c19446b7209b23bab61858bc0d353da5006)
+on March 25, 2022.
 </em></small>
 
 ## Authors
@@ -154,190 +154,190 @@ on November 5, 2021.
 
 
 + **The yt Project**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [yt-project](https://github.com/yt-project)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [yt_astro](https://twitter.com/yt_astro)<br>
   <small>
      NumFOCUS
   </small>
 
 + **Matthew Turk**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-5294-0198](https://orcid.org/0000-0002-5294-0198)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [MatthewTurk](https://github.com/MatthewTurk)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [powersoffour](https://twitter.com/powersoffour)<br>
   <small>
      School of Information Sciences, University of Illinois at Urbana-Champaign; Department of Astronomy, University of Illinois at Urbana-Champaign
   </small>
 
 + **Nathan J Goldbaum**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0001-5557-267X](https://orcid.org/0000-0001-5557-267X)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [ngoldbaum](https://github.com/ngoldbaum)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [njgoldbaum](https://twitter.com/njgoldbaum)<br>
   <small>
      National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
   </small>
 
 + **John A. ZuHone**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0003-3175-2347](https://orcid.org/0000-0003-3175-2347)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [jzuhone](https://github.com/jzuhone)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [astrojaz](https://twitter.com/astrojaz)<br>
   <small>
      Harvard-Smithsonian Center for Astrophysics
   </small>
 
 + **Cameron Hummels**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-3817-8133](https://orcid.org/0000-0002-3817-8133)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [chummels](https://github.com/chummels)<br>
   <small>
      Department of Theoretical Astrophysics, California Institute of Technology
   </small>
 
 + **Suoqing Ji**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0001-9658-0588](https://orcid.org/0000-0001-9658-0588)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [jisuoqing](https://github.com/jisuoqing)<br>
   <small>
      Physics Department, University of California Santa Barbara
   </small>
 
 + **Meagan Lang**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-2058-2816](https://orcid.org/0000-0002-2058-2816)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [langmm](https://github.com/langmm)<br>
   <small>
      National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
   </small>
 
 + **Madicken Munk**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0003-0117-5366](https://orcid.org/0000-0003-0117-5366)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [munkm](https://github.com/munkm)<br>
   <small>
      National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
   </small>
 
 + **Britton Smith**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-6804-630X](https://orcid.org/0000-0002-6804-630X)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [brittonsmith](https://github.com/brittonsmith)<br>
   <small>
      University of Edinburgh
   </small>
 
 + **Kacper Kowalik**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0003-1709-3744](https://orcid.org/0000-0003-1709-3744)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [Xarthisius](https://github.com/Xarthisius)<br>
   <small>
      National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
   </small>
 
 + **Miguel de Val-Borro**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [000-0002-0455-9384](https://orcid.org/000-0002-0455-9384)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [migueldvb](https://github.com/migueldvb)<br>
   <small>
      Planetary Science Institute
   </small>
 
 + **Jared W. Coughlin**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-4373-4114](https://orcid.org/0000-0002-4373-4114)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [jcoughlin11](https://github.com/jcoughlin11)<br>
   <small>
      National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
   </small>
 
 + **Corentin Cadiou**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0003-2285-0332](https://orcid.org/0000-0003-2285-0332)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [cphyc](https://github.com/cphyc)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [cphyc](https://twitter.com/cphyc)<br>
   <small>
      Department of Physics and Astrophysics, University College London; Institut d'Astrophysique de Paris
   </small>
 
 + **Michael Zingale**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0001-8401-030X](https://orcid.org/0000-0001-8401-030X)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [zingale](https://github.com/zingale)<br>
   <small>
      Stony Brook University
   </small>
 
 + **Leigh Orf**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-2677-6427](https://orcid.org/0000-0002-2677-6427)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [leighorf](https://github.com/leighorf)<br>
   <small>
      Space Science and Engineering Center, University of Wisconsin - Madison
   </small>
 
 + **Kelton Halbert**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0001-6898-2731](https://orcid.org/0000-0001-6898-2731)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [keltonhalbert](https://github.com/keltonhalbert)<br>
   <small>
      Cooperative Institute for Meteorological Satellite Studies, The University of Wisconsin, Madison
   </small>
 
 + **Clément Robert**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0001-8629-7068](https://orcid.org/0000-0001-8629-7068)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [neutrinoceros](https://github.com/neutrinoceros)<br>
   <small>
      Observatoire de la Côte d'Azur, Université de Nice
   </small>
 
 + **Christopher Havlin**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0003-0585-8236](https://orcid.org/0000-0003-0585-8236)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [chrishavlin](https://github.com/chrishavlin)<br>
   <small>
      School of Information Sciences, University of Illinois at Urbana-Champaign
   </small>
 
 + **Stephanie Tonnesen**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-8710-9206](https://orcid.org/0000-0002-8710-9206)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [stonnes](https://github.com/stonnes)<br>
   <small>
      Center for Computational Astrophysics, Flatiron Institute
   </small>
 
 + **Add Yourself**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [yournamehere](https://github.com/yournamehere)<br>
   <small>
      Your University

@@ -1,7 +1,7 @@
 AMR
 AMRKDTree
 APIs
-Astro
+astro
 astrojaz
 astrophysically
 AstroPy
@@ -10,7 +10,7 @@ Bili
 binarily
 Bitbucket
 bitwise
-Bool
+bool
 Borro
 Britton
 brittonsmith
@@ -57,7 +57,7 @@ extrema
 filesystem
 formatter
 formatters
-frontend
+Frontend
 frontrow
 geosciences
 Goldbaum
@@ -107,13 +107,12 @@ Monaghan
 Munk
 munkm
 namespace
-neighbouring
 neutrinoceros
 ngoldbaum
 njgoldbaum
 nosetests
 NumFOCUS
-NumPy
+numpy
 Observatoire
 octants
 octree
@@ -129,7 +128,7 @@ pipelining
 pixelization
 pixelize
 pixelized
-Pixelizers
+pixelizers
 pixelizes
 Pixelizing
 PlotCollection
@@ -146,7 +145,7 @@ README
 recomputation
 recursed
 reinstrumented
-resampling
+Resampling
 Rosen
 Rudd
 runtime
