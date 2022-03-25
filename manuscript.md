@@ -119,9 +119,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/19052c19446b7209b23bab61858bc0d353da5006/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/19052c19446b7209b23bab61858bc0d353da5006/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/19052c19446b7209b23bab61858bc0d353da5006/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/91bf15d5fa9bff10dc6d1b3d060a982fce07a298/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/91bf15d5fa9bff10dc6d1b3d060a982fce07a298/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/91bf15d5fa9bff10dc6d1b3d060a982fce07a298/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,9 +143,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/19052c19446b7209b23bab61858bc0d353da5006/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/91bf15d5fa9bff10dc6d1b3d060a982fce07a298/))
 was automatically generated
-from [yt-project/yt-4.0-paper@19052c1](https://github.com/yt-project/yt-4.0-paper/tree/19052c19446b7209b23bab61858bc0d353da5006)
+from [yt-project/yt-4.0-paper@91bf15d](https://github.com/yt-project/yt-4.0-paper/tree/91bf15d5fa9bff10dc6d1b3d060a982fce07a298)
 on March 25, 2022.
 </em></small>
 
@@ -1301,13 +1301,15 @@ In many cases, this is also considerably more performant, as constructing a full
 Development of this new method was referred to internally as "the demeshening," as it served to eliminate the global (octree) mesh.
 In order to facilitate the massive, type and dimensionality-specific spatial queries necessary for performing millions of queries as efficiently as possible, and with as little overhead as possible, `yt` packages a kD-tree written in Cython that can be called from either Cython or Python, and which provides low-level APIs for querying from within tight loops.
 Whereas previously, constructing a projection or a slice would slice through an octree mesh and provide the results from that variable resolution mesh, the current version of `yt`'s SPH machinery will instead construct a pixel plane and smooth the appropriately identified particles onto that pixel plane.
-This produces much higher-fidelity results, but a current limitation is that whenever the pixel plane is changed, the particles must be re-deposited; this puts it at odds with the similar machinery for octree and patch-based datasets, which provide a "read-once-pixelize-many" approach.
+This produces much higher-fidelity results (see Figure {@fig:demesh-comparison}), but a current limitation is that whenever the pixel plane is changed, the particles must be re-deposited; this puts it at odds with the similar machinery for octree and patch-based datasets, which provide a "read-once-pixelize-many" approach.
 
 The octree method -- while not incapable of utilizing different normalization and particle search methods -- was less flexible than the current, de-meshened approach.
 For instance, the method of SPH particle identification (i.e., so-called "scatter" or "gather" methods for correlating particles with positions) is now flexible and able to be set at runtime.
 The normalization (if used) can take into account global quantities, local quantities, and is flexible based on the field being smoothed.
 
-**MJT: Add before/after images of demeshening**
+![
+Comparisons between the older, octree-based method used in version 3.0 of `yt` (left) and the newer, "demeshened" algorithm used in yt 4.0 and beyond (right).  The left image clearly shows artifacts from the octree structure imposed on the underlying dataset by `yt`, and the right hand side is much smoother, with more definition at individual pixels.  The difference in color bars is notable as well, accounted for by the different normalization methods.
+](images/yt34comparison.png){#fig:demesh-comparison}
 
 Some additional differences between SPH analysis and the analysis of finite volume data are present when utilizing data selectors.
 For instance, 3D data selectors as applied to finite volume codes only select those cells whose centers fall within the data selector.

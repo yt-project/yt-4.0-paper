@@ -10,7 +10,7 @@ Bili
 binarily
 Bitbucket
 bitwise
-bool
+Bool
 Borro
 Britton
 brittonsmith
@@ -24,7 +24,7 @@ chummels
 Clément
 codebase
 colocation
-Comoving
+comoving
 connectedness
 coord
 Coords
@@ -44,6 +44,8 @@ datasets
 datasetwere
 d’Azur
 decomp
+demesh
+demeshened
 demeshening
 dimensionality
 dimensionally
@@ -116,8 +118,8 @@ numpy
 Observatoire
 octants
 octree
-Octrees
-Octs
+octrees
+octs
 Orf
 Ortho
 parallelize
@@ -138,14 +140,14 @@ pre
 proeminently
 proj
 pytest
-quadtree
+Quadtree
 radiative
 rasterizers
 README
 recomputation
 recursed
 reinstrumented
-Resampling
+resampling
 Rosen
 Rudd
 runtime
@@ -198,6 +200,6 @@ YTQuantity
 ytree
 yt’s
 Yu
-zingale
+Zingale
 zorder
 ZuHone
