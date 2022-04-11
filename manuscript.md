@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-03-25'
+date-meta: '2022-04-11'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -38,8 +38,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2022-03-25" />
-  <meta name="citation_publication_date" content="2022-03-25" />
+  <meta name="dc.date" content="2022-04-11" />
+  <meta name="citation_publication_date" content="2022-04-11" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -119,9 +119,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/91bf15d5fa9bff10dc6d1b3d060a982fce07a298/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/91bf15d5fa9bff10dc6d1b3d060a982fce07a298/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/91bf15d5fa9bff10dc6d1b3d060a982fce07a298/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/1187b2097bdf4076354905ee8e3be270b7974392/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/1187b2097bdf4076354905ee8e3be270b7974392/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/1187b2097bdf4076354905ee8e3be270b7974392/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,10 +143,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/91bf15d5fa9bff10dc6d1b3d060a982fce07a298/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/1187b2097bdf4076354905ee8e3be270b7974392/))
 was automatically generated
-from [yt-project/yt-4.0-paper@91bf15d](https://github.com/yt-project/yt-4.0-paper/tree/91bf15d5fa9bff10dc6d1b3d060a982fce07a298)
-on March 25, 2022.
+from [yt-project/yt-4.0-paper@1187b20](https://github.com/yt-project/yt-4.0-paper/tree/1187b2097bdf4076354905ee8e3be270b7974392)
+on April 11, 2022.
 </em></small>
 
 ## Authors
@@ -472,7 +472,84 @@ This three-pronged approach generally has suited the community; the process of b
 However, balancing the needs of a community requiring stable methods for analyzing data against the ease of development suggests that this is a toll worth paying.
 
 In general, the development of `yt` is reasonably top-heavy, with the majority of contributions coming from a core group of individuals.
-We discuss the implications of this on sustainability in Section [sec:sustainability].
+We discuss the implications of this on sustainability in Section [sec:sustainability], and provide here a graph of the contributions over time.
+
+<div id="figure-commit-graph"></div>{#fig:commit-graph}
+
+<script>
+var commitGraphSpecification = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "images/yt_repo.json"},
+  "transform": [
+    {
+      "timeUnit": "yearquarter",
+      "field": "committed_datetime",
+      "as": "commit_quarter"
+    },
+    {
+      "aggregate": [{"op": "count", "as": "count"}],
+      "groupby": ["commit_quarter", "author"]
+    }
+  ],
+  "hconcat": [
+    {
+      "params": [{"name": "commit_range", "select": {"type": "interval", "encodings": ["x"]}}],
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "aggregate": "sum",
+          "field": "count",
+          "type": "quantitative",
+          "axis": {"title": "# commits"}
+        },
+        "x": {
+          "field": "commit_quarter",
+          "type": "temporal",
+          "scale": {"padding": 0}
+        }
+      }
+    },
+    {
+      "transform": [
+        {"filter": {"param": "commit_range"}},
+        {
+          "aggregate": [{"op": "sum", "field": "count", "as": "author_count"}],
+          "groupby": ["author"]
+        },
+        {
+          "window": [{"op": "rank", "as": "rank"}],
+          "sort": [{"order": "descending", "field": "author_count"}]
+        },
+        {"filter": {"field": "rank", "lte": 10}},
+        {"calculate": "split(datum['author'], ' <', 1)[0]", "as": "author_name"}
+      ],
+      "mark": {"type": "bar"},
+      "encoding": {
+        "y": {
+          "field": "author_name",
+          "type": "nominal",
+          "axis": {"title": "top 10 authors"},
+          "sort": {"order": "ascending", "field": "rank"}
+        },
+        "x": {
+          "type": "quantitative",
+          "field": "author_count",
+          "scale": {"domain": [0, 9000]},
+          "axis": {"title": "number of commits"}
+        }
+      }
+    }
+  ],
+  "config": {
+    "axis": {"labelFontSize": 16, "titleFontSize": 16},
+    "legend": {"labelFontSize": 16, "titleFontSize": 16}
+  }
+};
+
+vegaEmbed('#figure-commit-graph', commitGraphSpecification);
+
+
+</script>
 
 ### Unit Testing {#sec:unit_testing}
 

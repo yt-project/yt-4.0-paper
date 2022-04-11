@@ -1,7 +1,7 @@
 AMR
 AMRKDTree
 APIs
-astro
+Astro
 astrojaz
 astrophysically
 AstroPy
@@ -24,7 +24,7 @@ chummels
 Clément
 codebase
 colocation
-comoving
+Comoving
 connectedness
 coord
 Coords
@@ -59,7 +59,7 @@ extrema
 filesystem
 formatter
 formatters
-Frontend
+frontend
 frontrow
 geosciences
 Goldbaum
@@ -114,7 +114,7 @@ ngoldbaum
 njgoldbaum
 nosetests
 NumFOCUS
-numpy
+NumPy
 Observatoire
 octants
 octree
@@ -140,14 +140,14 @@ pre
 proeminently
 proj
 pytest
-Quadtree
+quadtree
 radiative
 rasterizers
 README
 recomputation
 recursed
 reinstrumented
-resampling
+Resampling
 Rosen
 Rudd
 runtime
@@ -168,7 +168,7 @@ subrepository
 Suoqing
 Supercomputing
 susbtantial
-sympy
+SymPy
 sympy’s
 TBD
 Tbytes
@@ -200,6 +200,6 @@ YTQuantity
 ytree
 yt’s
 Yu
-Zingale
+zingale
 zorder
 ZuHone
