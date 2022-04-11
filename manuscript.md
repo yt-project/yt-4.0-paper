@@ -119,9 +119,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/1187b2097bdf4076354905ee8e3be270b7974392/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/1187b2097bdf4076354905ee8e3be270b7974392/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/1187b2097bdf4076354905ee8e3be270b7974392/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/dae4bbcfd65118e36e0280b7b5894c325f0bc167/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/dae4bbcfd65118e36e0280b7b5894c325f0bc167/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/dae4bbcfd65118e36e0280b7b5894c325f0bc167/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,9 +143,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/1187b2097bdf4076354905ee8e3be270b7974392/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/dae4bbcfd65118e36e0280b7b5894c325f0bc167/))
 was automatically generated
-from [yt-project/yt-4.0-paper@1187b20](https://github.com/yt-project/yt-4.0-paper/tree/1187b2097bdf4076354905ee8e3be270b7974392)
+from [yt-project/yt-4.0-paper@dae4bbc](https://github.com/yt-project/yt-4.0-paper/tree/dae4bbcfd65118e36e0280b7b5894c325f0bc167)
 on April 11, 2022.
 </em></small>
 
