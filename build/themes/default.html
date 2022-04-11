@@ -236,6 +236,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    font-size: 10pt;
   }
 
   /* table cells */
@@ -245,7 +246,8 @@
     padding: 10px;
     /* squash table if too wide for page by forcing line breaks */
     overflow-wrap: break-word;
-    word-break: break-word;
+    /* I am disabling this because the YTEP table gets a bit confused. */
+    /*word-break: break-word;*/
   }
 
   /* header row and even rows */
