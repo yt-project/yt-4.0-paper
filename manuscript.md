@@ -118,9 +118,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/958bc5d4e7dc984fefbf52988269183d29bda9ac/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/958bc5d4e7dc984fefbf52988269183d29bda9ac/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/958bc5d4e7dc984fefbf52988269183d29bda9ac/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/b8fd026b7a759b8f1e82fea6fab569a354d1ccae/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/b8fd026b7a759b8f1e82fea6fab569a354d1ccae/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/b8fd026b7a759b8f1e82fea6fab569a354d1ccae/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -142,9 +142,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/958bc5d4e7dc984fefbf52988269183d29bda9ac/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/b8fd026b7a759b8f1e82fea6fab569a354d1ccae/))
 was automatically generated
-from [yt-project/yt-4.0-paper@958bc5d](https://github.com/yt-project/yt-4.0-paper/tree/958bc5d4e7dc984fefbf52988269183d29bda9ac)
+from [yt-project/yt-4.0-paper@b8fd026](https://github.com/yt-project/yt-4.0-paper/tree/b8fd026b7a759b8f1e82fea6fab569a354d1ccae)
 on April 11, 2022.
 </em></small>
 
@@ -1833,7 +1833,7 @@ The implementation of the volume rendering is based on integrating a transfer fu
 
 TODO
 
-<canvas id="vrFigure" style="width:100%;height:100%;min-height: 500px;" hidpi="true">
+<canvas id="vrFigure" style="width:100%;height:100%;min-height: 500px;" hidpi="true"></canvas>
 <script type="text/paperscript" canvas="vrFigure" src="images/volume_rendering/vr-figure.js"></script>
 
 #### Octree ray traversal

@@ -16,7 +16,7 @@ Britton
 brittonsmith
 Bugfix
 Cadiou
-CGS
+cgs
 Champaign
 changeset
 chrishavlin
@@ -118,8 +118,8 @@ numpy
 Observatoire
 octants
 octree
-octrees
-octs
+Octrees
+Octs
 Orf
 Ortho
 parallelize
@@ -130,7 +130,7 @@ pipelining
 pixelization
 pixelize
 pixelized
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 PlotCollection
@@ -140,14 +140,14 @@ pre
 proeminently
 proj
 pytest
-quadtree
+Quadtree
 radiative
 rasterizers
 README
 recomputation
 recursed
 reinstrumented
-Resampling
+resampling
 Rosen
 Rudd
 runtime
@@ -193,7 +193,7 @@ YAML
 yournamehere
 YTArray
 ytdata
-ytep
+YTEP
 YTEPs
 YTQuadTreeProj
 YTQuantity
