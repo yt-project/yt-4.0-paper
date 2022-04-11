@@ -48,7 +48,6 @@ header-includes: |-
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="The yt Project" />
   <meta name="citation_author_institution" content="NumFOCUS" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="twitter:creator" content="@yt_astro" />
   <meta name="citation_author" content="Matthew Turk" />
   <meta name="citation_author_institution" content="School of Information Sciences, University of Illinois at Urbana-Champaign" />
@@ -119,9 +118,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/dae4bbcfd65118e36e0280b7b5894c325f0bc167/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/dae4bbcfd65118e36e0280b7b5894c325f0bc167/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/dae4bbcfd65118e36e0280b7b5894c325f0bc167/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/958bc5d4e7dc984fefbf52988269183d29bda9ac/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/958bc5d4e7dc984fefbf52988269183d29bda9ac/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/958bc5d4e7dc984fefbf52988269183d29bda9ac/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -143,9 +142,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/dae4bbcfd65118e36e0280b7b5894c325f0bc167/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/958bc5d4e7dc984fefbf52988269183d29bda9ac/))
 was automatically generated
-from [yt-project/yt-4.0-paper@dae4bbc](https://github.com/yt-project/yt-4.0-paper/tree/dae4bbcfd65118e36e0280b7b5894c325f0bc167)
+from [yt-project/yt-4.0-paper@958bc5d](https://github.com/yt-project/yt-4.0-paper/tree/958bc5d4e7dc984fefbf52988269183d29bda9ac)
 on April 11, 2022.
 </em></small>
 
@@ -154,8 +153,6 @@ on April 11, 2022.
 
 
 + **The yt Project**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [yt-project](https://github.com/yt-project)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
@@ -452,7 +449,7 @@ We include here plots of the level of engagement on mailing list discussions and
 ### Governance
 
 Between the publication of the first paper and this paper, the `yt` project instituted a form of governance involving a steering committee, a set of "members" of the project, and a defined process for developing improvements and enhancements (the YTEP, or `yt`-enhancement-proposal process).
-YTEPs are discussed in [sec:ytep].
+YTEPs are discussed in @sec:ytep.
 The systems developed account for a number of important procedures, mostly related to decision-making, but do not address pressing community needs such as community standards for conduct, changes in committee composition, sub-project coordination, or the transition of members and developers to "emeritus" status.
 
 
@@ -472,7 +469,7 @@ This three-pronged approach generally has suited the community; the process of b
 However, balancing the needs of a community requiring stable methods for analyzing data against the ease of development suggests that this is a toll worth paying.
 
 In general, the development of `yt` is reasonably top-heavy, with the majority of contributions coming from a core group of individuals.
-We discuss the implications of this on sustainability in Section [sec:sustainability], and provide here a graph of the contributions over time.
+We discuss the implications of this on sustainability in Section @sec:sustainability, and provide here a graph of the contributions over time.
 
 <div id="figure-commit-graph"></div>{#fig:commit-graph}
 
@@ -810,9 +807,9 @@ Additionally, by providing some routines as options, we can in some instances sp
  * `select_bbox_edge(lower_left, upper_right)`: This is a special-case of the bounding box routine that provides information as to whether or not the *entire* bounding box is included or just a *partial* portion of the bounding box.
 
 We demonstrate a handful of selection operations on a low-resolution dataset below.
-In Figure @fig:reg2 we illustrate the selection of a rectangular prism (i.e., a `region`, like in Section [sec:dobj-region].
-In Figure @fig:sp2, we illustrate the selection of a sphere (i.e., a `sphere`, like in Section [sec:dobj-sphere].
-And, to demonstrate yt's ability to construct boolean selectors from these objects (i.e., Section [sec:dobj-bool] we show what the logical `NOT` of these two objects would produce in @fig:reg2_not_sp2.
+In Figure @fig:reg2 we illustrate the selection of a rectangular prism (i.e., a `region`, like in Section @sec:dobj-region.
+In Figure @fig:sp2, we illustrate the selection of a sphere (i.e., a `sphere`, like in Section @sec:dobj-sphere.
+And, to demonstrate yt's ability to construct boolean selectors from these objects (i.e., Section @sec:dobj-bool we show what the logical `NOT` of these two objects would produce in @fig:reg2_not_sp2.
 
 ![
 A selection of data in a low-resolution simulation from a rectangular prism.
@@ -1545,10 +1542,10 @@ This means that any given selection is less likely to contain a collision and it
 
 Increasing the order of the coarse index has the same effect as nesting a second refined index within cells with collisions, but can also increases the size of the resulting map and the time it takes to identify files touched by a selection.
 However, if the order of the coarse index is too small or the order of the refined index too large, this too can increase the cost of a selection in terms of memory and time.
-Section [sec:test_order] discusses this tradeoff and how to choose index orders.
+Section @sec:test_order discusses this tradeoff and how to choose index orders.
 
 Collisions are more common for file partitioning schemes that are not localized.
-Figure @fig:collision_files shows an example of collisions for the different partitioning schemes discussed in Section [sec:decomp].
+Figure @fig:collision_files shows an example of collisions for the different partitioning schemes discussed in Section @sec:decomp.
 
 ![
 Examples of collisions for four different domain partitioning schemes.
@@ -1585,7 +1582,7 @@ The ghost zone has a width of one Morton cell at an index order of 3 and contain
 However, due to differences in how the domain was partitioned between the files in the four cases, the number of additional ghost files touched by the ghost zone in each case is different.
 This will also depend on the order of the index to which ghost zones are added.
 Ghost zones added at the order of the coarse index will be larger than those added at the order of the refined index and will have a higher probability of touching additional files.
-While including ghost zones is advantageous when neighbor info is needed, it also increases the computational cost of identifying files (see Section [sec:tests]).
+While including ghost zones is advantageous when neighbor info is needed, it also increases the computational cost of identifying files (see Section @sec:tests).
 
 ### Methods {#sec:methods}
 
@@ -1653,7 +1650,7 @@ For each test a Morton index bitmap was constructed for the dataset and used to 
 The performance is assessed in terms of the number of files identified and the average time required to identify them across 10 runs.
 If fewer files are touched, fewer files will need to be loaded during analysis of a selected region and the overall fraction of time spent on I/O will be lower.
 If less time is required to identify the files touched by a given selector, more selections can be made using the same computational resources.
-This was done for varying index orders (Section [sec:test_order]), selector sizes (Section [sec:test_size]), and partitions of the domain between files (Section [sec:test_decomp]).
+This was done for varying index orders (Section @sec:test_order), selector sizes (Section @sec:test_size), and partitions of the domain between files (Section @sec:test_decomp).
 
 #### Index Order {#sec:test_order}
 
@@ -1676,18 +1673,18 @@ However, as the order increases, the number of collisions drops and the file cou
 This translates to a $\sim75$% reduction in the memory and time required for processing files, a significant increase in performance.
 For a 7th order bitmap index, selection requires $>100\times$ the time that the same selection took using a 6th order index, but there is no change in the number of files indicated.
 A 6th order index is sufficient to identify the minimal set of files touched by the selectors in this case because the dataset was partitioned between the files along a 6th order Hilbert space filling curve.
-While it is generally true that the time required to identify files using a bitmap index will increase exponentially with the size of the index, the order of the index that results in the minimal number of files for any dataset will depend upon how the domain is partitioned between files (see Section [sec:test_decomp]).
+While it is generally true that the time required to identify files using a bitmap index will increase exponentially with the size of the index, the order of the index that results in the minimal number of files for any dataset will depend upon how the domain is partitioned between files (see Section @sec:test_decomp).
 The memory required to store the index for the test dataset scales according to $\propto2^{2k}$, for a $k^{\mbox{th}}$ order index.
 If uncompressed bitmaps had been used instead of EWAH compressed bitmap, the memory would have scaled with the total number of cells contained within the 3-dimensional test domain ($2^{3k}$).
 
 #### Collision Refinement {#sec:test_order2}
 
-Increasing the refinement of the primary index does so for the entire domain and, as seen in Section [sec:test_order1], can become costly in terms of the memory required to store the bitmap and the time required to perform operations.
+Increasing the refinement of the primary index does so for the entire domain and, as seen in Section @sec:test_order1, can become costly in terms of the memory required to store the bitmap and the time required to perform operations.
 However, it is also possible to increase refinement by nesting a second Morton bitmap index within those cells of the primary index that contain collisions.
 As the nested indexes will contain a smaller portion of the domain and data, they will be less complex and can be compressed more efficiently than the primary index covering the entire domain.
 This enhanced compression means that, although a greater overall number of EWAH compressed bitmaps will need to be utilized (one for the coarse index and one for each collision within the coarse index), less space will be needed to store the bitmap and bitwise operations will be faster.
 Figure @fig:test_order2 shows the results for adding a secondary index of varying order with the overall refinement order of the index (primary index order + secondary index order) held constant at 6.
-The test dataset and selectors applied were the same as in Section [sec:test_order1].
+The test dataset and selectors applied were the same as in Section @sec:test_order1.
 
 ![
 Dependence of query time (top), fraction of files selected/cells with collisions (middle), and memory required to store the index (bottom) on the order of the secondary index used to refine collisions.
@@ -1711,7 +1708,7 @@ However, if a datasetwere less uniform with concentrations of points, the optima
 The time required to identify files touched by a selection will also depend upon the size of the region being selected.
 Larger selectors will intersect more indices and more files, resulting in more bitmap operations.
 Figure @fig:test_size shows the result from varying the selector size.
-The same test datasetfrom Section [sec:test_order] was used.
+The same test datasetfrom Section @sec:test_order was used.
 A bitmap index with a 4th order primary Morton index and 2nd order secondary Morton index was used in all cases.
 Each cube selector was placed at the center of the domain and scaled along each dimension to some fraction of the total domain.
 
@@ -1733,11 +1730,11 @@ However, queries including ghost zones require slightly more time even when this
 
 #### Domain Partitioning {#sec:test_decomp}
 
-As discussed in Section [sec:decomp], a bitmap index is more effective in cases where the domain is partitioned between files in a localized way.
+As discussed in Section @sec:decomp, a bitmap index is more effective in cases where the domain is partitioned between files in a localized way.
 If files contain non-contiguous parts of the domain, contiguous selections will require more files to be loaded.
 Figure @fig:test_decomp shows results for four different partitioning schemes.
 All four data sets cover the same three-dimensional domain with $1024^3$ points split across 512 files.
-The Hilbert dataset is the same one used in previous tests (see Section [sec:test_order] for a description).
+The Hilbert dataset is the same one used in previous tests (see Section @sec:test_order for a description).
 The Morton dataset is constructed in a similar way to the Hilbert dataset with file partitions occurring along a 6th order Morton curve and including a 10% scatter of points between Morton cells.
 The sliced dataset is partitioned in slices along one dimension with 10% scatter of points between adjacent slices.
 Files in the random dataset contain a random sample of points, uniformly distributed across the domain.

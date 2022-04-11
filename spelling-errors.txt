@@ -1,7 +1,7 @@
 AMR
 AMRKDTree
 APIs
-astro
+Astro
 astrojaz
 astrophysically
 AstroPy
@@ -9,8 +9,8 @@ backporting
 Bili
 binarily
 Bitbucket
-Bitwise
-bool
+bitwise
+Bool
 Borro
 Britton
 brittonsmith
@@ -24,9 +24,9 @@ chummels
 Clément
 codebase
 colocation
-comoving
+Comoving
 connectedness
-coord
+Coord
 Coords
 Corentin
 Côte
@@ -40,7 +40,7 @@ datapoint
 dataset
 datasetfrom
 dataset’s
-Datasets
+datasets
 datasetwere
 d’Azur
 decomp
@@ -119,7 +119,7 @@ Observatoire
 octants
 octree
 octrees
-Octs
+octs
 Orf
 Ortho
 parallelize
@@ -130,7 +130,7 @@ pipelining
 pixelization
 pixelize
 pixelized
-Pixelizers
+pixelizers
 pixelizes
 Pixelizing
 PlotCollection
@@ -140,14 +140,14 @@ pre
 proeminently
 proj
 pytest
-Quadtree
+quadtree
 radiative
 rasterizers
 README
 recomputation
 recursed
 reinstrumented
-resampling
+Resampling
 Rosen
 Rudd
 runtime
@@ -193,7 +193,7 @@ YAML
 yournamehere
 YTArray
 ytdata
-YTEP
+ytep
 YTEPs
 YTQuadTreeProj
 YTQuantity
