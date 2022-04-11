@@ -5,6 +5,7 @@ output-file: output/manuscript.html
 include-before-body:
 - build/plugins/d3.html
 - build/plugins/paperjs.html
+- build/plugins/vega-lite.html
 include-after-body:
 ### theme
 - build/themes/default.html
@@ -23,7 +24,6 @@ include-after-body:
 - build/plugins/hypothesis.html
 - build/plugins/mathjax.html
 #- build/plugins/scite.html
-- build/plugins/vega-lite.html
 variables:
   document-css: false
   math: ""
