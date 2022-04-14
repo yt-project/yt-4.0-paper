@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-04-11'
+date-meta: '2022-04-14'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -38,8 +38,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2022-04-11" />
-  <meta name="citation_publication_date" content="2022-04-11" />
+  <meta name="dc.date" content="2022-04-14" />
+  <meta name="citation_publication_date" content="2022-04-14" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -118,9 +118,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/b8fd026b7a759b8f1e82fea6fab569a354d1ccae/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/b8fd026b7a759b8f1e82fea6fab569a354d1ccae/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/b8fd026b7a759b8f1e82fea6fab569a354d1ccae/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/652a74c467645e0c7ee2406b4d7bf784ff6e7783/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/652a74c467645e0c7ee2406b4d7bf784ff6e7783/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/652a74c467645e0c7ee2406b4d7bf784ff6e7783/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -142,10 +142,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/b8fd026b7a759b8f1e82fea6fab569a354d1ccae/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/652a74c467645e0c7ee2406b4d7bf784ff6e7783/))
 was automatically generated
-from [yt-project/yt-4.0-paper@b8fd026](https://github.com/yt-project/yt-4.0-paper/tree/b8fd026b7a759b8f1e82fea6fab569a354d1ccae)
-on April 11, 2022.
+from [yt-project/yt-4.0-paper@652a74c](https://github.com/yt-project/yt-4.0-paper/tree/652a74c467645e0c7ee2406b4d7bf784ff6e7783)
+on April 14, 2022.
 </em></small>
 
 ## Authors
@@ -1185,9 +1185,111 @@ than chaining | (or) operations to create a single, large union.
 
 ## Processing and Analysis of Data
 
+`yt` provides several interfaces for accessing the data available in a given dataset.
+As described in @sec:data_objects, the primary means of accessing data is through "data objects" that apply selections to the dataset.
+These objects present dictionary-like interfaces that return data; below, we describe what options are available for the data that is returned (@sec:field_system), as well as high-level interfaces for applying aggregations and reductions (@sec:arraylike_operations).
 
+### Field System {#sec:field_system}
 
-### Array-like Operations
+In `yt`, there are three types of "fields" that define values at a given spatial location.
+The first of these is an "on-disk" field, representing the raw, unmodified (except potentially up-cast to 64 bit precision) values read from the data storage that defines the dataset, such as files or bucket storage; while `yt` does provide routines for reading these fields, they are passed largely unmodified and so we do not discuss them in depth.
+The second type of field is a "derived field," which is a functional definition of how to process or combine one or more fields that exist in the dataset.
+Finally, providing the closure necessary for these derived fields to be accessed independently of their naming convention are "alias fields" that provide mappings between platform- or format-specific names for fields and those used internally in `yt`.
+This collection of three classes of fields
+
+Fields are also defined by their "sampling type" to distinguish between those fields defined in a volume-filling fashion (i.e., cell-based fields) and those that are defined by discrete samples that may or may not require closure or convolution functions to be applied.
+Fields that are defined as a collection of discrete samples can be combined or filtered differently than those that are defined in a volume-filling manner, as described in @sec:particle_filters and @sec:particle_unions.
+
+#### Field Aliases {#sec:field_aliases}
+
+Small differences in naming fields can prove disproportionately challenging for writing platform-neutral analysis code.
+For instance, if one platform names the "density" field `dens` and another refers to it as `Density` (or, as we have seen in one platform, even the unicode character for $\rho$) then any platform-independent derived field that utilizes density must be defined multiple times to refer to this fundamentally identical quantity.
+(An important note here is that in many cases, the reverse problem is true -- some codes may refer to things with the same name but with different underlying definitions, which provides an additional challenge to the analysis process by requiring [disambiguation](https://www.youtube.com/watch?v=WZLkcFns8Ks).)
+
+To address this issue, `yt` defines a set of fundamental fields, along with a naming convention for extensibility, that are provided as "aliases" for the dataset-specific field names.
+This enables a consistent ontology to be defined for fields in `yt`, upon which the remainder of derived fields can rely.
+Typically these are defined by the authors of a given dataset format frontend, wherein a translation or lookup table is provided to match the on-disk fields to those expected by `yt`.
+
+In some cases, it is through a combination of derived and aliased fields that the full set of data is made available to the researcher; for instance, some datasets do not store velocity as a quantity on disk, but instead store momentum.
+In this case, momentum is aliased from the on-disk field to the `yt` field, and then a derived field is generated to seamlessly provide access to the velocity field wherever it is needed.
+
+#### Derived Fields {#sec:derived_fields}
+
+In addition to the fields that are defined in the dataset, `yt` recognizes that there exist essentially infinite fields *in potentia* that can be defined.
+For instance, commonly in astrophysics datasets the "density" of different elemental abundances are stored (which provides a natural conservation scheme with the density) in the dataset.
+A simple derived field might be defined to provide the "fraction" of a given field:
+$$ f_{X} \equiv \frac{\rho_{X}}{\rho} $$
+`yt` provides the ability to define this as a derived field in a functional form.
+For instance, if the density of helium is stored as the field-tuple `("gas", "helium_density")` we can define the function as:
+
+```python
+def _helium_fraction(field, data):
+    return data["gas", "helium_density"] / data["gas", "density"]
+```
+
+Note that here, the argument `field` is a field definition object and `data` is a data object which we are using for our selection.
+This is the form that derived fields in `yt` take; these can be supplied to the function `add_field` (or they can use `derived_field` as a decorator) and they will become available for all data objects.
+
+These fields can accept parameters (associated with the base data object used for selection) and can require that spatial information is made available to the derived field; this can enable the calculation of finite-difference stencils for operations such as averaging and operators such as the gradient.
+
+Derived fields are an extremely integral component of `yt` and are the gateway to enabling low-memory overhead calculations and sharing of analysis code.
+In addition, `yt` includes a large number of fields available, many of which are dynamically constructed according to metadata available in the dataset, to jump-start analysis.
+Researchers using `yt` can load a dataset and immediately compute, for instance, the velocity divergence and `yt` will construct the appropriate finite different stencil, fill in any missing zones at the edge of individual boundaries, and return an array that can be accessed, visualized or processed.
+
+#### Particle Filters {#sec:particle_filters}
+
+Many of the data formats that `yt` accepts define particles as mixtures of a single set of attributes (such as position, velocity, etc) and then a "type" -- for instance, intermingling dark matter particles with "star" particles.
+Where simulations are concerned, this can produce much more efficient code; since particles are typically evolved in the same fashion, storing them adjacent in memory can speedup operations such as time evolution steps.
+However, when reading the data in, they often need to be handled in fundamentally different ways.
+The analysis of dark matter particles in a galaxy, for instance, needs to be conducted differently than the analysis of collisional particles, or particles that arise from other phenomena (such as gas).
+`yt` provides a method for creating new "particle types" on the fly and applying existing derived fields to them.
+By adding a new "filter" method, particles that meet this criteria ("high-mass Black Holes," for instance, or "star clusters more than 1 billion years old") are accessible in a new field tuple.
+This enables all existing memory-conservative operations to act on them.
+
+This filter, for example, checks and returns only those particles whose field `particle_type` is set to a value of 2.
+
+```python
+@yt.particle_filter(requires=["particle_type"], filtered_type="all")
+def stars(pfilter, data):
+    filter = data[(pfilter.filtered_type, "particle_type")] == 2
+    return filter
+```
+
+In this case, `yt` also infers the name of the newly filtered type from the name of the function, and they become stars.
+Now all existing operations will work on field-tuples beginning with `"stars"` as their field type.
+
+#### Particle Unions {#sec:particle_unions}
+
+The opposite operation to that in @sec:particle_filters is also accessible, by which multiple particle types can be combined and viewed as a single logical type.
+For instance, if "star particles" and "black hole" particles are distinct in a simulation of galaxy formation, they can be combined into a logical union:
+
+```python
+u = ParticleUnion("massive_objects", ["bh", "stars"])
+ds.add_particle_union(u)
+```
+
+Since unions are restricted to combinations *in full* of different types, their creation requires only specification of the particle types to combine.
+The set of available fields is the intersection of the fields available for *all* the combined types.
+If both particle types share fields A and B but only one shares C, the union will only have fields A and B accessible to it.
+
+#### Field Detection {#sec:field_detection}
+
+`yt` determines at dataset instantiation time the fields that are available to be computed.
+This provides the ability for researcher to *query* what fields are available, and additionally as a side-effect it provides information to the `yt` IO routines which fields need to be computed for a given derived field.
+By utilizing this information, `yt` can "resolve" all required fields when a derived field is requested.
+As such, it is able to identify that `("gas", "velocity_divergence")` relies on the velocity fields along each axis.
+If these are the fields that exist in the dataset, the resolution process concludes here.
+If, however, they need to be computed from the momentum and density fields, those become the fields that are read from the dataset.
+
+This resolution of field dependencies enables `yt` to read only the fields that are necessary *and* to do so in a single pass over a file, reducing the initialization and seeking time within a file.
+Particularly in environments where metadata operations (required for an `open` system call) or seek operations (where dataset chunks may need to be looked up within a file as indexed by a header) are expensive, this can have significant impact on the overall performance, and by operating on a chunk-by-chunk basis, it further reduces the need to store multiple fields in memory simultaneously.
+
+This computation does, however, come with an overhead.
+Detecting the fields that are required (and thus determining which fields are available) can be expensive, as many small sympy objects are created in the unit handling subsystem and many redundant calculations performed in the `yt`-specific field resolution code.
+This is an area of great interest for future optimizations, as the current situation benefits the access of large derived fields over iteration over many small datasets.
+In particular, an enormous amount of time in the unit testing framework is spent detecting fields for datasets that are only used once and then discarded.
+
+### Array-like Operations {#sec:arraylike_operations}
 
 In `yt`, a newly-constructed data selector contains no data -- this enables data selectors for large regions, in extremely large datasets, to be lightweight and cheap to construct.
 By ensuring that these objects don't immediately consume resources, they can be manipulated and operated on in a high-level fashion, without taxing the computational power.
