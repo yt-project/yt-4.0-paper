@@ -2,7 +2,7 @@ AMR
 AMRKDTree
 APIs
 arraylike
-Astro
+astro
 astrojaz
 astrophysically
 AstroPy
@@ -17,7 +17,7 @@ Britton
 brittonsmith
 Bugfix
 Cadiou
-CGS
+cgs
 Champaign
 changeset
 chrishavlin
@@ -28,7 +28,7 @@ collisional
 colocation
 Comoving
 connectedness
-coord
+Coord
 Coords
 Corentin
 Côte
@@ -42,7 +42,7 @@ datapoint
 dataset
 datasetfrom
 dataset’s
-datasets
+Datasets
 datasetwere
 d’Azur
 decomp
@@ -62,7 +62,7 @@ extrema
 filesystem
 formatter
 formatters
-frontend
+Frontend
 frontrow
 geosciences
 Goldbaum
@@ -128,6 +128,7 @@ Ortho
 parallelize
 performant
 perveice
+PHOX
 pipelined
 pipelining
 pixelization
@@ -144,8 +145,10 @@ pre
 proeminently
 proj
 pytest
-Quadtree
+pyxsim
+quadtree
 radiative
+RADMC
 rasterizers
 README
 recomputation
@@ -179,6 +182,7 @@ Tbytes
 TODO
 Tonnesen
 tradeoff
+Triden
 unappropriate
 unitful
 unitless
@@ -197,13 +201,14 @@ YAML
 yournamehere
 YTArray
 ytdata
-ytep
+YTEP
 YTEPs
+ytini
 YTQuadTreeProj
 YTQuantity
 ytree
 yt’s
 Yu
-zingale
+Zingale
 zorder
 ZuHone

@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-04-14'
+date-meta: '2022-05-17'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -38,8 +38,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2022-04-14" />
-  <meta name="citation_publication_date" content="2022-04-14" />
+  <meta name="dc.date" content="2022-05-17" />
+  <meta name="citation_publication_date" content="2022-05-17" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -118,9 +118,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/652a74c467645e0c7ee2406b4d7bf784ff6e7783/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/652a74c467645e0c7ee2406b4d7bf784ff6e7783/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/652a74c467645e0c7ee2406b4d7bf784ff6e7783/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/9f877f285e1afb72bc089a93322725bd7997e0b8/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/9f877f285e1afb72bc089a93322725bd7997e0b8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/9f877f285e1afb72bc089a93322725bd7997e0b8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -142,10 +142,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/652a74c467645e0c7ee2406b4d7bf784ff6e7783/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/9f877f285e1afb72bc089a93322725bd7997e0b8/))
 was automatically generated
-from [yt-project/yt-4.0-paper@652a74c](https://github.com/yt-project/yt-4.0-paper/tree/652a74c467645e0c7ee2406b4d7bf784ff6e7783)
-on April 14, 2022.
+from [yt-project/yt-4.0-paper@9f877f2](https://github.com/yt-project/yt-4.0-paper/tree/9f877f285e1afb72bc089a93322725bd7997e0b8)
+on May 17, 2022.
 </em></small>
 
 ## Authors
@@ -2267,8 +2267,20 @@ The `Dataset.set_units` updates the `h` symbol to the correct value when loading
 
 ## Analysis Modules
 
+For much of its development history, `yt` took the approach of bundling as many analysis modules as possible in the primary repository.
+This provided the advantage of having all work be centralized, and ensuring that each download or installation of `yt` was a fully-featured system for analyzing a large swath of data, but it brought with it the development overhead of the entire `yt` package for what in many cases were isolated pieces of functionality with separable responsibilities.
 
-## Extensions and Ecosystem
+As a result of the slowing in speed of development as a result of review requirements (and limited personnel to conduct those reviews), some of the analysis modules that were bundled with `yt` have been "spun out" into their own repository, `yt_astro_analysis`.
+This repository, which is developed, released and installed separately from `yt`, includes modules for cosmological observation (upon which Triden, which is discussed in @sec:trident, is based), dark matter halo finding and analysis, tools for interacting with position-position-velocity cubes, and a system for exporting from `yt` to RADMC-3D.
+**TODO: Find the correct citation for RADMC-3D.**
+
+
+## Ecosystem of Packages
+
+Several packages have been developed that utilize `yt` as an infrastructural component.
+In contrast to the analysis modules, which have typically been built as extensions of `yt`, these extensions utilize `yt` as a framework and typically only rely upon public APIs, often with no changes necessary to upstream `yt`.
+In some cases, `yt` is also an *optional* dependency for the package.
+In most cases, these are described in detail elsewhere, and citations to that external information are included here.
 
 ### Trident
 
@@ -2277,7 +2289,8 @@ In many ways, Trident is the first external package that utilizes `yt` to provid
 
 ### Powderday
 
-[@doi:10.1038/nature15383]
+Powderday [@doi:10.3847/1538-4365/abc487 ; @doi:10.1038/nature15383] is an open source package connecting `yt`, population synthesis modules and the monte carlo radiation transport code Hyperion [@doi:10.1051/0004-6361/201117150] to develop synthetic observations of galaxies from astrophysics simulations.
+Powderday uses `yt` to read and transform data, including high-fidelity gridding of SPH particles into an octree form, to prepare galaxy simulations to be processed.
 
 ### ytree
 
@@ -2285,6 +2298,18 @@ Building on `yt` for access to halo catalogs, and implementing a similar system 
 
 ytree provides flexibility in determining the path that a given analysis takes through the graph of merger trees; for instance, it enables the user to select if they wish to follow the "most massive" progenitor halo backwards in time, or even to set their own criteria for this.
 Connecting this to the raw, unprocessed data from the simulation (such as the unsampled particle or cell content that comprises the halos) allows researchers to deepen and guide their analysis based on the physical characteristics of the merger history.
+
+### pyxsim
+
+pyXSIM [@doi:10.25080/Majora-14bd3278-010] is a python package for simulating X-ray observations from astrophysical sources.
+It implements the PHOX algorithm [@doi:10.1111/j.1365-2966.2011.20278.x; @doi:10.1093/mnras/sts120] and is implemented to support grid-based codes, particle-based codes, and even data constructed from scratch in numpy arrays.
+pyXSIM has been used to create synthetic observations from current and upcoming space telescopes.
+
+### ytini
+
+While `yt` has functionality for volume rendering, it provides far from the scene-control, composition and camera positioning necessary for "cinematic visualization."
+The tool ytini [@doi:10.1088/1538-3873/aa51b3] serves as an intermediary between `yt` and the visualization platform Houdini, often used for special effects and visual arts in industry and professional production environments.
+ytini was developed to ease the process of converting data from simulation format into one suitable for production teams to utilize in Houdini and other visual effects software, and has been designed to enable deeper collaboration between researchers and visualization and outreach experts.
 
 
 ## Future Directions
