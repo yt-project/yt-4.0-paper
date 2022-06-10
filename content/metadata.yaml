@@ -6,6 +6,8 @@ keywords:
   - manubot
 pandoc:
   manubot-fail-on-errors: True
+  citekey-aliases:
+    amrvac-paper: doi:10.1016/S0010-4655(03)00139-5
 lang: en-US
 authors:
   # NOTE: These are not in any specific order.
