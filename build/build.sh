@@ -33,7 +33,8 @@ manubot process \
   --output-directory=output \
   --cache-directory=ci/cache \
   --skip-citations \
-  --log-level=INFO
+  --log-level=INFO \
+  --template-variables-path=content/frontends.yaml
 
 # Make output directory
 mkdir -p output
