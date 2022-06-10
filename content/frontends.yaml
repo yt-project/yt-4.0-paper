@@ -11,9 +11,19 @@ frontends:
     usage_citations: []
   - name: amrvac
     index_type: ['grid']
-    comments: 
-    citations: []
-    usage_citations: []
+    comments: |
+      MPI-AMRVAC is a parallel adaptive mesh refinement framework aimed at
+      solving (primarily hyperbolic) partial differential equations by a number
+      of different numerical schemes. The emphasis is on (near) conservation
+      laws and on shock-dominated problems in particular.
+    citations:
+      - '@doi:10.1016/S0010-4655(03)00139-5'
+      - '@doi:10.1088/0067-0049/214/1/4'
+      - '@doi:10.3847/1538-4365/aaa6c8'
+    usage_citations:
+      - '@doi:10.1051/0004-6361/202037616'
+      - '@doi:10.1051/0004-6361/202039630'
+      - '@doi:10.1051/0004-6361/201937414'
   - name: arepo
     index_type: ['particle']
     comments: |
