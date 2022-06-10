@@ -1,180 +1,218 @@
 frontends:
   - name: adaptahop
-    index_type: particle
+    index_type: ['particle']
     comments: Halo finding format
     citations: []
     usage_citations: []
   - name: ahf
-    index_type: particle
+    index_type: ['particle']
     comments: Halo finding format
     citations: []
     usage_citations: []
   - name: amrvac
-    index_type: grid
+    index_type: ['grid']
     comments: 
     citations: []
     usage_citations: []
   - name: arepo
-    index_type: particle
-    comments: While listed as a "particle" dataset, AREPO data is properly described as a moving mesh.
+    index_type: ['particle']
+    comments: >
+      While listed as a "particle" dataset, AREPO data is properly described as
+      a moving mesh.  For visualization purposes, yt treats it similarly to an
+      SPH dataset; some efforts have been made to properly apply
+      nearest-neighbor interpolation, but these have not been mainlined in the
+      yt visualization routines as of yet.
     citations: []
     usage_citations: []
   - name: art
-    index_type: octree
-    comments:
+    index_type: ['octree', 'particle']
+    comments: >
+      ART, or 'NMSU-ART' as it is occasionally referred to internally, is an
+      octree-based code that is often used for cosmology simulations and galaxy
+      formation simulations.  yt supports two sets of data formats in the
+      NMSU-ART family.  The first is a particle-only format, where the
+      particles are stored independently of any gas structure.  The second is
+      the hydro data format, wherein gas values are stored organized into an
+      octree.  Each of these constitutes a different indexing system, sharing
+      similar datatypes, units, and so forth.
     citations: []
     usage_citations: []
   - name: artio
-    index_type: octree
-    comments: The ARTIO frontend utilizes
+    index_type: ['octree']
+    comments: >
+      The ARTIO frontend, which shares some ancestry with the `art` or
+      'NMSU-ART' frontend, utilizes a special purpose library for input/output
+      operations called `libartio`, which is bundled with yt.
+      
+      Utilizing `libartio` is interesting from a historical perspective, as it
+      provided an opportunity to reorganize the way that yt understood indexing
+      of octree datasets.  Whereas previously yt required a full understanding
+      of data distribution, the `artio` frontend outsourced much of that to the
+      internal library, which it regarded as essentially an opaque API.
+      Reducing the amount of internal bookkeepping that yt had to do provided a
+      lighter-weight interface to the data, which in turn has enabled other
+      frontends to be created using opaque APIs.
+    citations: []
     usage_citations: []
   - name: athena
-    index_type: grid
+    index_type: ['grid']
     comments:
     citations: []
     usage_citations: []
   - name: athena_pp
-    index_type: grid
+    index_type: ['grid']
     comments:
     citations: []
     usage_citations: []
   - name: boxlib
-    index_type: grid
+    index_type: ['grid']
     comments:
     citations: []
     usage_citations: []
   - name: chombo
-    index_type: grid
+    index_type: ['grid']
     comments:
     citations: []
     usage_citations: []
   - name: eagle
-    index_type: particle
+    index_type: ['particle']
     comments:
     citations: []
     usage_citations: []
   - name: enzo
-    index_type: grid
-    comments:
+    index_type: ['grid']
+    comments: >
+      Enzo was the very first code supported by yt, and while many remnants of
+      that have been removed, many still remain.  During the development of yt
+      3.0 in particular, many "enzo-isms" were removed; however, as Enzo uses a
+      patch-based grid data format, much of the naming conventions for grid
+      objects still mirror those in use in Enzo.  These include names such as
+      `GridLeftEdge` and `ActiveDimensions` (which refers to the dimensions not
+      including ghost zones).
+      
+      There are several 'sub-frontends' within the Enzo frontend; these include
+      dedicated 1D and 2D readers, as well as historical frontends (of varying
+      functionality) for reading HDF4, 'unpacked' HDF5 and other sub-dialects
+      of Enzo.
     citations: []
     usage_citations: []
   - name: enzo_e
-    index_type: grid
+    index_type: ['grid']
     comments:
     citations: []
     usage_citations: []
   - name: exodus_ii
-    index_type: unstructured mesh
+    index_type: ['unstructured mesh']
     comments:
     citations: []
     usage_citations: []
   - name: fits
-    index_type: grid
+    index_type: ['grid']
     comments:
     citations: []
     usage_citations: []
   - name: flash
-    index_type: grid
+    index_type: ['grid']
     comments:
     citations: []
     usage_citations: []
   - name: gadget
-    index_type: particle
+    index_type: ['particle']
     comments:
     citations: []
     usage_citations: []
   - name: gadget_fof
-    index_type: particle
+    index_type: ['particle']
     comments: Halo finding
     citations: []
     usage_citations: []
   - name: gamer
-    index_type: grid
+    index_type: ['grid']
     comments:
     citations: []
     usage_citations: []
   - name: gdf
-    index_type: grid
+    index_type: ['grid']
     comments: Custom built for yt
     citations: []
     usage_citations: []
   - name: gizmo
-    index_type: particle
+    index_type: ['particle']
     comments:
     citations: []
     usage_citations: []
   - name: halo_catalog
-    index_type: particle
+    index_type: ['particle']
     comments:
     citations: []
     usage_citations: []
   - name: http_stream
-    index_type: particle
+    index_type: ['particle']
     comments:
     citations: []
     usage_citations: []
   - name: moab
-    index_type: unstructured mesh
+    index_type: ['unstructured mesh']
     comments:
     citations: []
     usage_citations: []
   - name: nc4_cm1
-    index_type: grid
+    index_type: ['grid']
     comments:
     citations: []
     usage_citations: []
   - name: open_pmd
-    index_type: particle
+    index_type: ['particle']
     comments:
     citations: []
     usage_citations: []
   - name: owls
-    index_type: particle
+    index_type: ['particle']
     comments:
     citations: []
     usage_citations: []
   - name: owls_subfind
-    index_type: particle
+    index_type: ['particle']
     comments:
     citations: []
     usage_citations: []
   - name: ramses
-    index_type: octree
+    index_type: ['octree']
     comments:
     citations: []
     usage_citations: []
   - name: rockstar
-    index_type: particle
+    index_type: ['particle']
     comments:
     citations: []
     usage_citations: []
   - name: sdf
-    index_type: particle
+    index_type: ['particle']
     comments:
     citations: []
     usage_citations: []
   - name: sph
-    index_type: particle
+    index_type: ['particle']
     comments: A base frontend from which other SPH-type frontends can be defined.
     citations: []
     usage_citations: []
   - name: stream
-    index_type: multi
+    index_type: ['multi']
     comments:
     citations: []
     usage_citations: []
   - name: swift
-    index_type: particle
+    index_type: ['particle']
     comments:
     citations: []
     usage_citations: []
   - name: tipsy
-    index_type: particle
+    index_type: ['particle']
     comments:
     citations: []
     usage_citations: []
   - name: ytdata
-    index_type: particle
+    index_type: ['particle']
     comments: An internal frontend for re-loading saved data and derived data
     citations: []
     usage_citations: []
