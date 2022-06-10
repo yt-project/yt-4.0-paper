@@ -16,7 +16,7 @@ frontends:
     usage_citations: []
   - name: arepo
     index_type: ['particle']
-    comments: >
+    comments: |
       While listed as a "particle" dataset, AREPO data is properly described as
       a moving mesh.  For visualization purposes, yt treats it similarly to an
       SPH dataset; some efforts have been made to properly apply
@@ -26,7 +26,7 @@ frontends:
     usage_citations: []
   - name: art
     index_type: ['octree', 'particle']
-    comments: >
+    comments: |
       ART, or 'NMSU-ART' as it is occasionally referred to internally, is an
       octree-based code that is often used for cosmology simulations and galaxy
       formation simulations.  yt supports two sets of data formats in the
@@ -39,7 +39,7 @@ frontends:
     usage_citations: []
   - name: artio
     index_type: ['octree']
-    comments: >
+    comments: |
       The ARTIO frontend, which shares some ancestry with the `art` or
       'NMSU-ART' frontend, utilizes a special purpose library for input/output
       operations called `libartio`, which is bundled with yt.
@@ -81,7 +81,7 @@ frontends:
     usage_citations: []
   - name: enzo
     index_type: ['grid']
-    comments: >
+    comments: |
       Enzo was the very first code supported by yt, and while many remnants of
       that have been removed, many still remain.  During the development of yt
       3.0 in particular, many "enzo-isms" were removed; however, as Enzo uses a
