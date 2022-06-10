@@ -17,7 +17,7 @@ frontends:
       of different numerical schemes. The emphasis is on (near) conservation
       laws and on shock-dominated problems in particular.
     citations:
-      - '@doi:"10.1016/S0010-4655(03)00139-5"'
+      - '@doi:10.1016/S0010-4655\(03\)00139-5'
       - '@doi:10.1088/0067-0049/214/1/4'
       - '@doi:10.3847/1538-4365/aaa6c8'
     usage_citations:
