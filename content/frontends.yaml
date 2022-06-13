@@ -104,16 +104,20 @@ frontends:
       dedicated 1D and 2D readers, as well as historical frontends (of varying
       functionality) for reading HDF4, 'unpacked' HDF5 and other sub-dialects
       of Enzo.
-    citations: []
+    citations: ['@doi:10.1088/0067-0049/211/2/19']
     usage_citations: []
   - name: enzo_e
     index_type: ['grid']
-    comments:
+    comments: |
+      Enzo-E is a nearly full-rewrite of the Enzo infrastructure designed for emerging and future architectures.
     citations: []
     usage_citations: []
   - name: exodus_ii
     index_type: ['unstructured mesh']
-    comments:
+    comments: |
+      Exodus II, and its output in NetCDF4 format, was the initial driver for
+      higher-order unstructured mesh support in yt.  The original driver for
+      developing this format was for simulations of nuclear reactors.
     citations: []
     usage_citations: []
   - name: fits
@@ -123,7 +127,8 @@ frontends:
     usage_citations: []
   - name: flash
     index_type: ['grid']
-    comments:
+    comments: |
+      FLASH is a ...
     citations: []
     usage_citations: []
   - name: gadget
