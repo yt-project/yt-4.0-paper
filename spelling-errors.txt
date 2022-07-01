@@ -10,14 +10,14 @@ backporting
 Bili
 binarily
 Bitbucket
-bitwise
+Bitwise
 Bool
 Borro
 Britton
 brittonsmith
 Bugfix
 Cadiou
-cgs
+CGS
 Champaign
 changeset
 chrishavlin
@@ -42,7 +42,7 @@ datapoint
 dataset
 datasetfrom
 dataset’s
-Datasets
+datasets
 datasetwere
 d’Azur
 decomp
@@ -62,7 +62,7 @@ extrema
 filesystem
 formatter
 formatters
-Frontend
+frontend
 frontrow
 geosciences
 Goldbaum
@@ -134,7 +134,7 @@ pipelining
 pixelization
 pixelize
 pixelized
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 PlotCollection
@@ -145,7 +145,7 @@ pre
 proeminently
 proj
 pytest
-pyxsim
+pyXSIM
 quadtree
 radiative
 RADMC
@@ -175,7 +175,7 @@ subrepository
 Suoqing
 Supercomputing
 susbtantial
-sympy
+SymPy
 sympy’s
 TBD
 Tbytes
@@ -209,6 +209,6 @@ YTQuantity
 ytree
 yt’s
 Yu
-Zingale
+zingale
 zorder
 ZuHone
