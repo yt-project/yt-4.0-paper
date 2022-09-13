@@ -28,7 +28,9 @@ frontends:
       While listed as a "particle" dataset, AREPO data is properly described as a moving mesh.
       For visualization purposes, yt treats it similarly to an SPH dataset; some efforts have been made to properly apply nearest-neighbor interpolation, but these have not been mainlined in the yt visualization routines as of yet.
     citations: []
-    usage_citations: []
+    usage_citations:
+      - '@doi:10.3847/1538-4357/aa6dff'
+      - '@doi:10.1093/mnras/stab2553'
   - name: art
     index_type: ['octree', 'particle']
     comments: |
@@ -38,7 +40,8 @@ frontends:
       The second is the hydro data format, wherein gas values are stored organized into an octree.
       Each of these constitutes a different indexing system, sharing similar datatypes, units, and so forth.
     citations: []
-    usage_citations: []
+    usage_citations:
+      - '@doi:10.3847/1538-4357/aa6dff'
   - name: artio
     index_type: ['octree']
     comments: |
@@ -53,17 +56,20 @@ frontends:
     index_type: ['grid']
     comments:
     citations: []
-    usage_citations: []
+    usage_citations: ['@doi:10.3847/1538-4357/aa9b80']
   - name: athena_pp
     index_type: ['grid']
     comments:
     citations: []
-    usage_citations: []
+    usage_citations: ['@doi:10.3847/2041-8213/abbffd']
   - name: boxlib
     index_type: ['grid']
     comments:
-    citations: []
-    usage_citations: []
+    citations: 
+      - '@doi:10.21105/joss.01370'
+      - '@doi:10.1088/1742-6596/1031/1/012024'
+    usage_citations:
+      - '@doi:10.1093/mnras/stac439'
   - name: chombo
     index_type: ['grid']
     comments:
@@ -73,7 +79,11 @@ frontends:
     index_type: ['particle']
     comments:
     citations: []
-    usage_citations: []
+    usage_citations:
+      - '@doi:10.1093/mnras/stab1057'
+      - '@doi:10.1093/mnras/stab651'
+      - '@doi:10.1093/mnras/staa3590'
+      - '@doi:10.1093/mnras/stab1057'
   - name: enzo
     index_type: ['grid']
     comments: |
@@ -83,13 +93,16 @@ frontends:
       
       There are several 'sub-frontends' within the Enzo frontend; these include dedicated 1D and 2D readers, as well as historical frontends (of varying functionality) for reading HDF4, 'unpacked' HDF5 and other sub-dialects of Enzo.
     citations: ['@doi:10.1088/0067-0049/211/2/19']
-    usage_citations: []
+    usage_citations:
+      - '@doi:10.3847/1538-4357/aa6dff'
+      - '@doi:10.1088/0004-637X/764/2/136'
   - name: enzo_e
     index_type: ['grid']
     comments: |
       Enzo-E is a nearly full-rewrite of the Enzo infrastructure designed for emerging and future architectures.
     citations: []
-    usage_citations: []
+    usage_citations:
+      - '@doi:10.3847/1538-4357/ac3c48'
   - name: exodus_ii
     index_type: ['unstructured mesh']
     comments: |
@@ -107,12 +120,15 @@ frontends:
     comments: |
       FLASH is a ...
     citations: []
-    usage_citations: []
+    usage_citations:
+      - '@doi:10.1093/mnras/stac1275'
+      - '@doi:10.3847/1538-4357/aadcf7'
   - name: gadget
     index_type: ['particle']
     comments:
     citations: []
-    usage_citations: []
+    usage_citations:
+      - '@doi:10.3847/1538-4357/ac088a'
   - name: gadget_fof
     index_type: ['particle']
     comments: Halo finding
@@ -132,7 +148,9 @@ frontends:
     index_type: ['particle']
     comments:
     citations: []
-    usage_citations: []
+    usage_citations: 
+      - '@doi:10.1093/mnras/stac1542'
+      - '@doi:10.3847/1538-4357/aa6dff'
   - name: halo_catalog
     index_type: ['particle']
     comments:
@@ -172,7 +190,8 @@ frontends:
     index_type: ['octree']
     comments:
     citations: []
-    usage_citations: []
+    usage_citations:
+      - '@doi:10.3847/1538-4357/aa6dff'
   - name: rockstar
     index_type: ['particle']
     comments:
@@ -182,7 +201,8 @@ frontends:
     index_type: ['particle']
     comments:
     citations: []
-    usage_citations: []
+    usage_citations:
+      - '@doi:10.1051/0004-6361/201937337'
   - name: sph
     index_type: ['particle']
     comments: |
@@ -197,16 +217,21 @@ frontends:
   - name: swift
     index_type: ['particle']
     comments:
-    citations: []
-    usage_citations: []
+    citations:
+      - '@doi:10.21105/joss.02430'
+    usage_citations:
+      - '@doi:10.3847/1538-4357/ac20d4'
   - name: tipsy
     index_type: ['particle']
     comments:
     citations: []
-    usage_citations: []
+    usage_citations:
+      - '@doi:10.1016/j.ascom.2016.02.002'
+      - '@doi:10.1093/mnras/stw1741'
   - name: ytdata
     index_type: ['particle']
     comments: |
       An internal frontend for re-loading saved data and derived data
     citations: []
-    usage_citations: []
+    usage_citations:
+      - '@doi:10.1093/mnras/sty2103'
