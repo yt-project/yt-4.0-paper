@@ -1,8 +1,9 @@
+Alpes
 AMR
 AMRKDTree
 APIs
 arraylike
-astro
+Astro
 astrojaz
 astrophysically
 AstroPy
@@ -10,8 +11,8 @@ backporting
 Bili
 binarily
 Bitbucket
-Bitwise
-Bool
+bitwise
+bool
 Borro
 Britton
 brittonsmith
@@ -26,12 +27,11 @@ Clément
 codebase
 collisional
 colocation
-Comoving
+comoving
 connectedness
-Coord
+coord
 Coords
 Corentin
-Côte
 Coughlin
 cphyc
 Cython
@@ -44,7 +44,6 @@ datasetfrom
 dataset’s
 datasets
 datasetwere
-d’Azur
 decomp
 demesh
 demeshened
@@ -62,7 +61,7 @@ extrema
 filesystem
 formatter
 formatters
-frontend
+Frontend
 frontrow
 geosciences
 Goldbaum
@@ -77,6 +76,7 @@ hydrodynamical
 incrementing
 instantiation
 Institut
+IPAG
 isocontour
 isocontours
 jcoughlin
@@ -118,10 +118,9 @@ njgoldbaum
 nosetests
 NumFOCUS
 numpy
-Observatoire
 octants
 octree
-octrees
+Octrees
 octs
 Orf
 Ortho
@@ -134,9 +133,10 @@ pipelining
 pixelization
 pixelize
 pixelized
-Pixelizers
+pixelizers
 pixelizes
 Pixelizing
+Planétologie
 PlotCollection
 potentia
 Powderday
@@ -145,8 +145,8 @@ pre
 proeminently
 proj
 pytest
-pyXSIM
-quadtree
+pyxsim
+Quadtree
 radiative
 RADMC
 rasterizers
@@ -154,7 +154,7 @@ README
 recomputation
 recursed
 reinstrumented
-resampling
+Resampling
 Rosen
 Rudd
 runtime
@@ -175,7 +175,7 @@ subrepository
 Suoqing
 Supercomputing
 susbtantial
-SymPy
+sympy
 sympy’s
 TBD
 Tbytes
@@ -209,6 +209,6 @@ YTQuantity
 ytree
 yt’s
 Yu
-zingale
+Zingale
 zorder
 ZuHone

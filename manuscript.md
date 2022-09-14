@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-07-01'
+date-meta: '2022-09-14'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -38,8 +38,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2022-07-01" />
-  <meta name="citation_publication_date" content="2022-07-01" />
+  <meta name="dc.date" content="2022-09-14" />
+  <meta name="citation_publication_date" content="2022-09-14" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -101,7 +101,7 @@ header-includes: |-
   <meta name="citation_author_institution" content="Cooperative Institute for Meteorological Satellite Studies, The University of Wisconsin, Madison" />
   <meta name="citation_author_orcid" content="0000-0001-6898-2731" />
   <meta name="citation_author" content="Clément Robert" />
-  <meta name="citation_author_institution" content="Observatoire de la Côte d&#39;Azur, Université de Nice" />
+  <meta name="citation_author_institution" content="Institut de Planétologie et d&#39;Astrophysique de Grenoble (IPAG), Université Grenoble Alpes, France" />
   <meta name="citation_author_orcid" content="0000-0001-8629-7068" />
   <meta name="citation_author" content="Christopher Havlin" />
   <meta name="citation_author_institution" content="School of Information Sciences, University of Illinois at Urbana-Champaign" />
@@ -118,9 +118,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/29f88bd00ce83bd402ff4f36f1cc50e348647c24/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/29f88bd00ce83bd402ff4f36f1cc50e348647c24/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/29f88bd00ce83bd402ff4f36f1cc50e348647c24/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/94be8c856d367c278f3a7b1c6cb966f9496a0831/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/94be8c856d367c278f3a7b1c6cb966f9496a0831/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/94be8c856d367c278f3a7b1c6cb966f9496a0831/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -142,10 +142,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/29f88bd00ce83bd402ff4f36f1cc50e348647c24/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/94be8c856d367c278f3a7b1c6cb966f9496a0831/))
 was automatically generated
-from [yt-project/yt-4.0-paper@29f88bd](https://github.com/yt-project/yt-4.0-paper/tree/29f88bd00ce83bd402ff4f36f1cc50e348647c24)
-on July 1, 2022.
+from [yt-project/yt-4.0-paper@94be8c8](https://github.com/yt-project/yt-4.0-paper/tree/94be8c856d367c278f3a7b1c6cb966f9496a0831)
+on September 14, 2022.
 </em></small>
 
 ## Authors
@@ -310,7 +310,7 @@ on July 1, 2022.
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [neutrinoceros](https://github.com/neutrinoceros)<br>
   <small>
-     Observatoire de la Côte d'Azur, Université de Nice
+     Institut de Planétologie et d'Astrophysique de Grenoble (IPAG), Université Grenoble Alpes, France
   </small>
 
 + **Christopher Havlin**<br>
