@@ -118,9 +118,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/94be8c856d367c278f3a7b1c6cb966f9496a0831/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/94be8c856d367c278f3a7b1c6cb966f9496a0831/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/94be8c856d367c278f3a7b1c6cb966f9496a0831/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/452705c41fe4a55da109b548c3550ba9eca9b36b/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/452705c41fe4a55da109b548c3550ba9eca9b36b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/452705c41fe4a55da109b548c3550ba9eca9b36b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -142,9 +142,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/94be8c856d367c278f3a7b1c6cb966f9496a0831/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/452705c41fe4a55da109b548c3550ba9eca9b36b/))
 was automatically generated
-from [yt-project/yt-4.0-paper@94be8c8](https://github.com/yt-project/yt-4.0-paper/tree/94be8c856d367c278f3a7b1c6cb966f9496a0831)
+from [yt-project/yt-4.0-paper@452705c](https://github.com/yt-project/yt-4.0-paper/tree/452705c41fe4a55da109b548c3550ba9eca9b36b)
 on September 14, 2022.
 </em></small>
 
@@ -2296,6 +2296,9 @@ In many ways, Trident is the first external package that utilizes `yt` to provid
 
 Powderday [@doi:10.3847/1538-4365/abc487 ; @doi:10.1038/nature15383] is an open source package connecting `yt`, population synthesis modules and the monte carlo radiation transport code Hyperion [@doi:10.1051/0004-6361/201117150] to develop synthetic observations of galaxies from astrophysics simulations.
 Powderday uses `yt` to read and transform data, including high-fidelity gridding of SPH particles into an octree form, to prepare galaxy simulations to be processed.
+Currently Powderday uses the Arepo, Enzo, Gadget, Gizmo, and Tipsy front ends to read in simulation results, and convert them to a common format in preparation for dust radiative transfer (using `unyt` to ensure common units).
+Plans are in place to employ the wide range of front ends available in yt to broaden the applicability of powderday to a wider range of galaxy simulations. 
+
 
 ### ytree
 

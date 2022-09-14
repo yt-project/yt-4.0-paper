@@ -2,8 +2,9 @@ Alpes
 AMR
 AMRKDTree
 APIs
+Arepo
 arraylike
-Astro
+astro
 astrojaz
 astrophysically
 AstroPy
@@ -12,7 +13,7 @@ Bili
 binarily
 Bitbucket
 bitwise
-bool
+Bool
 Borro
 Britton
 brittonsmith
@@ -27,7 +28,7 @@ Clément
 codebase
 collisional
 colocation
-comoving
+Comoving
 connectedness
 coord
 Coords
@@ -61,7 +62,7 @@ extrema
 filesystem
 formatter
 formatters
-Frontend
+frontend
 frontrow
 geosciences
 Goldbaum
@@ -133,19 +134,19 @@ pipelining
 pixelization
 pixelize
 pixelized
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
 PlotCollection
 potentia
-Powderday
+powderday
 powersoffour
 pre
 proeminently
 proj
 pytest
-pyxsim
+pyXSIM
 Quadtree
 radiative
 RADMC
@@ -201,7 +202,7 @@ YAML
 yournamehere
 YTArray
 ytdata
-YTEP
+ytep
 YTEPs
 ytini
 YTQuadTreeProj
@@ -209,6 +210,6 @@ YTQuantity
 ytree
 yt’s
 Yu
-Zingale
+zingale
 zorder
 ZuHone
