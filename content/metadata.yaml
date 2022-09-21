@@ -180,6 +180,15 @@ authors:
     affiliations:
       - Center for Computational Astrophysics, Flatiron Institute
   -
+    github: atmyers
+    name: Andrew Myers
+    initials: AM
+    orcid: 0000-0001-8427-8330
+    email: atmyers@lbl.gov
+    affiliations:
+      - Lawrence Berkeley National Laboratory
+    funders: []
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
