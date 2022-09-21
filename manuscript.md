@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-09-14'
+date-meta: '2022-09-21'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -26,6 +26,7 @@ author-meta:
 - Clément Robert
 - Christopher Havlin
 - Stephanie Tonnesen
+- Andrew Myers
 - Add Yourself
 manubot-fail-on-errors: true
 header-includes: |-
@@ -38,8 +39,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2022-09-14" />
-  <meta name="citation_publication_date" content="2022-09-14" />
+  <meta name="dc.date" content="2022-09-21" />
+  <meta name="citation_publication_date" content="2022-09-21" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -109,6 +110,9 @@ header-includes: |-
   <meta name="citation_author" content="Stephanie Tonnesen" />
   <meta name="citation_author_institution" content="Center for Computational Astrophysics, Flatiron Institute" />
   <meta name="citation_author_orcid" content="0000-0002-8710-9206" />
+  <meta name="citation_author" content="Andrew Myers" />
+  <meta name="citation_author_institution" content="Lawrence Berkeley National Laboratory" />
+  <meta name="citation_author_orcid" content="0000-0001-8427-8330" />
   <meta name="citation_author" content="Add Yourself" />
   <meta name="citation_author_institution" content="Your University" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
@@ -118,9 +122,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/452705c41fe4a55da109b548c3550ba9eca9b36b/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/452705c41fe4a55da109b548c3550ba9eca9b36b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/452705c41fe4a55da109b548c3550ba9eca9b36b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/ec71d819f6908f8d542d76e26b61e7c3192968b5/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ec71d819f6908f8d542d76e26b61e7c3192968b5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ec71d819f6908f8d542d76e26b61e7c3192968b5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -142,10 +146,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/452705c41fe4a55da109b548c3550ba9eca9b36b/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/ec71d819f6908f8d542d76e26b61e7c3192968b5/))
 was automatically generated
-from [yt-project/yt-4.0-paper@452705c](https://github.com/yt-project/yt-4.0-paper/tree/452705c41fe4a55da109b548c3550ba9eca9b36b)
-on September 14, 2022.
+from [yt-project/yt-4.0-paper@ec71d81](https://github.com/yt-project/yt-4.0-paper/tree/ec71d819f6908f8d542d76e26b61e7c3192968b5)
+on September 21, 2022.
 </em></small>
 
 ## Authors
@@ -329,6 +333,15 @@ on September 14, 2022.
     [stonnes](https://github.com/stonnes)<br>
   <small>
      Center for Computational Astrophysics, Flatiron Institute
+  </small>
+
++ **Andrew Myers**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0001-8427-8330](https://orcid.org/0000-0001-8427-8330)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [atmyers](https://github.com/atmyers)<br>
+  <small>
+     Lawrence Berkeley National Laboratory
   </small>
 
 + **Add Yourself**<br>
