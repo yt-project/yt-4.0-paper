@@ -13,9 +13,13 @@ content/10.community_building.md:12:codebase
 content/10.community_building.md:18:datasets
 content/10.community_building.md:22:codebase
 content/10.community_building.md:50:ytep
-content/10.community_building.md:59:YTEP
-content/10.community_building.md:60:ytep
-content/10.community_building.md:60:YTEPs
+content/14.governance.md:3:YTEP
+content/14.governance.md:4:ytep
+content/14.governance.md:4:YTEPs
+content/14.governance.md:41:changesets
+content/14.governance.md:70:frontends
+content/14.governance.md:71:YTEP
+content/14.governance.md:72:YTEP
 content/15.development_procedure.md:4:bitbucket
 content/15.development_procedure.md:4:Bitbucket
 content/15.development_procedure.md:5:codebase

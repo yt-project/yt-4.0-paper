@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-09-21'
+date-meta: '2022-10-20'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -39,8 +39,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2022-09-21" />
-  <meta name="citation_publication_date" content="2022-09-21" />
+  <meta name="dc.date" content="2022-10-20" />
+  <meta name="citation_publication_date" content="2022-10-20" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -122,9 +122,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/ec71d819f6908f8d542d76e26b61e7c3192968b5/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ec71d819f6908f8d542d76e26b61e7c3192968b5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ec71d819f6908f8d542d76e26b61e7c3192968b5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/7bd2ef9934c16dc6172d90cef9fe71e1476f39c7/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/7bd2ef9934c16dc6172d90cef9fe71e1476f39c7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/7bd2ef9934c16dc6172d90cef9fe71e1476f39c7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -146,10 +146,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/ec71d819f6908f8d542d76e26b61e7c3192968b5/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/7bd2ef9934c16dc6172d90cef9fe71e1476f39c7/))
 was automatically generated
-from [yt-project/yt-4.0-paper@ec71d81](https://github.com/yt-project/yt-4.0-paper/tree/ec71d819f6908f8d542d76e26b61e7c3192968b5)
-on September 21, 2022.
+from [yt-project/yt-4.0-paper@7bd2ef9](https://github.com/yt-project/yt-4.0-paper/tree/7bd2ef9934c16dc6172d90cef9fe71e1476f39c7)
+on October 20, 2022.
 </em></small>
 
 ## Authors
@@ -459,11 +459,84 @@ Closing bug reports -- and the development work associated with identifying, tra
 
 We include here plots of the level of engagement on mailing list discussions and the citation count of the original method paper.
 
-### Governance
+
+
+## Project Governance {#sec:governance}
 
 Between the publication of the first paper and this paper, the `yt` project instituted a form of governance involving a steering committee, a set of "members" of the project, and a defined process for developing improvements and enhancements (the YTEP, or `yt`-enhancement-proposal process).
 YTEPs are discussed in @sec:ytep.
 The systems developed account for a number of important procedures, mostly related to decision-making, but do not address pressing community needs such as community standards for conduct, changes in committee composition, sub-project coordination, or the transition of members and developers to "emeritus" status.
+
+This governance structure, however, serves as a process for the `yt` *project*, rather than just the software itself.
+Much like other software projects with community-building as core goals, the `yt` project encompasses the core package itself (largely the subject of this paper), affiliated software projects (such as @doi:10.21105/joss.01774 ) but also, crucially, the broader community and the spaces in which discussions, tutorials, inquiries and development take place.
+As such, the governance structure was designed to be more holistic than addressing so-called "Commit Privileges" and access control.
+
+There are several components of the yt governance structure that we highlight here, but direct the interested reader to our [governance source repository](https://github.com/yt-project/governance) for a more detailed understanding.
+
+### Conflicts of Interest
+
+`yt` project development is distributed across universities and organizations, where in some cases different members of the development team may find themselves collaborating, or even applying for similar funding or academic positions.
+To minimize real or perceived conflicts of interest among the community, a policy regarding conflicts of interest is applied to members of the `yt` steering committee.
+
+> It is expected that the Steering Committee Members will be
+> employed at a wide range of companies, universities and non-profit
+> organizations.
+> Because of this, it is possible that Members will have conflict
+> of interests.
+> Such conflict of interests include, but are not limited to:
+>
+> * Financial interests, such as investments, employment or contracting work, outside of The Project that may influence their work on The Project.
+> * Access to proprietary information of their employer that could potentially leak into their work with the Project.
+>
+> All members of the Steering Committee shall disclose to the rest of the Council any conflict of interest they may have.
+> Members with a conflict of interest in a particular issue may participate in Committee discussions on that issue, but must recuse themselves from voting on the issue.
+
+This also addresses the possibility of funded work conflicting with the development of `yt` as a whole, or project wellness.
+As of the time of writing, this policy has not been exercised, but providing it in writing will ensure that the conduct of the steering committee is appropriate.
+
+### Project Members and Groups
+
+Individuals interact with projects in different ways at different times; as careers progress and personal lives shift, the degree of engagement that one can expect will change as well.
+To reflect this, as well as to codify the different means by which people can participate in the community, the `yt` governance structure allows for "members" to transition between different levels of activity.
+
+The base level of "membership" in the `yt` project is that of "project members."
+This is, by design, a broad category of individuals who have demonstrated their willingness to participate in the community, either through participating in community discussions, helping other members, contributing code or documentation, or reviewing the contributions of others.
+The initial seed of the project members was chosen by a flat cutoff of 50 changesets included in the repository; since that time, members are nominated by other members and must receive at least three positive votes.
+This membership, unless either explicitly revoked (via five supporting member votes and a steering council vote) lasts for life, although may be transitioned into "emeritus" status.
+Within the "members" group, a set of several sub-groups are identified that follow a rough, orchard-like metaphor.
+
+The first of these groups is the **fertilizer** group.
+(We whimsically note that the choice of name is not meant as a value judgment!)
+This is the high-level organizer group, including the steering committee and any other leadership roles.
+This group tends to the growth of the community, ensuring that there are opportunities for new members, and that the project continues as expected.
+Explicitly identified in the governance structure is that this is a group meant to train new members and to facilitate its membership to grow and change over time.
+
+The **arboretum** is the largest group, and is the starting point for new members of the project.
+The arboretum includes all project members and steering committee members.
+This group facilitates and develops contributions to the code base, encouraging diversity of participation.
+
+The **greenhouse** group includes those new members of the project, who are still developing their participation but have contributed to the community (for instance with a bug fix or documentation enhancement.)
+Members of the greenhouse group do not necessarily have high-level project responsibilities, but are encouraged to seek involvement and participate in triage meetings and other discussions.
+
+In recognition that temporary obligations, changes in activity level and other interest migrations happen, there is a group entitled the **fallow fields** for members who wish to temporarily step back from their responsibilities.
+Many different reasons exist for stepping into the fallow fields -- burnout, new or enhanced work responsibilities, family or care duties, or even simply a desire to do other things.
+Transitioning to the fallow fields is not permanent, and participation in the project can either resume or the individual can choose to move on.
+
+Finally, we have designated a class of project members as **emeritus** (the only non-orchard name utilized!) for individuals who have moved on to other interests or activities.
+The yt project has had a number of individuals and contributors who have later gone on to work in industry or non-profits, or who simply have opted to leave the community.
+The emeritus designation is a manner by which their previous contributions can still be recognized and honored, while also recognizing that they are no longer active participants.
+
+### Decision Making
+
+The majority of decisions in the yt project are small, day-to-day decisions about code quality, merging pull requests, how to respond to questions and other items for which it is typically quite easy to identify  a consensus.
+For those situations where consensus is not possible, deciding upon and implementing a course of action can be one of the more difficult issues in a project; members of the community each bring their own preferences, requirements, needs and desires to a project.
+These decisions might be regarding the future of specific areas of the project's code base -- for instance, "should the software volume rendering be split into a separate repository?" or "how should we decide the line to draw for excising old frontends?"
+Typically, the YTEP process is sufficient, even in cases where a consensus cannot be reached, as it allows a large amount of discussion.
+In cases where it cannot, the decision making process utilizes a multi-tier system of votes, including the YTEP and mailing list as venues.
+If a 2/3 majority is unable to be reached, the steering committee is allowed approximately a month to identify a consensus among themselves; failing this, a majority vote will be reached.
+
+While the full mechanism of the yt project decision making process has not been exercised in its entirety, its presence has provided a "safety net" for discussion.
+For further details, the [voting process](https://yt-project.github.io/governance/voting.html) section of the [governance documents](https://yt-project.github.io/governance/) lay out the steps, involved groups and timeline.
 
 
 ## Development Procedure {#sec:development}
