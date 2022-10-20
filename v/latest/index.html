@@ -210,9 +210,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/7bd2ef9934c16dc6172d90cef9fe71e1476f39c7/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/7bd2ef9934c16dc6172d90cef9fe71e1476f39c7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/7bd2ef9934c16dc6172d90cef9fe71e1476f39c7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/207c3654db34178be33c460f273c5ea3ac0c7c19/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/207c3654db34178be33c460f273c5ea3ac0c7c19/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/207c3654db34178be33c460f273c5ea3ac0c7c19/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -298,9 +298,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-4.0-paper/v/7bd2ef9934c16dc6172d90cef9fe71e1476f39c7/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-4.0-paper/v/207c3654db34178be33c460f273c5ea3ac0c7c19/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-4.0-paper/tree/7bd2ef9934c16dc6172d90cef9fe71e1476f39c7">yt-project/yt-4.0-paper@7bd2ef9</a>
+from <a href="https://github.com/yt-project/yt-4.0-paper/tree/207c3654db34178be33c460f273c5ea3ac0c7c19">yt-project/yt-4.0-paper@207c365</a>
 on October 20, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -631,7 +631,7 @@ For instance, during the development of <code>yt</code> 4.0, the branch <code>yt
 <p>This three-pronged approach generally has suited the community; the process of backporting changes from the “main” branch to the “stable” branch can be time-consuming.
 However, balancing the needs of a community requiring stable methods for analyzing data against the ease of development suggests that this is a toll worth paying.</p>
 <p>In general, the development of <code>yt</code> is reasonably top-heavy, with the majority of contributions coming from a core group of individuals.
-We discuss the implications of this on sustainability in Section <a href="#sec:sustainability">1.19</a>, and provide here a graph of the contributions over time.</p>
+We discuss the implications of this on sustainability in Section <a href="#sec:sustainability">1.18</a>, and provide here a graph of the contributions over time.</p>
 <div id="figure-commit-graph">
 
 </div>
@@ -2142,7 +2142,6 @@ The open source EWAHBoolArray C++ package is used for implementing EWAH bitmaps 
 <p>The authors would like to thank Daniel Lemire for his open source EWAH implementation.
 yt is developed by a large number of independent researchers from numerous institutions around the world.
 Their commitment to open science has helped make this work possible.</p>
-<h2 id="sec:vr">Visualization and Volume Rendering</h2>
 <p>The primary method by which researchers interact with their data in <code>yt</code> is via visualization; from the standpoint of the library, however, this is a side-effect of the various analysis, regularization and data-processing algorithms that are implemented within <code>yt</code>.
 Nearly all of the visualization that is done using <code>yt</code> utilizes the matplotlib library for actual deposition of pixels into an image format, although all of the <em>input</em> to that deposition is conducted by <code>yt</code>.
 Making this distinction is important, because it underscores the relationship between the different libraries and how they exist in the ecosystem of scientific software; <code>yt</code> does not replace matplotlib, but rather, augments it by providing a grammar of analysis of volumetric data and defining how that grammar is translated into visual representations as presented by matplotlib.</p>
@@ -2171,12 +2170,39 @@ Widgyts provides a browser-side Jupyterlab interface to the pixelization routine
 <h3 id="software-volume-rendering">Software Volume Rendering</h3>
 <p>The volume rendering is based on classical concepts for rendering 3D objects, and relies on the notion of a scene, a camera and an object to render.
 The object to render can be any data container of supported AMR datasets (either patch-based and octree-based datasets).
-The implementation of the volume rendering is based on integrating a transfer function along the direction of ray.</p>
+The implementation of the volume rendering is based on integrating a transfer function along individual “rays.”
+By defining a traversal function, cells can be ordered and a sampling function and accumulation can be applied to them.
+Below, we describe the traversal operations, and then the different “sampling” operations that can be applied.</p>
+<p>Conceptually, it is easies to think about this as constructing a global “ordering” of the cells, and then an in-order application of the sampler function with affiliated ray-specific data storage.
+In reality, however, these operations are interleaved and decomposed to enable task- and data-based parallelism.
+Data is distributed to different processors wherever possible based on different decomposition strategies, and within the traversal algorithms OpenMP parallelism is utilized to allow for individual rays to be integrated simultaneously.
+Typically, multiple “sampling points” are identified within each element to be sampled; the default number is 5.
+We have found that the image quality improves somewhat as this number is increased, as the interpolation allows for finer-grained variation, but 5 is typically sufficient for all but the highest resolution data and highest-gradient data.</p>
+<h4 id="lenses-for-volume-rendering">Lenses for Volume Rendering</h4>
+<p>In addition to specifying traversal algorithms, the software volume rendering in yt relies on the concept of “lenses.”
+A lens, in yt terminology, is a descriptive object from which emanate the rays that are integrated.
+The traditional lens is that of the perspective projection, wherein a plane of rays are sent outward.
+The simplest lens, however, is that of a plane-parallel set of rays, each of which is emitted by an individual pixel with constant direction.
+Additional lenses yt provides include
+a stereo projection lens (for stereoscopic 3D volume rendering),
+a fisheye lens (for hemispheric rendering suitable for planetarium domes),
+a spherical lens (for spherical rendering suitable for full-sphere projections (such as for “<span class="math inline">\(360^{\circ}\)</span> YouTube videos),
+and the stereoscopic spherical lens.</p>
+<p>Each of these lens objects provides a functional form of ray direction and origin.
+In some cases, an inverse function can be provided, which in some cases enables the traversal function to more intelligently check intersection and reduce computation time.</p>
 <h4 id="patch-based-ray-traversal">Patch-based ray traversal</h4>
-<p>TODO</p>
+<p>Unlike taking standard “projections” of datasets, the process of volume rendering requires that elements be traversed in order, accumulating values that may be reliant on <em>previous</em> values.
+While this is straightforward to implement for grids <span class="citation" data-cites="8BOQ3JKi">[<a href="#ref-8BOQ3JKi" role="doc-biblioref">32</a>]</span>, in situations where there are overlapping sets of values the process must be handled more carefully.</p>
 <canvas id="vrFigure" style="width:100%;height:100%;min-height: 500px;" hidpi="true">
 </canvas>
 <script type="text/paperscript" canvas="vrFigure" src="images/volume_rendering/vr-figure.js"></script>
+<p>To ensure that cells are traversed in-order, and to ensure that only the highest-resolution cells are used in cases where grids overlap, we decompose the grid hierarchy into a kD-tree.
+To construct the kD-tree, each grid at the root level is added to the tree.
+Wherever these grids include “child” grids (i.e., grids that include higher-resolution data that overlaps with the grids) a cutting plane is inserted in the kD-tree such that the child grid is isolated.
+This process is then applied recursively until all of the grids in the dataset (or its data subselection) have been added.
+By inserting cutting planes at child-grid boundaries, the tree can be specified to include only “leaf” node data, thus ensuring that any traversal will <em>only</em> include the highest-resolution data available, and thus can be traversed in order.</p>
+<p>kD-trees also provide so-called “viewpoint traversals,” which allows the grids to be ordered in either front-to-back or back-to-front order.
+These traversals can also be ordered to allow for radially-emanating traversals, for such cases as hemispheric renderings.</p>
 <h4 id="octree-ray-traversal">Octree ray traversal</h4>
 <p>Casting rays through an octree can be achieved efficiently by relying on the octree structure.
 In order to abstract away the underlying layout of the data, we first construct an octree that contains all leaf cells in the data container.
@@ -2184,7 +2210,7 @@ We store all cells as octs with no children, and mark them with their position w
 Octs that are inserted in the process of building the tree are not marked nor indexed.
 We also compute the vertex-centered data for all cells in the container.
 Note that, contrary to the octree utilized to index the data from octree datasets, this octree may span multiple domains and contains all levels from the root level (that contains a single oct the size of the simulation domain) all the way down to the leaf cells.
-We then cast rays off the camera, and for each ray, we compute the ordered list of the <span class="math inline">\(N\)</span> cells it intersects with together with the intersection points along the ray <span class="citation" data-cites="FQhLVjwO">[<a href="#ref-FQhLVjwO" role="doc-biblioref">32</a>]</span>.
+We then cast rays off the camera, and for each ray, we compute the ordered list of the <span class="math inline">\(N\)</span> cells it intersects with together with the intersection points along the ray <span class="citation" data-cites="FQhLVjwO">[<a href="#ref-FQhLVjwO" role="doc-biblioref">33</a>]</span>.
 In the following, we will write the coordinate along the ray as <span class="math inline">\(t\)</span>, with the camera located at <span class="math inline">\(t=0\)</span>.
 In general the tree may contain holes (this may happen if the data container is a region selector), so that the exit coordinate out of a cell may not coincide with the entry coordinate through the next cell. In practice, we solve this by storing for each cell both the entry and exit coordinates of the ray.</p>
 <p>The algorithm relies on the fact that if a ray passes through an oct and intersects with its six faces at coordinate along the ray <span class="math inline">\(t_{xi}, t_{yi}, t_{zi}\)</span> (on entry) and <span class="math inline">\(t_{xo}, t_{yo}, t_{zo}\)</span> (on exit), then its intersection with the inner cells’ faces can be computed explicitly from these six values and their half point <span class="math inline">\((t_{xi}+t_{xo})/2, (t_{yi}+t_{yo})/2, (t_{zi}+t_{zo})/2\)</span>. This implies that each call to the algorithm only need computing one division and a few simple arithmetic comparisons.
@@ -2196,12 +2222,57 @@ For each cell in the list, we then call the sampler with the vertex-centered val
 <p>An example of the volume rendering of a galaxy in a zoom-in cosmological simulation made with RAMSES is shown on Figure <a href="#fig:ramses-volume-rendering">21</a>.</p>
 <div id="fig:ramses-volume-rendering" class="fignos">
 <figure>
-<img src="images/volume_rendering/ramses-volume-rendering-galaxy.png" alt="Figure 21: Volume rendering of gas density isocontours around a galaxy in a cosmological zoom-in simulation performed with RAMSES. Adapted from [33]." />
-<figcaption aria-hidden="true"><span>Figure 21:</span> Volume rendering of gas density isocontours around a galaxy in a cosmological zoom-in simulation performed with RAMSES. Adapted from <span class="citation" data-cites="zRE8zhVC">[<a href="#ref-zRE8zhVC" role="doc-biblioref">33</a>]</span>.</figcaption>
+<img src="images/volume_rendering/ramses-volume-rendering-galaxy.png" alt="Figure 21: Volume rendering of gas density isocontours around a galaxy in a cosmological zoom-in simulation performed with RAMSES. Adapted from [34]." />
+<figcaption aria-hidden="true"><span>Figure 21:</span> Volume rendering of gas density isocontours around a galaxy in a cosmological zoom-in simulation performed with RAMSES. Adapted from <span class="citation" data-cites="zRE8zhVC">[<a href="#ref-zRE8zhVC" role="doc-biblioref">34</a>]</span>.</figcaption>
 </figure>
 </div>
 <h4 id="sampling-functions">Sampling functions</h4>
-<p>TODO</p>
+<p>As a ray passes through each sampling point, we apply a sampling function.
+In the yt software volume renderer, these cython subclasses of the <code>ImageSampler</code> base class.
+Each defines a setup process and a sample process.
+Once a ray arrives at a sampling point (for instance, as it walks across a grid and encounters values) the sampler is called with the data it is accessing, information about the ray, the “enter” and “exit” parameters of the sample region, and the accumulated data so far.</p>
+<p>Each <code>ImageSampler</code> object implements a different method of integration through the volume.
+Below, we discuss each in turn.
+To do so, we apply the convention that our volume rendering ray-casting starts at a position defined by the parameter <span class="math inline">\(t\)</span>, starting at the position <span class="math inline">\(\mathbf{\vec{x}}(t_0) \equiv \mathbf{\vec{x}}_0\)</span> and terminates at <span class="math inline">\(\mathbf{\vec{x}}(t_1) \equiv \mathbf{\vec{x}}_1\)</span>.
+Field values are taken as <span class="math inline">\(f(\mathbf{\vec{x}})\)</span>, and the distance through with a ray has passed is defined as the path length.</p>
+<h5 id="projection-sampler">Projection Sampler</h5>
+<p>This sampler object conducts a simple integration through the domain.
+<span class="math display">\[
+v(\mathbf{\vec{x}}(t_1)) = \int_{t_0}^{t_1} f(x, y, z) dl
+\]</span></p>
+<p>Because the sampling function includes no dependence on previous values, it can be sampled completely independently and out of order.
+This allows for much simpler data-based parallelism.
+There are two formulations of this sampler in yt; the first is a piecewise-linear interpolation scheme, wherein the field is assumed to be constant within each sampling volume.
+This method requires neither vertex-centered data <em>nor</em> multiple sampling points and is considerably faster to conduct.
+The second method available, which is the default, is that of an interpolated projection.
+This sampler requires vertex-centered data and utilizes multiple samples.
+Because the arithmetic is reasonably simple and the data can be supplied in any order, it is still reasonably fast to conduct.</p>
+<p>This sampler function operates independently of color channels, exclusively in floating-point space.
+This allows colormapping to be conducted at the end of the process and allows for high dynamic range beyond that typically enabled by RGBA channels.</p>
+<h5 id="transfer-function-sampler">Transfer Function Sampler</h5>
+<p>The transfer function sampler is the most complex of the sampling functions available in yt, as it affords the most flexibility.
+Unfortunately, this also results in a cumbersome and difficult-to-describe setup process, wherein the simple operations are straightforward to accomplish but the more complex operations are subject to trial-and-error.</p>
+<p>The transfer function sampler is designed for constructing images; as such, it provides integration for up to six channels of data.
+Typically, this is used in the four-channel mode, corresponding to red, green, blue and alpha (RGBA) data.
+(It is important to note, however, that this is not by any means the only mechanism that these could be assigned; the values are accumulated in floating point and could correspond to any output data, not just these three colors and one alpha.)
+In six-channel mode, typically the channels are for red, green, blue, and a corresponding alpha channel for each of those colors, accumulated independently.</p>
+<p>The transfer function is set up around the concept of “field interpolation tables.”
+These are 1D arrays, typically 256 elements, that include floating point values as well as concrete bounds in data-space.
+These tables provide a mapping <span class="math inline">\(f(v) \rightarrow u\)</span>, where <span class="math inline">\(v\)</span> is a local field value, as well as an optional “weight” value drawn from a second table.
+Careful construction of these tables can produce volume renderings via isocontours, where specific values in field space are highlighted with distinct colors.
+Indeed, this is the most common method of applying this sampler, as it allows a straightforward way of seeing “through” the outer layers and viewing nesting structures simultaneously.</p>
+<p>We use notation <span class="math inline">\(C_i^0\)</span> for the input values for a given channel (where <span class="math inline">\(i\)</span> is one of <span class="math inline">\(R, G, B, A\)</span>) and <span class="math inline">\(C_i^1\)</span> for the output.
+With the sampled field value (<span class="math inline">\(f(t)\)</span>) and optional weight field value (<span class="math inline">\(w(t)\)</span>) we can then define a sample, <span class="math inline">\(S_i\)</span> for each channel including alpha.
+we compute the updated values for each sampling point via:</p>
+<p><span class="math display">\[
+C_i^0
+a_t \leftarrow \mathrm{max}(1 - dt * S_A, 0) \\
+C_i^1 \leftarrow S_i \delta t + a_t C_i^0
+\]</span></p>
+<p>This is the case for “grey” opacity.
+In the use case of differing opacity for each channel, we modify this such that we utilize additional alpha channels for each primary channel.
+<span class="math inline">\(a_t\)</span> is then defined individually for each output channel.</p>
+<p>This particular set of transfer functions, with what amounts to multi-channel, multi-field sampling in both output and opacity, can be specified to perform complex functions such as variable scattering, different weights for different channels, etc.</p>
 <h3 id="hardware-accelerated-volume-rendering">Hardware-accelerated Volume Rendering</h3>
 <h2 id="sec:units">Units and Quantities</h2>
 <p>At a basic level, <code>yt</code> is an engine for converting data dumped to disk by a simulation code into a physically meaningful result.
@@ -2404,7 +2475,7 @@ The <code>Dataset.set_units</code> updates the <code>h</code> symbol to the corr
 <p>For much of its development history, <code>yt</code> took the approach of bundling as many analysis modules as possible in the primary repository.
 This provided the advantage of having all work be centralized, and ensuring that each download or installation of <code>yt</code> was a fully-featured system for analyzing a large swath of data, but it brought with it the development overhead of the entire <code>yt</code> package for what in many cases were isolated pieces of functionality with separable responsibilities.</p>
 <p>As a result of the slowing in speed of development as a result of review requirements (and limited personnel to conduct those reviews), some of the analysis modules that were bundled with <code>yt</code> have been “spun out” into their own repository, <code>yt_astro_analysis</code>.
-This repository, which is developed, released and installed separately from <code>yt</code>, includes modules for cosmological observation (upon which Triden, which is discussed in <a href="#trident">1.17.1</a>, is based), dark matter halo finding and analysis, tools for interacting with position-position-velocity cubes, and a system for exporting from <code>yt</code> to RADMC-3D.
+This repository, which is developed, released and installed separately from <code>yt</code>, includes modules for cosmological observation (upon which Triden, which is discussed in <a href="#trident">1.16.1</a>, is based), dark matter halo finding and analysis, tools for interacting with position-position-velocity cubes, and a system for exporting from <code>yt</code> to RADMC-3D.
 <strong>TODO: Find the correct citation for RADMC-3D.</strong></p>
 <h2 id="ecosystem-of-packages">Ecosystem of Packages</h2>
 <p>Several packages have been developed that utilize <code>yt</code> as an infrastructural component.
@@ -2412,24 +2483,24 @@ In contrast to the analysis modules, which have typically been built as extensio
 In some cases, <code>yt</code> is also an <em>optional</em> dependency for the package.
 In most cases, these are described in detail elsewhere, and citations to that external information are included here.</p>
 <h3 id="trident">Trident</h3>
-<p>Trident <span class="citation" data-cites="1DgKJy4lE">[<a href="#ref-1DgKJy4lE" role="doc-biblioref">34</a>]</span> is a Python-based open-source tool for post-processing hydrodynamical simulations to produce synthetic absorption spectra and related data.
+<p>Trident <span class="citation" data-cites="1DgKJy4lE">[<a href="#ref-1DgKJy4lE" role="doc-biblioref">35</a>]</span> is a Python-based open-source tool for post-processing hydrodynamical simulations to produce synthetic absorption spectra and related data.
 In many ways, Trident is the first external package that utilizes <code>yt</code> to provide data access and numerical operations, but then builds on those to develop detailed, astrophysically-aware systems for processing and analyzing that data.</p>
 <h3 id="powderday">Powderday</h3>
-<p>Powderday <span class="citation" data-cites="g9AYex8L 1CgEbr6CQ">[<a href="#ref-g9AYex8L" role="doc-biblioref">35</a>,<a href="#ref-1CgEbr6CQ" role="doc-biblioref">36</a>]</span> is an open source package connecting <code>yt</code>, population synthesis modules and the monte carlo radiation transport code Hyperion <span class="citation" data-cites="6dD1NLpJ">[<a href="#ref-6dD1NLpJ" role="doc-biblioref">37</a>]</span> to develop synthetic observations of galaxies from astrophysics simulations.
+<p>Powderday <span class="citation" data-cites="g9AYex8L 1CgEbr6CQ">[<a href="#ref-g9AYex8L" role="doc-biblioref">36</a>,<a href="#ref-1CgEbr6CQ" role="doc-biblioref">37</a>]</span> is an open source package connecting <code>yt</code>, population synthesis modules and the monte carlo radiation transport code Hyperion <span class="citation" data-cites="6dD1NLpJ">[<a href="#ref-6dD1NLpJ" role="doc-biblioref">38</a>]</span> to develop synthetic observations of galaxies from astrophysics simulations.
 Powderday uses <code>yt</code> to read and transform data, including high-fidelity gridding of SPH particles into an octree form, to prepare galaxy simulations to be processed.
 Currently Powderday uses the Arepo, Enzo, Gadget, Gizmo, and Tipsy front ends to read in simulation results, and convert them to a common format in preparation for dust radiative transfer (using <code>unyt</code> to ensure common units).
 Plans are in place to employ the wide range of front ends available in yt to broaden the applicability of powderday to a wider range of galaxy simulations.</p>
 <h3 id="ytree">ytree</h3>
-<p>Building on <code>yt</code> for access to halo catalogs, and implementing a similar system for derived fields as applied to graph datasets, ytree <span class="citation" data-cites="VB3RIyxd">[<a href="#ref-VB3RIyxd" role="doc-biblioref">38</a>]</span> is a system for analyzing merger trees from analysis of dark matter halos in cosmological simulations.</p>
+<p>Building on <code>yt</code> for access to halo catalogs, and implementing a similar system for derived fields as applied to graph datasets, ytree <span class="citation" data-cites="VB3RIyxd">[<a href="#ref-VB3RIyxd" role="doc-biblioref">39</a>]</span> is a system for analyzing merger trees from analysis of dark matter halos in cosmological simulations.</p>
 <p>ytree provides flexibility in determining the path that a given analysis takes through the graph of merger trees; for instance, it enables the user to select if they wish to follow the “most massive” progenitor halo backwards in time, or even to set their own criteria for this.
 Connecting this to the raw, unprocessed data from the simulation (such as the unsampled particle or cell content that comprises the halos) allows researchers to deepen and guide their analysis based on the physical characteristics of the merger history.</p>
 <h3 id="pyxsim">pyxsim</h3>
-<p>pyXSIM <span class="citation" data-cites="N2QcMTPv">[<a href="#ref-N2QcMTPv" role="doc-biblioref">39</a>]</span> is a python package for simulating X-ray observations from astrophysical sources.
-It implements the PHOX algorithm <span class="citation" data-cites="gJwEappY nty3AM0C">[<a href="#ref-gJwEappY" role="doc-biblioref">40</a>,<a href="#ref-nty3AM0C" role="doc-biblioref">41</a>]</span> and is implemented to support grid-based codes, particle-based codes, and even data constructed from scratch in numpy arrays.
+<p>pyXSIM <span class="citation" data-cites="N2QcMTPv">[<a href="#ref-N2QcMTPv" role="doc-biblioref">40</a>]</span> is a python package for simulating X-ray observations from astrophysical sources.
+It implements the PHOX algorithm <span class="citation" data-cites="gJwEappY nty3AM0C">[<a href="#ref-gJwEappY" role="doc-biblioref">41</a>,<a href="#ref-nty3AM0C" role="doc-biblioref">42</a>]</span> and is implemented to support grid-based codes, particle-based codes, and even data constructed from scratch in numpy arrays.
 pyXSIM has been used to create synthetic observations from current and upcoming space telescopes.</p>
 <h3 id="ytini">ytini</h3>
 <p>While <code>yt</code> has functionality for volume rendering, it provides far from the scene-control, composition and camera positioning necessary for “cinematic visualization.”
-The tool ytini <span class="citation" data-cites="3Gi4Hs1H">[<a href="#ref-3Gi4Hs1H" role="doc-biblioref">42</a>]</span> serves as an intermediary between <code>yt</code> and the visualization platform Houdini, often used for special effects and visual arts in industry and professional production environments.
+The tool ytini <span class="citation" data-cites="3Gi4Hs1H">[<a href="#ref-3Gi4Hs1H" role="doc-biblioref">43</a>]</span> serves as an intermediary between <code>yt</code> and the visualization platform Houdini, often used for special effects and visual arts in industry and professional production environments.
 ytini was developed to ease the process of converting data from simulation format into one suitable for production teams to utilize in Houdini and other visual effects software, and has been designed to enable deeper collaboration between researchers and visualization and outreach experts.</p>
 <h2 id="future-directions">Future Directions</h2>
 <h2 id="sec:sustainability">Sustainability</h2>
@@ -2529,38 +2600,41 @@ ytini was developed to ease the process of converting data from simulation forma
 <div id="ref-RNeSxk82" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>&lt;span class="nocase"&gt;Cython: The Best of Both Worlds&lt;/span&gt;</strong> <div class="csl-block">Stefan Behnel, Robert Bradshaw, Craig Citro, Lisandro Dalcin, Dag Sverre Seljebotn, Kurt Smith</div> <em>Comput. Sci. Eng.</em> (2011-03) <a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5582062">http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5582062</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/MCSE.2010.118">10.1109/mcse.2010.118</a></div></div>
 </div>
+<div id="ref-8BOQ3JKi" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>A Fast Voxel Traversal Algorithm for Ray Tracing</strong> <div class="csl-block">John Amanatides, Andrew Woo</div> <em>EG 1987-Technical Papers</em> (1987) <a href="https://doi.org/gq2qd9">https://doi.org/gq2qd9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.2312/egtp.19871000">10.2312/egtp.19871000</a></div></div>
+</div>
 <div id="ref-FQhLVjwO" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>An Efficient Parametric Algorithm for Octree Traversal</strong> <div class="csl-block">Jorge Revelles, Carlos Ureña, Miguel Lastra</div> <em>Journal of WSCG</em> <a href="http://wscg.zcu.cz/wscg2000/Papers_2000/X31.pdf">http://wscg.zcu.cz/wscg2000/Papers_2000/X31.pdf</a></div>
+<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>An Efficient Parametric Algorithm for Octree Traversal</strong> <div class="csl-block">Jorge Revelles, Carlos Ureña, Miguel Lastra</div> <em>Journal of WSCG</em> <a href="http://wscg.zcu.cz/wscg2000/Papers_2000/X31.pdf">http://wscg.zcu.cz/wscg2000/Papers_2000/X31.pdf</a></div>
 </div>
 <div id="ref-zRE8zhVC" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>Gravitational torques dominate the dynamics of angular momentum of the accreted gas at $z&gt;2$</strong> <div class="csl-block">Corentin Cadiou, Yohan Dubois, Christophe Pichon</div> <em>in prep.</em></div>
+<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>Gravitational torques dominate the dynamics of angular momentum of the accreted gas at $z&gt;2$</strong> <div class="csl-block">Corentin Cadiou, Yohan Dubois, Christophe Pichon</div> <em>in prep.</em></div>
 </div>
 <div id="ref-1DgKJy4lE" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>Trident: A Universal Tool for Generating Synthetic Absorption Spectra from Astrophysical Simulations</strong> <div class="csl-block">Cameron B Hummels, Britton D Smith, Devin W Silvia</div> <em>The Astrophysical Journal</em> (2017-09-20) <a href="https://doi.org/gcx4th">https://doi.org/gcx4th</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/aa7e2d">10.3847/1538-4357/aa7e2d</a></div></div>
+<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>Trident: A Universal Tool for Generating Synthetic Absorption Spectra from Astrophysical Simulations</strong> <div class="csl-block">Cameron B Hummels, Britton D Smith, Devin W Silvia</div> <em>The Astrophysical Journal</em> (2017-09-20) <a href="https://doi.org/gcx4th">https://doi.org/gcx4th</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/aa7e2d">10.3847/1538-4357/aa7e2d</a></div></div>
 </div>
 <div id="ref-g9AYex8L" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>powderday: Dust Radiative Transfer for Galaxy Simulations</strong> <div class="csl-block">Desika Narayanan, Matthew J Turk, Thomas Robitaille, Ashley J Kelly, BConnor McClellan, Ray S Sharma, Prerak Garg, Matthew Abruzzo, Ena Choi, Charlie Conroy, … John H Wise</div> <em>The Astrophysical Journal Supplement Series</em> (2021-01-13) <a href="https://doi.org/gpxcx8">https://doi.org/gpxcx8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4365/abc487">10.3847/1538-4365/abc487</a></div></div>
+<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>powderday: Dust Radiative Transfer for Galaxy Simulations</strong> <div class="csl-block">Desika Narayanan, Matthew J Turk, Thomas Robitaille, Ashley J Kelly, BConnor McClellan, Ray S Sharma, Prerak Garg, Matthew Abruzzo, Ena Choi, Charlie Conroy, … John H Wise</div> <em>The Astrophysical Journal Supplement Series</em> (2021-01-13) <a href="https://doi.org/gpxcx8">https://doi.org/gpxcx8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4365/abc487">10.3847/1538-4365/abc487</a></div></div>
 </div>
 <div id="ref-1CgEbr6CQ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>The formation of submillimetre-bright galaxies from gas infall over a billion years</strong> <div class="csl-block">Desika Narayanan, Matthew Turk, Robert Feldmann, Thomas Robitaille, Philip Hopkins, Robert Thompson, Christopher Hayward, David Ball, Claude-André Faucher-Giguère, Dušan Kereš</div> <em>Nature</em> (2015-09-23) <a href="https://doi.org/f7r445">https://doi.org/f7r445</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nature15383">10.1038/nature15383</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26399829">26399829</a></div></div>
+<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>The formation of submillimetre-bright galaxies from gas infall over a billion years</strong> <div class="csl-block">Desika Narayanan, Matthew Turk, Robert Feldmann, Thomas Robitaille, Philip Hopkins, Robert Thompson, Christopher Hayward, David Ball, Claude-André Faucher-Giguère, Dušan Kereš</div> <em>Nature</em> (2015-09-23) <a href="https://doi.org/f7r445">https://doi.org/f7r445</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nature15383">10.1038/nature15383</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26399829">26399829</a></div></div>
 </div>
 <div id="ref-6dD1NLpJ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>HYPERION: an open-source parallelized three-dimensional dust continuum radiative transfer code</strong> <div class="csl-block">TP Robitaille</div> <em>Astronomy &amp;amp; Astrophysics</em> (2011-12) <a href="https://doi.org/ckp63w">https://doi.org/ckp63w</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1051/0004-6361/201117150">10.1051/0004-6361/201117150</a></div></div>
+<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>HYPERION: an open-source parallelized three-dimensional dust continuum radiative transfer code</strong> <div class="csl-block">TP Robitaille</div> <em>Astronomy &amp;amp; Astrophysics</em> (2011-12) <a href="https://doi.org/ckp63w">https://doi.org/ckp63w</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1051/0004-6361/201117150">10.1051/0004-6361/201117150</a></div></div>
 </div>
 <div id="ref-VB3RIyxd" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>Ytree: Merger-Tree Toolkit</strong> <div class="csl-block">Britton Smith, Meagan Lang</div> <em>Zenodo</em> (2018-02-16) <a href="https://doi.org/gcx4x2">https://doi.org/gcx4x2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a></div></div>
+<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>Ytree: Merger-Tree Toolkit</strong> <div class="csl-block">Britton Smith, Meagan Lang</div> <em>Zenodo</em> (2018-02-16) <a href="https://doi.org/gcx4x2">https://doi.org/gcx4x2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a></div></div>
 </div>
 <div id="ref-N2QcMTPv" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>Simulating X-ray Observations with Python</strong> <div class="csl-block">John ZuHone, Veronica Biffi, Eric Hallman, Scott Randall, Adam Foster, Christian Schmid</div> <em>Proceedings of the Python in Science Conference</em> (2014) <a href="https://doi.org/gpxcx7">https://doi.org/gpxcx7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.25080/majora-14bd3278-010">10.25080/majora-14bd3278-010</a></div></div>
+<div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>Simulating X-ray Observations with Python</strong> <div class="csl-block">John ZuHone, Veronica Biffi, Eric Hallman, Scott Randall, Adam Foster, Christian Schmid</div> <em>Proceedings of the Python in Science Conference</em> (2014) <a href="https://doi.org/gpxcx7">https://doi.org/gpxcx7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.25080/majora-14bd3278-010">10.25080/majora-14bd3278-010</a></div></div>
 </div>
 <div id="ref-gJwEappY" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>Observing simulated galaxy clusters with phox: a novel X-ray photon simulator</strong> <div class="csl-block">V Biffi, K Dolag, H Böhringer, G Lemson</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2012-01) <a href="https://doi.org/fz38qm">https://doi.org/fz38qm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1111/j.1365-2966.2011.20278.x">10.1111/j.1365-2966.2011.20278.x</a></div></div>
+<div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>Observing simulated galaxy clusters with phox: a novel X-ray photon simulator</strong> <div class="csl-block">V Biffi, K Dolag, H Böhringer, G Lemson</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2012-01) <a href="https://doi.org/fz38qm">https://doi.org/fz38qm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1111/j.1365-2966.2011.20278.x">10.1111/j.1365-2966.2011.20278.x</a></div></div>
 </div>
 <div id="ref-nty3AM0C" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>Investigating the velocity structure and X-ray observable properties of simulated galaxy clusters with PHOX</strong> <div class="csl-block">V Biffi, K Dolag, H Böhringer</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2012-10-29) <a href="https://doi.org/f42dgv">https://doi.org/f42dgv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/sts120">10.1093/mnras/sts120</a></div></div>
+<div class="csl-left-margin">42. </div><div class="csl-right-inline"><strong>Investigating the velocity structure and X-ray observable properties of simulated galaxy clusters with PHOX</strong> <div class="csl-block">V Biffi, K Dolag, H Böhringer</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2012-10-29) <a href="https://doi.org/f42dgv">https://doi.org/f42dgv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/sts120">10.1093/mnras/sts120</a></div></div>
 </div>
 <div id="ref-3Gi4Hs1H" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">42. </div><div class="csl-right-inline"><strong>Houdini for Astrophysical Visualization</strong> <div class="csl-block">JP Naiman, Kalina Borkiewicz, AJ Christensen</div> <em>Publications of the Astronomical Society of the Pacific</em> (2017-04-18) <a href="https://doi.org/f96hcf">https://doi.org/f96hcf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1088/1538-3873/aa51b3">10.1088/1538-3873/aa51b3</a></div></div>
+<div class="csl-left-margin">43. </div><div class="csl-right-inline"><strong>Houdini for Astrophysical Visualization</strong> <div class="csl-block">JP Naiman, Kalina Borkiewicz, AJ Christensen</div> <em>Publications of the Astronomical Society of the Pacific</em> (2017-04-18) <a href="https://doi.org/f96hcf">https://doi.org/f96hcf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1088/1538-3873/aa51b3">10.1088/1538-3873/aa51b3</a></div></div>
 </div>
 </div>
 <h2 id="conclusions">Conclusions</h2>
