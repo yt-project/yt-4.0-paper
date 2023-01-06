@@ -7,7 +7,7 @@
       "manubot"
     ],
     "lang": "en-US",
-    "date-meta": "2022-10-20",
+    "date-meta": "2023-01-06",
     "author-meta": [
       "The yt Project",
       "Matthew Turk",
@@ -32,7 +32,10 @@
       "Add Yourself"
     ],
     "manubot-fail-on-errors": true,
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Introducing yt 4.0: Analysis and Visualization of Volumetric Data\" />\n<meta name=\"citation_title\" content=\"Introducing yt 4.0: Analysis and Visualization of Volumetric Data\" />\n<meta property=\"og:title\" content=\"Introducing yt 4.0: Analysis and Visualization of Volumetric Data\" />\n<meta property=\"twitter:title\" content=\"Introducing yt 4.0: Analysis and Visualization of Volumetric Data\" />\n<meta name=\"dc.date\" content=\"2022-10-20\" />\n<meta name=\"citation_publication_date\" content=\"2022-10-20\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"The yt Project\" />\n<meta name=\"citation_author_institution\" content=\"NumFOCUS\" />\n<meta name=\"twitter:creator\" content=\"@yt_astro\" />\n<meta name=\"citation_author\" content=\"Matthew Turk\" />\n<meta name=\"citation_author_institution\" content=\"School of Information Sciences, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_institution\" content=\"Department of Astronomy, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5294-0198\" />\n<meta name=\"twitter:creator\" content=\"@powersoffour\" />\n<meta name=\"citation_author\" content=\"Nathan J Goldbaum\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5557-267X\" />\n<meta name=\"twitter:creator\" content=\"@njgoldbaum\" />\n<meta name=\"citation_author\" content=\"John A. ZuHone\" />\n<meta name=\"citation_author_institution\" content=\"Harvard-Smithsonian Center for Astrophysics\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3175-2347\" />\n<meta name=\"twitter:creator\" content=\"@astrojaz\" />\n<meta name=\"citation_author\" content=\"Cameron Hummels\" />\n<meta name=\"citation_author_institution\" content=\"Department of Theoretical Astrophysics, California Institute of Technology\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3817-8133\" />\n<meta name=\"citation_author\" content=\"Suoqing Ji\" />\n<meta name=\"citation_author_institution\" content=\"Physics Department, University of California Santa Barbara\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9658-0588\" />\n<meta name=\"citation_author\" content=\"Meagan Lang\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2058-2816\" />\n<meta name=\"citation_author\" content=\"Madicken Munk\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0117-5366\" />\n<meta name=\"citation_author\" content=\"Britton Smith\" />\n<meta name=\"citation_author_institution\" content=\"University of Edinburgh\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6804-630X\" />\n<meta name=\"citation_author\" content=\"Kacper Kowalik\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1709-3744\" />\n<meta name=\"citation_author\" content=\"Miguel de Val-Borro\" />\n<meta name=\"citation_author_institution\" content=\"Planetary Science Institute\" />\n<meta name=\"citation_author_orcid\" content=\"000-0002-0455-9384\" />\n<meta name=\"citation_author\" content=\"Jared W. Coughlin\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-4373-4114\" />\n<meta name=\"citation_author\" content=\"Corentin Cadiou\" />\n<meta name=\"citation_author_institution\" content=\"Department of Physics and Astrophysics, University College London\" />\n<meta name=\"citation_author_institution\" content=\"Institut d&#39;Astrophysique de Paris\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2285-0332\" />\n<meta name=\"twitter:creator\" content=\"@cphyc\" />\n<meta name=\"citation_author\" content=\"Michael Zingale\" />\n<meta name=\"citation_author_institution\" content=\"Stony Brook University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8401-030X\" />\n<meta name=\"citation_author\" content=\"Leigh Orf\" />\n<meta name=\"citation_author_institution\" content=\"Space Science and Engineering Center, University of Wisconsin - Madison\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2677-6427\" />\n<meta name=\"citation_author\" content=\"Kelton Halbert\" />\n<meta name=\"citation_author_institution\" content=\"Cooperative Institute for Meteorological Satellite Studies, The University of Wisconsin, Madison\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6898-2731\" />\n<meta name=\"citation_author\" content=\"Clément Robert\" />\n<meta name=\"citation_author_institution\" content=\"Institut de Planétologie et d&#39;Astrophysique de Grenoble (IPAG), Université Grenoble Alpes, France\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8629-7068\" />\n<meta name=\"citation_author\" content=\"Christopher Havlin\" />\n<meta name=\"citation_author_institution\" content=\"School of Information Sciences, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0585-8236\" />\n<meta name=\"citation_author\" content=\"Stephanie Tonnesen\" />\n<meta name=\"citation_author_institution\" content=\"Center for Computational Astrophysics, Flatiron Institute\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-8710-9206\" />\n<meta name=\"citation_author\" content=\"Andrew Myers\" />\n<meta name=\"citation_author_institution\" content=\"Lawrence Berkeley National Laboratory\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8427-8330\" />\n<meta name=\"citation_author\" content=\"Add Yourself\" />\n<meta name=\"citation_author_institution\" content=\"Your University\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://yt-project.github.io/yt-4.0-paper/\" />\n<meta property=\"og:url\" content=\"https://yt-project.github.io/yt-4.0-paper/\" />\n<meta property=\"twitter:url\" content=\"https://yt-project.github.io/yt-4.0-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://yt-project.github.io/yt-4.0-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://yt-project.github.io/yt-4.0-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://yt-project.github.io/yt-4.0-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://yt-project.github.io/yt-4.0-paper/v/207c3654db34178be33c460f273c5ea3ac0c7c19/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://yt-project.github.io/yt-4.0-paper/v/207c3654db34178be33c460f273c5ea3ac0c7c19/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://yt-project.github.io/yt-4.0-paper/v/207c3654db34178be33c460f273c5ea3ac0c7c19/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "citekey-aliases": {
+      "amrvac-paper": "doi:10.1016/S0010-4655(03)00139-5"
+    },
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Introducing yt 4.0: Analysis and Visualization of Volumetric Data\" />\n<meta name=\"citation_title\" content=\"Introducing yt 4.0: Analysis and Visualization of Volumetric Data\" />\n<meta property=\"og:title\" content=\"Introducing yt 4.0: Analysis and Visualization of Volumetric Data\" />\n<meta property=\"twitter:title\" content=\"Introducing yt 4.0: Analysis and Visualization of Volumetric Data\" />\n<meta name=\"dc.date\" content=\"2023-01-06\" />\n<meta name=\"citation_publication_date\" content=\"2023-01-06\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"The yt Project\" />\n<meta name=\"citation_author_institution\" content=\"NumFOCUS\" />\n<meta name=\"twitter:creator\" content=\"@yt_astro\" />\n<meta name=\"citation_author\" content=\"Matthew Turk\" />\n<meta name=\"citation_author_institution\" content=\"School of Information Sciences, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_institution\" content=\"Department of Astronomy, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5294-0198\" />\n<meta name=\"twitter:creator\" content=\"@powersoffour\" />\n<meta name=\"citation_author\" content=\"Nathan J Goldbaum\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5557-267X\" />\n<meta name=\"twitter:creator\" content=\"@njgoldbaum\" />\n<meta name=\"citation_author\" content=\"John A. ZuHone\" />\n<meta name=\"citation_author_institution\" content=\"Harvard-Smithsonian Center for Astrophysics\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3175-2347\" />\n<meta name=\"twitter:creator\" content=\"@astrojaz\" />\n<meta name=\"citation_author\" content=\"Cameron Hummels\" />\n<meta name=\"citation_author_institution\" content=\"Department of Theoretical Astrophysics, California Institute of Technology\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3817-8133\" />\n<meta name=\"citation_author\" content=\"Suoqing Ji\" />\n<meta name=\"citation_author_institution\" content=\"Physics Department, University of California Santa Barbara\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9658-0588\" />\n<meta name=\"citation_author\" content=\"Meagan Lang\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2058-2816\" />\n<meta name=\"citation_author\" content=\"Madicken Munk\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0117-5366\" />\n<meta name=\"citation_author\" content=\"Britton Smith\" />\n<meta name=\"citation_author_institution\" content=\"University of Edinburgh\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6804-630X\" />\n<meta name=\"citation_author\" content=\"Kacper Kowalik\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1709-3744\" />\n<meta name=\"citation_author\" content=\"Miguel de Val-Borro\" />\n<meta name=\"citation_author_institution\" content=\"Planetary Science Institute\" />\n<meta name=\"citation_author_orcid\" content=\"000-0002-0455-9384\" />\n<meta name=\"citation_author\" content=\"Jared W. Coughlin\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-4373-4114\" />\n<meta name=\"citation_author\" content=\"Corentin Cadiou\" />\n<meta name=\"citation_author_institution\" content=\"Department of Physics and Astrophysics, University College London\" />\n<meta name=\"citation_author_institution\" content=\"Institut d&#39;Astrophysique de Paris\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2285-0332\" />\n<meta name=\"twitter:creator\" content=\"@cphyc\" />\n<meta name=\"citation_author\" content=\"Michael Zingale\" />\n<meta name=\"citation_author_institution\" content=\"Stony Brook University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8401-030X\" />\n<meta name=\"citation_author\" content=\"Leigh Orf\" />\n<meta name=\"citation_author_institution\" content=\"Space Science and Engineering Center, University of Wisconsin - Madison\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2677-6427\" />\n<meta name=\"citation_author\" content=\"Kelton Halbert\" />\n<meta name=\"citation_author_institution\" content=\"Cooperative Institute for Meteorological Satellite Studies, The University of Wisconsin, Madison\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6898-2731\" />\n<meta name=\"citation_author\" content=\"Clément Robert\" />\n<meta name=\"citation_author_institution\" content=\"Institut de Planétologie et d&#39;Astrophysique de Grenoble (IPAG), Université Grenoble Alpes, France\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8629-7068\" />\n<meta name=\"citation_author\" content=\"Christopher Havlin\" />\n<meta name=\"citation_author_institution\" content=\"School of Information Sciences, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0585-8236\" />\n<meta name=\"citation_author\" content=\"Stephanie Tonnesen\" />\n<meta name=\"citation_author_institution\" content=\"Center for Computational Astrophysics, Flatiron Institute\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-8710-9206\" />\n<meta name=\"citation_author\" content=\"Andrew Myers\" />\n<meta name=\"citation_author_institution\" content=\"Lawrence Berkeley National Laboratory\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8427-8330\" />\n<meta name=\"citation_author\" content=\"Add Yourself\" />\n<meta name=\"citation_author_institution\" content=\"Your University\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://yt-project.github.io/yt-4.0-paper/\" />\n<meta property=\"og:url\" content=\"https://yt-project.github.io/yt-4.0-paper/\" />\n<meta property=\"twitter:url\" content=\"https://yt-project.github.io/yt-4.0-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://yt-project.github.io/yt-4.0-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://yt-project.github.io/yt-4.0-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://yt-project.github.io/yt-4.0-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://yt-project.github.io/yt-4.0-paper/v/3a8b58778fb0f63de960568b9a4558fc9548e1f3/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://yt-project.github.io/yt-4.0-paper/v/3a8b58778fb0f63de960568b9a4558fc9548e1f3/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://yt-project.github.io/yt-4.0-paper/v/3a8b58778fb0f63de960568b9a4558fc9548e1f3/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -42,7 +45,7 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "October 20, 2022",
+    "date": "January 6, 2023",
     "randomize_author_order": false,
     "authors": [
       {
@@ -420,19 +423,433 @@
       "repo_slug": "yt-project/yt-4.0-paper",
       "repo_owner": "yt-project",
       "repo_name": "yt-4.0-paper",
-      "commit": "207c3654db34178be33c460f273c5ea3ac0c7c19",
-      "triggering_commit": "207c3654db34178be33c460f273c5ea3ac0c7c19",
-      "build_url": "https://github.com/yt-project/yt-4.0-paper/commit/207c3654db34178be33c460f273c5ea3ac0c7c19/checks",
-      "job_url": "https://github.com/yt-project/yt-4.0-paper/actions/runs/3288693497"
+      "commit": "3a8b58778fb0f63de960568b9a4558fc9548e1f3",
+      "triggering_commit": "3a8b58778fb0f63de960568b9a4558fc9548e1f3",
+      "build_url": "https://github.com/yt-project/yt-4.0-paper/commit/3a8b58778fb0f63de960568b9a4558fc9548e1f3/checks",
+      "job_url": "https://github.com/yt-project/yt-4.0-paper/actions/runs/3857558592"
     },
     "html_url": "https://yt-project.github.io/yt-4.0-paper/",
     "pdf_url": "https://yt-project.github.io/yt-4.0-paper/manuscript.pdf",
-    "html_url_versioned": "https://yt-project.github.io/yt-4.0-paper/v/207c3654db34178be33c460f273c5ea3ac0c7c19/",
-    "pdf_url_versioned": "https://yt-project.github.io/yt-4.0-paper/v/207c3654db34178be33c460f273c5ea3ac0c7c19/manuscript.pdf",
+    "html_url_versioned": "https://yt-project.github.io/yt-4.0-paper/v/3a8b58778fb0f63de960568b9a4558fc9548e1f3/",
+    "pdf_url_versioned": "https://yt-project.github.io/yt-4.0-paper/v/3a8b58778fb0f63de960568b9a4558fc9548e1f3/manuscript.pdf",
     "manubot_version": "0.5.3",
     "rootstock_commit": "9a22fab4497f80f501ea361d028f26888ad9d5a0",
     "manuscript_stats": {
-      "word_count": 25964
+      "word_count": 26018
     }
-  }
+  },
+  "frontends": [
+    {
+      "citations": [],
+      "comments": "Halo finding format",
+      "index_type": [
+        "particle"
+      ],
+      "name": "adaptahop",
+      "usage_citations": []
+    },
+    {
+      "citations": [],
+      "comments": "Halo finding format",
+      "index_type": [
+        "particle"
+      ],
+      "name": "ahf",
+      "usage_citations": []
+    },
+    {
+      "citations": [
+        "@amrvac-paper",
+        "@doi:10.1088/0067-0049/214/1/4",
+        "@doi:10.3847/1538-4365/aaa6c8"
+      ],
+      "comments": "MPI-AMRVAC is a parallel adaptive mesh refinement framework aimed at solving (primarily hyperbolic) partial differential equations by a number of different numerical schemes.\nThe emphasis is on (near) conservation laws and on shock-dominated problems in particular.\n",
+      "index_type": [
+        "grid"
+      ],
+      "name": "amrvac",
+      "usage_citations": [
+        "@doi:10.1051/0004-6361/202037616",
+        "@doi:10.1051/0004-6361/202039630",
+        "@doi:10.1051/0004-6361/201937414"
+      ]
+    },
+    {
+      "citations": [],
+      "comments": "While listed as a \"particle\" dataset, AREPO data is properly described as a moving mesh.\nFor visualization purposes, yt treats it similarly to an SPH dataset; some efforts have been made to properly apply nearest-neighbor interpolation, but these have not been mainlined in the yt visualization routines as of yet.\n",
+      "index_type": [
+        "particle"
+      ],
+      "name": "arepo",
+      "usage_citations": [
+        "@doi:10.3847/1538-4357/aa6dff",
+        "@doi:10.1093/mnras/stab2553"
+      ]
+    },
+    {
+      "citations": [],
+      "comments": "ART, or 'NMSU-ART' as it is occasionally referred to internally, is an octree-based code that is often used for cosmology simulations and galaxy formation simulations.\nyt supports two sets of data formats in the NMSU-ART family.\nThe first is a particle-only format, where the particles are stored independently of any gas structure.\nThe second is the hydro data format, wherein gas values are stored organized into an octree.\nEach of these constitutes a different indexing system, sharing similar datatypes, units, and so forth.\n",
+      "index_type": [
+        "octree",
+        "particle"
+      ],
+      "name": "art",
+      "usage_citations": [
+        "@doi:10.3847/1538-4357/aa6dff",
+        "@doi:10.1093/mnras/staa3972"
+      ]
+    },
+    {
+      "citations": [],
+      "comments": "The ARTIO frontend, which shares some ancestry with the `art` or 'NMSU-ART' frontend, utilizes a special purpose library for input/output operations called `libartio`, which is bundled with yt.\n\nUtilizing `libartio` is interesting from a historical perspective, as it provided an opportunity to reorganize the way that yt understood indexing of octree datasets.\nWhereas previously yt required a full understanding of data distribution, the `artio` frontend outsourced much of that to the internal library, which it regarded as essentially an opaque API.\nReducing the amount of internal bookkeepping that yt had to do provided a lighter-weight interface to the data, which in turn has enabled other frontends to be created using opaque APIs.\n",
+      "index_type": [
+        "octree"
+      ],
+      "name": "artio",
+      "usage_citations": [
+        "@doi:10.1093/mnras/stac1164"
+      ]
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "grid"
+      ],
+      "name": "athena",
+      "usage_citations": [
+        "@doi:10.3847/1538-4357/aa9b80"
+      ]
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "grid"
+      ],
+      "name": "athena_pp",
+      "usage_citations": [
+        "@doi:10.3847/2041-8213/abbffd"
+      ]
+    },
+    {
+      "citations": [
+        "@doi:10.21105/joss.01370",
+        "@doi:10.1088/1742-6596/1031/1/012024",
+        "@doi:10.21105/joss.02513",
+        "@doi:10.21105/joss.01757"
+      ],
+      "comments": null,
+      "index_type": [
+        "grid"
+      ],
+      "name": "boxlib",
+      "usage_citations": [
+        "@doi:10.1093/mnras/stac439",
+        "https://doi-org.colorado.idm.oclc.org/10.1007/s00162-020-00548-6",
+        "https://doi.org/10.1103/PhysRevD.100.063528 ,  \t https://doi.org/10.1103/PhysRevD.103.063525 ,  \t https://doi.org/10.1103/PhysRevD.105.023516",
+        "DOI:10.1016/j.cpc.2022.108457"
+      ]
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "grid"
+      ],
+      "name": "chombo",
+      "usage_citations": [
+        "@doi:10.3847/1538-3881/ab9abf",
+        "@doi:10.3847/1538-4357/ab54c6",
+        "@doi:10.1093/mnras/stw2153"
+      ]
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "particle"
+      ],
+      "name": "eagle",
+      "usage_citations": [
+        "@doi:10.1093/mnras/stab1057",
+        "@doi:10.1093/mnras/stab651",
+        "@doi:10.1093/mnras/staa3590",
+        "@doi:10.1093/mnras/stab1057"
+      ]
+    },
+    {
+      "citations": [
+        "@doi:10.1088/0067-0049/211/2/19"
+      ],
+      "comments": "Enzo was the very first code supported by yt, and while many remnants of that have been removed, many still remain.\nDuring the development of yt 3.0 in particular, many \"enzo-isms\" were removed; however, as Enzo uses a patch-based grid data format, much of the naming conventions for grid objects still mirror those in use in Enzo.\nThese include names such as `GridLeftEdge` and `ActiveDimensions` (which refers to the dimensions not including ghost zones).\n\nThere are several 'sub-frontends' within the Enzo frontend; these include dedicated 1D and 2D readers, as well as historical frontends (of varying functionality) for reading HDF4, 'unpacked' HDF5 and other sub-dialects of Enzo.\n",
+      "index_type": [
+        "grid"
+      ],
+      "name": "enzo",
+      "usage_citations": [
+        "@doi:10.3847/1538-4357/aa6dff",
+        "@doi:10.1088/0004-637X/764/2/136",
+        "@doi:10.3847/1538-4365/abfa17",
+        "@doi:10.3847/1538-4357/ac6c87",
+        "@doi:10.1093/mnras/stu979",
+        "@doi:10.3847/1538-4357/ac5960"
+      ]
+    },
+    {
+      "citations": [],
+      "comments": "Enzo-E is a nearly full-rewrite of the Enzo infrastructure designed for emerging and future architectures.\n",
+      "index_type": [
+        "grid"
+      ],
+      "name": "enzo_e",
+      "usage_citations": [
+        "@doi:10.3847/1538-4357/ac3c48"
+      ]
+    },
+    {
+      "citations": [],
+      "comments": "Exodus II, and its output in NetCDF4 format, was the initial driver for higher-order unstructured mesh support in yt.\nThe original driver for developing this format was for simulations of nuclear reactors.\n",
+      "index_type": [
+        "unstructured mesh"
+      ],
+      "name": "exodus_ii",
+      "usage_citations": []
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "grid"
+      ],
+      "name": "fits",
+      "usage_citations": []
+    },
+    {
+      "citations": [],
+      "comments": "FLASH is a ...\n",
+      "index_type": [
+        "grid"
+      ],
+      "name": "flash",
+      "usage_citations": [
+        "@doi:10.1093/mnras/stac1275",
+        "@doi:10.3847/1538-4357/aadcf7",
+        "@doi:10.1093/mnras/staa3902",
+        "@doi:10.3847/1538-4357/ab4db1",
+        "@doi:10.3847/1538-4357/abc011",
+        "@doi:10.3847/2041-8213/ababae"
+      ]
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "particle"
+      ],
+      "name": "gadget",
+      "usage_citations": [
+        "@doi:10.3847/1538-4357/ac088a"
+      ]
+    },
+    {
+      "citations": [],
+      "comments": "Halo finding",
+      "index_type": [
+        "particle"
+      ],
+      "name": "gadget_fof",
+      "usage_citations": []
+    },
+    {
+      "citations": [
+        "@doi:10.1093/mnras/sty2586"
+      ],
+      "comments": null,
+      "index_type": [
+        "grid"
+      ],
+      "name": "gamer",
+      "usage_citations": []
+    },
+    {
+      "citations": [],
+      "comments": "Custom built for yt",
+      "index_type": [
+        "grid"
+      ],
+      "name": "gdf",
+      "usage_citations": []
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "particle"
+      ],
+      "name": "gizmo",
+      "usage_citations": [
+        "@doi:10.1093/mnras/stac1542",
+        "@doi:10.3847/1538-4357/aa6dff"
+      ]
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "particle"
+      ],
+      "name": "halo_catalog",
+      "usage_citations": []
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "particle"
+      ],
+      "name": "http_stream",
+      "usage_citations": []
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "unstructured mesh"
+      ],
+      "name": "moab",
+      "usage_citations": []
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "grid"
+      ],
+      "name": "nc4_cm1",
+      "usage_citations": []
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "particle"
+      ],
+      "name": "open_pmd",
+      "usage_citations": []
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "particle"
+      ],
+      "name": "owls",
+      "usage_citations": []
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "particle"
+      ],
+      "name": "owls_subfind",
+      "usage_citations": []
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "octree"
+      ],
+      "name": "ramses",
+      "usage_citations": [
+        "@doi:10.3847/1538-4357/aa6dff",
+        "@doi:10.48550/arXiv.2206.11913",
+        "@doi:10.1051/0004-6361/201834496",
+        "@doi:10.1093/mnras/stac1663",
+        "@doi:10.1051/0004-6361/201936188",
+        "@doi:10.1093/mnras/stac2963",
+        "@doi:10.1093/mnras/stx2316"
+      ]
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "particle"
+      ],
+      "name": "rockstar",
+      "usage_citations": []
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "particle"
+      ],
+      "name": "sdf",
+      "usage_citations": [
+        "@doi:10.1051/0004-6361/201937337"
+      ]
+    },
+    {
+      "citations": [],
+      "comments": "A base frontend from which other SPH-type frontends can be defined.\n",
+      "index_type": [
+        "particle"
+      ],
+      "name": "sph",
+      "usage_citations": []
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "multi"
+      ],
+      "name": "stream",
+      "usage_citations": [
+        "@doi:10.1002/ESSOAR.10506118.2",
+        "@doi:10.3847/1538-4357/ab290c"
+      ]
+    },
+    {
+      "citations": [
+        "@doi:10.21105/joss.02430"
+      ],
+      "comments": null,
+      "index_type": [
+        "particle"
+      ],
+      "name": "swift",
+      "usage_citations": [
+        "@doi:10.3847/1538-4357/ac20d4",
+        "https://ui.adsabs.harvard.edu/abs/2022arXiv220313915B"
+      ]
+    },
+    {
+      "citations": [],
+      "comments": null,
+      "index_type": [
+        "particle"
+      ],
+      "name": "tipsy",
+      "usage_citations": [
+        "@doi:10.1016/j.ascom.2016.02.002",
+        "@doi:10.1093/mnras/stw1741"
+      ]
+    },
+    {
+      "citations": [],
+      "comments": "An internal frontend for re-loading saved data and derived data\n",
+      "index_type": [
+        "particle"
+      ],
+      "name": "ytdata",
+      "usage_citations": [
+        "@doi:10.1093/mnras/sty2103"
+      ]
+    }
+  ]
 }

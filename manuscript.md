@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-10-20'
+date-meta: '2023-01-06'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -29,6 +29,8 @@ author-meta:
 - Andrew Myers
 - Add Yourself
 manubot-fail-on-errors: true
+citekey-aliases:
+  amrvac-paper: doi:10.1016/S0010-4655(03)00139-5
 header-includes: |-
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -39,8 +41,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2022-10-20" />
-  <meta name="citation_publication_date" content="2022-10-20" />
+  <meta name="dc.date" content="2023-01-06" />
+  <meta name="citation_publication_date" content="2023-01-06" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -122,9 +124,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/207c3654db34178be33c460f273c5ea3ac0c7c19/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/207c3654db34178be33c460f273c5ea3ac0c7c19/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/207c3654db34178be33c460f273c5ea3ac0c7c19/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/3a8b58778fb0f63de960568b9a4558fc9548e1f3/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/3a8b58778fb0f63de960568b9a4558fc9548e1f3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/3a8b58778fb0f63de960568b9a4558fc9548e1f3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -146,10 +148,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/207c3654db34178be33c460f273c5ea3ac0c7c19/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/3a8b58778fb0f63de960568b9a4558fc9548e1f3/))
 was automatically generated
-from [yt-project/yt-4.0-paper@207c365](https://github.com/yt-project/yt-4.0-paper/tree/207c3654db34178be33c460f273c5ea3ac0c7c19)
-on October 20, 2022.
+from [yt-project/yt-4.0-paper@3a8b587](https://github.com/yt-project/yt-4.0-paper/tree/3a8b58778fb0f63de960568b9a4558fc9548e1f3)
+on January 6, 2023.
 </em></small>
 
 ## Authors
@@ -1979,6 +1981,470 @@ The open source EWAHBoolArray C++ package is used for implementing EWAH bitmaps 
 The authors would like to thank Daniel Lemire for his open source EWAH implementation.
 yt is developed by a large number of independent researchers from numerous institutions around the world.
 Their commitment to open science has helped make this work possible.
+
+
+## Data Formats and Frontends
+
+
+
+
+
+### adaptahop
+
+**Index Type:** particle
+
+**Comments:** Halo finding format
+
+**Primary Citations:** [
+
+**Usage Citations:** [
+
+
+
+### ahf
+
+**Index Type:** particle
+
+**Comments:** Halo finding format
+
+**Primary Citations:** [
+
+**Usage Citations:** [
+
+
+
+### amrvac
+
+**Index Type:** grid
+
+**Comments:** MPI-AMRVAC is a parallel adaptive mesh refinement framework aimed at solving (primarily hyperbolic) partial differential equations by a number of different numerical schemes.
+The emphasis is on (near) conservation laws and on shock-dominated problems in particular.
+
+
+**Primary Citations:** [@amrvac-paper; @doi:10.1088/0067-0049/214/1/4; @doi:10.3847/1538-4365/aaa6c8
+
+**Usage Citations:** [@doi:10.1051/0004-6361/202037616; @doi:10.1051/0004-6361/202039630; @doi:10.1051/0004-6361/201937414
+
+
+
+### arepo
+
+**Index Type:** particle
+
+**Comments:** While listed as a "particle" dataset, AREPO data is properly described as a moving mesh.
+For visualization purposes, yt treats it similarly to an SPH dataset; some efforts have been made to properly apply nearest-neighbor interpolation, but these have not been mainlined in the yt visualization routines as of yet.
+
+
+**Primary Citations:** [
+
+**Usage Citations:** [@doi:10.3847/1538-4357/aa6dff; @doi:10.1093/mnras/stab2553
+
+
+
+### art
+
+**Index Type:** octree, particle
+
+**Comments:** ART, or 'NMSU-ART' as it is occasionally referred to internally, is an octree-based code that is often used for cosmology simulations and galaxy formation simulations.
+yt supports two sets of data formats in the NMSU-ART family.
+The first is a particle-only format, where the particles are stored independently of any gas structure.
+The second is the hydro data format, wherein gas values are stored organized into an octree.
+Each of these constitutes a different indexing system, sharing similar datatypes, units, and so forth.
+
+
+**Primary Citations:** [
+
+**Usage Citations:** [@doi:10.3847/1538-4357/aa6dff; @doi:10.1093/mnras/staa3972
+
+
+
+### artio
+
+**Index Type:** octree
+
+**Comments:** The ARTIO frontend, which shares some ancestry with the `art` or 'NMSU-ART' frontend, utilizes a special purpose library for input/output operations called `libartio`, which is bundled with yt.
+
+Utilizing `libartio` is interesting from a historical perspective, as it provided an opportunity to reorganize the way that yt understood indexing of octree datasets.
+Whereas previously yt required a full understanding of data distribution, the `artio` frontend outsourced much of that to the internal library, which it regarded as essentially an opaque API.
+Reducing the amount of internal bookkeepping that yt had to do provided a lighter-weight interface to the data, which in turn has enabled other frontends to be created using opaque APIs.
+
+
+**Primary Citations:** [
+
+**Usage Citations:** [@doi:10.1093/mnras/stac1164
+
+
+
+### athena
+
+**Index Type:** grid
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [@doi:10.3847/1538-4357/aa9b80
+
+
+
+### athena_pp
+
+**Index Type:** grid
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [@doi:10.3847/2041-8213/abbffd
+
+
+
+### boxlib
+
+**Index Type:** grid
+
+**Comments:** None
+
+**Primary Citations:** [@doi:10.21105/joss.01370; @doi:10.1088/1742-6596/1031/1/012024; @doi:10.21105/joss.02513; @doi:10.21105/joss.01757
+
+**Usage Citations:** [@doi:10.1093/mnras/stac439; https://doi-org.colorado.idm.oclc.org/10.1007/s00162-020-00548-6; https://doi.org/10.1103/PhysRevD.100.063528 ,  	 https://doi.org/10.1103/PhysRevD.103.063525 ,  	 https://doi.org/10.1103/PhysRevD.105.023516; DOI:10.1016/j.cpc.2022.108457
+
+
+
+### chombo
+
+**Index Type:** grid
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [@doi:10.3847/1538-3881/ab9abf; @doi:10.3847/1538-4357/ab54c6; @doi:10.1093/mnras/stw2153
+
+
+
+### eagle
+
+**Index Type:** particle
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [@doi:10.1093/mnras/stab1057; @doi:10.1093/mnras/stab651; @doi:10.1093/mnras/staa3590; @doi:10.1093/mnras/stab1057
+
+
+
+### enzo
+
+**Index Type:** grid
+
+**Comments:** Enzo was the very first code supported by yt, and while many remnants of that have been removed, many still remain.
+During the development of yt 3.0 in particular, many "enzo-isms" were removed; however, as Enzo uses a patch-based grid data format, much of the naming conventions for grid objects still mirror those in use in Enzo.
+These include names such as `GridLeftEdge` and `ActiveDimensions` (which refers to the dimensions not including ghost zones).
+
+There are several 'sub-frontends' within the Enzo frontend; these include dedicated 1D and 2D readers, as well as historical frontends (of varying functionality) for reading HDF4, 'unpacked' HDF5 and other sub-dialects of Enzo.
+
+
+**Primary Citations:** [@doi:10.1088/0067-0049/211/2/19
+
+**Usage Citations:** [@doi:10.3847/1538-4357/aa6dff; @doi:10.1088/0004-637X/764/2/136; @doi:10.3847/1538-4365/abfa17; @doi:10.3847/1538-4357/ac6c87; @doi:10.1093/mnras/stu979; @doi:10.3847/1538-4357/ac5960
+
+
+
+### enzo_e
+
+**Index Type:** grid
+
+**Comments:** Enzo-E is a nearly full-rewrite of the Enzo infrastructure designed for emerging and future architectures.
+
+
+**Primary Citations:** [
+
+**Usage Citations:** [@doi:10.3847/1538-4357/ac3c48
+
+
+
+### exodus_ii
+
+**Index Type:** unstructured mesh
+
+**Comments:** Exodus II, and its output in NetCDF4 format, was the initial driver for higher-order unstructured mesh support in yt.
+The original driver for developing this format was for simulations of nuclear reactors.
+
+
+**Primary Citations:** [
+
+**Usage Citations:** [
+
+
+
+### fits
+
+**Index Type:** grid
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [
+
+
+
+### flash
+
+**Index Type:** grid
+
+**Comments:** FLASH is a ...
+
+
+**Primary Citations:** [
+
+**Usage Citations:** [@doi:10.1093/mnras/stac1275; @doi:10.3847/1538-4357/aadcf7; @doi:10.1093/mnras/staa3902; @doi:10.3847/1538-4357/ab4db1; @doi:10.3847/1538-4357/abc011; @doi:10.3847/2041-8213/ababae
+
+
+
+### gadget
+
+**Index Type:** particle
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [@doi:10.3847/1538-4357/ac088a
+
+
+
+### gadget_fof
+
+**Index Type:** particle
+
+**Comments:** Halo finding
+
+**Primary Citations:** [
+
+**Usage Citations:** [
+
+
+
+### gamer
+
+**Index Type:** grid
+
+**Comments:** None
+
+**Primary Citations:** [@doi:10.1093/mnras/sty2586
+
+**Usage Citations:** [
+
+
+
+### gdf
+
+**Index Type:** grid
+
+**Comments:** Custom built for yt
+
+**Primary Citations:** [
+
+**Usage Citations:** [
+
+
+
+### gizmo
+
+**Index Type:** particle
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [@doi:10.1093/mnras/stac1542; @doi:10.3847/1538-4357/aa6dff
+
+
+
+### halo_catalog
+
+**Index Type:** particle
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [
+
+
+
+### http_stream
+
+**Index Type:** particle
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [
+
+
+
+### moab
+
+**Index Type:** unstructured mesh
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [
+
+
+
+### nc4_cm1
+
+**Index Type:** grid
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [
+
+
+
+### open_pmd
+
+**Index Type:** particle
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [
+
+
+
+### owls
+
+**Index Type:** particle
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [
+
+
+
+### owls_subfind
+
+**Index Type:** particle
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [
+
+
+
+### ramses
+
+**Index Type:** octree
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [@doi:10.3847/1538-4357/aa6dff; @doi:10.48550/arXiv.2206.11913; @doi:10.1051/0004-6361/201834496; @doi:10.1093/mnras/stac1663; @doi:10.1051/0004-6361/201936188; @doi:10.1093/mnras/stac2963; @doi:10.1093/mnras/stx2316
+
+
+
+### rockstar
+
+**Index Type:** particle
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [
+
+
+
+### sdf
+
+**Index Type:** particle
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [@doi:10.1051/0004-6361/201937337
+
+
+
+### sph
+
+**Index Type:** particle
+
+**Comments:** A base frontend from which other SPH-type frontends can be defined.
+
+
+**Primary Citations:** [
+
+**Usage Citations:** [
+
+
+
+### stream
+
+**Index Type:** multi
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [@doi:10.1002/ESSOAR.10506118.2; @doi:10.3847/1538-4357/ab290c
+
+
+
+### swift
+
+**Index Type:** particle
+
+**Comments:** None
+
+**Primary Citations:** [@doi:10.21105/joss.02430
+
+**Usage Citations:** [@doi:10.3847/1538-4357/ac20d4; https://ui.adsabs.harvard.edu/abs/2022arXiv220313915B
+
+
+
+### tipsy
+
+**Index Type:** particle
+
+**Comments:** None
+
+**Primary Citations:** [
+
+**Usage Citations:** [@doi:10.1016/j.ascom.2016.02.002; @doi:10.1093/mnras/stw1741
+
+
+
+### ytdata
+
+**Index Type:** particle
+
+**Comments:** An internal frontend for re-loading saved data and derived data
+
+
+**Primary Citations:** [
+
+**Usage Citations:** [@doi:10.1093/mnras/sty2103
+
+
 
 
 

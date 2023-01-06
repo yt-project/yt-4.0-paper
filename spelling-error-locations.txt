@@ -449,6 +449,17 @@ content/31.bitmap.md:378:EWAH
 content/31.bitmap.md:378:EWAHBoolArray
 content/31.bitmap.md:382:EWAH
 content/31.bitmap.md:382:Lemire
+content/33.data-formats-and-frontends.md:1:Frontends
+content/33.data-formats-and-frontends.md:4:frontend
+content/33.data-formats-and-frontends.md:4:frontends
+content/33.data-formats-and-frontends.md:4:yaml
+content/33.data-formats-and-frontends.md:7:frontend
+content/33.data-formats-and-frontends.md:7:frontends
+content/33.data-formats-and-frontends.md:9:frontend
+content/33.data-formats-and-frontends.md:11:frontend
+content/33.data-formats-and-frontends.md:13:frontend
+content/33.data-formats-and-frontends.md:15:frontend
+content/33.data-formats-and-frontends.md:17:frontend
 content/35.viz_and_volrendering.md:3:matplotlib
 content/35.viz_and_volrendering.md:4:matplotlib
 content/35.viz_and_volrendering.md:4:matplotlib
