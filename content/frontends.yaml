@@ -1,237 +1,355 @@
 frontends:
-  - name: adaptahop
-    index_type: ['particle']
-    comments: Halo finding format
-    citations: []
-    usage_citations: []
-  - name: ahf
-    index_type: ['particle']
-    comments: Halo finding format
-    citations: []
-    usage_citations: []
-  - name: amrvac
-    index_type: ['grid']
-    comments: |
-      MPI-AMRVAC is a parallel adaptive mesh refinement framework aimed at solving (primarily hyperbolic) partial differential equations by a number of different numerical schemes.
-      The emphasis is on (near) conservation laws and on shock-dominated problems in particular.
-    citations:
-      - '@amrvac-paper'
-      - '@doi:10.1088/0067-0049/214/1/4'
-      - '@doi:10.3847/1538-4365/aaa6c8'
-    usage_citations:
-      - '@doi:10.1051/0004-6361/202037616'
-      - '@doi:10.1051/0004-6361/202039630'
-      - '@doi:10.1051/0004-6361/201937414'
-  - name: arepo
-    index_type: ['particle']
-    comments: |
-      While listed as a "particle" dataset, AREPO data is properly described as a moving mesh.
-      For visualization purposes, yt treats it similarly to an SPH dataset; some efforts have been made to properly apply nearest-neighbor interpolation, but these have not been mainlined in the yt visualization routines as of yet.
-    citations: []
-    usage_citations:
-      - '@doi:10.3847/1538-4357/aa6dff'
-      - '@doi:10.1093/mnras/stab2553'
-  - name: art
-    index_type: ['octree', 'particle']
-    comments: |
-      ART, or 'NMSU-ART' as it is occasionally referred to internally, is an octree-based code that is often used for cosmology simulations and galaxy formation simulations.
-      yt supports two sets of data formats in the NMSU-ART family.
-      The first is a particle-only format, where the particles are stored independently of any gas structure.
-      The second is the hydro data format, wherein gas values are stored organized into an octree.
-      Each of these constitutes a different indexing system, sharing similar datatypes, units, and so forth.
-    citations: []
-    usage_citations:
-      - '@doi:10.3847/1538-4357/aa6dff'
-  - name: artio
-    index_type: ['octree']
-    comments: |
-      The ARTIO frontend, which shares some ancestry with the `art` or 'NMSU-ART' frontend, utilizes a special purpose library for input/output operations called `libartio`, which is bundled with yt.
-      
-      Utilizing `libartio` is interesting from a historical perspective, as it provided an opportunity to reorganize the way that yt understood indexing of octree datasets.
-      Whereas previously yt required a full understanding of data distribution, the `artio` frontend outsourced much of that to the internal library, which it regarded as essentially an opaque API.
-      Reducing the amount of internal bookkeepping that yt had to do provided a lighter-weight interface to the data, which in turn has enabled other frontends to be created using opaque APIs.
-    citations: []
-    usage_citations: []
-  - name: athena
-    index_type: ['grid']
-    comments:
-    citations: []
-    usage_citations: ['@doi:10.3847/1538-4357/aa9b80']
-  - name: athena_pp
-    index_type: ['grid']
-    comments:
-    citations: []
-    usage_citations: ['@doi:10.3847/2041-8213/abbffd']
-  - name: boxlib
-    index_type: ['grid']
-    comments:
-    citations: 
-      - '@doi:10.21105/joss.01370'
-      - '@doi:10.1088/1742-6596/1031/1/012024'
-    usage_citations:
-      - '@doi:10.1093/mnras/stac439'
-  - name: chombo
-    index_type: ['grid']
-    comments:
-    citations: []
-    usage_citations: []
-  - name: eagle
-    index_type: ['particle']
-    comments:
-    citations: []
-    usage_citations:
-      - '@doi:10.1093/mnras/stab1057'
-      - '@doi:10.1093/mnras/stab651'
-      - '@doi:10.1093/mnras/staa3590'
-      - '@doi:10.1093/mnras/stab1057'
-  - name: enzo
-    index_type: ['grid']
-    comments: |
-      Enzo was the very first code supported by yt, and while many remnants of that have been removed, many still remain.
-      During the development of yt 3.0 in particular, many "enzo-isms" were removed; however, as Enzo uses a patch-based grid data format, much of the naming conventions for grid objects still mirror those in use in Enzo.
-      These include names such as `GridLeftEdge` and `ActiveDimensions` (which refers to the dimensions not including ghost zones).
-      
-      There are several 'sub-frontends' within the Enzo frontend; these include dedicated 1D and 2D readers, as well as historical frontends (of varying functionality) for reading HDF4, 'unpacked' HDF5 and other sub-dialects of Enzo.
-    citations: ['@doi:10.1088/0067-0049/211/2/19']
-    usage_citations:
-      - '@doi:10.3847/1538-4357/aa6dff'
-      - '@doi:10.1088/0004-637X/764/2/136'
-  - name: enzo_e
-    index_type: ['grid']
-    comments: |
-      Enzo-E is a nearly full-rewrite of the Enzo infrastructure designed for emerging and future architectures.
-    citations: []
-    usage_citations:
-      - '@doi:10.3847/1538-4357/ac3c48'
-  - name: exodus_ii
-    index_type: ['unstructured mesh']
-    comments: |
-      Exodus II, and its output in NetCDF4 format, was the initial driver for higher-order unstructured mesh support in yt.
-      The original driver for developing this format was for simulations of nuclear reactors.
-    citations: []
-    usage_citations: []
-  - name: fits
-    index_type: ['grid']
-    comments:
-    citations: []
-    usage_citations: []
-  - name: flash
-    index_type: ['grid']
-    comments: |
-      FLASH is a ...
-    citations: []
-    usage_citations:
-      - '@doi:10.1093/mnras/stac1275'
-      - '@doi:10.3847/1538-4357/aadcf7'
-  - name: gadget
-    index_type: ['particle']
-    comments:
-    citations: []
-    usage_citations:
-      - '@doi:10.3847/1538-4357/ac088a'
-  - name: gadget_fof
-    index_type: ['particle']
-    comments: Halo finding
-    citations: []
-    usage_citations: []
-  - name: gamer
-    index_type: ['grid']
-    comments:
-    citations: []
-    usage_citations: []
-  - name: gdf
-    index_type: ['grid']
-    comments: Custom built for yt
-    citations: []
-    usage_citations: []
-  - name: gizmo
-    index_type: ['particle']
-    comments:
-    citations: []
-    usage_citations: 
-      - '@doi:10.1093/mnras/stac1542'
-      - '@doi:10.3847/1538-4357/aa6dff'
-  - name: halo_catalog
-    index_type: ['particle']
-    comments:
-    citations: []
-    usage_citations: []
-  - name: http_stream
-    index_type: ['particle']
-    comments:
-    citations: []
-    usage_citations: []
-  - name: moab
-    index_type: ['unstructured mesh']
-    comments:
-    citations: []
-    usage_citations: []
-  - name: nc4_cm1
-    index_type: ['grid']
-    comments:
-    citations: []
-    usage_citations: []
-  - name: open_pmd
-    index_type: ['particle']
-    comments:
-    citations: []
-    usage_citations: []
-  - name: owls
-    index_type: ['particle']
-    comments:
-    citations: []
-    usage_citations: []
-  - name: owls_subfind
-    index_type: ['particle']
-    comments:
-    citations: []
-    usage_citations: []
-  - name: ramses
-    index_type: ['octree']
-    comments:
-    citations: []
-    usage_citations:
-      - '@doi:10.3847/1538-4357/aa6dff'
-  - name: rockstar
-    index_type: ['particle']
-    comments:
-    citations: []
-    usage_citations: []
-  - name: sdf
-    index_type: ['particle']
-    comments:
-    citations: []
-    usage_citations:
-      - '@doi:10.1051/0004-6361/201937337'
-  - name: sph
-    index_type: ['particle']
-    comments: |
-      A base frontend from which other SPH-type frontends can be defined.
-    citations: []
-    usage_citations: []
-  - name: stream
-    index_type: ['multi']
-    comments:
-    citations: []
-    usage_citations: []
-  - name: swift
-    index_type: ['particle']
-    comments:
-    citations:
-      - '@doi:10.21105/joss.02430'
-    usage_citations:
-      - '@doi:10.3847/1538-4357/ac20d4'
-  - name: tipsy
-    index_type: ['particle']
-    comments:
-    citations: []
-    usage_citations:
-      - '@doi:10.1016/j.ascom.2016.02.002'
-      - '@doi:10.1093/mnras/stw1741'
-  - name: ytdata
-    index_type: ['particle']
-    comments: |
-      An internal frontend for re-loading saved data and derived data
-    citations: []
-    usage_citations:
-      - '@doi:10.1093/mnras/sty2103'
+- citations: []
+  comments: Halo finding format
+  index_type:
+  - particle
+  name: adaptahop
+  usage_citations: []
+- citations: []
+  comments: Halo finding format
+  index_type:
+  - particle
+  name: ahf
+  usage_citations: []
+- citations:
+  - '@amrvac-paper'
+  - '@doi:10.1088/0067-0049/214/1/4'
+  - '@doi:10.3847/1538-4365/aaa6c8'
+  comments: 'MPI-AMRVAC is a parallel adaptive mesh refinement framework aimed at
+    solving (primarily hyperbolic) partial differential equations by a number of different
+    numerical schemes.
+
+    The emphasis is on (near) conservation laws and on shock-dominated problems in
+    particular.
+
+    '
+  index_type:
+  - grid
+  name: amrvac
+  usage_citations:
+  - '@doi:10.1051/0004-6361/202037616'
+  - '@doi:10.1051/0004-6361/202039630'
+  - '@doi:10.1051/0004-6361/201937414'
+- citations: []
+  comments: 'While listed as a "particle" dataset, AREPO data is properly described
+    as a moving mesh.
+
+    For visualization purposes, yt treats it similarly to an SPH dataset; some efforts
+    have been made to properly apply nearest-neighbor interpolation, but these have
+    not been mainlined in the yt visualization routines as of yet.
+
+    '
+  index_type:
+  - particle
+  name: arepo
+  usage_citations:
+  - '@doi:10.3847/1538-4357/aa6dff'
+  - '@doi:10.1093/mnras/stab2553'
+- citations: []
+  comments: 'ART, or ''NMSU-ART'' as it is occasionally referred to internally, is
+    an octree-based code that is often used for cosmology simulations and galaxy formation
+    simulations.
+
+    yt supports two sets of data formats in the NMSU-ART family.
+
+    The first is a particle-only format, where the particles are stored independently
+    of any gas structure.
+
+    The second is the hydro data format, wherein gas values are stored organized into
+    an octree.
+
+    Each of these constitutes a different indexing system, sharing similar datatypes,
+    units, and so forth.
+
+    '
+  index_type:
+  - octree
+  - particle
+  name: art
+  usage_citations:
+  - '@doi:10.3847/1538-4357/aa6dff'
+  - '@doi:10.1093/mnras/staa3972'
+- citations: []
+  comments: 'The ARTIO frontend, which shares some ancestry with the `art` or ''NMSU-ART''
+    frontend, utilizes a special purpose library for input/output operations called
+    `libartio`, which is bundled with yt.
+
+
+    Utilizing `libartio` is interesting from a historical perspective, as it provided
+    an opportunity to reorganize the way that yt understood indexing of octree datasets.
+
+    Whereas previously yt required a full understanding of data distribution, the
+    `artio` frontend outsourced much of that to the internal library, which it regarded
+    as essentially an opaque API.
+
+    Reducing the amount of internal bookkeepping that yt had to do provided a lighter-weight
+    interface to the data, which in turn has enabled other frontends to be created
+    using opaque APIs.
+
+    '
+  index_type:
+  - octree
+  name: artio
+  usage_citations:
+  - '@doi:10.1093/mnras/stac1164'
+- citations: []
+  comments: null
+  index_type:
+  - grid
+  name: athena
+  usage_citations:
+  - '@doi:10.3847/1538-4357/aa9b80'
+- citations: []
+  comments: null
+  index_type:
+  - grid
+  name: athena_pp
+  usage_citations:
+  - '@doi:10.3847/2041-8213/abbffd'
+- citations:
+  - '@doi:10.21105/joss.01370'
+  - '@doi:10.1088/1742-6596/1031/1/012024'
+  - '@doi:10.21105/joss.02513'
+  - '@doi:10.21105/joss.01757'
+  comments: null
+  index_type:
+  - grid
+  name: boxlib
+  usage_citations:
+  - '@doi:10.1093/mnras/stac439'
+  - https://doi-org.colorado.idm.oclc.org/10.1007/s00162-020-00548-6
+  - "https://doi.org/10.1103/PhysRevD.100.063528 ,  \t https://doi.org/10.1103/PhysRevD.103.063525\
+    \ ,  \t https://doi.org/10.1103/PhysRevD.105.023516"
+  - DOI:10.1016/j.cpc.2022.108457
+- citations: []
+  comments: null
+  index_type:
+  - grid
+  name: chombo
+  usage_citations:
+  - '@doi:10.3847/1538-3881/ab9abf'
+  - '@doi:10.3847/1538-4357/ab54c6'
+  - '@doi:10.1093/mnras/stw2153'
+- citations: []
+  comments: null
+  index_type:
+  - particle
+  name: eagle
+  usage_citations:
+  - '@doi:10.1093/mnras/stab1057'
+  - '@doi:10.1093/mnras/stab651'
+  - '@doi:10.1093/mnras/staa3590'
+  - '@doi:10.1093/mnras/stab1057'
+- citations:
+  - '@doi:10.1088/0067-0049/211/2/19'
+  comments: 'Enzo was the very first code supported by yt, and while many remnants
+    of that have been removed, many still remain.
+
+    During the development of yt 3.0 in particular, many "enzo-isms" were removed;
+    however, as Enzo uses a patch-based grid data format, much of the naming conventions
+    for grid objects still mirror those in use in Enzo.
+
+    These include names such as `GridLeftEdge` and `ActiveDimensions` (which refers
+    to the dimensions not including ghost zones).
+
+
+    There are several ''sub-frontends'' within the Enzo frontend; these include dedicated
+    1D and 2D readers, as well as historical frontends (of varying functionality)
+    for reading HDF4, ''unpacked'' HDF5 and other sub-dialects of Enzo.
+
+    '
+  index_type:
+  - grid
+  name: enzo
+  usage_citations:
+  - '@doi:10.3847/1538-4357/aa6dff'
+  - '@doi:10.1088/0004-637X/764/2/136'
+  - '@doi:10.3847/1538-4365/abfa17'
+  - '@doi:10.3847/1538-4357/ac6c87'
+  - '@doi:10.1093/mnras/stu979'
+  - '@doi:10.3847/1538-4357/ac5960'
+- citations: []
+  comments: 'Enzo-E is a nearly full-rewrite of the Enzo infrastructure designed for
+    emerging and future architectures.
+
+    '
+  index_type:
+  - grid
+  name: enzo_e
+  usage_citations:
+  - '@doi:10.3847/1538-4357/ac3c48'
+- citations: []
+  comments: 'Exodus II, and its output in NetCDF4 format, was the initial driver for
+    higher-order unstructured mesh support in yt.
+
+    The original driver for developing this format was for simulations of nuclear
+    reactors.
+
+    '
+  index_type:
+  - unstructured mesh
+  name: exodus_ii
+  usage_citations: []
+- citations: []
+  comments: null
+  index_type:
+  - grid
+  name: fits
+  usage_citations: []
+- citations: []
+  comments: 'FLASH is a ...
+
+    '
+  index_type:
+  - grid
+  name: flash
+  usage_citations:
+  - '@doi:10.1093/mnras/stac1275'
+  - '@doi:10.3847/1538-4357/aadcf7'
+  - '@doi:10.1093/mnras/staa3902'
+  - '@doi:10.3847/1538-4357/ab4db1'
+  - '@doi:10.3847/1538-4357/abc011'
+  - '@doi:10.3847/2041-8213/ababae'
+- citations: []
+  comments: null
+  index_type:
+  - particle
+  name: gadget
+  usage_citations:
+  - '@doi:10.3847/1538-4357/ac088a'
+- citations: []
+  comments: Halo finding
+  index_type:
+  - particle
+  name: gadget_fof
+  usage_citations: []
+- citations:
+  - '@doi:10.1093/mnras/sty2586'
+  comments: null
+  index_type:
+  - grid
+  name: gamer
+  usage_citations: []
+- citations: []
+  comments: Custom built for yt
+  index_type:
+  - grid
+  name: gdf
+  usage_citations: []
+- citations: []
+  comments: null
+  index_type:
+  - particle
+  name: gizmo
+  usage_citations:
+  - '@doi:10.1093/mnras/stac1542'
+  - '@doi:10.3847/1538-4357/aa6dff'
+- citations: []
+  comments: null
+  index_type:
+  - particle
+  name: halo_catalog
+  usage_citations: []
+- citations: []
+  comments: null
+  index_type:
+  - particle
+  name: http_stream
+  usage_citations: []
+- citations: []
+  comments: null
+  index_type:
+  - unstructured mesh
+  name: moab
+  usage_citations: []
+- citations: []
+  comments: null
+  index_type:
+  - grid
+  name: nc4_cm1
+  usage_citations: []
+- citations: []
+  comments: null
+  index_type:
+  - particle
+  name: open_pmd
+  usage_citations: []
+- citations: []
+  comments: null
+  index_type:
+  - particle
+  name: owls
+  usage_citations: []
+- citations: []
+  comments: null
+  index_type:
+  - particle
+  name: owls_subfind
+  usage_citations: []
+- citations: []
+  comments: null
+  index_type:
+  - octree
+  name: ramses
+  usage_citations:
+  - '@doi:10.3847/1538-4357/aa6dff'
+  - '@doi:10.48550/arXiv.2206.11913'
+  - '@doi:10.1051/0004-6361/201834496'
+  - '@doi:10.1093/mnras/stac1663'
+  - '@doi:10.1051/0004-6361/201936188'
+  - '@doi:10.1093/mnras/stac2963'
+  - '@doi:10.1093/mnras/stx2316'
+- citations: []
+  comments: null
+  index_type:
+  - particle
+  name: rockstar
+  usage_citations: []
+- citations: []
+  comments: null
+  index_type:
+  - particle
+  name: sdf
+  usage_citations:
+  - '@doi:10.1051/0004-6361/201937337'
+- citations: []
+  comments: 'A base frontend from which other SPH-type frontends can be defined.
+
+    '
+  index_type:
+  - particle
+  name: sph
+  usage_citations: []
+- citations: []
+  comments: null
+  index_type:
+  - multi
+  name: stream
+  usage_citations:
+  - '@doi:10.1002/ESSOAR.10506118.2'
+- citations:
+  - '@doi:10.21105/joss.02430'
+  comments: null
+  index_type:
+  - particle
+  name: swift
+  usage_citations:
+  - '@doi:10.3847/1538-4357/ac20d4'
+  - 'https://ui.adsabs.harvard.edu/abs/2022arXiv220313915B'
+- citations: []
+  comments: null
+  index_type:
+  - particle
+  name: tipsy
+  usage_citations:
+  - '@doi:10.1016/j.ascom.2016.02.002'
+  - '@doi:10.1093/mnras/stw1741'
+- citations: []
+  comments: 'An internal frontend for re-loading saved data and derived data
+
+    '
+  index_type:
+  - particle
+  name: ytdata
+  usage_citations:
+  - '@doi:10.1093/mnras/sty2103'
