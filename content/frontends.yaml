@@ -327,6 +327,7 @@ frontends:
   name: stream
   usage_citations:
   - '@doi:10.1002/ESSOAR.10506118.2'
+  - '@doi:10.3847/1538-4357/ab290c'
 - citations:
   - '@doi:10.21105/joss.02430'
   comments: null
