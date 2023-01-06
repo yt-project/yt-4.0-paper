@@ -25,7 +25,7 @@
   <meta name="author" content="Stephanie Tonnesen" />
   <meta name="author" content="Andrew Myers" />
   <meta name="author" content="Add Yourself" />
-  <meta name="dcterms.date" content="2022-10-20" />
+  <meta name="dcterms.date" content="2023-01-06" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Introducing yt 4.0: Analysis and Visualization of Volumetric Data</title>
   <style>
@@ -127,8 +127,8 @@
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2022-10-20" />
-  <meta name="citation_publication_date" content="2022-10-20" />
+  <meta name="dc.date" content="2023-01-06" />
+  <meta name="citation_publication_date" content="2023-01-06" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -210,9 +210,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/207c3654db34178be33c460f273c5ea3ac0c7c19/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/207c3654db34178be33c460f273c5ea3ac0c7c19/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/207c3654db34178be33c460f273c5ea3ac0c7c19/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/3a8b58778fb0f63de960568b9a4558fc9548e1f3/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/3a8b58778fb0f63de960568b9a4558fc9548e1f3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/3a8b58778fb0f63de960568b9a4558fc9548e1f3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -298,10 +298,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-4.0-paper/v/207c3654db34178be33c460f273c5ea3ac0c7c19/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-4.0-paper/v/3a8b58778fb0f63de960568b9a4558fc9548e1f3/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-4.0-paper/tree/207c3654db34178be33c460f273c5ea3ac0c7c19">yt-project/yt-4.0-paper@207c365</a>
-on October 20, 2022.
+from <a href="https://github.com/yt-project/yt-4.0-paper/tree/3a8b58778fb0f63de960568b9a4558fc9548e1f3">yt-project/yt-4.0-paper@3a8b587</a>
+on January 6, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -631,7 +631,7 @@ For instance, during the development of <code>yt</code> 4.0, the branch <code>yt
 <p>This three-pronged approach generally has suited the community; the process of backporting changes from the “main” branch to the “stable” branch can be time-consuming.
 However, balancing the needs of a community requiring stable methods for analyzing data against the ease of development suggests that this is a toll worth paying.</p>
 <p>In general, the development of <code>yt</code> is reasonably top-heavy, with the majority of contributions coming from a core group of individuals.
-We discuss the implications of this on sustainability in Section <a href="#sec:sustainability">1.18</a>, and provide here a graph of the contributions over time.</p>
+We discuss the implications of this on sustainability in Section <a href="#sec:sustainability">1.19</a>, and provide here a graph of the contributions over time.</p>
 <div id="figure-commit-graph">
 
 </div>
@@ -2142,6 +2142,200 @@ The open source EWAHBoolArray C++ package is used for implementing EWAH bitmaps 
 <p>The authors would like to thank Daniel Lemire for his open source EWAH implementation.
 yt is developed by a large number of independent researchers from numerous institutions around the world.
 Their commitment to open science has helped make this work possible.</p>
+<h2 id="data-formats-and-frontends">Data Formats and Frontends</h2>
+<h3 id="adaptahop">adaptahop</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> Halo finding format</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [</p>
+<h3 id="ahf">ahf</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> Halo finding format</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [</p>
+<h3 id="amrvac">amrvac</h3>
+<p><strong>Index Type:</strong> grid</p>
+<p><strong>Comments:</strong> MPI-AMRVAC is a parallel adaptive mesh refinement framework aimed at solving (primarily hyperbolic) partial differential equations by a number of different numerical schemes.
+The emphasis is on (near) conservation laws and on shock-dominated problems in particular.</p>
+<p><strong>Primary Citations:</strong> [<span class="citation" data-cites="zZcl1XfZ">[<a href="#ref-zZcl1XfZ" role="doc-biblioref">32</a>]</span>; <span class="citation" data-cites="aP30JL4t">[<a href="#ref-aP30JL4t" role="doc-biblioref">33</a>]</span>; <span class="citation" data-cites="ooR7tjmM">[<a href="#ref-ooR7tjmM" role="doc-biblioref">34</a>]</span></p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="qhbp5GQg">[<a href="#ref-qhbp5GQg" role="doc-biblioref">35</a>]</span>; <span class="citation" data-cites="13jLWXZs6">[<a href="#ref-13jLWXZs6" role="doc-biblioref">36</a>]</span>; <span class="citation" data-cites="rbiXHtk4">[<a href="#ref-rbiXHtk4" role="doc-biblioref">37</a>]</span></p>
+<h3 id="arepo">arepo</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> While listed as a “particle” dataset, AREPO data is properly described as a moving mesh.
+For visualization purposes, yt treats it similarly to an SPH dataset; some efforts have been made to properly apply nearest-neighbor interpolation, but these have not been mainlined in the yt visualization routines as of yet.</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="11kNsPLrg">[<a href="#ref-11kNsPLrg" role="doc-biblioref">38</a>]</span>; <span class="citation" data-cites="K2xKlXYH">[<a href="#ref-K2xKlXYH" role="doc-biblioref">39</a>]</span></p>
+<h3 id="art">art</h3>
+<p><strong>Index Type:</strong> octree, particle</p>
+<p><strong>Comments:</strong> ART, or ‘NMSU-ART’ as it is occasionally referred to internally, is an octree-based code that is often used for cosmology simulations and galaxy formation simulations.
+yt supports two sets of data formats in the NMSU-ART family.
+The first is a particle-only format, where the particles are stored independently of any gas structure.
+The second is the hydro data format, wherein gas values are stored organized into an octree.
+Each of these constitutes a different indexing system, sharing similar datatypes, units, and so forth.</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="11kNsPLrg">[<a href="#ref-11kNsPLrg" role="doc-biblioref">38</a>]</span>; <span class="citation" data-cites="19CnTqnJi">[<a href="#ref-19CnTqnJi" role="doc-biblioref">40</a>]</span></p>
+<h3 id="artio">artio</h3>
+<p><strong>Index Type:</strong> octree</p>
+<p><strong>Comments:</strong> The ARTIO frontend, which shares some ancestry with the <code>art</code> or ‘NMSU-ART’ frontend, utilizes a special purpose library for input/output operations called <code>libartio</code>, which is bundled with yt.</p>
+<p>Utilizing <code>libartio</code> is interesting from a historical perspective, as it provided an opportunity to reorganize the way that yt understood indexing of octree datasets.
+Whereas previously yt required a full understanding of data distribution, the <code>artio</code> frontend outsourced much of that to the internal library, which it regarded as essentially an opaque API.
+Reducing the amount of internal bookkeepping that yt had to do provided a lighter-weight interface to the data, which in turn has enabled other frontends to be created using opaque APIs.</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="8yudbbM3">[<a href="#ref-8yudbbM3" role="doc-biblioref">41</a>]</span></p>
+<h3 id="athena">athena</h3>
+<p><strong>Index Type:</strong> grid</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="12IBqVsGq">[<a href="#ref-12IBqVsGq" role="doc-biblioref">42</a>]</span></p>
+<h3 id="athena_pp">athena_pp</h3>
+<p><strong>Index Type:</strong> grid</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="159ZGwZYu">[<a href="#ref-159ZGwZYu" role="doc-biblioref">43</a>]</span></p>
+<h3 id="boxlib">boxlib</h3>
+<p><strong>Index Type:</strong> grid</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [<span class="citation" data-cites="juPUBGqN">[<a href="#ref-juPUBGqN" role="doc-biblioref">44</a>]</span>; <span class="citation" data-cites="9y1W7z3a">[<a href="#ref-9y1W7z3a" role="doc-biblioref">45</a>]</span>; <span class="citation" data-cites="Ul6Zyy8M">[<a href="#ref-Ul6Zyy8M" role="doc-biblioref">46</a>]</span>; <span class="citation" data-cites="15s0VliuP">[<a href="#ref-15s0VliuP" role="doc-biblioref">47</a>]</span></p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="1HoHM1Gnp">[<a href="#ref-1HoHM1Gnp" role="doc-biblioref">48</a>]</span>; https://doi-org.colorado.idm.oclc.org/10.1007/s00162-020-00548-6; https://doi.org/10.1103/PhysRevD.100.063528 , https://doi.org/10.1103/PhysRevD.103.063525 , https://doi.org/10.1103/PhysRevD.105.023516; DOI:10.1016/j.cpc.2022.108457</p>
+<h3 id="chombo">chombo</h3>
+<p><strong>Index Type:</strong> grid</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="MDEDwL4n">[<a href="#ref-MDEDwL4n" role="doc-biblioref">49</a>]</span>; <span class="citation" data-cites="Mz86NzmT">[<a href="#ref-Mz86NzmT" role="doc-biblioref">50</a>]</span>; <span class="citation" data-cites="pHJo1lO1">[<a href="#ref-pHJo1lO1" role="doc-biblioref">51</a>]</span></p>
+<h3 id="eagle">eagle</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="158VPhStY">[<a href="#ref-158VPhStY" role="doc-biblioref">52</a>]</span>; <span class="citation" data-cites="tZ9VJJVi">[<a href="#ref-tZ9VJJVi" role="doc-biblioref">53</a>]</span>; <span class="citation" data-cites="qsP6SRrG">[<a href="#ref-qsP6SRrG" role="doc-biblioref">54</a>]</span>; <span class="citation" data-cites="158VPhStY">[<a href="#ref-158VPhStY" role="doc-biblioref">52</a>]</span></p>
+<h3 id="enzo">enzo</h3>
+<p><strong>Index Type:</strong> grid</p>
+<p><strong>Comments:</strong> Enzo was the very first code supported by yt, and while many remnants of that have been removed, many still remain.
+During the development of yt 3.0 in particular, many “enzo-isms” were removed; however, as Enzo uses a patch-based grid data format, much of the naming conventions for grid objects still mirror those in use in Enzo.
+These include names such as <code>GridLeftEdge</code> and <code>ActiveDimensions</code> (which refers to the dimensions not including ghost zones).</p>
+<p>There are several ‘sub-frontends’ within the Enzo frontend; these include dedicated 1D and 2D readers, as well as historical frontends (of varying functionality) for reading HDF4, ‘unpacked’ HDF5 and other sub-dialects of Enzo.</p>
+<p><strong>Primary Citations:</strong> [<span class="citation" data-cites="1AOjjAzwL">[<a href="#ref-1AOjjAzwL" role="doc-biblioref">55</a>]</span></p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="11kNsPLrg">[<a href="#ref-11kNsPLrg" role="doc-biblioref">38</a>]</span>; <span class="citation" data-cites="12pekKHkD">[<a href="#ref-12pekKHkD" role="doc-biblioref">56</a>]</span>; <span class="citation" data-cites="XEFlUFJ9">[<a href="#ref-XEFlUFJ9" role="doc-biblioref">57</a>]</span>; <span class="citation" data-cites="EKVFk61S">[<a href="#ref-EKVFk61S" role="doc-biblioref">58</a>]</span>; <span class="citation" data-cites="QmIwzRzQ">[<a href="#ref-QmIwzRzQ" role="doc-biblioref">59</a>]</span>; <span class="citation" data-cites="nKZ32a6">[<a href="#ref-nKZ32a6" role="doc-biblioref">60</a>]</span></p>
+<h3 id="enzo_e">enzo_e</h3>
+<p><strong>Index Type:</strong> grid</p>
+<p><strong>Comments:</strong> Enzo-E is a nearly full-rewrite of the Enzo infrastructure designed for emerging and future architectures.</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="AQXulJGy">[<a href="#ref-AQXulJGy" role="doc-biblioref">61</a>]</span></p>
+<h3 id="exodus_ii">exodus_ii</h3>
+<p><strong>Index Type:</strong> unstructured mesh</p>
+<p><strong>Comments:</strong> Exodus II, and its output in NetCDF4 format, was the initial driver for higher-order unstructured mesh support in yt.
+The original driver for developing this format was for simulations of nuclear reactors.</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [</p>
+<h3 id="fits">fits</h3>
+<p><strong>Index Type:</strong> grid</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [</p>
+<h3 id="flash">flash</h3>
+<p><strong>Index Type:</strong> grid</p>
+<p><strong>Comments:</strong> FLASH is a …</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="1CqhBqTLw">[<a href="#ref-1CqhBqTLw" role="doc-biblioref">62</a>]</span>; <span class="citation" data-cites="1BmyNSium">[<a href="#ref-1BmyNSium" role="doc-biblioref">63</a>]</span>; <span class="citation" data-cites="3RHUErzU">[<a href="#ref-3RHUErzU" role="doc-biblioref">64</a>]</span>; <span class="citation" data-cites="m3lUExr1">[<a href="#ref-m3lUExr1" role="doc-biblioref">65</a>]</span>; <span class="citation" data-cites="dqw1JuL">[<a href="#ref-dqw1JuL" role="doc-biblioref">66</a>]</span>; <span class="citation" data-cites="wzYhh0PP">[<a href="#ref-wzYhh0PP" role="doc-biblioref">67</a>]</span></p>
+<h3 id="gadget">gadget</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="UiYJOB8x">[<a href="#ref-UiYJOB8x" role="doc-biblioref">68</a>]</span></p>
+<h3 id="gadget_fof">gadget_fof</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> Halo finding</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [</p>
+<h3 id="gamer">gamer</h3>
+<p><strong>Index Type:</strong> grid</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [<span class="citation" data-cites="12qB7HhOD">[<a href="#ref-12qB7HhOD" role="doc-biblioref">69</a>]</span></p>
+<p><strong>Usage Citations:</strong> [</p>
+<h3 id="gdf">gdf</h3>
+<p><strong>Index Type:</strong> grid</p>
+<p><strong>Comments:</strong> Custom built for yt</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [</p>
+<h3 id="gizmo">gizmo</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="19Yvj8KDs">[<a href="#ref-19Yvj8KDs" role="doc-biblioref">70</a>]</span>; <span class="citation" data-cites="11kNsPLrg">[<a href="#ref-11kNsPLrg" role="doc-biblioref">38</a>]</span></p>
+<h3 id="halo_catalog">halo_catalog</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [</p>
+<h3 id="http_stream">http_stream</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [</p>
+<h3 id="moab">moab</h3>
+<p><strong>Index Type:</strong> unstructured mesh</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [</p>
+<h3 id="nc4_cm1">nc4_cm1</h3>
+<p><strong>Index Type:</strong> grid</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [</p>
+<h3 id="open_pmd">open_pmd</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [</p>
+<h3 id="owls">owls</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [</p>
+<h3 id="owls_subfind">owls_subfind</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [</p>
+<h3 id="ramses">ramses</h3>
+<p><strong>Index Type:</strong> octree</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="11kNsPLrg">[<a href="#ref-11kNsPLrg" role="doc-biblioref">38</a>]</span>; <span class="citation" data-cites="RMe7IYaY">[<a href="#ref-RMe7IYaY" role="doc-biblioref">71</a>]</span>; <span class="citation" data-cites="8ElS8qaE">[<a href="#ref-8ElS8qaE" role="doc-biblioref">72</a>]</span>; <span class="citation" data-cites="NLdlIida">[<a href="#ref-NLdlIida" role="doc-biblioref">73</a>]</span>; <span class="citation" data-cites="WeeFmczr">[<a href="#ref-WeeFmczr" role="doc-biblioref">74</a>]</span>; <span class="citation" data-cites="JV9vVQtk">[<a href="#ref-JV9vVQtk" role="doc-biblioref">75</a>]</span>; <span class="citation" data-cites="Z9ORyk4e">[<a href="#ref-Z9ORyk4e" role="doc-biblioref">76</a>]</span></p>
+<h3 id="rockstar">rockstar</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [</p>
+<h3 id="sdf">sdf</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="1Ce48o4Xl">[<a href="#ref-1Ce48o4Xl" role="doc-biblioref">77</a>]</span></p>
+<h3 id="sph">sph</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> A base frontend from which other SPH-type frontends can be defined.</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [</p>
+<h3 id="stream">stream</h3>
+<p><strong>Index Type:</strong> multi</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="VVJcMOza">[<a href="#ref-VVJcMOza" role="doc-biblioref">78</a>]</span>; <span class="citation" data-cites="16ZVBcAT2">[<a href="#ref-16ZVBcAT2" role="doc-biblioref">79</a>]</span></p>
+<h3 id="swift">swift</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [<span class="citation" data-cites="10pVv5dtC">[<a href="#ref-10pVv5dtC" role="doc-biblioref">80</a>]</span></p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="17ydwlTdn">[<a href="#ref-17ydwlTdn" role="doc-biblioref">81</a>]</span>; https://ui.adsabs.harvard.edu/abs/2022arXiv220313915B</p>
+<h3 id="tipsy">tipsy</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> None</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="YCT49Lcv">[<a href="#ref-YCT49Lcv" role="doc-biblioref">82</a>]</span>; <span class="citation" data-cites="100MO1Ryn">[<a href="#ref-100MO1Ryn" role="doc-biblioref">83</a>]</span></p>
+<h3 id="ytdata">ytdata</h3>
+<p><strong>Index Type:</strong> particle</p>
+<p><strong>Comments:</strong> An internal frontend for re-loading saved data and derived data</p>
+<p><strong>Primary Citations:</strong> [</p>
+<p><strong>Usage Citations:</strong> [<span class="citation" data-cites="kWd16rLo">[<a href="#ref-kWd16rLo" role="doc-biblioref">84</a>]</span></p>
 <p>The primary method by which researchers interact with their data in <code>yt</code> is via visualization; from the standpoint of the library, however, this is a side-effect of the various analysis, regularization and data-processing algorithms that are implemented within <code>yt</code>.
 Nearly all of the visualization that is done using <code>yt</code> utilizes the matplotlib library for actual deposition of pixels into an image format, although all of the <em>input</em> to that deposition is conducted by <code>yt</code>.
 Making this distinction is important, because it underscores the relationship between the different libraries and how they exist in the ecosystem of scientific software; <code>yt</code> does not replace matplotlib, but rather, augments it by providing a grammar of analysis of volumetric data and defining how that grammar is translated into visual representations as presented by matplotlib.</p>
@@ -2192,7 +2386,7 @@ and the stereoscopic spherical lens.</p>
 In some cases, an inverse function can be provided, which in some cases enables the traversal function to more intelligently check intersection and reduce computation time.</p>
 <h4 id="patch-based-ray-traversal">Patch-based ray traversal</h4>
 <p>Unlike taking standard “projections” of datasets, the process of volume rendering requires that elements be traversed in order, accumulating values that may be reliant on <em>previous</em> values.
-While this is straightforward to implement for grids <span class="citation" data-cites="8BOQ3JKi">[<a href="#ref-8BOQ3JKi" role="doc-biblioref">32</a>]</span>, in situations where there are overlapping sets of values the process must be handled more carefully.</p>
+While this is straightforward to implement for grids <span class="citation" data-cites="8BOQ3JKi">[<a href="#ref-8BOQ3JKi" role="doc-biblioref">85</a>]</span>, in situations where there are overlapping sets of values the process must be handled more carefully.</p>
 <canvas id="vrFigure" style="width:100%;height:100%;min-height: 500px;" hidpi="true">
 </canvas>
 <script type="text/paperscript" canvas="vrFigure" src="images/volume_rendering/vr-figure.js"></script>
@@ -2210,7 +2404,7 @@ We store all cells as octs with no children, and mark them with their position w
 Octs that are inserted in the process of building the tree are not marked nor indexed.
 We also compute the vertex-centered data for all cells in the container.
 Note that, contrary to the octree utilized to index the data from octree datasets, this octree may span multiple domains and contains all levels from the root level (that contains a single oct the size of the simulation domain) all the way down to the leaf cells.
-We then cast rays off the camera, and for each ray, we compute the ordered list of the <span class="math inline">\(N\)</span> cells it intersects with together with the intersection points along the ray <span class="citation" data-cites="FQhLVjwO">[<a href="#ref-FQhLVjwO" role="doc-biblioref">33</a>]</span>.
+We then cast rays off the camera, and for each ray, we compute the ordered list of the <span class="math inline">\(N\)</span> cells it intersects with together with the intersection points along the ray <span class="citation" data-cites="FQhLVjwO">[<a href="#ref-FQhLVjwO" role="doc-biblioref">86</a>]</span>.
 In the following, we will write the coordinate along the ray as <span class="math inline">\(t\)</span>, with the camera located at <span class="math inline">\(t=0\)</span>.
 In general the tree may contain holes (this may happen if the data container is a region selector), so that the exit coordinate out of a cell may not coincide with the entry coordinate through the next cell. In practice, we solve this by storing for each cell both the entry and exit coordinates of the ray.</p>
 <p>The algorithm relies on the fact that if a ray passes through an oct and intersects with its six faces at coordinate along the ray <span class="math inline">\(t_{xi}, t_{yi}, t_{zi}\)</span> (on entry) and <span class="math inline">\(t_{xo}, t_{yo}, t_{zo}\)</span> (on exit), then its intersection with the inner cells’ faces can be computed explicitly from these six values and their half point <span class="math inline">\((t_{xi}+t_{xo})/2, (t_{yi}+t_{yo})/2, (t_{zi}+t_{zo})/2\)</span>. This implies that each call to the algorithm only need computing one division and a few simple arithmetic comparisons.
@@ -2222,8 +2416,8 @@ For each cell in the list, we then call the sampler with the vertex-centered val
 <p>An example of the volume rendering of a galaxy in a zoom-in cosmological simulation made with RAMSES is shown on Figure <a href="#fig:ramses-volume-rendering">21</a>.</p>
 <div id="fig:ramses-volume-rendering" class="fignos">
 <figure>
-<img src="images/volume_rendering/ramses-volume-rendering-galaxy.png" alt="Figure 21: Volume rendering of gas density isocontours around a galaxy in a cosmological zoom-in simulation performed with RAMSES. Adapted from [34]." />
-<figcaption aria-hidden="true"><span>Figure 21:</span> Volume rendering of gas density isocontours around a galaxy in a cosmological zoom-in simulation performed with RAMSES. Adapted from <span class="citation" data-cites="zRE8zhVC">[<a href="#ref-zRE8zhVC" role="doc-biblioref">34</a>]</span>.</figcaption>
+<img src="images/volume_rendering/ramses-volume-rendering-galaxy.png" alt="Figure 21: Volume rendering of gas density isocontours around a galaxy in a cosmological zoom-in simulation performed with RAMSES. Adapted from [87]." />
+<figcaption aria-hidden="true"><span>Figure 21:</span> Volume rendering of gas density isocontours around a galaxy in a cosmological zoom-in simulation performed with RAMSES. Adapted from <span class="citation" data-cites="zRE8zhVC">[<a href="#ref-zRE8zhVC" role="doc-biblioref">87</a>]</span>.</figcaption>
 </figure>
 </div>
 <h4 id="sampling-functions">Sampling functions</h4>
@@ -2475,7 +2669,7 @@ The <code>Dataset.set_units</code> updates the <code>h</code> symbol to the corr
 <p>For much of its development history, <code>yt</code> took the approach of bundling as many analysis modules as possible in the primary repository.
 This provided the advantage of having all work be centralized, and ensuring that each download or installation of <code>yt</code> was a fully-featured system for analyzing a large swath of data, but it brought with it the development overhead of the entire <code>yt</code> package for what in many cases were isolated pieces of functionality with separable responsibilities.</p>
 <p>As a result of the slowing in speed of development as a result of review requirements (and limited personnel to conduct those reviews), some of the analysis modules that were bundled with <code>yt</code> have been “spun out” into their own repository, <code>yt_astro_analysis</code>.
-This repository, which is developed, released and installed separately from <code>yt</code>, includes modules for cosmological observation (upon which Triden, which is discussed in <a href="#trident">1.16.1</a>, is based), dark matter halo finding and analysis, tools for interacting with position-position-velocity cubes, and a system for exporting from <code>yt</code> to RADMC-3D.
+This repository, which is developed, released and installed separately from <code>yt</code>, includes modules for cosmological observation (upon which Triden, which is discussed in <a href="#trident">1.17.1</a>, is based), dark matter halo finding and analysis, tools for interacting with position-position-velocity cubes, and a system for exporting from <code>yt</code> to RADMC-3D.
 <strong>TODO: Find the correct citation for RADMC-3D.</strong></p>
 <h2 id="ecosystem-of-packages">Ecosystem of Packages</h2>
 <p>Several packages have been developed that utilize <code>yt</code> as an infrastructural component.
@@ -2483,24 +2677,24 @@ In contrast to the analysis modules, which have typically been built as extensio
 In some cases, <code>yt</code> is also an <em>optional</em> dependency for the package.
 In most cases, these are described in detail elsewhere, and citations to that external information are included here.</p>
 <h3 id="trident">Trident</h3>
-<p>Trident <span class="citation" data-cites="1DgKJy4lE">[<a href="#ref-1DgKJy4lE" role="doc-biblioref">35</a>]</span> is a Python-based open-source tool for post-processing hydrodynamical simulations to produce synthetic absorption spectra and related data.
+<p>Trident <span class="citation" data-cites="1DgKJy4lE">[<a href="#ref-1DgKJy4lE" role="doc-biblioref">88</a>]</span> is a Python-based open-source tool for post-processing hydrodynamical simulations to produce synthetic absorption spectra and related data.
 In many ways, Trident is the first external package that utilizes <code>yt</code> to provide data access and numerical operations, but then builds on those to develop detailed, astrophysically-aware systems for processing and analyzing that data.</p>
 <h3 id="powderday">Powderday</h3>
-<p>Powderday <span class="citation" data-cites="g9AYex8L 1CgEbr6CQ">[<a href="#ref-g9AYex8L" role="doc-biblioref">36</a>,<a href="#ref-1CgEbr6CQ" role="doc-biblioref">37</a>]</span> is an open source package connecting <code>yt</code>, population synthesis modules and the monte carlo radiation transport code Hyperion <span class="citation" data-cites="6dD1NLpJ">[<a href="#ref-6dD1NLpJ" role="doc-biblioref">38</a>]</span> to develop synthetic observations of galaxies from astrophysics simulations.
+<p>Powderday <span class="citation" data-cites="g9AYex8L 1CgEbr6CQ">[<a href="#ref-g9AYex8L" role="doc-biblioref">89</a>,<a href="#ref-1CgEbr6CQ" role="doc-biblioref">90</a>]</span> is an open source package connecting <code>yt</code>, population synthesis modules and the monte carlo radiation transport code Hyperion <span class="citation" data-cites="6dD1NLpJ">[<a href="#ref-6dD1NLpJ" role="doc-biblioref">91</a>]</span> to develop synthetic observations of galaxies from astrophysics simulations.
 Powderday uses <code>yt</code> to read and transform data, including high-fidelity gridding of SPH particles into an octree form, to prepare galaxy simulations to be processed.
 Currently Powderday uses the Arepo, Enzo, Gadget, Gizmo, and Tipsy front ends to read in simulation results, and convert them to a common format in preparation for dust radiative transfer (using <code>unyt</code> to ensure common units).
 Plans are in place to employ the wide range of front ends available in yt to broaden the applicability of powderday to a wider range of galaxy simulations.</p>
 <h3 id="ytree">ytree</h3>
-<p>Building on <code>yt</code> for access to halo catalogs, and implementing a similar system for derived fields as applied to graph datasets, ytree <span class="citation" data-cites="VB3RIyxd">[<a href="#ref-VB3RIyxd" role="doc-biblioref">39</a>]</span> is a system for analyzing merger trees from analysis of dark matter halos in cosmological simulations.</p>
+<p>Building on <code>yt</code> for access to halo catalogs, and implementing a similar system for derived fields as applied to graph datasets, ytree <span class="citation" data-cites="VB3RIyxd">[<a href="#ref-VB3RIyxd" role="doc-biblioref">92</a>]</span> is a system for analyzing merger trees from analysis of dark matter halos in cosmological simulations.</p>
 <p>ytree provides flexibility in determining the path that a given analysis takes through the graph of merger trees; for instance, it enables the user to select if they wish to follow the “most massive” progenitor halo backwards in time, or even to set their own criteria for this.
 Connecting this to the raw, unprocessed data from the simulation (such as the unsampled particle or cell content that comprises the halos) allows researchers to deepen and guide their analysis based on the physical characteristics of the merger history.</p>
 <h3 id="pyxsim">pyxsim</h3>
-<p>pyXSIM <span class="citation" data-cites="N2QcMTPv">[<a href="#ref-N2QcMTPv" role="doc-biblioref">40</a>]</span> is a python package for simulating X-ray observations from astrophysical sources.
-It implements the PHOX algorithm <span class="citation" data-cites="gJwEappY nty3AM0C">[<a href="#ref-gJwEappY" role="doc-biblioref">41</a>,<a href="#ref-nty3AM0C" role="doc-biblioref">42</a>]</span> and is implemented to support grid-based codes, particle-based codes, and even data constructed from scratch in numpy arrays.
+<p>pyXSIM <span class="citation" data-cites="N2QcMTPv">[<a href="#ref-N2QcMTPv" role="doc-biblioref">93</a>]</span> is a python package for simulating X-ray observations from astrophysical sources.
+It implements the PHOX algorithm <span class="citation" data-cites="gJwEappY nty3AM0C">[<a href="#ref-gJwEappY" role="doc-biblioref">94</a>,<a href="#ref-nty3AM0C" role="doc-biblioref">95</a>]</span> and is implemented to support grid-based codes, particle-based codes, and even data constructed from scratch in numpy arrays.
 pyXSIM has been used to create synthetic observations from current and upcoming space telescopes.</p>
 <h3 id="ytini">ytini</h3>
 <p>While <code>yt</code> has functionality for volume rendering, it provides far from the scene-control, composition and camera positioning necessary for “cinematic visualization.”
-The tool ytini <span class="citation" data-cites="3Gi4Hs1H">[<a href="#ref-3Gi4Hs1H" role="doc-biblioref">43</a>]</span> serves as an intermediary between <code>yt</code> and the visualization platform Houdini, often used for special effects and visual arts in industry and professional production environments.
+The tool ytini <span class="citation" data-cites="3Gi4Hs1H">[<a href="#ref-3Gi4Hs1H" role="doc-biblioref">96</a>]</span> serves as an intermediary between <code>yt</code> and the visualization platform Houdini, often used for special effects and visual arts in industry and professional production environments.
 ytini was developed to ease the process of converting data from simulation format into one suitable for production teams to utilize in Houdini and other visual effects software, and has been designed to enable deeper collaboration between researchers and visualization and outreach experts.</p>
 <h2 id="future-directions">Future Directions</h2>
 <h2 id="sec:sustainability">Sustainability</h2>
@@ -2508,7 +2702,7 @@ ytini was developed to ease the process of converting data from simulation forma
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
 <div id="ref-cTN2TQIL" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>GitHub - manubot/manubot: Python utilities for Manubot: Manuscripts, open and automated</strong> <div class="csl-block">GitHub</div> <a href="https://github.com/manubot/manubot">https://github.com/manubot/manubot</a></div>
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Python utilities for Manubot: Manuscripts, open and automated</strong> <div class="csl-block">Manubot</div> (2023-01-04) <a href="https://github.com/manubot/manubot">https://github.com/manubot/manubot</a></div>
 </div>
 <div id="ref-1GOm01ggN" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA</strong> <div class="csl-block">Matthew J Turk, Britton D Smith, Jeffrey S Oishi, Stephen Skory, Samuel W Skillman, Tom Abel, Michael L Norman</div> <em>The Astrophysical Journal Supplement Series</em> (2010-12-28) <a href="https://doi.org/ft6md2">https://doi.org/ft6md2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1088/0067-0049/192/1/9">10.1088/0067-0049/192/1/9</a></div></div>
@@ -2600,41 +2794,200 @@ ytini was developed to ease the process of converting data from simulation forma
 <div id="ref-RNeSxk82" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>&lt;span class="nocase"&gt;Cython: The Best of Both Worlds&lt;/span&gt;</strong> <div class="csl-block">Stefan Behnel, Robert Bradshaw, Craig Citro, Lisandro Dalcin, Dag Sverre Seljebotn, Kurt Smith</div> <em>Comput. Sci. Eng.</em> (2011-03) <a href="http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5582062">http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=5582062</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/MCSE.2010.118">10.1109/mcse.2010.118</a></div></div>
 </div>
+<div id="ref-zZcl1XfZ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>Adaptive Mesh Refinement for conservative systems: multi-dimensional efficiency evaluation</strong> <div class="csl-block">R Keppens, M Nool, G Tóth, JP Goedbloed</div> <em>Computer Physics Communications</em> (2003-07) <a href="https://doi.org/ck627b">https://doi.org/ck627b</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/s0010-4655(03)00139-5">10.1016/s0010-4655(03)00139-5</a></div></div>
+</div>
+<div id="ref-aP30JL4t" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>MPI-AMRVAC FOR SOLAR AND ASTROPHYSICS</strong> <div class="csl-block">O Porth, C Xia, T Hendrix, SP Moschou, R Keppens</div> <em>The Astrophysical Journal Supplement Series</em> (2014-08-20) <a href="https://doi.org/ggcgbb">https://doi.org/ggcgbb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1088/0067-0049/214/1/4">10.1088/0067-0049/214/1/4</a></div></div>
+</div>
+<div id="ref-ooR7tjmM" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>MPI-AMRVAC 2.0 for Solar and Astrophysical Applications</strong> <div class="csl-block">C Xia, J Teunissen, IEl Mellah, E Chané, R Keppens</div> <em>The Astrophysical Journal Supplement Series</em> (2018-02-05) <a href="https://doi.org/gkh2v6">https://doi.org/gkh2v6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4365/aaa6c8">10.3847/1538-4365/aaa6c8</a></div></div>
+</div>
+<div id="ref-qhbp5GQg" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>Thermal instabilities: Fragmentation and field misalignment of filament fine structure</strong> <div class="csl-block">N Claes, R Keppens, C Xia</div> <em>Astronomy &amp;amp; Astrophysics</em> (2020-04) <a href="https://doi.org/gqbk65">https://doi.org/gqbk65</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1051/0004-6361/202037616">10.1051/0004-6361/202037616</a></div></div>
+</div>
+<div id="ref-13jLWXZs6" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>Prominence formation by levitation-condensation at extreme resolutions</strong> <div class="csl-block">JM Jenkins, R Keppens</div> <em>Astronomy &amp;amp; Astrophysics</em> (2021-02) <a href="https://doi.org/gqbk66">https://doi.org/gqbk66</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1051/0004-6361/202039630">10.1051/0004-6361/202039630</a></div></div>
+</div>
+<div id="ref-rbiXHtk4" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>Dynamical signatures of Rossby vortices in cavity-hosting disks</strong> <div class="csl-block">CMT Robert, H Méheut, F Ménard</div> <em>Astronomy &amp;amp; Astrophysics</em> (2020-09) <a href="https://doi.org/gqbk64">https://doi.org/gqbk64</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1051/0004-6361/201937414">10.1051/0004-6361/201937414</a></div></div>
+</div>
+<div id="ref-11kNsPLrg" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>High Angular Momentum Halo Gas: A Feedback and Code-independent Prediction of LCDM</strong> <div class="csl-block">Kyle R Stewart, Ariyeh H Maller, Jose Oñorbe, James S Bullock, MRyan Joung, Julien Devriendt, Daniel Ceverino, Dušan Kereš, Philip F Hopkins, Claude-André Faucher-Giguère</div> <em>The Astrophysical Journal</em> (2017-06-30) <a href="https://doi.org/gf48kq">https://doi.org/gf48kq</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/aa6dff">10.3847/1538-4357/aa6dff</a></div></div>
+</div>
+<div id="ref-K2xKlXYH" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>Fast galaxy bars continue to challenge standard cosmology</strong> <div class="csl-block">Mahmood Roshan, Neda Ghafourian, Tahere Kashfi, Indranil Banik, Moritz Haslbauer, Virginia Cuomo, Benoit Famaey, Pavel Kroupa</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2021-09-11) <a href="https://doi.org/gqsz56">https://doi.org/gqsz56</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/stab2553">10.1093/mnras/stab2553</a></div></div>
+</div>
+<div id="ref-19CnTqnJi" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>O &lt;scp&gt;vi&lt;/scp&gt; traces photoionized streams with collisionally ionized boundaries in cosmological simulations of &lt;i&gt;z&lt;/i&gt; ∼ 1 massive galaxies</strong> <div class="csl-block">Clayton Strawn, Santi Roca-Fàbrega, Nir Mandelker, Joel Primack, Jonathan Stern, Daniel Ceverino, Avishai Dekel, Bryan Wang, Rishi Dange</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2020-12-24) <a href="https://doi.org/grk7k2">https://doi.org/grk7k2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/staa3972">10.1093/mnras/staa3972</a></div></div>
+</div>
+<div id="ref-8yudbbM3" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>Testing feedback from star clusters in simulations of the Milky Way formation</strong> <div class="csl-block">Gillen Brown, Oleg Y Gnedin</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2022-04-28) <a href="https://doi.org/grk7k3">https://doi.org/grk7k3</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/stac1164">10.1093/mnras/stac1164</a></div></div>
+</div>
+<div id="ref-12IBqVsGq" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">42. </div><div class="csl-right-inline"><strong>Modeling UV Radiation Feedback from Massive Stars. I. Implementation of Adaptive Ray-tracing Method and Tests</strong> <div class="csl-block">Jeong-Gyu Kim, Woong-Tae Kim, Eve C Ostriker, MAaron Skinner</div> <em>The Astrophysical Journal</em> (2017-12-15) <a href="https://doi.org/gqsz6c">https://doi.org/gqsz6c</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/aa9b80">10.3847/1538-4357/aa9b80</a></div></div>
+</div>
+<div id="ref-159ZGwZYu" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">43. </div><div class="csl-right-inline"><strong>A Magnetized, Moon-forming Giant Impact</strong> <div class="csl-block">PD Mullen, CF Gammie</div> <em>The Astrophysical Journal</em> (2020-10-29) <a href="https://doi.org/gqsz6j">https://doi.org/gqsz6j</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/2041-8213/abbffd">10.3847/2041-8213/abbffd</a></div></div>
+</div>
+<div id="ref-juPUBGqN" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">44. </div><div class="csl-right-inline"><strong>AMReX: a framework for block-structured adaptive mesh refinement</strong> <div class="csl-block">Weiqun Zhang, Ann Almgren, Vince Beckner, John Bell, Johannes Blaschke, Cy Chan, Marcus Day, Brian Friesen, Kevin Gott, Daniel Graves, … Michael Zingale</div> <em>Journal of Open Source Software</em> (2019-05-12) <a href="https://doi.org/ghr39d">https://doi.org/ghr39d</a> <div class="csl-block">DOI: <a href="https://doi.org/10.21105/joss.01370">10.21105/joss.01370</a></div></div>
+</div>
+<div id="ref-9y1W7z3a" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">45. </div><div class="csl-right-inline"><strong>Meeting the Challenges of Modeling Astrophysical Thermonuclear Explosions: Castro, Maestro, and the AMReX Astrophysics Suite</strong> <div class="csl-block">M Zingale, AS Almgren, MG Barrios Sazo, VE Beckner, JB Bell, B Friesen, AM Jacobs, MP Katz, CM Malone, AJ Nonaka, … W Zhang</div> <em>Journal of Physics: Conference Series</em> (2018-05) <a href="https://doi.org/gqsz53">https://doi.org/gqsz53</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1088/1742-6596/1031/1/012024">10.1088/1742-6596/1031/1/012024</a></div></div>
+</div>
+<div id="ref-Ul6Zyy8M" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">46. </div><div class="csl-right-inline"><strong>CASTRO: A Massively Parallel Compressible Astrophysics Simulation Code</strong> <div class="csl-block">Ann Almgren, Maria Sazo, John Bell, Alice Harpole, Max Katz, Jean Sexton, Donald Willcox, Weiqun Zhang, Michael Zingale</div> <em>Journal of Open Source Software</em> (2020-10-23) <a href="https://doi.org/grk7k8">https://doi.org/grk7k8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.21105/joss.02513">10.21105/joss.02513</a></div></div>
+</div>
+<div id="ref-15s0VliuP" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">47. </div><div class="csl-right-inline"><strong>MAESTROeX: A Massively Parallel Low Mach Number Astrophysical Solver</strong> <div class="csl-block">Duoming Fan, Andrew Nonaka, Ann Almgren, Donald Willcox, Alice Harpole, Michael Zingale</div> <em>Journal of Open Source Software</em> (2019-11-21) <a href="https://doi.org/grk7k7">https://doi.org/grk7k7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.21105/joss.01757">10.21105/joss.01757</a></div></div>
+</div>
+<div id="ref-1HoHM1Gnp" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">48. </div><div class="csl-right-inline"><strong>&lt;scp&gt;quokka&lt;/scp&gt;: a code for two-moment AMR radiation hydrodynamics on GPUs</strong> <div class="csl-block">Benjamin D Wibking, Mark R Krumholz</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2022-02-18) <a href="https://doi.org/gpsbw2">https://doi.org/gpsbw2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/stac439">10.1093/mnras/stac439</a></div></div>
+</div>
+<div id="ref-MDEDwL4n" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">49. </div><div class="csl-right-inline"><strong>The Role of Outflows, Radiation Pressure, and Magnetic Fields in Massive Star Formation</strong> <div class="csl-block">Anna L Rosen, Mark R Krumholz</div> <em>The Astronomical Journal</em> (2020-07-23) <a href="https://doi.org/grk7k9">https://doi.org/grk7k9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-3881/ab9abf">10.3847/1538-3881/ab9abf</a></div></div>
+</div>
+<div id="ref-Mz86NzmT" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">50. </div><div class="csl-right-inline"><strong>Massive-star Formation via the Collapse of Subvirial and Virialized Turbulent Massive Cores</strong> <div class="csl-block">Anna L Rosen, Pak Shing Li, Qizhou Zhang, Blakesley Burkhart</div> <em>The Astrophysical Journal</em> (2019-12-16) <a href="https://doi.org/grk7mc">https://doi.org/grk7mc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/ab54c6">10.3847/1538-4357/ab54c6</a></div></div>
+</div>
+<div id="ref-pHJo1lO1" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">51. </div><div class="csl-right-inline"><strong>An unstable truth: how massive stars get their mass</strong> <div class="csl-block">Anna L Rosen, Mark R Krumholz, Christopher F McKee, Richard I Klein</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2016-08-25) <a href="https://doi.org/f9rwrm">https://doi.org/f9rwrm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/stw2153">10.1093/mnras/stw2153</a></div></div>
+</div>
+<div id="ref-158VPhStY" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">52. </div><div class="csl-right-inline"><strong>Revealing the physical properties of gas accreting to haloes in the EAGLE simulations</strong> <div class="csl-block">Ruby J Wright, Claudia del P Lagos, Chris Power, Camila A Correa</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2021-04-17) <a href="https://doi.org/gqsz55">https://doi.org/gqsz55</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/stab1057">10.1093/mnras/stab1057</a></div></div>
+</div>
+<div id="ref-tZ9VJJVi" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">53. </div><div class="csl-right-inline"><strong>Barred spiral galaxies in modified gravity theories</strong> <div class="csl-block">Mahmood Roshan, Indranil Banik, Neda Ghafourian, Ingo Thies, Benoit Famaey, Elena Asencio, Pavel Kroupa</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2021-03-08) <a href="https://doi.org/gqsz57">https://doi.org/gqsz57</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/stab651">10.1093/mnras/stab651</a></div></div>
+</div>
+<div id="ref-qsP6SRrG" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">54. </div><div class="csl-right-inline"><strong>Stellar splashback: the edge of the intracluster light</strong> <div class="csl-block">Alis J Deason, Kyle A Oman, Azadeh Fattahi, Matthieu Schaller, Mathilde Jauzac, Yuanyuan Zhang, Mireia Montes, Yannick M Bahé, Claudio Dalla Vecchia, Scott T Kay, Tilly A Evans</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2020-11-19) <a href="https://doi.org/gqsz54">https://doi.org/gqsz54</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/staa3590">10.1093/mnras/staa3590</a></div></div>
+</div>
+<div id="ref-1AOjjAzwL" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">55. </div><div class="csl-right-inline"><strong>ENZO: AN ADAPTIVE MESH REFINEMENT CODE FOR ASTROPHYSICS</strong> <div class="csl-block">Greg L Bryan, Michael L Norman, Brian W O'Shea, Tom Abel, John H Wise, Matthew J Turk, Daniel R Reynolds, David C Collins, Peng Wang, Samuel W Skillman, … </div> <em>The Astrophysical Journal Supplement Series</em> (2014-03-20) <a href="https://doi.org/gfx7v2">https://doi.org/gfx7v2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1088/0067-0049/211/2/19">10.1088/0067-0049/211/2/19</a></div></div>
+</div>
+<div id="ref-12pekKHkD" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">56. </div><div class="csl-right-inline"><strong>COLLAPSE AND FRAGMENTATION OF MAGNETIC MOLECULAR CLOUD CORES WITH THE ENZO AMR MHD CODE. I. UNIFORM DENSITY SPHERES</strong> <div class="csl-block">Alan P Boss, Sandra A Keiser</div> <em>The Astrophysical Journal</em> (2013-02-01) <a href="https://doi.org/gkmgb4">https://doi.org/gkmgb4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1088/0004-637x/764/2/136">10.1088/0004-637x/764/2/136</a></div></div>
+</div>
+<div id="ref-XEFlUFJ9" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">57. </div><div class="csl-right-inline"><strong>Predicting Localized Primordial Star Formation with Deep Convolutional Neural Networks</strong> <div class="csl-block">Azton I Wells, Michael L Norman</div> <em>The Astrophysical Journal Supplement Series</em> (2021-06-01) <a href="https://doi.org/grk7mf">https://doi.org/grk7mf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4365/abfa17">10.3847/1538-4365/abfa17</a></div></div>
+</div>
+<div id="ref-EKVFk61S" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">58. </div><div class="csl-right-inline"><strong>Connecting Primordial Star-forming Regions and Second-generation Star Formation in the Phoenix Simulations</strong> <div class="csl-block">Azton I Wells, Michael L Norman</div> <em>The Astrophysical Journal</em> (2022-06-01) <a href="https://doi.org/grk7md">https://doi.org/grk7md</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/ac6c87">10.3847/1538-4357/ac6c87</a></div></div>
+</div>
+<div id="ref-QmIwzRzQ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">59. </div><div class="csl-right-inline"><strong>The birth of a galaxy – III. Propelling reionization with the faintest galaxies</strong> <div class="csl-block">John H Wise, Vasiliy G Demchenko, Martin T Halicek, Michael L Norman, Matthew J Turk, Tom Abel, Britton D Smith</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2014-06-26) <a href="https://doi.org/grk7k6">https://doi.org/grk7k6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/stu979">10.1093/mnras/stu979</a></div></div>
+</div>
+<div id="ref-nKZ32a6" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">60. </div><div class="csl-right-inline"><strong>Evolution of Primordial Magnetic Fields during Large-scale Structure Formation</strong> <div class="csl-block">Salome Mtchedlidze, Paola Domínguez-Fernández, Xiaolong Du, Axel Brandenburg, Tina Kahniashvili, Shane O’Sullivan, Wolfram Schmidt, Marcus Brüggen</div> <em>The Astrophysical Journal</em> (2022-04-01) <a href="https://doi.org/gp32mc">https://doi.org/gp32mc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/ac5960">10.3847/1538-4357/ac5960</a></div></div>
+</div>
+<div id="ref-AQXulJGy" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">61. </div><div class="csl-right-inline"><strong>A Simple Model for Mixing and Cooling in Cloud–Wind Interactions</strong> <div class="csl-block">Matthew W Abruzzo, Greg L Bryan, Drummond B Fielding</div> <em>The Astrophysical Journal</em> (2022-02-01) <a href="https://doi.org/gqsz6g">https://doi.org/gqsz6g</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/ac3c48">10.3847/1538-4357/ac3c48</a></div></div>
+</div>
+<div id="ref-1CqhBqTLw" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">62. </div><div class="csl-right-inline"><strong>Type Ia supernova ejecta–donor interaction: explosion model comparison</strong> <div class="csl-block">C McCutcheon, Y Zeng, Z-W Liu, RG Izzard, K-C Pan, H-L Chen, Z Han</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2022-05-10) <a href="https://doi.org/gqsz58">https://doi.org/gqsz58</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/stac1275">10.1093/mnras/stac1275</a></div></div>
+</div>
+<div id="ref-1BmyNSium" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">63. </div><div class="csl-right-inline"><strong>Exploring Fundamentally Three-dimensional Phenomena in High-fidelity Simulations of Core-collapse Supernovae</strong> <div class="csl-block">Evan P O’Connor, Sean M Couch</div> <em>The Astrophysical Journal</em> (2018-09-25) <a href="https://doi.org/gjctnx">https://doi.org/gjctnx</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/aadcf7">10.3847/1538-4357/aadcf7</a></div></div>
+</div>
+<div id="ref-3RHUErzU" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">64. </div><div class="csl-right-inline"><strong>Implementing primordial binaries in simulations of star cluster formation with a hybrid MHD and direct &lt;i&gt;N&lt;/i&gt;-body method</strong> <div class="csl-block">Claude Cournoyer-Cloutier, Aaron Tran, Sean Lewis, Joshua E Wall, William E Harris, Mordecai-Mark Mac Low, Stephen LW McMillan, Simon Portegies Zwart, Alison Sills</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2020-12-18) <a href="https://doi.org/grk7kz">https://doi.org/grk7kz</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/staa3902">10.1093/mnras/staa3902</a></div></div>
+</div>
+<div id="ref-m3lUExr1" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">65. </div><div class="csl-right-inline"><strong>Collisional &lt;i&gt;N&lt;/i&gt;-body Dynamics Coupled to Self-gravitating Magnetohydrodynamics Reveals Dynamical Binary Formation</strong> <div class="csl-block">Joshua E Wall, Stephen LW McMillan, Mordecai-Mark Mac Low, Ralf S Klessen, Simon Portegies Zwart</div> <em>The Astrophysical Journal</em> (2019-12-11) <a href="https://doi.org/grk7mb">https://doi.org/grk7mb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/ab4db1">10.3847/1538-4357/ab4db1</a></div></div>
+</div>
+<div id="ref-dqw1JuL" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">66. </div><div class="csl-right-inline"><strong>Modeling of the Effects of Stellar Feedback during Star Cluster Formation Using a Hybrid Gas and N-Body Method</strong> <div class="csl-block">Joshua E Wall, Mordecai-Mark Mac Low, Stephen LW McMillan, Ralf S Klessen, Simon Portegies Zwart, Andrew Pellegrino</div> <em>The Astrophysical Journal</em> (2020-12-01) <a href="https://doi.org/gphr2s">https://doi.org/gphr2s</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/abc011">10.3847/1538-4357/abc011</a></div></div>
+</div>
+<div id="ref-wzYhh0PP" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">67. </div><div class="csl-right-inline"><strong>Winds in Star Clusters Drive Kolmogorov Turbulence</strong> <div class="csl-block">Monica Gallegos-Garcia, Blakesley Burkhart, Anna L Rosen, Jill P Naiman, Enrico Ramirez-Ruiz</div> <em>The Astrophysical Journal</em> (2020-08-19) <a href="https://doi.org/grk7mg">https://doi.org/grk7mg</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/2041-8213/ababae">10.3847/2041-8213/ababae</a></div></div>
+</div>
+<div id="ref-UiYJOB8x" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">68. </div><div class="csl-right-inline"><strong>The AGORA High-resolution Galaxy Simulations Comparison Project. III. Cosmological Zoom-in Simulation of a Milky Way–mass Halo</strong> <div class="csl-block">Santi Roca-Fàbrega, Ji-hoon Kim, Loic Hausammann, Kentaro Nagamine, Alessandro Lupi, Johnny W Powell, Ikkoh Shimizu, Daniel Ceverino, Joel R Primack, Thomas R Quinn, … Matthew J Turk</div> <em>The Astrophysical Journal</em> (2021-08-01) <a href="https://doi.org/gqsz6d">https://doi.org/gqsz6d</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/ac088a">10.3847/1538-4357/ac088a</a></div></div>
+</div>
+<div id="ref-12qB7HhOD" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">69. </div><div class="csl-right-inline"><strong>gamer-2: a GPU-accelerated adaptive mesh refinement code – accuracy, performance, and scalability</strong> <div class="csl-block">Hsi-Yu Schive, John A ZuHone, Nathan J Goldbaum, Matthew J Turk, Massimo Gaspari, Chin-Yu Cheng</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2018-09-24) <a href="https://doi.org/gkvtzd">https://doi.org/gkvtzd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/sty2586">10.1093/mnras/sty2586</a></div></div>
+</div>
+<div id="ref-19Yvj8KDs" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">70. </div><div class="csl-right-inline"><strong>The galactic dust-up: modelling dust evolution in FIRE</strong> <div class="csl-block">Caleb R Choban, Dušan Kereš, Philip F Hopkins, Karin M Sandstrom, Christopher C Hayward, Claude-André Faucher-Giguère</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2022-06-07) <a href="https://doi.org/gqsz59">https://doi.org/gqsz59</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/stac1542">10.1093/mnras/stac1542</a></div></div>
+</div>
+<div id="ref-RMe7IYaY" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">71. </div><div class="csl-right-inline"><strong>Stellar angular momentum can be controlled from cosmological initial conditions</strong> <div class="csl-block">Corentin Cadiou, Andrew Pontzen, Hiranya V Peiris</div> <em>arXiv</em> (2022) <a href="https://doi.org/grk7mh">https://doi.org/grk7mh</a> <div class="csl-block">DOI: <a href="https://doi.org/10.48550/arxiv.2206.11913">10.48550/arxiv.2206.11913</a></div></div>
+</div>
+<div id="ref-8ElS8qaE" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">72. </div><div class="csl-right-inline"><strong>Accurate tracer particles of baryon dynamics in the adaptive mesh refinement code Ramses</strong> <div class="csl-block">Corentin Cadiou, Yohan Dubois, Christophe Pichon</div> <em>Astronomy &amp;amp; Astrophysics</em> (2019-01) <a href="https://doi.org/gf42rj">https://doi.org/gf42rj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1051/0004-6361/201834496">10.1051/0004-6361/201834496</a></div></div>
+</div>
+<div id="ref-NLdlIida" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">73. </div><div class="csl-right-inline"><strong>Gravitational torques dominate the dynamics of accreted gas at &lt;i&gt;z&lt;/i&gt; &amp;amp;gt; 2</strong> <div class="csl-block">Corentin Cadiou, Yohan Dubois, Christophe Pichon</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2022-06-17) <a href="https://doi.org/grk7k4">https://doi.org/grk7k4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/stac1663">10.1093/mnras/stac1663</a></div></div>
+</div>
+<div id="ref-WeeFmczr" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">74. </div><div class="csl-right-inline"><strong>Dense gas formation and destruction in a simulated Perseus-like galaxy cluster with spin-driven black hole feedback</strong> <div class="csl-block">RS Beckmann, Y Dubois, P Guillard, P Salome, V Olivares, F Polles, C Cadiou, F Combes, S Hamer, MD Lehnert, G Pineau des Forets</div> <em>Astronomy &amp;amp; Astrophysics</em> (2019-10-21) <a href="https://doi.org/grk7kw">https://doi.org/grk7kw</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1051/0004-6361/201936188">10.1051/0004-6361/201936188</a></div></div>
+</div>
+<div id="ref-JV9vVQtk" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">75. </div><div class="csl-right-inline"><strong>Gas accretion and ram pressure stripping of haloes in void walls</strong> <div class="csl-block">BB Thompson, R Smith, K Kraljic</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2022-10-19) <a href="https://doi.org/grk7k5">https://doi.org/grk7k5</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/stac2963">10.1093/mnras/stac2963</a></div></div>
+</div>
+<div id="ref-Z9ORyk4e" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">76. </div><div class="csl-right-inline"><strong>The Gaia-ESO Survey: matching chemodynamical simulations to observations of the Milky Way</strong> <div class="csl-block">BB Thompson, CG Few, M Bergemann, BK Gibson, BA MacFarlane, A Serenelli, G Gilmore, S Randich, A Vallenari, EJ Alfaro, … S Zaggia</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2017-09-11) <a href="https://doi.org/gc8ws7">https://doi.org/gc8ws7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/stx2316">10.1093/mnras/stx2316</a></div></div>
+</div>
+<div id="ref-1Ce48o4Xl" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">77. </div><div class="csl-right-inline"><strong>Turnaround radius of galaxy clusters in &lt;i&gt;N&lt;/i&gt;-body simulations</strong> <div class="csl-block">Giorgos Korkidis, Vasiliki Pavlidou, Konstantinos Tassis, Evangelia Ntormousi, Theodore N Tomaras, Konstantinos Kovlakas</div> <em>Astronomy &amp;amp; Astrophysics</em> (2020-07) <a href="https://doi.org/gqsz52">https://doi.org/gqsz52</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1051/0004-6361/201937337">10.1051/0004-6361/201937337</a></div></div>
+</div>
+<div id="ref-VVJcMOza" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">78. </div><div class="csl-right-inline"><strong>3D volume rendering of geophysical data using the yt platform</strong> <div class="csl-block">Christopher Havlin, Benjamin Holtzman, Kacper Kowalik, Madicken Munk, Samantha Walkow, Matthew Turk</div> <em>Wiley</em> (2021-02-10) <a href="https://doi.org/grk7kv">https://doi.org/grk7kv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1002/essoar.10506118.2">10.1002/essoar.10506118.2</a></div></div>
+</div>
+<div id="ref-16ZVBcAT2" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">79. </div><div class="csl-right-inline"><strong>Understanding Heating in Active Region Cores through Machine Learning. I. Numerical Modeling and Predicted Observables</strong> <div class="csl-block">WT Barnes, SJ Bradshaw, NM Viall</div> <em>The Astrophysical Journal</em> (2019-07-25) <a href="https://doi.org/grk7m6">https://doi.org/grk7m6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/ab290c">10.3847/1538-4357/ab290c</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31920207">31920207</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6951256">PMC6951256</a></div></div>
+</div>
+<div id="ref-10pVv5dtC" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">80. </div><div class="csl-right-inline"><strong>swiftsimio: A Python library for reading SWIFT data</strong> <div class="csl-block">Josh Borrow, Alexei Borrisov</div> <em>Journal of Open Source Software</em> (2020-08-01) <a href="https://doi.org/gqsz6b">https://doi.org/gqsz6b</a> <div class="csl-block">DOI: <a href="https://doi.org/10.21105/joss.02430">10.21105/joss.02430</a></div></div>
+</div>
+<div id="ref-17ydwlTdn" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">81. </div><div class="csl-right-inline"><strong>sígame v3: Gas Fragmentation in Postprocessing of Cosmological Simulations for More Accurate Infrared Line Emission Modeling</strong> <div class="csl-block">Karen Pardos Olsen, Blakesley Burkhart, Mordecai-Mark Mac Low, Robin G Treß, Thomas R Greve, David Vizgan, Jay Motka, Josh Borrow, Gergö Popping, Romeel Davé, … Desika Narayanan</div> <em>The Astrophysical Journal</em> (2021-11-01) <a href="https://doi.org/gqsz6f">https://doi.org/gqsz6f</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/ac20d4">10.3847/1538-4357/ac20d4</a></div></div>
+</div>
+<div id="ref-YCT49Lcv" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">82. </div><div class="csl-right-inline"><strong>AstroBlend: An astrophysical visualization package for Blender</strong> <div class="csl-block">JP Naiman</div> <em>Astronomy and Computing</em> (2016-04) <a href="https://doi.org/f8phr9">https://doi.org/f8phr9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.ascom.2016.02.002">10.1016/j.ascom.2016.02.002</a></div></div>
+</div>
+<div id="ref-100MO1Ryn" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">83. </div><div class="csl-right-inline"><strong>The anatomy of a star-forming galaxy: pressure-driven regulation of star formation in simulated galaxies</strong> <div class="csl-block">SM Benincasa, J Wadsley, HMP Couchman, BW Keller</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2016-07-20) <a href="https://doi.org/f86kmr">https://doi.org/f86kmr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/stw1741">10.1093/mnras/stw1741</a></div></div>
+</div>
+<div id="ref-kWd16rLo" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">84. </div><div class="csl-right-inline"><strong>The growth of black holes from Population III remnants in the Renaissance simulations</strong> <div class="csl-block">Britton D Smith, John A Regan, Turlough P Downes, Michael L Norman, Brian W O’Shea, John H Wise</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2018-08-02) <a href="https://doi.org/gfn3dp">https://doi.org/gfn3dp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/sty2103">10.1093/mnras/sty2103</a></div></div>
+</div>
 <div id="ref-8BOQ3JKi" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>A Fast Voxel Traversal Algorithm for Ray Tracing</strong> <div class="csl-block">John Amanatides, Andrew Woo</div> <em>EG 1987-Technical Papers</em> (1987) <a href="https://doi.org/gq2qd9">https://doi.org/gq2qd9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.2312/egtp.19871000">10.2312/egtp.19871000</a></div></div>
+<div class="csl-left-margin">85. </div><div class="csl-right-inline"><strong>A Fast Voxel Traversal Algorithm for Ray Tracing</strong> <div class="csl-block">John Amanatides, Andrew Woo</div> <em>EG 1987-Technical Papers</em> (1987) <a href="https://doi.org/gq2qd9">https://doi.org/gq2qd9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.2312/egtp.19871000">10.2312/egtp.19871000</a></div></div>
 </div>
 <div id="ref-FQhLVjwO" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>An Efficient Parametric Algorithm for Octree Traversal</strong> <div class="csl-block">Jorge Revelles, Carlos Ureña, Miguel Lastra</div> <em>Journal of WSCG</em> <a href="http://wscg.zcu.cz/wscg2000/Papers_2000/X31.pdf">http://wscg.zcu.cz/wscg2000/Papers_2000/X31.pdf</a></div>
+<div class="csl-left-margin">86. </div><div class="csl-right-inline"><strong>An Efficient Parametric Algorithm for Octree Traversal</strong> <div class="csl-block">Jorge Revelles, Carlos Ureña, Miguel Lastra</div> <em>Journal of WSCG</em> <a href="http://wscg.zcu.cz/wscg2000/Papers_2000/X31.pdf">http://wscg.zcu.cz/wscg2000/Papers_2000/X31.pdf</a></div>
 </div>
 <div id="ref-zRE8zhVC" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>Gravitational torques dominate the dynamics of angular momentum of the accreted gas at $z&gt;2$</strong> <div class="csl-block">Corentin Cadiou, Yohan Dubois, Christophe Pichon</div> <em>in prep.</em></div>
+<div class="csl-left-margin">87. </div><div class="csl-right-inline"><strong>Gravitational torques dominate the dynamics of angular momentum of the accreted gas at $z&gt;2$</strong> <div class="csl-block">Corentin Cadiou, Yohan Dubois, Christophe Pichon</div> <em>in prep.</em></div>
 </div>
 <div id="ref-1DgKJy4lE" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>Trident: A Universal Tool for Generating Synthetic Absorption Spectra from Astrophysical Simulations</strong> <div class="csl-block">Cameron B Hummels, Britton D Smith, Devin W Silvia</div> <em>The Astrophysical Journal</em> (2017-09-20) <a href="https://doi.org/gcx4th">https://doi.org/gcx4th</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/aa7e2d">10.3847/1538-4357/aa7e2d</a></div></div>
+<div class="csl-left-margin">88. </div><div class="csl-right-inline"><strong>Trident: A Universal Tool for Generating Synthetic Absorption Spectra from Astrophysical Simulations</strong> <div class="csl-block">Cameron B Hummels, Britton D Smith, Devin W Silvia</div> <em>The Astrophysical Journal</em> (2017-09-20) <a href="https://doi.org/gcx4th">https://doi.org/gcx4th</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/aa7e2d">10.3847/1538-4357/aa7e2d</a></div></div>
 </div>
 <div id="ref-g9AYex8L" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>powderday: Dust Radiative Transfer for Galaxy Simulations</strong> <div class="csl-block">Desika Narayanan, Matthew J Turk, Thomas Robitaille, Ashley J Kelly, BConnor McClellan, Ray S Sharma, Prerak Garg, Matthew Abruzzo, Ena Choi, Charlie Conroy, … John H Wise</div> <em>The Astrophysical Journal Supplement Series</em> (2021-01-13) <a href="https://doi.org/gpxcx8">https://doi.org/gpxcx8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4365/abc487">10.3847/1538-4365/abc487</a></div></div>
+<div class="csl-left-margin">89. </div><div class="csl-right-inline"><strong>powderday: Dust Radiative Transfer for Galaxy Simulations</strong> <div class="csl-block">Desika Narayanan, Matthew J Turk, Thomas Robitaille, Ashley J Kelly, BConnor McClellan, Ray S Sharma, Prerak Garg, Matthew Abruzzo, Ena Choi, Charlie Conroy, … John H Wise</div> <em>The Astrophysical Journal Supplement Series</em> (2021-01-13) <a href="https://doi.org/gpxcx8">https://doi.org/gpxcx8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4365/abc487">10.3847/1538-4365/abc487</a></div></div>
 </div>
 <div id="ref-1CgEbr6CQ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>The formation of submillimetre-bright galaxies from gas infall over a billion years</strong> <div class="csl-block">Desika Narayanan, Matthew Turk, Robert Feldmann, Thomas Robitaille, Philip Hopkins, Robert Thompson, Christopher Hayward, David Ball, Claude-André Faucher-Giguère, Dušan Kereš</div> <em>Nature</em> (2015-09-23) <a href="https://doi.org/f7r445">https://doi.org/f7r445</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nature15383">10.1038/nature15383</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26399829">26399829</a></div></div>
+<div class="csl-left-margin">90. </div><div class="csl-right-inline"><strong>The formation of submillimetre-bright galaxies from gas infall over a billion years</strong> <div class="csl-block">Desika Narayanan, Matthew Turk, Robert Feldmann, Thomas Robitaille, Philip Hopkins, Robert Thompson, Christopher Hayward, David Ball, Claude-André Faucher-Giguère, Dušan Kereš</div> <em>Nature</em> (2015-09-23) <a href="https://doi.org/f7r445">https://doi.org/f7r445</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nature15383">10.1038/nature15383</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26399829">26399829</a></div></div>
 </div>
 <div id="ref-6dD1NLpJ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>HYPERION: an open-source parallelized three-dimensional dust continuum radiative transfer code</strong> <div class="csl-block">TP Robitaille</div> <em>Astronomy &amp;amp; Astrophysics</em> (2011-12) <a href="https://doi.org/ckp63w">https://doi.org/ckp63w</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1051/0004-6361/201117150">10.1051/0004-6361/201117150</a></div></div>
+<div class="csl-left-margin">91. </div><div class="csl-right-inline"><strong>HYPERION: an open-source parallelized three-dimensional dust continuum radiative transfer code</strong> <div class="csl-block">TP Robitaille</div> <em>Astronomy &amp;amp; Astrophysics</em> (2011-12) <a href="https://doi.org/ckp63w">https://doi.org/ckp63w</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1051/0004-6361/201117150">10.1051/0004-6361/201117150</a></div></div>
 </div>
 <div id="ref-VB3RIyxd" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>Ytree: Merger-Tree Toolkit</strong> <div class="csl-block">Britton Smith, Meagan Lang</div> <em>Zenodo</em> (2018-02-16) <a href="https://doi.org/gcx4x2">https://doi.org/gcx4x2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a></div></div>
+<div class="csl-left-margin">92. </div><div class="csl-right-inline"><strong>Ytree: Merger-Tree Toolkit</strong> <div class="csl-block">Britton Smith, Meagan Lang</div> <em>Zenodo</em> (2018-02-16) <a href="https://doi.org/gcx4x2">https://doi.org/gcx4x2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a></div></div>
 </div>
 <div id="ref-N2QcMTPv" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>Simulating X-ray Observations with Python</strong> <div class="csl-block">John ZuHone, Veronica Biffi, Eric Hallman, Scott Randall, Adam Foster, Christian Schmid</div> <em>Proceedings of the Python in Science Conference</em> (2014) <a href="https://doi.org/gpxcx7">https://doi.org/gpxcx7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.25080/majora-14bd3278-010">10.25080/majora-14bd3278-010</a></div></div>
+<div class="csl-left-margin">93. </div><div class="csl-right-inline"><strong>Simulating X-ray Observations with Python</strong> <div class="csl-block">John ZuHone, Veronica Biffi, Eric Hallman, Scott Randall, Adam Foster, Christian Schmid</div> <em>Proceedings of the Python in Science Conference</em> (2014) <a href="https://doi.org/gpxcx7">https://doi.org/gpxcx7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.25080/majora-14bd3278-010">10.25080/majora-14bd3278-010</a></div></div>
 </div>
 <div id="ref-gJwEappY" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">41. </div><div class="csl-right-inline"><strong>Observing simulated galaxy clusters with phox: a novel X-ray photon simulator</strong> <div class="csl-block">V Biffi, K Dolag, H Böhringer, G Lemson</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2012-01) <a href="https://doi.org/fz38qm">https://doi.org/fz38qm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1111/j.1365-2966.2011.20278.x">10.1111/j.1365-2966.2011.20278.x</a></div></div>
+<div class="csl-left-margin">94. </div><div class="csl-right-inline"><strong>Observing simulated galaxy clusters with phox: a novel X-ray photon simulator</strong> <div class="csl-block">V Biffi, K Dolag, H Böhringer, G Lemson</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2012-01) <a href="https://doi.org/fz38qm">https://doi.org/fz38qm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1111/j.1365-2966.2011.20278.x">10.1111/j.1365-2966.2011.20278.x</a></div></div>
 </div>
 <div id="ref-nty3AM0C" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">42. </div><div class="csl-right-inline"><strong>Investigating the velocity structure and X-ray observable properties of simulated galaxy clusters with PHOX</strong> <div class="csl-block">V Biffi, K Dolag, H Böhringer</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2012-10-29) <a href="https://doi.org/f42dgv">https://doi.org/f42dgv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/sts120">10.1093/mnras/sts120</a></div></div>
+<div class="csl-left-margin">95. </div><div class="csl-right-inline"><strong>Investigating the velocity structure and X-ray observable properties of simulated galaxy clusters with PHOX</strong> <div class="csl-block">V Biffi, K Dolag, H Böhringer</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2012-10-29) <a href="https://doi.org/f42dgv">https://doi.org/f42dgv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/sts120">10.1093/mnras/sts120</a></div></div>
 </div>
 <div id="ref-3Gi4Hs1H" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">43. </div><div class="csl-right-inline"><strong>Houdini for Astrophysical Visualization</strong> <div class="csl-block">JP Naiman, Kalina Borkiewicz, AJ Christensen</div> <em>Publications of the Astronomical Society of the Pacific</em> (2017-04-18) <a href="https://doi.org/f96hcf">https://doi.org/f96hcf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1088/1538-3873/aa51b3">10.1088/1538-3873/aa51b3</a></div></div>
+<div class="csl-left-margin">96. </div><div class="csl-right-inline"><strong>Houdini for Astrophysical Visualization</strong> <div class="csl-block">JP Naiman, Kalina Borkiewicz, AJ Christensen</div> <em>Publications of the Astronomical Society of the Pacific</em> (2017-04-18) <a href="https://doi.org/f96hcf">https://doi.org/f96hcf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1088/1538-3873/aa51b3">10.1088/1538-3873/aa51b3</a></div></div>
 </div>
 </div>
 <h2 id="conclusions">Conclusions</h2>
