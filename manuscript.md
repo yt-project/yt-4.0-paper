@@ -124,9 +124,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/95bfe80cedacc5d9139cc6cadbb9ddb82be6689c/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/95bfe80cedacc5d9139cc6cadbb9ddb82be6689c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/95bfe80cedacc5d9139cc6cadbb9ddb82be6689c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/90d6f3ccc31815e6dd176d7d202eec7ae2f508e2/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/90d6f3ccc31815e6dd176d7d202eec7ae2f508e2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/90d6f3ccc31815e6dd176d7d202eec7ae2f508e2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -148,9 +148,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/95bfe80cedacc5d9139cc6cadbb9ddb82be6689c/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/90d6f3ccc31815e6dd176d7d202eec7ae2f508e2/))
 was automatically generated
-from [yt-project/yt-4.0-paper@95bfe80](https://github.com/yt-project/yt-4.0-paper/tree/95bfe80cedacc5d9139cc6cadbb9ddb82be6689c)
+from [yt-project/yt-4.0-paper@90d6f3c](https://github.com/yt-project/yt-4.0-paper/tree/90d6f3ccc31815e6dd176d7d202eec7ae2f508e2)
 on January 9, 2023.
 </em></small>
 
@@ -1253,13 +1253,13 @@ corresponds to a unitless measurement along the ray from start to end.
 This surface object identifies isocontours on a cell-by-cell basis,
 with no consideration of global connectedness, and returns the
 vertices of the Triangles in that isocontour.  This object simply
-returns the vertices of all the triangles calculated by the `marching
-cubes <https://en.wikipedia.org/wiki/Marching_cubes>`_ algorithm; for
+returns the vertices of all the triangles calculated by the [marching
+cubes](https://en.wikipedia.org/wiki/Marching_cubes) algorithm; for
 more complex operations, such as identifying connected sets of cells
 above a given threshold, see the extract_connected_sets function.
 This is more useful for calculating, for instance, total isocontour
-area, or visualizing in an external program (such as `MeshLab
-<http://www.meshlab.net>`_.)  The object has the properties .vertices
+area, or visualizing in an external program (such as
+[MeshLab](http://www.meshlab.net).)  The object has the properties .vertices
 and will sample values if a field is requested.  The values are
 interpolated to the center of a given face.
 

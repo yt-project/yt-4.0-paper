@@ -5,9 +5,9 @@ AMR
 AMRKDTree
 amrvac
 APIs
-arepo
+Arepo
 arraylike
-artio
+ARTIO
 Astro
 astrojaz
 astrophysically
@@ -17,7 +17,7 @@ backporting
 Bili
 binarily
 Bitbucket
-Bitwise
+bitwise
 bookkeepping
 Bool
 Borro
@@ -26,7 +26,7 @@ Britton
 brittonsmith
 Bugfix
 Cadiou
-cgs
+CGS
 Champaign
 changeset
 changesets
@@ -40,7 +40,7 @@ colocation
 colormapping
 Comoving
 connectedness
-coord
+Coord
 Coords
 Corentin
 Coughlin
@@ -77,7 +77,7 @@ fof
 formatter
 formatters
 frontend
-frontends
+Frontends
 frontrow
 gdf
 geosciences
@@ -121,6 +121,7 @@ matplotlib
 MatthewTurk
 megaparsec
 meshened
+MeshLab
 metallicity
 midplane
 migueldvb
@@ -139,10 +140,10 @@ njgoldbaum
 NMSU
 nosetests
 NumFOCUS
-NumPy
+numpy
 octants
 octree
-octrees
+Octrees
 octs
 OpenMP
 Orf
@@ -157,14 +158,14 @@ pipelining
 pixelization
 pixelize
 pixelized
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
 PlotCollection
 pmd
 potentia
-Powderday
+powderday
 powersoffour
 pre
 proeminently
@@ -180,7 +181,7 @@ recomputation
 recursed
 reinstrumented
 renderer
-Resampling
+resampling
 RGBA
 rockstar
 Rosen
