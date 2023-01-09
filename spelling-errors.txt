@@ -8,7 +8,7 @@ APIs
 arepo
 arraylike
 artio
-astro
+Astro
 astrojaz
 astrophysically
 AstroPy
@@ -26,7 +26,7 @@ Britton
 brittonsmith
 Bugfix
 Cadiou
-CGS
+cgs
 Champaign
 changeset
 changesets
@@ -38,14 +38,14 @@ codebase
 collisional
 colocation
 colormapping
-comoving
+Comoving
 connectedness
 coord
 Coords
 Corentin
 Coughlin
 cphyc
-cython
+Cython
 dask
 d’Astrophysique
 dataframe
@@ -53,7 +53,7 @@ datapoint
 dataset
 datasetfrom
 dataset’s
-Datasets
+datasets
 datasetwere
 datatypes
 decomp
@@ -66,7 +66,7 @@ discretization
 dobj
 Duplicative
 easies
-enzo
+Enzo
 EWAH
 EWAHBoolArray
 extensibility
@@ -76,7 +76,7 @@ fisheye
 fof
 formatter
 formatters
-Frontend
+frontend
 frontends
 frontrow
 gdf
@@ -142,8 +142,8 @@ NumFOCUS
 NumPy
 octants
 octree
-Octrees
-Octs
+octrees
+octs
 OpenMP
 Orf
 Ortho
@@ -164,7 +164,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-powderday
+Powderday
 powersoffour
 pre
 proeminently

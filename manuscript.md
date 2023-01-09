@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-01-06'
+date-meta: '2023-01-09'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -41,8 +41,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-01-06" />
-  <meta name="citation_publication_date" content="2023-01-06" />
+  <meta name="dc.date" content="2023-01-09" />
+  <meta name="citation_publication_date" content="2023-01-09" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -124,9 +124,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/3a8b58778fb0f63de960568b9a4558fc9548e1f3/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/3a8b58778fb0f63de960568b9a4558fc9548e1f3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/3a8b58778fb0f63de960568b9a4558fc9548e1f3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/95bfe80cedacc5d9139cc6cadbb9ddb82be6689c/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/95bfe80cedacc5d9139cc6cadbb9ddb82be6689c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/95bfe80cedacc5d9139cc6cadbb9ddb82be6689c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -148,10 +148,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/3a8b58778fb0f63de960568b9a4558fc9548e1f3/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/95bfe80cedacc5d9139cc6cadbb9ddb82be6689c/))
 was automatically generated
-from [yt-project/yt-4.0-paper@3a8b587](https://github.com/yt-project/yt-4.0-paper/tree/3a8b58778fb0f63de960568b9a4558fc9548e1f3)
-on January 6, 2023.
+from [yt-project/yt-4.0-paper@95bfe80](https://github.com/yt-project/yt-4.0-paper/tree/95bfe80cedacc5d9139cc6cadbb9ddb82be6689c)
+on January 9, 2023.
 </em></small>
 
 ## Authors
@@ -1995,9 +1995,9 @@ Their commitment to open science has helped make this work possible.
 
 **Comments:** Halo finding format
 
-**Primary Citations:** [
 
-**Usage Citations:** [
+
+
 
 
 
@@ -2007,9 +2007,9 @@ Their commitment to open science has helped make this work possible.
 
 **Comments:** Halo finding format
 
-**Primary Citations:** [
 
-**Usage Citations:** [
+
+
 
 
 
@@ -2021,9 +2021,13 @@ Their commitment to open science has helped make this work possible.
 The emphasis is on (near) conservation laws and on shock-dominated problems in particular.
 
 
-**Primary Citations:** [@amrvac-paper; @doi:10.1088/0067-0049/214/1/4; @doi:10.3847/1538-4365/aaa6c8
 
-**Usage Citations:** [@doi:10.1051/0004-6361/202037616; @doi:10.1051/0004-6361/202039630; @doi:10.1051/0004-6361/201937414
+**Primary Citations:** [@amrvac-paper; @doi:10.1088/0067-0049/214/1/4; @doi:10.3847/1538-4365/aaa6c8]
+
+
+
+**Usage Citations:** [@doi:10.1051/0004-6361/202037616; @doi:10.1051/0004-6361/202039630; @doi:10.1051/0004-6361/201937414]
+
 
 
 
@@ -2035,9 +2039,11 @@ The emphasis is on (near) conservation laws and on shock-dominated problems in p
 For visualization purposes, yt treats it similarly to an SPH dataset; some efforts have been made to properly apply nearest-neighbor interpolation, but these have not been mainlined in the yt visualization routines as of yet.
 
 
-**Primary Citations:** [
 
-**Usage Citations:** [@doi:10.3847/1538-4357/aa6dff; @doi:10.1093/mnras/stab2553
+
+
+**Usage Citations:** [@doi:10.3847/1538-4357/aa6dff; @doi:10.1093/mnras/stab2553]
+
 
 
 
@@ -2052,9 +2058,11 @@ The second is the hydro data format, wherein gas values are stored organized int
 Each of these constitutes a different indexing system, sharing similar datatypes, units, and so forth.
 
 
-**Primary Citations:** [
 
-**Usage Citations:** [@doi:10.3847/1538-4357/aa6dff; @doi:10.1093/mnras/staa3972
+
+
+**Usage Citations:** [@doi:10.3847/1538-4357/aa6dff; @doi:10.1093/mnras/staa3972]
+
 
 
 
@@ -2069,9 +2077,11 @@ Whereas previously yt required a full understanding of data distribution, the `a
 Reducing the amount of internal bookkeepping that yt had to do provided a lighter-weight interface to the data, which in turn has enabled other frontends to be created using opaque APIs.
 
 
-**Primary Citations:** [
 
-**Usage Citations:** [@doi:10.1093/mnras/stac1164
+
+
+**Usage Citations:** [@doi:10.1093/mnras/stac1164]
+
 
 
 
@@ -2081,9 +2091,11 @@ Reducing the amount of internal bookkeepping that yt had to do provided a lighte
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [@doi:10.3847/1538-4357/aa9b80
+
+
+**Usage Citations:** [@doi:10.3847/1538-4357/aa9b80]
+
 
 
 
@@ -2093,9 +2105,11 @@ Reducing the amount of internal bookkeepping that yt had to do provided a lighte
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [@doi:10.3847/2041-8213/abbffd
+
+
+**Usage Citations:** [@doi:10.3847/2041-8213/abbffd]
+
 
 
 
@@ -2105,9 +2119,13 @@ Reducing the amount of internal bookkeepping that yt had to do provided a lighte
 
 **Comments:** None
 
-**Primary Citations:** [@doi:10.21105/joss.01370; @doi:10.1088/1742-6596/1031/1/012024; @doi:10.21105/joss.02513; @doi:10.21105/joss.01757
 
-**Usage Citations:** [@doi:10.1093/mnras/stac439; https://doi-org.colorado.idm.oclc.org/10.1007/s00162-020-00548-6; https://doi.org/10.1103/PhysRevD.100.063528 ,  	 https://doi.org/10.1103/PhysRevD.103.063525 ,  	 https://doi.org/10.1103/PhysRevD.105.023516; DOI:10.1016/j.cpc.2022.108457
+**Primary Citations:** [@doi:10.21105/joss.01370; @doi:10.1088/1742-6596/1031/1/012024; @doi:10.21105/joss.02513; @doi:10.21105/joss.01757]
+
+
+
+**Usage Citations:** [@doi:10.1093/mnras/stac439; https://doi-org.colorado.idm.oclc.org/10.1007/s00162-020-00548-6; https://doi.org/10.1103/PhysRevD.100.063528 ,  	 https://doi.org/10.1103/PhysRevD.103.063525 ,  	 https://doi.org/10.1103/PhysRevD.105.023516; DOI:10.1016/j.cpc.2022.108457]
+
 
 
 
@@ -2117,9 +2135,11 @@ Reducing the amount of internal bookkeepping that yt had to do provided a lighte
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [@doi:10.3847/1538-3881/ab9abf; @doi:10.3847/1538-4357/ab54c6; @doi:10.1093/mnras/stw2153
+
+
+**Usage Citations:** [@doi:10.3847/1538-3881/ab9abf; @doi:10.3847/1538-4357/ab54c6; @doi:10.1093/mnras/stw2153]
+
 
 
 
@@ -2129,9 +2149,11 @@ Reducing the amount of internal bookkeepping that yt had to do provided a lighte
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [@doi:10.1093/mnras/stab1057; @doi:10.1093/mnras/stab651; @doi:10.1093/mnras/staa3590; @doi:10.1093/mnras/stab1057
+
+
+**Usage Citations:** [@doi:10.1093/mnras/stab1057; @doi:10.1093/mnras/stab651; @doi:10.1093/mnras/staa3590; @doi:10.1093/mnras/stab1057]
+
 
 
 
@@ -2146,9 +2168,13 @@ These include names such as `GridLeftEdge` and `ActiveDimensions` (which refers 
 There are several 'sub-frontends' within the Enzo frontend; these include dedicated 1D and 2D readers, as well as historical frontends (of varying functionality) for reading HDF4, 'unpacked' HDF5 and other sub-dialects of Enzo.
 
 
-**Primary Citations:** [@doi:10.1088/0067-0049/211/2/19
 
-**Usage Citations:** [@doi:10.3847/1538-4357/aa6dff; @doi:10.1088/0004-637X/764/2/136; @doi:10.3847/1538-4365/abfa17; @doi:10.3847/1538-4357/ac6c87; @doi:10.1093/mnras/stu979; @doi:10.3847/1538-4357/ac5960
+**Primary Citations:** [@doi:10.1088/0067-0049/211/2/19]
+
+
+
+**Usage Citations:** [@doi:10.3847/1538-4357/aa6dff; @doi:10.1088/0004-637X/764/2/136; @doi:10.3847/1538-4365/abfa17; @doi:10.3847/1538-4357/ac6c87; @doi:10.1093/mnras/stu979; @doi:10.3847/1538-4357/ac5960]
+
 
 
 
@@ -2159,9 +2185,11 @@ There are several 'sub-frontends' within the Enzo frontend; these include dedica
 **Comments:** Enzo-E is a nearly full-rewrite of the Enzo infrastructure designed for emerging and future architectures.
 
 
-**Primary Citations:** [
 
-**Usage Citations:** [@doi:10.3847/1538-4357/ac3c48
+
+
+**Usage Citations:** [@doi:10.3847/1538-4357/ac3c48]
+
 
 
 
@@ -2173,9 +2201,9 @@ There are several 'sub-frontends' within the Enzo frontend; these include dedica
 The original driver for developing this format was for simulations of nuclear reactors.
 
 
-**Primary Citations:** [
 
-**Usage Citations:** [
+
+
 
 
 
@@ -2185,9 +2213,9 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [
+
+
 
 
 
@@ -2198,9 +2226,11 @@ The original driver for developing this format was for simulations of nuclear re
 **Comments:** FLASH is a ...
 
 
-**Primary Citations:** [
 
-**Usage Citations:** [@doi:10.1093/mnras/stac1275; @doi:10.3847/1538-4357/aadcf7; @doi:10.1093/mnras/staa3902; @doi:10.3847/1538-4357/ab4db1; @doi:10.3847/1538-4357/abc011; @doi:10.3847/2041-8213/ababae
+
+
+**Usage Citations:** [@doi:10.1093/mnras/stac1275; @doi:10.3847/1538-4357/aadcf7; @doi:10.1093/mnras/staa3902; @doi:10.3847/1538-4357/ab4db1; @doi:10.3847/1538-4357/abc011; @doi:10.3847/2041-8213/ababae]
+
 
 
 
@@ -2210,9 +2240,11 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [@doi:10.3847/1538-4357/ac088a
+
+
+**Usage Citations:** [@doi:10.3847/1538-4357/ac088a]
+
 
 
 
@@ -2222,9 +2254,9 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** Halo finding
 
-**Primary Citations:** [
 
-**Usage Citations:** [
+
+
 
 
 
@@ -2234,9 +2266,11 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** None
 
-**Primary Citations:** [@doi:10.1093/mnras/sty2586
 
-**Usage Citations:** [
+**Primary Citations:** [@doi:10.1093/mnras/sty2586]
+
+
+
 
 
 
@@ -2246,9 +2280,9 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** Custom built for yt
 
-**Primary Citations:** [
 
-**Usage Citations:** [
+
+
 
 
 
@@ -2258,9 +2292,11 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [@doi:10.1093/mnras/stac1542; @doi:10.3847/1538-4357/aa6dff
+
+
+**Usage Citations:** [@doi:10.1093/mnras/stac1542; @doi:10.3847/1538-4357/aa6dff]
+
 
 
 
@@ -2270,9 +2306,9 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [
+
+
 
 
 
@@ -2282,9 +2318,9 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [
+
+
 
 
 
@@ -2294,9 +2330,9 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [
+
+
 
 
 
@@ -2306,9 +2342,9 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [
+
+
 
 
 
@@ -2318,9 +2354,9 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [
+
+
 
 
 
@@ -2330,9 +2366,9 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [
+
+
 
 
 
@@ -2342,9 +2378,9 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [
+
+
 
 
 
@@ -2354,9 +2390,11 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [@doi:10.3847/1538-4357/aa6dff; @doi:10.48550/arXiv.2206.11913; @doi:10.1051/0004-6361/201834496; @doi:10.1093/mnras/stac1663; @doi:10.1051/0004-6361/201936188; @doi:10.1093/mnras/stac2963; @doi:10.1093/mnras/stx2316
+
+
+**Usage Citations:** [@doi:10.3847/1538-4357/aa6dff; @doi:10.48550/arXiv.2206.11913; @doi:10.1051/0004-6361/201834496; @doi:10.1093/mnras/stac1663; @doi:10.1051/0004-6361/201936188; @doi:10.1093/mnras/stac2963; @doi:10.1093/mnras/stx2316]
+
 
 
 
@@ -2366,9 +2404,9 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [
+
+
 
 
 
@@ -2378,9 +2416,11 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [@doi:10.1051/0004-6361/201937337
+
+
+**Usage Citations:** [@doi:10.1051/0004-6361/201937337]
+
 
 
 
@@ -2391,9 +2431,9 @@ The original driver for developing this format was for simulations of nuclear re
 **Comments:** A base frontend from which other SPH-type frontends can be defined.
 
 
-**Primary Citations:** [
 
-**Usage Citations:** [
+
+
 
 
 
@@ -2403,9 +2443,11 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [@doi:10.1002/ESSOAR.10506118.2; @doi:10.3847/1538-4357/ab290c
+
+
+**Usage Citations:** [@doi:10.1002/ESSOAR.10506118.2; @doi:10.3847/1538-4357/ab290c]
+
 
 
 
@@ -2415,9 +2457,13 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** None
 
-**Primary Citations:** [@doi:10.21105/joss.02430
 
-**Usage Citations:** [@doi:10.3847/1538-4357/ac20d4; https://ui.adsabs.harvard.edu/abs/2022arXiv220313915B
+**Primary Citations:** [@doi:10.21105/joss.02430]
+
+
+
+**Usage Citations:** [@doi:10.3847/1538-4357/ac20d4; https://ui.adsabs.harvard.edu/abs/2022arXiv220313915B]
+
 
 
 
@@ -2427,9 +2473,11 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Comments:** None
 
-**Primary Citations:** [
 
-**Usage Citations:** [@doi:10.1016/j.ascom.2016.02.002; @doi:10.1093/mnras/stw1741
+
+
+**Usage Citations:** [@doi:10.1016/j.ascom.2016.02.002; @doi:10.1093/mnras/stw1741]
+
 
 
 
@@ -2440,9 +2488,11 @@ The original driver for developing this format was for simulations of nuclear re
 **Comments:** An internal frontend for re-loading saved data and derived data
 
 
-**Primary Citations:** [
 
-**Usage Citations:** [@doi:10.1093/mnras/sty2103
+
+
+**Usage Citations:** [@doi:10.1093/mnras/sty2103]
+
 
 
 

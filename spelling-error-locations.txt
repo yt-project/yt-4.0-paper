@@ -459,7 +459,9 @@ content/33.data-formats-and-frontends.md:9:frontend
 content/33.data-formats-and-frontends.md:11:frontend
 content/33.data-formats-and-frontends.md:13:frontend
 content/33.data-formats-and-frontends.md:15:frontend
-content/33.data-formats-and-frontends.md:17:frontend
+content/33.data-formats-and-frontends.md:16:frontend
+content/33.data-formats-and-frontends.md:19:frontend
+content/33.data-formats-and-frontends.md:20:frontend
 content/35.viz_and_volrendering.md:3:matplotlib
 content/35.viz_and_volrendering.md:4:matplotlib
 content/35.viz_and_volrendering.md:4:matplotlib
