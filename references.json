@@ -1048,57 +1048,6 @@
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: Teyssier2001"
   },
   {
-    "DOI": "10.1088/0067-0049/192/1/9",
-    "ISSN": "0067-0049",
-    "URL": "http://stacks.iop.org/0067-0049/192/i=1/a=9?key=crossref.ad58f4fc8c6272d93975507bf0238006",
-    "author": [
-      {
-        "family": "Turk",
-        "given": "Matthew J."
-      },
-      {
-        "family": "Smith",
-        "given": "Britton D."
-      },
-      {
-        "family": "Oishi",
-        "given": "Jeffrey S."
-      },
-      {
-        "family": "Skory",
-        "given": "Stephen"
-      },
-      {
-        "family": "Skillman",
-        "given": "Samuel W."
-      },
-      {
-        "family": "Abel",
-        "given": "Tom"
-      },
-      {
-        "family": "Norman",
-        "given": "Michael L."
-      }
-    ],
-    "container-title": "Astrophys. J. Suppl. Ser.",
-    "id": "GqCvYs0n",
-    "issue": "1",
-    "issued": {
-      "date-parts": [
-        [
-          2011,
-          1
-        ]
-      ]
-    },
-    "page": "9",
-    "title": "<span class=\"nocase\">yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA</span>",
-    "type": "article-journal",
-    "volume": "192",
-    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: Turk20d11a"
-  },
-  {
     "DOI": "10.1109/ICDE.1998.655780",
     "ISBN": "0-8186-8289-2",
     "URL": "http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=655780",

@@ -124,9 +124,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/90d6f3ccc31815e6dd176d7d202eec7ae2f508e2/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/90d6f3ccc31815e6dd176d7d202eec7ae2f508e2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/90d6f3ccc31815e6dd176d7d202eec7ae2f508e2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/766fcaaf3527f530b015dee9f86ae10f394de66a/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/766fcaaf3527f530b015dee9f86ae10f394de66a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/766fcaaf3527f530b015dee9f86ae10f394de66a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -148,9 +148,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/90d6f3ccc31815e6dd176d7d202eec7ae2f508e2/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/766fcaaf3527f530b015dee9f86ae10f394de66a/))
 was automatically generated
-from [yt-project/yt-4.0-paper@90d6f3c](https://github.com/yt-project/yt-4.0-paper/tree/90d6f3ccc31815e6dd176d7d202eec7ae2f508e2)
+from [yt-project/yt-4.0-paper@766fcaa](https://github.com/yt-project/yt-4.0-paper/tree/766fcaaf3527f530b015dee9f86ae10f394de66a)
 on January 9, 2023.
 </em></small>
 
@@ -1972,15 +1972,10 @@ In addition, while the current implementation of this method is designed for thr
 
 ### Code {#sec:code}
 
-These procedures have been implemented as part of the yt Python package [@Turk20d11a] in order to facilitate the analysis of large astrophysical N-body simulations; currently undergoing review for inclusion in a future version of yt (4.0 or later), our implementation is available at https://bitbucket.org/langmm/yt-bitmap.
-**NOTE: This use to say "3.4 or later". Now it's pretty clear this section is a bit dated. Hasn't the bitmap stuff been merged by now ?**
+These procedures have been incorporated into yt as of version 4.0, but then as of version 4.2 have been extracted into a standalone package entitled [`ewah-bool-utils`](https://pypi.org/project/ewah-bool-utils/).
+It is our hope that this will expand its application to non-yt uses.
 The open source EWAHBoolArray C++ package is used for implementing EWAH bitmaps [@Lemire2010; @Kaser2016] and exposed to Python using Cython [@Behnel2011].
-
-### Acknowledgment {#acknowledgment .unnumbered}
-
 The authors would like to thank Daniel Lemire for his open source EWAH implementation.
-yt is developed by a large number of independent researchers from numerous institutions around the world.
-Their commitment to open science has helped make this work possible.
 
 
 ## Data Formats and Frontends
@@ -2753,7 +2748,7 @@ To obtain on-disk data, a user need only query a data object using an on-disk fi
 Here, the first data object query is returned in code units, while the second is returned in CGS units.
 This is because `("enzo", "Density")` is an on-disk field, while `("gas", "density")` is an internal `yt` field.
 
-### Implementation} {#sec:units_implementation}
+### Implementation {#sec:units_implementation}
 
 Our unit system has 6 base dimensions, `mass`, `length`, `time`, `temperature`, and `angle`.
 The unitless `dimensionless` dimension, which we use to represent scalars is also technically a base dimension, although a trivial one.
