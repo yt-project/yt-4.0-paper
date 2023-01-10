@@ -191,6 +191,14 @@ authors:
       - Lawrence Berkeley National Laboratory
     funders: []
   -
+    github: agurvich
+    name: Alex Gurvich
+    initials: AG
+    orcid: 0000-0002-6145-3674
+    email: alex.b.gurvich@gmail.com
+    affiliations: []
+    funders: []
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
