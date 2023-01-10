@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-01-09'
+date-meta: '2023-01-10'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -27,6 +27,7 @@ author-meta:
 - Christopher Havlin
 - Stephanie Tonnesen
 - Andrew Myers
+- Alex Gurvich
 - Add Yourself
 manubot-fail-on-errors: true
 citekey-aliases:
@@ -41,8 +42,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-01-09" />
-  <meta name="citation_publication_date" content="2023-01-09" />
+  <meta name="dc.date" content="2023-01-10" />
+  <meta name="citation_publication_date" content="2023-01-10" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -115,6 +116,8 @@ header-includes: |-
   <meta name="citation_author" content="Andrew Myers" />
   <meta name="citation_author_institution" content="Lawrence Berkeley National Laboratory" />
   <meta name="citation_author_orcid" content="0000-0001-8427-8330" />
+  <meta name="citation_author" content="Alex Gurvich" />
+  <meta name="citation_author_orcid" content="0000-0002-6145-3674" />
   <meta name="citation_author" content="Add Yourself" />
   <meta name="citation_author_institution" content="Your University" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
@@ -124,9 +127,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/766fcaaf3527f530b015dee9f86ae10f394de66a/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/766fcaaf3527f530b015dee9f86ae10f394de66a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/766fcaaf3527f530b015dee9f86ae10f394de66a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/425a1582f54a0258b91a7613401bc3a51316f1d1/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/425a1582f54a0258b91a7613401bc3a51316f1d1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/425a1582f54a0258b91a7613401bc3a51316f1d1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -148,10 +151,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/766fcaaf3527f530b015dee9f86ae10f394de66a/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/425a1582f54a0258b91a7613401bc3a51316f1d1/))
 was automatically generated
-from [yt-project/yt-4.0-paper@766fcaa](https://github.com/yt-project/yt-4.0-paper/tree/766fcaaf3527f530b015dee9f86ae10f394de66a)
-on January 9, 2023.
+from [yt-project/yt-4.0-paper@425a158](https://github.com/yt-project/yt-4.0-paper/tree/425a1582f54a0258b91a7613401bc3a51316f1d1)
+on January 10, 2023.
 </em></small>
 
 ## Authors
@@ -344,6 +347,14 @@ on January 9, 2023.
     [atmyers](https://github.com/atmyers)<br>
   <small>
      Lawrence Berkeley National Laboratory
+  </small>
+
++ **Alex Gurvich**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-6145-3674](https://orcid.org/0000-0002-6145-3674)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [agurvich](https://github.com/agurvich)<br>
+  <small>
   </small>
 
 + **Add Yourself**<br>
@@ -1483,7 +1494,7 @@ We detail these below, specifically describing how they are implemented and how 
 Analysis of grid-based data is the most frequent application of `yt`.
 While we discuss much of the techniques implemented for datasets consisting of multiple, potentially overlapping grids, `yt` also supports single-grid datasets (such as FITS cubes) and is able to decompose them for parallel analysis.
 
-`yt` also supports other grid patch codes **insert list here**
+`yt` also supports other grid patch codes, listed in the section on [frontends](#sec:data_formats_and_frontends).
 
 `yt` supports several different "features" of patch-based codes.
 These include grids that span multiple parent objects, grids that overlap with coarser data (i.e., AMR), grids that overlap with other grids that provide the same level of resolution of data (i.e., grids at the same AMR level), refinement factors that vary based on level, and edge, and vertex-centered data.
@@ -1544,7 +1555,32 @@ Scheme of the AMR structure used to estimate the gradient of a quantity in the c
 
 ### SPH Analysis
 
-Smoothed Particle Hydrodynamics (SPH) is **MJT: We need a very brief explanation of SPH here!**
+Smoothed Particle Hydrodynamics (SPH) is a commonly-used method for solving equations of hydrodynamics in astrophysics (as well as many other fields!) from a lagrangian perspective.
+This provides many advantages over grid-based discretizations, but also poses somewhat different challenges for analysis and visualization.
+While a full description of SPH is outside the scope of this paper, there are a handful of crucial and important pieces of information that we will review.
+For more information, we refer interested readers to this comprehensive review of Smoothed Particle Hydrodynamics by Volker Springel [@doi:10.1146/annurev-astro-081309-130914] or to the SPLASH method paper by Daniel Price [@doi:10.1071/AS07022].
+SPH defines field quantities *at* a set of moving points, and field values at any point (i.e., between the points) can be computed by integrating over all the elements in the domain using a special-purpose kernel; this method is an exact interpolation between the discretized points by applying the smoothing kernel.
+Formally, this is represented as:
+$$
+A(\mathbf{r}) = \int A(\mathbf{r}')W(|\mathbf{r} - \mathbf{r}'|,h)\mathrm{d}V(\mathbf{r}')
+$$
+This is then reduced to a sum over the particles (the discretization points):
+$$
+A(\mathbf{r}) = \sum_j V_j A_j W(|\mathbf{r} - \mathbf{r}'|, h)
+$$
+In these equations, $A$ is the field, W is the weighting function (the 'kernel') and $h$ is the smoothing length.
+(One important note is that for various reasons, the smoothing length and the 'half' smoothing length are often used in different contexts in SPH; this is something to keep in mind, as variable names such as `hsml` may in fact refer to 'half-smoothing length.')
+By choosing a smoothing kernel that terminates outside of a given radius, this can be restricted to a finite subset of the number of particles in the simulation, and provide a natural adaptivity in resolution.
+One common approach is to define the field values in terms of the N nearest neighboring particles; often this is a power of two, such as 32 or 64, which can be identified using a spatial search such as a kD-tree.
+There are other formulations of SPH as well that confine the integral to a fixed number of particles, that evaluate based on pressure criteria, and so forth.
+
+In general, there are two approaches to defining the finite set of particles that contribute to a field at a given point.
+In "scatter" methods, computing a field at a given point is conducted by iterating over particles and identifying those whose smoothing length overlaps with a given point.
+In the alternate method "gather," the outer and inner loops of the algorithm are essentially swapped; for every point at which a field value is sought, the local smoothing length is computed and then all particles within that smoothing length are used in the computation.
+
+For the purposes of *post-processing* analysis and visualization, the most important criteria for applying SPH to a set of particles are to ensure that the function that computes field values at a given location is *identical* to that used inside the simulation code (or as close as possible) and that the calculations are conducted in as short a time as possible.
+This set of dual requirements has led to yt implementing a flexible system for defining the smoothing kernel used, whether or not a normalization step is applied to SPH quantities, and the option to use either "scatter" or "gather" methods for computing field values at fixed locations.
+
 
 Previous versions of `yt` provided analysis of SPH data through a hybrid approach that mixed pure-SPH analysis with octree-based gridding and indexing that used particle density as a guide for the necessary resolution.
 Although the present, yt 4.0 series does not utilize octrees for particles, a description of the previous implementation is useful to provide both historical information and modern motivation for the "demeshening" initiative that led to the current code base.
@@ -1978,7 +2014,7 @@ The open source EWAHBoolArray C++ package is used for implementing EWAH bitmaps 
 The authors would like to thank Daniel Lemire for his open source EWAH implementation.
 
 
-## Data Formats and Frontends
+## Data Formats and Frontends {#sec:data_formats_and_frontends}
 
 
 
