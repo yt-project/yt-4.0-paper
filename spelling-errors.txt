@@ -10,7 +10,7 @@ APIs
 Arepo
 arraylike
 ARTIO
-astro
+Astro
 astrojaz
 astrophysically
 AstroPy
@@ -20,7 +20,7 @@ backporting
 Bili
 binarily
 Bitbucket
-Bitwise
+bitwise
 bookkeepping
 Bool
 Borro
@@ -42,7 +42,7 @@ codebase
 collisional
 colocation
 colormapping
-Comoving
+comoving
 conda
 connectedness
 coord
@@ -73,7 +73,7 @@ discretized
 dobj
 Duplicative
 easies
-enzo
+Enzo
 EWAH
 EWAHBoolArray
 extensibility
@@ -154,7 +154,7 @@ numpy
 octants
 octree
 Octrees
-Octs
+octs
 OpenMP
 Orf
 Ortho
@@ -168,14 +168,14 @@ pipelining
 pixelization
 pixelize
 pixelized
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
 PlotCollection
 pmd
 potentia
-powderday
+Powderday
 powersoffour
 pre
 proeminently
@@ -191,7 +191,7 @@ recomputation
 recursed
 reinstrumented
 renderer
-resampling
+Resampling
 responsivity
 RGBA
 rockstar
@@ -206,7 +206,7 @@ Shoshani
 Sinha
 Skillman
 SLAC
-sph
+SPH
 Springel
 Stockinger
 stonnes
@@ -254,7 +254,7 @@ YTQuantity
 ytree
 yt’s
 Yu
-Zingale
+zingale
 zorder
 Zuckerberg
 ZuHone

@@ -127,9 +127,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/e35d927a18fcdb2ce0afd9fe3f196549b29c5d57/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/e35d927a18fcdb2ce0afd9fe3f196549b29c5d57/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/e35d927a18fcdb2ce0afd9fe3f196549b29c5d57/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/ca1edbfafa73c5cd64ffa7ad6b87a3504aa3928d/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ca1edbfafa73c5cd64ffa7ad6b87a3504aa3928d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ca1edbfafa73c5cd64ffa7ad6b87a3504aa3928d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -151,9 +151,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/e35d927a18fcdb2ce0afd9fe3f196549b29c5d57/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/ca1edbfafa73c5cd64ffa7ad6b87a3504aa3928d/))
 was automatically generated
-from [yt-project/yt-4.0-paper@e35d927](https://github.com/yt-project/yt-4.0-paper/tree/e35d927a18fcdb2ce0afd9fe3f196549b29c5d57)
+from [yt-project/yt-4.0-paper@ca1edbf](https://github.com/yt-project/yt-4.0-paper/tree/ca1edbfafa73c5cd64ffa7ad6b87a3504aa3928d)
 on January 30, 2023.
 </em></small>
 
@@ -2158,7 +2158,7 @@ Reducing the amount of internal bookkeepping that yt had to do provided a lighte
 
 
 
-**Usage Citations:** [@doi:10.1093/mnras/stac439; https://doi-org.colorado.idm.oclc.org/10.1007/s00162-020-00548-6; https://doi.org/10.1103/PhysRevD.100.063528 ,  	 https://doi.org/10.1103/PhysRevD.103.063525 ,  	 https://doi.org/10.1103/PhysRevD.105.023516; DOI:10.1016/j.cpc.2022.108457]
+**Usage Citations:** [@doi:10.1093/mnras/stac439; @doi:10.1007/s00162-020-00548-6; @doi:10.1103/PhysRevD.100.063528; @doi:10.1103/PhysRevD.103.063525; @doi:10.1103/PhysRevD.105.023516; @doi:10.1016/j.cpc.2022.108457]
 
 
 
@@ -2257,8 +2257,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 **Index Type:** grid
 
-**Comments:** FLASH is a ...
-
+**Comments:** FLASH is a block-refinement adaptive mesh refinement code used in many different fields, including astrophysics and high-energy density physics. 
 
 
 
@@ -2470,7 +2469,6 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-
 ### stream
 
 **Index Type:** multi
@@ -2496,7 +2494,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-**Usage Citations:** [@doi:10.3847/1538-4357/ac20d4; https://ui.adsabs.harvard.edu/abs/2022arXiv220313915B]
+**Usage Citations:** [@doi:10.3847/1538-4357/ac20d4; @doi:10.48550/arXiv.2203.13915]
 
 
 
@@ -2520,7 +2518,6 @@ The original driver for developing this format was for simulations of nuclear re
 **Index Type:** particle
 
 **Comments:** An internal frontend for re-loading saved data and derived data
-
 
 
 
