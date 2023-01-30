@@ -118,7 +118,7 @@ frontends:
   usage_citations:
   - '@doi:10.1093/mnras/stac439'
   - '@doi:10.1007/s00162-020-00548-6'
-  - '@doi/10.1103/PhysRevD.100.063528'
+  - '@doi:10.1103/PhysRevD.100.063528'
   - '@doi:10.1103/PhysRevD.103.063525'
   - '@doi:10.1103/PhysRevD.105.023516'
   - '@doi:10.1016/j.cpc.2022.108457'
