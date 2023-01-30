@@ -117,10 +117,11 @@ frontends:
   name: boxlib
   usage_citations:
   - '@doi:10.1093/mnras/stac439'
-  - https://doi-org.colorado.idm.oclc.org/10.1007/s00162-020-00548-6
-  - "https://doi.org/10.1103/PhysRevD.100.063528 ,  \t https://doi.org/10.1103/PhysRevD.103.063525\
-    \ ,  \t https://doi.org/10.1103/PhysRevD.105.023516"
-  - DOI:10.1016/j.cpc.2022.108457
+  - '@doi:10.1007/s00162-020-00548-6'
+  - '@doi.org/10.1103/PhysRevD.100.063528'
+  - '@doi:10.1103/PhysRevD.103.063525'
+  - '@doi:10.1103/PhysRevD.105.023516'
+  - '@doi:10.1016/j.cpc.2022.108457'
 - citations: []
   comments: null
   index_type:
@@ -197,8 +198,9 @@ frontends:
   name: fits
   usage_citations: []
 - citations: []
-  comments: 'FLASH is a ...
-
+  comments: 'FLASH is a block-refinement adaptive mesh refinement code used in
+    many different fields, including astrophysics and high-energy density
+    physics.
     '
   index_type:
   - grid
@@ -313,9 +315,7 @@ frontends:
   usage_citations:
   - '@doi:10.1051/0004-6361/201937337'
 - citations: []
-  comments: 'A base frontend from which other SPH-type frontends can be defined.
-
-    '
+  comments: 'A base frontend from which other SPH-type frontends can be defined.'
   index_type:
   - particle
   name: sph
@@ -336,7 +336,7 @@ frontends:
   name: swift
   usage_citations:
   - '@doi:10.3847/1538-4357/ac20d4'
-  - 'https://ui.adsabs.harvard.edu/abs/2022arXiv220313915B'
+  - '@doi:10.48550/arXiv.2203.13915'
 - citations: []
   comments: null
   index_type:
@@ -346,9 +346,7 @@ frontends:
   - '@doi:10.1016/j.ascom.2016.02.002'
   - '@doi:10.1093/mnras/stw1741'
 - citations: []
-  comments: 'An internal frontend for re-loading saved data and derived data
-
-    '
+  comments: 'An internal frontend for re-loading saved data and derived data'
   index_type:
   - particle
   name: ytdata
