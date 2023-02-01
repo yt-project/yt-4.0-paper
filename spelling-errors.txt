@@ -5,12 +5,12 @@ ahf
 Alpes
 AMR
 AMRKDTree
-AMRVAC
+amrvac
 APIs
 Arepo
 arraylike
 ARTIO
-Astro
+astro
 astrojaz
 astrophysically
 AstroPy
@@ -20,7 +20,7 @@ backporting
 Bili
 binarily
 Bitbucket
-bitwise
+Bitwise
 bookkeepping
 Bool
 Borro
@@ -41,7 +41,12 @@ Clément
 codebase
 collisional
 colocation
+colorbar
+colorbars
+Colormap
 colormapping
+Colormaps
+colorspace
 comoving
 conda
 connectedness
@@ -50,6 +55,8 @@ Coords
 Corentin
 Coughlin
 cphyc
+curvilinear
+cylindrically
 Cython
 dask
 d’Astrophysique
@@ -73,6 +80,7 @@ discretized
 dobj
 Duplicative
 easies
+entrypoints
 Enzo
 EWAH
 EWAHBoolArray
@@ -88,8 +96,11 @@ frontend
 frontends
 frontrow
 gdf
+genrated
 geosciences
+glyphs
 Goldbaum
+gravitationally
 gridded
 gridding
 Gurvich
@@ -114,6 +125,7 @@ Jupyter
 Jupyterlab
 jzuhone
 Kacper
+Kamae
 Kaser
 kD
 Kelton
@@ -128,6 +140,7 @@ logarithmically
 LSST
 Madicken
 matplotlib
+Matplotlib’s
 MatthewTurk
 megaparsec
 meshened
@@ -154,10 +167,11 @@ numpy
 octants
 octree
 Octrees
-octs
+Octs
 OpenMP
 Orf
 Ortho
+overplotting
 parallelize
 performant
 perveice
@@ -168,7 +182,7 @@ pipelining
 pixelization
 pixelize
 pixelized
-Pixelizers
+pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -182,7 +196,7 @@ proeminently
 proj
 pytest
 pyXSIM
-quadtree
+Quadtree
 radiative
 RADMC
 rasterizers
@@ -237,6 +251,7 @@ unsampled
 Urbana
 userbase
 Volker
+vr
 WebAssembly
 Widgyts
 Xarthisius

@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-01-30'
+date-meta: '2023-02-01'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -42,8 +42,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-01-30" />
-  <meta name="citation_publication_date" content="2023-01-30" />
+  <meta name="dc.date" content="2023-02-01" />
+  <meta name="citation_publication_date" content="2023-02-01" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -127,9 +127,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/ca1edbfafa73c5cd64ffa7ad6b87a3504aa3928d/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ca1edbfafa73c5cd64ffa7ad6b87a3504aa3928d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ca1edbfafa73c5cd64ffa7ad6b87a3504aa3928d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/c7e1af1d69c0287224bdff9d5ae07045903dc274/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/c7e1af1d69c0287224bdff9d5ae07045903dc274/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/c7e1af1d69c0287224bdff9d5ae07045903dc274/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -151,10 +151,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/ca1edbfafa73c5cd64ffa7ad6b87a3504aa3928d/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/c7e1af1d69c0287224bdff9d5ae07045903dc274/))
 was automatically generated
-from [yt-project/yt-4.0-paper@ca1edbf](https://github.com/yt-project/yt-4.0-paper/tree/ca1edbfafa73c5cd64ffa7ad6b87a3504aa3928d)
-on January 30, 2023.
+from [yt-project/yt-4.0-paper@c7e1af1](https://github.com/yt-project/yt-4.0-paper/tree/c7e1af1d69c0287224bdff9d5ae07045903dc274)
+on February 1, 2023.
 </em></small>
 
 ## Authors
@@ -2535,7 +2535,7 @@ Making this distinction is important, because it underscores the relationship be
 
 **CC: discuss ray traversal for patch-based datasets + oct-based datasets.**
 
-### Pixelizing Variable-Mesh Objects
+### Pixelizing Variable-Mesh Objects {#sec:pixelization}
 
 The results of either projecting or slicing through a logically-cartesian finite volume dataset is represented in `yt` as a collection of pixel positions and widths.
 These objects, hereafter referred to as exposing the "variable mesh" interface (as originated in HippoDraw), are not typically suitable for direct visualization.
@@ -2974,10 +2974,70 @@ The `Dataset.set_units` updates the `h` symbol to the correct value when loading
 
 ## User-Friendliness
 
+Several different entrypoints exist for research codes.
+For instance, an ontology of "end-users" in science has developed that emphasizes that typically "library" codes are only used implicitly by researchers.
+In this framing, library codes primarily interface with application codes, rather than with researchers.
+We have taken a slightly different approach with the design and development of yt, as it exists in a middle-ground as a library used *as an application* within the scripting language Python and also as a library for more complex analysis of data.
+As an outgrowth of this, we have taken particular care with the "public-facing" API of yt.
+We have attempted to abstract the API enough from the data structures yt uses internally that it is useful without detailed knowledge of yt's internals.
+By the same token, we have also attempted to provide low-level access to data, and to make as many of those methods accessible and usable as well.
+
+In addition to API considerations, there are three areas that we note have additional care paid to the generation of figures, helpful error messages, and to integration with the omnipresent Jupyter environment.
+
 ### Publication-Ready Figures
 
-### Jupyter Integration
+Matplotlib @doi:10.5281/zenodo.7570264 is a fully-featured mechanism for generating figures, with an incredible array of options to customize formatting, appearance, rendering of fonts and glyphs, selection of colorbars, calculation of tick locations, and appropriate bounds.
+This degree of flexibility provides extremely fine-grained control over the appearance of figures for publication, and Matplotlib provides a large number of output formats for even the most discerning of journals.
 
+yt utilizes Matplotlib as its primary rendering engine for visualizations; while 3D renderings (such as those described in @sec:vr) typically generate raw pixel buffers that are saved as images directly, most other visualization functionality in yt relies on Matplotlib for generating images that are saved to disk.
+Slices and projections are prepared as variable-resolution images that are pixelized (@sec:pixelization) into fixed resolution buffers, then provided to Matplotlib in the `imshow` function.
+Phase plots utilize the `pcolormesh` function.
+
+All of these internal plots utilize Matplotlib's "object-oriented" interface, wherein `Figure` and `Axes` objects are created directly.
+yt then manages the internal state of these objects, and provides high-level access to operations that are aware of the nature of the visualizations; for instance, operations that zoom and pan, and that are unit-aware.
+In the case of 2D spatial images, these are all generated as subclasses of a `PlotWindow` object, named such because it functions as a "window" onto the data, including automatically generating and managing multiple fields simultaneously.
+
+Within the `PlotWindow` object, we set up two levels of visualization invalidation; when a characteristic of the image buffer data is changed (i.e., the viewing window, the resolution) then the *image data* is said to be invalidated.
+When a characteristic of the visualization is changed (the label, the scaling of the colorbar, the colormap) then the *plot* is said to be invalidated.
+This allows yt to minimize the overhead of conducting potentially expensive operations on the underlying (unprocessed) data, while maximizing its utilization of Matplotlib for generation of images.
+The image buffers generated are also always available through the API, so in the common case that researchers wish to take the genrated images and perform detailed manipulations or plot layouts, they are able to do so, using the Matplotlib API they may already be familiar with.
+
+In addition to providing data-aware operations for plot organization, a number of plot modifications are available that provide data-aware annotations.
+As the plot window moves, the data-aware annotations are updated and move with the window.
+For example, the process of generating vector overlays from variable-resolution data requires the same set of operations as generating a fixed resolution image buffer, so yt provides a method for overplotting vector fields.
+This also requires correctly applying axis-ordering, so yt will automatically determine the appropriate x and y vectors in the image plane, and for an off-axis slice, it will generate in-plane vector fields by computing the appropriate set of dot products.
+Additional data-aware operations include overplotting locations of gravitationally-bound clumps, contour plots of variable-resolution data, boundaries of data structures (such as grids in patch-based grid datasets, cells from patch and octree datasets, particle locations), streamlines, line integral convolution, and coordinate-aware annotations.
+
+All of these figure construction and modification methods apply to cartesian ($x$, $y$, $z$) datasets, but yt also supports them for curvilinear data such as that organized spherically ($r$, $\theta$, $\phi$) and cylindrically ($r$, $z$, $\theta$).
+
+By focusing on the utilizing low-level yt operations to facilitate high-level interactions, we can embed best practices for accessibility and visualizations at as many levels as possible.
+For instance, yt provides suggested colormaps for specific fields, will apply heuristics to determine the appropriate scaling (such as symmetric logarithm) and utilize the appropriate labels and units to the data.
+This allows users of yt to access both the expansive functionality of Matplotlib as well as the more domain-specific tasks available in yt.
+
+Finally, the `cmyt` package ('colormaps from yt') also provides several colormaps that were, until yt 4.0, included in the main yt distribution.
+Many of these are developed by yt contributors, typically using the [`viscm`](https://github.com/matplotlib/viscm) package, and are designed to be perceptually uniform in colorspace.
+
+| Colormap Name | Colormap                              |
+| ------------- | ------------------------------------- |
+| `algae`       | ![](images/colormaps/algae.png)       |
+| `arbre`       | ![](images/colormaps/arbre.png)       |
+| `dusk`        | ![](images/colormaps/dusk.png)        |
+| `kelp`        | ![](images/colormaps/kelp.png)        |
+| `octarine`    | ![](images/colormaps/octarine.png)    |
+| `pastel`      | ![](images/colormaps/pastel.png)      |
+| `pixel_blue`  | ![](images/colormaps/pixel_blue.png)  |
+| `pixel_green` | ![](images/colormaps/pixel_green.png) |
+| `pixel_red`   | ![](images/colormaps/pixel_red.png)   |
+| `xray`        | ![](images/colormaps/xray.png)        |
+
+Table: Colormaps provided by `cmyt`. {#tbl:colormaps}
+
+We note in particular that in previous versions of yt, `algae` was known as `bds_highcontrast` (and was our default colormap) and that the `arbre` colormap is the current default colormap.
+`pastel` was designed by Tune Kamae, and was previously referred to as `kamae`.
+
+### Enhanced Error Messages
+
+### Jupyter Integration
 
 
 
