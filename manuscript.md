@@ -127,9 +127,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/98b2c4b8821ac83ff242fe664030d8b4ab089cd7/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/98b2c4b8821ac83ff242fe664030d8b4ab089cd7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/98b2c4b8821ac83ff242fe664030d8b4ab089cd7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/437cd61d1c9c733c381a7b796f05b68f0dcb1ac4/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/437cd61d1c9c733c381a7b796f05b68f0dcb1ac4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/437cd61d1c9c733c381a7b796f05b68f0dcb1ac4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -152,9 +152,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/98b2c4b8821ac83ff242fe664030d8b4ab089cd7/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/437cd61d1c9c733c381a7b796f05b68f0dcb1ac4/))
 was automatically generated
-from [yt-project/yt-4.0-paper@98b2c4b](https://github.com/yt-project/yt-4.0-paper/tree/98b2c4b8821ac83ff242fe664030d8b4ab089cd7)
+from [yt-project/yt-4.0-paper@437cd61](https://github.com/yt-project/yt-4.0-paper/tree/437cd61d1c9c733c381a7b796f05b68f0dcb1ac4)
 on February 2, 2023.
 </em></small>
 
@@ -3037,6 +3037,17 @@ We note in particular that in previous versions of yt, `algae` was known as `bds
 `pastel` was designed by Tune Kamae, and was previously referred to as `kamae`.
 
 ### Enhanced Error Messages
+
+Providing helpful error messages is almost an art form; projects like AstroPy @astropy5 have developed complex, helpful and thoughtfully-designed methods of providing as much usable information as possible when something "goes wrong."
+In recent development history, we have spent a considerable amount of effort attempting to discern between errors that are "user-facing" and those that are strictly "internal."
+"Internal" errors, for the most part, are often highly-unexpected; they may result from malformed data, or data that yt (and the developers) do not know to expect, or from general software defects.
+"User-facing" errors are those that can be anticipated, and they are the errors for which we endeavor to provide helpful and extensive responses.
+
+Among others, some of the most useful error messages that yt provides are those related to accessing fields and loading datasets.
+For instance, accessing the field `"x_velocity"` instead of `"velocity_x"` will produce an error, suggesting the *correct* field to access.
+When loading a dataset, yt will attempt to determine what the format of the data is; if it is unable to unambiguously identify the data format, it will provide an error message that shows the different options, and indicates how to disambiguate.
+
+While these may seem like simple, obvious changes to make, they can hide difficult technical challenges, and more importantly, have dramatically improved the user experience for people using yt.
 
 ### Jupyter Integration
 

@@ -1176,6 +1176,578 @@
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: Yu1998"
   },
   {
+    "DOI": "10.3847/1538-4357/ac7c74",
+    "URL": "https://arxiv.org/abs/2206.14220",
+    "author": [
+      {
+        "literal": "Astropy Collaboration"
+      },
+      {
+        "family": "Price-Whelan",
+        "given": "Adrian M."
+      },
+      {
+        "family": "Lim",
+        "given": "Pey Lian"
+      },
+      {
+        "family": "Earl",
+        "given": "Nicholas"
+      },
+      {
+        "family": "Starkman",
+        "given": "Nathaniel"
+      },
+      {
+        "family": "Bradley",
+        "given": "Larry"
+      },
+      {
+        "family": "Shupe",
+        "given": "David L."
+      },
+      {
+        "family": "Patil",
+        "given": "Aarya A."
+      },
+      {
+        "family": "Corrales",
+        "given": "Lia"
+      },
+      {
+        "family": "Brasseur",
+        "given": "C. E."
+      },
+      {
+        "family": "Nöthe",
+        "given": "Maximilian"
+      },
+      {
+        "family": "Donath",
+        "given": "Axel"
+      },
+      {
+        "family": "Tollerud",
+        "given": "Erik"
+      },
+      {
+        "family": "Morris",
+        "given": "Brett M."
+      },
+      {
+        "family": "Ginsburg",
+        "given": "Adam"
+      },
+      {
+        "family": "Vaher",
+        "given": "Eero"
+      },
+      {
+        "family": "Weaver",
+        "given": "Benjamin A."
+      },
+      {
+        "family": "Tocknell",
+        "given": "James"
+      },
+      {
+        "family": "Jamieson",
+        "given": "William"
+      },
+      {
+        "family": "Kerkwijk",
+        "given": "Marten H.",
+        "non-dropping-particle": "van"
+      },
+      {
+        "family": "Robitaille",
+        "given": "Thomas P."
+      },
+      {
+        "family": "Merry",
+        "given": "Bruce"
+      },
+      {
+        "family": "Bachetti",
+        "given": "Matteo"
+      },
+      {
+        "family": "Günther",
+        "given": "H. Moritz"
+      },
+      {
+        "family": "Aldcroft",
+        "given": "Thomas L."
+      },
+      {
+        "family": "Alvarado-Montes",
+        "given": "Jaime A."
+      },
+      {
+        "family": "Archibald",
+        "given": "Anne M."
+      },
+      {
+        "family": "Bódi",
+        "given": "Attila"
+      },
+      {
+        "family": "Bapat",
+        "given": "Shreyas"
+      },
+      {
+        "family": "Barentsen",
+        "given": "Geert"
+      },
+      {
+        "family": "Bazán",
+        "given": "Juanjo"
+      },
+      {
+        "family": "Biswas",
+        "given": "Manish"
+      },
+      {
+        "family": "Boquien",
+        "given": "Médéric"
+      },
+      {
+        "family": "Burke",
+        "given": "D. J."
+      },
+      {
+        "family": "Cara",
+        "given": "Daria"
+      },
+      {
+        "family": "Cara",
+        "given": "Mihai"
+      },
+      {
+        "family": "Conroy",
+        "given": "Kyle E."
+      },
+      {
+        "family": "Conseil",
+        "given": "Simon"
+      },
+      {
+        "family": "Craig",
+        "given": "Matthew W."
+      },
+      {
+        "family": "Cross",
+        "given": "Robert M."
+      },
+      {
+        "family": "Cruz",
+        "given": "Kelle L."
+      },
+      {
+        "family": "D’Eugenio",
+        "given": "Francesco"
+      },
+      {
+        "family": "Dencheva",
+        "given": "Nadia"
+      },
+      {
+        "family": "Devillepoix",
+        "given": "Hadrien A. R."
+      },
+      {
+        "family": "Dietrich",
+        "given": "Jörg P."
+      },
+      {
+        "family": "Eigenbrot",
+        "given": "Arthur Davis"
+      },
+      {
+        "family": "Erben",
+        "given": "Thomas"
+      },
+      {
+        "family": "Ferreira",
+        "given": "Leonardo"
+      },
+      {
+        "family": "Foreman-Mackey",
+        "given": "Daniel"
+      },
+      {
+        "family": "Fox",
+        "given": "Ryan"
+      },
+      {
+        "family": "Freij",
+        "given": "Nabil"
+      },
+      {
+        "family": "Garg",
+        "given": "Suyog"
+      },
+      {
+        "family": "Geda",
+        "given": "Robel"
+      },
+      {
+        "family": "Glattly",
+        "given": "Lauren"
+      },
+      {
+        "family": "Gondhalekar",
+        "given": "Yash"
+      },
+      {
+        "family": "Gordon",
+        "given": "Karl D."
+      },
+      {
+        "family": "Grant",
+        "given": "David"
+      },
+      {
+        "family": "Greenfield",
+        "given": "Perry"
+      },
+      {
+        "family": "Groener",
+        "given": "Austen M."
+      },
+      {
+        "family": "Guest",
+        "given": "Steve"
+      },
+      {
+        "family": "Gurovich",
+        "given": "Sebastian"
+      },
+      {
+        "family": "Handberg",
+        "given": "Rasmus"
+      },
+      {
+        "family": "Hart",
+        "given": "Akeem"
+      },
+      {
+        "family": "Hatfield-Dodds",
+        "given": "Zac"
+      },
+      {
+        "family": "Homeier",
+        "given": "Derek"
+      },
+      {
+        "family": "Hosseinzadeh",
+        "given": "Griffin"
+      },
+      {
+        "family": "Jenness",
+        "given": "Tim"
+      },
+      {
+        "family": "Jones",
+        "given": "Craig K."
+      },
+      {
+        "family": "Joseph",
+        "given": "Prajwel"
+      },
+      {
+        "family": "Kalmbach",
+        "given": "J. Bryce"
+      },
+      {
+        "family": "Karamehmetoglu",
+        "given": "Emir"
+      },
+      {
+        "family": "Kałuszyński",
+        "given": "Mikołaj"
+      },
+      {
+        "family": "Kelley",
+        "given": "Michael S. P."
+      },
+      {
+        "family": "Kern",
+        "given": "Nicholas"
+      },
+      {
+        "family": "Kerzendorf",
+        "given": "Wolfgang E."
+      },
+      {
+        "family": "Koch",
+        "given": "Eric W."
+      },
+      {
+        "family": "Kulumani",
+        "given": "Shankar"
+      },
+      {
+        "family": "Lee",
+        "given": "Antony"
+      },
+      {
+        "family": "Ly",
+        "given": "Chun"
+      },
+      {
+        "family": "Ma",
+        "given": "Zhiyuan"
+      },
+      {
+        "family": "MacBride",
+        "given": "Conor"
+      },
+      {
+        "family": "Maljaars",
+        "given": "Jakob M."
+      },
+      {
+        "family": "Muna",
+        "given": "Demitri"
+      },
+      {
+        "family": "Murphy",
+        "given": "N. A."
+      },
+      {
+        "family": "Norman",
+        "given": "Henrik"
+      },
+      {
+        "family": "O’Steen",
+        "given": "Richard"
+      },
+      {
+        "family": "Oman",
+        "given": "Kyle A."
+      },
+      {
+        "family": "Pacifici",
+        "given": "Camilla"
+      },
+      {
+        "family": "Pascual",
+        "given": "Sergio"
+      },
+      {
+        "family": "Pascual-Granado",
+        "given": "J."
+      },
+      {
+        "family": "Patil",
+        "given": "Rohit R."
+      },
+      {
+        "family": "Perren",
+        "given": "Gabriel I."
+      },
+      {
+        "family": "Pickering",
+        "given": "Timothy E."
+      },
+      {
+        "family": "Rastogi",
+        "given": "Tanuj"
+      },
+      {
+        "family": "Roulston",
+        "given": "Benjamin R."
+      },
+      {
+        "family": "Ryan",
+        "given": "Daniel F."
+      },
+      {
+        "family": "Rykoff",
+        "given": "Eli S."
+      },
+      {
+        "family": "Sabater",
+        "given": "Jose"
+      },
+      {
+        "family": "Sakurikar",
+        "given": "Parikshit"
+      },
+      {
+        "family": "Salgado",
+        "given": "Jesús"
+      },
+      {
+        "family": "Sanghi",
+        "given": "Aniket"
+      },
+      {
+        "family": "Saunders",
+        "given": "Nicholas"
+      },
+      {
+        "family": "Savchenko",
+        "given": "Volodymyr"
+      },
+      {
+        "family": "Schwardt",
+        "given": "Ludwig"
+      },
+      {
+        "family": "Seifert-Eckert",
+        "given": "Michael"
+      },
+      {
+        "family": "Shih",
+        "given": "Albert Y."
+      },
+      {
+        "family": "Jain",
+        "given": "Anany Shrey"
+      },
+      {
+        "family": "Shukla",
+        "given": "Gyanendra"
+      },
+      {
+        "family": "Sick",
+        "given": "Jonathan"
+      },
+      {
+        "family": "Simpson",
+        "given": "Chris"
+      },
+      {
+        "family": "Singanamalla",
+        "given": "Sudheesh"
+      },
+      {
+        "family": "Singer",
+        "given": "Leo P."
+      },
+      {
+        "family": "Singhal",
+        "given": "Jaladh"
+      },
+      {
+        "family": "Sinha",
+        "given": "Manodeep"
+      },
+      {
+        "family": "Sipőcz",
+        "given": "Brigitta M."
+      },
+      {
+        "family": "Spitler",
+        "given": "Lee R."
+      },
+      {
+        "family": "Stansby",
+        "given": "David"
+      },
+      {
+        "family": "Streicher",
+        "given": "Ole"
+      },
+      {
+        "family": "Šumak",
+        "given": "Jani"
+      },
+      {
+        "family": "Swinbank",
+        "given": "John D."
+      },
+      {
+        "family": "Taranu",
+        "given": "Dan S."
+      },
+      {
+        "family": "Tewary",
+        "given": "Nikita"
+      },
+      {
+        "family": "Tremblay",
+        "given": "Grant R."
+      },
+      {
+        "family": "Val-Borro",
+        "given": "Miguel",
+        "non-dropping-particle": "de"
+      },
+      {
+        "family": "Van Kooten",
+        "given": "Samuel J."
+      },
+      {
+        "family": "Vasović",
+        "given": "Zlatan"
+      },
+      {
+        "family": "Verma",
+        "given": "Shresth"
+      },
+      {
+        "family": "Miranda Cardoso",
+        "given": "José Vinı́cius",
+        "non-dropping-particle": "de"
+      },
+      {
+        "family": "Williams",
+        "given": "Peter K. G."
+      },
+      {
+        "family": "Wilson",
+        "given": "Tom J."
+      },
+      {
+        "family": "Winkel",
+        "given": "Benjamin"
+      },
+      {
+        "family": "Wood-Vasey",
+        "given": "W. M."
+      },
+      {
+        "family": "Xue",
+        "given": "Rui"
+      },
+      {
+        "family": "Yoachim",
+        "given": "Peter"
+      },
+      {
+        "family": "Zhang",
+        "given": "Chen"
+      },
+      {
+        "family": "Zonca",
+        "given": "Andrea"
+      },
+      {
+        "literal": "Astropy Project Contributors"
+      }
+    ],
+    "container-title": "",
+    "id": "XobbtsFq",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          8
+        ]
+      ]
+    },
+    "keyword": "Astronomy software, Open source software, Astronomy data analysis, 1855, 1866, 1858, Astrophysics - Instrumentation and Methods for Astrophysics",
+    "page": "167",
+    "title": "The Astropy Project: Sustaining and Growing a Community-oriented Open-source Project and the Latest Major Release (v5.0) of the Core Package",
+    "type": "article-journal",
+    "volume": "935",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: astropy5"
+  },
+  {
     "id": "zRE8zhVC",
     "author": [
       {
