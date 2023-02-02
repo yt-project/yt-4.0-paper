@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/yt-project/yt-4.0-paper/tree/gh-pages) branch hosts the contents of this directory at <https://yt-project.github.io/yt-4.0-paper/>.
-The permalink for this webpage version is <https://yt-project.github.io/yt-4.0-paper/v/c7e1af1d69c0287224bdff9d5ae07045903dc274/>.
+The permalink for this webpage version is <https://yt-project.github.io/yt-4.0-paper/v/98b2c4b8821ac83ff242fe664030d8b4ab089cd7/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://yt-project.github.io/yt-4.0-paper/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`c7e1af1d69c0287224bdff9d5ae07045903dc274`](https://github.com/yt-project/yt-4.0-paper/commit/c7e1af1d69c0287224bdff9d5ae07045903dc274).
+[`98b2c4b8821ac83ff242fe664030d8b4ab089cd7`](https://github.com/yt-project/yt-4.0-paper/commit/98b2c4b8821ac83ff242fe664030d8b4ab089cd7).

@@ -26,7 +26,7 @@
   <meta name="author" content="Andrew Myers" />
   <meta name="author" content="Alex Gurvich" />
   <meta name="author" content="Add Yourself" />
-  <meta name="dcterms.date" content="2023-02-01" />
+  <meta name="dcterms.date" content="2023-02-02" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Introducing yt 4.0: Analysis and Visualization of Volumetric Data</title>
   <style>
@@ -128,8 +128,8 @@
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-02-01" />
-  <meta name="citation_publication_date" content="2023-02-01" />
+  <meta name="dc.date" content="2023-02-02" />
+  <meta name="citation_publication_date" content="2023-02-02" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -213,9 +213,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/c7e1af1d69c0287224bdff9d5ae07045903dc274/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/c7e1af1d69c0287224bdff9d5ae07045903dc274/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/c7e1af1d69c0287224bdff9d5ae07045903dc274/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/98b2c4b8821ac83ff242fe664030d8b4ab089cd7/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/98b2c4b8821ac83ff242fe664030d8b4ab089cd7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/98b2c4b8821ac83ff242fe664030d8b4ab089cd7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -301,10 +301,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-4.0-paper/v/c7e1af1d69c0287224bdff9d5ae07045903dc274/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-4.0-paper/v/98b2c4b8821ac83ff242fe664030d8b4ab089cd7/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-4.0-paper/tree/c7e1af1d69c0287224bdff9d5ae07045903dc274">yt-project/yt-4.0-paper@c7e1af1</a>
-on February 1, 2023.
+from <a href="https://github.com/yt-project/yt-4.0-paper/tree/98b2c4b8821ac83ff242fe664030d8b4ab089cd7">yt-project/yt-4.0-paper@98b2c4b</a>
+on February 2, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -2733,6 +2733,35 @@ Many of these are developed by yt contributors, typically using the <a href="htt
 <code>pastel</code> was designed by Tune Kamae, and was previously referred to as <code>kamae</code>.</p>
 <h3 id="enhanced-error-messages">Enhanced Error Messages</h3>
 <h3 id="jupyter-integration">Jupyter Integration</h3>
+<p>Project Jupyter is an overarching term for a collection of related projects that provide an extensive, end-to-end suite for the user experience of developing code and narrative, as described in depth in (among other papers) <span class="citation" data-cites="lOgtbiQz">[<a href="#ref-lOgtbiQz" role="doc-biblioref">97</a>]</span> and <span class="citation" data-cites="16Nvi8gCt">[<a href="#ref-16Nvi8gCt" role="doc-biblioref">98</a>]</span>.
+While many in the yt community utilize yt through python scripts executed on the command line or through submission queues on high-performance computing resources, a large fraction utilize Jupyter Notebooks for their data exploration.
+In addition to enhancements in the user interface for unmodified Python libraries, Jupyter provides opportunities for libraries and applications to provide rich, enhanced interfaces with widgets, styling of text, complex layout and in-line visualizations.
+An important aspect of Project Jupyter is the flexibility of the kernel system, which mediates communication between a frontend (often a web browser, but also a command-line application or native GUI) and a execution kernel, which can be running locally or on a remote resource.
+This allows individuals to utilize a local web browser and execute their operations on remote resources; by means of its flexible transport layer, images and the like can be passed back to the web browser <em>inline</em> with the code that generated them, greatly speeding the process of examining and manipulating data.
+For users of high-performance resources to which they do not have physical access, having visualizations inline with code can be transformative; rather than having toe <code>scp</code> or <code>rsync</code> plots back and forth to inspect, they are available with no additional steps.
+Among the many different advantages that working in a Jupyter (Notebook) environment offers, this is perhaps the one that is the “stickiest” for researchers accustomed to working on systems without GUI toolkits installed by default, and the one that has led to the widespread adoption of Jupyter.
+IPython, a Python-specific Jupyter subproject, also provides a number of quality-of-life improvements, such as tab-completion and “magic” commands that modify the interpretation and execution of code.</p>
+<p>Under the broad umbrella of Project Jupyter is the <a href="https://github.com/jupyter-widgets/ipywidgets/"><code>ipywidgets</code></a> project.
+The <code>ipywidgets</code> project provides GUI elements that are displayed in Jupyter Notebooks that are generated and represented by kernel-side Python code.
+This allows a Python project to expose deeper information or interactive functionality without writing non-Python code, and also manages the data transport between the display and the kernel.</p>
+<p>yt takes advantage of some of these facilities, particularly in those areas where users have in the past struggled with discoverability.
+yt utilizes IPython tab-completion for field access on data objects, which greatly decreases the likelihood of typos for field <em>types</em> as well as field <em>names</em>.
+This is generated on a per-dataset basis, to ensure that the fields are all specifically available for each individual dataset.
+Providing tab-completion reduces the need for users to look up the full collection of fields (sorted by field type) before referencing them.
+Because yt provides <em>so many</em> fields, in many cases with similar names, this substantially reduces the likelihood of typos and errors.</p>
+<p>In addition to tab-completion, yt utilizes <code>ipywidgets</code> in two specific places.
+The first of these is in display of three-element numerical fields; while this may seem like a rather niche application, these typically show up as properties of datasets that require unit conversion into meaningful values.
+Many simulation codes in astrophysics, for instance, normalize the indexing units and then apply unit conversions to physical units.
+All three-element numeric arrays associated with units are displayed as three (read-only) input boxes and a drop-down for unit conversion.</p>
+<p>The other area that widgets are provided is in the field system.
+Navigating the available fields (even mediated by tab-completion) can be overwhelming, and more importantly, ensuring that a field definition matches the expectations of a researcher is critical.
+The fields widget, displayed whenever the <code>fields</code> attribute of a dataset is displayed, allows exploration of the field definitions, including the underlying source code, the expected units, display names, and so forth.
+Because many of the fields in yt are defined programmatically, it also attempts to resolve variables defined in a closure.
+For example, if the fields <code>momentum_x</code>, <code>momentum_y</code> and <code>momentum_z</code> are defined in a loop over the available axes (<code>x</code>, <code>y</code>, <code>z</code>), the source code explorer will attempt to show the loop variable’s current value for each definition.</p>
+<p>These are the built-in widgets in yt; in addition to these, the <a href="https://github.com/yt-project/widgyts"><code>widgyts</code></a> package (described in <span class="citation" data-cites="v58DzoTC">[<a href="#ref-v58DzoTC" role="doc-biblioref">3</a>]</span>) provides a number of additional widgets.
+Following the publication of its paper, it has expanded to include not only webassembly-based pixelization routines (to create in-browser ‘slippy maps’ of 2D data) but also PyThreeJS-based dataset exploration of simulations.
+Packaging this separately from yt provides the opportunity for faster development and more experimental usage of external packages, but also greatly reduces discoverability and utilization.
+We are exploring options for encouraging its uptake, particularly as we anticipate it will continue to grow and provide additional functionality.</p>
 <h2 id="halo-finding-and-catalogs">Halo-Finding and Catalogs</h2>
 <h2 id="scaling-and-parallelism">Scaling and Parallelism</h2>
 <h3 id="performance-of-operations">Performance of Operations</h3>
@@ -2750,24 +2779,24 @@ In contrast to the analysis modules, which have typically been built as extensio
 In some cases, <code>yt</code> is also an <em>optional</em> dependency for the package.
 In most cases, these are described in detail elsewhere, and citations to that external information are included here.</p>
 <h3 id="trident">Trident</h3>
-<p>Trident <span class="citation" data-cites="1DgKJy4lE">[<a href="#ref-1DgKJy4lE" role="doc-biblioref">97</a>]</span> is a Python-based open-source tool for post-processing hydrodynamical simulations to produce synthetic absorption spectra and related data.
+<p>Trident <span class="citation" data-cites="1DgKJy4lE">[<a href="#ref-1DgKJy4lE" role="doc-biblioref">99</a>]</span> is a Python-based open-source tool for post-processing hydrodynamical simulations to produce synthetic absorption spectra and related data.
 In many ways, Trident is the first external package that utilizes <code>yt</code> to provide data access and numerical operations, but then builds on those to develop detailed, astrophysically-aware systems for processing and analyzing that data.</p>
 <h3 id="powderday">Powderday</h3>
-<p>Powderday <span class="citation" data-cites="g9AYex8L 1CgEbr6CQ">[<a href="#ref-g9AYex8L" role="doc-biblioref">98</a>,<a href="#ref-1CgEbr6CQ" role="doc-biblioref">99</a>]</span> is an open source package connecting <code>yt</code>, population synthesis modules and the monte carlo radiation transport code Hyperion <span class="citation" data-cites="6dD1NLpJ">[<a href="#ref-6dD1NLpJ" role="doc-biblioref">100</a>]</span> to develop synthetic observations of galaxies from astrophysics simulations.
+<p>Powderday <span class="citation" data-cites="g9AYex8L 1CgEbr6CQ">[<a href="#ref-g9AYex8L" role="doc-biblioref">100</a>,<a href="#ref-1CgEbr6CQ" role="doc-biblioref">101</a>]</span> is an open source package connecting <code>yt</code>, population synthesis modules and the monte carlo radiation transport code Hyperion <span class="citation" data-cites="6dD1NLpJ">[<a href="#ref-6dD1NLpJ" role="doc-biblioref">102</a>]</span> to develop synthetic observations of galaxies from astrophysics simulations.
 Powderday uses <code>yt</code> to read and transform data, including high-fidelity gridding of SPH particles into an octree form, to prepare galaxy simulations to be processed.
 Currently Powderday uses the Arepo, Enzo, Gadget, Gizmo, and Tipsy front ends to read in simulation results, and convert them to a common format in preparation for dust radiative transfer (using <code>unyt</code> to ensure common units).
 Plans are in place to employ the wide range of front ends available in yt to broaden the applicability of powderday to a wider range of galaxy simulations.</p>
 <h3 id="ytree">ytree</h3>
-<p>Building on <code>yt</code> for access to halo catalogs, and implementing a similar system for derived fields as applied to graph datasets, ytree <span class="citation" data-cites="VB3RIyxd">[<a href="#ref-VB3RIyxd" role="doc-biblioref">101</a>]</span> is a system for analyzing merger trees from analysis of dark matter halos in cosmological simulations.</p>
+<p>Building on <code>yt</code> for access to halo catalogs, and implementing a similar system for derived fields as applied to graph datasets, ytree <span class="citation" data-cites="VB3RIyxd">[<a href="#ref-VB3RIyxd" role="doc-biblioref">103</a>]</span> is a system for analyzing merger trees from analysis of dark matter halos in cosmological simulations.</p>
 <p>ytree provides flexibility in determining the path that a given analysis takes through the graph of merger trees; for instance, it enables the user to select if they wish to follow the “most massive” progenitor halo backwards in time, or even to set their own criteria for this.
 Connecting this to the raw, unprocessed data from the simulation (such as the unsampled particle or cell content that comprises the halos) allows researchers to deepen and guide their analysis based on the physical characteristics of the merger history.</p>
 <h3 id="pyxsim">pyxsim</h3>
-<p>pyXSIM <span class="citation" data-cites="N2QcMTPv">[<a href="#ref-N2QcMTPv" role="doc-biblioref">102</a>]</span> is a python package for simulating X-ray observations from astrophysical sources.
-It implements the PHOX algorithm <span class="citation" data-cites="gJwEappY nty3AM0C">[<a href="#ref-gJwEappY" role="doc-biblioref">103</a>,<a href="#ref-nty3AM0C" role="doc-biblioref">104</a>]</span> and is implemented to support grid-based codes, particle-based codes, and even data constructed from scratch in numpy arrays.
+<p>pyXSIM <span class="citation" data-cites="N2QcMTPv">[<a href="#ref-N2QcMTPv" role="doc-biblioref">104</a>]</span> is a python package for simulating X-ray observations from astrophysical sources.
+It implements the PHOX algorithm <span class="citation" data-cites="gJwEappY nty3AM0C">[<a href="#ref-gJwEappY" role="doc-biblioref">105</a>,<a href="#ref-nty3AM0C" role="doc-biblioref">106</a>]</span> and is implemented to support grid-based codes, particle-based codes, and even data constructed from scratch in numpy arrays.
 pyXSIM has been used to create synthetic observations from current and upcoming space telescopes.</p>
 <h3 id="ytini">ytini</h3>
 <p>While <code>yt</code> has functionality for volume rendering, it provides far from the scene-control, composition and camera positioning necessary for “cinematic visualization.”
-The tool ytini <span class="citation" data-cites="3Gi4Hs1H">[<a href="#ref-3Gi4Hs1H" role="doc-biblioref">105</a>]</span> serves as an intermediary between <code>yt</code> and the visualization platform Houdini, often used for special effects and visual arts in industry and professional production environments.
+The tool ytini <span class="citation" data-cites="3Gi4Hs1H">[<a href="#ref-3Gi4Hs1H" role="doc-biblioref">107</a>]</span> serves as an intermediary between <code>yt</code> and the visualization platform Houdini, often used for special effects and visual arts in industry and professional production environments.
 ytini was developed to ease the process of converting data from simulation format into one suitable for production teams to utilize in Houdini and other visual effects software, and has been designed to enable deeper collaboration between researchers and visualization and outreach experts.</p>
 <h2 id="future-directions">Future Directions</h2>
 <h2 id="sec:sustainability">Sustainability</h2>
@@ -2780,7 +2809,7 @@ However, at the risk of belaboring a point that has been well-explored elsewhere
 <p>A tension exists, however, between support of an existing project and the support of new projects in an ecosystem.
 By supporting an existing project, resources can tend to become concentrated; conversely, if a project supports a broader research agenda, that resource concentration can result in greater effort-multipliers for individuals who utilize the project.
 We’re aware of this tension in yt; in fact, while yt has been grant-supported, most of the grant development has gone to a very small number of groups.
-This grant funding has been provided through the National Science Foundation, the Gordon and Betty Moore Foundation, the Department of Energy, the Chan Zuckerberg Initiative and other sources. [<span class="citation" data-cites="1AQkLoGRL">[<a href="#ref-1AQkLoGRL" role="doc-biblioref">106</a>]</span>, <span class="citation" data-cites="JmcaooMA">[<a href="#ref-JmcaooMA" role="doc-biblioref">107</a>]</span>, <span class="citation" data-cites="GSJFOpai">[<a href="#ref-GSJFOpai" role="doc-biblioref">108</a>]</span>.
+This grant funding has been provided through the National Science Foundation, the Gordon and Betty Moore Foundation, the Department of Energy, the Chan Zuckerberg Initiative and other sources. [<span class="citation" data-cites="1AQkLoGRL">[<a href="#ref-1AQkLoGRL" role="doc-biblioref">108</a>]</span>, <span class="citation" data-cites="JmcaooMA">[<a href="#ref-JmcaooMA" role="doc-biblioref">109</a>]</span>, <span class="citation" data-cites="GSJFOpai">[<a href="#ref-GSJFOpai" role="doc-biblioref">110</a>]</span>.
 Grants have supported the development of new features, including specific functionality for analysis routines and support for non-astronomical domains.</p>
 <p>Into each of these grants has been explicit support for community building, constituted by the development of documentation, videos, and tutorials, as well as mentoring of new contributors and shepherding the growth of the project through code review and issue management.
 While this does provide support for individuals who can provide dedicated, thoughtful attention to code review and bug reports, it is, quite frankly, insufficient without the engagement of non-funded community members who contribute their time and energy.</p>
@@ -2803,7 +2832,7 @@ At the same time, the safe guards provided by this can help to ensure stability 
 <h3 id="project-maintenance">Project Maintenance</h3>
 <p>In addition to development of new features, the correction of problems or updates to old behavior are also critical to the sustained usage and applicability of a project.
 In this category of “bug fixes” we certainly include faults or problems with yt itself, but it’s also important to note that in many cases, we can also use this category to describe improvements in behavior that bring the results greater accuracy or precision.</p>
-<p>It is tough to estimate the cost of bug fixes, in terms of labor or in terms of community member attrition, but <span class="citation" data-cites="LRQOJg18">[<a href="#ref-LRQOJg18" role="doc-biblioref">109</a>]</span> suggests that large, established projects on github may spend up to 40% of their time on bugfixes rather than new features.
+<p>It is tough to estimate the cost of bug fixes, in terms of labor or in terms of community member attrition, but <span class="citation" data-cites="LRQOJg18">[<a href="#ref-LRQOJg18" role="doc-biblioref">111</a>]</span> suggests that large, established projects on github may spend up to 40% of their time on bugfixes rather than new features.
 While we have not been able to verify this, examining the cadence of bug fix releases versus new feature releases suggests that this is indeed the case for yt as well.</p>
 <p>Maintenance and bug fixes are critical to developing yt as a community-focused code.
 The damage that can be done by ignoring a bug report, dismissing a suggestion, or outright rejecting proposed fixes is real, and can have measurable impact on community cohesion and growth.
@@ -2838,7 +2867,7 @@ Accepting and supporting these different types of development is critical for a 
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
 <div id="ref-cTN2TQIL" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Python utilities for Manubot: Manuscripts, open and automated</strong> <div class="csl-block">Manubot</div> (2023-01-30) <a href="https://github.com/manubot/manubot">https://github.com/manubot/manubot</a></div>
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Python utilities for Manubot: Manuscripts, open and automated</strong> <div class="csl-block">Manubot</div> (2023-02-02) <a href="https://github.com/manubot/manubot">https://github.com/manubot/manubot</a></div>
 </div>
 <div id="ref-1GOm01ggN" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA</strong> <div class="csl-block">Matthew J Turk, Britton D Smith, Jeffrey S Oishi, Stephen Skory, Samuel W Skillman, Tom Abel, Michael L Norman</div> <em>The Astrophysical Journal Supplement Series</em> (2010-12-28) <a href="https://doi.org/ft6md2">https://doi.org/ft6md2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1088/0067-0049/192/1/9">10.1088/0067-0049/192/1/9</a></div></div>
@@ -3125,44 +3154,50 @@ Accepting and supporting these different types of development is critical for a 
 <div id="ref-1DeF7kDPM" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">96. </div><div class="csl-right-inline"><strong>matplotlib/matplotlib: REL: v3.7.0rc1</strong> <div class="csl-block">Thomas A Caswell, Antony Lee, Elliott Sales De Andrade, Michael Droettboom, Tim Hoffmann, Jody Klymak, John Hunter, Eric Firing, David Stansby, Nelle Varoquaux, … Nikita Kniazev</div> <em>Zenodo</em> (2023-01-25) <a href="https://doi.org/grqcmh">https://doi.org/grqcmh</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.7570264">10.5281/zenodo.7570264</a></div></div>
 </div>
+<div id="ref-lOgtbiQz" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">97. </div><div class="csl-right-inline"><strong>Jupyter: Thinking and Storytelling With Code and Data</strong> <div class="csl-block">Brian E Granger, Fernando Perez</div> <em>Computing in Science &amp;amp; Engineering</em> (2021-03-01) <a href="https://doi.org/gjkwx2">https://doi.org/gjkwx2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/mcse.2021.3059263">10.1109/mcse.2021.3059263</a></div></div>
+</div>
+<div id="ref-16Nvi8gCt" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">98. </div><div class="csl-right-inline"><strong>Jupyter notebooks ? A publishing format for reproducible computational workflows</strong> <div class="csl-block">Thomas Kluyver, Benjamin Ragan-Kelley, Fernando Pérez, Brian Granger, Matthias Bussonnier, Jonathan Frederic, Kyle Kelley, Jessica Hamrick, Jason Grout, Sylvain Corlay, … Jupyter development team</div> <em>Positioning and power in academic publishing: Players, agents and agendas</em> (2016) <a href="https://eprints.soton.ac.uk/403913/">https://eprints.soton.ac.uk/403913/</a></div>
+</div>
 <div id="ref-1DgKJy4lE" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">97. </div><div class="csl-right-inline"><strong>Trident: A Universal Tool for Generating Synthetic Absorption Spectra from Astrophysical Simulations</strong> <div class="csl-block">Cameron B Hummels, Britton D Smith, Devin W Silvia</div> <em>The Astrophysical Journal</em> (2017-09-20) <a href="https://doi.org/gcx4th">https://doi.org/gcx4th</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/aa7e2d">10.3847/1538-4357/aa7e2d</a></div></div>
+<div class="csl-left-margin">99. </div><div class="csl-right-inline"><strong>Trident: A Universal Tool for Generating Synthetic Absorption Spectra from Astrophysical Simulations</strong> <div class="csl-block">Cameron B Hummels, Britton D Smith, Devin W Silvia</div> <em>The Astrophysical Journal</em> (2017-09-20) <a href="https://doi.org/gcx4th">https://doi.org/gcx4th</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4357/aa7e2d">10.3847/1538-4357/aa7e2d</a></div></div>
 </div>
 <div id="ref-g9AYex8L" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">98. </div><div class="csl-right-inline"><strong>powderday: Dust Radiative Transfer for Galaxy Simulations</strong> <div class="csl-block">Desika Narayanan, Matthew J Turk, Thomas Robitaille, Ashley J Kelly, BConnor McClellan, Ray S Sharma, Prerak Garg, Matthew Abruzzo, Ena Choi, Charlie Conroy, … John H Wise</div> <em>The Astrophysical Journal Supplement Series</em> (2021-01-13) <a href="https://doi.org/gpxcx8">https://doi.org/gpxcx8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4365/abc487">10.3847/1538-4365/abc487</a></div></div>
+<div class="csl-left-margin">100. </div><div class="csl-right-inline"><strong>powderday: Dust Radiative Transfer for Galaxy Simulations</strong> <div class="csl-block">Desika Narayanan, Matthew J Turk, Thomas Robitaille, Ashley J Kelly, BConnor McClellan, Ray S Sharma, Prerak Garg, Matthew Abruzzo, Ena Choi, Charlie Conroy, … John H Wise</div> <em>The Astrophysical Journal Supplement Series</em> (2021-01-13) <a href="https://doi.org/gpxcx8">https://doi.org/gpxcx8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3847/1538-4365/abc487">10.3847/1538-4365/abc487</a></div></div>
 </div>
 <div id="ref-1CgEbr6CQ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">99. </div><div class="csl-right-inline"><strong>The formation of submillimetre-bright galaxies from gas infall over a billion years</strong> <div class="csl-block">Desika Narayanan, Matthew Turk, Robert Feldmann, Thomas Robitaille, Philip Hopkins, Robert Thompson, Christopher Hayward, David Ball, Claude-André Faucher-Giguère, Dušan Kereš</div> <em>Nature</em> (2015-09-23) <a href="https://doi.org/f7r445">https://doi.org/f7r445</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nature15383">10.1038/nature15383</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26399829">26399829</a></div></div>
+<div class="csl-left-margin">101. </div><div class="csl-right-inline"><strong>The formation of submillimetre-bright galaxies from gas infall over a billion years</strong> <div class="csl-block">Desika Narayanan, Matthew Turk, Robert Feldmann, Thomas Robitaille, Philip Hopkins, Robert Thompson, Christopher Hayward, David Ball, Claude-André Faucher-Giguère, Dušan Kereš</div> <em>Nature</em> (2015-09-23) <a href="https://doi.org/f7r445">https://doi.org/f7r445</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nature15383">10.1038/nature15383</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26399829">26399829</a></div></div>
 </div>
 <div id="ref-6dD1NLpJ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">100. </div><div class="csl-right-inline"><strong>HYPERION: an open-source parallelized three-dimensional dust continuum radiative transfer code</strong> <div class="csl-block">TP Robitaille</div> <em>Astronomy &amp;amp; Astrophysics</em> (2011-12) <a href="https://doi.org/ckp63w">https://doi.org/ckp63w</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1051/0004-6361/201117150">10.1051/0004-6361/201117150</a></div></div>
+<div class="csl-left-margin">102. </div><div class="csl-right-inline"><strong>HYPERION: an open-source parallelized three-dimensional dust continuum radiative transfer code</strong> <div class="csl-block">TP Robitaille</div> <em>Astronomy &amp;amp; Astrophysics</em> (2011-12) <a href="https://doi.org/ckp63w">https://doi.org/ckp63w</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1051/0004-6361/201117150">10.1051/0004-6361/201117150</a></div></div>
 </div>
 <div id="ref-VB3RIyxd" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">101. </div><div class="csl-right-inline"><strong>Ytree: Merger-Tree Toolkit</strong> <div class="csl-block">Britton Smith, Meagan Lang</div> <em>Zenodo</em> (2018-02-16) <a href="https://doi.org/gcx4x2">https://doi.org/gcx4x2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a></div></div>
+<div class="csl-left-margin">103. </div><div class="csl-right-inline"><strong>Ytree: Merger-Tree Toolkit</strong> <div class="csl-block">Britton Smith, Meagan Lang</div> <em>Zenodo</em> (2018-02-16) <a href="https://doi.org/gcx4x2">https://doi.org/gcx4x2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.1174374">10.5281/zenodo.1174374</a></div></div>
 </div>
 <div id="ref-N2QcMTPv" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">102. </div><div class="csl-right-inline"><strong>Simulating X-ray Observations with Python</strong> <div class="csl-block">John ZuHone, Veronica Biffi, Eric Hallman, Scott Randall, Adam Foster, Christian Schmid</div> <em>Proceedings of the Python in Science Conference</em> (2014) <a href="https://doi.org/gpxcx7">https://doi.org/gpxcx7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.25080/majora-14bd3278-010">10.25080/majora-14bd3278-010</a></div></div>
+<div class="csl-left-margin">104. </div><div class="csl-right-inline"><strong>Simulating X-ray Observations with Python</strong> <div class="csl-block">John ZuHone, Veronica Biffi, Eric Hallman, Scott Randall, Adam Foster, Christian Schmid</div> <em>Proceedings of the Python in Science Conference</em> (2014) <a href="https://doi.org/gpxcx7">https://doi.org/gpxcx7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.25080/majora-14bd3278-010">10.25080/majora-14bd3278-010</a></div></div>
 </div>
 <div id="ref-gJwEappY" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">103. </div><div class="csl-right-inline"><strong>Observing simulated galaxy clusters with phox: a novel X-ray photon simulator</strong> <div class="csl-block">V Biffi, K Dolag, H Böhringer, G Lemson</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2012-01) <a href="https://doi.org/fz38qm">https://doi.org/fz38qm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1111/j.1365-2966.2011.20278.x">10.1111/j.1365-2966.2011.20278.x</a></div></div>
+<div class="csl-left-margin">105. </div><div class="csl-right-inline"><strong>Observing simulated galaxy clusters with phox: a novel X-ray photon simulator</strong> <div class="csl-block">V Biffi, K Dolag, H Böhringer, G Lemson</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2012-01) <a href="https://doi.org/fz38qm">https://doi.org/fz38qm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1111/j.1365-2966.2011.20278.x">10.1111/j.1365-2966.2011.20278.x</a></div></div>
 </div>
 <div id="ref-nty3AM0C" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">104. </div><div class="csl-right-inline"><strong>Investigating the velocity structure and X-ray observable properties of simulated galaxy clusters with PHOX</strong> <div class="csl-block">V Biffi, K Dolag, H Böhringer</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2012-10-29) <a href="https://doi.org/f42dgv">https://doi.org/f42dgv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/sts120">10.1093/mnras/sts120</a></div></div>
+<div class="csl-left-margin">106. </div><div class="csl-right-inline"><strong>Investigating the velocity structure and X-ray observable properties of simulated galaxy clusters with PHOX</strong> <div class="csl-block">V Biffi, K Dolag, H Böhringer</div> <em>Monthly Notices of the Royal Astronomical Society</em> (2012-10-29) <a href="https://doi.org/f42dgv">https://doi.org/f42dgv</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/mnras/sts120">10.1093/mnras/sts120</a></div></div>
 </div>
 <div id="ref-3Gi4Hs1H" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">105. </div><div class="csl-right-inline"><strong>Houdini for Astrophysical Visualization</strong> <div class="csl-block">JP Naiman, Kalina Borkiewicz, AJ Christensen</div> <em>Publications of the Astronomical Society of the Pacific</em> (2017-04-18) <a href="https://doi.org/f96hcf">https://doi.org/f96hcf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1088/1538-3873/aa51b3">10.1088/1538-3873/aa51b3</a></div></div>
+<div class="csl-left-margin">107. </div><div class="csl-right-inline"><strong>Houdini for Astrophysical Visualization</strong> <div class="csl-block">JP Naiman, Kalina Borkiewicz, AJ Christensen</div> <em>Publications of the Astronomical Society of the Pacific</em> (2017-04-18) <a href="https://doi.org/f96hcf">https://doi.org/f96hcf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1088/1538-3873/aa51b3">10.1088/1538-3873/aa51b3</a></div></div>
 </div>
 <div id="ref-1AQkLoGRL" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">106. </div><div class="csl-right-inline"><strong>SI2-SSI: Inquiry-Focused Volumetric Data Analysis Across Scientific Domains: Sustaining and Expanding the yt Community</strong> <div class="csl-block">Matthew Turk, Nathan Goldbaum, 0000-0002-6226-7689, Leigh Orf</div> <em>figshare</em> (2017) <a href="https://doi.org/grmmjc">https://doi.org/grmmjc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.6084/m9.figshare.2061465.v1">10.6084/m9.figshare.2061465.v1</a></div></div>
+<div class="csl-left-margin">108. </div><div class="csl-right-inline"><strong>SI2-SSI: Inquiry-Focused Volumetric Data Analysis Across Scientific Domains: Sustaining and Expanding the yt Community</strong> <div class="csl-block">Matthew Turk, Nathan Goldbaum, 0000-0002-6226-7689, Leigh Orf</div> <em>figshare</em> (2017) <a href="https://doi.org/grmmjc">https://doi.org/grmmjc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.6084/m9.figshare.2061465.v1">10.6084/m9.figshare.2061465.v1</a></div></div>
 </div>
 <div id="ref-JmcaooMA" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">107. </div><div class="csl-right-inline"><strong>SI2-SSE: yt: Reusable Components for Simulating, Analyzing and Visualizing Astrophysical Systems</strong> <div class="csl-block">Matthew Turk</div> <em>figshare</em> (2014) <a href="https://doi.org/grmmjd">https://doi.org/grmmjd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.6084/m9.figshare.909413.v1">10.6084/m9.figshare.909413.v1</a></div></div>
+<div class="csl-left-margin">109. </div><div class="csl-right-inline"><strong>SI2-SSE: yt: Reusable Components for Simulating, Analyzing and Visualizing Astrophysical Systems</strong> <div class="csl-block">Matthew Turk</div> <em>figshare</em> (2014) <a href="https://doi.org/grmmjd">https://doi.org/grmmjd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.6084/m9.figshare.909413.v1">10.6084/m9.figshare.909413.v1</a></div></div>
 </div>
 <div id="ref-GSJFOpai" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">108. </div><div class="csl-right-inline"><strong>Collaborative research: Elements: Shared data-delivery infrastructure to enable discovery with the next generation of Dark Matter and Computational Astrophysics experiments</strong> <div class="csl-block">Amy Roberts, Matthew Turk</div> <em>Zenodo</em> (2020-10-28) <a href="https://doi.org/grmmjb">https://doi.org/grmmjb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.4158589">10.5281/zenodo.4158589</a></div></div>
+<div class="csl-left-margin">110. </div><div class="csl-right-inline"><strong>Collaborative research: Elements: Shared data-delivery infrastructure to enable discovery with the next generation of Dark Matter and Computational Astrophysics experiments</strong> <div class="csl-block">Amy Roberts, Matthew Turk</div> <em>Zenodo</em> (2020-10-28) <a href="https://doi.org/grmmjb">https://doi.org/grmmjb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.4158589">10.5281/zenodo.4158589</a></div></div>
 </div>
 <div id="ref-LRQOJg18" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">109. </div><div class="csl-right-inline"><strong>Corrective commit probability: a measure of the effort invested in bug fixing</strong> <div class="csl-block">Idan Amit, Dror G Feitelson</div> <em>Software Quality Journal</em> (2021-08-05) <a href="https://doi.org/grp6mj">https://doi.org/grp6mj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/s11219-021-09564-z">10.1007/s11219-021-09564-z</a></div></div>
+<div class="csl-left-margin">111. </div><div class="csl-right-inline"><strong>Corrective commit probability: a measure of the effort invested in bug fixing</strong> <div class="csl-block">Idan Amit, Dror G Feitelson</div> <em>Software Quality Journal</em> (2021-08-05) <a href="https://doi.org/grp6mj">https://doi.org/grp6mj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/s11219-021-09564-z">10.1007/s11219-021-09564-z</a></div></div>
 </div>
 </div>
 <h2 id="conclusions">Conclusions</h2>
