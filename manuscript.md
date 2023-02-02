@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-02-01'
+date-meta: '2023-02-02'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -42,8 +42,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-02-01" />
-  <meta name="citation_publication_date" content="2023-02-01" />
+  <meta name="dc.date" content="2023-02-02" />
+  <meta name="citation_publication_date" content="2023-02-02" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -127,9 +127,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/c7e1af1d69c0287224bdff9d5ae07045903dc274/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/c7e1af1d69c0287224bdff9d5ae07045903dc274/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/c7e1af1d69c0287224bdff9d5ae07045903dc274/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/98b2c4b8821ac83ff242fe664030d8b4ab089cd7/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/98b2c4b8821ac83ff242fe664030d8b4ab089cd7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/98b2c4b8821ac83ff242fe664030d8b4ab089cd7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -137,6 +137,7 @@ header-includes: |-
   <meta name="theme-color" content="#ad1457" />
   <!-- end Manubot generated metadata -->
 bibliography:
+- content/manual-references.bib
 - content/manual-references.json
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
@@ -151,10 +152,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/c7e1af1d69c0287224bdff9d5ae07045903dc274/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/98b2c4b8821ac83ff242fe664030d8b4ab089cd7/))
 was automatically generated
-from [yt-project/yt-4.0-paper@c7e1af1](https://github.com/yt-project/yt-4.0-paper/tree/c7e1af1d69c0287224bdff9d5ae07045903dc274)
-on February 1, 2023.
+from [yt-project/yt-4.0-paper@98b2c4b](https://github.com/yt-project/yt-4.0-paper/tree/98b2c4b8821ac83ff242fe664030d8b4ab089cd7)
+on February 2, 2023.
 </em></small>
 
 ## Authors
@@ -3039,6 +3040,40 @@ We note in particular that in previous versions of yt, `algae` was known as `bds
 
 ### Jupyter Integration
 
+Project Jupyter is an overarching term for a collection of related projects that provide an extensive, end-to-end suite for the user experience of developing code and narrative, as described in depth in (among other papers) @doi:10.1109/MCSE.2021.3059263 and @soton403913.
+While many in the yt community utilize yt through python scripts executed on the command line or through submission queues on high-performance computing resources, a large fraction utilize Jupyter Notebooks for their data exploration.
+In addition to enhancements in the user interface for unmodified Python libraries, Jupyter provides opportunities for libraries and applications to provide rich, enhanced interfaces with widgets, styling of text, complex layout and in-line visualizations.
+An important aspect of Project Jupyter is the flexibility of the kernel system, which mediates communication between a frontend (often a web browser, but also a command-line application or native GUI) and a execution kernel, which can be running locally or on a remote resource.
+This allows individuals to utilize a local web browser and execute their operations on remote resources; by means of its flexible transport layer, images and the like can be passed back to the web browser *inline* with the code that generated them, greatly speeding the process of examining and manipulating data.
+For users of high-performance resources to which they do not have physical access, having visualizations inline with code can be transformative; rather than having toe `scp` or `rsync` plots back and forth to inspect, they are available with no additional steps.
+Among the many different advantages that working in a Jupyter (Notebook) environment offers, this is perhaps the one that is the "stickiest" for researchers accustomed to working on systems without GUI toolkits installed by default, and the one that has led to the widespread adoption of Jupyter.
+IPython, a Python-specific Jupyter subproject, also provides a number of quality-of-life improvements, such as tab-completion and "magic" commands that modify the interpretation and execution of code.
+
+Under the broad umbrella of Project Jupyter is the [`ipywidgets`](https://github.com/jupyter-widgets/ipywidgets/) project.
+The `ipywidgets` project provides GUI elements that are displayed in Jupyter Notebooks that are generated and represented by kernel-side Python code.
+This allows a Python project to expose deeper information or interactive functionality without writing non-Python code, and also manages the data transport between the display and the kernel.
+
+yt takes advantage of some of these facilities, particularly in those areas where users have in the past struggled with discoverability.
+yt utilizes IPython tab-completion for field access on data objects, which greatly decreases the likelihood of typos for field *types* as well as field *names*.
+This is generated on a per-dataset basis, to ensure that the fields are all specifically available for each individual dataset.
+Providing tab-completion reduces the need for users to look up the full collection of fields (sorted by field type) before referencing them.
+Because yt provides *so many* fields, in many cases with similar names, this substantially reduces the likelihood of typos and errors.
+
+In addition to tab-completion, yt utilizes `ipywidgets` in two specific places.
+The first of these is in display of three-element numerical fields; while this may seem like a rather niche application, these typically show up as properties of datasets that require unit conversion into meaningful values.
+Many simulation codes in astrophysics, for instance, normalize the indexing units and then apply unit conversions to physical units.
+All three-element numeric arrays associated with units are displayed as three (read-only) input boxes and a drop-down for unit conversion.
+
+The other area that widgets are provided is in the field system.
+Navigating the available fields (even mediated by tab-completion) can be overwhelming, and more importantly, ensuring that a field definition matches the expectations of a researcher is critical.
+The fields widget, displayed whenever the `fields` attribute of a dataset is displayed, allows exploration of the field definitions, including the underlying source code, the expected units, display names, and so forth.
+Because many of the fields in yt are defined programmatically, it also attempts to resolve variables defined in a closure.
+For example, if the fields `momentum_x`, `momentum_y` and `momentum_z` are defined in a loop over the available axes (`x`, `y`, `z`), the source code explorer will attempt to show the loop variable's current value for each definition.
+
+These are the built-in widgets in yt; in addition to these, the [`widgyts`](https://github.com/yt-project/widgyts) package (described in @doi:10.21105/joss.01774) provides a number of additional widgets.
+Following the publication of its paper, it has expanded to include not only webassembly-based pixelization routines (to create in-browser 'slippy maps' of 2D data) but also PyThreeJS-based dataset exploration of simulations.
+Packaging this separately from yt provides the opportunity for faster development and more experimental usage of external packages, but also greatly reduces discoverability and utilization.
+We are exploring options for encouraging its uptake, particularly as we anticipate it will continue to grow and provide additional functionality.
 
 
 ## Halo-Finding and Catalogs
