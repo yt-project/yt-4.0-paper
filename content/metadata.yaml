@@ -199,6 +199,15 @@ authors:
     affiliations: []
     funders: []
   -
+    github: jborrow
+    name: Josh Borrow
+    initials: JB
+    orcid: 0000-0002-1327-1921
+    email: josh@joshborrow.com
+    affiliations:
+      - Department of Physics, Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA
+    funders: []
+   -
     github: yournamehere
     name: Add Yourself
     initials: YOU
