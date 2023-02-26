@@ -207,7 +207,16 @@ authors:
     affiliations:
       - Department of Physics, Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA
     funders: []
-   -
+  -
+    github: qobilidop
+    name: Bili Dong
+    initials: BD
+    orcid: 0000-0001-5081-9039
+    email: qobilidop@gmail.com
+    affiliations:
+      - Department of Physics, Center for Astrophysics and Space Sciences, University of California at San Diego
+    funders: []
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
