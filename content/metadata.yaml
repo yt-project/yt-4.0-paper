@@ -207,7 +207,16 @@ authors:
     affiliations:
       - Department of Physics, Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA
     funders: []
-   -
+  -
+    github: Cadair
+    name: Stuart Mumford
+    initials: SN
+    orcid: 0000-0003-4217-4642
+    email: stuart@cadair.com
+    affiliations:
+      - Aperio Software Ltd, UK
+    funders: []
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
