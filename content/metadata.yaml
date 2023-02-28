@@ -207,7 +207,16 @@ authors:
     affiliations:
       - Department of Physics, Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA
     funders: []
-   -
+  -
+    github: olebole
+    name: Ole Streicher
+    initials: OS
+    orcid: 0000-0001-7751-1843
+    email: ole@aip.de
+    affiliations:
+      - Leibniz Institute for Astrophysics Potsdam (AIP)
+    funders: []
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
