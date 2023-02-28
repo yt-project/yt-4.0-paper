@@ -31,6 +31,7 @@ author-meta:
 - Josh Borrow
 - Bili Dong
 - Ole Streicher
+- Stuart Mumford
 - Add Yourself
 manubot-fail-on-errors: true
 citekey-aliases:
@@ -130,6 +131,9 @@ header-includes: |-
   <meta name="citation_author" content="Ole Streicher" />
   <meta name="citation_author_institution" content="Leibniz Institute for Astrophysics Potsdam (AIP)" />
   <meta name="citation_author_orcid" content="0000-0001-7751-1843" />
+  <meta name="citation_author" content="Stuart Mumford" />
+  <meta name="citation_author_institution" content="Aperio Software Ltd, UK" />
+  <meta name="citation_author_orcid" content="0000-0003-4217-4642" />
   <meta name="citation_author" content="Add Yourself" />
   <meta name="citation_author_institution" content="Your University" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
@@ -139,9 +143,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/2b4ae57241a02f164af0ed622a2e7d6ba2e15a9e/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/2b4ae57241a02f164af0ed622a2e7d6ba2e15a9e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/2b4ae57241a02f164af0ed622a2e7d6ba2e15a9e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/596b96bcaf8ea3cf6c7ef8a93a75815bcad89b1b/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/596b96bcaf8ea3cf6c7ef8a93a75815bcad89b1b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/596b96bcaf8ea3cf6c7ef8a93a75815bcad89b1b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -164,9 +168,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/2b4ae57241a02f164af0ed622a2e7d6ba2e15a9e/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/596b96bcaf8ea3cf6c7ef8a93a75815bcad89b1b/))
 was automatically generated
-from [yt-project/yt-4.0-paper@2b4ae57](https://github.com/yt-project/yt-4.0-paper/tree/2b4ae57241a02f164af0ed622a2e7d6ba2e15a9e)
+from [yt-project/yt-4.0-paper@596b96b](https://github.com/yt-project/yt-4.0-paper/tree/596b96bcaf8ea3cf6c7ef8a93a75815bcad89b1b)
 on February 28, 2023.
 </em></small>
 
@@ -395,6 +399,15 @@ on February 28, 2023.
     [olebole](https://github.com/olebole)<br>
   <small>
      Leibniz Institute for Astrophysics Potsdam (AIP)
+  </small>
+
++ **Stuart Mumford**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-4217-4642](https://orcid.org/0000-0003-4217-4642)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [Cadair](https://github.com/Cadair)<br>
+  <small>
+     Aperio Software Ltd, UK
   </small>
 
 + **Add Yourself**<br>
