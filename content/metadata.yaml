@@ -242,6 +242,15 @@ authors:
       - Leibniz Institute for Astrophysics Potsdam (AIP)
     funders: []
   -
+    github: Cadair
+    name: Stuart Mumford
+    initials: SM=======
+    orcid: 0000-0003-4217-4642
+    email: stuart@cadair.com
+    affiliations:
+      - Aperio Software Ltd, UK
+    funders: []
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
