@@ -7,10 +7,10 @@ AMR
 AMRKDTree
 AMRVAC
 APIs
-AREPO
+arepo
 arraylike
-artio
-astro
+ARTIO
+Astro
 astrojaz
 astrophysically
 astropy
@@ -20,9 +20,9 @@ backporting
 Bili
 binarily
 Bitbucket
-Bitwise
+bitwise
 bookkeepping
-bool
+Bool
 Borro
 boxlib
 Britton
@@ -43,11 +43,11 @@ collisional
 colocation
 colorbar
 colorbars
-Colormap
+colormap
 colormapping
 colormaps
 colorspace
-Comoving
+comoving
 conda
 connectedness
 coord
@@ -120,6 +120,7 @@ IPAG
 IPython
 isocontour
 isocontours
+jborrow
 jcoughlin
 Ji
 jisuoqing
@@ -129,6 +130,7 @@ jzuhone
 Kacper
 Kamae
 Kaser
+Kavli
 kD
 Kelton
 keltonhalbert
@@ -200,6 +202,7 @@ proj
 pytest
 PyThreeJS
 pyXSIM
+qobilidop
 quadtree
 radiative
 RADMC
@@ -260,7 +263,7 @@ Urbana
 userbase
 Volker
 vr
-WebAssembly
+webassembly
 Widgyts
 Xarthisius
 XXXX

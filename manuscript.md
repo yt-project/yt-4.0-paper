@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-02-02'
+date-meta: '2023-02-28'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -28,6 +28,8 @@ author-meta:
 - Stephanie Tonnesen
 - Andrew Myers
 - Alex Gurvich
+- Josh Borrow
+- Bili Dong
 - Add Yourself
 manubot-fail-on-errors: true
 citekey-aliases:
@@ -42,8 +44,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-02-02" />
-  <meta name="citation_publication_date" content="2023-02-02" />
+  <meta name="dc.date" content="2023-02-28" />
+  <meta name="citation_publication_date" content="2023-02-28" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -118,6 +120,12 @@ header-includes: |-
   <meta name="citation_author_orcid" content="0000-0001-8427-8330" />
   <meta name="citation_author" content="Alex Gurvich" />
   <meta name="citation_author_orcid" content="0000-0002-6145-3674" />
+  <meta name="citation_author" content="Josh Borrow" />
+  <meta name="citation_author_institution" content="Department of Physics, Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA" />
+  <meta name="citation_author_orcid" content="0000-0002-1327-1921" />
+  <meta name="citation_author" content="Bili Dong" />
+  <meta name="citation_author_institution" content="Department of Physics, Center for Astrophysics and Space Sciences, University of California at San Diego" />
+  <meta name="citation_author_orcid" content="0000-0001-5081-9039" />
   <meta name="citation_author" content="Add Yourself" />
   <meta name="citation_author_institution" content="Your University" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
@@ -127,9 +135,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/437cd61d1c9c733c381a7b796f05b68f0dcb1ac4/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/437cd61d1c9c733c381a7b796f05b68f0dcb1ac4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/437cd61d1c9c733c381a7b796f05b68f0dcb1ac4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/81423d32d5b122aefee7b3c094c611ecb06d7d85/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/81423d32d5b122aefee7b3c094c611ecb06d7d85/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/81423d32d5b122aefee7b3c094c611ecb06d7d85/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -152,10 +160,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/437cd61d1c9c733c381a7b796f05b68f0dcb1ac4/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/81423d32d5b122aefee7b3c094c611ecb06d7d85/))
 was automatically generated
-from [yt-project/yt-4.0-paper@437cd61](https://github.com/yt-project/yt-4.0-paper/tree/437cd61d1c9c733c381a7b796f05b68f0dcb1ac4)
-on February 2, 2023.
+from [yt-project/yt-4.0-paper@81423d3](https://github.com/yt-project/yt-4.0-paper/tree/81423d32d5b122aefee7b3c094c611ecb06d7d85)
+on February 28, 2023.
 </em></small>
 
 ## Authors
@@ -356,6 +364,24 @@ on February 2, 2023.
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [agurvich](https://github.com/agurvich)<br>
   <small>
+  </small>
+
++ **Josh Borrow**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-1327-1921](https://orcid.org/0000-0002-1327-1921)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [jborrow](https://github.com/jborrow)<br>
+  <small>
+     Department of Physics, Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA
+  </small>
+
++ **Bili Dong**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0001-5081-9039](https://orcid.org/0000-0001-5081-9039)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [qobilidop](https://github.com/qobilidop)<br>
+  <small>
+     Department of Physics, Center for Astrophysics and Space Sciences, University of California at San Diego
   </small>
 
 + **Add Yourself**<br>
