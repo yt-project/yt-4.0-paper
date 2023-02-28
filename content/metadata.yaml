@@ -59,7 +59,15 @@ authors:
     orcid: 0000-0002-3817-8133
     email: chummels@gmail.com
     affiliations:
-       - Department of Theoretical Astrophysics, California Institute of Technology
+       - Department of Theoretical Astrophysics, California Institute of Technology  -
+    github: olebole
+    name: Ole Streicher
+    initials: OS
+    orcid: 0000-0001-7751-1843
+    email: ole@aip.de
+    affiliations:
+      - Leibniz Institute for Astrophysics Potsdam (AIP)
+    funders: []
     funders: []
   -
     github: jisuoqing
@@ -110,7 +118,15 @@ authors:
     name: Miguel de Val-Borro
     initials: MVB
     orcid: 000-0002-0455-9384
-    email: mdeval@psi.edu
+    email: mdeval@psi.edu  -
+    github: olebole
+    name: Ole Streicher
+    initials: OS
+    orcid: 0000-0001-7751-1843
+    email: ole@aip.de
+    affiliations:
+      - Leibniz Institute for Astrophysics Potsdam (AIP)
+    funders: []
     affiliations:
       - Planetary Science Institute
   -
@@ -215,6 +231,15 @@ authors:
     email: qobilidop@gmail.com
     affiliations:
       - Department of Physics, Center for Astrophysics and Space Sciences, University of California at San Diego
+    funders: []
+  -
+    github: olebole
+    name: Ole Streicher
+    initials: OS
+    orcid: 0000-0001-7751-1843
+    email: ole@aip.de
+    affiliations:
+      - Leibniz Institute for Astrophysics Potsdam (AIP)
     funders: []
   -
     github: yournamehere
