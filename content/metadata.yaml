@@ -251,6 +251,15 @@ authors:
       - Aperio Software Ltd, UK
     funders: []
   -
+    github: bwkeller
+    name: Benjamin Keller
+    initials: BWK
+    orcid: 0000-0002-9642-7193
+    email: bkeller1@memphis.edu
+    affiliations:
+      - Department of Physics and Materials Science, University of Memphis
+    funders: []
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
