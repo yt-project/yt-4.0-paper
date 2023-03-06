@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-02-28'
+date-meta: '2023-03-06'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -32,6 +32,7 @@ author-meta:
 - Bili Dong
 - Ole Streicher
 - Stuart Mumford
+- Benjamin Keller
 - Add Yourself
 manubot-fail-on-errors: true
 citekey-aliases:
@@ -46,8 +47,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-02-28" />
-  <meta name="citation_publication_date" content="2023-02-28" />
+  <meta name="dc.date" content="2023-03-06" />
+  <meta name="citation_publication_date" content="2023-03-06" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -134,6 +135,9 @@ header-includes: |-
   <meta name="citation_author" content="Stuart Mumford" />
   <meta name="citation_author_institution" content="Aperio Software Ltd, UK" />
   <meta name="citation_author_orcid" content="0000-0003-4217-4642" />
+  <meta name="citation_author" content="Benjamin Keller" />
+  <meta name="citation_author_institution" content="Department of Physics and Materials Science, University of Memphis" />
+  <meta name="citation_author_orcid" content="0000-0002-9642-7193" />
   <meta name="citation_author" content="Add Yourself" />
   <meta name="citation_author_institution" content="Your University" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
@@ -143,9 +147,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/596b96bcaf8ea3cf6c7ef8a93a75815bcad89b1b/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/596b96bcaf8ea3cf6c7ef8a93a75815bcad89b1b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/596b96bcaf8ea3cf6c7ef8a93a75815bcad89b1b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/8d7f93ec46b23ee506f8b64166e0f4a91d575e98/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/8d7f93ec46b23ee506f8b64166e0f4a91d575e98/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/8d7f93ec46b23ee506f8b64166e0f4a91d575e98/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -168,10 +172,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/596b96bcaf8ea3cf6c7ef8a93a75815bcad89b1b/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/8d7f93ec46b23ee506f8b64166e0f4a91d575e98/))
 was automatically generated
-from [yt-project/yt-4.0-paper@596b96b](https://github.com/yt-project/yt-4.0-paper/tree/596b96bcaf8ea3cf6c7ef8a93a75815bcad89b1b)
-on February 28, 2023.
+from [yt-project/yt-4.0-paper@8d7f93e](https://github.com/yt-project/yt-4.0-paper/tree/8d7f93ec46b23ee506f8b64166e0f4a91d575e98)
+on March 6, 2023.
 </em></small>
 
 ## Authors
@@ -408,6 +412,15 @@ on February 28, 2023.
     [Cadair](https://github.com/Cadair)<br>
   <small>
      Aperio Software Ltd, UK
+  </small>
+
++ **Benjamin Keller**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-9642-7193](https://orcid.org/0000-0002-9642-7193)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [bwkeller](https://github.com/bwkeller)<br>
+  <small>
+     Department of Physics and Materials Science, University of Memphis
   </small>
 
 + **Add Yourself**<br>
