@@ -7,7 +7,7 @@
       "manubot"
     ],
     "lang": "en-US",
-    "date-meta": "2023-03-06",
+    "date-meta": "2023-03-16",
     "author-meta": [
       "The yt Project",
       "Matthew Turk",
@@ -30,6 +30,36 @@
       "Stephanie Tonnesen",
       "Andrew Myers",
       "Alex Gurvich",
+      "Desika Narayanan",
+      "Samuel W. Skillman",
+      "Axel Huebl",
+      "Elliott Biondo",
+      "Andrew Wetzel",
+      "Clayton Strawn",
+      "Alexander Lindsay",
+      "Gabriel Altay",
+      "Erwin T. Lau",
+      "Aaron Smith",
+      "Ji-hoon Kim",
+      "Hsi-Yu Schive",
+      "Navaneeth S",
+      "Brian W. O'Shea",
+      "Tom Abel",
+      "Yash Gondhalekar",
+      "William J Gray",
+      "Nickolay Y. Gnedin",
+      "Cristian Joana",
+      "Benjamin B Thompson ",
+      "Yuan Li",
+      "Ryan Jeffrey Farber",
+      "Jonah M Miller",
+      "Michael Ryan",
+      "Devin W. Silvia",
+      "Robert Jackson",
+      "Kenz Arraki",
+      "Alankar Dutta",
+      "Ritali Ghosh",
+      "Shaokun Xie",
       "Josh Borrow",
       "Bili Dong",
       "Ole Streicher",
@@ -41,7 +71,7 @@
     "citekey-aliases": {
       "amrvac-paper": "doi:10.1016/S0010-4655(03)00139-5"
     },
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Introducing yt 4.0: Analysis and Visualization of Volumetric Data\" />\n<meta name=\"citation_title\" content=\"Introducing yt 4.0: Analysis and Visualization of Volumetric Data\" />\n<meta property=\"og:title\" content=\"Introducing yt 4.0: Analysis and Visualization of Volumetric Data\" />\n<meta property=\"twitter:title\" content=\"Introducing yt 4.0: Analysis and Visualization of Volumetric Data\" />\n<meta name=\"dc.date\" content=\"2023-03-06\" />\n<meta name=\"citation_publication_date\" content=\"2023-03-06\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"The yt Project\" />\n<meta name=\"citation_author_institution\" content=\"NumFOCUS\" />\n<meta name=\"twitter:creator\" content=\"@yt_astro\" />\n<meta name=\"citation_author\" content=\"Matthew Turk\" />\n<meta name=\"citation_author_institution\" content=\"School of Information Sciences, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_institution\" content=\"Department of Astronomy, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5294-0198\" />\n<meta name=\"twitter:creator\" content=\"@powersoffour\" />\n<meta name=\"citation_author\" content=\"Nathan J Goldbaum\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5557-267X\" />\n<meta name=\"twitter:creator\" content=\"@njgoldbaum\" />\n<meta name=\"citation_author\" content=\"John A. ZuHone\" />\n<meta name=\"citation_author_institution\" content=\"Harvard-Smithsonian Center for Astrophysics\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3175-2347\" />\n<meta name=\"twitter:creator\" content=\"@astrojaz\" />\n<meta name=\"citation_author\" content=\"Ole Streicher\" />\n<meta name=\"citation_author_institution\" content=\"Leibniz Institute for Astrophysics Potsdam (AIP)\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-7751-1843\" />\n<meta name=\"citation_author\" content=\"Suoqing Ji\" />\n<meta name=\"citation_author_institution\" content=\"Physics Department, University of California Santa Barbara\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9658-0588\" />\n<meta name=\"citation_author\" content=\"Meagan Lang\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2058-2816\" />\n<meta name=\"citation_author\" content=\"Madicken Munk\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0117-5366\" />\n<meta name=\"citation_author\" content=\"Britton Smith\" />\n<meta name=\"citation_author_institution\" content=\"University of Edinburgh\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6804-630X\" />\n<meta name=\"citation_author\" content=\"Kacper Kowalik\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1709-3744\" />\n<meta name=\"citation_author\" content=\"Ole Streicher\" />\n<meta name=\"citation_author_institution\" content=\"Planetary Science Institute\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-7751-1843\" />\n<meta name=\"citation_author\" content=\"Jared W. Coughlin\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-4373-4114\" />\n<meta name=\"citation_author\" content=\"Corentin Cadiou\" />\n<meta name=\"citation_author_institution\" content=\"Department of Physics and Astrophysics, University College London\" />\n<meta name=\"citation_author_institution\" content=\"Institut d&#39;Astrophysique de Paris\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2285-0332\" />\n<meta name=\"twitter:creator\" content=\"@cphyc\" />\n<meta name=\"citation_author\" content=\"Michael Zingale\" />\n<meta name=\"citation_author_institution\" content=\"Stony Brook University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8401-030X\" />\n<meta name=\"citation_author\" content=\"Leigh Orf\" />\n<meta name=\"citation_author_institution\" content=\"Space Science and Engineering Center, University of Wisconsin - Madison\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2677-6427\" />\n<meta name=\"citation_author\" content=\"Kelton Halbert\" />\n<meta name=\"citation_author_institution\" content=\"Cooperative Institute for Meteorological Satellite Studies, The University of Wisconsin, Madison\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6898-2731\" />\n<meta name=\"citation_author\" content=\"Clément Robert\" />\n<meta name=\"citation_author_institution\" content=\"Institut de Planétologie et d&#39;Astrophysique de Grenoble (IPAG), Université Grenoble Alpes, France\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8629-7068\" />\n<meta name=\"citation_author\" content=\"Christopher Havlin\" />\n<meta name=\"citation_author_institution\" content=\"School of Information Sciences, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0585-8236\" />\n<meta name=\"citation_author\" content=\"Stephanie Tonnesen\" />\n<meta name=\"citation_author_institution\" content=\"Center for Computational Astrophysics, Flatiron Institute\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-8710-9206\" />\n<meta name=\"citation_author\" content=\"Andrew Myers\" />\n<meta name=\"citation_author_institution\" content=\"Lawrence Berkeley National Laboratory\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8427-8330\" />\n<meta name=\"citation_author\" content=\"Alex Gurvich\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6145-3674\" />\n<meta name=\"citation_author\" content=\"Josh Borrow\" />\n<meta name=\"citation_author_institution\" content=\"Department of Physics, Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1327-1921\" />\n<meta name=\"citation_author\" content=\"Bili Dong\" />\n<meta name=\"citation_author_institution\" content=\"Department of Physics, Center for Astrophysics and Space Sciences, University of California at San Diego\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5081-9039\" />\n<meta name=\"citation_author\" content=\"Ole Streicher\" />\n<meta name=\"citation_author_institution\" content=\"Leibniz Institute for Astrophysics Potsdam (AIP)\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-7751-1843\" />\n<meta name=\"citation_author\" content=\"Stuart Mumford\" />\n<meta name=\"citation_author_institution\" content=\"Aperio Software Ltd, UK\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4217-4642\" />\n<meta name=\"citation_author\" content=\"Benjamin Keller\" />\n<meta name=\"citation_author_institution\" content=\"Department of Physics and Materials Science, University of Memphis\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-9642-7193\" />\n<meta name=\"citation_author\" content=\"Add Yourself\" />\n<meta name=\"citation_author_institution\" content=\"Your University\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://yt-project.github.io/yt-4.0-paper/\" />\n<meta property=\"og:url\" content=\"https://yt-project.github.io/yt-4.0-paper/\" />\n<meta property=\"twitter:url\" content=\"https://yt-project.github.io/yt-4.0-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://yt-project.github.io/yt-4.0-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://yt-project.github.io/yt-4.0-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://yt-project.github.io/yt-4.0-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://yt-project.github.io/yt-4.0-paper/v/8d7f93ec46b23ee506f8b64166e0f4a91d575e98/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://yt-project.github.io/yt-4.0-paper/v/8d7f93ec46b23ee506f8b64166e0f4a91d575e98/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://yt-project.github.io/yt-4.0-paper/v/8d7f93ec46b23ee506f8b64166e0f4a91d575e98/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"Introducing yt 4.0: Analysis and Visualization of Volumetric Data\" />\n<meta name=\"citation_title\" content=\"Introducing yt 4.0: Analysis and Visualization of Volumetric Data\" />\n<meta property=\"og:title\" content=\"Introducing yt 4.0: Analysis and Visualization of Volumetric Data\" />\n<meta property=\"twitter:title\" content=\"Introducing yt 4.0: Analysis and Visualization of Volumetric Data\" />\n<meta name=\"dc.date\" content=\"2023-03-16\" />\n<meta name=\"citation_publication_date\" content=\"2023-03-16\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"The yt Project\" />\n<meta name=\"citation_author_institution\" content=\"NumFOCUS\" />\n<meta name=\"twitter:creator\" content=\"@yt_astro\" />\n<meta name=\"citation_author\" content=\"Matthew Turk\" />\n<meta name=\"citation_author_institution\" content=\"School of Information Sciences, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_institution\" content=\"Department of Astronomy, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5294-0198\" />\n<meta name=\"twitter:creator\" content=\"@powersoffour\" />\n<meta name=\"citation_author\" content=\"Nathan J Goldbaum\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5557-267X\" />\n<meta name=\"twitter:creator\" content=\"@njgoldbaum\" />\n<meta name=\"citation_author\" content=\"John A. ZuHone\" />\n<meta name=\"citation_author_institution\" content=\"Harvard-Smithsonian Center for Astrophysics\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-3175-2347\" />\n<meta name=\"twitter:creator\" content=\"@astrojaz\" />\n<meta name=\"citation_author\" content=\"Ole Streicher\" />\n<meta name=\"citation_author_institution\" content=\"Leibniz Institute for Astrophysics Potsdam (AIP)\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-7751-1843\" />\n<meta name=\"citation_author\" content=\"Suoqing Ji\" />\n<meta name=\"citation_author_institution\" content=\"Physics Department, University of California Santa Barbara\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9658-0588\" />\n<meta name=\"citation_author\" content=\"Meagan Lang\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2058-2816\" />\n<meta name=\"citation_author\" content=\"Madicken Munk\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0117-5366\" />\n<meta name=\"citation_author\" content=\"Britton Smith\" />\n<meta name=\"citation_author_institution\" content=\"University of Edinburgh\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6804-630X\" />\n<meta name=\"citation_author\" content=\"Kacper Kowalik\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1709-3744\" />\n<meta name=\"citation_author\" content=\"Ole Streicher\" />\n<meta name=\"citation_author_institution\" content=\"Planetary Science Institute\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-7751-1843\" />\n<meta name=\"citation_author\" content=\"Jared W. Coughlin\" />\n<meta name=\"citation_author_institution\" content=\"National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-4373-4114\" />\n<meta name=\"citation_author\" content=\"Corentin Cadiou\" />\n<meta name=\"citation_author_institution\" content=\"Department of Physics and Astrophysics, University College London\" />\n<meta name=\"citation_author_institution\" content=\"Institut d&#39;Astrophysique de Paris\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2285-0332\" />\n<meta name=\"twitter:creator\" content=\"@cphyc\" />\n<meta name=\"citation_author\" content=\"Michael Zingale\" />\n<meta name=\"citation_author_institution\" content=\"Stony Brook University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8401-030X\" />\n<meta name=\"citation_author\" content=\"Leigh Orf\" />\n<meta name=\"citation_author_institution\" content=\"Space Science and Engineering Center, University of Wisconsin - Madison\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2677-6427\" />\n<meta name=\"citation_author\" content=\"Kelton Halbert\" />\n<meta name=\"citation_author_institution\" content=\"Cooperative Institute for Meteorological Satellite Studies, The University of Wisconsin, Madison\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6898-2731\" />\n<meta name=\"citation_author\" content=\"Clément Robert\" />\n<meta name=\"citation_author_institution\" content=\"Institut de Planétologie et d&#39;Astrophysique de Grenoble (IPAG), Université Grenoble Alpes, France\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8629-7068\" />\n<meta name=\"citation_author\" content=\"Christopher Havlin\" />\n<meta name=\"citation_author_institution\" content=\"School of Information Sciences, University of Illinois at Urbana-Champaign\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0585-8236\" />\n<meta name=\"citation_author\" content=\"Stephanie Tonnesen\" />\n<meta name=\"citation_author_institution\" content=\"Center for Computational Astrophysics, Flatiron Institute\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-8710-9206\" />\n<meta name=\"citation_author\" content=\"Andrew Myers\" />\n<meta name=\"citation_author_institution\" content=\"Lawrence Berkeley National Laboratory\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8427-8330\" />\n<meta name=\"citation_author\" content=\"Alex Gurvich\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6145-3674\" />\n<meta name=\"citation_author\" content=\"Desika Narayanan\" />\n<meta name=\"citation_author_institution\" content=\"Department of Astronomy, University of Florida, 211 Bryant Space Sciences Center, Gainesville, FL 32611 USA\" />\n<meta name=\"citation_author_institution\" content=\"University of Florida Informatics Institute, 432 Newell Drive, CISE Bldg E251, Gainesville, FL 32611\" />\n<meta name=\"citation_author_institution\" content=\"Cosmic Dawn Center at the Niels Bohr Institute, University of Copenhagen and DTU-Space, Technical University of Denmark\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-7064-4309\" />\n<meta name=\"citation_author\" content=\"Samuel W. Skillman\" />\n<meta name=\"citation_author_institution\" content=\"Outer Loop LLC\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-7626-522X\" />\n<meta name=\"citation_author\" content=\"Axel Huebl\" />\n<meta name=\"citation_author_institution\" content=\"Lawrence Berkeley National Laboratory\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-1943-7141\" />\n<meta name=\"citation_author\" content=\"Elliott Biondo\" />\n<meta name=\"citation_author_institution\" content=\"Oak Ridge National Laboratory\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-9088-1360\" />\n<meta name=\"citation_author\" content=\"Andrew Wetzel\" />\n<meta name=\"citation_author_institution\" content=\"University of California, Davis\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0603-8942\" />\n<meta name=\"citation_author\" content=\"Clayton Strawn\" />\n<meta name=\"citation_author_institution\" content=\"UC Santa Cruz\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9695-4017\" />\n<meta name=\"citation_author\" content=\"Alexander Lindsay\" />\n<meta name=\"citation_author_institution\" content=\"Idaho National Laboratory\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6988-2123\" />\n<meta name=\"citation_author\" content=\"Gabriel Altay\" />\n<meta name=\"citation_author_institution\" content=\"Free Agent\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-4120-2907\" />\n<meta name=\"citation_author\" content=\"Erwin T. Lau\" />\n<meta name=\"citation_author_institution\" content=\"Center for Astrophysics - Harvard &amp; Smithsonian\" />\n<meta name=\"citation_author_institution\" content=\"University of Miami\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8914-8885\" />\n<meta name=\"citation_author\" content=\"Aaron Smith\" />\n<meta name=\"citation_author_institution\" content=\"Center for Astrophysics - Harvard &amp; Smithsonian\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2838-9033\" />\n<meta name=\"citation_author\" content=\"Ji-hoon Kim\" />\n<meta name=\"citation_author_institution\" content=\"Center for Theoretical Physics, Seoul National University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4464-1160\" />\n<meta name=\"citation_author\" content=\"Hsi-Yu Schive\" />\n<meta name=\"citation_author_institution\" content=\"Institute of Astrophysics, National Taiwan University, Taipei 10617, Taiwan\" />\n<meta name=\"citation_author_institution\" content=\"Physics Division, National Center for Theoretical Sciences, Taipei 10617, Taiwan\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1249-279X\" />\n<meta name=\"citation_author\" content=\"Navaneeth S\" />\n<meta name=\"citation_author_institution\" content=\"Indian Institute of Technology Kharagpur\" />\n<meta name=\"citation_author_orcid\" content=\"0009-0007-6922-0369\" />\n<meta name=\"citation_author\" content=\"Brian W. O&#39;Shea\" />\n<meta name=\"citation_author_institution\" content=\"Michigan State University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-2786-0348\" />\n<meta name=\"citation_author\" content=\"Tom Abel\" />\n<meta name=\"citation_author_institution\" content=\"Kavli Institute for Particle Astrophysics and Cosmology, Stanford University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-5969-1251\" />\n<meta name=\"citation_author\" content=\"Yash Gondhalekar\" />\n<meta name=\"citation_author_institution\" content=\"Birla Institute of Technology and Science, Pilani, Sancoale, Goa 403726, India\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-6646-4225\" />\n<meta name=\"citation_author\" content=\"William J Gray\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-9014-3125\" />\n<meta name=\"citation_author\" content=\"Nickolay Y. Gnedin\" />\n<meta name=\"citation_author_institution\" content=\"Fermilab\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5925-4580\" />\n<meta name=\"citation_author\" content=\"Cristian Joana\" />\n<meta name=\"citation_author_institution\" content=\"Institute of theoretical physics, Chinese Academy of Science\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4642-3028\" />\n<meta name=\"citation_author\" content=\"Benjamin B Thompson \" />\n<meta name=\"citation_author_institution\" content=\"University of Central Lancashire \" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4383-9183\" />\n<meta name=\"citation_author\" content=\"Yuan Li\" />\n<meta name=\"citation_author_institution\" content=\"University of North Texas\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5262-6150\" />\n<meta name=\"citation_author\" content=\"Ryan Jeffrey Farber\" />\n<meta name=\"citation_author_institution\" content=\"Max Planck Institute for Astrophysics\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-0649-9055\" />\n<meta name=\"citation_author\" content=\"Jonah M Miller\" />\n<meta name=\"citation_author_institution\" content=\"Los Alamos National Laboratory\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-6432-7860\" />\n<meta name=\"citation_author\" content=\"Michael Ryan\" />\n<meta name=\"citation_author_institution\" content=\"Penn State University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-0378-5195\" />\n<meta name=\"citation_author\" content=\"Devin W. Silvia\" />\n<meta name=\"citation_author_institution\" content=\"Michigan State University\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-4109-9313\" />\n<meta name=\"citation_author\" content=\"Robert Jackson\" />\n<meta name=\"citation_author_institution\" content=\"Argonne National Laboratory\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-2518-1234\" />\n<meta name=\"citation_author\" content=\"Kenz Arraki\" />\n<meta name=\"citation_author_institution\" content=\"none\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3012-1167\" />\n<meta name=\"citation_author\" content=\"Alankar Dutta\" />\n<meta name=\"citation_author_institution\" content=\"Indian Institute of Science, Bangalore, India\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-9287-4033\" />\n<meta name=\"citation_author\" content=\"Ritali Ghosh\" />\n<meta name=\"citation_author_institution\" content=\"Indian Institute of Science\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8643-7104\" />\n<meta name=\"citation_author\" content=\"Shaokun Xie\" />\n<meta name=\"citation_author_institution\" content=\"Shanghai Astronomical Observatory, Chinese Academy of Sciences\" />\n<meta name=\"citation_author_institution\" content=\"School of Astronomy and Space Sciences, University of Chinese Academy of Sciences\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5624-6008\" />\n<meta name=\"citation_author\" content=\"Josh Borrow\" />\n<meta name=\"citation_author_institution\" content=\"Department of Physics, Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-1327-1921\" />\n<meta name=\"citation_author\" content=\"Bili Dong\" />\n<meta name=\"citation_author_institution\" content=\"Department of Physics, Center for Astrophysics and Space Sciences, University of California at San Diego\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5081-9039\" />\n<meta name=\"citation_author\" content=\"Ole Streicher\" />\n<meta name=\"citation_author_institution\" content=\"Leibniz Institute for Astrophysics Potsdam (AIP)\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-7751-1843\" />\n<meta name=\"citation_author\" content=\"Stuart Mumford\" />\n<meta name=\"citation_author_institution\" content=\"Aperio Software Ltd, UK\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-4217-4642\" />\n<meta name=\"citation_author\" content=\"Benjamin Keller\" />\n<meta name=\"citation_author_institution\" content=\"Department of Physics and Materials Science, University of Memphis\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-9642-7193\" />\n<meta name=\"citation_author\" content=\"Add Yourself\" />\n<meta name=\"citation_author_institution\" content=\"Your University\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://yt-project.github.io/yt-4.0-paper/\" />\n<meta property=\"og:url\" content=\"https://yt-project.github.io/yt-4.0-paper/\" />\n<meta property=\"twitter:url\" content=\"https://yt-project.github.io/yt-4.0-paper/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://yt-project.github.io/yt-4.0-paper/\" />\n<meta name=\"citation_pdf_url\" content=\"https://yt-project.github.io/yt-4.0-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://yt-project.github.io/yt-4.0-paper/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://yt-project.github.io/yt-4.0-paper/v/fb23d1d1efa19817c2d3ff7ce0246475c836b2b7/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://yt-project.github.io/yt-4.0-paper/v/fb23d1d1efa19817c2d3ff7ce0246475c836b2b7/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://yt-project.github.io/yt-4.0-paper/v/fb23d1d1efa19817c2d3ff7ce0246475c836b2b7/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
     "bibliography": [
       "content/manual-references.bib",
       "content/manual-references.json"
@@ -52,7 +82,7 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "March 6, 2023",
+    "date": "March 16, 2023",
     "randomize_author_order": false,
     "authors": [
       {
@@ -346,6 +376,432 @@
         "affiliation_numbers": []
       },
       {
+        "affiliations": [
+          "Department of Astronomy, University of Florida, 211 Bryant Space Sciences Center, Gainesville, FL 32611 USA",
+          "University of Florida Informatics Institute, 432 Newell Drive, CISE Bldg E251, Gainesville, FL 32611",
+          "Cosmic Dawn Center at the Niels Bohr Institute, University of Copenhagen and DTU-Space, Technical University of Denmark"
+        ],
+        "email": "desika.narayanan@gmail.com",
+        "funders": [],
+        "github": "dnarayanan",
+        "initials": "DN",
+        "name": "Desika Narayanan",
+        "orcid": "0000-0002-7064-4309",
+        "affiliation_numbers": [
+          18,
+          19,
+          20
+        ]
+      },
+      {
+        "affiliations": [
+          "Outer Loop LLC"
+        ],
+        "email": "samskillman@gmail.com",
+        "funders": [],
+        "github": "samskillman",
+        "initials": "SWS",
+        "name": "Samuel W. Skillman",
+        "orcid": "0000-0002-7626-522X",
+        "affiliation_numbers": [
+          21
+        ]
+      },
+      {
+        "affiliations": [
+          "Lawrence Berkeley National Laboratory"
+        ],
+        "email": "axelhuebl@lbl.gov",
+        "funders": [],
+        "github": "ax3l",
+        "initials": "AH",
+        "name": "Axel Huebl",
+        "orcid": "0000-0003-1943-7141",
+        "affiliation_numbers": [
+          17
+        ]
+      },
+      {
+        "affiliations": [
+          "Oak Ridge National Laboratory"
+        ],
+        "email": "veb@ornl.gov",
+        "funders": [],
+        "github": "elliottbiondo",
+        "initials": "EB",
+        "name": "Elliott Biondo",
+        "orcid": "0000-0002-9088-1360",
+        "affiliation_numbers": [
+          22
+        ]
+      },
+      {
+        "affiliations": [
+          "University of California, Davis"
+        ],
+        "email": "awetzel@ucdavis.edu",
+        "funders": [],
+        "github": "arwetzel",
+        "initials": "AW",
+        "name": "Andrew Wetzel",
+        "orcid": "0000-0003-0603-8942",
+        "affiliation_numbers": [
+          23
+        ]
+      },
+      {
+        "affiliations": [
+          "UC Santa Cruz"
+        ],
+        "email": "cjstrawn@ucsc.edu",
+        "funders": [],
+        "github": "claytonstrawn",
+        "initials": "CS",
+        "name": "Clayton Strawn",
+        "orcid": "0000-0001-9695-4017",
+        "affiliation_numbers": [
+          24
+        ]
+      },
+      {
+        "affiliations": [
+          "Idaho National Laboratory"
+        ],
+        "email": "alexander.lindsay@inl.gov",
+        "funders": [],
+        "github": "lindsayad",
+        "initials": "AL",
+        "name": "Alexander Lindsay",
+        "orcid": "0000-0002-6988-2123",
+        "affiliation_numbers": [
+          25
+        ]
+      },
+      {
+        "affiliations": [
+          "Free Agent"
+        ],
+        "email": "gabriel.altay@gmail.com",
+        "funders": [],
+        "github": "galtay",
+        "initials": "GA",
+        "name": "Gabriel Altay",
+        "orcid": "0000-0002-4120-2907",
+        "affiliation_numbers": [
+          26
+        ]
+      },
+      {
+        "affiliations": [
+          "Center for Astrophysics - Harvard & Smithsonian",
+          "University of Miami"
+        ],
+        "email": "ethlau@gmail.com",
+        "funders": [],
+        "github": "ethlau",
+        "initials": "ETL",
+        "name": "Erwin T. Lau",
+        "orcid": "0000-0001-8914-8885",
+        "affiliation_numbers": [
+          27,
+          28
+        ]
+      },
+      {
+        "affiliations": [
+          "Center for Astrophysics - Harvard & Smithsonian"
+        ],
+        "email": "aaron.smith@cfa.harvard.edu",
+        "funders": [],
+        "github": "astrosmith",
+        "initials": "AS",
+        "name": "Aaron Smith",
+        "orcid": "0000-0002-2838-9033",
+        "affiliation_numbers": [
+          27
+        ]
+      },
+      {
+        "affiliations": [
+          "Center for Theoretical Physics, Seoul National University"
+        ],
+        "email": "mornkr@snu.ac.kr",
+        "funders": [],
+        "github": "mornkr",
+        "initials": "JK",
+        "name": "Ji-hoon Kim",
+        "orcid": "0000-0003-4464-1160",
+        "affiliation_numbers": [
+          29
+        ]
+      },
+      {
+        "affiliations": [
+          "Institute of Astrophysics, National Taiwan University, Taipei 10617, Taiwan",
+          "Physics Division, National Center for Theoretical Sciences, Taipei 10617, Taiwan"
+        ],
+        "email": "hyschive@phys.ntu.edu.tw",
+        "funders": [],
+        "github": "hyschive",
+        "initials": "HS",
+        "name": "Hsi-Yu Schive",
+        "orcid": "0000-0002-1249-279X",
+        "affiliation_numbers": [
+          30,
+          31
+        ]
+      },
+      {
+        "affiliations": [
+          "Indian Institute of Technology Kharagpur"
+        ],
+        "email": "navaneeths1998@gmail.com",
+        "funders": [],
+        "github": "themousepotato",
+        "initials": "NS",
+        "name": "Navaneeth S",
+        "orcid": "0009-0007-6922-0369",
+        "affiliation_numbers": [
+          32
+        ]
+      },
+      {
+        "affiliations": [
+          "Michigan State University"
+        ],
+        "email": "oshea@msu.edu",
+        "funders": [],
+        "github": "bwoshea",
+        "initials": "BWO",
+        "name": "Brian W. O'Shea",
+        "orcid": "0000-0002-2786-0348",
+        "affiliation_numbers": [
+          33
+        ]
+      },
+      {
+        "affiliations": [
+          "Kavli Institute for Particle Astrophysics and Cosmology, Stanford University"
+        ],
+        "email": "tabel@stanford.edu",
+        "funders": [],
+        "github": "yipihey",
+        "initials": "TA",
+        "name": "Tom Abel",
+        "orcid": "0000-0002-5969-1251",
+        "affiliation_numbers": [
+          34
+        ]
+      },
+      {
+        "affiliations": [
+          "Birla Institute of Technology and Science, Pilani, Sancoale, Goa 403726, India"
+        ],
+        "email": "yashgondhalekar567@gmail.com",
+        "funders": [],
+        "github": "Yash-10",
+        "initials": "YG",
+        "name": "Yash Gondhalekar",
+        "orcid": "0000-0002-6646-4225",
+        "affiliation_numbers": [
+          35
+        ]
+      },
+      {
+        "affiliations": [],
+        "email": "graywilliamj@gmail.com",
+        "funders": [],
+        "github": "",
+        "initials": "WJG",
+        "name": "William J Gray",
+        "orcid": "0000-0001-9014-3125",
+        "affiliation_numbers": []
+      },
+      {
+        "affiliations": [
+          "Fermilab"
+        ],
+        "email": "gnedin@fnal.gov",
+        "funders": [],
+        "github": "ngnedin",
+        "initials": "NYG",
+        "name": "Nickolay Y. Gnedin",
+        "orcid": "0000-0001-5925-4580",
+        "affiliation_numbers": [
+          36
+        ]
+      },
+      {
+        "affiliations": [
+          "Institute of theoretical physics, Chinese Academy of Science"
+        ],
+        "email": "cristian.joana@itp.ac.cn",
+        "funders": [],
+        "github": "cjoana",
+        "initials": "CJ",
+        "name": "Cristian Joana",
+        "orcid": "0000-0003-4642-3028",
+        "affiliation_numbers": [
+          37
+        ]
+      },
+      {
+        "affiliations": [
+          "University of Central Lancashire "
+        ],
+        "email": "bthompson2090@gmail.com",
+        "funders": [],
+        "github": "cosmosquark",
+        "initials": "BBT",
+        "name": "Benjamin B Thompson ",
+        "orcid": "0000-0003-4383-9183",
+        "affiliation_numbers": [
+          38
+        ]
+      },
+      {
+        "affiliations": [
+          "University of North Texas"
+        ],
+        "email": "yuan.astro@gmail.com",
+        "funders": [],
+        "github": "",
+        "initials": "YL",
+        "name": "Yuan Li",
+        "orcid": "0000-0001-5262-6150",
+        "affiliation_numbers": [
+          39
+        ]
+      },
+      {
+        "affiliations": [
+          "Max Planck Institute for Astrophysics"
+        ],
+        "email": "rjfarber@umich.edu",
+        "funders": [],
+        "github": "rjfarber",
+        "initials": "RJF",
+        "name": "Ryan Jeffrey Farber",
+        "orcid": "0000-0002-0649-9055",
+        "affiliation_numbers": [
+          40
+        ]
+      },
+      {
+        "affiliations": [
+          "Los Alamos National Laboratory"
+        ],
+        "email": "jonahm@lanl.gov",
+        "funders": [],
+        "github": "Yurlungur",
+        "initials": "JMM",
+        "name": "Jonah M Miller",
+        "orcid": "0000-0001-6432-7860",
+        "affiliation_numbers": [
+          41
+        ]
+      },
+      {
+        "affiliations": [
+          "Penn State University"
+        ],
+        "email": "mzr55@psu.edu",
+        "funders": [],
+        "github": "mtryan83",
+        "initials": "MR",
+        "name": "Michael Ryan",
+        "orcid": "0000-0002-0378-5195",
+        "affiliation_numbers": [
+          42
+        ]
+      },
+      {
+        "affiliations": [
+          "Michigan State University"
+        ],
+        "email": "dsilvia@msu.edu",
+        "funders": [],
+        "github": "devinsilvia",
+        "initials": "DWS",
+        "name": "Devin W. Silvia",
+        "orcid": "0000-0002-4109-9313",
+        "affiliation_numbers": [
+          33
+        ]
+      },
+      {
+        "affiliations": [
+          "Argonne National Laboratory"
+        ],
+        "email": "rjackson@anl.gov",
+        "funders": [],
+        "github": "rcjackson",
+        "initials": "RJ",
+        "name": "Robert Jackson",
+        "orcid": "0000-0003-2518-1234",
+        "affiliation_numbers": [
+          43
+        ]
+      },
+      {
+        "affiliations": [
+          "none"
+        ],
+        "email": "karraki@gmail.com",
+        "funders": [],
+        "github": "karraki",
+        "initials": "KA",
+        "name": "Kenz Arraki",
+        "orcid": "0000-0002-3012-1167",
+        "affiliation_numbers": [
+          44
+        ]
+      },
+      {
+        "affiliations": [
+          "Indian Institute of Science, Bangalore, India"
+        ],
+        "email": "alankardutta@iisc.ac.in",
+        "funders": [],
+        "github": "dutta-alankar",
+        "initials": "AD",
+        "name": "Alankar Dutta",
+        "orcid": "0000-0002-9287-4033",
+        "affiliation_numbers": [
+          45
+        ]
+      },
+      {
+        "affiliations": [
+          "Indian Institute of Science"
+        ],
+        "email": "ritalighosh@iisc.ac.in",
+        "funders": [],
+        "github": "RitaliG",
+        "initials": "RG",
+        "name": "Ritali Ghosh",
+        "orcid": "0000-0001-8643-7104",
+        "affiliation_numbers": [
+          46
+        ]
+      },
+      {
+        "affiliations": [
+          "Shanghai Astronomical Observatory, Chinese Academy of Sciences",
+          "School of Astronomy and Space Sciences, University of Chinese Academy of Sciences"
+        ],
+        "email": "xshaokun@foxmail.com",
+        "funders": [],
+        "github": "xshaokun",
+        "initials": "SX",
+        "name": "Shaokun Xie",
+        "orcid": "0000-0001-5624-6008",
+        "affiliation_numbers": [
+          47,
+          48
+        ]
+      },
+      {
         "github": "jborrow",
         "name": "Josh Borrow",
         "initials": "JB",
@@ -356,7 +812,7 @@
         ],
         "funders": [],
         "affiliation_numbers": [
-          18
+          49
         ]
       },
       {
@@ -370,7 +826,7 @@
         ],
         "funders": [],
         "affiliation_numbers": [
-          19
+          50
         ]
       },
       {
@@ -398,7 +854,7 @@
         ],
         "funders": [],
         "affiliation_numbers": [
-          20
+          51
         ]
       },
       {
@@ -412,7 +868,7 @@
         ],
         "funders": [],
         "affiliation_numbers": [
-          21
+          52
         ]
       },
       {
@@ -428,7 +884,7 @@
           "Grant XXXXXXXX"
         ],
         "affiliation_numbers": [
-          22
+          53
         ]
       }
     ],
@@ -502,24 +958,148 @@
         "affiliation_number": 17
       },
       {
-        "affiliation": "Department of Physics, Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+        "affiliation": "Department of Astronomy, University of Florida, 211 Bryant Space Sciences Center, Gainesville, FL 32611 USA",
         "affiliation_number": 18
       },
       {
-        "affiliation": "Department of Physics, Center for Astrophysics and Space Sciences, University of California at San Diego",
+        "affiliation": "University of Florida Informatics Institute, 432 Newell Drive, CISE Bldg E251, Gainesville, FL 32611",
         "affiliation_number": 19
       },
       {
-        "affiliation": "Aperio Software Ltd, UK",
+        "affiliation": "Cosmic Dawn Center at the Niels Bohr Institute, University of Copenhagen and DTU-Space, Technical University of Denmark",
         "affiliation_number": 20
       },
       {
-        "affiliation": "Department of Physics and Materials Science, University of Memphis",
+        "affiliation": "Outer Loop LLC",
         "affiliation_number": 21
       },
       {
-        "affiliation": "Your University",
+        "affiliation": "Oak Ridge National Laboratory",
         "affiliation_number": 22
+      },
+      {
+        "affiliation": "University of California, Davis",
+        "affiliation_number": 23
+      },
+      {
+        "affiliation": "UC Santa Cruz",
+        "affiliation_number": 24
+      },
+      {
+        "affiliation": "Idaho National Laboratory",
+        "affiliation_number": 25
+      },
+      {
+        "affiliation": "Free Agent",
+        "affiliation_number": 26
+      },
+      {
+        "affiliation": "Center for Astrophysics - Harvard & Smithsonian",
+        "affiliation_number": 27
+      },
+      {
+        "affiliation": "University of Miami",
+        "affiliation_number": 28
+      },
+      {
+        "affiliation": "Center for Theoretical Physics, Seoul National University",
+        "affiliation_number": 29
+      },
+      {
+        "affiliation": "Institute of Astrophysics, National Taiwan University, Taipei 10617, Taiwan",
+        "affiliation_number": 30
+      },
+      {
+        "affiliation": "Physics Division, National Center for Theoretical Sciences, Taipei 10617, Taiwan",
+        "affiliation_number": 31
+      },
+      {
+        "affiliation": "Indian Institute of Technology Kharagpur",
+        "affiliation_number": 32
+      },
+      {
+        "affiliation": "Michigan State University",
+        "affiliation_number": 33
+      },
+      {
+        "affiliation": "Kavli Institute for Particle Astrophysics and Cosmology, Stanford University",
+        "affiliation_number": 34
+      },
+      {
+        "affiliation": "Birla Institute of Technology and Science, Pilani, Sancoale, Goa 403726, India",
+        "affiliation_number": 35
+      },
+      {
+        "affiliation": "Fermilab",
+        "affiliation_number": 36
+      },
+      {
+        "affiliation": "Institute of theoretical physics, Chinese Academy of Science",
+        "affiliation_number": 37
+      },
+      {
+        "affiliation": "University of Central Lancashire ",
+        "affiliation_number": 38
+      },
+      {
+        "affiliation": "University of North Texas",
+        "affiliation_number": 39
+      },
+      {
+        "affiliation": "Max Planck Institute for Astrophysics",
+        "affiliation_number": 40
+      },
+      {
+        "affiliation": "Los Alamos National Laboratory",
+        "affiliation_number": 41
+      },
+      {
+        "affiliation": "Penn State University",
+        "affiliation_number": 42
+      },
+      {
+        "affiliation": "Argonne National Laboratory",
+        "affiliation_number": 43
+      },
+      {
+        "affiliation": "none",
+        "affiliation_number": 44
+      },
+      {
+        "affiliation": "Indian Institute of Science, Bangalore, India",
+        "affiliation_number": 45
+      },
+      {
+        "affiliation": "Indian Institute of Science",
+        "affiliation_number": 46
+      },
+      {
+        "affiliation": "Shanghai Astronomical Observatory, Chinese Academy of Sciences",
+        "affiliation_number": 47
+      },
+      {
+        "affiliation": "School of Astronomy and Space Sciences, University of Chinese Academy of Sciences",
+        "affiliation_number": 48
+      },
+      {
+        "affiliation": "Department of Physics, Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA",
+        "affiliation_number": 49
+      },
+      {
+        "affiliation": "Department of Physics, Center for Astrophysics and Space Sciences, University of California at San Diego",
+        "affiliation_number": 50
+      },
+      {
+        "affiliation": "Aperio Software Ltd, UK",
+        "affiliation_number": 51
+      },
+      {
+        "affiliation": "Department of Physics and Materials Science, University of Memphis",
+        "affiliation_number": 52
+      },
+      {
+        "affiliation": "Your University",
+        "affiliation_number": 53
       }
     ],
     "ci_source": {
@@ -527,15 +1107,15 @@
       "repo_slug": "yt-project/yt-4.0-paper",
       "repo_owner": "yt-project",
       "repo_name": "yt-4.0-paper",
-      "commit": "8d7f93ec46b23ee506f8b64166e0f4a91d575e98",
-      "triggering_commit": "8d7f93ec46b23ee506f8b64166e0f4a91d575e98",
-      "build_url": "https://github.com/yt-project/yt-4.0-paper/commit/8d7f93ec46b23ee506f8b64166e0f4a91d575e98/checks",
-      "job_url": "https://github.com/yt-project/yt-4.0-paper/actions/runs/4347638360"
+      "commit": "fb23d1d1efa19817c2d3ff7ce0246475c836b2b7",
+      "triggering_commit": "fb23d1d1efa19817c2d3ff7ce0246475c836b2b7",
+      "build_url": "https://github.com/yt-project/yt-4.0-paper/commit/fb23d1d1efa19817c2d3ff7ce0246475c836b2b7/checks",
+      "job_url": "https://github.com/yt-project/yt-4.0-paper/actions/runs/4439569336"
     },
     "html_url": "https://yt-project.github.io/yt-4.0-paper/",
     "pdf_url": "https://yt-project.github.io/yt-4.0-paper/manuscript.pdf",
-    "html_url_versioned": "https://yt-project.github.io/yt-4.0-paper/v/8d7f93ec46b23ee506f8b64166e0f4a91d575e98/",
-    "pdf_url_versioned": "https://yt-project.github.io/yt-4.0-paper/v/8d7f93ec46b23ee506f8b64166e0f4a91d575e98/manuscript.pdf",
+    "html_url_versioned": "https://yt-project.github.io/yt-4.0-paper/v/fb23d1d1efa19817c2d3ff7ce0246475c836b2b7/",
+    "pdf_url_versioned": "https://yt-project.github.io/yt-4.0-paper/v/fb23d1d1efa19817c2d3ff7ce0246475c836b2b7/manuscript.pdf",
     "manubot_version": "0.5.3",
     "rootstock_commit": "9a22fab4497f80f501ea361d028f26888ad9d5a0",
     "manuscript_stats": {

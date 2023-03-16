@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-03-06'
+date-meta: '2023-03-16'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -28,6 +28,36 @@ author-meta:
 - Stephanie Tonnesen
 - Andrew Myers
 - Alex Gurvich
+- Desika Narayanan
+- Samuel W. Skillman
+- Axel Huebl
+- Elliott Biondo
+- Andrew Wetzel
+- Clayton Strawn
+- Alexander Lindsay
+- Gabriel Altay
+- Erwin T. Lau
+- Aaron Smith
+- Ji-hoon Kim
+- Hsi-Yu Schive
+- Navaneeth S
+- Brian W. O'Shea
+- Tom Abel
+- Yash Gondhalekar
+- William J Gray
+- Nickolay Y. Gnedin
+- Cristian Joana
+- 'Benjamin B Thompson '
+- Yuan Li
+- Ryan Jeffrey Farber
+- Jonah M Miller
+- Michael Ryan
+- Devin W. Silvia
+- Robert Jackson
+- Kenz Arraki
+- Alankar Dutta
+- Ritali Ghosh
+- Shaokun Xie
 - Josh Borrow
 - Bili Dong
 - Ole Streicher
@@ -47,8 +77,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-03-06" />
-  <meta name="citation_publication_date" content="2023-03-06" />
+  <meta name="dc.date" content="2023-03-16" />
+  <meta name="citation_publication_date" content="2023-03-16" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -123,6 +153,100 @@ header-includes: |-
   <meta name="citation_author_orcid" content="0000-0001-8427-8330" />
   <meta name="citation_author" content="Alex Gurvich" />
   <meta name="citation_author_orcid" content="0000-0002-6145-3674" />
+  <meta name="citation_author" content="Desika Narayanan" />
+  <meta name="citation_author_institution" content="Department of Astronomy, University of Florida, 211 Bryant Space Sciences Center, Gainesville, FL 32611 USA" />
+  <meta name="citation_author_institution" content="University of Florida Informatics Institute, 432 Newell Drive, CISE Bldg E251, Gainesville, FL 32611" />
+  <meta name="citation_author_institution" content="Cosmic Dawn Center at the Niels Bohr Institute, University of Copenhagen and DTU-Space, Technical University of Denmark" />
+  <meta name="citation_author_orcid" content="0000-0002-7064-4309" />
+  <meta name="citation_author" content="Samuel W. Skillman" />
+  <meta name="citation_author_institution" content="Outer Loop LLC" />
+  <meta name="citation_author_orcid" content="0000-0002-7626-522X" />
+  <meta name="citation_author" content="Axel Huebl" />
+  <meta name="citation_author_institution" content="Lawrence Berkeley National Laboratory" />
+  <meta name="citation_author_orcid" content="0000-0003-1943-7141" />
+  <meta name="citation_author" content="Elliott Biondo" />
+  <meta name="citation_author_institution" content="Oak Ridge National Laboratory" />
+  <meta name="citation_author_orcid" content="0000-0002-9088-1360" />
+  <meta name="citation_author" content="Andrew Wetzel" />
+  <meta name="citation_author_institution" content="University of California, Davis" />
+  <meta name="citation_author_orcid" content="0000-0003-0603-8942" />
+  <meta name="citation_author" content="Clayton Strawn" />
+  <meta name="citation_author_institution" content="UC Santa Cruz" />
+  <meta name="citation_author_orcid" content="0000-0001-9695-4017" />
+  <meta name="citation_author" content="Alexander Lindsay" />
+  <meta name="citation_author_institution" content="Idaho National Laboratory" />
+  <meta name="citation_author_orcid" content="0000-0002-6988-2123" />
+  <meta name="citation_author" content="Gabriel Altay" />
+  <meta name="citation_author_institution" content="Free Agent" />
+  <meta name="citation_author_orcid" content="0000-0002-4120-2907" />
+  <meta name="citation_author" content="Erwin T. Lau" />
+  <meta name="citation_author_institution" content="Center for Astrophysics - Harvard &amp; Smithsonian" />
+  <meta name="citation_author_institution" content="University of Miami" />
+  <meta name="citation_author_orcid" content="0000-0001-8914-8885" />
+  <meta name="citation_author" content="Aaron Smith" />
+  <meta name="citation_author_institution" content="Center for Astrophysics - Harvard &amp; Smithsonian" />
+  <meta name="citation_author_orcid" content="0000-0002-2838-9033" />
+  <meta name="citation_author" content="Ji-hoon Kim" />
+  <meta name="citation_author_institution" content="Center for Theoretical Physics, Seoul National University" />
+  <meta name="citation_author_orcid" content="0000-0003-4464-1160" />
+  <meta name="citation_author" content="Hsi-Yu Schive" />
+  <meta name="citation_author_institution" content="Institute of Astrophysics, National Taiwan University, Taipei 10617, Taiwan" />
+  <meta name="citation_author_institution" content="Physics Division, National Center for Theoretical Sciences, Taipei 10617, Taiwan" />
+  <meta name="citation_author_orcid" content="0000-0002-1249-279X" />
+  <meta name="citation_author" content="Navaneeth S" />
+  <meta name="citation_author_institution" content="Indian Institute of Technology Kharagpur" />
+  <meta name="citation_author_orcid" content="0009-0007-6922-0369" />
+  <meta name="citation_author" content="Brian W. O&#39;Shea" />
+  <meta name="citation_author_institution" content="Michigan State University" />
+  <meta name="citation_author_orcid" content="0000-0002-2786-0348" />
+  <meta name="citation_author" content="Tom Abel" />
+  <meta name="citation_author_institution" content="Kavli Institute for Particle Astrophysics and Cosmology, Stanford University" />
+  <meta name="citation_author_orcid" content="0000-0002-5969-1251" />
+  <meta name="citation_author" content="Yash Gondhalekar" />
+  <meta name="citation_author_institution" content="Birla Institute of Technology and Science, Pilani, Sancoale, Goa 403726, India" />
+  <meta name="citation_author_orcid" content="0000-0002-6646-4225" />
+  <meta name="citation_author" content="William J Gray" />
+  <meta name="citation_author_orcid" content="0000-0001-9014-3125" />
+  <meta name="citation_author" content="Nickolay Y. Gnedin" />
+  <meta name="citation_author_institution" content="Fermilab" />
+  <meta name="citation_author_orcid" content="0000-0001-5925-4580" />
+  <meta name="citation_author" content="Cristian Joana" />
+  <meta name="citation_author_institution" content="Institute of theoretical physics, Chinese Academy of Science" />
+  <meta name="citation_author_orcid" content="0000-0003-4642-3028" />
+  <meta name="citation_author" content="Benjamin B Thompson " />
+  <meta name="citation_author_institution" content="University of Central Lancashire " />
+  <meta name="citation_author_orcid" content="0000-0003-4383-9183" />
+  <meta name="citation_author" content="Yuan Li" />
+  <meta name="citation_author_institution" content="University of North Texas" />
+  <meta name="citation_author_orcid" content="0000-0001-5262-6150" />
+  <meta name="citation_author" content="Ryan Jeffrey Farber" />
+  <meta name="citation_author_institution" content="Max Planck Institute for Astrophysics" />
+  <meta name="citation_author_orcid" content="0000-0002-0649-9055" />
+  <meta name="citation_author" content="Jonah M Miller" />
+  <meta name="citation_author_institution" content="Los Alamos National Laboratory" />
+  <meta name="citation_author_orcid" content="0000-0001-6432-7860" />
+  <meta name="citation_author" content="Michael Ryan" />
+  <meta name="citation_author_institution" content="Penn State University" />
+  <meta name="citation_author_orcid" content="0000-0002-0378-5195" />
+  <meta name="citation_author" content="Devin W. Silvia" />
+  <meta name="citation_author_institution" content="Michigan State University" />
+  <meta name="citation_author_orcid" content="0000-0002-4109-9313" />
+  <meta name="citation_author" content="Robert Jackson" />
+  <meta name="citation_author_institution" content="Argonne National Laboratory" />
+  <meta name="citation_author_orcid" content="0000-0003-2518-1234" />
+  <meta name="citation_author" content="Kenz Arraki" />
+  <meta name="citation_author_institution" content="none" />
+  <meta name="citation_author_orcid" content="0000-0002-3012-1167" />
+  <meta name="citation_author" content="Alankar Dutta" />
+  <meta name="citation_author_institution" content="Indian Institute of Science, Bangalore, India" />
+  <meta name="citation_author_orcid" content="0000-0002-9287-4033" />
+  <meta name="citation_author" content="Ritali Ghosh" />
+  <meta name="citation_author_institution" content="Indian Institute of Science" />
+  <meta name="citation_author_orcid" content="0000-0001-8643-7104" />
+  <meta name="citation_author" content="Shaokun Xie" />
+  <meta name="citation_author_institution" content="Shanghai Astronomical Observatory, Chinese Academy of Sciences" />
+  <meta name="citation_author_institution" content="School of Astronomy and Space Sciences, University of Chinese Academy of Sciences" />
+  <meta name="citation_author_orcid" content="0000-0001-5624-6008" />
   <meta name="citation_author" content="Josh Borrow" />
   <meta name="citation_author_institution" content="Department of Physics, Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA" />
   <meta name="citation_author_orcid" content="0000-0002-1327-1921" />
@@ -147,9 +271,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/8d7f93ec46b23ee506f8b64166e0f4a91d575e98/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/8d7f93ec46b23ee506f8b64166e0f4a91d575e98/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/8d7f93ec46b23ee506f8b64166e0f4a91d575e98/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/fb23d1d1efa19817c2d3ff7ce0246475c836b2b7/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/fb23d1d1efa19817c2d3ff7ce0246475c836b2b7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/fb23d1d1efa19817c2d3ff7ce0246475c836b2b7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -172,10 +296,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/8d7f93ec46b23ee506f8b64166e0f4a91d575e98/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/fb23d1d1efa19817c2d3ff7ce0246475c836b2b7/))
 was automatically generated
-from [yt-project/yt-4.0-paper@8d7f93e](https://github.com/yt-project/yt-4.0-paper/tree/8d7f93ec46b23ee506f8b64166e0f4a91d575e98)
-on March 6, 2023.
+from [yt-project/yt-4.0-paper@fb23d1d](https://github.com/yt-project/yt-4.0-paper/tree/fb23d1d1efa19817c2d3ff7ce0246475c836b2b7)
+on March 16, 2023.
 </em></small>
 
 ## Authors
@@ -376,6 +500,275 @@ on March 6, 2023.
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [agurvich](https://github.com/agurvich)<br>
   <small>
+  </small>
+
++ **Desika Narayanan**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-7064-4309](https://orcid.org/0000-0002-7064-4309)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [dnarayanan](https://github.com/dnarayanan)<br>
+  <small>
+     Department of Astronomy, University of Florida, 211 Bryant Space Sciences Center, Gainesville, FL 32611 USA; University of Florida Informatics Institute, 432 Newell Drive, CISE Bldg E251, Gainesville, FL 32611; Cosmic Dawn Center at the Niels Bohr Institute, University of Copenhagen and DTU-Space, Technical University of Denmark
+  </small>
+
++ **Samuel W. Skillman**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-7626-522X](https://orcid.org/0000-0002-7626-522X)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [samskillman](https://github.com/samskillman)<br>
+  <small>
+     Outer Loop LLC
+  </small>
+
++ **Axel Huebl**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-1943-7141](https://orcid.org/0000-0003-1943-7141)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [ax3l](https://github.com/ax3l)<br>
+  <small>
+     Lawrence Berkeley National Laboratory
+  </small>
+
++ **Elliott Biondo**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-9088-1360](https://orcid.org/0000-0002-9088-1360)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [elliottbiondo](https://github.com/elliottbiondo)<br>
+  <small>
+     Oak Ridge National Laboratory
+  </small>
+
++ **Andrew Wetzel**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-0603-8942](https://orcid.org/0000-0003-0603-8942)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [arwetzel](https://github.com/arwetzel)<br>
+  <small>
+     University of California, Davis
+  </small>
+
++ **Clayton Strawn**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0001-9695-4017](https://orcid.org/0000-0001-9695-4017)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [claytonstrawn](https://github.com/claytonstrawn)<br>
+  <small>
+     UC Santa Cruz
+  </small>
+
++ **Alexander Lindsay**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-6988-2123](https://orcid.org/0000-0002-6988-2123)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [lindsayad](https://github.com/lindsayad)<br>
+  <small>
+     Idaho National Laboratory
+  </small>
+
++ **Gabriel Altay**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-4120-2907](https://orcid.org/0000-0002-4120-2907)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [galtay](https://github.com/galtay)<br>
+  <small>
+     Free Agent
+  </small>
+
++ **Erwin T. Lau**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0001-8914-8885](https://orcid.org/0000-0001-8914-8885)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [ethlau](https://github.com/ethlau)<br>
+  <small>
+     Center for Astrophysics - Harvard & Smithsonian; University of Miami
+  </small>
+
++ **Aaron Smith**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-2838-9033](https://orcid.org/0000-0002-2838-9033)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [astrosmith](https://github.com/astrosmith)<br>
+  <small>
+     Center for Astrophysics - Harvard & Smithsonian
+  </small>
+
++ **Ji-hoon Kim**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-4464-1160](https://orcid.org/0000-0003-4464-1160)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [mornkr](https://github.com/mornkr)<br>
+  <small>
+     Center for Theoretical Physics, Seoul National University
+  </small>
+
++ **Hsi-Yu Schive**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-1249-279X](https://orcid.org/0000-0002-1249-279X)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [hyschive](https://github.com/hyschive)<br>
+  <small>
+     Institute of Astrophysics, National Taiwan University, Taipei 10617, Taiwan; Physics Division, National Center for Theoretical Sciences, Taipei 10617, Taiwan
+  </small>
+
++ **Navaneeth S**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0009-0007-6922-0369](https://orcid.org/0009-0007-6922-0369)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [themousepotato](https://github.com/themousepotato)<br>
+  <small>
+     Indian Institute of Technology Kharagpur
+  </small>
+
++ **Brian W. O'Shea**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-2786-0348](https://orcid.org/0000-0002-2786-0348)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [bwoshea](https://github.com/bwoshea)<br>
+  <small>
+     Michigan State University
+  </small>
+
++ **Tom Abel**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-5969-1251](https://orcid.org/0000-0002-5969-1251)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [yipihey](https://github.com/yipihey)<br>
+  <small>
+     Kavli Institute for Particle Astrophysics and Cosmology, Stanford University
+  </small>
+
++ **Yash Gondhalekar**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-6646-4225](https://orcid.org/0000-0002-6646-4225)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [Yash-10](https://github.com/Yash-10)<br>
+  <small>
+     Birla Institute of Technology and Science, Pilani, Sancoale, Goa 403726, India
+  </small>
+
++ **William J Gray**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0001-9014-3125](https://orcid.org/0000-0001-9014-3125)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [](https://github.com/)<br>
+  <small>
+  </small>
+
++ **Nickolay Y. Gnedin**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0001-5925-4580](https://orcid.org/0000-0001-5925-4580)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [ngnedin](https://github.com/ngnedin)<br>
+  <small>
+     Fermilab
+  </small>
+
++ **Cristian Joana**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-4642-3028](https://orcid.org/0000-0003-4642-3028)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [cjoana](https://github.com/cjoana)<br>
+  <small>
+     Institute of theoretical physics, Chinese Academy of Science
+  </small>
+
++ **Benjamin B Thompson **<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-4383-9183](https://orcid.org/0000-0003-4383-9183)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [cosmosquark](https://github.com/cosmosquark)<br>
+  <small>
+     University of Central Lancashire 
+  </small>
+
++ **Yuan Li**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0001-5262-6150](https://orcid.org/0000-0001-5262-6150)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [](https://github.com/)<br>
+  <small>
+     University of North Texas
+  </small>
+
++ **Ryan Jeffrey Farber**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-0649-9055](https://orcid.org/0000-0002-0649-9055)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [rjfarber](https://github.com/rjfarber)<br>
+  <small>
+     Max Planck Institute for Astrophysics
+  </small>
+
++ **Jonah M Miller**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0001-6432-7860](https://orcid.org/0000-0001-6432-7860)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [Yurlungur](https://github.com/Yurlungur)<br>
+  <small>
+     Los Alamos National Laboratory
+  </small>
+
++ **Michael Ryan**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-0378-5195](https://orcid.org/0000-0002-0378-5195)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [mtryan83](https://github.com/mtryan83)<br>
+  <small>
+     Penn State University
+  </small>
+
++ **Devin W. Silvia**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-4109-9313](https://orcid.org/0000-0002-4109-9313)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [devinsilvia](https://github.com/devinsilvia)<br>
+  <small>
+     Michigan State University
+  </small>
+
++ **Robert Jackson**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-2518-1234](https://orcid.org/0000-0003-2518-1234)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [rcjackson](https://github.com/rcjackson)<br>
+  <small>
+     Argonne National Laboratory
+  </small>
+
++ **Kenz Arraki**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-3012-1167](https://orcid.org/0000-0002-3012-1167)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [karraki](https://github.com/karraki)<br>
+  <small>
+     none
+  </small>
+
++ **Alankar Dutta**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-9287-4033](https://orcid.org/0000-0002-9287-4033)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [dutta-alankar](https://github.com/dutta-alankar)<br>
+  <small>
+     Indian Institute of Science, Bangalore, India
+  </small>
+
++ **Ritali Ghosh**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0001-8643-7104](https://orcid.org/0000-0001-8643-7104)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [RitaliG](https://github.com/RitaliG)<br>
+  <small>
+     Indian Institute of Science
+  </small>
+
++ **Shaokun Xie**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0001-5624-6008](https://orcid.org/0000-0001-5624-6008)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [xshaokun](https://github.com/xshaokun)<br>
+  <small>
+     Shanghai Astronomical Observatory, Chinese Academy of Sciences; School of Astronomy and Space Sciences, University of Chinese Academy of Sciences
   </small>
 
 + **Josh Borrow**<br>
