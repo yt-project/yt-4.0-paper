@@ -214,6 +214,252 @@ authors:
     email: alex.b.gurvich@gmail.com
     affiliations: []
     funders: []
+### BEGIN INCLUSION FROM FORM
+  - affiliations:
+    - 'Department of Astronomy, University of Florida, 211 Bryant Space Sciences Center, Gainesville, FL 32611 USA'
+    - 'University of Florida Informatics Institute, 432 Newell Drive, CISE Bldg E251, Gainesville, FL 32611'
+    - 'Cosmic Dawn Center at the Niels Bohr Institute, University of Copenhagen and DTU-Space, Technical University of Denmark'
+    email: desika.narayanan@gmail.com
+    funders: []
+    github: dnarayanan
+    initials: DN
+    name: Desika Narayanan
+    orcid: 0000-0002-7064-4309
+  - affiliations:
+    - Outer Loop LLC
+    email: samskillman@gmail.com
+    funders: []
+    github: samskillman
+    initials: SWS
+    name: Samuel W. Skillman
+    orcid: 0000-0002-7626-522X
+  - affiliations:
+    - Lawrence Berkeley National Laboratory
+    email: axelhuebl@lbl.gov
+    funders: []
+    github: ax3l
+    initials: AH
+    name: Axel Huebl
+    orcid: 0000-0003-1943-7141
+  - affiliations:
+    - Oak Ridge National Laboratory
+    email: veb@ornl.gov
+    funders: []
+    github: elliottbiondo
+    initials: EB
+    name: Elliott Biondo
+    orcid: 0000-0002-9088-1360
+  - affiliations:
+    - University of California, Davis
+    email: awetzel@ucdavis.edu
+    funders: []
+    github: arwetzel
+    initials: AW
+    name: Andrew Wetzel
+    orcid: 0000-0003-0603-8942
+  - affiliations:
+    - UC Santa Cruz
+    email: cjstrawn@ucsc.edu
+    funders: []
+    github: claytonstrawn
+    initials: CS
+    name: Clayton Strawn
+    orcid: 0000-0001-9695-4017
+  - affiliations:
+    - Idaho National Laboratory
+    email: alexander.lindsay@inl.gov
+    funders: []
+    github: lindsayad
+    initials: AL
+    name: Alexander Lindsay
+    orcid: 0000-0002-6988-2123
+  - affiliations:
+    - Free Agent
+    email: gabriel.altay@gmail.com
+    funders: []
+    github: galtay
+    initials: GA
+    name: Gabriel Altay
+    orcid: 0000-0002-4120-2907
+  - affiliations:
+    - Center for Astrophysics - Harvard & Smithsonian
+    - University of Miami
+    email: ethlau@gmail.com
+    funders: []
+    github: ethlau
+    initials: ETL
+    name: Erwin T. Lau
+    orcid: 0000-0001-8914-8885
+  - affiliations:
+    - Center for Astrophysics - Harvard & Smithsonian
+    email: aaron.smith@cfa.harvard.edu
+    funders: []
+    github: astrosmith
+    initials: AS
+    name: Aaron Smith
+    orcid: 0000-0002-2838-9033
+  - affiliations:
+    - Center for Theoretical Physics, Seoul National University
+    email: mornkr@snu.ac.kr
+    funders: []
+    github: mornkr
+    initials: JK
+    name: Ji-hoon Kim
+    orcid: 0000-0003-4464-1160
+  - affiliations:
+    - Institute of Astrophysics, National Taiwan University, Taipei 10617, Taiwan
+    - Physics Division, National Center for Theoretical Sciences, Taipei 10617, Taiwan
+    email: hyschive@phys.ntu.edu.tw
+    funders: []
+    github: hyschive
+    initials: HS
+    name: Hsi-Yu Schive
+    orcid: 0000-0002-1249-279X
+  - affiliations:
+    - Indian Institute of Technology Kharagpur
+    email: navaneeths1998@gmail.com
+    funders: []
+    github: themousepotato
+    initials: NS
+    name: Navaneeth S
+    orcid: 0009-0007-6922-0369
+  - affiliations:
+    - Michigan State University
+    email: oshea@msu.edu
+    funders: []
+    github: bwoshea
+    initials: BWO
+    name: Brian W. O'Shea
+    orcid: 0000-0002-2786-0348
+  - affiliations:
+    - Kavli Institute for Particle Astrophysics and Cosmology, Stanford University
+    email: tabel@stanford.edu
+    funders: []
+    github: yipihey
+    initials: TA
+    name: Tom Abel
+    orcid: 0000-0002-5969-1251
+  - affiliations:
+    - Birla Institute of Technology and Science, Pilani, Sancoale, Goa 403726, India
+    email: yashgondhalekar567@gmail.com
+    funders: []
+    github: Yash-10
+    initials: YG
+    name: Yash Gondhalekar
+    orcid: 0000-0002-6646-4225
+  - affiliations: []
+    email: graywilliamj@gmail.com
+    funders: []
+    github: ''
+    initials: WJG
+    name: William J Gray
+    orcid: 0000-0001-9014-3125
+  - affiliations:
+    - Fermilab
+    email: gnedin@fnal.gov
+    funders: []
+    github: ngnedin
+    initials: NYG
+    name: Nickolay Y. Gnedin
+    orcid: 0000-0001-5925-4580
+  - affiliations:
+    - Institute of theoretical physics, Chinese Academy of Science
+    email: cristian.joana@itp.ac.cn
+    funders: []
+    github: cjoana
+    initials: CJ
+    name: Cristian Joana
+    orcid: 0000-0003-4642-3028
+  - affiliations:
+    - 'University of Central Lancashire '
+    email: bthompson2090@gmail.com
+    funders: []
+    github: cosmosquark
+    initials: BBT
+    name: 'Benjamin B Thompson '
+    orcid: 0000-0003-4383-9183
+  - affiliations:
+    - University of North Texas
+    email: yuan.astro@gmail.com
+    funders: []
+    github: ''
+    initials: YL
+    name: Yuan Li
+    orcid: 0000-0001-5262-6150
+  - affiliations:
+    - Max Planck Institute for Astrophysics
+    email: rjfarber@umich.edu
+    funders: []
+    github: rjfarber
+    initials: RJF
+    name: Ryan Jeffrey Farber
+    orcid: 0000-0002-0649-9055
+  - affiliations:
+    - Los Alamos National Laboratory
+    email: jonahm@lanl.gov
+    funders: []
+    github: Yurlungur
+    initials: JMM
+    name: Jonah M Miller
+    orcid: 0000-0001-6432-7860
+  - affiliations:
+    - Penn State University
+    email: mzr55@psu.edu
+    funders: []
+    github: mtryan83
+    initials: MR
+    name: Michael Ryan
+    orcid: 0000-0002-0378-5195
+  - affiliations:
+    - Michigan State University
+    email: dsilvia@msu.edu
+    funders: []
+    github: devinsilvia
+    initials: DWS
+    name: Devin W. Silvia
+    orcid: 0000-0002-4109-9313
+  - affiliations:
+    - Argonne National Laboratory
+    email: rjackson@anl.gov
+    funders: []
+    github: rcjackson
+    initials: RJ
+    name: Robert Jackson
+    orcid: 0000-0003-2518-1234
+  - affiliations:
+    - none
+    email: karraki@gmail.com
+    funders: []
+    github: karraki
+    initials: KA
+    name: Kenz Arraki
+    orcid: 0000-0002-3012-1167
+  - affiliations:
+    - Indian Institute of Science, Bangalore, India
+    email: alankardutta@iisc.ac.in
+    funders: []
+    github: dutta-alankar
+    initials: AD
+    name: Alankar Dutta
+    orcid: 0000-0002-9287-4033
+  - affiliations:
+    - 'Indian Institute of Science'
+    email: ritalighosh@iisc.ac.in
+    funders: []
+    github: RitaliG
+    initials: RG
+    name: Ritali Ghosh
+    orcid: 0000-0001-8643-7104
+  - affiliations:
+    - Shanghai Astronomical Observatory, Chinese Academy of Sciences
+    - School of Astronomy and Space Sciences, University of Chinese Academy of Sciences
+    email: xshaokun@foxmail.com
+    funders: []
+    github: xshaokun
+    initials: SX
+    name: Shaokun Xie
+    orcid: 0000-0001-5624-6008
+### END INCLUSION
   -
     github: jborrow
     name: Josh Borrow
