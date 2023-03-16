@@ -260,6 +260,17 @@ authors:
       - Department of Physics and Materials Science, University of Memphis
     funders: []
   -
+    github: cosmosquark
+    name: Benjamin Thompson
+    initials: BBT
+    orcid: 0000-0003-4383-9183
+    email: ben@benjaminbthompson.com
+    affiliations:
+      - Jeremiah Horrocks Institute, University of Central Lancashire, Preston, Lancashire, PR1 2HE, UK
+      - Institute for Computational Astrophysics, Dept of Astronomy & Physics, Saint Mary’s University, Halifax, BH3 3C3, Canada
+    funders:
+      - STFC PhD Studentship programme (ST/F007701/1)
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
