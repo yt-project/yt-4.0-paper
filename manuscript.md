@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-03-16'
+date-meta: '2023-03-17'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -63,6 +63,7 @@ author-meta:
 - Ole Streicher
 - Stuart Mumford
 - Benjamin Keller
+- Benjamin Thompson
 - Add Yourself
 manubot-fail-on-errors: true
 citekey-aliases:
@@ -77,8 +78,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-03-16" />
-  <meta name="citation_publication_date" content="2023-03-16" />
+  <meta name="dc.date" content="2023-03-17" />
+  <meta name="citation_publication_date" content="2023-03-17" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -262,6 +263,10 @@ header-includes: |-
   <meta name="citation_author" content="Benjamin Keller" />
   <meta name="citation_author_institution" content="Department of Physics and Materials Science, University of Memphis" />
   <meta name="citation_author_orcid" content="0000-0002-9642-7193" />
+  <meta name="citation_author" content="Benjamin Thompson" />
+  <meta name="citation_author_institution" content="Jeremiah Horrocks Institute, University of Central Lancashire, Preston, Lancashire, PR1 2HE, UK" />
+  <meta name="citation_author_institution" content="Institute for Computational Astrophysics, Dept of Astronomy &amp; Physics, Saint Mary’s University, Halifax, BH3 3C3, Canada" />
+  <meta name="citation_author_orcid" content="0000-0003-4383-9183" />
   <meta name="citation_author" content="Add Yourself" />
   <meta name="citation_author_institution" content="Your University" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
@@ -271,9 +276,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/fb23d1d1efa19817c2d3ff7ce0246475c836b2b7/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/fb23d1d1efa19817c2d3ff7ce0246475c836b2b7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/fb23d1d1efa19817c2d3ff7ce0246475c836b2b7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/0e965bd2b6e91218bcc3098e8712b64f2d0886f8/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/0e965bd2b6e91218bcc3098e8712b64f2d0886f8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/0e965bd2b6e91218bcc3098e8712b64f2d0886f8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -296,10 +301,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/fb23d1d1efa19817c2d3ff7ce0246475c836b2b7/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/0e965bd2b6e91218bcc3098e8712b64f2d0886f8/))
 was automatically generated
-from [yt-project/yt-4.0-paper@fb23d1d](https://github.com/yt-project/yt-4.0-paper/tree/fb23d1d1efa19817c2d3ff7ce0246475c836b2b7)
-on March 16, 2023.
+from [yt-project/yt-4.0-paper@0e965bd](https://github.com/yt-project/yt-4.0-paper/tree/0e965bd2b6e91218bcc3098e8712b64f2d0886f8)
+on March 17, 2023.
 </em></small>
 
 ## Authors
@@ -814,6 +819,16 @@ on March 16, 2023.
     [bwkeller](https://github.com/bwkeller)<br>
   <small>
      Department of Physics and Materials Science, University of Memphis
+  </small>
+
++ **Benjamin Thompson**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-4383-9183](https://orcid.org/0000-0003-4383-9183)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [cosmosquark](https://github.com/cosmosquark)<br>
+  <small>
+     Jeremiah Horrocks Institute, University of Central Lancashire, Preston, Lancashire, PR1 2HE, UK; Institute for Computational Astrophysics, Dept of Astronomy & Physics, Saint Mary’s University, Halifax, BH3 3C3, Canada
+     · Funded by STFC PhD Studentship programme (ST/F007701/1)
   </small>
 
 + **Add Yourself**<br>
