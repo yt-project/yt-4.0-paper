@@ -47,7 +47,6 @@ author-meta:
 - William J Gray
 - Nickolay Y. Gnedin
 - Cristian Joana
-- 'Benjamin B Thompson '
 - Yuan Li
 - Ryan Jeffrey Farber
 - Jonah M Miller
@@ -214,9 +213,6 @@ header-includes: |-
   <meta name="citation_author" content="Cristian Joana" />
   <meta name="citation_author_institution" content="Institute of theoretical physics, Chinese Academy of Science" />
   <meta name="citation_author_orcid" content="0000-0003-4642-3028" />
-  <meta name="citation_author" content="Benjamin B Thompson " />
-  <meta name="citation_author_institution" content="University of Central Lancashire " />
-  <meta name="citation_author_orcid" content="0000-0003-4383-9183" />
   <meta name="citation_author" content="Yuan Li" />
   <meta name="citation_author_institution" content="University of North Texas" />
   <meta name="citation_author_orcid" content="0000-0001-5262-6150" />
@@ -276,9 +272,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/0e965bd2b6e91218bcc3098e8712b64f2d0886f8/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/0e965bd2b6e91218bcc3098e8712b64f2d0886f8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/0e965bd2b6e91218bcc3098e8712b64f2d0886f8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/bb0129f2f896cb8cef067d169e72b6e05a16746d/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/bb0129f2f896cb8cef067d169e72b6e05a16746d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/bb0129f2f896cb8cef067d169e72b6e05a16746d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -301,9 +297,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/0e965bd2b6e91218bcc3098e8712b64f2d0886f8/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/bb0129f2f896cb8cef067d169e72b6e05a16746d/))
 was automatically generated
-from [yt-project/yt-4.0-paper@0e965bd](https://github.com/yt-project/yt-4.0-paper/tree/0e965bd2b6e91218bcc3098e8712b64f2d0886f8)
+from [yt-project/yt-4.0-paper@bb0129f](https://github.com/yt-project/yt-4.0-paper/tree/bb0129f2f896cb8cef067d169e72b6e05a16746d)
 on March 17, 2023.
 </em></small>
 
@@ -675,15 +671,6 @@ on March 17, 2023.
     [cjoana](https://github.com/cjoana)<br>
   <small>
      Institute of theoretical physics, Chinese Academy of Science
-  </small>
-
-+ **Benjamin B Thompson **<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0000-0003-4383-9183](https://orcid.org/0000-0003-4383-9183)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [cosmosquark](https://github.com/cosmosquark)<br>
-  <small>
-     University of Central Lancashire 
   </small>
 
 + **Yuan Li**<br>

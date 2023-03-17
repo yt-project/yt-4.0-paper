@@ -4,15 +4,15 @@ agurvich
 ahf
 AIP
 Alamos
-Alankar
+alankar
 Alpes
 Altay
 AMR
 AMRKDTree
-amrvac
+AMRVAC
 Aperio
 APIs
-Arepo
+AREPO
 Arraki
 arraylike
 ARTIO
@@ -32,7 +32,7 @@ binarily
 Biondo
 Birla
 Bitbucket
-Bitwise
+bitwise
 bookkeepping
 Bool
 boxlib
@@ -44,7 +44,7 @@ bwkeller
 bwoshea
 Cadair
 Cadiou
-cgs
+CGS
 Champaign
 changeset
 changesets
@@ -66,7 +66,7 @@ colorspace
 comoving
 conda
 connectedness
-Coord
+coord
 Coords
 Corentin
 cosmosquark
@@ -75,7 +75,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-cython
+Cython
 dask
 d’Astrophysique
 dataframe
@@ -102,11 +102,11 @@ dnarayanan
 dobj
 DTU
 Duplicative
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
-enzo
+Enzo
 ethlau
 EWAH
 EWAHBoolArray
@@ -121,7 +121,7 @@ fof
 formatter
 formatters
 frontend
-Frontends
+frontends
 frontrow
 Gainesville
 galtay
@@ -217,11 +217,11 @@ njgoldbaum
 NMSU
 nosetests
 NumFOCUS
-numpy
+NumPy
 octants
-octree
+Octree
 Octrees
-Octs
+octs
 olebole
 OpenMP
 Orf
@@ -246,7 +246,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-powderday
+Powderday
 powersoffour
 pre
 proeminently
@@ -255,7 +255,7 @@ programme
 proj
 pytest
 PyThreeJS
-pyXSIM
+pyxsim
 qobilidop
 quadtree
 radiative
@@ -290,7 +290,7 @@ Sinha
 Skillman
 SLAC
 soton
-sph
+SPH
 Springel
 STFC
 Stockinger
@@ -306,7 +306,7 @@ subselection
 Suoqing
 Supercomputing
 susbtantial
-SymPy
+sympy
 sympy’s
 TBD
 Tbytes
@@ -344,7 +344,7 @@ yipihey
 yournamehere
 YTArray
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj
@@ -353,7 +353,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-Zingale
+zingale
 zorder
 Zuckerberg
 ZuHone
