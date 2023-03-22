@@ -4,7 +4,7 @@ agurvich
 ahf
 AIP
 Alamos
-alankar
+Alankar
 Alpes
 Altay
 AMR
@@ -12,7 +12,7 @@ AMRKDTree
 AMRVAC
 Aperio
 APIs
-AREPO
+Arepo
 Arraki
 arraylike
 ARTIO
@@ -20,7 +20,7 @@ arwetzel
 Astro
 astrojaz
 astrophysically
-astropy
+AstroPy
 astrosmith
 atmyers
 Axel
@@ -59,7 +59,7 @@ collisional
 colocation
 colorbar
 colorbars
-colormap
+Colormap
 colormapping
 colormaps
 colorspace
@@ -102,7 +102,7 @@ dnarayanan
 dobj
 DTU
 Duplicative
-dutta
+Dutta
 easies
 elliottbiondo
 entrypoints
@@ -121,7 +121,7 @@ fof
 formatter
 formatters
 frontend
-frontends
+Frontends
 frontrow
 Gainesville
 galtay
@@ -190,6 +190,7 @@ matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
+mentorship
 meshened
 MeshLab
 metallicity
@@ -217,9 +218,9 @@ njgoldbaum
 NMSU
 nosetests
 NumFOCUS
-NumPy
+numpy
 octants
-Octree
+octree
 Octrees
 octs
 olebole
@@ -239,7 +240,7 @@ pipelining
 pixelization
 pixelize
 pixelized
-Pixelizers
+pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -255,9 +256,9 @@ programme
 proj
 pytest
 PyThreeJS
-pyxsim
+pyXSIM
 qobilidop
-quadtree
+Quadtree
 radiative
 RADMC
 rasterizers
@@ -267,7 +268,7 @@ recomputation
 recursed
 reinstrumented
 renderer
-resampling
+Resampling
 responsivity
 RGBA
 Ritali
@@ -306,7 +307,7 @@ subselection
 Suoqing
 Supercomputing
 susbtantial
-sympy
+SymPy
 sympy’s
 TBD
 Tbytes
@@ -353,7 +354,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-zingale
+Zingale
 zorder
 Zuckerberg
 ZuHone

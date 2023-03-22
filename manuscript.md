@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-03-17'
+date-meta: '2023-03-22'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -77,8 +77,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-03-17" />
-  <meta name="citation_publication_date" content="2023-03-17" />
+  <meta name="dc.date" content="2023-03-22" />
+  <meta name="citation_publication_date" content="2023-03-22" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -272,9 +272,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/bb0129f2f896cb8cef067d169e72b6e05a16746d/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/bb0129f2f896cb8cef067d169e72b6e05a16746d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/bb0129f2f896cb8cef067d169e72b6e05a16746d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/29b5866e857514f5262f3c70ba66c529203577e4/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/29b5866e857514f5262f3c70ba66c529203577e4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/29b5866e857514f5262f3c70ba66c529203577e4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -297,10 +297,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/bb0129f2f896cb8cef067d169e72b6e05a16746d/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/29b5866e857514f5262f3c70ba66c529203577e4/))
 was automatically generated
-from [yt-project/yt-4.0-paper@bb0129f](https://github.com/yt-project/yt-4.0-paper/tree/bb0129f2f896cb8cef067d169e72b6e05a16746d)
-on March 17, 2023.
+from [yt-project/yt-4.0-paper@29b5866](https://github.com/yt-project/yt-4.0-paper/tree/29b5866e857514f5262f3c70ba66c529203577e4)
+on March 22, 2023.
 </em></small>
 
 ## Authors
@@ -3716,3 +3716,9 @@ Accepting and supporting these different types of development is critical for a 
 The authors of this paper would like to extend their deepest gratitude to the many, many individual and institutions that have contributed, directly or indirectly, to the growth of both `yt` and the `yt` community.
 
 We particularly thank KIPAC and SLAC at Stanford, the University of California at San Diego and Santa Cruz, the High-Performance Astro Computing Center, Columbia University, the University of Illinois, University of Colorado at Boulder, University of Edinburgh, the scientific Python community, NumFOCUS, 
+
+MT dedicates this paper to the memory of Michael S. Warren, who was both friend and mentor to several of us on the development team.
+Mike passed away during the final stages of its completion, but his influence was felt deeply along the way.
+Mike was a truly inspirational person, and provided deep mentorship and guidance to multiple of the authors of this paper -- and stepped in with encouragement, advice and friendship at two specific, critical junctures in the development history of yt.
+Thank you, Mike, and we miss you.
+Tomorrow, we're gonna do Stonehenge.

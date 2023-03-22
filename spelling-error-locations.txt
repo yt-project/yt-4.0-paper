@@ -790,3 +790,4 @@ content/98.acknowledgments.md:5:Astro
 content/98.acknowledgments.md:5:KIPAC
 content/98.acknowledgments.md:5:NumFOCUS
 content/98.acknowledgments.md:5:SLAC
+content/98.acknowledgments.md:9:mentorship
