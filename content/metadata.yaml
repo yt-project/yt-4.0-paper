@@ -509,6 +509,16 @@ authors:
     funders:
       - STFC PhD Studentship programme (ST/F007701/1)
   -
+    github: pgrete
+    name: Philipp Grete
+    initials: PG
+    orcid: 0000-0003-3555-9886
+    email: pgrete@hs.uni-hamburg.de
+    affiliations:
+      - University of Hamburg
+    funders:
+      - European Union's Horizon 2020 (Marie Skłodowska-Curie grant agreement No 101030214)
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU

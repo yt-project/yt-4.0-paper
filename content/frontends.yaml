@@ -352,3 +352,14 @@ frontends:
   name: ytdata
   usage_citations:
   - '@doi:10.1093/mnras/sty2103'
+- citations:
+  - '@doi:10.1177/10943420221143775'
+  comments: 'Parthenon is a performance portable block-structured adaptive mesh
+    refinement framework and the basis for various downstream codes such as
+    AthenaPK, Phoebus, or KHARMA.
+
+    '
+  index_type:
+  - grid
+  name: parthenon
+  usage_citations: []
