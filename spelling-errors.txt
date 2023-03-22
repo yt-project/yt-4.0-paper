@@ -12,16 +12,17 @@ AMRKDTree
 AMRVAC
 Aperio
 APIs
-Arepo
+AREPO
 Arraki
 arraylike
-ARTIO
+artio
 arwetzel
 Astro
 astrojaz
 astrophysically
-AstroPy
+astropy
 astrosmith
+AthenaPK
 atmyers
 Axel
 backend
@@ -32,7 +33,7 @@ binarily
 Biondo
 Birla
 Bitbucket
-bitwise
+Bitwise
 bookkeepping
 Bool
 boxlib
@@ -44,7 +45,7 @@ bwkeller
 bwoshea
 Cadair
 Cadiou
-CGS
+cgs
 Champaign
 changeset
 changesets
@@ -63,10 +64,10 @@ Colormap
 colormapping
 colormaps
 colorspace
-comoving
+Comoving
 conda
 connectedness
-coord
+Coord
 Coords
 Corentin
 cosmosquark
@@ -75,7 +76,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-Cython
+cython
 dask
 d’Astrophysique
 dataframe
@@ -120,8 +121,8 @@ fisheye
 fof
 formatter
 formatters
-frontend
-Frontends
+Frontend
+frontends
 frontrow
 Gainesville
 galtay
@@ -134,6 +135,7 @@ Gnedin
 Goldbaum
 Gondhalekar
 gravitationally
+Grete
 gridded
 gridding
 Gurvich
@@ -174,6 +176,7 @@ Kelton
 keltonhalbert
 Kenz
 Kharagpur
+KHARMA
 KIPAC
 Kowalik
 langmm
@@ -186,7 +189,7 @@ LLC
 logarithmically
 LSST
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -218,11 +221,12 @@ njgoldbaum
 NMSU
 nosetests
 NumFOCUS
-numpy
+NumPy
 octants
 octree
-Octrees
-octs
+octrees
+Octs
+odowska
 olebole
 OpenMP
 Orf
@@ -232,6 +236,9 @@ overplotting
 parallelize
 performant
 perveice
+pgrete
+Philipp
+Phoebus
 PHOX
 piecewise
 Pilani
@@ -247,7 +254,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-Powderday
+powderday
 powersoffour
 pre
 proeminently
@@ -268,7 +275,7 @@ recomputation
 recursed
 reinstrumented
 renderer
-Resampling
+resampling
 responsivity
 RGBA
 Ritali
@@ -291,7 +298,7 @@ Sinha
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger
@@ -307,7 +314,7 @@ subselection
 Suoqing
 Supercomputing
 susbtantial
-SymPy
+sympy
 sympy’s
 TBD
 Tbytes
@@ -354,7 +361,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-Zingale
+zingale
 zorder
 Zuckerberg
 ZuHone

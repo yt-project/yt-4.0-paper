@@ -63,6 +63,7 @@ author-meta:
 - Stuart Mumford
 - Benjamin Keller
 - Benjamin Thompson
+- Philipp Grete
 - Add Yourself
 manubot-fail-on-errors: true
 citekey-aliases:
@@ -263,6 +264,9 @@ header-includes: |-
   <meta name="citation_author_institution" content="Jeremiah Horrocks Institute, University of Central Lancashire, Preston, Lancashire, PR1 2HE, UK" />
   <meta name="citation_author_institution" content="Institute for Computational Astrophysics, Dept of Astronomy &amp; Physics, Saint Mary’s University, Halifax, BH3 3C3, Canada" />
   <meta name="citation_author_orcid" content="0000-0003-4383-9183" />
+  <meta name="citation_author" content="Philipp Grete" />
+  <meta name="citation_author_institution" content="University of Hamburg" />
+  <meta name="citation_author_orcid" content="0000-0003-3555-9886" />
   <meta name="citation_author" content="Add Yourself" />
   <meta name="citation_author_institution" content="Your University" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
@@ -272,9 +276,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/29b5866e857514f5262f3c70ba66c529203577e4/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/29b5866e857514f5262f3c70ba66c529203577e4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/29b5866e857514f5262f3c70ba66c529203577e4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/be937545a4a7f6b795d986ed4e9ca8e29568977f/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/be937545a4a7f6b795d986ed4e9ca8e29568977f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/be937545a4a7f6b795d986ed4e9ca8e29568977f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -297,9 +301,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/29b5866e857514f5262f3c70ba66c529203577e4/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/be937545a4a7f6b795d986ed4e9ca8e29568977f/))
 was automatically generated
-from [yt-project/yt-4.0-paper@29b5866](https://github.com/yt-project/yt-4.0-paper/tree/29b5866e857514f5262f3c70ba66c529203577e4)
+from [yt-project/yt-4.0-paper@be93754](https://github.com/yt-project/yt-4.0-paper/tree/be937545a4a7f6b795d986ed4e9ca8e29568977f)
 on March 22, 2023.
 </em></small>
 
@@ -816,6 +820,16 @@ on March 22, 2023.
   <small>
      Jeremiah Horrocks Institute, University of Central Lancashire, Preston, Lancashire, PR1 2HE, UK; Institute for Computational Astrophysics, Dept of Astronomy & Physics, Saint Mary’s University, Halifax, BH3 3C3, Canada
      · Funded by STFC PhD Studentship programme (ST/F007701/1)
+  </small>
+
++ **Philipp Grete**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-3555-9886](https://orcid.org/0000-0003-3555-9886)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [pgrete](https://github.com/pgrete)<br>
+  <small>
+     University of Hamburg
+     · Funded by European Union's Horizon 2020 (Marie Skłodowska-Curie grant agreement No 101030214)
   </small>
 
 + **Add Yourself**<br>
@@ -2984,6 +2998,21 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 **Usage Citations:** [@doi:10.1093/mnras/sty2103]
+
+
+
+
+### parthenon
+
+**Index Type:** grid
+
+**Comments:** Parthenon is a performance portable block-structured adaptive mesh refinement framework and the basis for various downstream codes such as AthenaPK, Phoebus, or KHARMA.
+
+
+
+**Primary Citations:** [@doi:10.1177/10943420221143775]
+
+
 
 
 
