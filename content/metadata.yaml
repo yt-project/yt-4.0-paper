@@ -435,6 +435,24 @@ authors:
     initials: SX
     name: Shaokun Xie
     orcid: 0000-0001-5624-6008
+  -
+    github: jnaiman
+    name: Jill P. Naiman
+    initials: JPN
+    orcid: 0000-0002-9397-6189
+    email: jnaiman@illinois.edu
+    affiliations:
+      - School of Information Sciences, University of Illinois, Urbana-Champaign
+    funders: []
+  -
+    github: Ronan-Hix
+    name: Ronan Hix
+    initials: RH
+    orcid: 0000-0002-7047-3730
+    email: hixronan@gmail.com
+    affiliations:
+      - University of Maryland, Oak Ridge National Lab
+    funders: []
 ### END INCLUSION
   -
     github: jborrow
