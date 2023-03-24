@@ -519,6 +519,17 @@ authors:
     funders:
       - European Union's Horizon 2020 (Marie Skłodowska-Curie grant agreement No 101030214)
   -
+    github: jwise77
+    name: John H. Wise
+    initials: JHW
+    orcid: 0000-0003-1173-8847
+    email: jwise@physics.gatech.edu
+    affiliations:
+      - Center for Relativistic Astrophysics, School of Physics, Georgia Institute of Technology, Atlanta, GA 30332, USA
+    funders:
+      - NASA Grants 80NSSC20K0520, 80NSSC21K1053
+      - NSF Grants OAC-1835213, AST-2108020
+-
     github: yournamehere
     name: Add Yourself
     initials: YOU
