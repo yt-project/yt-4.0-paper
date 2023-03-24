@@ -15,9 +15,9 @@ APIs
 AREPO
 Arraki
 arraylike
-artio
+ARTIO
 arwetzel
-Astro
+astro
 astrojaz
 astrophysically
 astropy
@@ -35,7 +35,8 @@ Birla
 Bitbucket
 Bitwise
 bookkeepping
-Bool
+bool
+Borro
 boxlib
 Britton
 brittonsmith
@@ -51,6 +52,7 @@ changeset
 changesets
 chombo
 chrishavlin
+chummels
 CISE
 cjoana
 claytonstrawn
@@ -60,14 +62,14 @@ collisional
 colocation
 colorbar
 colorbars
-Colormap
+colormap
 colormapping
 colormaps
 colorspace
-Comoving
+comoving
 conda
 connectedness
-Coord
+coord
 Coords
 Corentin
 cosmosquark
@@ -76,7 +78,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-cython
+Cython
 dask
 d’Astrophysique
 dataframe
@@ -84,7 +86,7 @@ datapoint
 dataset
 datasetfrom
 dataset’s
-datasets
+Datasets
 datasetwere
 datatypes
 decomp
@@ -107,7 +109,7 @@ Dutta
 easies
 elliottbiondo
 entrypoints
-Enzo
+enzo
 ethlau
 EWAH
 EWAHBoolArray
@@ -121,8 +123,8 @@ fisheye
 fof
 formatter
 formatters
-Frontend
-frontends
+frontend
+Frontends
 frontrow
 Gainesville
 galtay
@@ -198,6 +200,7 @@ meshened
 MeshLab
 metallicity
 midplane
+migueldvb
 MJT
 moab
 Mollweide
@@ -247,14 +250,14 @@ pipelining
 pixelization
 pixelize
 pixelized
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
 PlotCollection
 pmd
 potentia
-powderday
+Powderday
 powersoffour
 pre
 proeminently
@@ -265,7 +268,7 @@ pytest
 PyThreeJS
 pyXSIM
 qobilidop
-Quadtree
+quadtree
 radiative
 RADMC
 rasterizers
@@ -298,7 +301,7 @@ Sinha
 Skillman
 SLAC
 soton
-sph
+SPH
 Springel
 STFC
 Stockinger
@@ -361,7 +364,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-zingale
+Zingale
 zorder
 Zuckerberg
 ZuHone

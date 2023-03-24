@@ -5,19 +5,19 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-03-22'
+date-meta: '2023-03-24'
 author-meta:
 - The yt Project
 - Matthew Turk
 - Nathan J Goldbaum
 - John A. ZuHone
-- Ole Streicher
+- Cameron Hummels
 - Suoqing Ji
 - Meagan Lang
 - Madicken Munk
 - Britton Smith
 - Kacper Kowalik
-- Ole Streicher
+- Miguel de Val-Borro
 - Jared W. Coughlin
 - Corentin Cadiou
 - Michael Zingale
@@ -78,8 +78,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-03-22" />
-  <meta name="citation_publication_date" content="2023-03-22" />
+  <meta name="dc.date" content="2023-03-24" />
+  <meta name="citation_publication_date" content="2023-03-24" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -102,9 +102,9 @@ header-includes: |-
   <meta name="citation_author_institution" content="Harvard-Smithsonian Center for Astrophysics" />
   <meta name="citation_author_orcid" content="0000-0003-3175-2347" />
   <meta name="twitter:creator" content="@astrojaz" />
-  <meta name="citation_author" content="Ole Streicher" />
-  <meta name="citation_author_institution" content="Leibniz Institute for Astrophysics Potsdam (AIP)" />
-  <meta name="citation_author_orcid" content="0000-0001-7751-1843" />
+  <meta name="citation_author" content="Cameron Hummels" />
+  <meta name="citation_author_institution" content="Department of Theoretical Astrophysics, California Institute of Technology  -" />
+  <meta name="citation_author_orcid" content="0000-0002-3817-8133" />
   <meta name="citation_author" content="Suoqing Ji" />
   <meta name="citation_author_institution" content="Physics Department, University of California Santa Barbara" />
   <meta name="citation_author_orcid" content="0000-0001-9658-0588" />
@@ -120,9 +120,9 @@ header-includes: |-
   <meta name="citation_author" content="Kacper Kowalik" />
   <meta name="citation_author_institution" content="National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign" />
   <meta name="citation_author_orcid" content="0000-0003-1709-3744" />
-  <meta name="citation_author" content="Ole Streicher" />
+  <meta name="citation_author" content="Miguel de Val-Borro" />
   <meta name="citation_author_institution" content="Planetary Science Institute" />
-  <meta name="citation_author_orcid" content="0000-0001-7751-1843" />
+  <meta name="citation_author_orcid" content="000-0002-0455-9384" />
   <meta name="citation_author" content="Jared W. Coughlin" />
   <meta name="citation_author_institution" content="National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign" />
   <meta name="citation_author_orcid" content="0000-0002-4373-4114" />
@@ -276,9 +276,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/be937545a4a7f6b795d986ed4e9ca8e29568977f/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/be937545a4a7f6b795d986ed4e9ca8e29568977f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/be937545a4a7f6b795d986ed4e9ca8e29568977f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/031b171bff8de09715d1cc4e9d6970e01e888d49/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/031b171bff8de09715d1cc4e9d6970e01e888d49/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/031b171bff8de09715d1cc4e9d6970e01e888d49/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -301,10 +301,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/be937545a4a7f6b795d986ed4e9ca8e29568977f/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/031b171bff8de09715d1cc4e9d6970e01e888d49/))
 was automatically generated
-from [yt-project/yt-4.0-paper@be93754](https://github.com/yt-project/yt-4.0-paper/tree/be937545a4a7f6b795d986ed4e9ca8e29568977f)
-on March 22, 2023.
+from [yt-project/yt-4.0-paper@031b171](https://github.com/yt-project/yt-4.0-paper/tree/031b171bff8de09715d1cc4e9d6970e01e888d49)
+on March 24, 2023.
 </em></small>
 
 ## Authors
@@ -353,13 +353,13 @@ on March 22, 2023.
      Harvard-Smithsonian Center for Astrophysics
   </small>
 
-+ **Ole Streicher**<br>
++ **Cameron Hummels**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0000-0001-7751-1843](https://orcid.org/0000-0001-7751-1843)
+    [0000-0002-3817-8133](https://orcid.org/0000-0002-3817-8133)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [olebole](https://github.com/olebole)<br>
+    [chummels](https://github.com/chummels)<br>
   <small>
-     Leibniz Institute for Astrophysics Potsdam (AIP)
+     Department of Theoretical Astrophysics, California Institute of Technology  -
   </small>
 
 + **Suoqing Ji**<br>
@@ -407,11 +407,11 @@ on March 22, 2023.
      National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
   </small>
 
-+ **Ole Streicher**<br>
++ **Miguel de Val-Borro**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0000-0001-7751-1843](https://orcid.org/0000-0001-7751-1843)
+    [000-0002-0455-9384](https://orcid.org/000-0002-0455-9384)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [olebole](https://github.com/olebole)<br>
+    [migueldvb](https://github.com/migueldvb)<br>
   <small>
      Planetary Science Institute
   </small>
