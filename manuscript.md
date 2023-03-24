@@ -57,6 +57,8 @@ author-meta:
 - Alankar Dutta
 - Ritali Ghosh
 - Shaokun Xie
+- Jill P. Naiman
+- Ronan Hix
 - Josh Borrow
 - Bili Dong
 - Ole Streicher
@@ -64,6 +66,7 @@ author-meta:
 - Benjamin Keller
 - Benjamin Thompson
 - Philipp Grete
+- John H. Wise
 - Add Yourself
 manubot-fail-on-errors: true
 citekey-aliases:
@@ -103,7 +106,7 @@ header-includes: |-
   <meta name="citation_author_orcid" content="0000-0003-3175-2347" />
   <meta name="twitter:creator" content="@astrojaz" />
   <meta name="citation_author" content="Cameron Hummels" />
-  <meta name="citation_author_institution" content="Department of Theoretical Astrophysics, California Institute of Technology  -" />
+  <meta name="citation_author_institution" content="Department of Theoretical Astrophysics, California Institute of Technology" />
   <meta name="citation_author_orcid" content="0000-0002-3817-8133" />
   <meta name="citation_author" content="Suoqing Ji" />
   <meta name="citation_author_institution" content="Physics Department, University of California Santa Barbara" />
@@ -245,6 +248,12 @@ header-includes: |-
   <meta name="citation_author_institution" content="Shanghai Astronomical Observatory, Chinese Academy of Sciences" />
   <meta name="citation_author_institution" content="School of Astronomy and Space Sciences, University of Chinese Academy of Sciences" />
   <meta name="citation_author_orcid" content="0000-0001-5624-6008" />
+  <meta name="citation_author" content="Jill P. Naiman" />
+  <meta name="citation_author_institution" content="School of Information Sciences, University of Illinois, Urbana-Champaign" />
+  <meta name="citation_author_orcid" content="0000-0002-9397-6189" />
+  <meta name="citation_author" content="Ronan Hix" />
+  <meta name="citation_author_institution" content="University of Maryland, Oak Ridge National Lab" />
+  <meta name="citation_author_orcid" content="0000-0002-7047-3730" />
   <meta name="citation_author" content="Josh Borrow" />
   <meta name="citation_author_institution" content="Department of Physics, Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA" />
   <meta name="citation_author_orcid" content="0000-0002-1327-1921" />
@@ -267,6 +276,9 @@ header-includes: |-
   <meta name="citation_author" content="Philipp Grete" />
   <meta name="citation_author_institution" content="University of Hamburg" />
   <meta name="citation_author_orcid" content="0000-0003-3555-9886" />
+  <meta name="citation_author" content="John H. Wise" />
+  <meta name="citation_author_institution" content="Center for Relativistic Astrophysics, School of Physics, Georgia Institute of Technology, Atlanta, GA 30332, USA" />
+  <meta name="citation_author_orcid" content="0000-0003-1173-8847" />
   <meta name="citation_author" content="Add Yourself" />
   <meta name="citation_author_institution" content="Your University" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
@@ -276,9 +288,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/031b171bff8de09715d1cc4e9d6970e01e888d49/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/031b171bff8de09715d1cc4e9d6970e01e888d49/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/031b171bff8de09715d1cc4e9d6970e01e888d49/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/f2cd65bf86032c8126dfa116b8f84ca3fe50c9e6/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/f2cd65bf86032c8126dfa116b8f84ca3fe50c9e6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/f2cd65bf86032c8126dfa116b8f84ca3fe50c9e6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -301,9 +313,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/031b171bff8de09715d1cc4e9d6970e01e888d49/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/f2cd65bf86032c8126dfa116b8f84ca3fe50c9e6/))
 was automatically generated
-from [yt-project/yt-4.0-paper@031b171](https://github.com/yt-project/yt-4.0-paper/tree/031b171bff8de09715d1cc4e9d6970e01e888d49)
+from [yt-project/yt-4.0-paper@f2cd65b](https://github.com/yt-project/yt-4.0-paper/tree/f2cd65bf86032c8126dfa116b8f84ca3fe50c9e6)
 on March 24, 2023.
 </em></small>
 
@@ -359,7 +371,7 @@ on March 24, 2023.
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [chummels](https://github.com/chummels)<br>
   <small>
-     Department of Theoretical Astrophysics, California Institute of Technology  -
+     Department of Theoretical Astrophysics, California Institute of Technology
   </small>
 
 + **Suoqing Ji**<br>
@@ -767,6 +779,24 @@ on March 24, 2023.
      Shanghai Astronomical Observatory, Chinese Academy of Sciences; School of Astronomy and Space Sciences, University of Chinese Academy of Sciences
   </small>
 
++ **Jill P. Naiman**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-9397-6189](https://orcid.org/0000-0002-9397-6189)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [jnaiman](https://github.com/jnaiman)<br>
+  <small>
+     School of Information Sciences, University of Illinois, Urbana-Champaign
+  </small>
+
++ **Ronan Hix**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-7047-3730](https://orcid.org/0000-0002-7047-3730)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [Ronan-Hix](https://github.com/Ronan-Hix)<br>
+  <small>
+     University of Maryland, Oak Ridge National Lab
+  </small>
+
 + **Josh Borrow**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-1327-1921](https://orcid.org/0000-0002-1327-1921)
@@ -830,6 +860,16 @@ on March 24, 2023.
   <small>
      University of Hamburg
      · Funded by European Union's Horizon 2020 (Marie Skłodowska-Curie grant agreement No 101030214)
+  </small>
+
++ **John H. Wise**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-1173-8847](https://orcid.org/0000-0003-1173-8847)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [jwise77](https://github.com/jwise77)<br>
+  <small>
+     Center for Relativistic Astrophysics, School of Physics, Georgia Institute of Technology, Atlanta, GA 30332, USA
+     · Funded by NASA Grants 80NSSC20K0520, 80NSSC21K1053; NSF Grants OAC-1835213, AST-2108020
   </small>
 
 + **Add Yourself**<br>

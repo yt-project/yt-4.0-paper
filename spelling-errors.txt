@@ -17,7 +17,8 @@ Arraki
 arraylike
 ARTIO
 arwetzel
-astro
+AST
+Astro
 astrojaz
 astrophysically
 astropy
@@ -35,7 +36,7 @@ Birla
 Bitbucket
 Bitwise
 bookkeepping
-bool
+Bool
 Borro
 boxlib
 Britton
@@ -46,7 +47,7 @@ bwkeller
 bwoshea
 Cadair
 Cadiou
-cgs
+CGS
 Champaign
 changeset
 changesets
@@ -66,7 +67,7 @@ colormap
 colormapping
 colormaps
 colorspace
-comoving
+Comoving
 conda
 connectedness
 coord
@@ -86,7 +87,7 @@ datapoint
 dataset
 datasetfrom
 dataset’s
-Datasets
+datasets
 datasetwere
 datatypes
 decomp
@@ -124,7 +125,7 @@ fof
 formatter
 formatters
 frontend
-Frontends
+frontends
 frontrow
 Gainesville
 galtay
@@ -146,6 +147,7 @@ Havlin
 HDF
 HippoDraw
 histogramming
+Hix
 Horrocks
 Hsi
 Huebl
@@ -164,9 +166,11 @@ jborrow
 jcoughlin
 Ji
 jisuoqing
+jnaiman
 Joana
 Jupyter
 Jupyterlab
+jwise
 jzuhone
 Kacper
 Kamae
@@ -191,7 +195,7 @@ LLC
 logarithmically
 LSST
 Madicken
-Matplotlib
+matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -210,6 +214,7 @@ MPI
 mtryan
 Munk
 munkm
+Naiman
 namespace
 Narayanan
 Navaneeth
@@ -223,10 +228,12 @@ Niels
 njgoldbaum
 NMSU
 nosetests
+NSSC
 NumFOCUS
-NumPy
+numpy
+OAC
 octants
-octree
+Octree
 octrees
 Octs
 odowska
@@ -257,7 +264,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-Powderday
+powderday
 powersoffour
 pre
 proeminently
@@ -268,7 +275,7 @@ pytest
 PyThreeJS
 pyXSIM
 qobilidop
-quadtree
+Quadtree
 radiative
 RADMC
 rasterizers
@@ -285,6 +292,7 @@ Ritali
 RitaliG
 rjfarber
 rockstar
+Ronan
 Rosen
 Rudd
 runtime
@@ -301,7 +309,7 @@ Sinha
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger
@@ -317,7 +325,7 @@ subselection
 Suoqing
 Supercomputing
 susbtantial
-sympy
+SymPy
 sympy’s
 TBD
 Tbytes
@@ -355,7 +363,7 @@ yipihey
 yournamehere
 YTArray
 ytdata
-YTEP
+ytep
 YTEPs
 ytini
 YTQuadTreeProj
@@ -364,7 +372,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-Zingale
+zingale
 zorder
 Zuckerberg
 ZuHone
