@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-03-27'
+date-meta: '2023-04-01'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -81,8 +81,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-03-27" />
-  <meta name="citation_publication_date" content="2023-03-27" />
+  <meta name="dc.date" content="2023-04-01" />
+  <meta name="citation_publication_date" content="2023-04-01" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -288,9 +288,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/e47fc28e18951d45c96d99126bce5342b7d66eba/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/e47fc28e18951d45c96d99126bce5342b7d66eba/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/e47fc28e18951d45c96d99126bce5342b7d66eba/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/38478b78fead759160f6240fa5ff12553ace9327/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/38478b78fead759160f6240fa5ff12553ace9327/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/38478b78fead759160f6240fa5ff12553ace9327/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -313,10 +313,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/e47fc28e18951d45c96d99126bce5342b7d66eba/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/38478b78fead759160f6240fa5ff12553ace9327/))
 was automatically generated
-from [yt-project/yt-4.0-paper@e47fc28](https://github.com/yt-project/yt-4.0-paper/tree/e47fc28e18951d45c96d99126bce5342b7d66eba)
-on March 27, 2023.
+from [yt-project/yt-4.0-paper@38478b7](https://github.com/yt-project/yt-4.0-paper/tree/38478b78fead759160f6240fa5ff12553ace9327)
+on April 1, 2023.
 </em></small>
 
 ## Authors
@@ -2674,6 +2674,20 @@ Reducing the amount of internal bookkeepping that yt had to do provided a lighte
 
 
 **Usage Citations:** [@doi:10.1093/mnras/stac439; @doi:10.1007/s00162-020-00548-6; @doi:10.1103/PhysRevD.100.063528; @doi:10.1103/PhysRevD.103.063525; @doi:10.1103/PhysRevD.105.023516; @doi:10.1016/j.cpc.2022.108457]
+
+
+
+
+### cholla
+
+**Index Type:** grid
+
+**Comments:** CHOLLA is a uniform-resolution grid code operating almost entirely on GPUs.
+
+
+**Primary Citations:** [@doi:10.1088/0067-0049/217/2/24]
+
+
 
 
 
