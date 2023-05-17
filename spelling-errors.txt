@@ -12,16 +12,16 @@ AMRKDTree
 amrvac
 Aperio
 APIs
-arepo
+AREPO
 Arraki
 arraylike
-ARTIO
+artio
 arwetzel
 AST
-Astro
+astro
 astrojaz
 astrophysically
-astropy
+AstroPy
 astrosmith
 AthenaPK
 atmyers
@@ -35,7 +35,7 @@ binarily
 Biondo
 Birla
 Bitbucket
-Bitwise
+bitwise
 bookkeepping
 Bool
 Borro
@@ -108,11 +108,12 @@ dnarayanan
 dobj
 DTU
 Duplicative
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
 Enzo
+Enzo’s
 ethlau
 EWAH
 EWAHBoolArray
@@ -127,7 +128,7 @@ fof
 formatter
 formatters
 frontend
-Frontends
+frontends
 frontrow
 Gainesville
 galtay
@@ -153,6 +154,7 @@ HippoDraw
 histogramming
 Hix
 Horrocks
+HPC
 Hsi
 Huebl
 Hummels
@@ -167,6 +169,7 @@ IPAG
 IPython
 isocontour
 isocontours
+iterable
 Jacobian
 jborrow
 jcoughlin
@@ -241,7 +244,7 @@ OAC
 octants
 octree
 Octrees
-Octs
+octs
 odowska
 olebole
 OpenMP
@@ -250,6 +253,7 @@ Ortho
 O’Shea
 overplotting
 parallelize
+parallelized
 performant
 perveice
 pgrete
@@ -271,7 +275,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-powderday
+Powderday
 powersoffour
 pre
 proeminently
@@ -282,7 +286,7 @@ pytest
 PyThreeJS
 pyXSIM
 qobilidop
-quadtree
+Quadtree
 radiative
 RADMC
 rasterizers
@@ -313,10 +317,11 @@ SHA
 Shaokun
 Shoshani
 Sinha
+situ
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger

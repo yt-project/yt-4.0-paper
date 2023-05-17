@@ -288,9 +288,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/d93e154ce98be55060cd592713369aa8f8bb78e1/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/d93e154ce98be55060cd592713369aa8f8bb78e1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/d93e154ce98be55060cd592713369aa8f8bb78e1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/6f283582c23b2739eec38ba4d4348808131e0dd8/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/6f283582c23b2739eec38ba4d4348808131e0dd8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/6f283582c23b2739eec38ba4d4348808131e0dd8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -313,9 +313,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/d93e154ce98be55060cd592713369aa8f8bb78e1/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/6f283582c23b2739eec38ba4d4348808131e0dd8/))
 was automatically generated
-from [yt-project/yt-4.0-paper@d93e154](https://github.com/yt-project/yt-4.0-paper/tree/d93e154ce98be55060cd592713369aa8f8bb78e1)
+from [yt-project/yt-4.0-paper@6f28358](https://github.com/yt-project/yt-4.0-paper/tree/6f283582c23b2739eec38ba4d4348808131e0dd8)
 on May 17, 2023.
 </em></small>
 
@@ -1987,7 +1987,7 @@ Importantly, if the dataset is a finite-volume dataset (grid, octree, etc), the 
 
 ## Abstracting Simulation Types
 
-### Chunking and Decomposition Strategies
+### Chunking and Decomposition Strategies {#sec:chunking}
 
 Reading data, particularly data that will not be utilized in a computation, can incur susbtantial overhead, particularly if the data is spread over multiple files on a networked filesystem, where metadata queries can dominate the cost of IO.
 `yt` takes the approach of building a coarse-grained index based on the discretization method of the data (particle, grid, octree, unstructured mesh), combining this with datapoint-level indexing for selection processes.
@@ -2086,7 +2086,7 @@ Scheme of the AMR structure used to estimate the gradient of a quantity in the c
 **NOTE: the blue cell should be used in the example (for instance make it the $f_{01}$ cell, rather than the $f_{20}$ one since the $y$ direction ends up not being used in the actual computation**
 ](images/octree/gradient_computation.svg){#fig:octree-gradient}
 
-### SPH Analysis
+### SPH Analysis {#sec:sph-analysis}
 
 Smoothed Particle Hydrodynamics (SPH) is a commonly-used method for solving equations of hydrodynamics in astrophysics (as well as many other fields!) from a lagrangian perspective.
 This provides many advantages over grid-based discretizations, but also poses somewhat different challenges for analysis and visualization.
@@ -2224,8 +2224,6 @@ On the left of the figure is a slice plot through a 2nd-order tetrahedral mesh.
 On the right, we have zoomed in on the edge of the boundary of the element mesh.
 In both, the mesh elements have been outlined in black.
 As is clearly visible in the second plot, `yt` is applying higher-order methods for computing pixel values; not only through non-linear interpolation of field values, but also in the shape of the elements, which extend outside the *linear* boundaries of the tetrahedral elements.
-
-
 
 ### Non-Cartesian Coordinates {#sec:noncartesian}
 
@@ -3185,7 +3183,7 @@ Widgyts provides a browser-side Jupyterlab interface to the pixelization routine
 ### Higher-Order Unstructured Mesh Elements
 
 
-### Software Volume Rendering
+### Software Volume Rendering {#sec:software-volume-rendering}
 
 The volume rendering is based on classical concepts for rendering 3D objects, and relies on the notion of a scene, a camera and an object to render.
 The object to render can be any data container of supported AMR datasets (either patch-based and octree-based datasets).
@@ -3710,19 +3708,104 @@ Packaging this separately from yt provides the opportunity for faster developmen
 We are exploring options for encouraging its uptake, particularly as we anticipate it will continue to grow and provide additional functionality.
 
 
-## Halo-Finding and Catalogs
+## Halo-Finding and Catalogs {#sec:halo_finding}
 
 
 ## Scaling and Parallelism 
 
+To support cases where data volume results in long processing time or large memory requirements, yt operations have been parallelized using the Message Passing Interface (MPI; @mpi40).
+When designing the parallel interface for yt, as discussed in [@doi:10.1088/0067-0049/192/1/9], the design goals included ensuring that scripts required little to no adjustments to be run in parallel.
+In the intervening time, the parallel operation infrastructure has been rewritten in several key ways to enable individuals to apply multi-level parallelism to their analysis operations.
+
+### Structure of Parallel Operations
+
+Almost all of the operations in yt that are conducted in parallel follow a straightforward method of decomposing work and consolidating results:
+
+ 1. Identify which chunking method (see @sec:chunking) is most appropriate for the operation.
+ 2. Consolidate chunks according to IO minimization and assign to individual MPI tasks
+ 3. Join (potentially applying reduction operations) final results to provide solution to *all tasks* in the group
+
+The final step, of joining across tasks, results in the final set of values being accessible to all tasks; this is not a universal "final step" in parallel operations, and in some cases results in substantial duplication of memory.
+This compromise was accepted as a result of the design goals of ensuring that scripts can run unmodified.
+
+The parallelism in yt heavily leans upon the "index" for a dataset either being available *already* at initiation time on all tasks, or that index being *accessible* through IO operations or fast generation.
+This provides a degree of load-balancing that can be conducted, as estimates of memory and processing requirements are available on all tasks (and thus the load-balancing calculations are deterministic across all tasks).
+In essence, this means that for grid-based datasets, the entire grid hierarchy is available on all processors; for octrees or particle datasets, it means that at least a rough estimate of the distribution of values must be available (and identical) on all processors.
+This doesn't prevent opaquely distributed datasets from being decomposed, but it does allow datasets whose distribution is well-described to be decomposed with greater precision.
+
+
+### Multi-Level Parallelism
+
+In its original implementation of parallelism, yt utilized a single, global MPI communicator (`MPI_COMM_WORLD`).
+This had the advantage of (counter-intuitively) not requiring a global state be tracked; however, it also greatly limited the degree to which tasks could be distributed.
+Current versions of yt now implement a stack-based approach to MPI communicators, where subsets of MPI tasks are assigned to different collective operations.
+
+For example, when conducting halo finding and analysis (see @sec:halo_finding) yt can parallelize in groups of MPI tasks *across* halos, and then decompose the work *within* a given halo across MPI tasks inside that communicator.
+This takes place by specifying a task size at the top level (or allowing yt's internal heuristics to determine it) and then distributing work to sub-communicators, each of which is then used for decomposition inside that top-level task.
+
+In addition to multi-level communicators, yt utilizes OpenMP constructs exposed in Cython in several places.
+This includes in the software volume rendering (see @sec:software-volume-rendering), in the pixelization operations for SPH data (see @sec:sph-analysis), calculation of gravitational binding energy (see @sec:analysis-modules) and for computing the bounding volume hierarchy for rendering finite element meshes (see @sec:unstructured-mesh-analysis).
+In some instances, the Cython interface to OpenMP has had unpredictable performance implications; owing to this, the usage of OpenMP within yt has been somewhat conservative.
+
+### Parallelism Interfaces
+
+yt presents interfaces for implicit parallelism, wherein internal parallelism constructs are utilized by yt operations, as well as explicit operations that are conducted in parallel.
+The former is woven throughout the fabric of all derived quantities, multi-dimensional profiling, and projection operations.
+This parallelism is instrumented through the use of the yt "chunking" interface, and all derived quantities implement a fixed set of initialization, calculation, reduction and finalization operations.
+The high-level interface to the `DerivedQuantity` subclasses computes the data chunks in the source data object and then assigns these to individual MPI tasks in the current top-level communicator.
+Each initializes storage space for the intermediate values, iterates over its assigned chunks and constructs intermediate reductions, and then the finalization step involves broadcasting the values to all other tasks and completing the final set of operations.
+For projections, the procedure is very similar; those datasets with an index duplicated across MPI tasks (such as patch-based grid datasets) are collapsed along a dimension and each MPI task fills in the values, which are then reduced through a broadcast operation.
+Utilizing these operations requires *no* modifications to user-facing code other than a call to `yt.enable_parallelism()` at the start of the script.
+
+The user-facing parallel constructs allow for somewhat greater flexibility in defining parallel task decomposition.
+Many objects in yt, particularly those such as the `DatasetSeries` object, have constituent data objects on which analysis can be conducted.
+These often provide a `piter` method, for "parallel iteration."
+This provides a shorthand method of applying the `parallel_objects` interface, described below, and allows for dynamic task allocation, per-item storage and specifying the number of processors in the communicator assigned to each object.
+
+Finally, yt also provides a top-level `parallel_objects` command.
+This accepts an iterable object (which typically must be able to provide length, so unknown-length generators are not suitable) and a desired sub-task size.
+yt will group these objects into sub-communicators of the specified size, defaulting to a single MPI task per object.
+Additionally, yt can provide a storage object to each individual sub-communicator, if that storage object is provided to the `parallel_objects` function call.
+Each sub-communicator can then set a key and a value, and all tasks will receive the union of these keys and values following the completion of the loop.
+For example:
+
+```python
+yt.enable_parallelism()
+my_dictionary = {}
+for sto, dataset in dataset_series.piter(storage=my_dictionary):
+    ...  # process
+    sto.result = ...  # some information processed for this dataset
+    sto.result_id = ...  # some identifier for this dataset
+```
+
+Following the completion of the loop, all tasks in the top-level communicator will have a full `my_dictionary` object, which can be used for plotting or subsequent analysis.
+Common applications of this include iterating over datasets to identify quantities, conduct analysis operations, and so forth.
+Using multiple levels of parallelism allows researchers to allocate a large processor count job on an HPC resource and dedicate individual portions of it to each dataset in a set of data outputs.
+For many types of data analysis, particularly those operations conducted across a range of outputs, this allows much easier strong scaling.
+
 ### Performance of Operations
+
+
 
 ### Inline Analysis
 
-### Simple Parallelism
+It is possible to instrument a simulation code to call Python routines inline during its execution.
+Enzo has been instrumented in such a fashion; it accepts parameters that govern when and how frequently Python is called.
+Prior to calling to Python, Enzo exposes views onto its data fields as numpy arrays.
+`yt` has a special-purpose frontend that can access these views, as well as additional metadata passed through module-level objects, and then constructs appropriate `yt`-specific data objects around the data provided by the simulation.
+In these cases, `yt` did not pass around datasets between MPI tasks, but rather decomposed under the assumption that data communication was not possible, and also that tasks would be broadly pre-load balanced by the simulation platform.
+Within Enzo, all of the communication between Python and C++ was managed through Enzo's usage of the C API.
+This required some knowledge of how Python conducts garbage collection, and required ensuring that reference counting was managed correctly to avoid memory leaks.
+
+This non-standardized approach to conducting *in situ* visualization led to the creation and development of the library `libyt` which serves as an intermediary layer between simulation codes and `yt` (and Python in general.)
+This library encapsulates all Python API calls, manages references, and provides a systematic method for providing data pointers to Python.
+`libyt` provides a stable C-based API, and is accessible from numerous different languages.
+It also provides a custom-built `yt` frontend for accepting data.
+A more complete description is outside the scope of this paper, and we refer the reader to (**MJT: cite in prep manuscript**).
 
 
-## Analysis Modules
+
+## Analysis Modules {#sec:analysis-modules}
 
 For much of its development history, `yt` took the approach of bundling as many analysis modules as possible in the primary repository.
 This provided the advantage of having all work be centralized, and ensuring that each download or installation of `yt` was a fully-featured system for analyzing a large swath of data, but it brought with it the development overhead of the entire `yt` package for what in many cases were isolated pieces of functionality with separable responsibilities.
