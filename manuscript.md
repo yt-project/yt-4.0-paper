@@ -288,9 +288,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/45431b4025c57f37059521fe482f16d35345d96c/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/45431b4025c57f37059521fe482f16d35345d96c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/45431b4025c57f37059521fe482f16d35345d96c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/d1e605fa717a5b1ffeead80ca21cf68c236d7a0f/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/d1e605fa717a5b1ffeead80ca21cf68c236d7a0f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/d1e605fa717a5b1ffeead80ca21cf68c236d7a0f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -313,9 +313,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/45431b4025c57f37059521fe482f16d35345d96c/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/d1e605fa717a5b1ffeead80ca21cf68c236d7a0f/))
 was automatically generated
-from [yt-project/yt-4.0-paper@45431b4](https://github.com/yt-project/yt-4.0-paper/tree/45431b4025c57f37059521fe482f16d35345d96c)
+from [yt-project/yt-4.0-paper@d1e605f](https://github.com/yt-project/yt-4.0-paper/tree/d1e605fa717a5b1ffeead80ca21cf68c236d7a0f)
 on May 17, 2023.
 </em></small>
 
@@ -2146,7 +2146,71 @@ For instance, this means that a "ray" object (often used to compute, for instanc
 Other than these differences, which have been intentionally made to align the results with the expected results from the underlying discretization method, the APIs for access to particle data and finite volume data are identical, and they provide broadly identical functionality, where the disparities are typically in functionality such as volume rendering.
 This allows a single analysis script, or package (such as Trident), to utilize a high-level API to address both gridded and Lagrangian data while still ensuring that the results are high-fidelity and representative of the underlying methods.
 
-### Unstructured Mesh Analysis
+### Unstructured Mesh Analysis {#sec:unstructured_mesh}
+
+`yt` has support for several different types of unstructured mesh elements.
+Typically, these are supplied as a set of coordinate points (vertices) and connectivity between those vertices.
+`yt` is able to interpret three types of elements (and their 2D counterparts): tetrahedral elements (4 faces, 4 vertices), wedge elements (5 faces, 6 vertices) and hexahedral elements (6 faces, 8 vertices).
+These vertices can serve as control points, where values are defined at those locations; in finite element simulations, there can be additional control points for higher-order solutions.
+(For a deeper investigation of the way finite elements are defined and how this corresponds to real-space coordinates, we suggest starting with the [periodic table of the finite elements](https://www-users.cse.umn.edu/~arnold/femtable/index.html) which provides both visual reference and a set of citations for further exploration; further explanation can be found in the [SIAM News Article](https://sinews.siam.org/Details-Page/periodic-table-of-the-finite-elements) describing the table.)
+
+#### Data Access for Unstructured Mesh
+
+Similar to how `yt` manages data access for particle and finite volume datasets, for unstructured mesh datasets `yt` identifies each element *collection* as a chunk.
+This means that for situations where you have multiple meshes, composed of individual elements, each will represent its own chunk as well as its own mesh object.
+For example, in MOOSE-based simulations with multiple connectivity arrays, each will be a different "field type" -- typically named `connect1`, `connect2`, etc.
+These are then joined (similar to how {@sec:particle_unions} are defined) into collections that include all of the elements of different types.
+
+A few items are of particular note in the implementation of finite element mesh analysis in `yt`.
+The first is that `yt` supports direct, native higher-order finite element visualization.
+Visualization of unstructured meshes, and finite element frameworks, utilizes its own set of custom pixelization routines that are dependent not only on the element type but the order of the calculation.
+
+The second item that is of relevance is that `yt` is able to apply "displacement" vectors to the elements; these displacement vectors can vary with time, and thus element position and shape can vary over the course of a simulation.
+By providing appropriate arguments, `yt` can scale these displacement vectors (either with scalars or vector values) to exaggerate or distort their application, and in addition a vector offset can be applied to the vertices in the dataset.
+Scaling and offsetting are both applied on a per-mesh basis, enabling individual collections of elements to be scaled individually.
+
+One of the most important optimizations that has yet to be applied to the unstructured mesh support in `yt` is in the "coarse" indexing process of selection.
+While fine-grained indexing and selection is applied, the process of checking which meshes (i.e., coarse chunks) may intersect a given selector currently passes everything through to the next stage; this is highly-inefficient, and an important target for future optimization.
+
+#### Sampling Mesh Elements {#sec:unstructured_mesh_sampling}
+
+The pixelization routines in `yt` for unstructured mesh elements rely on computing $f(x,y,z)$ for all locations within an element that appear in the image plane.
+To properly conduct this pixelization, as well as to utilize software or hardware volume rendering, we have to construct a high-fidelity sampling system that can accept data of different orders, connectivity, and shape.
+This utilizes a multi-step process that is mediated by subclasses of the Cython-based class, `ElementMapper`.
+All `ElementMapper` subclasses need to provide two functions, one to transform a "physical" position $(x, y, z)$ to the position within the reference "unit" element ($x', y', z')$, and one to sample the value at a position in the "unit" element ($f(x', y', z')$) given a set of vertex or control point values.
+Where hand-written optimizations for these functions are not available, classes are autogenerated from high-level shape function definitions; functions for both the sampling method and a Jacobian are generated using SymPy and output to Cython, where they are compiled ahead of time.
+In @tbl:finite_element_types we enumerate the types of finite elements supported at present.
+
+| Type   | # Dims | # Vertices | Description             |
+| -      | -      | -          | -                       |
+| `P1`   | 1      | 2          | Linear                  |
+| `P1`   | 2      | 4          | Linear Triangular       |
+| `Q1`   | 2      | 4          | Linear Quadrilateral    |
+| `T2`   | 2      | 6          | Quadratic Triangular    |
+| `Q2`   | 2      | 9          | Quadratic Quadrilateral |
+| `P1`   | 3      | 8          | Linear Tetrahedral      |
+| `Q1`   | 3      | 8          | Linear Hexahedral       |
+| `W1`   | 3      | 6          | Linear Wedge            |
+| `Tet2` | 3      | 10         | Quadratic Tetrahedral   |
+| `S2`   | 3      | 20         | Quadratic Hexahedral    |
+
+Table: Finite element types supported in `yt`. {#tbl:finite_element_types}
+
+To conduct pixelization of a slice or to compute values for volume rendering, `yt` first computes bounding boxes for the individual values.
+Once a pixel has been identified as being "within" a particular element (which also takes into account the shape of higher-order elements, rather than assuming a flat set of planes) the pixelizer has to compute the value at that location.
+In order to compute intra-element values at a position $(x, y, z)$ the position within a *reference* element $(x', y', z')$ must first be computed, and then the value solved for given the values at the vertices.
+This is conducted within the function `sample_at_real_point`, which is defined for each `ElementMapper`.
+
+![Example of a finite element mesh with higher-order tetrahedral elements, including a zoom-in on one of the elements](images/fem_example.png){#fig:finite_element_higher_order}
+
+Of particular note is that, as listed in Table @tbl:finite_element_types , `yt` has support for higher-order element types.
+In Figure @fig:finite_element_higher_order, an example of this is displayed.
+On the left of the figure is a slice plot through a 2nd-order tetrahedral mesh.
+On the right, we have zoomed in on the edge of the boundary of the element mesh.
+In both, the mesh elements have been outlined in black.
+As is clearly visible in the second plot, `yt` is applying higher-order methods for computing pixel values; not only through non-linear interpolation of field values, but also in the shape of the elements, which extend outside the *linear* boundaries of the tetrahedral elements.
+
+
 
 ### Non-Cartesian Coordinates {#sec:noncartesian}
 
