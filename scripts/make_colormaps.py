@@ -2,8 +2,8 @@ import numpy as np
 import cmyt
 import yt
 
-colormaps = [ "algae", "arbre", "dusk", "kelp", "octarine", "pastel",
-             "pixel_blue", "pixel_green", "pixel_red", "xray"]
+colormaps = [ "algae", "apricity", "arbre", "dusk", "kelp", "octarine",
+             "pastel", "pixel_blue", "pixel_green", "pixel_red", "xray"]
 
 x = np.mgrid[0.0:1.0:512j]
 ones = np.ones(64).astype("f8")
