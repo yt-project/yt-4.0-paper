@@ -374,9 +374,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/ba6bcf10031a2bf321684208acec53345e3e09c0/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ba6bcf10031a2bf321684208acec53345e3e09c0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ba6bcf10031a2bf321684208acec53345e3e09c0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/d93e154ce98be55060cd592713369aa8f8bb78e1/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/d93e154ce98be55060cd592713369aa8f8bb78e1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/d93e154ce98be55060cd592713369aa8f8bb78e1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -478,9 +478,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-4.0-paper/v/ba6bcf10031a2bf321684208acec53345e3e09c0/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-4.0-paper/v/d93e154ce98be55060cd592713369aa8f8bb78e1/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-4.0-paper/tree/ba6bcf10031a2bf321684208acec53345e3e09c0">yt-project/yt-4.0-paper@ba6bcf1</a>
+from <a href="https://github.com/yt-project/yt-4.0-paper/tree/d93e154ce98be55060cd592713369aa8f8bb78e1">yt-project/yt-4.0-paper@d93e154</a>
 on May 17, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -2212,7 +2212,7 @@ fetch('./images/grid_scene.json')
     .then((response) => response.json())
     .then((json) => {
         const scene = new THREE.ObjectLoader().parse( json );
-        const renderer = new WebGLRenderer();
+        const renderer = new THREE.WebGLRenderer();
         renderer.setSize(container.clientWidth, container.clientHeight);
         renderer.setPixelRatio(window.devicePixelRatio);
         container.append(renderer.domElement);
