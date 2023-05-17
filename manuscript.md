@@ -288,9 +288,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/ba6bcf10031a2bf321684208acec53345e3e09c0/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ba6bcf10031a2bf321684208acec53345e3e09c0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ba6bcf10031a2bf321684208acec53345e3e09c0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/d93e154ce98be55060cd592713369aa8f8bb78e1/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/d93e154ce98be55060cd592713369aa8f8bb78e1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/d93e154ce98be55060cd592713369aa8f8bb78e1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -313,9 +313,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/ba6bcf10031a2bf321684208acec53345e3e09c0/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/d93e154ce98be55060cd592713369aa8f8bb78e1/))
 was automatically generated
-from [yt-project/yt-4.0-paper@ba6bcf1](https://github.com/yt-project/yt-4.0-paper/tree/ba6bcf10031a2bf321684208acec53345e3e09c0)
+from [yt-project/yt-4.0-paper@d93e154](https://github.com/yt-project/yt-4.0-paper/tree/d93e154ce98be55060cd592713369aa8f8bb78e1)
 on May 17, 2023.
 </em></small>
 
@@ -2015,7 +2015,7 @@ fetch('./images/grid_scene.json')
     .then((response) => response.json())
     .then((json) => {
         const scene = new THREE.ObjectLoader().parse( json );
-        const renderer = new WebGLRenderer();
+        const renderer = new THREE.WebGLRenderer();
         renderer.setSize(container.clientWidth, container.clientHeight);
         renderer.setPixelRatio(window.devicePixelRatio);
         container.append(renderer.domElement);
