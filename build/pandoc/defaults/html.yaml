@@ -6,6 +6,7 @@ include-before-body:
 - build/plugins/d3.html
 - build/plugins/paperjs.html
 - build/plugins/vega-lite.html
+- build/plugins/threejs.html
 include-after-body:
 ### theme
 - build/themes/default.html
