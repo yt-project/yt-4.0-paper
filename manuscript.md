@@ -288,9 +288,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/d1e605fa717a5b1ffeead80ca21cf68c236d7a0f/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/d1e605fa717a5b1ffeead80ca21cf68c236d7a0f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/d1e605fa717a5b1ffeead80ca21cf68c236d7a0f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/ba6bcf10031a2bf321684208acec53345e3e09c0/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ba6bcf10031a2bf321684208acec53345e3e09c0/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ba6bcf10031a2bf321684208acec53345e3e09c0/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -313,9 +313,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/d1e605fa717a5b1ffeead80ca21cf68c236d7a0f/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/ba6bcf10031a2bf321684208acec53345e3e09c0/))
 was automatically generated
-from [yt-project/yt-4.0-paper@d1e605f](https://github.com/yt-project/yt-4.0-paper/tree/d1e605fa717a5b1ffeead80ca21cf68c236d7a0f)
+from [yt-project/yt-4.0-paper@ba6bcf1](https://github.com/yt-project/yt-4.0-paper/tree/ba6bcf10031a2bf321684208acec53345e3e09c0)
 on May 17, 2023.
 </em></small>
 
@@ -2007,6 +2007,21 @@ Necessarily, both indexing and selection methods must be implemented to expose t
 We detail these below, specifically describing how they are implemented and how they can be improved in future iterations.
 
 ### Grid Analysis
+
+<div id="grid_scene" style="width:400px;height:400px;"></div>
+<script>
+const container = document.querySelector('#grid_scene');
+fetch('./images/grid_scene.json')
+    .then((response) => response.json())
+    .then((json) => {
+        const scene = new THREE.ObjectLoader().parse( json );
+        const renderer = new WebGLRenderer();
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        container.append(renderer.domElement);
+        renderer.render(scene, scene.children[0]);
+});
+</script>
 
 `yt` was originally written to support the Enzo code, which is a patch-based Adaptive Mesh Refinement (AMR) simulation platform.
 Analysis of grid-based data is the most frequent application of `yt`.
