@@ -122,6 +122,14 @@ frontends:
   - '@doi:10.1103/PhysRevD.103.063525'
   - '@doi:10.1103/PhysRevD.105.023516'
   - '@doi:10.1016/j.cpc.2022.108457'
+- citations:
+  - '@doi:10.1088/0067-0049/217/2/24'
+  comments: 'CHOLLA is a uniform-resolution grid code operating almost entirely on
+    GPUs.'
+  index_type:
+  - grid
+  name: cholla
+  usage_citations: []
 - citations: []
   comments: null
   index_type:
@@ -352,3 +360,14 @@ frontends:
   name: ytdata
   usage_citations:
   - '@doi:10.1093/mnras/sty2103'
+- citations:
+  - '@doi:10.1177/10943420221143775'
+  comments: 'Parthenon is a performance portable block-structured adaptive mesh
+    refinement framework and the basis for various downstream codes such as
+    AthenaPK, Phoebus, or KHARMA.
+
+    '
+  index_type:
+  - grid
+  name: parthenon
+  usage_citations: []
