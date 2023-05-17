@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="600" height="400" viewBox="0 -400 600 400" id="index_coord_figure">
+<defs>
+</defs>
+<g id="coordinate_space_cells">
+<g id="coord_cell_00">
+<title>cell index (0, 0)</title>
+<path d="M410.0,-200.0 A0.0,0.0,0,0,0,410.0,-200.0 L421.64685702961344,-156.53333781699192 A45.0,45.0,0,0,1,410.0,-155.0 Z" fill="#9e0142" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  0" data-cell="  0" data-theta-0="-90.00" data-theta-1="-75.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="coord_cell_01">
+<title>cell index (0, 1)</title>
+<path d="M410.0,-200.0 A0.0,0.0,0,0,0,410.0,-200.0 L432.5,-161.02885682970026 A45.0,45.0,0,0,1,421.64685702961344,-156.53333781699192 Z" fill="#a40844" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  1" data-cell="  1" data-theta-0="-75.00" data-theta-1="-60.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="coord_cell_02">
+<title>cell index (0, 2)</title>
+<path d="M410.0,-200.0 A0.0,0.0,0,0,0,410.0,-200.0 L441.81980515339467,-168.18019484660536 A45.0,45.0,0,0,1,432.5,-161.02885682970026 Z" fill="#ab0f45" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  2" data-cell="  2" data-theta-0="-60.00" data-theta-1="-45.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="coord_cell_03">
+<title>cell index (0, 3)</title>
+<path d="M410.0,-200.0 A0.0,0.0,0,0,0,410.0,-200.0 L448.97114317029974,-177.5 A45.0,45.0,0,0,1,441.81980515339467,-168.18019484660536 Z" fill="#b11747" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  3" data-cell="  3" data-theta-0="-45.00" data-theta-1="-30.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="coord_cell_04">
+<title>cell index (0, 4)</title>
+<path d="M410.0,-200.0 A0.0,0.0,0,0,0,410.0,-200.0 L453.46666218300805,-188.35314297038656 A45.0,45.0,0,0,1,448.97114317029974,-177.5 Z" fill="#b81e48" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  4" data-cell="  4" data-theta-0="-30.00" data-theta-1="-15.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="coord_cell_05">
+<title>cell index (0, 5)</title>
+<path d="M410.0,-200.0 A0.0,0.0,0,0,0,410.0,-200.0 L455.0,-200.0 A45.0,45.0,0,0,1,453.46666218300805,-188.35314297038656 Z" fill="#c1274a" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  5" data-cell="  5" data-theta-0="-15.00" data-theta-1=" 0.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="coord_cell_06">
+<title>cell index (0, 6)</title>
+<path d="M410.0,-200.0 A0.0,0.0,0,0,0,410.0,-200.0 L453.46666218300805,-211.64685702961344 A45.0,45.0,0,0,1,455.0,-200.0 Z" fill="#c72e4c" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  6" data-cell="  6" data-theta-0=" 0.00" data-theta-1=" 15.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="coord_cell_07">
+<title>cell index (0, 7)</title>
+<path d="M410.0,-200.0 A0.0,0.0,0,0,0,410.0,-200.0 L448.97114317029974,-222.5 A45.0,45.0,0,0,1,453.46666218300805,-211.64685702961344 Z" fill="#cd364d" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  7" data-cell="  7" data-theta-0=" 15.00" data-theta-1=" 30.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="coord_cell_08">
+<title>cell index (0, 8)</title>
+<path d="M410.0,-200.0 A0.0,0.0,0,0,0,410.0,-200.0 L441.81980515339467,-231.81980515339464 A45.0,45.0,0,0,1,448.97114317029974,-222.5 Z" fill="#d43d4f" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  8" data-cell="  8" data-theta-0=" 30.00" data-theta-1=" 45.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="coord_cell_09">
+<title>cell index (0, 9)</title>
+<path d="M410.0,-200.0 A0.0,0.0,0,0,0,410.0,-200.0 L432.5,-238.97114317029974 A45.0,45.0,0,0,1,441.81980515339467,-231.81980515339464 Z" fill="#d9444d" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  9" data-cell="  9" data-theta-0=" 45.00" data-theta-1=" 60.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="coord_cell_10">
+<title>cell index (0, 10)</title>
+<path d="M410.0,-200.0 A0.0,0.0,0,0,0,410.0,-200.0 L421.64685702961344,-243.46666218300808 A45.0,45.0,0,0,1,432.5,-238.97114317029974 Z" fill="#dd4a4c" stroke="black" class="cell" data-cell-i="  0" data-cell-j=" 10" data-cell=" 10" data-theta-0=" 60.00" data-theta-1=" 75.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="coord_cell_11">
+<title>cell index (0, 11)</title>
+<path d="M410.0,-200.0 A0.0,0.0,0,0,0,410.0,-200.0 L410.0,-245.0 A45.0,45.0,0,0,1,421.64685702961344,-243.46666218300808 Z" fill="#e1504b" stroke="black" class="cell" data-cell-i="  0" data-cell-j=" 11" data-cell=" 11" data-theta-0=" 75.00" data-theta-1=" 90.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="coord_cell_12">
+<title>cell index (1, 0)</title>
+<path d="M410.0,-155.0 A45.0,45.0,0,0,0,421.64685702961344,-156.53333781699192 L433.2937140592269,-113.06667563398385 A90.0,90.0,0,0,1,410.0,-110.0 Z" fill="#e45549" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  0" data-cell=" 12" data-theta-0="-90.00" data-theta-1="-75.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_13">
+<title>cell index (1, 1)</title>
+<path d="M421.64685702961344,-156.53333781699192 A45.0,45.0,0,0,0,432.5,-161.02885682970026 L455.0,-122.05771365940052 A90.0,90.0,0,0,1,433.2937140592269,-113.06667563398385 Z" fill="#e95c47" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  1" data-cell=" 13" data-theta-0="-75.00" data-theta-1="-60.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_14">
+<title>cell index (1, 2)</title>
+<path d="M432.5,-161.02885682970026 A45.0,45.0,0,0,0,441.81980515339467,-168.18019484660536 L473.6396103067893,-136.36038969321072 A90.0,90.0,0,0,1,455.0,-122.05771365940052 Z" fill="#ed6246" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  2" data-cell=" 14" data-theta-0="-60.00" data-theta-1="-45.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_15">
+<title>cell index (1, 3)</title>
+<path d="M441.81980515339467,-168.18019484660536 A45.0,45.0,0,0,0,448.97114317029974,-177.5 L487.9422863405995,-155.0 A90.0,90.0,0,0,1,473.6396103067893,-136.36038969321072 Z" fill="#f06744" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  3" data-cell=" 15" data-theta-0="-45.00" data-theta-1="-30.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_16">
+<title>cell index (1, 4)</title>
+<path d="M448.97114317029974,-177.5 A45.0,45.0,0,0,0,453.46666218300805,-188.35314297038656 L496.93332436601617,-176.70628594077314 A90.0,90.0,0,0,1,487.9422863405995,-155.0 Z" fill="#f46d43" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  4" data-cell=" 16" data-theta-0="-30.00" data-theta-1="-15.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_17">
+<title>cell index (1, 5)</title>
+<path d="M453.46666218300805,-188.35314297038656 A45.0,45.0,0,0,0,455.0,-200.0 L500.0,-200.0 A90.0,90.0,0,0,1,496.93332436601617,-176.70628594077314 Z" fill="#f57748" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  5" data-cell=" 17" data-theta-0="-15.00" data-theta-1=" 0.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_18">
+<title>cell index (1, 6)</title>
+<path d="M455.0,-200.0 A45.0,45.0,0,0,0,453.46666218300805,-211.64685702961344 L496.93332436601617,-223.29371405922686 A90.0,90.0,0,0,1,500.0,-200.0 Z" fill="#f67f4b" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  6" data-cell=" 18" data-theta-0=" 0.00" data-theta-1=" 15.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_19">
+<title>cell index (1, 7)</title>
+<path d="M453.46666218300805,-211.64685702961344 A45.0,45.0,0,0,0,448.97114317029974,-222.5 L487.9422863405995,-245.0 A90.0,90.0,0,0,1,496.93332436601617,-223.29371405922686 Z" fill="#f8864f" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  7" data-cell=" 19" data-theta-0=" 15.00" data-theta-1=" 30.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_20">
+<title>cell index (1, 8)</title>
+<path d="M448.97114317029974,-222.5 A45.0,45.0,0,0,0,441.81980515339467,-231.81980515339464 L473.6396103067893,-263.6396103067893 A90.0,90.0,0,0,1,487.9422863405995,-245.0 Z" fill="#f98e52" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  8" data-cell=" 20" data-theta-0=" 30.00" data-theta-1=" 45.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_21">
+<title>cell index (1, 9)</title>
+<path d="M441.81980515339467,-231.81980515339464 A45.0,45.0,0,0,0,432.5,-238.97114317029974 L455.0,-277.9422863405995 A90.0,90.0,0,0,1,473.6396103067893,-263.6396103067893 Z" fill="#fa9857" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  9" data-cell=" 21" data-theta-0=" 45.00" data-theta-1=" 60.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_22">
+<title>cell index (1, 10)</title>
+<path d="M432.5,-238.97114317029974 A45.0,45.0,0,0,0,421.64685702961344,-243.46666218300808 L433.2937140592269,-286.93332436601617 A90.0,90.0,0,0,1,455.0,-277.9422863405995 Z" fill="#fba05b" stroke="black" class="cell" data-cell-i="  1" data-cell-j=" 10" data-cell=" 22" data-theta-0=" 60.00" data-theta-1=" 75.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_23">
+<title>cell index (1, 11)</title>
+<path d="M421.64685702961344,-243.46666218300808 A45.0,45.0,0,0,0,410.0,-245.0 L410.0,-290.0 A90.0,90.0,0,0,1,433.2937140592269,-286.93332436601617 Z" fill="#fca85e" stroke="black" class="cell" data-cell-i="  1" data-cell-j=" 11" data-cell=" 23" data-theta-0=" 75.00" data-theta-1=" 90.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_24">
+<title>cell index (2, 0)</title>
+<path d="M410.0,-110.0 A90.0,90.0,0,0,0,433.2937140592269,-113.06667563398385 L444.94057108884033,-69.60001345097578 A135.0,135.0,0,0,1,410.0,-65.0 Z" fill="#fdaf62" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  0" data-cell=" 24" data-theta-0="-90.00" data-theta-1="-75.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_25">
+<title>cell index (2, 1)</title>
+<path d="M433.2937140592269,-113.06667563398385 A90.0,90.0,0,0,0,455.0,-122.05771365940052 L477.5,-83.0865704891008 A135.0,135.0,0,0,1,444.94057108884033,-69.60001345097578 Z" fill="#fdb768" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  1" data-cell=" 25" data-theta-0="-75.00" data-theta-1="-60.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_26">
+<title>cell index (2, 2)</title>
+<path d="M455.0,-122.05771365940052 A90.0,90.0,0,0,0,473.6396103067893,-136.36038969321072 L505.4594154601839,-104.5405845398161 A135.0,135.0,0,0,1,477.5,-83.0865704891008 Z" fill="#fdbd6d" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  2" data-cell=" 26" data-theta-0="-60.00" data-theta-1="-45.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_27">
+<title>cell index (2, 3)</title>
+<path d="M473.6396103067893,-136.36038969321072 A90.0,90.0,0,0,0,487.9422863405995,-155.0 L526.9134295108993,-132.5 A135.0,135.0,0,0,1,505.4594154601839,-104.5405845398161 Z" fill="#fdc372" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  3" data-cell=" 27" data-theta-0="-45.00" data-theta-1="-30.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_28">
+<title>cell index (2, 4)</title>
+<path d="M487.9422863405995,-155.0 A90.0,90.0,0,0,0,496.93332436601617,-176.70628594077314 L540.3999865490242,-165.0594289111597 A135.0,135.0,0,0,1,526.9134295108993,-132.5 Z" fill="#fec877" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  4" data-cell=" 28" data-theta-0="-30.00" data-theta-1="-15.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_29">
+<title>cell index (2, 5)</title>
+<path d="M496.93332436601617,-176.70628594077314 A90.0,90.0,0,0,0,500.0,-200.0 L545.0,-200.0 A135.0,135.0,0,0,1,540.3999865490242,-165.0594289111597 Z" fill="#fece7c" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  5" data-cell=" 29" data-theta-0="-15.00" data-theta-1=" 0.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_30">
+<title>cell index (2, 6)</title>
+<path d="M500.0,-200.0 A90.0,90.0,0,0,0,496.93332436601617,-223.29371405922686 L540.3999865490242,-234.9405710888403 A135.0,135.0,0,0,1,545.0,-200.0 Z" fill="#fed683" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  6" data-cell=" 30" data-theta-0=" 0.00" data-theta-1=" 15.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_31">
+<title>cell index (2, 7)</title>
+<path d="M496.93332436601617,-223.29371405922686 A90.0,90.0,0,0,0,487.9422863405995,-245.0 L526.9134295108993,-267.5 A135.0,135.0,0,0,1,540.3999865490242,-234.9405710888403 Z" fill="#fedc88" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  7" data-cell=" 31" data-theta-0=" 15.00" data-theta-1=" 30.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_32">
+<title>cell index (2, 8)</title>
+<path d="M487.9422863405995,-245.0 A90.0,90.0,0,0,0,473.6396103067893,-263.6396103067893 L505.4594154601839,-295.4594154601839 A135.0,135.0,0,0,1,526.9134295108993,-267.5 Z" fill="#fee18d" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  8" data-cell=" 32" data-theta-0=" 30.00" data-theta-1=" 45.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_33">
+<title>cell index (2, 9)</title>
+<path d="M473.6396103067893,-263.6396103067893 A90.0,90.0,0,0,0,455.0,-277.9422863405995 L477.5,-316.9134295108992 A135.0,135.0,0,0,1,505.4594154601839,-295.4594154601839 Z" fill="#fee593" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  9" data-cell=" 33" data-theta-0=" 45.00" data-theta-1=" 60.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_34">
+<title>cell index (2, 10)</title>
+<path d="M455.0,-277.9422863405995 A90.0,90.0,0,0,0,433.2937140592269,-286.93332436601617 L444.94057108884033,-330.3999865490242 A135.0,135.0,0,0,1,477.5,-316.9134295108992 Z" fill="#feea9b" stroke="black" class="cell" data-cell-i="  2" data-cell-j=" 10" data-cell=" 34" data-theta-0=" 60.00" data-theta-1=" 75.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_35">
+<title>cell index (2, 11)</title>
+<path d="M433.2937140592269,-286.93332436601617 A90.0,90.0,0,0,0,410.0,-290.0 L410.0,-335.0 A135.0,135.0,0,0,1,444.94057108884033,-330.3999865490242 Z" fill="#feeda1" stroke="black" class="cell" data-cell-i="  2" data-cell-j=" 11" data-cell=" 35" data-theta-0=" 75.00" data-theta-1=" 90.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_36">
+<title>cell index (3, 0)</title>
+<path d="M410.0,-65.0 A135.0,135.0,0,0,0,444.94057108884033,-69.60001345097578 L456.5874281184537,-26.133351267967697 A180.0,180.0,0,0,1,410.0,-20.0 Z" fill="#fff1a8" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  0" data-cell=" 36" data-theta-0="-90.00" data-theta-1="-75.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="coord_cell_37">
+<title>cell index (3, 1)</title>
+<path d="M444.94057108884033,-69.60001345097578 A135.0,135.0,0,0,0,477.5,-83.0865704891008 L500.0,-44.11542731880104 A180.0,180.0,0,0,1,456.5874281184537,-26.133351267967697 Z" fill="#fff5ae" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  1" data-cell=" 37" data-theta-0="-75.00" data-theta-1="-60.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="coord_cell_38">
+<title>cell index (3, 2)</title>
+<path d="M477.5,-83.0865704891008 A135.0,135.0,0,0,0,505.4594154601839,-104.5405845398161 L537.2792206135786,-72.72077938642146 A180.0,180.0,0,0,1,500.0,-44.11542731880104 Z" fill="#fffab6" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  2" data-cell=" 38" data-theta-0="-60.00" data-theta-1="-45.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="coord_cell_39">
+<title>cell index (3, 3)</title>
+<path d="M505.4594154601839,-104.5405845398161 A135.0,135.0,0,0,0,526.9134295108993,-132.5 L565.884572681199,-110.00000000000001 A180.0,180.0,0,0,1,537.2792206135786,-72.72077938642146 Z" fill="#fffdbc" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  3" data-cell=" 39" data-theta-0="-45.00" data-theta-1="-30.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="coord_cell_40">
+<title>cell index (3, 4)</title>
+<path d="M526.9134295108993,-132.5 A135.0,135.0,0,0,0,540.3999865490242,-165.0594289111597 L583.8666487320323,-153.41257188154628 A180.0,180.0,0,0,1,565.884572681199,-110.00000000000001 Z" fill="#fefebd" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  4" data-cell=" 40" data-theta-0="-30.00" data-theta-1="-15.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="coord_cell_41">
+<title>cell index (3, 5)</title>
+<path d="M540.3999865490242,-165.0594289111597 A135.0,135.0,0,0,0,545.0,-200.0 L590.0,-200.0 A180.0,180.0,0,0,1,583.8666487320323,-153.41257188154628 Z" fill="#fbfdb8" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  5" data-cell=" 41" data-theta-0="-15.00" data-theta-1=" 0.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="coord_cell_42">
+<title>cell index (3, 6)</title>
+<path d="M545.0,-200.0 A135.0,135.0,0,0,0,540.3999865490242,-234.9405710888403 L583.8666487320323,-246.58742811845372 A180.0,180.0,0,0,1,590.0,-200.0 Z" fill="#f7fcb2" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  6" data-cell=" 42" data-theta-0=" 0.00" data-theta-1=" 15.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="coord_cell_43">
+<title>cell index (3, 7)</title>
+<path d="M540.3999865490242,-234.9405710888403 A135.0,135.0,0,0,0,526.9134295108993,-267.5 L565.884572681199,-290.0 A180.0,180.0,0,0,1,583.8666487320323,-246.58742811845372 Z" fill="#f4faad" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  7" data-cell=" 43" data-theta-0=" 15.00" data-theta-1=" 30.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="coord_cell_44">
+<title>cell index (3, 8)</title>
+<path d="M526.9134295108993,-267.5 A135.0,135.0,0,0,0,505.4594154601839,-295.4594154601839 L537.2792206135786,-327.27922061357856 A180.0,180.0,0,0,1,565.884572681199,-290.0 Z" fill="#f1f9a9" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  8" data-cell=" 44" data-theta-0=" 30.00" data-theta-1=" 45.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="coord_cell_45">
+<title>cell index (3, 9)</title>
+<path d="M505.4594154601839,-295.4594154601839 A135.0,135.0,0,0,0,477.5,-316.9134295108992 L500.0,-355.88457268119896 A180.0,180.0,0,0,1,537.2792206135786,-327.27922061357856 Z" fill="#eef8a4" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  9" data-cell=" 45" data-theta-0=" 45.00" data-theta-1=" 60.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="coord_cell_46">
+<title>cell index (3, 10)</title>
+<path d="M477.5,-316.9134295108992 A135.0,135.0,0,0,0,444.94057108884033,-330.3999865490242 L456.5874281184537,-373.86664873203233 A180.0,180.0,0,0,1,500.0,-355.88457268119896 Z" fill="#eaf79e" stroke="black" class="cell" data-cell-i="  3" data-cell-j=" 10" data-cell=" 46" data-theta-0=" 60.00" data-theta-1=" 75.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="coord_cell_47">
+<title>cell index (3, 11)</title>
+<path d="M444.94057108884033,-330.3999865490242 A135.0,135.0,0,0,0,410.0,-335.0 L410.0,-380.0 A180.0,180.0,0,0,1,456.5874281184537,-373.86664873203233 Z" fill="#e7f59a" stroke="black" class="cell" data-cell-i="  3" data-cell-j=" 11" data-cell=" 47" data-theta-0=" 75.00" data-theta-1=" 90.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="coord_cell_48">
+<title>cell index (0, 0)</title>
+<path d="M453.46666218300805,-211.64685702961344 A45.0,45.0,0,0,0,450.9888721214529,-218.57181634119775 L471.48330818217937,-227.85772451179665 A67.5,67.5,0,0,1,475.1999932745121,-217.47028554442016 Z" fill="#e1f399" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  0" data-cell=" 48" data-theta-0=" 15.00" data-theta-1=" 24.38" data-r-0=" 0.250" data-r-1=" 0.375" />
+</g>
+<g id="coord_cell_49">
+<title>cell index (0, 1)</title>
+<path d="M450.9888721214529,-218.57181634119775 A45.0,45.0,0,0,0,447.41613255361455,-225.0006604858821 L466.1241988304218,-237.50099072882315 A67.5,67.5,0,0,1,471.48330818217937,-227.85772451179665 Z" fill="#daf09a" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  1" data-cell=" 49" data-theta-0=" 24.38" data-theta-1=" 33.75" data-r-0=" 0.250" data-r-1=" 0.375" />
+</g>
+<g id="coord_cell_50">
+<title>cell index (0, 2)</title>
+<path d="M447.41613255361455,-225.0006604858821 A45.0,45.0,0,0,0,442.8438832714026,-230.76165359102922 L459.26582490710393,-246.1424803865438 A67.5,67.5,0,0,1,466.1241988304218,-237.50099072882315 Z" fill="#d1ed9c" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  2" data-cell=" 50" data-theta-0=" 33.75" data-theta-1=" 43.12" data-r-0=" 0.250" data-r-1=" 0.375" />
+</g>
+<g id="coord_cell_51">
+<title>cell index (0, 3)</title>
+<path d="M442.8438832714026,-230.76165359102922 A45.0,45.0,0,0,0,437.3942643053924,-235.7009003131056 L451.09139645808864,-253.55135046965836 A67.5,67.5,0,0,1,459.26582490710393,-246.1424803865438 Z" fill="#caea9e" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  3" data-cell=" 51" data-theta-0=" 43.12" data-theta-1=" 52.50" data-r-0=" 0.250" data-r-1=" 0.375" />
+</g>
+<g id="coord_cell_52">
+<title>cell index (0, 4)</title>
+<path d="M437.3942643053924,-235.7009003131056 A45.0,45.0,0,0,0,431.2128531571699,-239.68645689567597 L441.81927973575483,-259.52968534351396 A67.5,67.5,0,0,1,451.09139645808864,-253.55135046965836 Z" fill="#c3e79f" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  4" data-cell=" 52" data-theta-0=" 52.50" data-theta-1=" 61.88" data-r-0=" 0.250" data-r-1=" 0.375" />
+</g>
+<g id="coord_cell_53">
+<title>cell index (0, 5)</title>
+<path d="M431.2128531571699,-239.68645689567597 A45.0,45.0,0,0,0,424.4647759386423,-242.61185582727975 L431.6971639079634,-263.9177837409196 A67.5,67.5,0,0,1,441.81927973575483,-259.52968534351396 Z" fill="#bce4a0" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  5" data-cell=" 53" data-theta-0=" 61.88" data-theta-1=" 71.25" data-r-0=" 0.250" data-r-1=" 0.375" />
+</g>
+<g id="coord_cell_54">
+<title>cell index (0, 6)</title>
+<path d="M424.4647759386423,-242.61185582727975 A45.0,45.0,0,0,0,417.3302963027565,-244.39894994381956 L420.99544445413477,-266.5984249157293 A67.5,67.5,0,0,1,431.6971639079634,-263.9177837409196 Z" fill="#b5e1a2" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  6" data-cell=" 54" data-theta-0=" 71.25" data-theta-1=" 80.62" data-r-0=" 0.250" data-r-1=" 0.375" />
+</g>
+<g id="coord_cell_55">
+<title>cell index (0, 7)</title>
+<path d="M417.3302963027565,-244.39894994381956 A45.0,45.0,0,0,0,410.0,-245.0 L410.0,-267.5 A67.5,67.5,0,0,1,420.99544445413477,-266.5984249157293 Z" fill="#acdda4" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  7" data-cell=" 55" data-theta-0=" 80.62" data-theta-1=" 90.00" data-r-0=" 0.250" data-r-1=" 0.375" />
+</g>
+<g id="coord_cell_56">
+<title>cell index (1, 0)</title>
+<path d="M475.1999932745121,-217.47028554442016 A67.5,67.5,0,0,0,471.48330818217937,-227.85772451179665 L491.9777442429058,-237.14363268239552 A90.0,90.0,0,0,1,496.93332436601617,-223.29371405922686 Z" fill="#a4daa4" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  0" data-cell=" 56" data-theta-0=" 15.00" data-theta-1=" 24.38" data-r-0=" 0.375" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_57">
+<title>cell index (1, 1)</title>
+<path d="M471.48330818217937,-227.85772451179665 A67.5,67.5,0,0,0,466.1241988304218,-237.50099072882315 L484.8322651072291,-250.0013209717642 A90.0,90.0,0,0,1,491.9777442429058,-237.14363268239552 Z" fill="#9cd7a4" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  1" data-cell=" 57" data-theta-0=" 24.38" data-theta-1=" 33.75" data-r-0=" 0.375" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_58">
+<title>cell index (1, 2)</title>
+<path d="M466.1241988304218,-237.50099072882315 A67.5,67.5,0,0,0,459.26582490710393,-246.1424803865438 L475.6877665428052,-261.52330718205843 A90.0,90.0,0,0,1,484.8322651072291,-250.0013209717642 Z" fill="#94d4a4" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  2" data-cell=" 58" data-theta-0=" 33.75" data-theta-1=" 43.12" data-r-0=" 0.375" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_59">
+<title>cell index (1, 3)</title>
+<path d="M459.26582490710393,-246.1424803865438 A67.5,67.5,0,0,0,451.09139645808864,-253.55135046965836 L464.78852861078485,-271.4018006262112 A90.0,90.0,0,0,1,475.6877665428052,-261.52330718205843 Z" fill="#89d0a4" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  3" data-cell=" 59" data-theta-0=" 43.12" data-theta-1=" 52.50" data-r-0=" 0.375" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_60">
+<title>cell index (1, 4)</title>
+<path d="M451.09139645808864,-253.55135046965836 A67.5,67.5,0,0,0,441.81927973575483,-259.52968534351396 L452.4257063143398,-279.37291379135195 A90.0,90.0,0,0,1,464.78852861078485,-271.4018006262112 Z" fill="#81cda5" stroke="black" class="cell highlighted" data-cell-i="  1" data-cell-j="  4" data-cell=" 60" data-theta-0=" 52.50" data-theta-1=" 61.88" data-r-0=" 0.375" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_61">
+<title>cell index (1, 5)</title>
+<path d="M441.81927973575483,-259.52968534351396 A67.5,67.5,0,0,0,431.6971639079634,-263.9177837409196 L438.92955187728455,-285.2237116545595 A90.0,90.0,0,0,1,452.4257063143398,-279.37291379135195 Z" fill="#79c9a5" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  5" data-cell=" 61" data-theta-0=" 61.88" data-theta-1=" 71.25" data-r-0=" 0.375" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_62">
+<title>cell index (1, 6)</title>
+<path d="M431.6971639079634,-263.9177837409196 A67.5,67.5,0,0,0,420.99544445413477,-266.5984249157293 L424.660592605513,-288.7978998876391 A90.0,90.0,0,0,1,438.92955187728455,-285.2237116545595 Z" fill="#71c6a5" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  6" data-cell=" 62" data-theta-0=" 71.25" data-theta-1=" 80.62" data-r-0=" 0.375" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_63">
+<title>cell index (1, 7)</title>
+<path d="M420.99544445413477,-266.5984249157293 A67.5,67.5,0,0,0,410.0,-267.5 L410.0,-290.0 A90.0,90.0,0,0,1,424.660592605513,-288.7978998876391 Z" fill="#66c2a5" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  7" data-cell=" 63" data-theta-0=" 80.62" data-theta-1=" 90.00" data-r-0=" 0.375" data-r-1=" 0.500" />
+</g>
+<g id="coord_cell_64">
+<title>cell index (2, 0)</title>
+<path d="M496.93332436601617,-223.29371405922686 A90.0,90.0,0,0,0,491.9777442429058,-237.14363268239552 L512.4721803036323,-246.4295408529944 A112.5,112.5,0,0,1,518.6666554575202,-229.11714257403358 Z" fill="#60bba8" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  0" data-cell=" 64" data-theta-0=" 15.00" data-theta-1=" 24.38" data-r-0=" 0.500" data-r-1=" 0.625" />
+</g>
+<g id="coord_cell_65">
+<title>cell index (2, 1)</title>
+<path d="M491.9777442429058,-237.14363268239552 A90.0,90.0,0,0,0,484.8322651072291,-250.0013209717642 L503.54033138403634,-262.50165121470525 A112.5,112.5,0,0,1,512.4721803036323,-246.4295408529944 Z" fill="#5ab4ab" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  1" data-cell=" 65" data-theta-0=" 24.38" data-theta-1=" 33.75" data-r-0=" 0.500" data-r-1=" 0.625" />
+</g>
+<g id="coord_cell_66">
+<title>cell index (2, 2)</title>
+<path d="M484.8322651072291,-250.0013209717642 A90.0,90.0,0,0,0,475.6877665428052,-261.52330718205843 L492.1097081785065,-276.904133977573 A112.5,112.5,0,0,1,503.54033138403634,-262.50165121470525 Z" fill="#54aead" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  2" data-cell=" 66" data-theta-0=" 33.75" data-theta-1=" 43.12" data-r-0=" 0.500" data-r-1=" 0.625" />
+</g>
+<g id="coord_cell_67">
+<title>cell index (2, 3)</title>
+<path d="M475.6877665428052,-261.52330718205843 A90.0,90.0,0,0,0,464.78852861078485,-271.4018006262112 L478.48566076348106,-289.25225078276395 A112.5,112.5,0,0,1,492.1097081785065,-276.904133977573 Z" fill="#4ba4b1" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  3" data-cell=" 67" data-theta-0=" 43.12" data-theta-1=" 52.50" data-r-0=" 0.500" data-r-1=" 0.625" />
+</g>
+<g id="coord_cell_68">
+<title>cell index (2, 4)</title>
+<path d="M464.78852861078485,-271.4018006262112 A90.0,90.0,0,0,0,452.4257063143398,-279.37291379135195 L463.0321328929247,-299.21614223918994 A112.5,112.5,0,0,1,478.48566076348106,-289.25225078276395 Z" fill="#459eb4" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  4" data-cell=" 68" data-theta-0=" 52.50" data-theta-1=" 61.88" data-r-0=" 0.500" data-r-1=" 0.625" />
+</g>
+<g id="coord_cell_69">
+<title>cell index (2, 5)</title>
+<path d="M452.4257063143398,-279.37291379135195 A90.0,90.0,0,0,0,438.92955187728455,-285.2237116545595 L446.16193984660566,-306.5296395681994 A112.5,112.5,0,0,1,463.0321328929247,-299.21614223918994 Z" fill="#3f97b7" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  5" data-cell=" 69" data-theta-0=" 61.88" data-theta-1=" 71.25" data-r-0=" 0.500" data-r-1=" 0.625" />
+</g>
+<g id="coord_cell_70">
+<title>cell index (2, 6)</title>
+<path d="M438.92955187728455,-285.2237116545595 A90.0,90.0,0,0,0,424.660592605513,-288.7978998876391 L428.32574075689126,-310.99737485954887 A112.5,112.5,0,0,1,446.16193984660566,-306.5296395681994 Z" fill="#3990ba" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  6" data-cell=" 70" data-theta-0=" 71.25" data-theta-1=" 80.62" data-r-0=" 0.500" data-r-1=" 0.625" />
+</g>
+<g id="coord_cell_71">
+<title>cell index (2, 7)</title>
+<path d="M424.660592605513,-288.7978998876391 A90.0,90.0,0,0,0,410.0,-290.0 L410.0,-312.5 A112.5,112.5,0,0,1,428.32574075689126,-310.99737485954887 Z" fill="#3387bc" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  7" data-cell=" 71" data-theta-0=" 80.62" data-theta-1=" 90.00" data-r-0=" 0.500" data-r-1=" 0.625" />
+</g>
+<g id="coord_cell_72">
+<title>cell index (3, 0)</title>
+<path d="M518.6666554575202,-229.11714257403358 A112.5,112.5,0,0,0,512.4721803036323,-246.4295408529944 L532.9666163643587,-255.7154490235933 A135.0,135.0,0,0,1,540.3999865490242,-234.9405710888403 Z" fill="#3880b9" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  0" data-cell=" 72" data-theta-0=" 15.00" data-theta-1=" 24.38" data-r-0=" 0.625" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_73">
+<title>cell index (3, 1)</title>
+<path d="M512.4721803036323,-246.4295408529944 A112.5,112.5,0,0,0,503.54033138403634,-262.50165121470525 L522.2483976608436,-275.0019814576463 A135.0,135.0,0,0,1,532.9666163643587,-255.7154490235933 Z" fill="#3d79b6" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  1" data-cell=" 73" data-theta-0=" 24.38" data-theta-1=" 33.75" data-r-0=" 0.625" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_74">
+<title>cell index (3, 2)</title>
+<path d="M503.54033138403634,-262.50165121470525 A112.5,112.5,0,0,0,492.1097081785065,-276.904133977573 L508.5316498142078,-292.2849607730876 A135.0,135.0,0,0,1,522.2483976608436,-275.0019814576463 Z" fill="#4273b3" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  2" data-cell=" 74" data-theta-0=" 33.75" data-theta-1=" 43.12" data-r-0=" 0.625" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_75">
+<title>cell index (3, 3)</title>
+<path d="M492.1097081785065,-276.904133977573 A112.5,112.5,0,0,0,478.48566076348106,-289.25225078276395 L492.1827929161773,-307.1027009393167 A135.0,135.0,0,0,1,508.5316498142078,-292.2849607730876 Z" fill="#496aaf" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  3" data-cell=" 75" data-theta-0=" 43.12" data-theta-1=" 52.50" data-r-0=" 0.625" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_76">
+<title>cell index (3, 4)</title>
+<path d="M478.48566076348106,-289.25225078276395 A112.5,112.5,0,0,0,463.0321328929247,-299.21614223918994 L473.63855947150967,-319.0593706870279 A135.0,135.0,0,0,1,492.1827929161773,-307.1027009393167 Z" fill="#4e63ac" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  4" data-cell=" 76" data-theta-0=" 52.50" data-theta-1=" 61.88" data-r-0=" 0.625" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_77">
+<title>cell index (3, 5)</title>
+<path d="M463.0321328929247,-299.21614223918994 A112.5,112.5,0,0,0,446.16193984660566,-306.5296395681994 L453.3943278159268,-327.83556748183923 A135.0,135.0,0,0,1,473.63855947150967,-319.0593706870279 Z" fill="#545ca8" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  5" data-cell=" 77" data-theta-0=" 61.88" data-theta-1=" 71.25" data-r-0=" 0.625" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_78">
+<title>cell index (3, 6)</title>
+<path d="M446.16193984660566,-306.5296395681994 A112.5,112.5,0,0,0,428.32574075689126,-310.99737485954887 L431.9908889082695,-333.1968498314586 A135.0,135.0,0,0,1,453.3943278159268,-327.83556748183923 Z" fill="#5956a5" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  6" data-cell=" 78" data-theta-0=" 71.25" data-theta-1=" 80.62" data-r-0=" 0.625" data-r-1=" 0.750" />
+</g>
+<g id="coord_cell_79">
+<title>cell index (3, 7)</title>
+<path d="M428.32574075689126,-310.99737485954887 A112.5,112.5,0,0,0,410.0,-312.5 L410.0,-335.0 A135.0,135.0,0,0,1,431.9908889082695,-333.1968498314586 Z" fill="#5e4fa2" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  7" data-cell=" 79" data-theta-0=" 80.62" data-theta-1=" 90.00" data-r-0=" 0.625" data-r-1=" 0.750" />
+</g>
+</g>
+<g id="index_space_cells">
+<g id="index_cell_00">
+<title>cell index (0, 0)</title>
+<rect x="73.33333333333333" y="-95.0" width="31.66666666666667" height="35.0" fill="#9e0142" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  0" data-cell="  0" data-theta-0="-90.00" data-theta-1="-75.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="index_cell_01">
+<title>cell index (0, 1)</title>
+<rect x="105.0" y="-95.0" width="31.666666666666657" height="35.0" fill="#a40844" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  1" data-cell="  1" data-theta-0="-75.00" data-theta-1="-60.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="index_cell_02">
+<title>cell index (0, 2)</title>
+<rect x="136.66666666666666" y="-95.0" width="31.666666666666686" height="35.0" fill="#ab0f45" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  2" data-cell="  2" data-theta-0="-60.00" data-theta-1="-45.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="index_cell_03">
+<title>cell index (0, 3)</title>
+<rect x="168.33333333333334" y="-95.0" width="31.666666666666657" height="35.0" fill="#b11747" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  3" data-cell="  3" data-theta-0="-45.00" data-theta-1="-30.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="index_cell_04">
+<title>cell index (0, 4)</title>
+<rect x="200.0" y="-95.0" width="31.666666666666686" height="35.0" fill="#b81e48" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  4" data-cell="  4" data-theta-0="-30.00" data-theta-1="-15.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="index_cell_05">
+<title>cell index (0, 5)</title>
+<rect x="231.66666666666669" y="-95.0" width="31.66666666666663" height="35.0" fill="#c1274a" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  5" data-cell="  5" data-theta-0="-15.00" data-theta-1=" 0.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="index_cell_06">
+<title>cell index (0, 6)</title>
+<rect x="263.3333333333333" y="-95.0" width="31.666666666666686" height="35.0" fill="#c72e4c" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  6" data-cell="  6" data-theta-0=" 0.00" data-theta-1=" 15.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="index_cell_07">
+<title>cell index (0, 7)</title>
+<rect x="295.0" y="-95.0" width="31.666666666666686" height="35.0" fill="#cd364d" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  7" data-cell="  7" data-theta-0=" 15.00" data-theta-1=" 30.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="index_cell_08">
+<title>cell index (0, 8)</title>
+<rect x="326.6666666666667" y="-95.0" width="31.66666666666663" height="35.0" fill="#d43d4f" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  8" data-cell="  8" data-theta-0=" 30.00" data-theta-1=" 45.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="index_cell_09">
+<title>cell index (0, 9)</title>
+<rect x="73.33333333333333" y="-130.0" width="31.66666666666667" height="35.0" fill="#d9444d" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  9" data-cell="  9" data-theta-0=" 45.00" data-theta-1=" 60.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="index_cell_10">
+<title>cell index (0, 10)</title>
+<rect x="105.0" y="-130.0" width="31.666666666666657" height="35.0" fill="#dd4a4c" stroke="black" class="cell" data-cell-i="  0" data-cell-j=" 10" data-cell=" 10" data-theta-0=" 60.00" data-theta-1=" 75.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="index_cell_11">
+<title>cell index (0, 11)</title>
+<rect x="136.66666666666666" y="-130.0" width="31.666666666666686" height="35.0" fill="#e1504b" stroke="black" class="cell" data-cell-i="  0" data-cell-j=" 11" data-cell=" 11" data-theta-0=" 75.00" data-theta-1=" 90.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+</g>
+<g id="index_cell_12">
+<title>cell index (1, 0)</title>
+<rect x="168.33333333333334" y="-130.0" width="31.666666666666657" height="35.0" fill="#e45549" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  0" data-cell=" 12" data-theta-0="-90.00" data-theta-1="-75.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_13">
+<title>cell index (1, 1)</title>
+<rect x="200.0" y="-130.0" width="31.666666666666686" height="35.0" fill="#e95c47" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  1" data-cell=" 13" data-theta-0="-75.00" data-theta-1="-60.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_14">
+<title>cell index (1, 2)</title>
+<rect x="231.66666666666669" y="-130.0" width="31.66666666666663" height="35.0" fill="#ed6246" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  2" data-cell=" 14" data-theta-0="-60.00" data-theta-1="-45.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_15">
+<title>cell index (1, 3)</title>
+<rect x="263.3333333333333" y="-130.0" width="31.666666666666686" height="35.0" fill="#f06744" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  3" data-cell=" 15" data-theta-0="-45.00" data-theta-1="-30.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_16">
+<title>cell index (1, 4)</title>
+<rect x="295.0" y="-130.0" width="31.666666666666686" height="35.0" fill="#f46d43" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  4" data-cell=" 16" data-theta-0="-30.00" data-theta-1="-15.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_17">
+<title>cell index (1, 5)</title>
+<rect x="326.6666666666667" y="-130.0" width="31.66666666666663" height="35.0" fill="#f57748" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  5" data-cell=" 17" data-theta-0="-15.00" data-theta-1=" 0.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_18">
+<title>cell index (1, 6)</title>
+<rect x="73.33333333333333" y="-165.0" width="31.66666666666667" height="35.0" fill="#f67f4b" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  6" data-cell=" 18" data-theta-0=" 0.00" data-theta-1=" 15.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_19">
+<title>cell index (1, 7)</title>
+<rect x="105.0" y="-165.0" width="31.666666666666657" height="35.0" fill="#f8864f" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  7" data-cell=" 19" data-theta-0=" 15.00" data-theta-1=" 30.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_20">
+<title>cell index (1, 8)</title>
+<rect x="136.66666666666666" y="-165.0" width="31.666666666666686" height="35.0" fill="#f98e52" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  8" data-cell=" 20" data-theta-0=" 30.00" data-theta-1=" 45.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_21">
+<title>cell index (1, 9)</title>
+<rect x="168.33333333333334" y="-165.0" width="31.666666666666657" height="35.0" fill="#fa9857" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  9" data-cell=" 21" data-theta-0=" 45.00" data-theta-1=" 60.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_22">
+<title>cell index (1, 10)</title>
+<rect x="200.0" y="-165.0" width="31.666666666666686" height="35.0" fill="#fba05b" stroke="black" class="cell" data-cell-i="  1" data-cell-j=" 10" data-cell=" 22" data-theta-0=" 60.00" data-theta-1=" 75.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_23">
+<title>cell index (1, 11)</title>
+<rect x="231.66666666666669" y="-165.0" width="31.66666666666663" height="35.0" fill="#fca85e" stroke="black" class="cell" data-cell-i="  1" data-cell-j=" 11" data-cell=" 23" data-theta-0=" 75.00" data-theta-1=" 90.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_24">
+<title>cell index (2, 0)</title>
+<rect x="263.3333333333333" y="-165.0" width="31.666666666666686" height="35.0" fill="#fdaf62" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  0" data-cell=" 24" data-theta-0="-90.00" data-theta-1="-75.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_25">
+<title>cell index (2, 1)</title>
+<rect x="295.0" y="-165.0" width="31.666666666666686" height="35.0" fill="#fdb768" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  1" data-cell=" 25" data-theta-0="-75.00" data-theta-1="-60.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_26">
+<title>cell index (2, 2)</title>
+<rect x="326.6666666666667" y="-165.0" width="31.66666666666663" height="35.0" fill="#fdbd6d" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  2" data-cell=" 26" data-theta-0="-60.00" data-theta-1="-45.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_27">
+<title>cell index (2, 3)</title>
+<rect x="73.33333333333333" y="-200.0" width="31.66666666666667" height="35.0" fill="#fdc372" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  3" data-cell=" 27" data-theta-0="-45.00" data-theta-1="-30.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_28">
+<title>cell index (2, 4)</title>
+<rect x="105.0" y="-200.0" width="31.666666666666657" height="35.0" fill="#fec877" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  4" data-cell=" 28" data-theta-0="-30.00" data-theta-1="-15.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_29">
+<title>cell index (2, 5)</title>
+<rect x="136.66666666666666" y="-200.0" width="31.666666666666686" height="35.0" fill="#fece7c" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  5" data-cell=" 29" data-theta-0="-15.00" data-theta-1=" 0.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_30">
+<title>cell index (2, 6)</title>
+<rect x="168.33333333333334" y="-200.0" width="31.666666666666657" height="35.0" fill="#fed683" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  6" data-cell=" 30" data-theta-0=" 0.00" data-theta-1=" 15.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_31">
+<title>cell index (2, 7)</title>
+<rect x="200.0" y="-200.0" width="31.666666666666686" height="35.0" fill="#fedc88" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  7" data-cell=" 31" data-theta-0=" 15.00" data-theta-1=" 30.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_32">
+<title>cell index (2, 8)</title>
+<rect x="231.66666666666669" y="-200.0" width="31.66666666666663" height="35.0" fill="#fee18d" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  8" data-cell=" 32" data-theta-0=" 30.00" data-theta-1=" 45.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_33">
+<title>cell index (2, 9)</title>
+<rect x="263.3333333333333" y="-200.0" width="31.666666666666686" height="35.0" fill="#fee593" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  9" data-cell=" 33" data-theta-0=" 45.00" data-theta-1=" 60.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_34">
+<title>cell index (2, 10)</title>
+<rect x="295.0" y="-200.0" width="31.666666666666686" height="35.0" fill="#feea9b" stroke="black" class="cell" data-cell-i="  2" data-cell-j=" 10" data-cell=" 34" data-theta-0=" 60.00" data-theta-1=" 75.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_35">
+<title>cell index (2, 11)</title>
+<rect x="326.6666666666667" y="-200.0" width="31.66666666666663" height="35.0" fill="#feeda1" stroke="black" class="cell" data-cell-i="  2" data-cell-j=" 11" data-cell=" 35" data-theta-0=" 75.00" data-theta-1=" 90.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_36">
+<title>cell index (3, 0)</title>
+<rect x="73.33333333333333" y="-235.00000000000003" width="31.66666666666667" height="35.00000000000003" fill="#fff1a8" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  0" data-cell=" 36" data-theta-0="-90.00" data-theta-1="-75.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="index_cell_37">
+<title>cell index (3, 1)</title>
+<rect x="105.0" y="-235.00000000000003" width="31.666666666666657" height="35.00000000000003" fill="#fff5ae" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  1" data-cell=" 37" data-theta-0="-75.00" data-theta-1="-60.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="index_cell_38">
+<title>cell index (3, 2)</title>
+<rect x="136.66666666666666" y="-235.00000000000003" width="31.666666666666686" height="35.00000000000003" fill="#fffab6" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  2" data-cell=" 38" data-theta-0="-60.00" data-theta-1="-45.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="index_cell_39">
+<title>cell index (3, 3)</title>
+<rect x="168.33333333333334" y="-235.00000000000003" width="31.666666666666657" height="35.00000000000003" fill="#fffdbc" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  3" data-cell=" 39" data-theta-0="-45.00" data-theta-1="-30.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="index_cell_40">
+<title>cell index (3, 4)</title>
+<rect x="200.0" y="-235.00000000000003" width="31.666666666666686" height="35.00000000000003" fill="#fefebd" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  4" data-cell=" 40" data-theta-0="-30.00" data-theta-1="-15.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="index_cell_41">
+<title>cell index (3, 5)</title>
+<rect x="231.66666666666669" y="-235.00000000000003" width="31.66666666666663" height="35.00000000000003" fill="#fbfdb8" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  5" data-cell=" 41" data-theta-0="-15.00" data-theta-1=" 0.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="index_cell_42">
+<title>cell index (3, 6)</title>
+<rect x="263.3333333333333" y="-235.00000000000003" width="31.666666666666686" height="35.00000000000003" fill="#f7fcb2" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  6" data-cell=" 42" data-theta-0=" 0.00" data-theta-1=" 15.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="index_cell_43">
+<title>cell index (3, 7)</title>
+<rect x="295.0" y="-235.00000000000003" width="31.666666666666686" height="35.00000000000003" fill="#f4faad" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  7" data-cell=" 43" data-theta-0=" 15.00" data-theta-1=" 30.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="index_cell_44">
+<title>cell index (3, 8)</title>
+<rect x="326.6666666666667" y="-235.00000000000003" width="31.66666666666663" height="35.00000000000003" fill="#f1f9a9" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  8" data-cell=" 44" data-theta-0=" 30.00" data-theta-1=" 45.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="index_cell_45">
+<title>cell index (3, 9)</title>
+<rect x="73.33333333333333" y="-270.0" width="31.66666666666667" height="34.99999999999997" fill="#eef8a4" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  9" data-cell=" 45" data-theta-0=" 45.00" data-theta-1=" 60.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="index_cell_46">
+<title>cell index (3, 10)</title>
+<rect x="105.0" y="-270.0" width="31.666666666666657" height="34.99999999999997" fill="#eaf79e" stroke="black" class="cell" data-cell-i="  3" data-cell-j=" 10" data-cell=" 46" data-theta-0=" 60.00" data-theta-1=" 75.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="index_cell_47">
+<title>cell index (3, 11)</title>
+<rect x="136.66666666666666" y="-270.0" width="31.666666666666686" height="34.99999999999997" fill="#e7f59a" stroke="black" class="cell" data-cell-i="  3" data-cell-j=" 11" data-cell=" 47" data-theta-0=" 75.00" data-theta-1=" 90.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+</g>
+<g id="index_cell_48">
+<title>cell index (0, 0)</title>
+<rect x="168.33333333333334" y="-270.0" width="31.666666666666657" height="34.99999999999997" fill="#e1f399" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  0" data-cell=" 48" data-theta-0=" 15.00" data-theta-1=" 24.38" data-r-0=" 0.250" data-r-1=" 0.375" />
+</g>
+<g id="index_cell_49">
+<title>cell index (0, 1)</title>
+<rect x="200.0" y="-270.0" width="31.666666666666686" height="34.99999999999997" fill="#daf09a" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  1" data-cell=" 49" data-theta-0=" 24.38" data-theta-1=" 33.75" data-r-0=" 0.250" data-r-1=" 0.375" />
+</g>
+<g id="index_cell_50">
+<title>cell index (0, 2)</title>
+<rect x="231.66666666666669" y="-270.0" width="31.66666666666663" height="34.99999999999997" fill="#d1ed9c" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  2" data-cell=" 50" data-theta-0=" 33.75" data-theta-1=" 43.12" data-r-0=" 0.250" data-r-1=" 0.375" />
+</g>
+<g id="index_cell_51">
+<title>cell index (0, 3)</title>
+<rect x="263.3333333333333" y="-270.0" width="31.666666666666686" height="34.99999999999997" fill="#caea9e" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  3" data-cell=" 51" data-theta-0=" 43.12" data-theta-1=" 52.50" data-r-0=" 0.250" data-r-1=" 0.375" />
+</g>
+<g id="index_cell_52">
+<title>cell index (0, 4)</title>
+<rect x="295.0" y="-270.0" width="31.666666666666686" height="34.99999999999997" fill="#c3e79f" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  4" data-cell=" 52" data-theta-0=" 52.50" data-theta-1=" 61.88" data-r-0=" 0.250" data-r-1=" 0.375" />
+</g>
+<g id="index_cell_53">
+<title>cell index (0, 5)</title>
+<rect x="326.6666666666667" y="-270.0" width="31.66666666666663" height="34.99999999999997" fill="#bce4a0" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  5" data-cell=" 53" data-theta-0=" 61.88" data-theta-1=" 71.25" data-r-0=" 0.250" data-r-1=" 0.375" />
+</g>
+<g id="index_cell_54">
+<title>cell index (0, 6)</title>
+<rect x="73.33333333333333" y="-305.0" width="31.66666666666667" height="35.0" fill="#b5e1a2" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  6" data-cell=" 54" data-theta-0=" 71.25" data-theta-1=" 80.62" data-r-0=" 0.250" data-r-1=" 0.375" />
+</g>
+<g id="index_cell_55">
+<title>cell index (0, 7)</title>
+<rect x="105.0" y="-305.0" width="31.666666666666657" height="35.0" fill="#acdda4" stroke="black" class="cell" data-cell-i="  0" data-cell-j="  7" data-cell=" 55" data-theta-0=" 80.62" data-theta-1=" 90.00" data-r-0=" 0.250" data-r-1=" 0.375" />
+</g>
+<g id="index_cell_56">
+<title>cell index (1, 0)</title>
+<rect x="136.66666666666666" y="-305.0" width="31.666666666666686" height="35.0" fill="#a4daa4" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  0" data-cell=" 56" data-theta-0=" 15.00" data-theta-1=" 24.38" data-r-0=" 0.375" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_57">
+<title>cell index (1, 1)</title>
+<rect x="168.33333333333334" y="-305.0" width="31.666666666666657" height="35.0" fill="#9cd7a4" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  1" data-cell=" 57" data-theta-0=" 24.38" data-theta-1=" 33.75" data-r-0=" 0.375" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_58">
+<title>cell index (1, 2)</title>
+<rect x="200.0" y="-305.0" width="31.666666666666686" height="35.0" fill="#94d4a4" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  2" data-cell=" 58" data-theta-0=" 33.75" data-theta-1=" 43.12" data-r-0=" 0.375" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_59">
+<title>cell index (1, 3)</title>
+<rect x="231.66666666666669" y="-305.0" width="31.66666666666663" height="35.0" fill="#89d0a4" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  3" data-cell=" 59" data-theta-0=" 43.12" data-theta-1=" 52.50" data-r-0=" 0.375" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_60">
+<title>cell index (1, 4)</title>
+<rect x="263.3333333333333" y="-305.0" width="31.666666666666686" height="35.0" fill="#81cda5" stroke="black" class="cell highlighted" data-cell-i="  1" data-cell-j="  4" data-cell=" 60" data-theta-0=" 52.50" data-theta-1=" 61.88" data-r-0=" 0.375" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_61">
+<title>cell index (1, 5)</title>
+<rect x="295.0" y="-305.0" width="31.666666666666686" height="35.0" fill="#79c9a5" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  5" data-cell=" 61" data-theta-0=" 61.88" data-theta-1=" 71.25" data-r-0=" 0.375" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_62">
+<title>cell index (1, 6)</title>
+<rect x="326.6666666666667" y="-305.0" width="31.66666666666663" height="35.0" fill="#71c6a5" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  6" data-cell=" 62" data-theta-0=" 71.25" data-theta-1=" 80.62" data-r-0=" 0.375" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_63">
+<title>cell index (1, 7)</title>
+<rect x="73.33333333333333" y="-340.0" width="31.66666666666667" height="35.0" fill="#66c2a5" stroke="black" class="cell" data-cell-i="  1" data-cell-j="  7" data-cell=" 63" data-theta-0=" 80.62" data-theta-1=" 90.00" data-r-0=" 0.375" data-r-1=" 0.500" />
+</g>
+<g id="index_cell_64">
+<title>cell index (2, 0)</title>
+<rect x="105.0" y="-340.0" width="31.666666666666657" height="35.0" fill="#60bba8" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  0" data-cell=" 64" data-theta-0=" 15.00" data-theta-1=" 24.38" data-r-0=" 0.500" data-r-1=" 0.625" />
+</g>
+<g id="index_cell_65">
+<title>cell index (2, 1)</title>
+<rect x="136.66666666666666" y="-340.0" width="31.666666666666686" height="35.0" fill="#5ab4ab" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  1" data-cell=" 65" data-theta-0=" 24.38" data-theta-1=" 33.75" data-r-0=" 0.500" data-r-1=" 0.625" />
+</g>
+<g id="index_cell_66">
+<title>cell index (2, 2)</title>
+<rect x="168.33333333333334" y="-340.0" width="31.666666666666657" height="35.0" fill="#54aead" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  2" data-cell=" 66" data-theta-0=" 33.75" data-theta-1=" 43.12" data-r-0=" 0.500" data-r-1=" 0.625" />
+</g>
+<g id="index_cell_67">
+<title>cell index (2, 3)</title>
+<rect x="200.0" y="-340.0" width="31.666666666666686" height="35.0" fill="#4ba4b1" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  3" data-cell=" 67" data-theta-0=" 43.12" data-theta-1=" 52.50" data-r-0=" 0.500" data-r-1=" 0.625" />
+</g>
+<g id="index_cell_68">
+<title>cell index (2, 4)</title>
+<rect x="231.66666666666669" y="-340.0" width="31.66666666666663" height="35.0" fill="#459eb4" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  4" data-cell=" 68" data-theta-0=" 52.50" data-theta-1=" 61.88" data-r-0=" 0.500" data-r-1=" 0.625" />
+</g>
+<g id="index_cell_69">
+<title>cell index (2, 5)</title>
+<rect x="263.3333333333333" y="-340.0" width="31.666666666666686" height="35.0" fill="#3f97b7" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  5" data-cell=" 69" data-theta-0=" 61.88" data-theta-1=" 71.25" data-r-0=" 0.500" data-r-1=" 0.625" />
+</g>
+<g id="index_cell_70">
+<title>cell index (2, 6)</title>
+<rect x="295.0" y="-340.0" width="31.666666666666686" height="35.0" fill="#3990ba" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  6" data-cell=" 70" data-theta-0=" 71.25" data-theta-1=" 80.62" data-r-0=" 0.500" data-r-1=" 0.625" />
+</g>
+<g id="index_cell_71">
+<title>cell index (2, 7)</title>
+<rect x="326.6666666666667" y="-340.0" width="31.66666666666663" height="35.0" fill="#3387bc" stroke="black" class="cell" data-cell-i="  2" data-cell-j="  7" data-cell=" 71" data-theta-0=" 80.62" data-theta-1=" 90.00" data-r-0=" 0.500" data-r-1=" 0.625" />
+</g>
+<g id="index_cell_72">
+<title>cell index (3, 0)</title>
+<rect x="73.33333333333333" y="-375.0" width="31.66666666666667" height="35.0" fill="#3880b9" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  0" data-cell=" 72" data-theta-0=" 15.00" data-theta-1=" 24.38" data-r-0=" 0.625" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_73">
+<title>cell index (3, 1)</title>
+<rect x="105.0" y="-375.0" width="31.666666666666657" height="35.0" fill="#3d79b6" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  1" data-cell=" 73" data-theta-0=" 24.38" data-theta-1=" 33.75" data-r-0=" 0.625" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_74">
+<title>cell index (3, 2)</title>
+<rect x="136.66666666666666" y="-375.0" width="31.666666666666686" height="35.0" fill="#4273b3" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  2" data-cell=" 74" data-theta-0=" 33.75" data-theta-1=" 43.12" data-r-0=" 0.625" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_75">
+<title>cell index (3, 3)</title>
+<rect x="168.33333333333334" y="-375.0" width="31.666666666666657" height="35.0" fill="#496aaf" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  3" data-cell=" 75" data-theta-0=" 43.12" data-theta-1=" 52.50" data-r-0=" 0.625" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_76">
+<title>cell index (3, 4)</title>
+<rect x="200.0" y="-375.0" width="31.666666666666686" height="35.0" fill="#4e63ac" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  4" data-cell=" 76" data-theta-0=" 52.50" data-theta-1=" 61.88" data-r-0=" 0.625" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_77">
+<title>cell index (3, 5)</title>
+<rect x="231.66666666666669" y="-375.0" width="31.66666666666663" height="35.0" fill="#545ca8" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  5" data-cell=" 77" data-theta-0=" 61.88" data-theta-1=" 71.25" data-r-0=" 0.625" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_78">
+<title>cell index (3, 6)</title>
+<rect x="263.3333333333333" y="-375.0" width="31.666666666666686" height="35.0" fill="#5956a5" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  6" data-cell=" 78" data-theta-0=" 71.25" data-theta-1=" 80.62" data-r-0=" 0.625" data-r-1=" 0.750" />
+</g>
+<g id="index_cell_79">
+<title>cell index (3, 7)</title>
+<rect x="295.0" y="-375.0" width="31.666666666666686" height="35.0" fill="#5e4fa2" stroke="black" class="cell" data-cell-i="  3" data-cell-j="  7" data-cell=" 79" data-theta-0=" 80.62" data-theta-1=" 90.00" data-r-0=" 0.625" data-r-1=" 0.750" />
+</g>
+</g>
+<g id="coord_index_lines">
+<path d="M412.93683932495117,-176.34052035357954 L89.16666666666667,-77.5" class="cell cell-line" data-cell-i="  0" data-cell-j="  0" data-cell="  0" data-theta-0="-90.00" data-theta-1="-75.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+<path d="M418.61037722821453,-177.9528747923443 L120.83333333333334,-77.5" class="cell cell-line" data-cell-i="  0" data-cell-j="  1" data-cell="  1" data-theta-0="-75.00" data-theta-1="-60.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+<path d="M423.6971321526962,-181.0677043794137 L152.5,-77.5" class="cell cell-line" data-cell-i="  0" data-cell-j="  2" data-cell="  2" data-theta-0="-60.00" data-theta-1="-45.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+<path d="M427.85045015655277,-185.47273862592826 L184.16666666666666,-77.5" class="cell cell-line" data-cell-i="  0" data-cell-j="  3" data-cell="  3" data-theta-0="-45.00" data-theta-1="-30.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+<path d="M430.78728948150393,-190.86778172765128 L215.83333333333331,-77.5" class="cell cell-line" data-cell-i="  0" data-cell-j="  4" data-cell="  4" data-theta-0="-30.00" data-theta-1="-15.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+<path d="M432.30750938091074,-196.8851704129306 L247.5,-77.5" class="cell cell-line" data-cell-i="  0" data-cell-j="  5" data-cell="  5" data-theta-0="-15.00" data-theta-1=" 0.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+<path d="M432.30750938091074,-203.11482958706944 L279.1666666666667,-77.5" class="cell cell-line" data-cell-i="  0" data-cell-j="  6" data-cell="  6" data-theta-0=" 0.00" data-theta-1=" 15.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+<path d="M430.78728948150393,-209.13221827234875 L310.8333333333333,-77.5" class="cell cell-line" data-cell-i="  0" data-cell-j="  7" data-cell="  7" data-theta-0=" 15.00" data-theta-1=" 30.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+<path d="M427.85045015655277,-214.52726137407177 L342.5,-77.5" class="cell cell-line" data-cell-i="  0" data-cell-j="  8" data-cell="  8" data-theta-0=" 30.00" data-theta-1=" 45.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+<path d="M423.6971321526962,-218.9322956205863 L89.16666666666667,-112.50000000000001" class="cell cell-line" data-cell-i="  0" data-cell-j="  9" data-cell="  9" data-theta-0=" 45.00" data-theta-1=" 60.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+<path d="M418.61037722821453,-222.04712520765568 L120.83333333333334,-112.50000000000001" class="cell cell-line" data-cell-i="  0" data-cell-j=" 10" data-cell=" 10" data-theta-0=" 60.00" data-theta-1=" 75.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+<path d="M412.93683932495117,-223.65947964642046 L152.5,-112.50000000000001" class="cell cell-line" data-cell-i="  0" data-cell-j=" 11" data-cell=" 11" data-theta-0=" 75.00" data-theta-1=" 90.00" data-r-0=" 0.000" data-r-1=" 0.250" />
+<path d="M418.8105179748535,-129.02156106073858 L184.16666666666666,-112.50000000000001" class="cell cell-line" data-cell-i="  1" data-cell-j="  0" data-cell=" 12" data-theta-0="-90.00" data-theta-1="-75.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+<path d="M435.83113168464354,-133.8586243770329 L215.83333333333331,-112.50000000000001" class="cell cell-line" data-cell-i="  1" data-cell-j="  1" data-cell=" 13" data-theta-0="-75.00" data-theta-1="-60.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+<path d="M451.09139645808864,-143.20311313824112 L247.5,-112.50000000000001" class="cell cell-line" data-cell-i="  1" data-cell-j="  2" data-cell=" 14" data-theta-0="-60.00" data-theta-1="-45.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+<path d="M463.55135046965836,-156.41821587778477 L279.1666666666667,-112.50000000000001" class="cell cell-line" data-cell-i="  1" data-cell-j="  3" data-cell=" 15" data-theta-0="-45.00" data-theta-1="-30.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+<path d="M472.36186844451186,-172.60334518295383 L310.8333333333333,-112.50000000000001" class="cell cell-line" data-cell-i="  1" data-cell-j="  4" data-cell=" 16" data-theta-0="-30.00" data-theta-1="-15.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+<path d="M476.9225281427322,-190.65551123879175 L342.5,-112.50000000000001" class="cell cell-line" data-cell-i="  1" data-cell-j="  5" data-cell=" 17" data-theta-0="-15.00" data-theta-1=" 0.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+<path d="M476.9225281427322,-209.34448876120828 L89.16666666666667,-147.5" class="cell cell-line" data-cell-i="  1" data-cell-j="  6" data-cell=" 18" data-theta-0=" 0.00" data-theta-1=" 15.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+<path d="M472.36186844451186,-227.39665481704617 L120.83333333333334,-147.5" class="cell cell-line" data-cell-i="  1" data-cell-j="  7" data-cell=" 19" data-theta-0=" 15.00" data-theta-1=" 30.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+<path d="M463.55135046965836,-243.58178412221523 L152.5,-147.5" class="cell cell-line" data-cell-i="  1" data-cell-j="  8" data-cell=" 20" data-theta-0=" 30.00" data-theta-1=" 45.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+<path d="M451.09139645808864,-256.7968868617589 L184.16666666666666,-147.5" class="cell cell-line" data-cell-i="  1" data-cell-j="  9" data-cell=" 21" data-theta-0=" 45.00" data-theta-1=" 60.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+<path d="M435.83113168464354,-266.14137562296713 L215.83333333333331,-147.5" class="cell cell-line" data-cell-i="  1" data-cell-j=" 10" data-cell=" 22" data-theta-0=" 60.00" data-theta-1=" 75.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+<path d="M418.8105179748535,-270.9784389392614 L247.5,-147.5" class="cell cell-line" data-cell-i="  1" data-cell-j=" 11" data-cell=" 23" data-theta-0=" 75.00" data-theta-1=" 90.00" data-r-0=" 0.250" data-r-1=" 0.500" />
+<path d="M424.6841966247558,-81.70260176789763 L279.1666666666667,-147.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  0" data-cell=" 24" data-theta-0="-90.00" data-theta-1="-75.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+<path d="M453.0518861410726,-89.76437396172147 L310.8333333333333,-147.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  1" data-cell=" 25" data-theta-0="-75.00" data-theta-1="-60.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+<path d="M478.48566076348106,-105.33852189706855 L342.5,-147.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  2" data-cell=" 26" data-theta-0="-60.00" data-theta-1="-45.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+<path d="M499.25225078276395,-127.36369312964132 L89.16666666666667,-182.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  3" data-cell=" 27" data-theta-0="-45.00" data-theta-1="-30.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+<path d="M513.9364474075197,-154.33890863825633 L120.83333333333334,-182.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  4" data-cell=" 28" data-theta-0="-30.00" data-theta-1="-15.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+<path d="M521.5375469045537,-184.42585206465296 L152.5,-182.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  5" data-cell=" 29" data-theta-0="-15.00" data-theta-1=" 0.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+<path d="M521.5375469045537,-215.57414793534707 L184.16666666666666,-182.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  6" data-cell=" 30" data-theta-0=" 0.00" data-theta-1=" 15.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+<path d="M513.9364474075197,-245.66109136174367 L215.83333333333331,-182.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  7" data-cell=" 31" data-theta-0=" 15.00" data-theta-1=" 30.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+<path d="M499.25225078276395,-272.63630687035874 L247.5,-182.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  8" data-cell=" 32" data-theta-0=" 30.00" data-theta-1=" 45.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+<path d="M478.48566076348106,-294.6614781029315 L279.1666666666667,-182.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  9" data-cell=" 33" data-theta-0=" 45.00" data-theta-1=" 60.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+<path d="M453.0518861410726,-310.2356260382785 L310.8333333333333,-182.5" class="cell cell-line" data-cell-i="  2" data-cell-j=" 10" data-cell=" 34" data-theta-0=" 60.00" data-theta-1=" 75.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+<path d="M424.6841966247558,-318.29739823210235 L342.5,-182.5" class="cell cell-line" data-cell-i="  2" data-cell-j=" 11" data-cell=" 35" data-theta-0=" 75.00" data-theta-1=" 90.00" data-r-0=" 0.500" data-r-1=" 0.750" />
+<path d="M430.55787527465816,-34.383642475056675 L89.16666666666667,-217.49999999999997" class="cell cell-line" data-cell-i="  3" data-cell-j="  0" data-cell=" 36" data-theta-0="-90.00" data-theta-1="-75.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+<path d="M470.27264059750166,-45.670123546410075 L120.83333333333334,-217.49999999999997" class="cell cell-line" data-cell-i="  3" data-cell-j="  1" data-cell=" 37" data-theta-0="-75.00" data-theta-1="-60.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+<path d="M505.8799250688735,-67.47393065589594 L152.5,-217.49999999999997" class="cell cell-line" data-cell-i="  3" data-cell-j="  2" data-cell=" 38" data-theta-0="-60.00" data-theta-1="-45.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+<path d="M534.9531510958695,-98.30917038149781 L184.16666666666666,-217.49999999999997" class="cell cell-line" data-cell-i="  3" data-cell-j="  3" data-cell=" 39" data-theta-0="-45.00" data-theta-1="-30.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+<path d="M555.5110263705276,-136.07447209355885 L215.83333333333331,-217.49999999999997" class="cell cell-line" data-cell-i="  3" data-cell-j="  4" data-cell=" 40" data-theta-0="-30.00" data-theta-1="-15.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+<path d="M566.1525656663752,-178.1961928905141 L247.5,-217.49999999999997" class="cell cell-line" data-cell-i="  3" data-cell-j="  5" data-cell=" 41" data-theta-0="-15.00" data-theta-1=" 0.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+<path d="M566.1525656663752,-221.80380710948592 L279.1666666666667,-217.49999999999997" class="cell cell-line" data-cell-i="  3" data-cell-j="  6" data-cell=" 42" data-theta-0=" 0.00" data-theta-1=" 15.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+<path d="M555.5110263705276,-263.9255279064412 L310.8333333333333,-217.49999999999997" class="cell cell-line" data-cell-i="  3" data-cell-j="  7" data-cell=" 43" data-theta-0=" 15.00" data-theta-1=" 30.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+<path d="M534.9531510958695,-301.69082961850216 L342.5,-217.49999999999997" class="cell cell-line" data-cell-i="  3" data-cell-j="  8" data-cell=" 44" data-theta-0=" 30.00" data-theta-1=" 45.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+<path d="M505.8799250688735,-332.52606934410403 L89.16666666666667,-252.5" class="cell cell-line" data-cell-i="  3" data-cell-j="  9" data-cell=" 45" data-theta-0=" 45.00" data-theta-1=" 60.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+<path d="M470.27264059750166,-354.3298764535899 L120.83333333333334,-252.5" class="cell cell-line" data-cell-i="  3" data-cell-j=" 10" data-cell=" 46" data-theta-0=" 60.00" data-theta-1=" 75.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+<path d="M430.55787527465816,-365.61635752494334 L152.5,-252.5" class="cell cell-line" data-cell-i="  3" data-cell-j=" 11" data-cell=" 47" data-theta-0=" 75.00" data-theta-1=" 90.00" data-r-0=" 0.750" data-r-1=" 1.000" />
+<path d="M462.9618536665449,-220.09854238987677 L184.16666666666666,-252.5" class="cell cell-line" data-cell-i="  0" data-cell-j="  0" data-cell=" 48" data-theta-0=" 15.00" data-theta-1=" 24.38" data-r-0=" 0.250" data-r-1=" 0.375" />
+<path d="M459.1675817165052,-228.9802024660316 L215.83333333333331,-252.5" class="cell cell-line" data-cell-i="  0" data-cell-j="  1" data-cell=" 49" data-theta-0=" 24.38" data-theta-1=" 33.75" data-r-0=" 0.250" data-r-1=" 0.375" />
+<path d="M454.05987964411156,-237.087704661283 L247.5,-252.5" class="cell cell-line" data-cell-i="  0" data-cell-j="  2" data-cell=" 50" data-theta-0=" 33.75" data-theta-1=" 43.12" data-r-0=" 0.250" data-r-1=" 0.375" />
+<path d="M447.7751912101448,-244.2044705467447 L279.1666666666667,-252.5" class="cell cell-line" data-cell-i="  0" data-cell-j="  3" data-cell=" 51" data-theta-0=" 43.12" data-theta-1=" 52.50" data-r-0=" 0.250" data-r-1=" 0.375" />
+<path d="M440.48140140732977,-250.14038756529317 L310.8333333333333,-252.5" class="cell cell-line" data-cell-i="  0" data-cell-j="  4" data-cell=" 52" data-theta-0=" 52.50" data-theta-1=" 61.88" data-r-0=" 0.250" data-r-1=" 0.375" />
+<path d="M432.37335169214435,-254.7368875721515 L342.5,-252.5" class="cell cell-line" data-cell-i="  0" data-cell-j="  5" data-cell=" 53" data-theta-0=" 61.88" data-theta-1=" 71.25" data-r-0=" 0.250" data-r-1=" 0.375" />
+<path d="M423.6676351195586,-257.8711827189927 L89.16666666666667,-287.5" class="cell cell-line" data-cell-i="  0" data-cell-j="  6" data-cell=" 54" data-theta-0=" 71.25" data-theta-1=" 80.62" data-r-0=" 0.250" data-r-1=" 0.375" />
+<path d="M414.59681042001887,-259.45954552696816 L120.83333333333334,-287.5" class="cell cell-line" data-cell-i="  0" data-cell-j="  7" data-cell=" 55" data-theta-0=" 80.62" data-theta-1=" 90.00" data-r-0=" 0.250" data-r-1=" 0.375" />
+<path d="M484.1465951331629,-228.13795934582745 L152.5,-287.5" class="cell cell-line" data-cell-i="  1" data-cell-j="  0" data-cell=" 56" data-theta-0=" 15.00" data-theta-1=" 24.38" data-r-0=" 0.375" data-r-1=" 0.500" />
+<path d="M478.83461440310725,-240.5722834524443 L184.16666666666666,-287.5" class="cell cell-line" data-cell-i="  1" data-cell-j="  1" data-cell=" 57" data-theta-0=" 24.38" data-theta-1=" 33.75" data-r-0=" 0.375" data-r-1=" 0.500" />
+<path d="M471.68383150175623,-251.9227865257962 L215.83333333333331,-287.5" class="cell cell-line" data-cell-i="  1" data-cell-j="  2" data-cell=" 58" data-theta-0=" 33.75" data-theta-1=" 43.12" data-r-0=" 0.375" data-r-1=" 0.500" />
+<path d="M462.8852676942027,-261.8862587654426 L247.5,-287.5" class="cell cell-line" data-cell-i="  1" data-cell-j="  3" data-cell=" 59" data-theta-0=" 43.12" data-theta-1=" 52.50" data-r-0=" 0.375" data-r-1=" 0.500" />
+<path d="M452.6739619702617,-270.19654259141043 L279.1666666666667,-287.5" class="cell highlighted cell-line" data-cell-i="  1" data-cell-j="  4" data-cell=" 60" data-theta-0=" 52.50" data-theta-1=" 61.88" data-r-0=" 0.375" data-r-1=" 0.500" />
+<path d="M441.3226923690021,-276.63164260101206 L310.8333333333333,-287.5" class="cell cell-line" data-cell-i="  1" data-cell-j="  5" data-cell=" 61" data-theta-0=" 61.88" data-theta-1=" 71.25" data-r-0=" 0.375" data-r-1=" 0.500" />
+<path d="M429.134689167382,-281.01965580658975 L342.5,-287.5" class="cell cell-line" data-cell-i="  1" data-cell-j="  6" data-cell=" 62" data-theta-0=" 71.25" data-theta-1=" 80.62" data-r-0=" 0.375" data-r-1=" 0.500" />
+<path d="M416.43553458802637,-283.2433637377554 L89.16666666666667,-322.5" class="cell cell-line" data-cell-i="  1" data-cell-j="  7" data-cell=" 63" data-theta-0=" 80.62" data-theta-1=" 90.00" data-r-0=" 0.375" data-r-1=" 0.500" />
+<path d="M505.33133659978085,-236.17737630177817 L120.83333333333334,-322.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  0" data-cell=" 64" data-theta-0=" 15.00" data-theta-1=" 24.38" data-r-0=" 0.500" data-r-1=" 0.625" />
+<path d="M498.5016470897093,-252.16436443885692 L152.5,-322.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  1" data-cell=" 65" data-theta-0=" 24.38" data-theta-1=" 33.75" data-r-0=" 0.500" data-r-1=" 0.625" />
+<path d="M489.30778335940084,-266.75786839030945 L184.16666666666666,-322.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  2" data-cell=" 66" data-theta-0=" 33.75" data-theta-1=" 43.12" data-r-0=" 0.500" data-r-1=" 0.625" />
+<path d="M477.9953441782606,-279.5680469841405 L215.83333333333331,-322.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  3" data-cell=" 67" data-theta-0=" 43.12" data-theta-1=" 52.50" data-r-0=" 0.500" data-r-1=" 0.625" />
+<path d="M464.86652253319363,-290.2526976175277 L247.5,-322.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  4" data-cell=" 68" data-theta-0=" 52.50" data-theta-1=" 61.88" data-r-0=" 0.500" data-r-1=" 0.625" />
+<path d="M450.27203304585987,-298.52639762987263 L279.1666666666667,-322.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  5" data-cell=" 69" data-theta-0=" 61.88" data-theta-1=" 71.25" data-r-0=" 0.500" data-r-1=" 0.625" />
+<path d="M434.6017432152055,-304.1681288941868 L310.8333333333333,-322.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  6" data-cell=" 70" data-theta-0=" 71.25" data-theta-1=" 80.62" data-r-0=" 0.500" data-r-1=" 0.625" />
+<path d="M418.27425875603393,-307.02718194854265 L342.5,-322.5" class="cell cell-line" data-cell-i="  2" data-cell-j="  7" data-cell=" 71" data-theta-0=" 80.62" data-theta-1=" 90.00" data-r-0=" 0.500" data-r-1=" 0.625" />
+<path d="M526.5160780663988,-244.21679325772885 L89.16666666666667,-357.5" class="cell cell-line" data-cell-i="  3" data-cell-j="  0" data-cell=" 72" data-theta-0=" 15.00" data-theta-1=" 24.38" data-r-0=" 0.625" data-r-1=" 0.750" />
+<path d="M518.1686797763114,-263.7564454252696 L120.83333333333334,-357.5" class="cell cell-line" data-cell-i="  3" data-cell-j="  1" data-cell=" 73" data-theta-0=" 24.38" data-theta-1=" 33.75" data-r-0=" 0.625" data-r-1=" 0.750" />
+<path d="M506.93173521704546,-281.59295025482265 L152.5,-357.5" class="cell cell-line" data-cell-i="  3" data-cell-j="  2" data-cell=" 74" data-theta-0=" 33.75" data-theta-1=" 43.12" data-r-0=" 0.625" data-r-1=" 0.750" />
+<path d="M493.1054206623185,-297.24983520283837 L184.16666666666666,-357.5" class="cell cell-line" data-cell-i="  3" data-cell-j="  3" data-cell=" 75" data-theta-0=" 43.12" data-theta-1=" 52.50" data-r-0=" 0.625" data-r-1=" 0.750" />
+<path d="M477.0590830961255,-310.30885264364497 L215.83333333333331,-357.5" class="cell cell-line" data-cell-i="  3" data-cell-j="  4" data-cell=" 76" data-theta-0=" 52.50" data-theta-1=" 61.88" data-r-0=" 0.625" data-r-1=" 0.750" />
+<path d="M459.2213737227176,-320.42115265873326 L247.5,-357.5" class="cell cell-line" data-cell-i="  3" data-cell-j="  5" data-cell=" 77" data-theta-0=" 61.88" data-theta-1=" 71.25" data-r-0=" 0.625" data-r-1=" 0.750" />
+<path d="M440.0687972630289,-327.3166019817839 L279.1666666666667,-357.5" class="cell cell-line" data-cell-i="  3" data-cell-j="  6" data-cell=" 78" data-theta-0=" 71.25" data-theta-1=" 80.62" data-r-0=" 0.625" data-r-1=" 0.750" />
+<path d="M420.11298292404143,-330.8110001593299 L310.8333333333333,-357.5" class="cell cell-line" data-cell-i="  3" data-cell-j="  7" data-cell=" 79" data-theta-0=" 80.62" data-theta-1=" 90.00" data-r-0=" 0.625" data-r-1=" 0.750" />
+</g>
+<style>
+.cell {
+  stroke-width: 2;
+}
+
+.cell-line {
+  visibility: hidden;
+}
+
+.cell-line.highlighted {
+  visibility: visible;
+  stroke: #555555;
+  stroke-width: 5;
+  stroke-linecap: round;
+}
+</style>
+</svg>
