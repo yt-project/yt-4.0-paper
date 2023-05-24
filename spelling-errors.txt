@@ -18,7 +18,7 @@ arraylike
 artio
 arwetzel
 AST
-astro
+Astro
 astrojaz
 astrophysically
 AstroPy
@@ -37,7 +37,7 @@ Birla
 Bitbucket
 bitwise
 bookkeepping
-Bool
+bool
 Borro
 boxlib
 Britton
@@ -48,7 +48,7 @@ bwkeller
 bwoshea
 Cadair
 Cadiou
-CGS
+cgs
 Champaign
 changeset
 changesets
@@ -67,12 +67,12 @@ colorbar
 colorbars
 colormap
 colormapping
-Colormaps
+colormaps
 colorspace
 Comoving
 conda
 connectedness
-coord
+Coord
 Coords
 Corentin
 cosmosquark
@@ -127,7 +127,7 @@ fisheye
 fof
 formatter
 formatters
-frontend
+Frontend
 frontends
 frontrow
 Gainesville
@@ -149,7 +149,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-Hexahedral
+hexahedral
 HippoDraw
 histogramming
 Hix
@@ -219,7 +219,7 @@ moab
 Mollweide
 Monaghan
 mornkr
-MPI
+mpi
 mtryan
 Munk
 munkm
@@ -239,12 +239,12 @@ NMSU
 nosetests
 NSSC
 NumFOCUS
-NumPy
+numpy
 OAC
 octants
 octree
 Octrees
-octs
+Octs
 odowska
 olebole
 OpenMP
@@ -275,7 +275,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-Powderday
+powderday
 powersoffour
 pre
 proeminently
@@ -286,7 +286,7 @@ pytest
 PyThreeJS
 pyXSIM
 qobilidop
-Quadtree
+quadtree
 radiative
 RADMC
 rasterizers
@@ -321,7 +321,7 @@ situ
 Skillman
 SLAC
 soton
-sph
+SPH
 Springel
 STFC
 Stockinger
@@ -337,7 +337,7 @@ subselection
 Suoqing
 Supercomputing
 susbtantial
-sympy
+SymPy
 sympy’s
 TBD
 Tbytes
@@ -384,7 +384,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-Zingale
+zingale
 zorder
 Zuckerberg
 ZuHone

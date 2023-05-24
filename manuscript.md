@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-05-17'
+date-meta: '2023-05-24'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -81,8 +81,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-05-17" />
-  <meta name="citation_publication_date" content="2023-05-17" />
+  <meta name="dc.date" content="2023-05-24" />
+  <meta name="citation_publication_date" content="2023-05-24" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -288,9 +288,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/6f283582c23b2739eec38ba4d4348808131e0dd8/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/6f283582c23b2739eec38ba4d4348808131e0dd8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/6f283582c23b2739eec38ba4d4348808131e0dd8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/ab0e942cf9a222d2bedff14a14ca4f4d17c62494/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ab0e942cf9a222d2bedff14a14ca4f4d17c62494/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ab0e942cf9a222d2bedff14a14ca4f4d17c62494/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -313,10 +313,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/6f283582c23b2739eec38ba4d4348808131e0dd8/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/ab0e942cf9a222d2bedff14a14ca4f4d17c62494/))
 was automatically generated
-from [yt-project/yt-4.0-paper@6f28358](https://github.com/yt-project/yt-4.0-paper/tree/6f283582c23b2739eec38ba4d4348808131e0dd8)
-on May 17, 2023.
+from [yt-project/yt-4.0-paper@ab0e942](https://github.com/yt-project/yt-4.0-paper/tree/ab0e942cf9a222d2bedff14a14ca4f4d17c62494)
+on May 24, 2023.
 </em></small>
 
 ## Authors
@@ -2010,16 +2010,32 @@ We detail these below, specifically describing how they are implemented and how 
 
 <div id="grid_scene" style="width:400px;height:400px;"></div>
 <script>
-const container = document.querySelector('#grid_scene');
-fetch('./images/grid_scene.json')
-    .then((response) => response.json())
-    .then((json) => {
-        const scene = new THREE.ObjectLoader().parse( json );
-        const renderer = new THREE.WebGLRenderer();
-        renderer.setSize(container.clientWidth, container.clientHeight);
-        renderer.setPixelRatio(window.devicePixelRatio);
-        container.append(renderer.domElement);
-        renderer.render(scene, scene.children[0]);
+document.addEventListener("THREELoaded", function(event) {
+    const THREE = event.THREE;
+    //const OrbitControls = event.OrbitControls;
+    const container = document.querySelector('#grid_scene');
+    fetch('./content/images/grid_scene.json')
+        .then((response) => response.json())
+        .then((json) => {
+            const scene = new THREE.ObjectLoader().parse( json );
+            const renderer = new THREE.WebGLRenderer();
+            const camera = scene.children[0];
+            renderer.setSize(container.clientWidth, container.clientHeight);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            const controls = new OrbitControls( camera, renderer.domElement );
+            container.append(renderer.domElement);
+            camera.position.set(2.5, 2.5, 2.5);
+            camera.lookAt(0.5, 0.5, 0.5);
+            controls.target.set(0.5, 0.5, 0.5);
+            controls.update();
+            renderer.render(scene, camera);
+            animate = () => {
+                requestAnimationFrame( animate );
+                controls.update();
+                renderer.render( scene, camera );
+            }
+            animate();
+    });
 });
 </script>
 
