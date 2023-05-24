@@ -4,7 +4,7 @@ agurvich
 ahf
 AIP
 Alamos
-Alankar
+alankar
 Alpes
 Altay
 AMR
@@ -35,9 +35,9 @@ binarily
 Biondo
 Birla
 Bitbucket
-bitwise
+Bitwise
 bookkeepping
-bool
+Bool
 Borro
 boxlib
 Britton
@@ -48,11 +48,11 @@ bwkeller
 bwoshea
 Cadair
 Cadiou
-cgs
+CGS
 Champaign
 changeset
 changesets
-CHOLLA
+cholla
 chombo
 chrishavlin
 chummels
@@ -127,7 +127,7 @@ fisheye
 fof
 formatter
 formatters
-Frontend
+frontend
 frontends
 frontrow
 Gainesville
@@ -243,7 +243,7 @@ numpy
 OAC
 octants
 octree
-Octrees
+octrees
 Octs
 odowska
 olebole
@@ -268,7 +268,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -284,9 +284,9 @@ programme
 proj
 pytest
 PyThreeJS
-pyXSIM
+pyxsim
 qobilidop
-quadtree
+Quadtree
 radiative
 RADMC
 rasterizers
@@ -337,7 +337,7 @@ subselection
 Suoqing
 Supercomputing
 susbtantial
-SymPy
+sympy
 sympy’s
 TBD
 Tbytes
@@ -361,7 +361,7 @@ Urbana
 userbase
 Volker
 vr
-webassembly
+WebAssembly
 Wetzel
 Widgyts
 Xarthisius
@@ -384,7 +384,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-zingale
+Zingale
 zorder
 Zuckerberg
 ZuHone
