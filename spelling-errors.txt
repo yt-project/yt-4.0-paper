@@ -4,7 +4,7 @@ agurvich
 ahf
 AIP
 Alamos
-alankar
+Alankar
 Alpes
 Altay
 AMR
@@ -12,10 +12,10 @@ AMRKDTree
 amrvac
 Aperio
 APIs
-AREPO
+arepo
 Arraki
 arraylike
-artio
+ARTIO
 arwetzel
 AST
 Astro
@@ -35,7 +35,7 @@ binarily
 Biondo
 Birla
 Bitbucket
-Bitwise
+bitwise
 bookkeepping
 Bool
 Borro
@@ -52,7 +52,7 @@ CGS
 Champaign
 changeset
 changesets
-cholla
+CHOLLA
 chombo
 chrishavlin
 chummels
@@ -72,7 +72,7 @@ colorspace
 Comoving
 conda
 connectedness
-Coord
+coord
 Coords
 Corentin
 cosmosquark
@@ -127,7 +127,7 @@ fisheye
 fof
 formatter
 formatters
-frontend
+Frontend
 frontends
 frontrow
 Gainesville
@@ -149,7 +149,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-hexahedral
+Hexahedral
 HippoDraw
 histogramming
 Hix
@@ -204,7 +204,7 @@ LLC
 logarithmically
 LSST
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -219,7 +219,7 @@ moab
 Mollweide
 Monaghan
 mornkr
-mpi
+MPI
 mtryan
 Munk
 munkm
@@ -239,12 +239,12 @@ NMSU
 nosetests
 NSSC
 NumFOCUS
-numpy
+NumPy
 OAC
 octants
-octree
+Octree
 octrees
-Octs
+octs
 odowska
 olebole
 OpenMP
@@ -284,9 +284,9 @@ programme
 proj
 pytest
 PyThreeJS
-pyxsim
+pyXSIM
 qobilidop
-Quadtree
+quadtree
 radiative
 RADMC
 rasterizers
@@ -296,7 +296,7 @@ recomputation
 recursed
 reinstrumented
 renderer
-resampling
+Resampling
 responsivity
 RGBA
 Ritali
@@ -337,7 +337,7 @@ subselection
 Suoqing
 Supercomputing
 susbtantial
-sympy
+SymPy
 sympy’s
 TBD
 Tbytes
@@ -361,7 +361,7 @@ Urbana
 userbase
 Volker
 vr
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Xarthisius
@@ -375,7 +375,7 @@ yipihey
 yournamehere
 YTArray
 ytdata
-YTEP
+ytep
 YTEPs
 ytini
 YTQuadTreeProj

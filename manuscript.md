@@ -288,9 +288,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/ab0e942cf9a222d2bedff14a14ca4f4d17c62494/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ab0e942cf9a222d2bedff14a14ca4f4d17c62494/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ab0e942cf9a222d2bedff14a14ca4f4d17c62494/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/def1829d212b70fa83edf8bbc3a47adf5d3cbe50/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/def1829d212b70fa83edf8bbc3a47adf5d3cbe50/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/def1829d212b70fa83edf8bbc3a47adf5d3cbe50/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -313,9 +313,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/ab0e942cf9a222d2bedff14a14ca4f4d17c62494/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/def1829d212b70fa83edf8bbc3a47adf5d3cbe50/))
 was automatically generated
-from [yt-project/yt-4.0-paper@ab0e942](https://github.com/yt-project/yt-4.0-paper/tree/ab0e942cf9a222d2bedff14a14ca4f4d17c62494)
+from [yt-project/yt-4.0-paper@def1829](https://github.com/yt-project/yt-4.0-paper/tree/def1829d212b70fa83edf8bbc3a47adf5d3cbe50)
 on May 24, 2023.
 </em></small>
 
@@ -2008,19 +2008,30 @@ We detail these below, specifically describing how they are implemented and how 
 
 ### Grid Analysis
 
-<div id="grid_scene" style="width:400px;height:400px;"></div>
+![The grid structure of the simulation `IsolatedGalaxy`](){#fig:grid_organization}
+
 <script>
 document.addEventListener("THREELoaded", function(event) {
     const THREE = event.THREE;
     //const OrbitControls = event.OrbitControls;
-    const container = document.querySelector('#grid_scene');
-    fetch('./content/images/grid_scene.json')
+    document.querySelector("div#fig\\:grid_organization img").remove();
+    const container = document.createElement("div");
+    const width = 400;
+    const height = 400;
+    container.style.border = 'solid 1px black';
+    container.style.width = `${width}px`;
+    container.style.height = `${height}px`;
+    container.id = 'grid_scene';
+    document.querySelector("div#fig\\:grid_organization").prepend(container);
+    fetch('./images/grid_scene.json')
         .then((response) => response.json())
         .then((json) => {
             const scene = new THREE.ObjectLoader().parse( json );
             const renderer = new THREE.WebGLRenderer();
             const camera = scene.children[0];
-            renderer.setSize(container.clientWidth, container.clientHeight);
+            // We set this to 400 so that it doesn't need to be rendered
+            // onscreen before it can be set up correctly.
+            renderer.setSize(width, height);
             renderer.setPixelRatio(window.devicePixelRatio);
             const controls = new OrbitControls( camera, renderer.domElement );
             container.append(renderer.domElement);
@@ -2040,6 +2051,7 @@ document.addEventListener("THREELoaded", function(event) {
 </script>
 
 `yt` was originally written to support the Enzo code, which is a patch-based Adaptive Mesh Refinement (AMR) simulation platform.
+In Figure @fig:grid_organization the grid structure of one of the standard `yt` example datasets, `IsolatedGalaxy`, can be seen.
 Analysis of grid-based data is the most frequent application of `yt`.
 While we discuss much of the techniques implemented for datasets consisting of multiple, potentially overlapping grids, `yt` also supports single-grid datasets (such as FITS cubes) and is able to decompose them for parallel analysis.
 
