@@ -1,16 +1,32 @@
 <!-- ThreeJS plugin -->
 
-
-<script
-    src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.152.2/three.min.js"
-    integrity="sha512-R7eFJsc3NlvsTn5hdD/Xvi6FwpFGAoGOa2nBNU89DXAZzXgQQrfhgHVpm5Kh7H9EuCU3Ymexph9z4IiHrq977g=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer">
+<script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.152.2/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.152.2/examples/jsm/"
+        }
+    }
+</script>
+<script type="module">
     // /////////////////////////
     // DESCRIPTION
     // /////////////////////////
 
     // ThreeJS is a library for displaying three-dimensional scenes in the browser.
+    // We use an importmap to allow for relative intra-package imports, but
+    // unfortunately this does not (currently) allow an SRI.
 
     // https://threejs.org/
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    async function start() {
+        window.THREE = THREE;
+        window.OrbitControls = OrbitControls;
+        const LoadedEvent = new Event("THREELoaded");
+        LoadedEvent.THREE = THREE;
+        LoadedEvent.OrbitControls = OrbitControls;
+        document.dispatchEvent(LoadedEvent);
+    }
+    window.addEventListener("load", start);
 </script>
