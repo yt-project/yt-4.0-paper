@@ -65,7 +65,7 @@
   <meta name="author" content="Philipp Grete" />
   <meta name="author" content="John H. Wise" />
   <meta name="author" content="Add Yourself" />
-  <meta name="dcterms.date" content="2023-05-17" />
+  <meta name="dcterms.date" content="2023-05-24" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Introducing yt 4.0: Analysis and Visualization of Volumetric Data</title>
   <style>
@@ -167,8 +167,8 @@
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-05-17" />
-  <meta name="citation_publication_date" content="2023-05-17" />
+  <meta name="dc.date" content="2023-05-24" />
+  <meta name="citation_publication_date" content="2023-05-24" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -374,9 +374,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/6f283582c23b2739eec38ba4d4348808131e0dd8/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/6f283582c23b2739eec38ba4d4348808131e0dd8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/6f283582c23b2739eec38ba4d4348808131e0dd8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/ab0e942cf9a222d2bedff14a14ca4f4d17c62494/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ab0e942cf9a222d2bedff14a14ca4f4d17c62494/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ab0e942cf9a222d2bedff14a14ca4f4d17c62494/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -459,29 +459,45 @@
 ></script>
 <!-- ThreeJS plugin -->
 
-
-<script
-    src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.152.2/three.min.js"
-    integrity="sha512-R7eFJsc3NlvsTn5hdD/Xvi6FwpFGAoGOa2nBNU89DXAZzXgQQrfhgHVpm5Kh7H9EuCU3Ymexph9z4IiHrq977g=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer">
+<script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.152.2/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.152.2/examples/jsm/"
+        }
+    }
+</script>
+<script type="module">
     // /////////////////////////
     // DESCRIPTION
     // /////////////////////////
 
     // ThreeJS is a library for displaying three-dimensional scenes in the browser.
+    // We use an importmap to allow for relative intra-package imports, but
+    // unfortunately this does not (currently) allow an SRI.
 
     // https://threejs.org/
+    import * as THREE from 'three';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    async function start() {
+        window.THREE = THREE;
+        window.OrbitControls = OrbitControls;
+        const LoadedEvent = new Event("THREELoaded");
+        LoadedEvent.THREE = THREE;
+        LoadedEvent.OrbitControls = OrbitControls;
+        document.dispatchEvent(LoadedEvent);
+    }
+    window.addEventListener("load", start);
 </script>
 <header id="title-block-header">
 <h1 class="title">Introducing yt 4.0: Analysis and Visualization of Volumetric Data</h1>
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-4.0-paper/v/6f283582c23b2739eec38ba4d4348808131e0dd8/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-4.0-paper/v/ab0e942cf9a222d2bedff14a14ca4f4d17c62494/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-4.0-paper/tree/6f283582c23b2739eec38ba4d4348808131e0dd8">yt-project/yt-4.0-paper@6f28358</a>
-on May 17, 2023.
+from <a href="https://github.com/yt-project/yt-4.0-paper/tree/ab0e942cf9a222d2bedff14a14ca4f4d17c62494">yt-project/yt-4.0-paper@ab0e942</a>
+on May 24, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -2207,16 +2223,32 @@ We detail these below, specifically describing how they are implemented and how 
 
 </div>
 <script>
-const container = document.querySelector('#grid_scene');
-fetch('./images/grid_scene.json')
-    .then((response) => response.json())
-    .then((json) => {
-        const scene = new THREE.ObjectLoader().parse( json );
-        const renderer = new THREE.WebGLRenderer();
-        renderer.setSize(container.clientWidth, container.clientHeight);
-        renderer.setPixelRatio(window.devicePixelRatio);
-        container.append(renderer.domElement);
-        renderer.render(scene, scene.children[0]);
+document.addEventListener("THREELoaded", function(event) {
+    const THREE = event.THREE;
+    //const OrbitControls = event.OrbitControls;
+    const container = document.querySelector('#grid_scene');
+    fetch('./content/images/grid_scene.json')
+        .then((response) => response.json())
+        .then((json) => {
+            const scene = new THREE.ObjectLoader().parse( json );
+            const renderer = new THREE.WebGLRenderer();
+            const camera = scene.children[0];
+            renderer.setSize(container.clientWidth, container.clientHeight);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            const controls = new OrbitControls( camera, renderer.domElement );
+            container.append(renderer.domElement);
+            camera.position.set(2.5, 2.5, 2.5);
+            camera.lookAt(0.5, 0.5, 0.5);
+            controls.target.set(0.5, 0.5, 0.5);
+            controls.update();
+            renderer.render(scene, camera);
+            animate = () => {
+                requestAnimationFrame( animate );
+                controls.update();
+                renderer.render( scene, camera );
+            }
+            animate();
+    });
 });
 </script>
 <p><code>yt</code> was originally written to support the Enzo code, which is a patch-based Adaptive Mesh Refinement (AMR) simulation platform.
