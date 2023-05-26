@@ -288,9 +288,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/8efbda793552c36e12bacdb0376ccdb20347e2b9/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/8efbda793552c36e12bacdb0376ccdb20347e2b9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/8efbda793552c36e12bacdb0376ccdb20347e2b9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/ceeaa18110f458d8bef807d5ff2b51081b674dfb/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ceeaa18110f458d8bef807d5ff2b51081b674dfb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ceeaa18110f458d8bef807d5ff2b51081b674dfb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -313,9 +313,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/8efbda793552c36e12bacdb0376ccdb20347e2b9/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/ceeaa18110f458d8bef807d5ff2b51081b674dfb/))
 was automatically generated
-from [yt-project/yt-4.0-paper@8efbda7](https://github.com/yt-project/yt-4.0-paper/tree/8efbda793552c36e12bacdb0376ccdb20347e2b9)
+from [yt-project/yt-4.0-paper@ceeaa18](https://github.com/yt-project/yt-4.0-paper/tree/ceeaa18110f458d8bef807d5ff2b51081b674dfb)
 on May 26, 2023.
 </em></small>
 
@@ -2182,7 +2182,7 @@ For instance, 3D data selectors as applied to finite volume codes only select th
 However, with SPH data, the selection methods in 2D and 3D will always include those particles whose spheres of influence, defined by the appropriate smoothing lengths, are within or overlapping with the data selector.
 This is somewhat counter to the expectations set by the grid codes, but aligns with the need to have a fully self-contained data-container for computing field values.
 For instance, this means that a "ray" object (often used to compute, for instance, the column density in a cosmological simulation) will in fact include a set of particles within a (potentially) varying impact parameter.
-This can be seen in diagram form in Figure #fig:sph_ray_tracing.
+This can be seen in diagram form in Figure @fig:sph_ray_tracing.
 
 ![
 A cartoon diagram of a ray passing through a collection of particles.  The radius of the particle is indicative of its smoothing length (values should *not* be interpreted to be constant within these circles!).  As can be seen, the individual particles each contribute different amounts as a result of their smoothing length, the chord-length as the ray passes through the circle, and the values within each particle.

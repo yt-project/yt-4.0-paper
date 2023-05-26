@@ -9,10 +9,10 @@ Alpes
 Altay
 AMR
 AMRKDTree
-AMRVAC
+amrvac
 Aperio
 APIs
-AREPO
+arepo
 Arraki
 arraylike
 ARTIO
@@ -21,7 +21,7 @@ AST
 astro
 astrojaz
 astrophysically
-astropy
+AstroPy
 astrosmith
 AthenaPK
 atmyers
@@ -52,7 +52,7 @@ CGS
 Champaign
 changeset
 changesets
-cholla
+CHOLLA
 chombo
 chrishavlin
 chummels
@@ -67,7 +67,7 @@ colorbar
 colorbars
 Colormap
 colormapping
-colormaps
+Colormaps
 colorspace
 comoving
 conda
@@ -89,7 +89,7 @@ datapoint
 dataset
 datasetfrom
 dataset’s
-Datasets
+datasets
 datasetwere
 datatypes
 decomp
@@ -149,7 +149,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-hexahedral
+Hexahedral
 HippoDraw
 histogramming
 Hix
@@ -219,7 +219,7 @@ moab
 Mollweide
 Monaghan
 mornkr
-mpi
+MPI
 mtryan
 Munk
 munkm
@@ -243,8 +243,8 @@ NumPy
 OAC
 octants
 octree
-octrees
-Octs
+Octrees
+octs
 odowska
 olebole
 OpenMP
@@ -275,7 +275,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-Powderday
+powderday
 powersoffour
 pre
 proeminently
@@ -360,7 +360,7 @@ unsampled
 Urbana
 userbase
 Volker
-webassembly
+WebAssembly
 Wetzel
 Widgyts
 Xarthisius
@@ -374,7 +374,7 @@ yipihey
 yournamehere
 YTArray
 ytdata
-YTEP
+ytep
 YTEPs
 ytini
 YTQuadTreeProj
@@ -383,7 +383,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-Zingale
+zingale
 zorder
 Zuckerberg
 ZuHone
