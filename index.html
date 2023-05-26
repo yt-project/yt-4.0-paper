@@ -65,7 +65,7 @@
   <meta name="author" content="Philipp Grete" />
   <meta name="author" content="John H. Wise" />
   <meta name="author" content="Add Yourself" />
-  <meta name="dcterms.date" content="2023-05-24" />
+  <meta name="dcterms.date" content="2023-05-26" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Introducing yt 4.0: Analysis and Visualization of Volumetric Data</title>
   <style>
@@ -167,8 +167,8 @@
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-05-24" />
-  <meta name="citation_publication_date" content="2023-05-24" />
+  <meta name="dc.date" content="2023-05-26" />
+  <meta name="citation_publication_date" content="2023-05-26" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -374,9 +374,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/def1829d212b70fa83edf8bbc3a47adf5d3cbe50/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/def1829d212b70fa83edf8bbc3a47adf5d3cbe50/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/def1829d212b70fa83edf8bbc3a47adf5d3cbe50/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/8efbda793552c36e12bacdb0376ccdb20347e2b9/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/8efbda793552c36e12bacdb0376ccdb20347e2b9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/8efbda793552c36e12bacdb0376ccdb20347e2b9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -494,10 +494,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-4.0-paper/v/def1829d212b70fa83edf8bbc3a47adf5d3cbe50/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-4.0-paper/v/8efbda793552c36e12bacdb0376ccdb20347e2b9/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-4.0-paper/tree/def1829d212b70fa83edf8bbc3a47adf5d3cbe50">yt-project/yt-4.0-paper@def1829</a>
-on May 24, 2023.
+from <a href="https://github.com/yt-project/yt-4.0-paper/tree/8efbda793552c36e12bacdb0376ccdb20347e2b9">yt-project/yt-4.0-paper@8efbda7</a>
+on May 26, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -2277,8 +2277,7 @@ For grid-based data, the coarse selection stage proceeds in an extremely simple 
 Because this method – while not taking advantage of any data structures of even mild sophistication – is able to take advantage of pipelining and cache-optimization, we have found that it is sufficiently performant in most geometries up to approximately <span class="math inline">\(10^6\)</span> grid objects.
 In those cases, the distinction between “wide and shallow” grid structures (where refinement occurs essentially everywhere, but not to a great degree) and “thin and deep” grid structures (where refinement occurs in essentially one location but to very high levels), as well as the specific selection process, impact the overall performance.
 The second-stage selection occurs within individual grids, where points are selected based on the data point center.
-In the case of cell-centered data, this returns an array of size <span class="math inline">\(N\)</span> where <span class="math inline">\(N\)</span> is the number of points selected; in the case of 3D vertex-centered data, this would be <span class="math inline">\((N,8)\)</span>.
-<strong>Andrew Myers: check this?</strong></p>
+In the case of cell-centered data, this returns an array of size <span class="math inline">\(N\)</span> where <span class="math inline">\(N\)</span> is the number of points selected; in the case of 3D vertex-centered data, this would be <span class="math inline">\((N,8)\)</span>.</p>
 <p>Indexing grid data in <code>yt</code> is optimized for systems of grids that tend to have larger grid patches, rather than smaller; specifically, in <code>yt</code> each grid patch consists of a Python object, which adds a bit of overhead.
 In the limit of many more cells than grid objects, this overhead is small, but in cases where the number of grids is <span class="math inline">\(\sim 10^7\)</span> this can become prohibitive.
 These cases are becoming more common even for medium-scale simulations.</p>
@@ -2304,7 +2303,7 @@ In a first pass, the number of selected cells is computed and in a second pass, 
 Second, <code>yt</code> relies on the on-file location obtained from the octree traversal to lazily read data from disk.
 This ensures that only the minimal amount of data is being read and is particularly efficient when accessing a region spanning a small number of domains and/or a small number of refinement levels.</p>
 <p>Recently, <code>yt</code> has been extended to fully supports accessing neighboring cells.
-This is achieved by computing one-cell thick quantities around each oct, which emulates the “ghost zones” found in patch-based codes. This approach has the advantage of abstracting the octree structure and provides a common interface to create derived fields, as described in <strong>CC: any section describing this?</strong>.
+This is achieved by computing one-cell thick quantities around each oct, which emulates the “ghost zones” found in patch-based codes. This approach has the advantage of abstracting the octree structure and provides a common interface to create derived fields, as described in <a href="#sec:derived_fields">1.7.1.2</a>.
 The 56 neighbors (<span class="math inline">\(4^3 - 2^3\)</span>) surrounding each oct are found by performing a search in the octree, which finds any neighbor in <span class="math inline">\(O(\mathrm{level})\)</span>, where <span class="math inline">\(\mathrm{level}\)</span> is the level of the central oct.
 The search is illustrated on Figure <a href="#fig:binary-search">7</a>.
 Other optimizations are possible that trade computational time with memory, for example by storing the tree as a fully-threaded structure (i.e. store pointers to the 6 neighbors sharing a face with each oct), or by starting at a central oct and searching “upwards and outwards.”</p>
@@ -2381,8 +2380,14 @@ For instance, 3D data selectors as applied to finite volume codes only select th
 2D and 1D data selectors (such as slices and rays) also include those finite volume cells that the selector passes through.
 However, with SPH data, the selection methods in 2D and 3D will always include those particles whose spheres of influence, defined by the appropriate smoothing lengths, are within or overlapping with the data selector.
 This is somewhat counter to the expectations set by the grid codes, but aligns with the need to have a fully self-contained data-container for computing field values.
-For instance, this means that a “ray” object (often used to compute, for instance, the column density in a cosmological simulation) will in fact include a set of particles within a (potentially) varying impact parameter.</p>
-<p><strong>MJT: Needs a diagram, could be drawn from the contrived test case</strong></p>
+For instance, this means that a “ray” object (often used to compute, for instance, the column density in a cosmological simulation) will in fact include a set of particles within a (potentially) varying impact parameter.
+This can be seen in diagram form in Figure #fig:sph_ray_tracing.</p>
+<div id="fig:sph_ray_tracing" class="fignos">
+<figure>
+<img src="images/sph_ray_tracing_diagram.svg" alt="Figure 10: A cartoon diagram of a ray passing through a collection of particles. The radius of the particle is indicative of its smoothing length (values should not be interpreted to be constant within these circles!). As can be seen, the individual particles each contribute different amounts as a result of their smoothing length, the chord-length as the ray passes through the circle, and the values within each particle." />
+<figcaption aria-hidden="true"><span>Figure 10:</span> A cartoon diagram of a ray passing through a collection of particles. The radius of the particle is indicative of its smoothing length (values should <em>not</em> be interpreted to be constant within these circles!). As can be seen, the individual particles each contribute different amounts as a result of their smoothing length, the chord-length as the ray passes through the circle, and the values within each particle.</figcaption>
+</figure>
+</div>
 <p>Other than these differences, which have been intentionally made to align the results with the expected results from the underlying discretization method, the APIs for access to particle data and finite volume data are identical, and they provide broadly identical functionality, where the disparities are typically in functionality such as volume rendering.
 This allows a single analysis script, or package (such as Trident), to utilize a high-level API to address both gridded and Lagrangian data while still ensuring that the results are high-fidelity and representative of the underlying methods.</p>
 <h3 id="sec:unstructured_mesh">Unstructured Mesh Analysis</h3>
@@ -2492,17 +2497,18 @@ In order to compute intra-element values at a position <span class="math inline"
 This is conducted within the function <code>sample_at_real_point</code>, which is defined for each <code>ElementMapper</code>.</p>
 <div id="fig:finite_element_higher_order" class="fignos">
 <figure>
-<img src="images/fem_example.png" alt="Figure 10: Example of a finite element mesh with higher-order tetrahedral elements, including a zoom-in on one of the elements" />
-<figcaption aria-hidden="true"><span>Figure 10:</span> Example of a finite element mesh with higher-order tetrahedral elements, including a zoom-in on one of the elements</figcaption>
+<img src="images/fem_example.png" alt="Figure 11: Example of a finite element mesh with higher-order tetrahedral elements, including a zoom-in on one of the elements" />
+<figcaption aria-hidden="true"><span>Figure 11:</span> Example of a finite element mesh with higher-order tetrahedral elements, including a zoom-in on one of the elements</figcaption>
 </figure>
 </div>
 <p>Of particular note is that, as listed in Table <a href="#tbl:finite_element_types">3</a> , <code>yt</code> has support for higher-order element types.
-In Figure <a href="#fig:finite_element_higher_order">10</a>, an example of this is displayed.
+In Figure <a href="#fig:finite_element_higher_order">11</a>, an example of this is displayed.
 On the left of the figure is a slice plot through a 2nd-order tetrahedral mesh.
 On the right, we have zoomed in on the edge of the boundary of the element mesh.
 In both, the mesh elements have been outlined in black.
 As is clearly visible in the second plot, <code>yt</code> is applying higher-order methods for computing pixel values; not only through non-linear interpolation of field values, but also in the shape of the elements, which extend outside the <em>linear</em> boundaries of the tetrahedral elements.</p>
 <h3 id="sec:noncartesian">Non-Cartesian Coordinates</h3>
+<p><strong>MJT: This needs to be written</strong></p>
 <h2 id="sec:point_indexing">Indexing Discrete-Point Datasets</h2>
 <p>Advances in both hardware and software facilitate astrophysical datasets of growing complexity and size.
 The datasets produced by numerical simulations can currently reach sizes of $$100 Tbytes split across hundreds of files <span class="citation" data-cites="xbCL1tS1">[e.g. <a href="#ref-xbCL1tS1" role="doc-biblioref">7</a>]</span>.
@@ -2512,18 +2518,18 @@ During operations the Large Synoptic Survey Telescope (LSST) will produce 15 T
 In order to analyze such large datasets, we need innovative techniques for quickly indexing and selecting data without loading the entire dataset into memory.
 We present a technique for using Morton bitmap indexes to map files and accelerate data analysis.</p>
 <h3 id="sec:bitmap_theory">Theory and Background</h3>
-<h4 id="domain-partitioning-between-files">Domain Partitioning Between Files</h4>
+<h4 id="sec:decomp">Domain Partitioning Between Files</h4>
 <p>A common analysis task is the selection of data within a subset of the full domain; we use the term “selector" to refer to the selection operator.
 If the dataset is split across multiple files, either due to size constraints or to allow for parallel I/O, such selections require every file to be loaded and parsed in order to assemble all of the data within the selection criteria.
 This process can be very costly in terms of both the memory required to store the data and the time required to read each file.
 However, if the contents of the files are mapped in advanced, only the files touched by the selection will need to be loaded.
 This is particularly effective for partitioning schemes that are localized within the domain.
 If each file contains data that are localized to one part of the domain, selections of contiguous sub-sections within the domain will require fewer files to be loaded.
-Figure <a href="#fig:files">11</a> shows four examples of possible partitions of a two-dimensional spatial domain split equally between 8 files.</p>
+Figure <a href="#fig:files">12</a> shows four examples of possible partitions of a two-dimensional spatial domain split equally between 8 files.</p>
 <div id="fig:files" class="fignos">
 <figure>
-<img src="images/bitmap/files.png" alt="Figure 11: Examples of four different schemes for partitioning a 2D domain between 8 files. Each color represents a different file." />
-<figcaption aria-hidden="true"><span>Figure 11:</span> Examples of four different schemes for partitioning a 2D domain between 8 files.
+<img src="images/bitmap/files.png" alt="Figure 12: Examples of four different schemes for partitioning a 2D domain between 8 files. Each color represents a different file." />
+<figcaption aria-hidden="true"><span>Figure 12:</span> Examples of four different schemes for partitioning a 2D domain between 8 files.
 Each color represents a different file.</figcaption>
 </figure>
 </div>
@@ -2534,25 +2540,25 @@ Fewer files will need to be loaded for queries along the <span class="math inlin
 Panels (c) and (d) are both examples of partitioning the domain between the files along a space filling curve [Morton and Hilbert curves respectively; <span class="citation" data-cites="PSH5f9xg">[<a href="#ref-PSH5f9xg" role="doc-biblioref">9</a>]</span>; <span class="citation" data-cites="oIYFC4kD">[<a href="#ref-oIYFC4kD" role="doc-biblioref">10</a>]</span>].
 These partitions have the greatest chance of limiting the number of files that must be loaded for a contiguous selection with slightly improved localization for the Hilbert curve.
 Consequently, Hilbert curves have also been used for load-balancing in parallel simulation codes like Gadget-2 <span class="citation" data-cites="I01oLUIj">[<a href="#ref-I01oLUIj" role="doc-biblioref">11</a>]</span> and RAMSES <span class="citation" data-cites="1D5nekPGx">[<a href="#ref-1D5nekPGx" role="doc-biblioref">12</a>]</span>.</p>
-<p>Figure <a href="#fig:selector1">12</a> shows examples of three selections within the above domain partitions.</p>
+<p>Figure <a href="#fig:selector1">13</a> shows examples of three selections within the above domain partitions.</p>
 <div id="fig:selector1" class="fignos">
 <figure>
-<img src="images/bitmap/selector1.png" alt="Figure 12: Examples of file selection for four different domain partitions and three different shaded selectors. The number of files above each images is the number of files that must be loaded in order to get all of the data within the selected region." />
-<figcaption aria-hidden="true"><span>Figure 12:</span> Examples of file selection for four different domain partitions and three different shaded selectors.
+<img src="images/bitmap/selector1.png" alt="Figure 13: Examples of file selection for four different domain partitions and three different shaded selectors. The number of files above each images is the number of files that must be loaded in order to get all of the data within the selected region." />
+<figcaption aria-hidden="true"><span>Figure 13:</span> Examples of file selection for four different domain partitions and three different shaded selectors.
 The number of files above each images is the number of files that must be loaded in order to get all of the data within the selected region.</figcaption>
 </figure>
 </div>
 <div id="fig:selector5" class="fignos">
 <figure>
-<img src="images/bitmap/selector5.png" alt="Figure 13: Examples of file selection for four different domain partitions and three different shaded selectors. The number of files above each images is the number of files that must be loaded in order to get all of the data within the selected region." />
-<figcaption aria-hidden="true"><span>Figure 13:</span> Examples of file selection for four different domain partitions and three different shaded selectors.
+<img src="images/bitmap/selector5.png" alt="Figure 14: Examples of file selection for four different domain partitions and three different shaded selectors. The number of files above each images is the number of files that must be loaded in order to get all of the data within the selected region." />
+<figcaption aria-hidden="true"><span>Figure 14:</span> Examples of file selection for four different domain partitions and three different shaded selectors.
 The number of files above each images is the number of files that must be loaded in order to get all of the data within the selected region.</figcaption>
 </figure>
 </div>
 <div id="fig:selectors4" class="fignos">
 <figure>
-<img src="images/bitmap/selector4.png" alt="Figure 14: Examples of file selection for four different domain partitions and three different shaded selectors. The number of files above each images is the number of files that must be loaded in order to get all of the data within the selected region." />
-<figcaption aria-hidden="true"><span>Figure 14:</span> Examples of file selection for four different domain partitions and three different shaded selectors.
+<img src="images/bitmap/selector4.png" alt="Figure 15: Examples of file selection for four different domain partitions and three different shaded selectors. The number of files above each images is the number of files that must be loaded in order to get all of the data within the selected region." />
+<figcaption aria-hidden="true"><span>Figure 15:</span> Examples of file selection for four different domain partitions and three different shaded selectors.
 The number of files above each images is the number of files that must be loaded in order to get all of the data within the selected region.</figcaption>
 </figure>
 </div>
@@ -2570,14 +2576,13 @@ Although the same result can be achieved by re-sorting the data itself, creating
 <h2 id="morton-indices">Morton Indices</h2>
 <p>Morton ordering maps multidimensional data onto a one-dimensional space filling curve <span class="citation" data-cites="PSH5f9xg">[<a href="#ref-PSH5f9xg" role="doc-biblioref">9</a>]</span>.
 This is done by breaking up the domain into cells where each cell’s position within the <span class="math inline">\(N\)</span>-dimensional domain can be described by <span class="math inline">\(N\)</span> integers.
-The Morton index of the cell is then created by interleaving the bits of the <span class="math inline">\(N\)</span> integers to create a single integer that fully describes the cell’s position (see panel (b) Figure <a href="#fig:zorder">15</a>).
-As seen in panel (a) of Figure <a href="#fig:zorder">15</a>, ordering of the cells by their Morton indices forms a space filling Z-curve.</p>
+The Morton index of the cell is then created by interleaving the bits of the <span class="math inline">\(N\)</span> integers to create a single integer that fully describes the cell’s position (see panel (b) Figure <a href="#fig:zorder">16</a>).
+As seen in panel (a) of Figure <a href="#fig:zorder">16</a>, ordering of the cells by their Morton indices forms a space filling Z-curve.</p>
 <div id="fig:zorder" class="fignos">
 <figure>
-<img src="images/bitmap/zorder.png" alt="Figure 15: Example of 3rd order Morton curve in two dimensions. The bits of the x and y indices are interleaved to generate a single integer that fully describes the cell’s location within the two-dimensional domain to within 1/2^{3}th of the domain in each dimension. NOTE: wouldn’t it make more sense to write y and x is this order, so that the interleaving could be represented with arrows without crossing them ?" />
-<figcaption aria-hidden="true"><span>Figure 15:</span> Example of 3rd order Morton curve in two dimensions.
-The bits of the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> indices are interleaved to generate a single integer that fully describes the cell’s location within the two-dimensional domain to within <span class="math inline">\(1/2^{3}\)</span>th of the domain in each dimension.
-<strong>NOTE: wouldn’t it make more sense to write <span class="math inline">\(y\)</span> and <span class="math inline">\(x\)</span> is this order, so that the interleaving could be represented with arrows without crossing them ?</strong></figcaption>
+<img src="images/bitmap/zorder.png" alt="Figure 16: Example of 3rd order Morton curve in two dimensions. The bits of the x and y indices are interleaved to generate a single integer that fully describes the cell’s location within the two-dimensional domain to within 1/2^{3}th of the domain in each dimension." />
+<figcaption aria-hidden="true"><span>Figure 16:</span> Example of 3rd order Morton curve in two dimensions.
+The bits of the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> indices are interleaved to generate a single integer that fully describes the cell’s location within the two-dimensional domain to within <span class="math inline">\(1/2^{3}\)</span>th of the domain in each dimension.</figcaption>
 </figure>
 </div>
 <p>The precision of a single Morton index is only limited by the size of the integer used to store it.
@@ -2590,7 +2595,7 @@ By recording the indices of the cells containing data from each file within a da
 <p>Bitmap indexes use the values of single bits within an array of bits to describe dataset properties.
 This form requires minimal memory and can be filtered using computationally inexpensive boolean operations.
 Bitmap indexes have long been popular for use with large data warehouses <span class="citation" data-cites="f1rS5tZk YV4eT8wZ DMkimxcD">[<a href="#ref-f1rS5tZk" role="doc-biblioref">16</a>,<a href="#ref-YV4eT8wZ" role="doc-biblioref">17</a>,<a href="#ref-DMkimxcD" role="doc-biblioref">18</a>]</span>.
-However, as scientific datasets have become larger and more complex, they have also begun to gain traction in a diverse array of scientific fields including geosciences <span class="citation" data-cites="itaUSTKC">[<a href="#ref-itaUSTKC" role="doc-biblioref">19</a>]</span>, earth sciences <em>TODO: insert citation here ?</em>, rocket science <span class="citation" data-cites="QMaCupmb mMJ3UeWp">[<a href="#ref-QMaCupmb" role="doc-biblioref">20</a>,<a href="#ref-mMJ3UeWp" role="doc-biblioref">21</a>]</span>, high-energy physics <span class="citation" data-cites="VzYAeBg3">[<a href="#ref-VzYAeBg3" role="doc-biblioref">22</a>]</span>, and combustion <span class="citation" data-cites="AFyCFou3">[<a href="#ref-AFyCFou3" role="doc-biblioref">23</a>]</span>.</p>
+However, as scientific datasets have become larger and more complex, they have also begun to gain traction in a diverse array of scientific fields including geosciences <span class="citation" data-cites="itaUSTKC">[<a href="#ref-itaUSTKC" role="doc-biblioref">19</a>]</span>, earth sciences, rocket science <span class="citation" data-cites="QMaCupmb mMJ3UeWp">[<a href="#ref-QMaCupmb" role="doc-biblioref">20</a>,<a href="#ref-mMJ3UeWp" role="doc-biblioref">21</a>]</span>, high-energy physics <span class="citation" data-cites="VzYAeBg3">[<a href="#ref-VzYAeBg3" role="doc-biblioref">22</a>]</span>, and combustion <span class="citation" data-cites="AFyCFou3">[<a href="#ref-AFyCFou3" role="doc-biblioref">23</a>]</span>.</p>
 <p>In cases where data attributes can take on a finite set of values, one bitmap is constructed for each possible attribute value.
 Within the bitmap each bit specifies whether or not the corresponding data point has that value.
 In this way, queries for data with a single attribute value require consulting only one bitmap and queries of multiple attributes/values can be done using boolean AND operations on the corresponding bitmaps.
@@ -2609,14 +2614,14 @@ If there are regions of the domain that are densely/sparsely populated, there Z-
 <h4 id="collisions">Collisions</h4>
 <p>It is possible that two files will contain data within the same Morton cell.
 This would mean that any time that cell is touched by a selection, both files would need to be loaded even if the selection only touches data from one of the files.
-Figure <a href="#fig:collision">16</a> provides an example of collisions between two files.
-In panel (a) of Figure <a href="#fig:collision">16</a>, purple cells are those that contain data from both files, a collision, for a 3rd order Morton index.
+Figure <a href="#fig:collision">17</a> provides an example of collisions between two files.
+In panel (a) of Figure <a href="#fig:collision">17</a>, purple cells are those that contain data from both files, a collision, for a 3rd order Morton index.
 Any selector that contained one of those cells would need to load all of the data from both files, even if it only selected part of the cell.
 Where the data is highly-concentrated in a central region (for instance, in a galaxy formation simulation with particles centrally-concentrated) this can mean that some regions suffer from worst-case scenario collision.</p>
 <div id="fig:collision" class="fignos">
 <figure>
-<img src="images/bitmap/collisions.png" alt="Figure 16: Examples of a collision between two files. The red points and blue points are contained by two different files. The larger grid in both panels denotes the boundaries of 3rd order Morton cells. The cells containing points from either file are shaded accordingly such that cells containing points from both files are purple. The smaller grids within these cells on the right are the boundaries of 2nd order Morton cells refining the collisions." />
-<figcaption aria-hidden="true"><span>Figure 16:</span> Examples of a collision between two files.
+<img src="images/bitmap/collisions.png" alt="Figure 17: Examples of a collision between two files. The red points and blue points are contained by two different files. The larger grid in both panels denotes the boundaries of 3rd order Morton cells. The cells containing points from either file are shaded accordingly such that cells containing points from both files are purple. The smaller grids within these cells on the right are the boundaries of 2nd order Morton cells refining the collisions." />
+<figcaption aria-hidden="true"><span>Figure 17:</span> Examples of a collision between two files.
 The red points and blue points are contained by two different files.
 The larger grid in both panels denotes the boundaries of 3rd order Morton cells.
 The cells containing points from either file are shaded accordingly such that cells containing points from both files are purple.
@@ -2624,7 +2629,7 @@ The smaller grids within these cells on the right are the boundaries of 2nd orde
 </figure>
 </div>
 <p>Collisions can be limited by either increasing the order of the index or allowing for multi-resolution indexes <span class="citation" data-cites="QMaCupmb mMJ3UeWp">[<a href="#ref-QMaCupmb" role="doc-biblioref">20</a>,<a href="#ref-mMJ3UeWp" role="doc-biblioref">21</a>]</span>.
-Panel (b) of Figure <a href="#fig:collision">16</a> demonstrates an example of nesting a second index within cells that contain collisions.
+Panel (b) of Figure <a href="#fig:collision">17</a> demonstrates an example of nesting a second index within cells that contain collisions.
 In those cells which contained collisions, a 2nd order Morton index was added.
 Those cells with collisions at the level of the refined index (purple cells in panel (b)) cover a much smaller portion of the domain than the cells with collisions at the level of the coarse index (purple cells in panel (a)).
 This means that any given selection is less likely to contain a collision and it will be less likely for a selector to require both files to be loaded unless it actually touches data from both files.</p>
@@ -2632,11 +2637,11 @@ This means that any given selection is less likely to contain a collision and it
 However, if the order of the coarse index is too small or the order of the refined index too large, this too can increase the cost of a selection in terms of memory and time.
 Section <a href="#sec:test_order">1.10.2.1</a> discusses this tradeoff and how to choose index orders.</p>
 <p>Collisions are more common for file partitioning schemes that are not localized.
-Figure <a href="#fig:collision_files">17</a> shows an example of collisions for the different partitioning schemes discussed in Section ??.</p>
+Figure <a href="#fig:collision_files">18</a> shows an example of collisions for the different partitioning schemes discussed in Section <a href="#sec:decomp">1.9.1.1</a>.</p>
 <div id="fig:collision_files" class="fignos">
 <figure>
-<img src="images/bitmap/index.png" alt="Figure 17: Examples of collisions for four different domain partitioning schemes. The heavy black lines denote 1st order Morton cells. The presence of more that one file (color) within a Morton cell indicates a collision. NOTE: from an accessibility standpoint, I must note that using a smooth color gradient may be counter productive for colorblind readers as it makes it a lot harder to perveice that neighbouring regions belong to different files." />
-<figcaption aria-hidden="true"><span>Figure 17:</span> Examples of collisions for four different domain partitioning schemes.
+<img src="images/bitmap/index.png" alt="Figure 18: Examples of collisions for four different domain partitioning schemes. The heavy black lines denote 1st order Morton cells. The presence of more that one file (color) within a Morton cell indicates a collision. NOTE: from an accessibility standpoint, I must note that using a smooth color gradient may be counter productive for colorblind readers as it makes it a lot harder to perveice that neighbouring regions belong to different files." />
+<figcaption aria-hidden="true"><span>Figure 18:</span> Examples of collisions for four different domain partitioning schemes.
 The heavy black lines denote 1st order Morton cells.
 The presence of more that one file (color) within a Morton cell indicates a collision.
 <strong>NOTE: from an accessibility standpoint, I must note that using a smooth color gradient may be counter productive for colorblind readers as it makes it a lot harder to perveice that neighbouring regions belong to different files.</strong></figcaption>
@@ -2653,11 +2658,11 @@ For Morton indices, this is straightforward as the indices neighboring Morton ce
 We have included the ability to pad selectors with some number of Morton cells referred to as ‘ghost zones’.
 Those files that touch ghost zones, but not the selector itself are referred to below as ‘ghost files’.</p>
 <p>Depending on how the domain is split between files, the inclusion of ghost zones may or may not increase the number of files that need to be loaded.
-Figure <a href="#fig:ghosts">18</a> shows an example of a ghost zone around the first selector from Figure <a href="#fig:selector1">12</a>.</p>
+Figure <a href="#fig:ghosts">19</a> shows an example of a ghost zone around the first selector from Figure <a href="#fig:selector1">13</a>.</p>
 <div id="fig:ghosts" class="fignos">
 <figure>
-<img src="images/bitmap/ghosts.png" alt="Figure 18: Examples of a selector ghost zone with a width of one Morton cell at an index order of 3 for four different domain partitioning schemes. The shaded circular region is the selector and the shaded box is the ghost zone. Different partitioning schemes will lead to different numbers of ghost files. NOTE: same as figure 13" />
-<figcaption aria-hidden="true"><span>Figure 18:</span> Examples of a selector ghost zone with a width of one Morton cell at an index order of 3 for four different domain partitioning schemes.
+<img src="images/bitmap/ghosts.png" alt="Figure 19: Examples of a selector ghost zone with a width of one Morton cell at an index order of 3 for four different domain partitioning schemes. The shaded circular region is the selector and the shaded box is the ghost zone. Different partitioning schemes will lead to different numbers of ghost files. NOTE: same as figure 13" />
+<figcaption aria-hidden="true"><span>Figure 19:</span> Examples of a selector ghost zone with a width of one Morton cell at an index order of 3 for four different domain partitioning schemes.
 The shaded circular region is the selector and the shaded box is the ghost zone.
 Different partitioning schemes will lead to different numbers of ghost files.
 <strong>NOTE: same as figure 13</strong></figcaption>
@@ -2731,12 +2736,12 @@ This was done for varying index orders (Section <a href="#sec:test_order">1.10.2
 <h4 id="sec:test_order">Index Order</h4>
 <h4 id="sec:test_order1">Overall Refinement</h4>
 <p>The order of the Morton indices used to map the files determines the time required to identify files and the number of collisions that will occur between files.
-Higher order indices will result in fewer collisions, but will take longer to query, as seen in Figure <a href="#fig:test_order1">19</a> Six selectors of varying sizes and positions within the domain where used to identify files based on Morton index bitmaps of varying order.
+Higher order indices will result in fewer collisions, but will take longer to query, as seen in Figure <a href="#fig:test_order1">20</a> Six selectors of varying sizes and positions within the domain where used to identify files based on Morton index bitmaps of varying order.
 The test dataset was split across the files using a Hilbert curve of order 6 with 10% scatter between Hilbert cells to simulate an imperfect domain decomposition as can occur if particle positions are updated and output prior to updating the domain decomposition.</p>
 <div id="fig:test_order1" class="fignos">
 <figure>
-<img src="images/bitmap/vary_order1_or0.png" alt="Figure 19: Dependence of query time (top), fraction of files selected/cells with collisions (middle), and index size (bottom) on the total refinement of the bitmap index. The solid black lines correspond to the query times and files identified by just the selectors. The dashed blue lines correspond to the query times and additional files selected when a ghost zone with the width of one Morton cell is added around the selectors. The dash-dotted line in the middle panel shows the fraction of cells with collisions between files. NOTE: maybe this would make more sense as scatter plots ? (connecting dots to fill a continuous yet unreachable space of non-integer-limited x values seems unappropriate." />
-<figcaption aria-hidden="true"><span>Figure 19:</span> Dependence of query time (top), fraction of files selected/cells with collisions (middle), and index size (bottom) on the total refinement of the bitmap index.
+<img src="images/bitmap/vary_order1_or0.png" alt="Figure 20: Dependence of query time (top), fraction of files selected/cells with collisions (middle), and index size (bottom) on the total refinement of the bitmap index. The solid black lines correspond to the query times and files identified by just the selectors. The dashed blue lines correspond to the query times and additional files selected when a ghost zone with the width of one Morton cell is added around the selectors. The dash-dotted line in the middle panel shows the fraction of cells with collisions between files. NOTE: maybe this would make more sense as scatter plots ? (connecting dots to fill a continuous yet unreachable space of non-integer-limited x values seems unappropriate." />
+<figcaption aria-hidden="true"><span>Figure 20:</span> Dependence of query time (top), fraction of files selected/cells with collisions (middle), and index size (bottom) on the total refinement of the bitmap index.
 The solid black lines correspond to the query times and files identified by just the selectors.
 The dashed blue lines correspond to the query times and additional files selected when a ghost zone with the width of one Morton cell is added around the selectors.
 The dash-dotted line in the middle panel shows the fraction of cells with collisions between files.
@@ -2756,12 +2761,12 @@ If uncompressed bitmaps had been used instead of EWAH compressed bitmap, the mem
 However, it is also possible to increase refinement by nesting a second Morton bitmap index within those cells of the primary index that contain collisions.
 As the nested indexes will contain a smaller portion of the domain and data, they will be less complex and can be compressed more efficiently than the primary index covering the entire domain.
 This enhanced compression means that, although a greater overall number of EWAH compressed bitmaps will need to be utilized (one for the coarse index and one for each collision within the coarse index), less space will be needed to store the bitmap and bitwise operations will be faster.
-Figure <a href="#fig:test_order2">20</a> shows the results for adding a secondary index of varying order with the overall refinement order of the index (primary index order + secondary index order) held constant at 6.
+Figure <a href="#fig:test_order2">21</a> shows the results for adding a secondary index of varying order with the overall refinement order of the index (primary index order + secondary index order) held constant at 6.
 The test dataset and selectors applied were the same as in Section <a href="#sec:test_order1">1.10.2.2</a>.</p>
 <div id="fig:test_order2" class="fignos">
 <figure>
-<img src="images/bitmap/vary_order2_to6.png" alt="Figure 20: Dependence of query time (top), fraction of files selected/cells with collisions (middle), and memory required to store the index (bottom) on the order of the secondary index used to refine collisions. In the middle panel, the solid black line corresponds with the fraction of files identified, the dash-dotted blue line is the fraction of cells at the first index level that have collisions, and the dotted red line is the fraction of cells at the second index level that have collisions." />
-<figcaption aria-hidden="true"><span>Figure 20:</span> Dependence of query time (top), fraction of files selected/cells with collisions (middle), and memory required to store the index (bottom) on the order of the secondary index used to refine collisions.
+<img src="images/bitmap/vary_order2_to6.png" alt="Figure 21: Dependence of query time (top), fraction of files selected/cells with collisions (middle), and memory required to store the index (bottom) on the order of the secondary index used to refine collisions. In the middle panel, the solid black line corresponds with the fraction of files identified, the dash-dotted blue line is the fraction of cells at the first index level that have collisions, and the dotted red line is the fraction of cells at the second index level that have collisions." />
+<figcaption aria-hidden="true"><span>Figure 21:</span> Dependence of query time (top), fraction of files selected/cells with collisions (middle), and memory required to store the index (bottom) on the order of the secondary index used to refine collisions.
 In the middle panel, the solid black line corresponds with the fraction of files identified, the dash-dotted blue line is the fraction of cells at the first index level that have collisions, and the dotted red line is the fraction of cells at the second index level that have collisions.</figcaption>
 </figure>
 </div>
@@ -2778,14 +2783,14 @@ However, if a datasetwere less uniform with concentrations of points, the optima
 <h4 id="sec:test_size">Selector Size</h4>
 <p>The time required to identify files touched by a selection will also depend upon the size of the region being selected.
 Larger selectors will intersect more indices and more files, resulting in more bitmap operations.
-Figure <a href="#fig:test_size">21</a> shows the result from varying the selector size.
+Figure <a href="#fig:test_size">22</a> shows the result from varying the selector size.
 The same test datasetfrom Section <a href="#sec:test_order">1.10.2.1</a> was used.
 A bitmap index with a 4th order primary Morton index and 2nd order secondary Morton index was used in all cases.
 Each cube selector was placed at the center of the domain and scaled along each dimension to some fraction of the total domain.</p>
 <div id="fig:test_size" class="fignos">
 <figure>
-<img src="images/bitmap/vary_selector.png" alt="Figure 21: Dependence of query time (top) and number of files selected (bottom) on selector width in terms of the total domain width. The solid black lines correspond to the query times and files identified by the selectors alone. The dashed blue lines correspond the query times and additional files identified when a ghost zone with a width of one cell is added to the selector." />
-<figcaption aria-hidden="true"><span>Figure 21:</span> Dependence of query time (top) and number of files selected (bottom) on selector width in terms of the total domain width.
+<img src="images/bitmap/vary_selector.png" alt="Figure 22: Dependence of query time (top) and number of files selected (bottom) on selector width in terms of the total domain width. The solid black lines correspond to the query times and files identified by the selectors alone. The dashed blue lines correspond the query times and additional files identified when a ghost zone with a width of one cell is added to the selector." />
+<figcaption aria-hidden="true"><span>Figure 22:</span> Dependence of query time (top) and number of files selected (bottom) on selector width in terms of the total domain width.
 The solid black lines correspond to the query times and files identified by the selectors alone.
 The dashed blue lines correspond the query times and additional files identified when a ghost zone with a width of one cell is added to the selector.</figcaption>
 </figure>
@@ -2800,9 +2805,9 @@ If the selector edge is near a file boundary, ghost zones have the potential to 
 For such a highly ordered dataset, the ghost zones will only identify additional files for selectors that are nearing the edges of file boundaries.
 However, queries including ghost zones require slightly more time even when this is not the case.</p>
 <h4 id="sec:test_decomp">Domain Partitioning</h4>
-<p>As discussed in Section ??, a bitmap index is more effective in cases where the domain is partitioned between files in a localized way.
+<p>As discussed in Section <a href="#sec:decomp">1.9.1.1</a>, a bitmap index is more effective in cases where the domain is partitioned between files in a localized way.
 If files contain non-contiguous parts of the domain, contiguous selections will require more files to be loaded.
-Figure <a href="#fig:test_decomp">22</a> shows results for four different partitioning schemes.
+Figure <a href="#fig:test_decomp">23</a> shows results for four different partitioning schemes.
 All four data sets cover the same three-dimensional domain with <span class="math inline">\(1024^3\)</span> points split across 512 files.
 The Hilbert dataset is the same one used in previous tests (see Section <a href="#sec:test_order">1.10.2.1</a> for a description).
 The Morton dataset is constructed in a similar way to the Hilbert dataset with file partitions occurring along a 6th order Morton curve and including a 10% scatter of points between Morton cells.
@@ -2810,8 +2815,8 @@ The sliced dataset is partitioned in slices along one dimension with 10% scatter
 Files in the random dataset contain a random sample of points, uniformly distributed across the domain.</p>
 <div id="fig:test_decomp" class="fignos">
 <figure>
-<img src="images/bitmap/vary_decomp_to0.png" alt="Figure 22: Dependence of query time (top), the number of files selected (middle), and the size of the index (bottom) on index order for different domain partitioning between files. The dotted magenta lines are for a randomly partitioned dataset, the cyan dashed-dotted lines are a dataset partitioned by equal slices alone one dimension, the dashed red lines are a dataset partitioned along an 6th order Morton curve, and the solid blue lines are a dataset partitioned along a 6th order Hilbert curve. NOTE: it looks like the Morton curve is almost always behind the Hilbert one. Can you use zorder to put it at the frontrow instead so that we can see both ?" />
-<figcaption aria-hidden="true"><span>Figure 22:</span> Dependence of query time (top), the number of files selected (middle), and the size of the index (bottom) on index order for different domain partitioning between files.
+<img src="images/bitmap/vary_decomp_to0.png" alt="Figure 23: Dependence of query time (top), the number of files selected (middle), and the size of the index (bottom) on index order for different domain partitioning between files. The dotted magenta lines are for a randomly partitioned dataset, the cyan dashed-dotted lines are a dataset partitioned by equal slices alone one dimension, the dashed red lines are a dataset partitioned along an 6th order Morton curve, and the solid blue lines are a dataset partitioned along a 6th order Hilbert curve. NOTE: it looks like the Morton curve is almost always behind the Hilbert one. Can you use zorder to put it at the frontrow instead so that we can see both ?" />
+<figcaption aria-hidden="true"><span>Figure 23:</span> Dependence of query time (top), the number of files selected (middle), and the size of the index (bottom) on index order for different domain partitioning between files.
 The dotted magenta lines are for a randomly partitioned dataset, the cyan dashed-dotted lines are a dataset partitioned by equal slices alone one dimension, the dashed red lines are a dataset partitioned along an 6th order Morton curve, and the solid blue lines are a dataset partitioned along a 6th order Hilbert curve.
 <strong>NOTE: it looks like the Morton curve is almost always behind the Hilbert one. Can you use zorder to put it at the frontrow instead so that we can see both ?</strong></figcaption>
 </figure>
@@ -3076,11 +3081,11 @@ It also uses the fact that for a given oct, we can compute which cell the ray wi
 Otherwise, initialize an empty list of cells traversed and <span class="math inline">\(t\)</span>-values. <em>a)</em> Find the intersection of the ray with all six faces of the oct. <em>b)</em> If the current oct is marked, store the entry and exit <span class="math inline">\(t\)</span>-values and the index of the oct in their respective list and return. <em>c)</em> If the current oct is not marked, find the first cell the ray intersects with and call the algorithm recursively (starting at step <em>a)</em> with the oct contained in the cell, if any). <em>d)</em> Find the next cell within the oct. If there is no next cell, return. Otherwise, call the algorithm recursively (starting at step <em>a)</em> with the oct contained in the cell, if any) then go back to <em>d)</em>.
 On exit of the algorithm, we then have a list of cells and <span class="math inline">\(t\)</span>-values.
 For each cell in the list, we then call the sampler with the vertex-centered values and the entry and exit coordinates.</p>
-<p>An example of the volume rendering of a galaxy in a zoom-in cosmological simulation made with RAMSES is shown on Figure <a href="#fig:ramses-volume-rendering">23</a>.</p>
+<p>An example of the volume rendering of a galaxy in a zoom-in cosmological simulation made with RAMSES is shown on Figure <a href="#fig:ramses-volume-rendering">24</a>.</p>
 <div id="fig:ramses-volume-rendering" class="fignos">
 <figure>
-<img src="images/volume_rendering/ramses-volume-rendering-galaxy.png" alt="Figure 23: Volume rendering of gas density isocontours around a galaxy in a cosmological zoom-in simulation performed with RAMSES. Adapted from [97]." />
-<figcaption aria-hidden="true"><span>Figure 23:</span> Volume rendering of gas density isocontours around a galaxy in a cosmological zoom-in simulation performed with RAMSES. Adapted from <span class="citation" data-cites="zRE8zhVC">[<a href="#ref-zRE8zhVC" role="doc-biblioref">97</a>]</span>.</figcaption>
+<img src="images/volume_rendering/ramses-volume-rendering-galaxy.png" alt="Figure 24: Volume rendering of gas density isocontours around a galaxy in a cosmological zoom-in simulation performed with RAMSES. Adapted from [97]." />
+<figcaption aria-hidden="true"><span>Figure 24:</span> Volume rendering of gas density isocontours around a galaxy in a cosmological zoom-in simulation performed with RAMSES. Adapted from <span class="citation" data-cites="zRE8zhVC">[<a href="#ref-zRE8zhVC" role="doc-biblioref">97</a>]</span>.</figcaption>
 </figure>
 </div>
 <h4 id="sampling-functions">Sampling functions</h4>
@@ -3332,7 +3337,7 @@ By the same token, we have also attempted to provide low-level access to data, a
 <h3 id="publication-ready-figures">Publication-Ready Figures</h3>
 <p>Matplotlib <span class="citation" data-cites="1DeF7kDPM">[<a href="#ref-1DeF7kDPM" role="doc-biblioref">98</a>]</span> is a fully-featured mechanism for generating figures, with an incredible array of options to customize formatting, appearance, rendering of fonts and glyphs, selection of colorbars, calculation of tick locations, and appropriate bounds.
 This degree of flexibility provides extremely fine-grained control over the appearance of figures for publication, and Matplotlib provides a large number of output formats for even the most discerning of journals.</p>
-<p>yt utilizes Matplotlib as its primary rendering engine for visualizations; while 3D renderings (such as those described in ??) typically generate raw pixel buffers that are saved as images directly, most other visualization functionality in yt relies on Matplotlib for generating images that are saved to disk.
+<p>yt utilizes Matplotlib as its primary rendering engine for visualizations; while 3D renderings (such as those described in <a href="#sec:software-volume-rendering">1.11.41</a>) typically generate raw pixel buffers that are saved as images directly, most other visualization functionality in yt relies on Matplotlib for generating images that are saved to disk.
 Slices and projections are prepared as variable-resolution images that are pixelized (<a href="#sec:pixelization">1.11.39</a>) into fixed resolution buffers, then provided to Matplotlib in the <code>imshow</code> function.
 Phase plots utilize the <code>pcolormesh</code> function.</p>
 <p>All of these internal plots utilize Matplotlib’s “object-oriented” interface, wherein <code>Figure</code> and <code>Axes</code> objects are created directly.
