@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-05-24'
+date-meta: '2023-05-26'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -81,8 +81,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-05-24" />
-  <meta name="citation_publication_date" content="2023-05-24" />
+  <meta name="dc.date" content="2023-05-26" />
+  <meta name="citation_publication_date" content="2023-05-26" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -288,9 +288,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/def1829d212b70fa83edf8bbc3a47adf5d3cbe50/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/def1829d212b70fa83edf8bbc3a47adf5d3cbe50/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/def1829d212b70fa83edf8bbc3a47adf5d3cbe50/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/8efbda793552c36e12bacdb0376ccdb20347e2b9/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/8efbda793552c36e12bacdb0376ccdb20347e2b9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/8efbda793552c36e12bacdb0376ccdb20347e2b9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -313,10 +313,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/def1829d212b70fa83edf8bbc3a47adf5d3cbe50/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/8efbda793552c36e12bacdb0376ccdb20347e2b9/))
 was automatically generated
-from [yt-project/yt-4.0-paper@def1829](https://github.com/yt-project/yt-4.0-paper/tree/def1829d212b70fa83edf8bbc3a47adf5d3cbe50)
-on May 24, 2023.
+from [yt-project/yt-4.0-paper@8efbda7](https://github.com/yt-project/yt-4.0-paper/tree/8efbda793552c36e12bacdb0376ccdb20347e2b9)
+on May 26, 2023.
 </em></small>
 
 ## Authors
@@ -2067,7 +2067,6 @@ Because this method -- while not taking advantage of any data structures of even
 In those cases, the distinction between "wide and shallow" grid structures (where refinement occurs essentially everywhere, but not to a great degree) and "thin and deep" grid structures (where refinement occurs in essentially one location but to very high levels), as well as the specific selection process, impact the overall performance.
 The second-stage selection occurs within individual grids, where points are selected based on the data point center.
 In the case of cell-centered data, this returns an array of size $N$ where $N$ is the number of points selected; in the case of 3D vertex-centered data, this would be $(N,8)$.
-**Andrew Myers: check this?**
 
 Indexing grid data in `yt` is optimized for systems of grids that tend to have larger grid patches, rather than smaller; specifically, in `yt` each grid patch consists of a Python object, which adds a bit of overhead.
 In the limit of many more cells than grid objects, this overhead is small, but in cases where the number of grids is $\sim 10^7$ this can become prohibitive.
@@ -2099,7 +2098,7 @@ Second, `yt` relies on the on-file location obtained from the octree traversal t
 This ensures that only the minimal amount of data is being read and is particularly efficient when accessing a region spanning a small number of domains and/or a small number of refinement levels.
 
 Recently, `yt` has been extended to fully supports accessing neighboring cells.
-This is achieved by computing one-cell thick quantities around each oct, which emulates the "ghost zones" found in patch-based codes. This approach has the advantage of abstracting the octree structure and provides a common interface to create derived fields, as described in **CC: any section describing this?**.
+This is achieved by computing one-cell thick quantities around each oct, which emulates the "ghost zones" found in patch-based codes. This approach has the advantage of abstracting the octree structure and provides a common interface to create derived fields, as described in @sec:derived_fields.
 The 56 neighbors ($4^3 - 2^3$) surrounding each oct are found by performing a search in the octree, which finds any neighbor in $O(\mathrm{level})$, where $\mathrm{level}$ is the level of the central oct.
 The search is illustrated on Figure {@fig:binary-search}.
 Other optimizations are possible that trade computational time with memory, for example by storing the tree as a fully-threaded structure (i.e. store pointers to the 6 neighbors sharing a face with each oct), or by starting at a central oct and searching "upwards and outwards."
@@ -2183,8 +2182,11 @@ For instance, 3D data selectors as applied to finite volume codes only select th
 However, with SPH data, the selection methods in 2D and 3D will always include those particles whose spheres of influence, defined by the appropriate smoothing lengths, are within or overlapping with the data selector.
 This is somewhat counter to the expectations set by the grid codes, but aligns with the need to have a fully self-contained data-container for computing field values.
 For instance, this means that a "ray" object (often used to compute, for instance, the column density in a cosmological simulation) will in fact include a set of particles within a (potentially) varying impact parameter.
+This can be seen in diagram form in Figure #fig:sph_ray_tracing.
 
-**MJT: Needs a diagram, could be drawn from the contrived test case**
+![
+A cartoon diagram of a ray passing through a collection of particles.  The radius of the particle is indicative of its smoothing length (values should *not* be interpreted to be constant within these circles!).  As can be seen, the individual particles each contribute different amounts as a result of their smoothing length, the chord-length as the ray passes through the circle, and the values within each particle.
+](images/sph_ray_tracing_diagram.svg){#fig:sph_ray_tracing}
 
 Other than these differences, which have been intentionally made to align the results with the expected results from the underlying discretization method, the APIs for access to particle data and finite volume data are identical, and they provide broadly identical functionality, where the disparities are typically in functionality such as volume rendering.
 This allows a single analysis script, or package (such as Trident), to utilize a high-level API to address both gridded and Lagrangian data while still ensuring that the results are high-fidelity and representative of the underlying methods.
@@ -2255,6 +2257,8 @@ As is clearly visible in the second plot, `yt` is applying higher-order methods 
 
 ### Non-Cartesian Coordinates {#sec:noncartesian}
 
+**MJT: This needs to be written**
+
 
 ## Indexing Discrete-Point Datasets {#sec:point_indexing}
 
@@ -2270,7 +2274,7 @@ We present a technique for using Morton bitmap indexes to map files and accelera
 
 ### Theory and Background {#sec:bitmap_theory}
 
-#### Domain Partitioning Between Files
+#### Domain Partitioning Between Files {#sec:decomp}
 
 A common analysis task is the selection of data within a subset of the full domain; we use the term "selector\" to refer to the selection operator.
 If the dataset is split across multiple files, either due to size constraints or to allow for parallel I/O, such selections require every file to be loaded and parsed in order to assemble all of the data within the selection criteria.
@@ -2336,7 +2340,6 @@ As seen in panel (a) of Figure @fig:zorder, ordering of the cells by their Morto
 ![
 Example of 3rd order Morton curve in two dimensions.
 The bits of the $x$ and $y$ indices are interleaved to generate a single integer that fully describes the cell's location within the two-dimensional domain to within $1/2^{3}$th of the domain in each dimension.
-**NOTE: wouldn't it make more sense to write $y$ and $x$ is this order, so that the interleaving could be represented with arrows without crossing them ?**
 ](images/bitmap/zorder.png){#fig:zorder}
 
 The precision of a single Morton index is only limited by the size of the integer used to store it.
@@ -2351,7 +2354,7 @@ By recording the indices of the cells containing data from each file within a da
 Bitmap indexes use the values of single bits within an array of bits to describe dataset properties.
 This form requires minimal memory and can be filtered using computationally inexpensive boolean operations.
 Bitmap indexes have long been popular for use with large data warehouses [@Wu1998; @Chan1998; @Chan1999].
-However, as scientific datasets have become larger and more complex, they have also begun to gain traction in a diverse array of scientific fields including geosciences [@Malensek2014], earth sciences *TODO: insert citation here ?*, rocket science [@Sinha2006; @Sinha2007], high-energy physics [@Stockinger2000], and combustion [@Wu2003].
+However, as scientific datasets have become larger and more complex, they have also begun to gain traction in a diverse array of scientific fields including geosciences [@Malensek2014], earth sciences, rocket science [@Sinha2006; @Sinha2007], high-energy physics [@Stockinger2000], and combustion [@Wu2003].
 
 In cases where data attributes can take on a finite set of values, one bitmap is constructed for each possible attribute value.
 Within the bitmap each bit specifies whether or not the corresponding data point has that value.
@@ -3638,7 +3641,7 @@ In addition to API considerations, there are three areas that we note have addit
 Matplotlib @doi:10.5281/zenodo.7570264 is a fully-featured mechanism for generating figures, with an incredible array of options to customize formatting, appearance, rendering of fonts and glyphs, selection of colorbars, calculation of tick locations, and appropriate bounds.
 This degree of flexibility provides extremely fine-grained control over the appearance of figures for publication, and Matplotlib provides a large number of output formats for even the most discerning of journals.
 
-yt utilizes Matplotlib as its primary rendering engine for visualizations; while 3D renderings (such as those described in @sec:vr) typically generate raw pixel buffers that are saved as images directly, most other visualization functionality in yt relies on Matplotlib for generating images that are saved to disk.
+yt utilizes Matplotlib as its primary rendering engine for visualizations; while 3D renderings (such as those described in @sec:software-volume-rendering) typically generate raw pixel buffers that are saved as images directly, most other visualization functionality in yt relies on Matplotlib for generating images that are saved to disk.
 Slices and projections are prepared as variable-resolution images that are pixelized (@sec:pixelization) into fixed resolution buffers, then provided to Matplotlib in the `imshow` function.
 Phase plots utilize the `pcolormesh` function.
 
@@ -3772,7 +3775,7 @@ For example, when conducting halo finding and analysis (see @sec:halo_finding) y
 This takes place by specifying a task size at the top level (or allowing yt's internal heuristics to determine it) and then distributing work to sub-communicators, each of which is then used for decomposition inside that top-level task.
 
 In addition to multi-level communicators, yt utilizes OpenMP constructs exposed in Cython in several places.
-This includes in the software volume rendering (see @sec:software-volume-rendering), in the pixelization operations for SPH data (see @sec:sph-analysis), calculation of gravitational binding energy (see @sec:analysis-modules) and for computing the bounding volume hierarchy for rendering finite element meshes (see @sec:unstructured-mesh-analysis).
+This includes in the software volume rendering (see @sec:software-volume-rendering), in the pixelization operations for SPH data (see @sec:sph-analysis), calculation of gravitational binding energy (see @sec:analysis-modules) and for computing the bounding volume hierarchy for rendering finite element meshes (see @sec:unstructured-mesh).
 In some instances, the Cython interface to OpenMP has had unpredictable performance implications; owing to this, the usage of OpenMP within yt has been somewhat conservative.
 
 ### Parallelism Interfaces

@@ -9,19 +9,19 @@ Alpes
 Altay
 AMR
 AMRKDTree
-amrvac
+AMRVAC
 Aperio
 APIs
-arepo
+AREPO
 Arraki
 arraylike
 ARTIO
 arwetzel
 AST
-Astro
+astro
 astrojaz
 astrophysically
-AstroPy
+astropy
 astrosmith
 AthenaPK
 atmyers
@@ -35,7 +35,7 @@ binarily
 Biondo
 Birla
 Bitbucket
-bitwise
+Bitwise
 bookkeepping
 Bool
 Borro
@@ -52,7 +52,7 @@ CGS
 Champaign
 changeset
 changesets
-CHOLLA
+cholla
 chombo
 chrishavlin
 chummels
@@ -65,11 +65,11 @@ collisional
 colocation
 colorbar
 colorbars
-colormap
+Colormap
 colormapping
 colormaps
 colorspace
-Comoving
+comoving
 conda
 connectedness
 coord
@@ -89,7 +89,7 @@ datapoint
 dataset
 datasetfrom
 dataset’s
-datasets
+Datasets
 datasetwere
 datatypes
 decomp
@@ -127,7 +127,7 @@ fisheye
 fof
 formatter
 formatters
-Frontend
+frontend
 frontends
 frontrow
 Gainesville
@@ -149,7 +149,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-Hexahedral
+hexahedral
 HippoDraw
 histogramming
 Hix
@@ -204,7 +204,7 @@ LLC
 logarithmically
 LSST
 Madicken
-Matplotlib
+matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -219,7 +219,7 @@ moab
 Mollweide
 Monaghan
 mornkr
-MPI
+mpi
 mtryan
 Munk
 munkm
@@ -242,9 +242,9 @@ NumFOCUS
 NumPy
 OAC
 octants
-Octree
+octree
 octrees
-octs
+Octs
 odowska
 olebole
 OpenMP
@@ -275,7 +275,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-powderday
+Powderday
 powersoffour
 pre
 proeminently
@@ -337,7 +337,7 @@ subselection
 Suoqing
 Supercomputing
 susbtantial
-SymPy
+sympy
 sympy’s
 TBD
 Tbytes
@@ -360,7 +360,6 @@ unsampled
 Urbana
 userbase
 Volker
-vr
 webassembly
 Wetzel
 Widgyts
@@ -375,7 +374,7 @@ yipihey
 yournamehere
 YTArray
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj
