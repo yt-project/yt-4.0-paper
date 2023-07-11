@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-05-26'
+date-meta: '2023-07-11'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -81,8 +81,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-05-26" />
-  <meta name="citation_publication_date" content="2023-05-26" />
+  <meta name="dc.date" content="2023-07-11" />
+  <meta name="citation_publication_date" content="2023-07-11" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -288,9 +288,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/ceeaa18110f458d8bef807d5ff2b51081b674dfb/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ceeaa18110f458d8bef807d5ff2b51081b674dfb/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ceeaa18110f458d8bef807d5ff2b51081b674dfb/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/c871495250839686fdd09878de2d0900f86ad16f/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/c871495250839686fdd09878de2d0900f86ad16f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/c871495250839686fdd09878de2d0900f86ad16f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -313,10 +313,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/ceeaa18110f458d8bef807d5ff2b51081b674dfb/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/c871495250839686fdd09878de2d0900f86ad16f/))
 was automatically generated
-from [yt-project/yt-4.0-paper@ceeaa18](https://github.com/yt-project/yt-4.0-paper/tree/ceeaa18110f458d8bef807d5ff2b51081b674dfb)
-on May 26, 2023.
+from [yt-project/yt-4.0-paper@c871495](https://github.com/yt-project/yt-4.0-paper/tree/c871495250839686fdd09878de2d0900f86ad16f)
+on July 11, 2023.
 </em></small>
 
 ## Authors
@@ -926,15 +926,15 @@ In this paper, we present the current version of `yt`, which enables identical s
 This has been the result of a large-scale effort to rewrite the underlying machinery within `yt` for accessing data, indexing that data, and providing it in efficient ways to higher-level routines, as discussed in Section Something.
 While this was underway, `yt` has also been considerably reinstrumented with [metadata-aware array infrastructure](#sec:units), the [volume rendering infrastructure](#sec:vr) has been rewritten to be more user-friendly and capable, and support for [non-Cartesian geometries](#sec:noncartesian) has been added.
 
-The single biggest change to `yt` since that paper was published has not been technical in nature.
+The single biggest update/addition to `yt` since that paper was published has not been technical in nature.
 In the intervening years, a directed and intense community-building effort has resulted in the contributions from over a hundred different individuals, many of them early-stage researchers, and a [thriving community of both users and developers](#sec:community).
 This is the crowning achievement of development, as we have attempted to build `yt` into a tool that enables inquiry from a technical level as well as fosters a supportive, friendly community of individuals engaged in self-directed inquiry.
 
 
 ## Community Building {#sec:community}
 
-Choosing a software package for a particular purpose involves evaluating several differentiating factors; these factors include the functionality of a package, the performance of a package, the user-friendliness, and even the ability of an individual to find help, engage with others and feel a sense of participation.
-**cite something here** The development, fostering and design of the community around `yt` is deemed to be both crucial to the success or failure of `yt`, and in many ways inseparable from its functionality.
+Choosing a software package for a particular purpose involves evaluating several differentiating factors; these factors include the functionality of a package, the performance of a package, the user-friendliness, and even the ability of an individual to find help, engage with others and feel a sense of participation [@doi:10.1371/journal.pcbi.1007296].
+The development, fostering and design of the community around `yt` is deemed to be both crucial to the success or failure of `yt`, and in many ways inseparable from its functionality.
 
 ### Composition
 
@@ -965,8 +965,8 @@ When evaluating the level of engagement, we consider a few different classificat
  * Issuing a pull request
  * Writing documentation
  * Participating in code review
- * Drafting an enhancement proposal
  * Closing bug reports
+ * Drafting an enhancement proposal
 
 While there are other activities that individuals can participate in, these are the typical activities we see among participants in the community.
 The order, flowing from the first to the last, is the typical flow we see for an individual coming to participate in the community.
@@ -1227,7 +1227,7 @@ The workflow for code review roughly follows this outline:
 
  1. A pull request is issued.  When a new pull request is issued, a template is provided that includes a description of the change, requesting information about its compliance with coding standards, etc.
  2. The pull request is automatically marked as unmergeable until a team member applies the correct component label.
- 3. Code is reviewed, line-by-line, and suggestions are made by humans. Code linting is automated.
+ 3. Code is reviewed, line-by-line, and suggestions are made by humans. Code linting, where specific behaviors are identified (such as inconsistent naming, unused variables, unreachable code sections, etc) is automated.
  4. This process is iterated, ensuring that tests, results accuracy and coding standards are maintained.
 
 One increasing issue with the code review process is ensuring that changes are reviewed with appropriate urgency; larger pull requests tend to languish without review, as the requirements for review necessarily add burden to the maintainers.
@@ -1243,6 +1243,7 @@ By queuing up pull requests for merging, it allows maintainers to mark a set of 
 ### Code Styling and Linting
 
 For code included in ``yt``, a set of styles are enforced.
+The term "linting" is used to describe applying automated checks to enforce sytlistic consistency, as well as to flag potential errors that can be detected through static analysis of the code.
 
 We rely on the [``pre-commit``](https://pre-commit.com) framework, which enables automated checks as well as automatic fixes at commit time.
 This tool is an opt-in so not every "drive-by" contributor has to learn and install it, but continuous linting is provided by [pre-commit.ci](https://pre-commit.ci) so styling errors cannot slip in.
@@ -1250,7 +1251,7 @@ This tool is an opt-in so not every "drive-by" contributor has to learn and inst
 We configure `pre-commit` to run a mixture of formatters and static checkers.
 The former modify the code in place, while the latter only report errors and so-called "code smells" (such as undefined variables, unused imports, bare `except` statements...) but require human developers fix them.
 
-Our suite of formatter most proeminently includes
+Our suite of formatter most prominently includes
 [``black``](https://black.readthedocs.io/en/stable/),
 [``isort``](https://pycqa.github.io/isort/) and
 [``pyupgrade``](https://github.com/asottile/pyupgrade).
@@ -1276,13 +1277,13 @@ However, new contributions are allowed to include type hinting, and work is unde
 ### YTEP Process {#sec:ytep}
 
 YTEPs, or "`yt`-enhancement proposal" are vehicles for collaborative decision-making in the project.
-Implemented shortly after the first paper on `yt` was released, the YTEP process experienced a fairly pronounced period of usage during the transition between versions 2.0 and 3.0 of `yt`, and has since been utilized considerably less.
 During periods of rapid development, the needs of the community for stability have to be balanced against desires for change; the YTEP process was implemented to facilitate stakeholder feedback, allow for discussion of design decisions, and to prompt detailed thinking about how and why things should be implemented.
 We have modeled this process against that used in the AstroPy community ("APE").
 To create a new proposal for a large change to `yt`, or to document a decision-making process, individuals prepare a description of the background, motivation for the change, the steps to implementation, and potential alternative approaches.
 The proposal is discussed through the pull-request process, and once discussion has concluded it is added to the [repository](https://github.com/yt-project/ytep) of YTEPs that is auto-built and [deployed](https://ytep.readthedocs.org/).
-The accepted YTEPs have included implementing the chunking system, developing a units system, removing legacy components, and implementing a code of conduct.
 
+Implemented shortly after the first paper on `yt` was released, the YTEP process experienced a fairly pronounced period of usage during the transition between versions 2.0 and 3.0 of `yt`, and has since been utilized considerably less.
+The accepted YTEPs have included implementing the chunking system, developing a units system, removing legacy components, and implementing a code of conduct.
 Below, we include a table of current YTEPs as of this writing.
 
 | Number   | YTEP Title                                            | Created            | Authors                                                             |
@@ -1368,7 +1369,7 @@ This helper object tracks the correspondence between numerical axes and spatial 
 In addition to these helper functions, the coordinate handler provides definitions for derived fields that describe local cell width (and orthogonal path length), positions in coordinate space as computed by index space coordinates, volumes, and surface areas.
 These coordinate handlers also provide transformations between different spaces, albeit using the somewhat undesirable method of conversion to reference cartesian frames and subsequent conversion to local coordinate frames.
 
-At present, coordinate spaces are defined in the spaces enumerate in Table @tbl:coord-systems.
+At present, coordinate spaces are defined in the spaces enumerated in Table @tbl:coord-systems.
 While these are representative of the most common spatial representations, additional representations (such as those that include a non-trivial mapping between coordinates and index values) are possible to implement.
 
 | Coordinate system               | Axes                                                        |
@@ -1384,7 +1385,7 @@ Table: Extant coordinate systems; in all cases, value ranges should be taken to 
 
 Future developments may involve code generation for arbitrary coordinate systems, using SymPy or other libraries.
 Independent of the visualization methods (which can often be reused), the development of coordinate systems is largely rote, applying straightforward mathematics to construct derived field definitions.
-As such, using mechanisms in SymPy for construction of relationships between coordinate systems may be a feasible method of developing code-generation for coordinate system handlers in yt.
+As such, using mechanisms in SymPy for construction of relationships between coordinate systems may be a feasible method of developing code-generation for coordinate system handlers in `yt`.
 
 
 
@@ -1429,9 +1430,11 @@ Additionally, by providing some routines as options, we can in some instances sp
  * `select_bbox_edge(lower_left, upper_right)`: This is a special-case of the bounding box routine that provides information as to whether or not the *entire* bounding box is included or just a *partial* portion of the bounding box.
 
 We demonstrate a handful of selection operations on a low-resolution dataset below.
+In each of these figures, the rectangular regions outlined in gray and black indicate individual grid patches, where data may vary in resolution and cell size.
 In Figure @fig:reg2 we illustrate the selection of a rectangular prism (i.e., a `region`, like in Section @sec:dobj-region.
 In Figure @fig:sp2, we illustrate the selection of a sphere (i.e., a `sphere`, like in Section @sec:dobj-sphere.
 And, to demonstrate yt's ability to construct boolean selectors from these objects (i.e., Section @sec:dobj-bool we show what the logical `NOT` of these two objects would produce in @fig:reg2_not_sp2.
+We note in particular that while these regions are constructed from geometric selections, the data points are selected by the inclusion of their center points, leading to slightly irregular edges; this is by design.
 
 ![
 A selection of data in a low-resolution simulation from a rectangular prism.
@@ -1463,7 +1466,7 @@ With discrete point selection (and for our purposes, often unstructured mesh fal
 However, utilizing hierarchical bitmap indexing we can often organize subsets of particles into collections of cells which may or may not be contiguous.
 In this situation, we can check for full inclusion within data objects, although we are not able to identify start and stop indices as the data are not assumed to be organized spatially independent of how we have indexed them.
 
-At present, the objects listed in @tbl:selection-objects are provided as selectors in yt.
+At present, the objects listed in Table @tbl:selection-objects are provided as selectors in yt.
 We do make a distinction between "selection" operations and "reduction" or "construction" operations (such as projections and smoothing/resampling), but have included both here for consistency.
 Additionally, some have been marked as not "user-facing," in the sense that they are not expected to be constructed directly by users, but instead are utilized internally for indexing purposes.
 In columns to the right, we provide information as to whether there is an available "fast" path for grid objects.
@@ -1817,7 +1820,6 @@ In `yt`, there are three types of "fields" that define values at a given spatial
 The first of these is an "on-disk" field, representing the raw, unmodified (except potentially up-cast to 64 bit precision) values read from the data storage that defines the dataset, such as files or bucket storage; while `yt` does provide routines for reading these fields, they are passed largely unmodified and so we do not discuss them in depth.
 The second type of field is a "derived field," which is a functional definition of how to process or combine one or more fields that exist in the dataset.
 Finally, providing the closure necessary for these derived fields to be accessed independently of their naming convention are "alias fields" that provide mappings between platform- or format-specific names for fields and those used internally in `yt`.
-This collection of three classes of fields
 
 Fields are also defined by their "sampling type" to distinguish between those fields defined in a volume-filling fashion (i.e., cell-based fields) and those that are defined by discrete samples that may or may not require closure or convolution functions to be applied.
 Fields that are defined as a collection of discrete samples can be combined or filtered differently than those that are defined in a volume-filling manner, as described in @sec:particle_filters and @sec:particle_unions.
@@ -1897,7 +1899,7 @@ If both particle types share fields A and B but only one shares C, the union wil
 #### Field Detection {#sec:field_detection}
 
 `yt` determines at dataset instantiation time the fields that are available to be computed.
-This provides the ability for researcher to *query* what fields are available, and additionally as a side-effect it provides information to the `yt` IO routines which fields need to be computed for a given derived field.
+This provides the ability for researchers to *query* what fields are available, and additionally as a side-effect it provides information to the `yt` IO routines which fields need to be computed for a given derived field.
 By utilizing this information, `yt` can "resolve" all required fields when a derived field is requested.
 As such, it is able to identify that `("gas", "velocity_divergence")` relies on the velocity fields along each axis.
 If these are the fields that exist in the dataset, the resolution process concludes here.
@@ -1946,7 +1948,7 @@ This translates our meaning -- find the maximum value along the z-axis -- into a
 These operations, on data objects (rather than the underlying arrays of values that are accessible through them) provide dataframe-like methods for querying very large, spatially registered data.
 
 The array-like operations utilized in `yt` attempt to map to conceptually similar operations in numpy.
-Unlike numpy, however, these utilize `yt`'s dataset-aware "chunking" operations, in a manner philosophically similar to the chunking operations used in dask.
+Unlike numpy, however, these utilize `yt`'s dataset-aware "chunking" operations, in a manner philosophically similar to the chunking operations used in the parallel computation library dask.
 Below, we outline the three classes of operations that are available, based on the type of their return value.
 
 #### Reduction to Scalars  {#sec:arrayops-scalar}
@@ -1989,7 +1991,7 @@ Importantly, if the dataset is a finite-volume dataset (grid, octree, etc), the 
 
 ### Chunking and Decomposition Strategies {#sec:chunking}
 
-Reading data, particularly data that will not be utilized in a computation, can incur susbtantial overhead, particularly if the data is spread over multiple files on a networked filesystem, where metadata queries can dominate the cost of IO.
+Reading data, particularly data that will not be utilized in a computation, can incur substantial overhead, particularly if the data is spread over multiple files on a networked filesystem, where metadata queries can dominate the cost of IO.
 `yt` takes the approach of building a coarse-grained index based on the discretization method of the data (particle, grid, octree, unstructured mesh), combining this with datapoint-level indexing for selection processes.
 
 To supplement this, methods in `yt` that process data utilize a system of data "chunking," whereby segments of data identified during coarse-grained indexing are subdivided by one of a few different schemes and yielded to the iterating function; these schemes can include a limited number of tuning parameters or arguments.
@@ -2072,15 +2074,15 @@ Indexing grid data in `yt` is optimized for systems of grids that tend to have l
 In the limit of many more cells than grid objects, this overhead is small, but in cases where the number of grids is $\sim 10^7$ this can become prohibitive.
 These cases are becoming more common even for medium-scale simulations.
 
-To address both the memory overhead and the Python overhead, as well as more generally address potential scalability issues with grid selection, several tentative explorations have been made into an implementation of a more sophisticated "grid visitors" indexing and selection method, drawing on the approach used by the oct-visitors (described [below](#sec:octree_analysis)).
+To address both the memory overhead and the Python overhead, as well as more generally address potential scalability issues with grid selection, several tentative explorations have been made into an implementation of a more sophisticated "grid visitors" indexing and selection method, drawing on the approach used by the oct-visitors (described below in Section #sec:octree_analysis).
 These were an attempt to unify the selection methods between octrees and grids, to reduce the overall code duplication and implementation overhead.
 Each process -- selection, copying of data, generation of coordinates -- is represented by an instance of a `GridVisitor` object.
+A spatial tree is constructed, wherein parent/child relationships are established between grids.
 The tree is recursively traversed, and for all selected points the object is called.
 This allows grids, their relationships, and the data masks to be stored in structures and forms that are both optimized and compressed.
 This method is essential for scaling to a large number of grid patches; the storage requirements of a single grid patch Python object are around 1K per object (about one gigabyte per million grids), whereas the optimized storage reduces this to approximately 140 bytes (about one gigabyte per eight million grids), with further reductions possible; for selection operations, we are also able to reduce the number of temporary arrays and utilize compressed mask representation, bringing peak memory usage down further.
 The spatial-tree optimization substantially increases performance for "wide and shallow" dataset selection.
 However, while such an implementation may be possible, the previous attempts were stymied by performance and maintenance considerations for the grid code, in particular related to the masking of "child" zones in an efficient and straightforward manner.
-A spatial tree is constructed, wherein parent/child relationships are established between grids.
 
 ### Octree Analysis {#sec:octree_analysis}
 
@@ -2097,11 +2099,11 @@ In a first pass, the number of selected cells is computed and in a second pass, 
 Second, `yt` relies on the on-file location obtained from the octree traversal to lazily read data from disk.
 This ensures that only the minimal amount of data is being read and is particularly efficient when accessing a region spanning a small number of domains and/or a small number of refinement levels.
 
-Recently, `yt` has been extended to fully supports accessing neighboring cells.
+Recently, `yt` has been extended to fully support accessing neighboring cells.
 This is achieved by computing one-cell thick quantities around each oct, which emulates the "ghost zones" found in patch-based codes. This approach has the advantage of abstracting the octree structure and provides a common interface to create derived fields, as described in @sec:derived_fields.
 The 56 neighbors ($4^3 - 2^3$) surrounding each oct are found by performing a search in the octree, which finds any neighbor in $O(\mathrm{level})$, where $\mathrm{level}$ is the level of the central oct.
 The search is illustrated on Figure {@fig:binary-search}.
-Other optimizations are possible that trade computational time with memory, for example by storing the tree as a fully-threaded structure (i.e. store pointers to the 6 neighbors sharing a face with each oct), or by starting at a central oct and searching "upwards and outwards."
+Other optimizations are possible, but not yet implemented in `yt`, that trade computational time with memory, for example by storing the tree as a fully-threaded structure (i.e. store pointers to the 6 neighbors sharing a face with each oct), or by starting at a central oct and searching "upwards and outwards."
 
 ![
 Illustration of a binary search through a quadtree. The search starts at the root level (level = 1 here) and recursively selects the quad that contains the point until reaching a leaf.
@@ -2153,7 +2155,7 @@ Constructing these octrees using morton indices, if the entire set of particles 
 To do so, the particles merely needed to be converted into a morton index via fast, bit-level operations, those index values sorted, and then processed in order to identify the greatest common bit-prefix.
 Because two successive particles with identical index values would share an octree location, looking for sequences of identical prefix values (i.e., lower-level octree colocation) naturally produces an octree.
 When fluid quantities such as density were requested in the yt 3.0 series, the values were computed on the mesh defined by the octree; increasing the `over_refine_factor` and decreasing the `n_ref` would serve to increase the resolution.
-While this produced mostly-acceptable visualizations, and particular produced dynamically-resolved visualizations, it posed several problems for both visualization and analysis.
+While this produced mostly-acceptable visualizations, and in particular produced dynamically-resolved visualizations, it posed several problems for both visualization and analysis.
 The first, and arguably the most important, is that the strict locality requirements for refinement produced artifacts at leaf node boundaries.
 This resulted in incorrect and unphysical visualizations of hydrodynamic quantities, affecting most obviously those regions at the edges of clusters of gas particles.
 These were mitigated in regions of highly-clustered gas particles, but visual artifacts were still clear, as `yt` was applying a visualization suited for finite volume elements to Lagrangian particles.
