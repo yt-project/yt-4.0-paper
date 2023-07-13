@@ -1,5 +1,7 @@
+# Requires the package yt_idefix
+
 import yt
-import yt_idefix
+
 
 ds = yt.load(
     "data.0092.vtk",
