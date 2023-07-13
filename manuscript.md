@@ -288,9 +288,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/accd109f6cdb0389ddaa934a63b117d61a65ac44/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/accd109f6cdb0389ddaa934a63b117d61a65ac44/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/accd109f6cdb0389ddaa934a63b117d61a65ac44/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/980f37a6e81ad0794a6109c720bfbf5822f309b1/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/980f37a6e81ad0794a6109c720bfbf5822f309b1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/980f37a6e81ad0794a6109c720bfbf5822f309b1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -313,9 +313,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/accd109f6cdb0389ddaa934a63b117d61a65ac44/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/980f37a6e81ad0794a6109c720bfbf5822f309b1/))
 was automatically generated
-from [yt-project/yt-4.0-paper@accd109](https://github.com/yt-project/yt-4.0-paper/tree/accd109f6cdb0389ddaa934a63b117d61a65ac44)
+from [yt-project/yt-4.0-paper@980f37a](https://github.com/yt-project/yt-4.0-paper/tree/980f37a6e81ad0794a6109c720bfbf5822f309b1)
 on July 13, 2023.
 </em></small>
 
@@ -2277,7 +2277,7 @@ This dataset, a simulation of magnetically-driven winds in a protoplanetary disk
 Here, we have used `yt`'s functionality for overplotting streamlines as well as line integral convolution on irregular meshes to display the data in its native resolution and as a slice along the azimuthal axis of the simulation domain.
 
 ![
-Spherical data from a protoplanetary disk, overlaid with annotations supplied by `yt` to demonstrate both the magnetic field and velocity structure of the data.  Data and image courtesy of Clément Robert.
+Spherical data from a protoplanetary disk, overlaid with annotations supplied by `yt` to demonstrate both the magnetic field and velocity structure of the data.  Data are used, with permission, from the simulations described in [@doi:10.1051/0004-6361/202039322].
 ](images/spherical_data.png){#fig:spherical_data}
 
 

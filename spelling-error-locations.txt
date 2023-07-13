@@ -404,7 +404,6 @@ content/30.abstracting_simulation_types.md:287:dataset
 content/30.abstracting_simulation_types.md:287:protoplanetary
 content/30.abstracting_simulation_types.md:288:azimuthal
 content/30.abstracting_simulation_types.md:288:overplotting
-content/30.abstracting_simulation_types.md:291:Clément
 content/30.abstracting_simulation_types.md:291:protoplanetary
 content/31.bitmap.md:1:Datasets
 content/31.bitmap.md:3:datasets
