@@ -10,16 +10,18 @@ ds = yt.load(
 )
 p = yt.SlicePlot(ds, "phi", "density")
 p.annotate_streamlines(
-    ("gas", "velocity_cartesian_x"),
-    ("gas", "velocity_cartesian_z"),
+    ("gas", "velocity_cylindrical_radius"),
+    ("gas", "velocity_cylindrical_z"),
     color=("gas", "velocity_magnitude"),
-    cmap="turbo",
-    density=0.8,
+    cmap="Greys_r",
+    density=1,
+    arrowsize=0.5,
+    linewidth=0.7,
     broken_streamlines=False,
 )
 p.annotate_line_integral_convolution(
     "magnetic_field_cartesian_x",
     "magnetic_field_cartesian_z",
-    alpha=0.35,
+    alpha=0.3,
 )
 p.save("content/images/spherical_data.png")
