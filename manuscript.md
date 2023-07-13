@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-07-11'
+date-meta: '2023-07-13'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -81,8 +81,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-07-11" />
-  <meta name="citation_publication_date" content="2023-07-11" />
+  <meta name="dc.date" content="2023-07-13" />
+  <meta name="citation_publication_date" content="2023-07-13" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -288,9 +288,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/c871495250839686fdd09878de2d0900f86ad16f/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/c871495250839686fdd09878de2d0900f86ad16f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/c871495250839686fdd09878de2d0900f86ad16f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/accd109f6cdb0389ddaa934a63b117d61a65ac44/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/accd109f6cdb0389ddaa934a63b117d61a65ac44/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/accd109f6cdb0389ddaa934a63b117d61a65ac44/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -313,10 +313,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/c871495250839686fdd09878de2d0900f86ad16f/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/accd109f6cdb0389ddaa934a63b117d61a65ac44/))
 was automatically generated
-from [yt-project/yt-4.0-paper@c871495](https://github.com/yt-project/yt-4.0-paper/tree/c871495250839686fdd09878de2d0900f86ad16f)
-on July 11, 2023.
+from [yt-project/yt-4.0-paper@accd109](https://github.com/yt-project/yt-4.0-paper/tree/accd109f6cdb0389ddaa934a63b117d61a65ac44)
+on July 13, 2023.
 </em></small>
 
 ## Authors
@@ -1361,7 +1361,7 @@ document.addEventListener("SVGLoaded", function(event) {
 });
 </script>
 
-### Abstraction of Coordinate Systems
+### Abstraction of Coordinate Systems {#sec:abstraction-coordinates}
 
 yt provides a system for defining relationships between index-space and coordinate-space.
 During instantiation of a `Dataset` object, a helper object (`coordinates`, a subclass of `CoordinateHandler`) is created.
@@ -2259,7 +2259,26 @@ As is clearly visible in the second plot, `yt` is applying higher-order methods 
 
 ### Non-Cartesian Coordinates {#sec:noncartesian}
 
-**MJT: This needs to be written**
+In Section @sec:abstraction-coordinates, we describe the relationship between the internal 'index' space that `yt` uses for referencing values and the natural 'data' space that the values represent.
+The abstraction of the coordinate systems and the relationship between index-space and data-space provides the ability to convert between the two; however, constructing visualizations and annotations requires an additional level of complexity.
+
+The single most important shortcoming in the analysis of non-cartesian datasets in `yt` is that the data selection operators almost exclusively function on the coordinates in *index* space, rather than in *data* space.
+As such, subselecting datasets by utilizing traditional geometric selectors in `yt` is much less useful than it should be; for example, selecting a sphere (see @sec:dobj-sphere) applies spherical selections in index space, which result in a decidedly non-spherical object.
+Selections of objects such as @sec:dobj-region do make considerably more sense, however, as they are often thought of as sweeping data along coordinate axes; the region object itself will naturally select wedges in a spherical domain, for instance.
+Future versions of `yt` will likely introduce means of more clearly selecting objects in coordinate space, for more natural subsetting of data.
+It is still possible to apply data selection based on field values, which can include the coordinate-space field coordinates (such as $r, \theta, \phi$).
+
+Despite these weak spots, however, `yt` does provide a number of routines that are specific to non-cartesian datasets, including pixelizers for cylindrical and spherical coordinate systems.
+(See @sec:pixelization for more detail on this process.)
+Pixelizers that take variable-resolution data along the $r$ and $\theta$ axes have been made available (for slicing along a conical section of a sphere or along the $z$ axis of a cylinder) as well as very simple projections from the surface of a sphere to a flat image (specifically utilizing the Aitoff projection).
+`yt` also provides access to Cartopy [@doi:10.5281/zenodo.7430317] for more advanced or featureful map projections, as well as overlaying continents and other geographic shapes.
+In Figure @fig:spherical_data we demonstrate some of the native, built-in functionality `yt` provides for non-cartesian data.
+This dataset, a simulation of magnetically-driven winds in a protoplanetary disk, was conducted in spherical coordinates.
+Here, we have used `yt`'s functionality for overplotting streamlines as well as line integral convolution on irregular meshes to display the data in its native resolution and as a slice along the azimuthal axis of the simulation domain.
+
+![
+Spherical data from a protoplanetary disk, overlaid with annotations supplied by `yt` to demonstrate both the magnetic field and velocity structure of the data.  Data and image courtesy of Clément Robert.
+](images/spherical_data.png){#fig:spherical_data}
 
 
 ## Indexing Discrete-Point Datasets {#sec:point_indexing}
