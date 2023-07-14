@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-07-13'
+date-meta: '2023-07-14'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -81,8 +81,8 @@ header-includes: |-
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-07-13" />
-  <meta name="citation_publication_date" content="2023-07-13" />
+  <meta name="dc.date" content="2023-07-14" />
+  <meta name="citation_publication_date" content="2023-07-14" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -288,9 +288,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/980f37a6e81ad0794a6109c720bfbf5822f309b1/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/980f37a6e81ad0794a6109c720bfbf5822f309b1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/980f37a6e81ad0794a6109c720bfbf5822f309b1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/c5dedb62c10ea88f932db370a6c2322bb840d441/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/c5dedb62c10ea88f932db370a6c2322bb840d441/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/c5dedb62c10ea88f932db370a6c2322bb840d441/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -313,10 +313,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/980f37a6e81ad0794a6109c720bfbf5822f309b1/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/c5dedb62c10ea88f932db370a6c2322bb840d441/))
 was automatically generated
-from [yt-project/yt-4.0-paper@980f37a](https://github.com/yt-project/yt-4.0-paper/tree/980f37a6e81ad0794a6109c720bfbf5822f309b1)
-on July 13, 2023.
+from [yt-project/yt-4.0-paper@c5dedb6](https://github.com/yt-project/yt-4.0-paper/tree/c5dedb62c10ea88f932db370a6c2322bb840d441)
+on July 14, 2023.
 </em></small>
 
 ## Authors
@@ -2277,7 +2277,8 @@ This dataset, a simulation of magnetically-driven winds in a protoplanetary disk
 Here, we have used `yt`'s functionality for overplotting streamlines as well as line integral convolution on irregular meshes to display the data in its native resolution and as a slice along the azimuthal axis of the simulation domain.
 
 ![
-Spherical data from a protoplanetary disk, overlaid with annotations supplied by `yt` to demonstrate both the magnetic field and velocity structure of the data.  Data are used, with permission, from the simulations described in [@doi:10.1051/0004-6361/202039322].
+Spherical data from a protoplanetary disk, overlaid with annotations supplied by `yt` to demonstrate both the magnetic field and velocity structure of the data. 
+Data are used, with permission, from a simulation based on the ones described in [@doi:10.1051/0004-6361/202039322].
 ](images/spherical_data.png){#fig:spherical_data}
 
 
