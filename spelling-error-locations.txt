@@ -879,6 +879,10 @@ content/70.sustainability.md:70:changesets
 content/70.sustainability.md:71:invasively
 content/70.sustainability.md:79:renderer
 content/70.sustainability.md:82:codebase
+content/80.conclusions.md:4:octree
+content/80.conclusions.md:8:changesets
+content/80.conclusions.md:11:APIs
+content/80.conclusions.md:13:pydata
 content/98.acknowledgments.md:5:Astro
 content/98.acknowledgments.md:5:KIPAC
 content/98.acknowledgments.md:5:NumFOCUS
