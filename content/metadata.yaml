@@ -27,12 +27,15 @@ authors:
     name: Matthew Turk
     initials: MJT
     orcid: 0000-0002-5294-0198
-    twitter: powersoffour
+    mastodon: powersoffour
+    mastodon-server: mastodon.social
     email: mjturk@illinois.edu
     affiliations:
       - School of Information Sciences, University of Illinois at Urbana-Champaign
       - Department of Astronomy, University of Illinois at Urbana-Champaign
+      - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
     funders: []
+    corresponding: true
   -
     github: ngoldbaum
     name: Nathan J Goldbaum
