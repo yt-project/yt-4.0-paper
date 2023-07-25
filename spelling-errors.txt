@@ -16,13 +16,13 @@ APIs
 AREPO
 Arraki
 arraylike
-artio
+ARTIO
 arwetzel
 AST
 Astro
 astrojaz
 astrophysically
-AstroPy
+astropy
 astrosmith
 AthenaPK
 atmyers
@@ -37,7 +37,7 @@ binarily
 Biondo
 Birla
 Bitbucket
-bitwise
+Bitwise
 bookkeepping
 Bool
 Borro
@@ -70,7 +70,7 @@ colorbar
 colorbars
 colormap
 colormapping
-colormaps
+Colormaps
 colorspace
 Comoving
 conda
@@ -115,7 +115,7 @@ dutta
 easies
 elliottbiondo
 entrypoints
-Enzo
+enzo
 Enzo’s
 ethlau
 EWAH
@@ -131,7 +131,7 @@ fisheye
 fof
 formatter
 formatters
-frontend
+Frontend
 frontends
 frontrow
 Gainesville
@@ -153,7 +153,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-hexahedral
+Hexahedral
 HippoDraw
 histogramming
 Hix
@@ -223,7 +223,7 @@ moab
 Mollweide
 Monaghan
 mornkr
-mpi
+MPI
 mtryan
 Munk
 munkm
@@ -290,7 +290,7 @@ pytest
 PyThreeJS
 pyXSIM
 qobilidop
-quadtree
+Quadtree
 radiative
 RADMC
 rasterizers
@@ -342,7 +342,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-SymPy
+sympy
 sympy’s
 sytlistic
 TBD
@@ -366,7 +366,7 @@ unsampled
 Urbana
 userbase
 Volker
-webassembly
+WebAssembly
 Wetzel
 Widgyts
 Xarthisius
