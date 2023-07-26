@@ -535,6 +535,16 @@ authors:
       - NASA Grants 80NSSC20K0520, 80NSSC21K1053
       - NSF Grants OAC-1835213, AST-2108020
   -
+    github: cindytsai
+    name: Shin-Rong Tsai
+    initials: SRT
+    orcid: 0000-0003-4635-6259
+    email: srtsai@illinois.edu
+    affiliations:
+      - Department of Physics, National Taiwan University
+      - School of Information Sciences, University of Illinois at Urbana-Champaign
+    funders: []
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
