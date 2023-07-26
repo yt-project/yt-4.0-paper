@@ -10,10 +10,10 @@ Alpes
 Altay
 AMR
 AMRKDTree
-AMRVAC
+amrvac
 Aperio
 APIs
-AREPO
+arepo
 Arraki
 arraylike
 ARTIO
@@ -51,14 +51,15 @@ bwoshea
 Cadair
 Cadiou
 Cartopy
-CGS
+cgs
 Champaign
 changeset
 changesets
-cholla
+CHOLLA
 chombo
 chrishavlin
 chummels
+cindytsai
 CISE
 cjoana
 claytonstrawn
@@ -70,7 +71,7 @@ colorbar
 colorbars
 colormap
 colormapping
-Colormaps
+colormaps
 colorspace
 Comoving
 conda
@@ -131,7 +132,7 @@ fisheye
 fof
 formatter
 formatters
-Frontend
+frontend
 frontends
 frontrow
 Gainesville
@@ -243,12 +244,12 @@ NMSU
 nosetests
 NSSC
 NumFOCUS
-numpy
+NumPy
 OAC
 octants
-octree
+Octree
 Octrees
-octs
+Octs
 odowska
 olebole
 OpenMP
@@ -279,7 +280,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-powderday
+Powderday
 pre
 programmatically
 programme
@@ -290,7 +291,7 @@ pytest
 PyThreeJS
 pyXSIM
 qobilidop
-Quadtree
+quadtree
 radiative
 RADMC
 rasterizers
@@ -300,7 +301,7 @@ recomputation
 recursed
 reinstrumented
 renderer
-Resampling
+resampling
 responsivity
 RGBA
 Ritali
@@ -308,6 +309,7 @@ RitaliG
 rjfarber
 rockstar
 Ronan
+Rong
 Rosen
 Rudd
 runtime
@@ -342,7 +344,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-sympy
+SymPy
 sympy’s
 sytlistic
 TBD
@@ -354,6 +356,7 @@ toolkits
 tradeoff
 transformative
 Triden
+Tsai
 UC
 unappropriate
 unitful
@@ -366,7 +369,7 @@ unsampled
 Urbana
 userbase
 Volker
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Xarthisius
@@ -380,7 +383,7 @@ yipihey
 yournamehere
 YTArray
 ytdata
-YTEP
+ytep
 YTEPs
 ytini
 YTQuadTreeProj
@@ -389,7 +392,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-Zingale
+zingale
 zorder
 Zuckerberg
 ZuHone

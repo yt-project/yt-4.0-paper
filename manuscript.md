@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-07-25'
+date-meta: '2023-07-26'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -67,6 +67,7 @@ author-meta:
 - Benjamin Thompson
 - Philipp Grete
 - John H. Wise
+- Shin-Rong Tsai
 - Add Yourself
 manubot-fail-on-errors: true
 citekey-aliases:
@@ -82,11 +83,11 @@ header-includes: |
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-07-25" />
-  <meta name="citation_publication_date" content="2023-07-25" />
-  <meta property="article:published_time" content="2023-07-25" />
-  <meta name="dc.modified" content="2023-07-25T18:41:35+00:00" />
-  <meta property="article:modified_time" content="2023-07-25T18:41:35+00:00" />
+  <meta name="dc.date" content="2023-07-26" />
+  <meta name="citation_publication_date" content="2023-07-26" />
+  <meta property="article:published_time" content="2023-07-26" />
+  <meta name="dc.modified" content="2023-07-26T02:52:44+00:00" />
+  <meta property="article:modified_time" content="2023-07-26T02:52:44+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -283,6 +284,10 @@ header-includes: |
   <meta name="citation_author" content="John H. Wise" />
   <meta name="citation_author_institution" content="Center for Relativistic Astrophysics, School of Physics, Georgia Institute of Technology, Atlanta, GA 30332, USA" />
   <meta name="citation_author_orcid" content="0000-0003-1173-8847" />
+  <meta name="citation_author" content="Shin-Rong Tsai" />
+  <meta name="citation_author_institution" content="Department of Physics, National Taiwan University" />
+  <meta name="citation_author_institution" content="School of Information Sciences, University of Illinois at Urbana-Champaign" />
+  <meta name="citation_author_orcid" content="0000-0003-4635-6259" />
   <meta name="citation_author" content="Add Yourself" />
   <meta name="citation_author_institution" content="Your University" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
@@ -292,9 +297,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/7c52606adeebfeeae38d15aa2ca768a2f689cad1/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/7c52606adeebfeeae38d15aa2ca768a2f689cad1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/7c52606adeebfeeae38d15aa2ca768a2f689cad1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/702919cce623ab66c318b164d5bcc9ce557b4cd1/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/702919cce623ab66c318b164d5bcc9ce557b4cd1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/702919cce623ab66c318b164d5bcc9ce557b4cd1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -317,10 +322,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/7c52606adeebfeeae38d15aa2ca768a2f689cad1/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/702919cce623ab66c318b164d5bcc9ce557b4cd1/))
 was automatically generated
-from [yt-project/yt-4.0-paper@7c52606](https://github.com/yt-project/yt-4.0-paper/tree/7c52606adeebfeeae38d15aa2ca768a2f689cad1)
-on July 25, 2023.
+from [yt-project/yt-4.0-paper@702919c](https://github.com/yt-project/yt-4.0-paper/tree/702919cce623ab66c318b164d5bcc9ce557b4cd1)
+on July 26, 2023.
 </em></small>
 
 
@@ -996,6 +1001,17 @@ on July 25, 2023.
   <small>
      Center for Relativistic Astrophysics, School of Physics, Georgia Institute of Technology, Atlanta, GA 30332, USA
      · Funded by NASA Grants 80NSSC20K0520, 80NSSC21K1053; NSF Grants OAC-1835213, AST-2108020
+  </small>
+
++ **Shin-Rong Tsai**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0003-4635-6259](https://orcid.org/0000-0003-4635-6259)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [cindytsai](https://github.com/cindytsai)
+    <br>
+  <small>
+     Department of Physics, National Taiwan University; School of Information Sciences, University of Illinois at Urbana-Champaign
   </small>
 
 + **Add Yourself**
