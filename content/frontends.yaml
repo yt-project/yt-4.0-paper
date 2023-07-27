@@ -111,7 +111,7 @@ frontends:
   - '@doi:10.1088/1742-6596/1031/1/012024'
   - '@doi:10.21105/joss.02513'
   - '@doi:10.21105/joss.01757'
-  comments: null
+  comments: 'BoxLib is the predecessor to the AMReX adaptive mesh refinement library [@doi:10.21105/joss.01370] and supports all BoxLib and AMReX codes that use the native BoxLib binary output. AMReX implements patch-based AMR following Berger and Colella [@doi:10.1016/0021-9991(89)90035-1] with typical refinement jumps of 2 or 4 between levels (this factor can vary in the level hierarchy).
   index_type:
   - grid
   name: boxlib
@@ -124,8 +124,7 @@ frontends:
   - '@doi:10.1016/j.cpc.2022.108457'
 - citations:
   - '@doi:10.1088/0067-0049/217/2/24'
-  comments: 'CHOLLA is a uniform-resolution grid code operating almost entirely on
-    GPUs.'
+  comments: 'CHOLLA is a uniform-resolution grid code operating almost entirely on GPUs.'
   index_type:
   - grid
   name: cholla
