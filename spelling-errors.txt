@@ -5,15 +5,16 @@ ahf
 AIP
 Aitoff
 Alamos
-alankar
+Alankar
 Alpes
 Altay
 AMR
+AMReX
 AMRKDTree
 amrvac
 Aperio
 APIs
-arepo
+Arepo
 Arraki
 arraylike
 ARTIO
@@ -51,7 +52,7 @@ bwoshea
 Cadair
 Cadiou
 Cartopy
-cgs
+CGS
 Champaign
 changeset
 changesets
@@ -65,11 +66,12 @@ cjoana
 claytonstrawn
 Clément
 codebase
+Colella
 collisional
 colocation
 colorbar
 colorbars
-colormap
+Colormap
 colormapping
 colormaps
 colorspace
@@ -209,7 +211,7 @@ LLC
 logarithmically
 LSST
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -224,7 +226,7 @@ moab
 Mollweide
 Monaghan
 mornkr
-MPI
+mpi
 mtryan
 Munk
 munkm
@@ -244,10 +246,10 @@ NMSU
 nosetests
 NSSC
 NumFOCUS
-NumPy
+numpy
 OAC
 octants
-Octree
+octree
 Octrees
 Octs
 odowska
@@ -273,7 +275,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -289,7 +291,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyXSIM
+pyxsim
 qobilidop
 quadtree
 radiative
@@ -301,7 +303,7 @@ recomputation
 recursed
 reinstrumented
 renderer
-resampling
+Resampling
 responsivity
 RGBA
 Ritali
@@ -327,7 +329,7 @@ situ
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger
@@ -383,7 +385,7 @@ yipihey
 yournamehere
 YTArray
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj
@@ -392,7 +394,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-zingale
+Zingale
 zorder
 Zuckerberg
 ZuHone

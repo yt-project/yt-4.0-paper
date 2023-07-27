@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-07-26'
+date-meta: '2023-07-27'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -72,6 +72,7 @@ author-meta:
 manubot-fail-on-errors: true
 citekey-aliases:
   amrvac-paper: doi:10.1016/S0010-4655(03)00139-5
+  berger-collela-paper: doi:10.1016/0021-9991(89)90035-1
 header-includes: |
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -83,11 +84,11 @@ header-includes: |
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-07-26" />
-  <meta name="citation_publication_date" content="2023-07-26" />
-  <meta property="article:published_time" content="2023-07-26" />
-  <meta name="dc.modified" content="2023-07-26T02:52:44+00:00" />
-  <meta property="article:modified_time" content="2023-07-26T02:52:44+00:00" />
+  <meta name="dc.date" content="2023-07-27" />
+  <meta name="citation_publication_date" content="2023-07-27" />
+  <meta property="article:published_time" content="2023-07-27" />
+  <meta name="dc.modified" content="2023-07-27T13:20:56+00:00" />
+  <meta property="article:modified_time" content="2023-07-27T13:20:56+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -297,9 +298,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/702919cce623ab66c318b164d5bcc9ce557b4cd1/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/702919cce623ab66c318b164d5bcc9ce557b4cd1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/702919cce623ab66c318b164d5bcc9ce557b4cd1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/12dc99c654e19f3118c12a53b0fee981b374e880/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/12dc99c654e19f3118c12a53b0fee981b374e880/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/12dc99c654e19f3118c12a53b0fee981b374e880/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -322,10 +323,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/702919cce623ab66c318b164d5bcc9ce557b4cd1/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/12dc99c654e19f3118c12a53b0fee981b374e880/))
 was automatically generated
-from [yt-project/yt-4.0-paper@702919c](https://github.com/yt-project/yt-4.0-paper/tree/702919cce623ab66c318b164d5bcc9ce557b4cd1)
-on July 26, 2023.
+from [yt-project/yt-4.0-paper@12dc99c](https://github.com/yt-project/yt-4.0-paper/tree/12dc99c654e19f3118c12a53b0fee981b374e880)
+on July 27, 2023.
 </em></small>
 
 
@@ -2948,7 +2949,7 @@ Reducing the amount of internal bookkeepping that yt had to do provided a lighte
 
 **Index Type:** grid
 
-**Comments:** None
+**Comments:** BoxLib is the predecessor to the AMReX adaptive mesh refinement library [@doi:10.21105/joss.01370] and supports all BoxLib and AMReX codes that use the native BoxLib binary output. AMReX implements patch-based AMR following Berger and Colella [@berger-collela-paper] with typical refinement jumps of 2 or 4 between levels (this factor can vary in the level hierarchy).
 
 
 **Primary Citations:** [@doi:10.21105/joss.01370; @doi:10.1088/1742-6596/1031/1/012024; @doi:10.21105/joss.02513; @doi:10.21105/joss.01757]
