@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-07-27'
+date-meta: '2023-08-05'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -84,11 +84,11 @@ header-includes: |
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-07-27" />
-  <meta name="citation_publication_date" content="2023-07-27" />
-  <meta property="article:published_time" content="2023-07-27" />
-  <meta name="dc.modified" content="2023-07-27T13:20:56+00:00" />
-  <meta property="article:modified_time" content="2023-07-27T13:20:56+00:00" />
+  <meta name="dc.date" content="2023-08-05" />
+  <meta name="citation_publication_date" content="2023-08-05" />
+  <meta property="article:published_time" content="2023-08-05" />
+  <meta name="dc.modified" content="2023-08-05T13:55:49+00:00" />
+  <meta property="article:modified_time" content="2023-08-05T13:55:49+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -298,9 +298,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/12dc99c654e19f3118c12a53b0fee981b374e880/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/12dc99c654e19f3118c12a53b0fee981b374e880/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/12dc99c654e19f3118c12a53b0fee981b374e880/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/4522be886b2c9772022fb7684f71f0a79199e58e/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/4522be886b2c9772022fb7684f71f0a79199e58e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/4522be886b2c9772022fb7684f71f0a79199e58e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -323,10 +323,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/12dc99c654e19f3118c12a53b0fee981b374e880/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/4522be886b2c9772022fb7684f71f0a79199e58e/))
 was automatically generated
-from [yt-project/yt-4.0-paper@12dc99c](https://github.com/yt-project/yt-4.0-paper/tree/12dc99c654e19f3118c12a53b0fee981b374e880)
-on July 27, 2023.
+from [yt-project/yt-4.0-paper@4522be8](https://github.com/yt-project/yt-4.0-paper/tree/4522be886b2c9772022fb7684f71f0a79199e58e)
+on August 5, 2023.
 </em></small>
 
 
@@ -2273,21 +2273,28 @@ Scheme of the AMR structure used to estimate the gradient of a quantity in the c
 Smoothed Particle Hydrodynamics (SPH) is a commonly-used method for solving equations of hydrodynamics in astrophysics (as well as many other fields!) from a lagrangian perspective.
 This provides many advantages over grid-based discretizations, but also poses somewhat different challenges for analysis and visualization.
 While a full description of SPH is outside the scope of this paper, there are a handful of crucial and important pieces of information that we will review.
-For more information, we refer interested readers to this comprehensive review of Smoothed Particle Hydrodynamics by Volker Springel [@doi:10.1146/annurev-astro-081309-130914] or to the SPLASH method paper by Daniel Price [@doi:10.1071/AS07022].
-SPH defines field quantities *at* a set of moving points, and field values at any point (i.e., between the points) can be computed by integrating over all the elements in the domain using a special-purpose kernel; this method is an exact interpolation between the discretized points by applying the smoothing kernel.
+For more information, we refer interested readers to this comprehensive review of Smoothed Particle Hydrodynamics by Daniel Price [@doi:10.1016/j.jcp.2010.12.011], the one by Volker Springel [@doi:10.1146/annurev-astro-081309-130914], or to the SPLASH method paper by Daniel Price [@doi:10.1071/AS07022].
+SPH defines field quantities *at* a set of moving points, allowing generic field values (i.e., between the points) to be computed by integrating over all the elements in the domain using a special-purpose kernel; this method is an exact interpolation between the discretized points by applying the smoothing kernel.
 Formally, this is represented as:
 $$
 A(\mathbf{r}) = \int A(\mathbf{r}')W(|\mathbf{r} - \mathbf{r}'|,h)\mathrm{d}V(\mathbf{r}')
 $$
 This is then reduced to a sum over the particles (the discretization points):
 $$
-A(\mathbf{r}) = \sum_j V_j A_j W(|\mathbf{r} - \mathbf{r}'|, h)
+A(\mathbf{r}, h) = \sum_j V_j A_j W(|\mathbf{r} - \mathbf{r}_j|, h)
 $$
 In these equations, $A$ is the field, W is the weighting function (the 'kernel') and $h$ is the smoothing length.
-(One important note is that for various reasons, the smoothing length and the 'half' smoothing length are often used in different contexts in SPH; this is something to keep in mind, as variable names such as `hsml` may in fact refer to 'half-smoothing length.')
-By choosing a smoothing kernel that terminates outside of a given radius, this can be restricted to a finite subset of the number of particles in the simulation, and provide a natural adaptivity in resolution.
-One common approach is to define the field values in terms of the N nearest neighboring particles; often this is a power of two, such as 32 or 64, which can be identified using a spatial search such as a kD-tree.
-There are other formulations of SPH as well that confine the integral to a fixed number of particles, that evaluate based on pressure criteria, and so forth.
+This weighting function typically takes the shape of a Gaussian, approximated through various spline functions (truncated at some radius), but that is not strictly necessary [@doi:10.1111/j.1365-2966.2012.21439.x].
+The quantity $h$, the smoothing length, has previously been referred to as the 'half-smoothing length' (hence the variable name `hsml` used in many contexts), but formally represents the full-width-half-maximum of the Gaussian approximated by the spline kernels, with the ratio $\ell_{\rm FWHM} / h = \sqrt{2\ln2}$ [@doi:10.1093/mnras/stab1423].
+The value of $h$ in adaptive simulations is typically allowed to vary (which is extremely common in astronomy, though this is not true when SPH is applied to other domains where the density of the fluid remains roughly fixed) such that a constraint equation, e.g.
+$$
+  n(\mathbf{r}, h_i) = \sum_j W(|\mathbf{r} - \mathbf{r}_j|, h_i) = \left(\frac{\eta}{h_i}\right)^{n_{\rm D}},
+$$
+is satisfied, where $\eta$ is a fixed constant that sets the spatial resolution of the simulation and $n_{\rm D}$ is the number of dimensions.
+Various codes may change this constraint equation for differing purposes, such as confining the integral to a fixed number of particles, or those that evaluate the constraint based on pressure criteria, and so forth.
+Many codes store the maximal radial extent of the kernel (known as the kernel extent, and often represented by $H$), as this is what is used in neighbour finding operations.
+The drawback to this choice is that the specific value of $H$ is kernel-dependent, as some may cut off at much shorter distances than others when representing the same Gaussian.
+As different codes and methods make use of different kernels for various reasons (ones with larger cut-off radii can produce less noisy results, but are computationally more costly), some codes now employ $h=H/\gamma_{\rm K}$, where $\gamma_{\rm K}$ is a kernel-dependent quantity.
 
 In general, there are two approaches to defining the finite set of particles that contribute to a field at a given point.
 In "scatter" methods, computing a field at a given point is conducted by iterating over particles and identifying those whose smoothing length overlaps with a given point.
@@ -2295,7 +2302,6 @@ In the alternate method "gather," the outer and inner loops of the algorithm are
 
 For the purposes of *post-processing* analysis and visualization, the most important criteria for applying SPH to a set of particles are to ensure that the function that computes field values at a given location is *identical* to that used inside the simulation code (or as close as possible) and that the calculations are conducted in as short a time as possible.
 This set of dual requirements has led to yt implementing a flexible system for defining the smoothing kernel used, whether or not a normalization step is applied to SPH quantities, and the option to use either "scatter" or "gather" methods for computing field values at fixed locations.
-
 
 Previous versions of `yt` provided analysis of SPH data through a hybrid approach that mixed pure-SPH analysis with octree-based gridding and indexing that used particle density as a guide for the necessary resolution.
 Although the present, yt 4.0 series does not utilize octrees for particles, a description of the previous implementation is useful to provide both historical information and modern motivation for the "demeshening" initiative that led to the current code base.
