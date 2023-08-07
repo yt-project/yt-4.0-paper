@@ -55,7 +55,7 @@ jobs:
           # fetch entire commit history to support get_rootstock_commit
           fetch-depth: 0
       - name: Checkout yt Repository
-        uses: action/checkout@v3
+        uses: actions/checkout@v3
         with:
           repository: yt-project/yt
           path: yt
