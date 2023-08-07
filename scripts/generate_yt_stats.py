@@ -1,8 +1,9 @@
-# Meant to be run from the root yt-4.0-paper directory, which should live next to a yt directory.
+# Meant to be run from the root yt-4.0-paper directory, which should have a yt subdirectory in it.
+# This is how it works with the github workflow.
 
 mapping = {}
 
-repo_loc = "../yt/"
+repo_loc = "./yt/"
 
 with open(repo_loc + ".mailmap", 'r') as mailmap:
     for line in mailmap.readlines():
