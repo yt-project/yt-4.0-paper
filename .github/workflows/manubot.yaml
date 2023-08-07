@@ -10,7 +10,7 @@ on:
       - master
   # NOTE: scheduled workflows are supported as of 2022-09-27 (example commented below)
   # https://github.com/community/community/discussions/12269#discussioncomment-3747667
-  scheduled:
+  schedule:
     - cron: '0 1 * * 1'  # https://crontab.guru/#0_1_*_*_1
   workflow_dispatch:
     inputs:
