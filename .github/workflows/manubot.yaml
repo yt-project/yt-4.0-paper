@@ -59,6 +59,7 @@ jobs:
         with:
           repository: yt-project/yt
           path: yt
+          fetch-depth: 0 # We want to run stats on the whole thing
       - name: Set Environment Variables (Workflow Dispatch)
         if: github.event_name == 'workflow_dispatch'
         run: |
