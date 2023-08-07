@@ -10,8 +10,8 @@ on:
       - master
   # NOTE: scheduled workflows are supported as of 2022-09-27 (example commented below)
   # https://github.com/community/community/discussions/12269#discussioncomment-3747667
-  # scheduled:
-  #   - cron: '40 10 1 * *'  # https://crontab.guru/#40_10_1_*_*
+  schedule:
+    - cron: '0 1 * * 1'  # https://crontab.guru/#0_1_*_*_1
   workflow_dispatch:
     inputs:
       BUILD_PDF:
@@ -54,6 +54,12 @@ jobs:
         with:
           # fetch entire commit history to support get_rootstock_commit
           fetch-depth: 0
+      - name: Checkout yt Repository
+        uses: actions/checkout@v3
+        with:
+          repository: yt-project/yt
+          path: yt
+          fetch-depth: 0 # We want to run stats on the whole thing
       - name: Set Environment Variables (Workflow Dispatch)
         if: github.event_name == 'workflow_dispatch'
         run: |
@@ -96,6 +102,8 @@ jobs:
       - name: Install Spellcheck
         if: env.SPELLCHECK == 'true'
         run: bash ci/install-spellcheck.sh
+      - name: Update yt stats
+        run: python scripts/generate_yt_stats.py
       - name: Build Manuscript
         run: bash build/build.sh
       - name: Upload Artifacts
