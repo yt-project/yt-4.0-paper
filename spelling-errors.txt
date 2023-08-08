@@ -10,13 +10,13 @@ Altay
 AMR
 AMReX
 AMRKDTree
-amrvac
+AMRVAC
 Aperio
 APIs
 AREPO
 Arraki
 arraylike
-ARTIO
+artio
 arwetzel
 AST
 Astro
@@ -70,9 +70,9 @@ collisional
 colocation
 colorbar
 colorbars
-Colormap
+colormap
 colormapping
-Colormaps
+colormaps
 colorspace
 comoving
 conda
@@ -113,7 +113,8 @@ dnarayanan
 dobj
 DTU
 Duplicative
-Dutta
+durations
+dutta
 easies
 elliottbiondo
 entrypoints
@@ -133,7 +134,7 @@ fisheye
 fof
 formatter
 formatters
-Frontend
+frontend
 frontends
 frontrow
 Gainesville
@@ -225,7 +226,7 @@ moab
 Mollweide
 Monaghan
 mornkr
-MPI
+mpi
 mtryan
 Munk
 munkm
@@ -250,7 +251,7 @@ OAC
 octants
 octree
 octrees
-octs
+Octs
 odowska
 olebole
 OpenMP
@@ -281,7 +282,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-Powderday
+powderday
 pre
 programmatically
 programme
@@ -298,6 +299,7 @@ RADMC
 rasterizers
 rcjackson
 README
+rebasing
 recomputation
 recursed
 reinstrumented
@@ -369,7 +371,7 @@ unsampled
 Urbana
 userbase
 Volker
-webassembly
+WebAssembly
 Wetzel
 Widgyts
 Xarthisius
