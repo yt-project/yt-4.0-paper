@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-08-07'
+date-meta: '2023-08-08'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -84,11 +84,11 @@ header-includes: |
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-08-07" />
-  <meta name="citation_publication_date" content="2023-08-07" />
-  <meta property="article:published_time" content="2023-08-07" />
-  <meta name="dc.modified" content="2023-08-07T23:04:15+00:00" />
-  <meta property="article:modified_time" content="2023-08-07T23:04:15+00:00" />
+  <meta name="dc.date" content="2023-08-08" />
+  <meta name="citation_publication_date" content="2023-08-08" />
+  <meta property="article:published_time" content="2023-08-08" />
+  <meta name="dc.modified" content="2023-08-08T10:53:00+00:00" />
+  <meta property="article:modified_time" content="2023-08-08T10:53:00+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -298,9 +298,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/e96d3eb0de404ed5b6654914b2f93c85123a9e7e/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/e96d3eb0de404ed5b6654914b2f93c85123a9e7e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/e96d3eb0de404ed5b6654914b2f93c85123a9e7e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/92c553b6badb2b77eb9e4918236e9811639b9535/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/92c553b6badb2b77eb9e4918236e9811639b9535/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/92c553b6badb2b77eb9e4918236e9811639b9535/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -323,10 +323,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/e96d3eb0de404ed5b6654914b2f93c85123a9e7e/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/92c553b6badb2b77eb9e4918236e9811639b9535/))
 was automatically generated
-from [yt-project/yt-4.0-paper@e96d3eb](https://github.com/yt-project/yt-4.0-paper/tree/e96d3eb0de404ed5b6654914b2f93c85123a9e7e)
-on August 7, 2023.
+from [yt-project/yt-4.0-paper@92c553b](https://github.com/yt-project/yt-4.0-paper/tree/92c553b6badb2b77eb9e4918236e9811639b9535)
+on August 8, 2023.
 </em></small>
 
 
@@ -4023,8 +4023,7 @@ For much of its development history, `yt` took the approach of bundling as many 
 This provided the advantage of having all work be centralized, and ensuring that each download or installation of `yt` was a fully-featured system for analyzing a large swath of data, but it brought with it the development overhead of the entire `yt` package for what in many cases were isolated pieces of functionality with separable responsibilities.
 
 As a result of the slowing in speed of development as a result of review requirements (and limited personnel to conduct those reviews), some of the analysis modules that were bundled with `yt` have been "spun out" into their own repository, `yt_astro_analysis`.
-This repository, which is developed, released and installed separately from `yt`, includes modules for cosmological observation (upon which Triden, which is discussed in @sec:trident, is based), dark matter halo finding and analysis, tools for interacting with position-position-velocity cubes, and a system for exporting from `yt` to RADMC-3D.
-**TODO: Find the correct citation for RADMC-3D.**
+This repository, which is developed, released and installed separately from `yt`, includes modules for cosmological observation (upon which Triden, which is discussed in @sec:trident, is based), dark matter halo finding and analysis, tools for interacting with position-position-velocity cubes, and a system for exporting from `yt` to RADMC-3D [@ascl:1202.015].
 
 
 ## Ecosystem of Packages

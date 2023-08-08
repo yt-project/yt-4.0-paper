@@ -822,8 +822,6 @@ content/55.scaling_parallelism.md:90:frontend
 content/55.scaling_parallelism.md:91:MJT
 content/60.analysis_modules.md:7:RADMC
 content/60.analysis_modules.md:7:Triden
-content/60.analysis_modules.md:8:RADMC
-content/60.analysis_modules.md:8:TODO
 content/65.ecosystem.md:4:APIs
 content/65.ecosystem.md:10:hydrodynamical
 content/65.ecosystem.md:11:astrophysically
