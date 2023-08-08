@@ -103,6 +103,8 @@ jobs:
         if: env.SPELLCHECK == 'true'
         run: bash ci/install-spellcheck.sh
       - name: Update yt stats
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           python scripts/generate_yt_stats.py
           gh api graphql --paginate -f query="`cat scripts/pull_request_graphql.gql`" > pull_requests.json
