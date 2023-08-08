@@ -1,0 +1,48 @@
+query ($endCursor: String) {
+  repository(name: "yt", owner: "yt-project") {
+    pullRequests(first: 100, after: $endCursor) {
+      pageInfo {
+          endCursor
+          hasNextPage
+      }
+      nodes {
+        author {
+          ... on User {
+            id
+            email
+            login
+            name
+            status {
+              id
+            }
+          }
+        }
+        closed
+        closedAt
+        createdAt
+        merged
+        mergedAt
+        mergedBy {
+          ... on User {
+            id
+            email
+            login
+            name
+          }
+        }
+        autoMergeRequest {
+          enabledBy {
+            ... on User {
+              id
+              email
+              login
+              name
+            }
+          }
+        }
+        state
+        number
+      }
+    }
+  }
+}
