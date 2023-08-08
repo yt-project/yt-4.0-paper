@@ -16,5 +16,6 @@ pr_count = df.groupby("author.login").size()
 df["author"] = df["author.name"]
 df["author"].fillna(df["author.login"])
 df["author"].fillna(df["author.id"])
+df["author"].fillna("Automated Bot")
 
 df.to_csv("content/images/pr_stats.csv", columns = ["createdAt", "closedAt", "author", "number", "duration"])

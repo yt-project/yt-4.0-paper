@@ -103,7 +103,11 @@ jobs:
         if: env.SPELLCHECK == 'true'
         run: bash ci/install-spellcheck.sh
       - name: Update yt stats
-        run: python scripts/generate_yt_stats.py
+        run: |
+          python scripts/generate_yt_stats.py
+          gh api graphql --paginate -f query="`cat scripts/pull_request_graphql.gql`" > pull_requests.json
+          jq -s '[.[].data.repository.pullRequests.nodes[]]' < pull_requests.json > pr.json
+          python scripts/generate_pr_stats.py
       - name: Build Manuscript
         run: bash build/build.sh
       - name: Upload Artifacts
