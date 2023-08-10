@@ -87,8 +87,8 @@ header-includes: |
   <meta name="dc.date" content="2023-08-10" />
   <meta name="citation_publication_date" content="2023-08-10" />
   <meta property="article:published_time" content="2023-08-10" />
-  <meta name="dc.modified" content="2023-08-10T19:07:22+00:00" />
-  <meta property="article:modified_time" content="2023-08-10T19:07:22+00:00" />
+  <meta name="dc.modified" content="2023-08-10T20:04:37+00:00" />
+  <meta property="article:modified_time" content="2023-08-10T20:04:37+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -298,9 +298,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/7dc428c268696263c7546d70297871b558d646ec/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/7dc428c268696263c7546d70297871b558d646ec/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/7dc428c268696263c7546d70297871b558d646ec/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/e3600daa6ecbd3394f52f219d619d2f4f5e80834/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/e3600daa6ecbd3394f52f219d619d2f4f5e80834/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/e3600daa6ecbd3394f52f219d619d2f4f5e80834/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -323,9 +323,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/7dc428c268696263c7546d70297871b558d646ec/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/e3600daa6ecbd3394f52f219d619d2f4f5e80834/))
 was automatically generated
-from [yt-project/yt-4.0-paper@7dc428c](https://github.com/yt-project/yt-4.0-paper/tree/7dc428c268696263c7546d70297871b558d646ec)
+from [yt-project/yt-4.0-paper@e3600da](https://github.com/yt-project/yt-4.0-paper/tree/e3600daa6ecbd3394f52f219d619d2f4f5e80834)
 on August 10, 2023.
 </em></small>
 
@@ -1243,12 +1243,8 @@ Recent practice, however, is more inclined toward commit "squashing," where mult
 One result of this is in figures such as the top row of Figure @fig:commit-graph, some contributors appear to have made a smaller quantity of contributions than an informed observer would recognize.
 Specifically, this applies to Clément Robert, who has contributed a considerable amount of change to the code base but has done so in a way that does not maximize the "statistics" presented below.
 This particular bias, toward contributions measured in count, is one that affects other members of the community as well, especially those whose participation is through community engagement, documentation, tutorials, and mentoring, rather than through direct modifications of the code base.
-
 To mitigate this shortcoming, we present the number of pull requests merged into the code base, as a function of time, as well as the time between their creation and their merge, in the lower row of Figure @fig:figure-commit-graph.
 This demonstrates that in many cases, the number of discrete contributions to the codebase varies greatly depending on the developer, and we believe gives a more informed perception of the activity in the code base.
-The longest time between opening a pull request and merging it was nearly four years; this was the addition of the `cf_radial` frontend, which occurred in fits and starts over a very long period of time.
-The next longest pull request durations are for splitting the code used for bitmap indexing (see @sec:point_indexing) and a per-field configuration system.
-This includes only those pull requests that occurred on GitHub.
 
 <div id="figure-commit-graph"></div>
 
@@ -1259,6 +1255,22 @@ Commits and pull requests to the source code as a function of time.
 <script>
 vegaEmbed('#figure-commit-graph', "images/yt_repo.vl");
 </script>
+
+In Figure @fig:pr-closing-time we have plotted distribution of pull requests based on the time between their creation and their merge.
+The longest time between opening a pull request and merging it was nearly four years; this was the addition of the `cf_radial` frontend, which occurred in fits and starts over a very long period of time.
+The next longest pull request durations are for splitting the code used for bitmap indexing (see @sec:point_indexing) and a per-field configuration system.
+This includes only those pull requests that occurred on GitHub.
+
+<div id="figure-pr-closing-time"></div>
+
+![
+The distribution of pull requests as a function of how long it took to close them.
+](images/blank.svg){#fig:pr-closing-time width="1px"}
+
+<script>
+vegaEmbed('#figure-pr-closing-time', "images/pr_stats.vl");
+</script>
+
 
 ### Unit Testing {#sec:unit_testing}
 

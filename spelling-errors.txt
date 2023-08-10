@@ -13,7 +13,7 @@ AMRKDTree
 amrvac
 Aperio
 APIs
-Arepo
+AREPO
 Arraki
 arraylike
 ARTIO
@@ -37,9 +37,9 @@ binarily
 Biondo
 Birla
 Bitbucket
-bitwise
+Bitwise
 bookkeepping
-Bool
+bool
 Borro
 BoxLib
 Britton
@@ -74,7 +74,7 @@ colormap
 colormapping
 colormaps
 colorspace
-comoving
+Comoving
 conda
 connectedness
 coord
@@ -86,7 +86,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-cython
+Cython
 dask
 d’Astrophysique
 dataframe
@@ -134,7 +134,7 @@ fisheye
 fof
 formatter
 formatters
-frontend
+Frontend
 frontends
 frontrow
 Gainesville
@@ -156,7 +156,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-Hexahedral
+hexahedral
 HippoDraw
 histogramming
 Hix
@@ -246,12 +246,12 @@ NMSU
 nosetests
 NSSC
 NumFOCUS
-NumPy
+numpy
 OAC
 octants
 octree
-octrees
-Octs
+Octrees
+octs
 odowska
 olebole
 OpenMP
@@ -275,7 +275,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-Pixelizers
+pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -291,7 +291,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyxsim
+pyXSIM
 qobilidop
 quadtree
 radiative
@@ -304,7 +304,7 @@ recomputation
 recursed
 reinstrumented
 renderer
-resampling
+Resampling
 responsivity
 RGBA
 Ritali
@@ -347,7 +347,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-sympy
+SymPy
 sympy’s
 sytlistic
 TBD
@@ -385,7 +385,7 @@ yipihey
 yournamehere
 YTArray
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj
@@ -394,7 +394,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-zingale
+Zingale
 zorder
 Zuckerberg
 ZuHone
