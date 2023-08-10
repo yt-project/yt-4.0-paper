@@ -4,7 +4,7 @@ ahf
 AIP
 Aitoff
 Alamos
-Alankar
+alankar
 Alpes
 Altay
 AMR
@@ -13,10 +13,10 @@ AMRKDTree
 amrvac
 Aperio
 APIs
-arepo
+Arepo
 Arraki
 arraylike
-artio
+ARTIO
 arwetzel
 AST
 Astro
@@ -74,7 +74,7 @@ colormap
 colormapping
 colormaps
 colorspace
-Comoving
+comoving
 conda
 connectedness
 coord
@@ -86,7 +86,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-Cython
+cython
 dask
 d’Astrophysique
 dataframe
@@ -114,7 +114,7 @@ dobj
 DTU
 Duplicative
 durations
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
@@ -135,7 +135,7 @@ fof
 formatter
 formatters
 frontend
-Frontends
+frontends
 frontrow
 Gainesville
 galtay
@@ -156,7 +156,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-hexahedral
+Hexahedral
 HippoDraw
 histogramming
 Hix
@@ -246,12 +246,12 @@ NMSU
 nosetests
 NSSC
 NumFOCUS
-numpy
+NumPy
 OAC
 octants
 octree
-Octrees
-octs
+octrees
+Octs
 odowska
 olebole
 OpenMP
@@ -282,7 +282,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-powderday
+Powderday
 pre
 programmatically
 programme
@@ -291,7 +291,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyXSIM
+pyxsim
 qobilidop
 quadtree
 radiative
@@ -304,7 +304,7 @@ recomputation
 recursed
 reinstrumented
 renderer
-Resampling
+resampling
 responsivity
 RGBA
 Ritali
@@ -330,7 +330,7 @@ situ
 Skillman
 SLAC
 soton
-sph
+SPH
 Springel
 STFC
 Stockinger
@@ -371,7 +371,7 @@ unsampled
 Urbana
 userbase
 Volker
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Xarthisius
@@ -385,7 +385,7 @@ yipihey
 yournamehere
 YTArray
 ytdata
-YTEP
+ytep
 YTEPs
 ytini
 YTQuadTreeProj
@@ -394,7 +394,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-Zingale
+zingale
 zorder
 Zuckerberg
 ZuHone
