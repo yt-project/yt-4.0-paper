@@ -4,7 +4,7 @@ ahf
 AIP
 Aitoff
 Alamos
-Alankar
+alankar
 Alpes
 Altay
 AMR
@@ -37,9 +37,9 @@ binarily
 Biondo
 Birla
 Bitbucket
-bitwise
+Bitwise
 bookkeepping
-Bool
+bool
 Borro
 BoxLib
 Britton
@@ -51,11 +51,11 @@ bwoshea
 Cadair
 Cadiou
 Cartopy
-CGS
+cgs
 Champaign
 changeset
 changesets
-CHOLLA
+cholla
 chombo
 chrishavlin
 chummels
@@ -74,7 +74,7 @@ colormap
 colormapping
 Colormaps
 colorspace
-Comoving
+comoving
 conda
 connectedness
 coord
@@ -94,7 +94,7 @@ datapoint
 dataset
 datasetfrom
 dataset’s
-Datasets
+datasets
 datasetwere
 datatypes
 decomp
@@ -114,7 +114,7 @@ dobj
 DTU
 Duplicative
 durations
-dutta
+Dutta
 easies
 elliottbiondo
 entrypoints
@@ -226,7 +226,7 @@ moab
 Mollweide
 Monaghan
 mornkr
-MPI
+mpi
 mtryan
 Munk
 munkm
@@ -275,7 +275,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-Pixelizers
+pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -330,7 +330,7 @@ situ
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger
@@ -371,7 +371,7 @@ unsampled
 Urbana
 userbase
 Volker
-webassembly
+WebAssembly
 Wetzel
 Widgyts
 Xarthisius
@@ -385,7 +385,7 @@ yipihey
 yournamehere
 YTArray
 ytdata
-YTEP
+ytep
 YTEPs
 ytini
 YTQuadTreeProj

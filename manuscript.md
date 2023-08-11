@@ -87,8 +87,8 @@ header-includes: |
   <meta name="dc.date" content="2023-08-11" />
   <meta name="citation_publication_date" content="2023-08-11" />
   <meta property="article:published_time" content="2023-08-11" />
-  <meta name="dc.modified" content="2023-08-11T09:39:10+00:00" />
-  <meta property="article:modified_time" content="2023-08-11T09:39:10+00:00" />
+  <meta name="dc.modified" content="2023-08-11T10:09:03+00:00" />
+  <meta property="article:modified_time" content="2023-08-11T10:09:03+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -298,9 +298,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/c1a99f15e46ef0307c7e4596b4446fb48ecd5dc1/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/c1a99f15e46ef0307c7e4596b4446fb48ecd5dc1/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/c1a99f15e46ef0307c7e4596b4446fb48ecd5dc1/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/554114725ff615de380fbeb11684e2949e1c79c7/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/554114725ff615de380fbeb11684e2949e1c79c7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/554114725ff615de380fbeb11684e2949e1c79c7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -323,9 +323,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/c1a99f15e46ef0307c7e4596b4446fb48ecd5dc1/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/554114725ff615de380fbeb11684e2949e1c79c7/))
 was automatically generated
-from [yt-project/yt-4.0-paper@c1a99f1](https://github.com/yt-project/yt-4.0-paper/tree/c1a99f15e46ef0307c7e4596b4446fb48ecd5dc1)
+from [yt-project/yt-4.0-paper@5541147](https://github.com/yt-project/yt-4.0-paper/tree/554114725ff615de380fbeb11684e2949e1c79c7)
 on August 11, 2023.
 </em></small>
 
@@ -1268,7 +1268,7 @@ The distribution of pull requests as a function of how long it took to close the
 ](images/blank.svg){#fig:pr-closing-time width="1px"}
 
 <script>
-vegaEmbed('#figure-pr-closing-time', "images/pr_times.vl');
+vegaEmbed('#figure-pr-closing-time', "images/pr_times.vl");
 </script>
 
 
