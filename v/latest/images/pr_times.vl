@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "./yt_repo.csv"
+    "url": "images/yt_repo.csv"
   },
   "transform": [
     {"filter": {"field": "type", "equal": "pull-request"}},
