@@ -177,8 +177,8 @@
   <meta name="dc.date" content="2023-08-11" />
   <meta name="citation_publication_date" content="2023-08-11" />
   <meta property="article:published_time" content="2023-08-11" />
-  <meta name="dc.modified" content="2023-08-11T00:06:17+00:00" />
-  <meta property="article:modified_time" content="2023-08-11T00:06:17+00:00" />
+  <meta name="dc.modified" content="2023-08-11T09:39:10+00:00" />
+  <meta property="article:modified_time" content="2023-08-11T09:39:10+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -388,9 +388,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/4643cc98eec97781251d222b087a847d3825fb6c/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/4643cc98eec97781251d222b087a847d3825fb6c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/4643cc98eec97781251d222b087a847d3825fb6c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/c1a99f15e46ef0307c7e4596b4446fb48ecd5dc1/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/c1a99f15e46ef0307c7e4596b4446fb48ecd5dc1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/c1a99f15e46ef0307c7e4596b4446fb48ecd5dc1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -508,9 +508,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-4.0-paper/v/4643cc98eec97781251d222b087a847d3825fb6c/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-4.0-paper/v/c1a99f15e46ef0307c7e4596b4446fb48ecd5dc1/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-4.0-paper/tree/4643cc98eec97781251d222b087a847d3825fb6c">yt-project/yt-4.0-paper@4643cc9</a>
+from <a href="https://github.com/yt-project/yt-4.0-paper/tree/c1a99f15e46ef0307c7e4596b4446fb48ecd5dc1">yt-project/yt-4.0-paper@c1a99f1</a>
 on August 11, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -1306,7 +1306,7 @@ Recent practice, however, is more inclined toward commit “squashing,” where 
 One result of this is in figures such as the top row of Figure <a href="#fig:commit-graph">1</a>, some contributors appear to have made a smaller quantity of contributions than an informed observer would recognize.
 Specifically, this applies to Clément Robert, who has contributed a considerable amount of change to the code base but has done so in a way that does not maximize the “statistics” presented below.
 This particular bias, toward contributions measured in count, is one that affects other members of the community as well, especially those whose participation is through community engagement, documentation, tutorials, and mentoring, rather than through direct modifications of the code base.
-To mitigate this shortcoming, we present the number of pull requests merged into the code base, as a function of time, as well as the time between their creation and their merge, in the lower row of Figure ??.
+To mitigate this shortcoming, we present the number of pull requests merged into the code base, as a function of time, as well as the time between their creation and their merge, in the lower row of Figure <a href="#fig:commit-graph">1</a>.
 This demonstrates that in many cases, the number of discrete contributions to the codebase varies greatly depending on the developer, and we believe gives a more informed perception of the activity in the code base.</p>
 <div id="figure-commit-graph">
 
@@ -1334,7 +1334,7 @@ This includes only those pull requests that occurred on GitHub.</p>
 </figure>
 </div>
 <script>
-vegaEmbed('#figure-pr-closing-time', "images/pr_stats.vl");
+vegaEmbed('#figure-pr-closing-time', "images/pr_times.vl');
 </script>
 <h3 id="sec:unit_testing">Unit Testing</h3>
 <p>The <code>yt</code> codebase includes a number of unit tests; although extensive, their existence post-dates the initial development of the code, and they largely work around the extant APIs at the time of their creation.
