@@ -60,10 +60,10 @@ df_pr[["createdAt", "closedAt"]] = df_pr[["createdAt", "closedAt"]].apply(pd.to_
 df_pr["duration"] = (df_pr["closedAt"] - df_pr["createdAt"]).dt.total_seconds()
 
 df_pr["author"] = df_pr["author.name"]
-df_pr["author"].fillna(df_pr["author.login"])
-df_pr["author"].fillna(df_pr["author.id"])
-df_pr["author"].fillna("Automated Bot")
-df_pr["author"][df_pr["author"] == ""] = "Automated Bot"
+df_pr["author"].fillna(df_pr["author.login"], inplace=True)
+df_pr["author"].fillna(df_pr["author.id"], inplace=True)
+df_pr["author"].fillna("Automated Bot", inplace=True)
+df_pr[df_pr["author"] == ""]["author"] = "Automated Bot"
 df_pr["type"] = "pull-request"
 df_pr.rename(columns = {'closedAt': 'datetime'}, inplace=True)
 
