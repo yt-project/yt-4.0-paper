@@ -7,7 +7,7 @@
     {"timeUnit": "yearquarter", "field": "datetime", "as": "quarter"},
     {
       "aggregate": [{"op": "count", "as": "count"}],
-      "groupby": ["quarter", "author", "type"]
+      "groupby": ["type", "quarter", "author"]
     }
   ],
   "hconcat": [
@@ -18,23 +18,44 @@
           "select": {"type": "interval", "encodings": ["x"]}
         }
       ],
-      "mark": {"type":"bar","binSpacing": 0},
+      "mark": {"type": "bar", "binSpacing": 0},
       "height": 200,
       "width": 200,
-      "resolve": {"scale": {"y": "independent"}},
+      "resolve": {"scale": {"y": "independent"}, "axis": {"x": "independent"}},
       "encoding": {
-        "row": {"field": "type"},
-        "y": {"aggregate": "sum", "field": "count", "title": "number"},
+        "row": {
+          "field": "type",
+          "title": null,
+          "header": {
+            "labelExpr": "datum.value == 'pull-request' ? 'Pull Requests' : 'Commits'",
+            "labelFontWeight": "bold",
+            "labelFontSize": 14
+          }
+        },
+        "y": {"aggregate": "sum", "field": "count", "title": null},
         "x": {
           "bin": true,
           "field": "quarter",
           "timeUnit": "yearquarter",
-          "type": "temporal"
+          "type": "temporal",
+          "axis": {
+            "tickCount": {"interval": "year", "step": 1},
+            "labelExpr": "timeFormat(datum.value, '%Y')",
+            "title": "Date"
+          }
         },
-        "color": {"field": "type"},
+        "color": {
+          "value": "gray",
+          "condition": {"param": "commit_range", "field": "type"}
+        },
         "tooltip": [
-          {"field": "quarter", "timeUnit": "yearquarter", "type": "temporal"},
-          {"field": "sum_count", "type": "quantitative"}
+          {
+            "field": "quarter",
+            "timeUnit": "yearquarter",
+            "type": "temporal",
+            "title": "Quarter"
+          },
+          {"field": "sum_count", "type": "quantitative", "title": "Count"}
         ]
       }
     },
@@ -60,22 +81,27 @@
       "width": 200,
       "resolve": {"scale": {"x": "independent", "y": "independent"}},
       "encoding": {
-        "row": {"field": "type", "header": {}},
+        "row": {"field": "type", "title": null, "header": {"labelExpr": "''"}},
         "y": {
           "field": "author",
           "type": "nominal",
-          "axis": {"title": "top 10 authors"},
+          "axis": {
+            "title": "Top 10 authors",
+            "orient": "right",
+            "maxExtent": 110,
+            "minExtent": 110
+          },
           "sort": {"order": "ascending", "field": "rank"}
         },
         "x": {
           "type": "quantitative",
           "field": "author_count",
-          "axis": {"title": null}
+          "axis": {"title": "Count"}
         },
-        "color": {"field": "type"},
+        "color": {"field": "type", "legend": null},
         "tooltip": [
-          {"field": "author"},
-          {"field": "author_count", "type": "quantitative"}
+          {"field": "author", "title": "Name"},
+          {"field": "author_count", "type": "quantitative", "title": "Count"}
         ]
       }
     }
@@ -84,7 +110,6 @@
     "concat": {"spacing": 30},
     "facet": {"spacing": 20},
     "countTitle": "Count",
-    "axisX": {"titleLimit": 150},
-    "axisY": {"minExtent": 100, "maxExtent": 100}
+    "axisX": {"titleLimit": 100}
   }
 }
