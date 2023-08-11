@@ -87,8 +87,8 @@ header-includes: |
   <meta name="dc.date" content="2023-08-11" />
   <meta name="citation_publication_date" content="2023-08-11" />
   <meta property="article:published_time" content="2023-08-11" />
-  <meta name="dc.modified" content="2023-08-11T10:09:03+00:00" />
-  <meta property="article:modified_time" content="2023-08-11T10:09:03+00:00" />
+  <meta name="dc.modified" content="2023-08-11T14:45:39+00:00" />
+  <meta property="article:modified_time" content="2023-08-11T14:45:39+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -298,9 +298,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/554114725ff615de380fbeb11684e2949e1c79c7/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/554114725ff615de380fbeb11684e2949e1c79c7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/554114725ff615de380fbeb11684e2949e1c79c7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/43c6762bdf877a759c7f73e9b993e4684ce563c9/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/43c6762bdf877a759c7f73e9b993e4684ce563c9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/43c6762bdf877a759c7f73e9b993e4684ce563c9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -323,9 +323,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/554114725ff615de380fbeb11684e2949e1c79c7/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/43c6762bdf877a759c7f73e9b993e4684ce563c9/))
 was automatically generated
-from [yt-project/yt-4.0-paper@5541147](https://github.com/yt-project/yt-4.0-paper/tree/554114725ff615de380fbeb11684e2949e1c79c7)
+from [yt-project/yt-4.0-paper@43c6762](https://github.com/yt-project/yt-4.0-paper/tree/43c6762bdf877a759c7f73e9b993e4684ce563c9)
 on August 11, 2023.
 </em></small>
 
@@ -1246,14 +1246,14 @@ This particular bias, toward contributions measured in count, is one that affect
 To mitigate this shortcoming, we present the number of pull requests merged into the code base, as a function of time, as well as the time between their creation and their merge, in the lower row of Figure @fig:commit-graph.
 This demonstrates that in many cases, the number of discrete contributions to the codebase varies greatly depending on the developer, and we believe gives a more informed perception of the activity in the code base.
 
-<div id="figure-commit-graph"></div>
+<div id="figure-commit-graph" class="center"></div>
 
 ![
 Commits and pull requests to the source code as a function of time.
 ](images/blank.svg){#fig:commit-graph width="1px"}
 
 <script>
-vegaEmbed('#figure-commit-graph', "images/yt_repo.vl");
+vegaEmbed('#figure-commit-graph', "images/yt_repo.vl", {"actions": false});
 </script>
 
 In Figure @fig:pr-closing-time we have plotted distribution of pull requests based on the time between their creation and their merge.
@@ -1261,14 +1261,14 @@ The longest time between opening a pull request and merging it was nearly four y
 The next longest pull request durations are for splitting the code used for bitmap indexing (see @sec:point_indexing) and a per-field configuration system.
 This includes only those pull requests that occurred on GitHub.
 
-<div id="figure-pr-closing-time"></div>
+<div id="figure-pr-closing-time" class="center"></div>
 
 ![
 The distribution of pull requests as a function of how long it took to close them.
 ](images/blank.svg){#fig:pr-closing-time width="1px"}
 
 <script>
-vegaEmbed('#figure-pr-closing-time', "images/pr_times.vl");
+vegaEmbed('#figure-pr-closing-time', "images/pr_times.vl", {"actions": false});
 </script>
 
 
