@@ -13,13 +13,13 @@ AMRKDTree
 amrvac
 Aperio
 APIs
-AREPO
+Arepo
 Arraki
 arraylike
-ARTIO
+artio
 arwetzel
 AST
-Astro
+astro
 astrojaz
 astrophysically
 astropy
@@ -41,7 +41,7 @@ Bitwise
 bookkeepping
 bool
 Borro
-BoxLib
+boxlib
 Britton
 brittonsmith
 Bugfix
@@ -74,7 +74,7 @@ colormap
 colormapping
 colormaps
 colorspace
-Comoving
+comoving
 conda
 connectedness
 coord
@@ -94,7 +94,7 @@ datapoint
 dataset
 datasetfrom
 dataset’s
-datasets
+Datasets
 datasetwere
 datatypes
 decomp
@@ -118,7 +118,7 @@ dutta
 easies
 elliottbiondo
 entrypoints
-Enzo
+enzo
 Enzo’s
 ethlau
 EWAH
@@ -134,7 +134,7 @@ fisheye
 fof
 formatter
 formatters
-Frontend
+frontend
 frontends
 frontrow
 Gainesville
@@ -211,7 +211,7 @@ LLC
 logarithmically
 LSST
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -246,7 +246,7 @@ NMSU
 nosetests
 NSSC
 NumFOCUS
-numpy
+NumPy
 OAC
 octants
 octree
@@ -282,7 +282,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-Powderday
+powderday
 pre
 programmatically
 programme
@@ -304,7 +304,7 @@ recomputation
 recursed
 reinstrumented
 renderer
-Resampling
+resampling
 responsivity
 RGBA
 Ritali
@@ -347,7 +347,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-SymPy
+sympy
 sympy’s
 sytlistic
 TBD
