@@ -4,7 +4,7 @@ ahf
 AIP
 Aitoff
 Alamos
-alankar
+Alankar
 Alpes
 Altay
 AMR
@@ -19,7 +19,7 @@ arraylike
 artio
 arwetzel
 AST
-astro
+Astro
 astrojaz
 astrophysically
 AstroPy
@@ -41,7 +41,7 @@ Bitwise
 bookkeepping
 Bool
 Borro
-BoxLib
+boxlib
 Britton
 brittonsmith
 Bugfix
@@ -72,9 +72,9 @@ colorbar
 colorbars
 colormap
 colormapping
-colormaps
+Colormaps
 colorspace
-Comoving
+comoving
 conda
 connectedness
 Coord
@@ -114,11 +114,11 @@ dobj
 DTU
 Duplicative
 durations
-dutta
+Dutta
 easies
 elliottbiondo
 entrypoints
-Enzo
+enzo
 Enzo’s
 ethlau
 EWAH
@@ -134,7 +134,7 @@ fisheye
 fof
 formatter
 formatters
-Frontend
+frontend
 frontends
 frontrow
 Gainesville
@@ -211,7 +211,7 @@ LLC
 logarithmically
 LSST
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -246,12 +246,12 @@ NMSU
 nosetests
 NSSC
 NumFOCUS
-NumPy
+numpy
 OAC
 octants
 octree
-octrees
-Octs
+Octrees
+octs
 odowska
 olebole
 OpenMP
@@ -275,7 +275,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -291,7 +291,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyxsim
+pyXSIM
 qobilidop
 quadtree
 radiative
@@ -371,7 +371,7 @@ unsampled
 Urbana
 userbase
 Volker
-webassembly
+WebAssembly
 Wetzel
 Widgyts
 Xarthisius
