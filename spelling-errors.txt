@@ -4,7 +4,7 @@ ahf
 AIP
 Aitoff
 Alamos
-Alankar
+alankar
 Alpes
 Altay
 AMR
@@ -19,7 +19,7 @@ arraylike
 artio
 arwetzel
 AST
-Astro
+astro
 astrojaz
 astrophysically
 AstroPy
@@ -37,11 +37,11 @@ binarily
 Biondo
 Birla
 Bitbucket
-Bitwise
+bitwise
 bookkeepping
 Bool
 Borro
-boxlib
+BoxLib
 Britton
 brittonsmith
 Bugfix
@@ -55,7 +55,7 @@ CGS
 Champaign
 changeset
 changesets
-cholla
+CHOLLA
 chombo
 chrishavlin
 chummels
@@ -72,9 +72,9 @@ colorbar
 colorbars
 colormap
 colormapping
-Colormaps
+colormaps
 colorspace
-comoving
+Comoving
 conda
 connectedness
 Coord
@@ -114,11 +114,11 @@ dobj
 DTU
 Duplicative
 durations
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
-enzo
+Enzo
 Enzo’s
 ethlau
 EWAH
@@ -134,8 +134,8 @@ fisheye
 fof
 formatter
 formatters
-frontend
-frontends
+Frontend
+Frontends
 frontrow
 Gainesville
 galtay
@@ -156,7 +156,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-hexahedral
+Hexahedral
 HippoDraw
 histogramming
 Hix
@@ -211,7 +211,7 @@ LLC
 logarithmically
 LSST
 Madicken
-Matplotlib
+matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -250,7 +250,7 @@ numpy
 OAC
 octants
 octree
-Octrees
+octrees
 octs
 odowska
 olebole
@@ -282,7 +282,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-Powderday
+powderday
 pre
 programmatically
 programme
@@ -291,7 +291,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyXSIM
+pyxsim
 qobilidop
 quadtree
 radiative
@@ -304,7 +304,7 @@ recomputation
 recursed
 reinstrumented
 renderer
-Resampling
+resampling
 responsivity
 RGBA
 Ritali
@@ -330,7 +330,7 @@ situ
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger
@@ -347,7 +347,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-sympy
+SymPy
 sympy’s
 sytlistic
 TBD
@@ -371,7 +371,7 @@ unsampled
 Urbana
 userbase
 Volker
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Xarthisius
@@ -385,7 +385,7 @@ yipihey
 yournamehere
 YTArray
 ytdata
-YTEP
+ytep
 YTEPs
 ytini
 YTQuadTreeProj
