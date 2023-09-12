@@ -16,13 +16,13 @@ APIs
 AREPO
 Arraki
 arraylike
-ARTIO
+artio
 arwetzel
 AST
 Astro
 astrojaz
 astrophysically
-AstroPy
+astropy
 astrosmith
 AthenaPK
 atmyers
@@ -37,11 +37,11 @@ binarily
 Biondo
 Birla
 Bitbucket
-bitwise
+Bitwise
 bookkeepping
 Bool
 Borro
-boxlib
+BoxLib
 Britton
 brittonsmith
 Bugfix
@@ -75,7 +75,7 @@ colormap
 colormapping
 colormaps
 colorspace
-Comoving
+comoving
 conda
 connectedness
 coord
@@ -115,11 +115,11 @@ dobj
 DTU
 Duplicative
 durations
-dutta
+Dutta
 easies
 elliottbiondo
 entrypoints
-Enzo
+enzo
 Enzo’s
 ethlau
 EWAH
@@ -137,7 +137,7 @@ fof
 formatter
 formatters
 frontend
-Frontends
+frontends
 frontrow
 Gainesville
 galtay
@@ -281,7 +281,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-Pixelizers
+pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -338,7 +338,7 @@ situ
 Skillman
 SLAC
 soton
-sph
+SPH
 Springel
 STFC
 Stockinger
@@ -379,7 +379,7 @@ unyt
 Urbana
 userbase
 Volker
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Xarthisius
@@ -400,7 +400,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-zingale
+Zingale
 zorder
 Zuckerberg
 ZuHone

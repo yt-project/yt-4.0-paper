@@ -87,8 +87,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-12" />
   <meta name="citation_publication_date" content="2023-09-12" />
   <meta property="article:published_time" content="2023-09-12" />
-  <meta name="dc.modified" content="2023-09-12T15:30:05+00:00" />
-  <meta property="article:modified_time" content="2023-09-12T15:30:05+00:00" />
+  <meta name="dc.modified" content="2023-09-12T23:52:21+00:00" />
+  <meta property="article:modified_time" content="2023-09-12T23:52:21+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -298,9 +298,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/6a4368fb4fb9dc7232cceac20c12ff0021afd4d5/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/6a4368fb4fb9dc7232cceac20c12ff0021afd4d5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/6a4368fb4fb9dc7232cceac20c12ff0021afd4d5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/7b9c6d2f6a3edb8be27ea3e1622ad1664b5938ee/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/7b9c6d2f6a3edb8be27ea3e1622ad1664b5938ee/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/7b9c6d2f6a3edb8be27ea3e1622ad1664b5938ee/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -323,9 +323,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/6a4368fb4fb9dc7232cceac20c12ff0021afd4d5/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/7b9c6d2f6a3edb8be27ea3e1622ad1664b5938ee/))
 was automatically generated
-from [yt-project/yt-4.0-paper@6a4368f](https://github.com/yt-project/yt-4.0-paper/tree/6a4368fb4fb9dc7232cceac20c12ff0021afd4d5)
+from [yt-project/yt-4.0-paper@7b9c6d2](https://github.com/yt-project/yt-4.0-paper/tree/7b9c6d2f6a3edb8be27ea3e1622ad1664b5938ee)
 on September 12, 2023.
 </em></small>
 
@@ -3488,28 +3488,20 @@ This particular set of transfer functions, with what amounts to multi-channel, m
 
 ## Unitful Arrays and Quantities {#sec:units}
 
-At a basic level, `yt` is an engine for converting data created by a simulation code into a
-physically meaningful result. Attaching physical units to simulation data makes it possible to
-perform dimensional analysis on the simulation data, adding new opportunities for catching
-errors in a data processing pipeline. In addition, it becomes straightforward to convert data from
-one unit system to another.
+At a basic level, `yt` is an engine for converting data created by a simulation code into a physically meaningful result.
+Attaching physical units to simulation data makes it possible to perform dimensional analysis on the simulation data, adding new opportunities for catching errors in a data processing pipeline.
+In addition, it becomes straightforward to convert data from one unit system to another.
 
-In `yt` 4.0 we handle units in an automatic fashion, with a symbolic units system. Originally part
-of `yt` itself since version 3.0, the unit system has now been split off into a standalone package,
-`unyt` [@doi:10.21105/joss.00809]. `unyt` leverages the symbolic math library `sympy` in combination with NumPy. In what
-follows, we will refer to `unyt` when describing the unit implementation, unless we are describing a
-`yt`-specific extension.
+In `yt` 4.0 we handle units in an automatic fashion, with a symbolic units system.
+Originally part of `yt` itself since version 3.0, the unit system has now been split off into a standalone package, `unyt` [@doi:10.21105/joss.00809].
+`unyt` leverages the symbolic math library `sympy` in combination with NumPy.
+In what follows, we will refer to `unyt` when describing the unit implementation, unless we are describing a `yt`-specific extension.
 
-Instead of returning a NumPy `ndarray` when users query `yt` data objects for fields, we return a
-`unyt_array`, a subclass of `ndarray`. `unyt_array` preserves `ndarray`'s array interface,
-including deep and shallow copies, broadcasting, views, and mathematical operations. Augmenting
-`ndarray`, `unyt_array` attaches unit metadata to the array data, enabling runtime checking of unit
-consistency in arithmetic operations between `unyt_array` instances, and making it trivial to
-compose new units using algebraic operations.
+Instead of returning a NumPy `ndarray` when users query `yt` data objects for fields, we return a `unyt_array`, a subclass of `ndarray`.
+`unyt_array` preserves `ndarray`'s array interface, including deep and shallow copies, broadcasting, views, and mathematical operations.
+Augmenting `ndarray`, `unyt_array` attaches unit metadata to the array data, enabling runtime checking of unit consistency in arithmetic operations between `unyt_array` instances, and making it trivial to compose new units using algebraic operations.
 
-As a trivial example, when one queries a data object (here given the generic name `dd`) for the
-density field, we get back a `unyt_array`, including both the simulation data for the density field,
-and the units of the density field, in this case $\rm{g}/\rm{cm}^3$:
+As a trivial example, when one queries a data object (here given the generic name `dd`) for the density field, we get back a `unyt_array`, including both the simulation data for the density field, and the units of the density field, in this case $\rm{g}/\rm{cm}^3$:
 
 ```python
 >>> dd['density'] 
@@ -3525,11 +3517,10 @@ One of the nicest aspects of the unit system is that the symbolic algebra for un
    1.12e-25 1.59e-25 1.09e-24] g/cm**3
 ```
 
-`unyt_array` is primarily useful for attaching units to NumPy `ndarray` instances. For scalar data,
-we have created the `unyt_quantity` class. `unyt_quantity` is a subclass of `unyt_array` with the
-requirement that the "array data" associated with the instance is a single scalar value. 
-`unyt_quantity` is primarily useful for physical constants and ensures that the units are propagated
-correctly when composing quantities from arrays, physical constants, and unitless scalars:
+`unyt_array` is primarily useful for attaching units to NumPy `ndarray` instances.
+For scalar data, we have created the `unyt_quantity` class.
+`unyt_quantity` is a subclass of `unyt_array` with the requirement that the "array data" associated with the instance is a single scalar value.
+`unyt_quantity` is primarily useful for physical constants and ensures that the units are propagated correctly when composing quantities from arrays, physical constants, and unitless scalars:
 
 ```python
 >>> from unyt import boltzmann_constant
@@ -3538,54 +3529,40 @@ correctly when composing quantities from arrays, physical constants, and unitles
  1.63e-12 1.59e-12 1.40e-12] erg
 ```
 
-In what follows, we will refer to both array and scalar quantities as arrays generically for the
-purpose of brevity.
+In what follows, we will refer to both array and scalar quantities as arrays generically for the purpose of brevity.
 
 ### Basic implementation {#sec:units-implementation}
 
-The unit implementation in `unyt` is based upon the notion of dimensionality. `unyt` has 8 base
-dimensions: `mass`, `length`, `time`, `temperature`, `current_mks`, `luminous_intensity`, `angle`,
-and `logarithmic`. The unitless `dimensionless` dimension is also technically a base dimension,
-although a trivial one. This facilitates the creation of dimensionless unit symbols to represent
-quantities like metallicity that are formally dimensionless, but convenient to represent in a unit
-system. We provide sympy `Symbol` objects for the base dimensions. The dimensionality of all other
-units are `sympy` `Expr` objects made up of the base dimension objects and the `sympy` operation
-objects `Mul` and `Pow`.
+The unit implementation in `unyt` is based upon the notion of dimensionality.
+`unyt` has 8 base dimensions: `mass`, `length`, `time`, `temperature`, `current_mks`, `luminous_intensity`, `angle`, and `logarithmic`.
+The unitless `dimensionless` dimension is also technically a base dimension, although a trivial one.
+This facilitates the creation of dimensionless unit symbols to represent quantities like metallicity that are formally dimensionless, but convenient to represent in a unit system.
+We provide sympy `Symbol` objects for the base dimensions.
+The dimensionality of all other units are `sympy` `Expr` objects made up of the base dimension objects and the `sympy` operation objects `Mul` and `Pow`.
 
-This collection of dimensions is admittedly somewhat idiosyncratic. In the SI system of units, there
-is no base dimension of angle (the radian is dimensionless formally defined as meter/meter), and
-there is a dimension of "amount of substance", for which the base unit is mole, but in `yt` the
-`mol` unit is treated as dimensionless. The `logarithmic` dimension is a special case which will be
-described in more detail below. 
+This collection of dimensions is admittedly somewhat idiosyncratic.
+In the SI system of units, there is no base dimension of angle (the radian is dimensionless formally defined as meter/meter), and there is a dimension of "amount of substance", for which the base unit is mole, but in `yt` the `mol` unit is treated as dimensionless.
+The `logarithmic` dimension is a special case which will be described in more detail below. 
 
-For each dimension, we choose a base unit. The default base units for the first six dimensions
-mentioned above in `unyt` are from the SI system: kilograms, meters, seconds, kelvin, ampere, and
-candela. The default base unit for the `angle` dimension is radian, and the default base unit for
-the `logarithmic` dimension is the "neper", which is a logarithmic unit for ratios of quantities
-such as field strenth or power. All other units can be described as combinations of these base units
-along with a conversion factor to equivalent base units.
+For each dimension, we choose a base unit.
+The default base units for the first six dimensions mentioned above in `unyt` are from the SI system: kilograms, meters, seconds, kelvin, ampere, and candela.
+The default base unit for the `angle` dimension is radian, and the default base unit for the `logarithmic` dimension is the "neper", which is a logarithmic unit for ratios of quantities such as field strenth or power.
+All other units can be described as combinations of these base units along with a conversion factor to equivalent base units.
 
-For historical and practical reasons, the default base units in `yt` itself are the "Gaussian"
-centimeters-grams-seconds (CGS) system, where grams and centimeters serve as the different base
-units for mass and length, the other base units remaining the same as SI, though formally there are
-no independent base units for luminous intensity or current in CGS systems. CGS was chosen for `yt`
-to stay consistent with the rest of the `yt` codebase prior to `yt` 3.0 and to reflect the standard
-practice in astrophysics. 
+For historical and practical reasons, the default base units in `yt` itself are the "Gaussian" centimeters-grams-seconds (CGS) system, where grams and centimeters serve as the different base units for mass and length, the other base units remaining the same as SI, though formally there are no independent base units for luminous intensity or current in CGS systems.
+CGS was chosen for `yt` to stay consistent with the rest of the `yt` codebase prior to `yt` 3.0 and to reflect the standard practice in astrophysics. 
 
-In any case, using a **physical** unit system makes it possible to compare quantities and arrays
-produced by different datasets, possibly with different conversion factors to CGS and to code units.
+In any case, using a **physical** unit system makes it possible to compare quantities and arrays produced by different datasets, possibly with different conversion factors to CGS and to code units.
 We go into more detail on this point below, where we describe the different unit systems in yt. 
 
-Let us first take some common units as examples: gram (`g`), erg (`erg`), and solar mass per cubic
-megaparsec (`Msun / Mpc**3`). `g` is an "atomic" CGS base unit, `erg` is an atomic unit in CGS, but
-is not a base unit, and `Msun / Mpc**3` is a combination of atomic units, which are not in CGS, and
-one of them even has an SI prefix. The dimensions of `g` are `mass` and the CGS conversion factor is
-1. The dimensions of `erg` are `mass * length**2 / time**2` and the CGS conversion factor is 1. The
-dimensions of `Msun / Mpc**3` are `mass / length**3` and the CGS conversion factor is about $6.8
-\times 10^{-41}$.
+Let us first take some common units as examples: gram (`g`), erg (`erg`), and solar mass per cubic megaparsec (`Msun / Mpc**3`).
+`g` is an "atomic" CGS base unit, `erg` is an atomic unit in CGS, but is not a base unit, and `Msun / Mpc**3` is a combination of atomic units, which are not in CGS, and one of them even has an SI prefix.
+The dimensions of `g` are `mass` and the CGS conversion factor is 1.
+The dimensions of `erg` are `mass * length**2 / time**2` and the CGS conversion factor is 1.
+The dimensions of `Msun / Mpc**3` are `mass / length**3` and the CGS conversion factor is about $6.8 \times 10^{-41}$.
 
-We use the `UnitRegistry` class to define all valid atomic units. All unit registries contain a unit
-symbol lookup table containing for each unit in a tuple the conversion factor to SI units, the dimensionality, the additive offset for the unit, a string representing how the unit should be displayed in plots and other media, and a boolean dictating whether the unit is SI-prefixable. 
+We use the `UnitRegistry` class to define all valid atomic units.
+All unit registries contain a unit symbol lookup table containing for each unit in a tuple the conversion factor to SI units, the dimensionality, the additive offset for the unit, a string representing how the unit should be displayed in plots and other media, and a boolean dictating whether the unit is SI-prefixable.
 Here is what it would look like with the above units:
 
 ```python
@@ -3598,35 +3575,32 @@ Here is what it would look like with the above units:
 }
 ```
 
-Note that we only define **atomic** units here. There should be no operations or SI prefixes in the
-registry symbol strings. When we parse non-atomic units like `Msun/Mpc**3`, we use the registry to
-look up the symbols. The unit system in `yt` knows how to handle units like `Mpc` by looking up unit
-symbols with and without prefixes and modify the conversion factor appropriately. Note also that in most cases the "additive offset" will be 0--it applies mainly to temperature scales like Fahrenheit and Celsius where the zero-point of the scale are not equivalent between the two scales, and are also not equivalent to "zero thermal energy", for which the relevant temperature units are Rankine and Kelvin, respectively.
+Note that we only define **atomic** units here.
+There should be no operations or SI prefixes in the registry symbol strings.
+When we parse non-atomic units like `Msun/Mpc**3`, we use the registry to look up the symbols.
+The unit system in `yt` knows how to handle units like `Mpc` by looking up unit symbols with and without prefixes and modify the conversion factor appropriately.
+Note also that in most cases the "additive offset" will be 0--it applies mainly to temperature scales like Fahrenheit and Celsius where the zero-point of the scale are not equivalent between the two scales, and are also not equivalent to "zero thermal energy," for which the relevant temperature units are Rankine and Kelvin, respectively.
 
-We construct a `Unit` object by providing a string containing atomic unit symbols, combined with operations in Python syntax, and the registry those atomic unit symbols are defined in. We use
-`sympy`'s string parsing features to create the unit expression from the user-provided string. Each `Unit`
-object also has its own unit `sympy` `Expr` object, a dimensionality `Expr` object, a `UnitRegistry` instance, a scalar conversion factor to SI units, additive offset value, and display representation. Among other methods, `Unit` defines the `mul`, `div`, `pow`, and `eq` operations with
-other unit objects, making it easy to compose compound units algebraically.
+We construct a `Unit` object by providing a string containing atomic unit symbols, combined with operations in Python syntax, and the registry those atomic unit symbols are defined in.
+We use `sympy`'s string parsing features to create the unit expression from the user-provided string.
+Each `Unit` object also has its own unit `sympy` `Expr` object, a dimensionality `Expr` object, a `UnitRegistry` instance, a scalar conversion factor to SI units, additive offset value, and display representation.
+Among other methods, `Unit` defines the `mul`, `div`, `pow`, and `eq` operations with other unit objects, making it easy to compose compound units algebraically.
 
-The `UnitRegistry` class provides methods which allows users to
-`add`, `remove`, and `modify` atomic unit definitions present in `UnitRegistry` objects. In general, unit registries should only be adjusted inside of a code frontend, since otherwise quantities and arrays might be created with inconsistent unit metadata. Once a `Unit` object is created, it will not receive updates if the original unit registry is modified.
+The `UnitRegistry` class provides methods which allows users to `add`, `remove`, and `modify` atomic unit definitions present in `UnitRegistry` objects.
+In general, unit registries should only be adjusted inside of a code frontend, since otherwise quantities and arrays might be created with inconsistent unit metadata.
+Once a `Unit` object is created, it will not receive updates if the original unit registry is modified.
 
 #### Code units {#sec:code-units}
 
-When a `Dataset` object is created, it will itself instantiate and set up a `UnitRegistry`
-class (stored in its `unit_registry` attribute) that contains a full set of units that are defined
-for the simulation. This registry includes not only the aforementioned concrete physical units like
-`cm` or `K`, but also unit symbols that correspond to the unit system used internally in the
-simulation. These units are instantiated via the concept of "code units", which are tightly coupled
-to on-disk parameters. Examples of such units are `code_length`, `code_mass`, `code_time`,
-`code_velocity`, `code_density`, `code_magnetic`, `code_pressure`, and `code_metallicity`. When
-creating a `Dataset`'s `UnitRegistry`, `yt` is able to also determine conversions between these
-units and physical units in both directions. Code units therefore preserve dimensionality: an array
-or quantity that has units of `cm` will be convertible to `code_length`, for example, and
-vice-versa.
+When a `Dataset` object is created, it will itself instantiate and set up a `UnitRegistry` class (stored in its `unit_registry` attribute) that contains a full set of units that are defined for the simulation.
+This registry includes not only the aforementioned concrete physical units like `cm` or `K`, but also unit symbols that correspond to the unit system used internally in the simulation.
+These units are instantiated via the concept of "code units", which are tightly coupled to on-disk parameters.
+Examples of such units are `code_length`, `code_mass`, `code_time`, `code_velocity`, `code_density`, `code_magnetic`, `code_pressure`, and `code_metallicity`.
+When creating a `Dataset`'s `UnitRegistry`, `yt` is able to also determine conversions between these units and physical units in both directions.
+Code units therefore preserve dimensionality: an array or quantity that has units of `cm` will be convertible to `code_length`, for example, and vice-versa.
 
-On-disk fields are presented in these unconverted code units. To obtain on-disk data, a user need
-only query a data object using an on-disk field name:
+On-disk fields are presented in these unconverted code units.
+To obtain on-disk data, a user need only query a data object using an on-disk field name:
 
 ```python
 >>> import yt
@@ -3641,17 +3615,14 @@ only query a data object using an on-disk field name:
  2.59e-28 1.61e-28 1.22e-28] g/cm**3
 ```
 
-Here, the first data object query is returned in code units, while the second is returned in CGS
-units. This is because `("enzo", "Density")` is an on-disk field, while `("gas", "density")` is an
-internal `yt` field, aliased to the former. 
+Here, the first data object query is returned in code units, while the second is returned in CGS units.
+This is because `("enzo", "Density")` is an on-disk field, while `("gas", "density")` is an internal `yt` field, aliased to the former. 
 
-In the `set_code_units` method of the `Dataset` base class, the predefined `code_mass`,
-`code_length`, `code_time`, `code_velocity`, and `code_magnetic` symbols are adjusted to the
-appropriate values, and `length_unit`, `time_unit`, `mass_unit`, `velocity_unit`, and
-`magnetic_unit` attributes are attached to the `Dataset` instance. If there are frontend-specific
-code units, they should also be defined in subclasses by extending this function.
+In the `set_code_units` method of the `Dataset` base class, the predefined `code_mass`, `code_length`, `code_time`, `code_velocity`, and `code_magnetic` symbols are adjusted to the appropriate values, and `length_unit`, `time_unit`, `mass_unit`, `velocity_unit`, and `magnetic_unit` attributes are attached to the `Dataset` instance.
+If there are frontend-specific code units, they should also be defined in subclasses by extending this function.
 
-When code units are set up for a `Dataset`, `unyt_quantity` instances corresponding to these code units are also set up and added as attributes to the `Dataset`. Examples are `length_unit`, `time_unit`, `mass_unit`, and `temperature_unit`:
+When code units are set up for a `Dataset`, `unyt_quantity` instances corresponding to these code units are also set up and added as attributes to the `Dataset`.
+Examples are `length_unit`, `time_unit`, `mass_unit`, and `temperature_unit`:
 
 ```python
 >>> import yt
@@ -3666,19 +3637,15 @@ Optionally, `velocity_unit`, `density_unit`, `pressure_unit`, and `magnetic_unit
 
 #### Handling cosmological units {#sec:handling-cosmological-units}
 
-A special case of astrophysical hydrodynamical simulations are cosmological simulations, which
-attempt to simulate the evolution of structure on cosmological length and time scales. Such
-simulations use "comoving coordinates", which is a notion of length that does not change with the
-expansion of the universe, in contrast to normal physical distances which do. 
+A special case of astrophysical hydrodynamical simulations are cosmological simulations, which attempt to simulate the evolution of structure on cosmological length and time scales.
+Such simulations use "comoving coordinates", which is a notion of length that does not change with the expansion of the universe, in contrast to normal physical distances which do. 
 
-If we detect that we are loading a cosmological simulation performed in comoving coordinates, extra
-comoving units are added to the dataset's unit registry. Comoving length unit symbols are still
-named following the pattern `<length symbol>cm`, i.e. `Mpccm`. The $h$ symbol is treated as a base
-unit, `h`, which defaults to unity. The `Dataset` updates the `h` symbol to the correct value when
-loading a cosmological simulation.
+If we detect that we are loading a cosmological simulation performed in comoving coordinates, extra comoving units are added to the dataset's unit registry.
+Comoving length unit symbols are still named following the pattern `<length symbol>cm`, i.e. `Mpccm`.
+The $h$ symbol is treated as a base unit, `h`, which defaults to unity.
+The `Dataset` updates the `h` symbol to the correct value when loading a cosmological simulation.
 
-The change of physical length is illustrated by the following example, of two datasets from the same
-simulation but at different times/scale factors/redshifts:
+The change of physical length is illustrated by the following example, of two datasets from the same simulation but at different times/scale factors/redshifts:
 
 ```python
 >>> import yt
@@ -3694,24 +3661,21 @@ simulation but at different times/scale factors/redshifts:
 
 ### Unit systems {#sec:unit-systems}
 
-As noted above, the default unit system in `yt` for almost all `Dataset`s is the Gaussian CGS system. However, `yt` also includes other unit systems which can be specified, in which case all fields loaded from a `Dataset` will be converted from their code units to this set of units. The available unit systems in `yt` are:
+As noted above, the default unit system in `yt` for almost all `Dataset`s is the Gaussian CGS system.
+However, `yt` also includes other unit systems which can be specified, in which case all fields loaded from a `Dataset` will be converted from their code units to this set of units.
+The available unit systems in `yt` are:
 
 * `"cgs"`: "Gaussian" centimeter-grams-seconds
 * `"mks"`: The SI unit system, or meters-kilograms-seconds-amperes
-* `"imperial"`: The "imperial" unit system, or the "US customary" system, incorporating miles, pounds, 
-  seconds, etc.
-* `"galactic"`: A unit system appropriate for studies of systems on galactic or extragalactic scales, 
-  with length units of kiloparsecs, mass units of solar masses, and time units of megayears, etc.
-* `"solar"`: A unit system appropriate for solar system objects, with length units of astronomical units, 
-  mass units of Earth mass, and time units of years. 
-* `"geometrized"`: A unit system appropriate for general relativistic calculations, in which 
-  $G$ = $c$ = 1. 
+* `"imperial"`: The "imperial" unit system, or the "US customary" system, incorporating miles, pounds, seconds, etc.
+* `"galactic"`: A unit system appropriate for studies of systems on galactic or extragalactic scales, with length units of kiloparsecs, mass units of solar masses, and time units of megayears, etc.
+* `"solar"`: A unit system appropriate for solar system objects, with length units of astronomical units, mass units of Earth mass, and time units of years. 
+* `"geometrized"`: A unit system appropriate for general relativistic calculations, in which $G$ = $c$ = 1. 
 * `"planck"`: A unit system in Planck units where $G$ = $c$ = $\hbar$ = $k_B$ = 1.
 
 Additionally, each `Dataset` instance has its own `"code"` unit system.
 
-To load a dataset with a different unit system, simply pass a valid value to the `unit_system`
-keywoard argument when calling `yt.load`:
+To load a dataset with a different unit system, simply pass a valid value to the `unit_system` keywoard argument when calling `yt.load`:
 
 ```python
 >>> import yt 
@@ -3732,11 +3696,9 @@ keywoard argument when calling `yt.load`:
  5.66932465e+01 4.27780263e+01] code_mass/code_length**3
 ```
 
-At the time of writing, two frontends in `yt` use the `"mks"` unit system by default, 
-and one leaves the units in "code" units by default. 
+At the time of writing, two frontends in `yt` use the `"mks"` unit system by default, and one leaves the units in "code" units by default. 
 
-It is also possible to define a new unit system entirely, with required arguments of a
-name for the system, and length, mass, time, temperature, and angular units: 
+It is also possible to define a new unit system entirely, with required arguments of a name for the system, and length, mass, time, temperature, and angular units: 
 
 ```python
 >>> from unyt import UnitSystem
@@ -3763,9 +3725,8 @@ nm**(-3)
 mp*nm**2/fs
 ```
 
-Note that for dimensions not specified explicitly in the call to `UnitSystem` (in this example
-number density and angular momentum), their units were derived automatically. Now, this
-user-defined unit system can be used in `yt`:
+Note that for dimensions not specified explicitly in the call to `UnitSystem` (in this example number density and angular momentum), their units were derived automatically.
+Now, this user-defined unit system can be used in `yt`:
 
 ```python
 >>> ds4 = yt.load("Enzo_64/DD0043/data0043", unit_system="atomic")
@@ -3777,10 +3738,8 @@ user-defined unit system can be used in `yt`:
 
 ### Unit conversions {#sec:unit-conversions}
 
-Aside from the ability to carry units through calculations, the other basic need for having a units
-implementation in `yt` is to be able to perform conversions of arrays from one unit to another of
-the same dimension. Creating a new array or quantity from an existing one can be done using the
-`in_units` method (or the `to` method, which is a convenient alias):
+Aside from the ability to carry units through calculations, the other basic need for having a units implementation in `yt` is to be able to perform conversions of arrays from one unit to another of the same dimension.
+Creating a new array or quantity from an existing one can be done using the `in_units` method (or the `to` method, which is a convenient alias):
 
 ```python
 >>> import yt 
@@ -3799,9 +3758,7 @@ the same dimension. Creating a new array or quantity from an existing one can be
  1.52756530e-11 1.53220436e-11] J/m**3
 ```
 
-Conversions to other unit systems can also be achieved with the methods `in_cgs` for Gaussian CGS
-units, `in_mks` for SI units, and the more general `in_base` for conversion to any valid unit
-system (see [Unit systems](#sec:unit-systems)). 
+Conversions to other unit systems can also be achieved with the methods `in_cgs` for Gaussian CGS units, `in_mks` for SI units, and the more general `in_base` for conversion to any valid unit system (see [Unit systems](#sec:unit-systems)). 
 
 ```python
 >>> import unyt as u 
@@ -3829,8 +3786,7 @@ To convert an array in-place instead of making a copy, use `convert_to_units`:
  511526.58818102 550182.82006007] Msun*kpc/Myr
 ```
 
-Naturally, attempting to convert an array to units with a different dimension raises an error (in
-most cases, see below for exceptions):
+Naturally, attempting to convert an array to units with a different dimension raises an error (in most cases, see below for exceptions):
 
 ```python
 >>> print(momentum_y.to("degC"))
@@ -3852,19 +3808,16 @@ unyt.exceptions.UnitConversionError: Cannot convert between 'Msun*kpc/Myr' (dim 
 
 #### Equivalencies {#sec:equivalencies}
 
-In certain circumstances, conversion from one quantity to another with different dimensions is
-desired. This is the case for a number of frequently encountered, physically-motivated
-transformations which involve physical constants, some examples of which are:
+In certain circumstances, conversion from one quantity to another with different dimensions is desired.
+This is the case for a number of frequently encountered, physically-motivated transformations which involve physical constants, some examples of which are:
 
 * Conversions between temperature and energy via $E = k_BT$
 * Conversions between wavelength, frequency, and energy for light via $E = h\nu = hc/\lambda$
 * Conversions between mass and energy via $E = mc^2$
 * Conversions between density and number density via $n = \rho/({\mu}m_p)$
 
-As described above, conversions between quantities in different units is generally not allowed, but
-these special cases can be handled using unit equivalencies in `yt`. This is done using the
-`to_equivalent` method, which takes the unit in a different dimension that you want to convert to,
-and the equivalence you would like to use: 
+As described above, conversions between quantities in different units is generally not allowed, but these special cases can be handled using unit equivalencies in `yt`.
+This is done using the `to_equivalent` method, which takes the unit in a different dimension that you want to convert to, and the equivalence you would like to use: 
 
 ```python
 >>> import unyt as u
@@ -3881,9 +3834,7 @@ and the equivalence you would like to use:
 ```
 
 These equivalencies are straightforward--more information may be required in other cases.
-For example, to convert temperature to sound speed via $c_s = \sqrt{\gamma{k_BT}/(\mu{m_p})}$, there
-are two parameters which may be optionally changed, $\gamma$ and $\mu$, which are the ratio of
-specific heats and the mean molecular weight, respectively:
+For example, to convert temperature to sound speed via $c_s = \sqrt{\gamma{k_BT}/(\mu{m_p})}$, there are two parameters which may be optionally changed, $\gamma$ and $\mu$, which are the ratio of specific heats and the mean molecular weight, respectively:
 
 ```python
 >>> import unyt as u
@@ -3911,23 +3862,19 @@ For convenience, the same operations can actually be carried out simply using th
 
 #### Conversions between electromagnetic units in different systems
 
-Conversions between different electromagnetic units require special handling in many cases. The
-reason for this is that the units for many electromagnetic quantities do not have the same
-dimensions between the Gaussian CGS and the SI unit systems. For illustration, let us consider the
-units of magnetic field strength. Superficially, it would appear that there is a simple conversion
-between the cgs units of gauss ($\rm{G}$) and the SI units of tesla ($\rm{T}$), since numerically
-$1~\rm{G} = 10^{-4}~\rm{T}$. However, if we examine the base units, we find that they have different
-dimensions:
+Conversions between different electromagnetic units require special handling in many cases.
+The reason for this is that the units for many electromagnetic quantities do not have the same dimensions between the Gaussian CGS and the SI unit systems.
+For illustration, let us consider the units of magnetic field strength.
+Superficially, it would appear that there is a simple conversion between the cgs units of gauss ($\rm{G}$) and the SI units of tesla ($\rm{T}$), since numerically $1~\rm{G} = 10^{-4}~\rm{T}$.
+However, if we examine the base units, we find that they have different dimensions:
 
 $$
 \mathrm{CGS:} 1~\mathrm{G} = 1~\frac{\sqrt{\mathrm{g}}}{\sqrt{\mathrm{cm}}\cdot\mathrm{s}} \\
 \mathrm{SI:} 1~\mathrm{T} = 1~\frac{\mathrm{kg}}{\mathrm{A}\cdot{\mathrm{s}}}
 $$
 
-The reason for this has already been noted above: the SI system has a base unit of current (the
-ampere), and all other electromagnetic units in SI are derived from it and combinations of other
-units. `unyt` handles conversions between electromagnetic quantities with _atomic_ units between CGS
-and SI systems, under the hood despite this difference:
+The reason for this has already been noted above: the SI system has a base unit of current (the ampere), and all other electromagnetic units in SI are derived from it and combinations of other units.
+`unyt` handles conversions between electromagnetic quantities with _atomic_ units between CGS and SI systems, under the hood despite this difference:
 
 ```python
 >>> import unyt as u
@@ -3981,8 +3928,7 @@ Traceback (most recent call last):
 unyt.exceptions.UnitConversionError: Cannot convert between 'A/m**3' (dim '(current_mks)/(length)**3') and 'statA/cm**3' (dim 'sqrt((mass))/((length)**(3/2)*(time)**2)').
 ```
 
-For these cases, it is recommended to convert atomic electromagnetic units separately first in
-equations, if necessary.
+For these cases, it is recommended to convert atomic electromagnetic units separately first in equations, if necessary.
 
 ### Physical Constants
 
@@ -4003,6 +3949,7 @@ them directly from the `unyt` namespace:
 ```
 
 Here's an example of using constants in a computation:
+
 ```python
 >>> import numpy as np
 >>> from unyt import unyt_quantity
@@ -4013,8 +3960,7 @@ Here's an example of using constants in a computation:
 1.000033863000043 yr
 ```
 
-Some physical constants are represented by Greek letters or other characters--these can be imported either using ASCII characters or
-their non-ASCII representations:
+Some physical constants are represented by Greek letters or other characters--these can be imported either using ASCII characters or their non-ASCII representations:
 
 ```python
 >>> from unyt import σ_T, ε_0
@@ -4029,20 +3975,17 @@ True
 
 ### Creating unyt_array and unyt_quantity instances {#sec:creating-ytarray-and-ytquantity-instances}
 
-Aside from converting an array to new units as described above, there are two further ways to create
-new array and quantity objects: via a constructor, and by multiplying scalar data by a unit
-quantity.
+Aside from converting an array to new units as described above, there are two further ways to create new array and quantity objects: via a constructor, and by multiplying scalar data by a unit quantity.
 
 #### Class constructor {#sec:class-constructor}
 
-The primary internal interface for creating new arrays and quantities is through the class
-constructor for `unyt_array`. The constructor takes three arguments. The first argument is the input
-data, which can be an integer, float, list, or array. The second argument, `input_units`, is a unit
-specification which must be a string or `Unit` instance. Last, users may optionally supply a
-`UnitRegistry` instance, which will be attached to the array. If no `UnitRegistry` is supplied, a
-default unit registry is used instead. Unit specification strings must be algebraic combinations of
-unit symbol names, using standard Python mathematical syntax (i.e. `**` for the power function, not
-`^`).
+The primary internal interface for creating new arrays and quantities is through the class constructor for `unyt_array`.
+The constructor takes three arguments.
+The first argument is the input data, which can be an integer, float, list, or array.
+The second argument, `input_units`, is a unit specification which must be a string or `Unit` instance.
+Last, users may optionally supply a `UnitRegistry` instance, which will be attached to the array.
+If no `UnitRegistry` is supplied, a default unit registry is used instead.
+Unit specification strings must be algebraic combinations of unit symbol names, using standard Python mathematical syntax (i.e. `**` for the power function, not `^`).
 
 Here is a simple example of `unyt_array` creation:
 
@@ -4054,12 +3997,10 @@ unyt_array([1, 2, 3]) cm
 unyt_quantity(3, 'J') 
 ```
 
-In addition to the class constructor, we have also defined two convenience functions, `quan`, and
-`arr`, for quantity and array creation that are attached to the `Dataset` class. These were
-added to syntactically simplify the creation of arrays with the `UnitRegistry` instance associated
-with a dataset. These functions work exactly like the `unyt_array` and `unyt_quantity` constructors,
-but pass the `UnitRegistry` instance attached to the dataset to the underlying constructor call. For
-example:
+In addition to the class constructor, we have also defined two convenience functions, `quan`, and `arr`, for quantity and array creation that are attached to the `Dataset` class.
+These were added to syntactically simplify the creation of arrays with the `UnitRegistry` instance associated with a dataset.
+These functions work exactly like the `unyt_array` and `unyt_quantity` constructors, but pass the `UnitRegistry` instance attached to the dataset to the underlying constructor call.
+For example:
 
 ```python
 >>> import yt
@@ -4072,10 +4013,9 @@ The above example illustrates that the array is being created using `ds.unit_reg
 
 #### Multiplication {#sec:multiplication}
 
-New `unyt_array` and `unyt_quantity` instances can also be created by multiplying `unyt_array`,
-`unyt_quantity`, or `Unit` instances by `float` or `ndarray` instances. To make it easier to create
-arrays using this mechanism, we have populated the `unyt` namespace with predefined `Unit` instances
-that correspond to common unit symbol names. For example:
+New `unyt_array` and `unyt_quantity` instances can also be created by multiplying `unyt_array`, `unyt_quantity`, or `Unit` instances by `float` or `ndarray` instances.
+To make it easier to create arrays using this mechanism, we have populated the `unyt` namespace with predefined `Unit` instances that correspond to common unit symbol names.
+For example:
 
 ```python
 >>> from unyt import meter, gram, kilogram, second, joule 
@@ -4107,9 +4047,8 @@ Arrays from `unyt` can be exported and imported in a few different ways.
 
 #### Writing `unyt_array`s to disk 
 
-`unyt_array`s can be serialized to disk in either ASCII or HDF5 format. 
-For ASCII, use `unyt.savetxt` (with similar syntax as `numpy.savetxt`) to write 
-one or more arrays:
+`unyt_array`s can be serialized to disk in either ASCII or HDF5 format.
+For ASCII, use `unyt.savetxt` (with similar syntax as `numpy.savetxt`) to write one or more arrays:
 
 ```python
 >>> import unyt as u
@@ -4126,8 +4065,7 @@ and `unyt.loadtxt` to read them back in:
 >>> vel, mass = u.loadtxt("sphere.dat", usecols=(1,2), delimiter="\t")
 ```
 
-`unyt_array`s can be written to HDF5 format using the `write_hdf5` method, where 
-one can optionally specify the HDF5 dataset and group where it can be stored:
+`unyt_array`s can be written to HDF5 format using the `write_hdf5` method, where one can optionally specify the HDF5 dataset and group where it can be stored:
 
 ```python
 >>> # Store the "b" array to the dataset "array_data" at the top of the file
@@ -4149,10 +4087,8 @@ and read back in using `from_hdf5`:
 
 #### Exporting `unyt_array`s to other unit packages
 
-It is possible to export an `unyt_array` or an `unyt_quantity` to equivalent
-objects in two other symbolic unit packages: [`Pint`](https://pint.readthedocs.io)
-and [`AstroPy`](https://www.astropy.org). To convert to a `Pint` `Quantity` object, 
-the `to_pint` method is used:
+It is possible to export an `unyt_array` or an `unyt_quantity` to equivalent objects in two other symbolic unit packages: [`Pint`](https://pint.readthedocs.io) and [`AstroPy`](https://www.astropy.org).
+To convert to a `Pint` `Quantity` object, the `to_pint` method is used:
 
 ```python
 >>> from unyt import cm, s
@@ -4171,6 +4107,7 @@ Similarly, to convert to an `AstroPy` `Quantity` object, use `to_astropy`:
 >>> data.to_astropy()
 <Quantity [3., 4., 5.] g / cm3>
 ```
+
 
 ## User-Friendliness
 
