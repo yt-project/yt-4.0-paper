@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-10-02'
+date-meta: '2023-10-03'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -84,11 +84,11 @@ header-includes: |
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-10-02" />
-  <meta name="citation_publication_date" content="2023-10-02" />
-  <meta property="article:published_time" content="2023-10-02" />
-  <meta name="dc.modified" content="2023-10-02T01:26:27+00:00" />
-  <meta property="article:modified_time" content="2023-10-02T01:26:27+00:00" />
+  <meta name="dc.date" content="2023-10-03" />
+  <meta name="citation_publication_date" content="2023-10-03" />
+  <meta property="article:published_time" content="2023-10-03" />
+  <meta name="dc.modified" content="2023-10-03T20:12:27+00:00" />
+  <meta property="article:modified_time" content="2023-10-03T20:12:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -298,9 +298,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/7b9c6d2f6a3edb8be27ea3e1622ad1664b5938ee/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/7b9c6d2f6a3edb8be27ea3e1622ad1664b5938ee/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/7b9c6d2f6a3edb8be27ea3e1622ad1664b5938ee/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/f24c12087aff187ded08b836953ef110b4b7faed/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/f24c12087aff187ded08b836953ef110b4b7faed/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/f24c12087aff187ded08b836953ef110b4b7faed/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -323,10 +323,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/7b9c6d2f6a3edb8be27ea3e1622ad1664b5938ee/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/f24c12087aff187ded08b836953ef110b4b7faed/))
 was automatically generated
-from [yt-project/yt-4.0-paper@7b9c6d2](https://github.com/yt-project/yt-4.0-paper/tree/7b9c6d2f6a3edb8be27ea3e1622ad1664b5938ee)
-on October 2, 2023.
+from [yt-project/yt-4.0-paper@f24c120](https://github.com/yt-project/yt-4.0-paper/tree/f24c12087aff187ded08b836953ef110b4b7faed)
+on October 3, 2023.
 </em></small>
 
 
