@@ -10,13 +10,13 @@ Altay
 AMR
 AMReX
 AMRKDTree
-AMRVAC
+amrvac
 Aperio
 APIs
 AREPO
 Arraki
 arraylike
-artio
+ARTIO
 arwetzel
 AST
 astro
@@ -37,7 +37,7 @@ binarily
 Biondo
 Birla
 Bitbucket
-bitwise
+Bitwise
 bookkeepping
 Bool
 Borro
@@ -71,14 +71,14 @@ collisional
 colocation
 colorbar
 colorbars
-Colormap
+colormap
 colormapping
-colormaps
+Colormaps
 colorspace
-comoving
+Comoving
 conda
 connectedness
-Coord
+coord
 Coords
 Corentin
 cosmosquark
@@ -95,7 +95,7 @@ datapoint
 dataset
 datasetfrom
 dataset’s
-datasets
+Datasets
 datasetwere
 datatypes
 decomp
@@ -115,7 +115,7 @@ dobj
 DTU
 Duplicative
 durations
-dutta
+Dutta
 easies
 elliottbiondo
 entrypoints
@@ -137,7 +137,7 @@ fof
 formatter
 formatters
 Frontend
-Frontends
+frontends
 frontrow
 Gainesville
 galtay
@@ -158,7 +158,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-Hexahedral
+hexahedral
 HippoDraw
 histogramming
 Hix
@@ -215,7 +215,7 @@ LLC
 logarithmically
 LSST
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -231,7 +231,7 @@ moab
 Mollweide
 Monaghan
 mornkr
-mpi
+MPI
 mtryan
 Munk
 munkm
@@ -252,12 +252,12 @@ NMSU
 nosetests
 NSSC
 NumFOCUS
-numpy
+NumPy
 OAC
 octants
 octree
 Octrees
-octs
+Octs
 odowska
 olebole
 OpenMP
@@ -281,7 +281,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -298,7 +298,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyxsim
+pyXSIM
 qobilidop
 quadtree
 radiative
@@ -356,7 +356,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-sympy
+SymPy
 sytlistic
 TBD
 Tbytes
@@ -392,7 +392,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj
@@ -400,7 +400,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-Zingale
+zingale
 zorder
 Zuckerberg
 ZuHone
