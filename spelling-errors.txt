@@ -19,7 +19,7 @@ arraylike
 ARTIO
 arwetzel
 AST
-astro
+Astro
 astrojaz
 astrophysically
 astropy
@@ -37,7 +37,7 @@ binarily
 Biondo
 Birla
 Bitbucket
-Bitwise
+bitwise
 bookkeepping
 Bool
 Borro
@@ -52,11 +52,11 @@ Cadair
 Cadiou
 candela
 Cartopy
-CGS
+cgs
 Champaign
 changeset
 changesets
-cholla
+CHOLLA
 chombo
 chrishavlin
 chummels
@@ -75,7 +75,7 @@ colormap
 colormapping
 Colormaps
 colorspace
-Comoving
+comoving
 conda
 connectedness
 coord
@@ -87,7 +87,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-Cython
+cython
 dask
 d’Astrophysique
 dataframe
@@ -95,7 +95,7 @@ datapoint
 dataset
 datasetfrom
 dataset’s
-Datasets
+datasets
 datasetwere
 datatypes
 decomp
@@ -115,7 +115,7 @@ dobj
 DTU
 Duplicative
 durations
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
@@ -136,7 +136,7 @@ fisheye
 fof
 formatter
 formatters
-Frontend
+frontend
 frontends
 frontrow
 Gainesville
@@ -158,7 +158,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-hexahedral
+Hexahedral
 HippoDraw
 histogramming
 Hix
@@ -252,11 +252,11 @@ NMSU
 nosetests
 NSSC
 NumFOCUS
-NumPy
+numpy
 OAC
 octants
 octree
-Octrees
+octrees
 Octs
 odowska
 olebole
@@ -281,7 +281,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-Pixelizers
+pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -312,7 +312,7 @@ recursed
 redshifts
 reinstrumented
 renderer
-resampling
+Resampling
 responsivity
 RGBA
 Ritali
@@ -369,7 +369,7 @@ Triden
 Tsai
 UC
 unappropriate
-Unitful
+unitful
 unitless
 Université
 unmergeable
@@ -379,7 +379,7 @@ unyt
 Urbana
 userbase
 Volker
-webassembly
+WebAssembly
 Wetzel
 Widgyts
 Xarthisius
@@ -392,7 +392,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-YTEP
+ytep
 YTEPs
 ytini
 YTQuadTreeProj
