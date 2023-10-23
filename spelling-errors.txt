@@ -4,16 +4,16 @@ ahf
 AIP
 Aitoff
 Alamos
-alankar
+Alankar
 Alpes
 Altay
 AMR
 AMReX
 AMRKDTree
-amrvac
+AMRVAC
 Aperio
 APIs
-AREPO
+Arepo
 Arraki
 arraylike
 ARTIO
@@ -22,7 +22,7 @@ AST
 Astro
 astrojaz
 astrophysically
-astropy
+AstroPy
 astrosmith
 AthenaPK
 atmyers
@@ -37,9 +37,9 @@ binarily
 Biondo
 Birla
 Bitbucket
-bitwise
+Bitwise
 bookkeepping
-Bool
+bool
 Borro
 BoxLib
 Britton
@@ -52,11 +52,11 @@ Cadair
 Cadiou
 candela
 Cartopy
-cgs
+CGS
 Champaign
 changeset
 changesets
-CHOLLA
+cholla
 chombo
 chrishavlin
 chummels
@@ -87,7 +87,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-cython
+Cython
 dask
 d’Astrophysique
 dataframe
@@ -115,7 +115,7 @@ dobj
 DTU
 Duplicative
 durations
-dutta
+Dutta
 easies
 elliottbiondo
 entrypoints
@@ -158,7 +158,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-Hexahedral
+hexahedral
 HippoDraw
 histogramming
 Hix
@@ -215,7 +215,7 @@ LLC
 logarithmically
 LSST
 Madicken
-Matplotlib
+matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -256,8 +256,8 @@ numpy
 OAC
 octants
 octree
-octrees
-Octs
+Octrees
+octs
 odowska
 olebole
 OpenMP
@@ -288,7 +288,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-powderday
+Powderday
 pre
 prefixable
 programmatically
@@ -312,7 +312,7 @@ recursed
 redshifts
 reinstrumented
 renderer
-Resampling
+resampling
 responsivity
 RGBA
 Ritali
@@ -338,7 +338,7 @@ situ
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger
@@ -356,7 +356,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-SymPy
+sympy
 sytlistic
 TBD
 Tbytes
@@ -392,7 +392,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj
