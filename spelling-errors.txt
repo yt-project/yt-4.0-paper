@@ -10,16 +10,16 @@ Altay
 AMR
 AMReX
 AMRKDTree
-amrvac
+AMRVAC
 Aperio
 APIs
 AREPO
 Arraki
 arraylike
-ARTIO
+artio
 arwetzel
 AST
-Astro
+astro
 astrojaz
 astrophysically
 astropy
@@ -37,11 +37,11 @@ binarily
 Biondo
 Birla
 Bitbucket
-bitwise
+Bitwise
 bookkeepping
-Bool
+bool
 Borro
-boxlib
+BoxLib
 Britton
 brittonsmith
 Bugfix
@@ -56,7 +56,7 @@ CGS
 Champaign
 changeset
 changesets
-cholla
+CHOLLA
 chombo
 chrishavlin
 chummels
@@ -78,7 +78,7 @@ colorspace
 comoving
 conda
 connectedness
-Coord
+coord
 Coords
 Corentin
 cosmosquark
@@ -136,8 +136,8 @@ fisheye
 fof
 formatter
 formatters
-frontend
-Frontends
+Frontend
+frontends
 frontrow
 Gainesville
 galtay
@@ -215,7 +215,7 @@ LLC
 logarithmically
 LSST
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -257,7 +257,7 @@ OAC
 octants
 octree
 octrees
-octs
+Octs
 odowska
 olebole
 OpenMP
@@ -288,7 +288,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-Powderday
+powderday
 pre
 prefixable
 programmatically
@@ -300,7 +300,7 @@ pytest
 PyThreeJS
 pyXSIM
 qobilidop
-quadtree
+Quadtree
 radiative
 RADMC
 rasterizers
@@ -338,7 +338,7 @@ situ
 Skillman
 SLAC
 soton
-sph
+SPH
 Springel
 STFC
 Stockinger
@@ -379,7 +379,7 @@ unyt
 Urbana
 userbase
 Volker
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Xarthisius
@@ -400,7 +400,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-zingale
+Zingale
 zorder
 Zuckerberg
 ZuHone
