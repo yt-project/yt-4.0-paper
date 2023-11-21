@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-11-20'
+date-meta: '2023-11-21'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -84,11 +84,11 @@ header-includes: |
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2023-11-20" />
-  <meta name="citation_publication_date" content="2023-11-20" />
-  <meta property="article:published_time" content="2023-11-20" />
-  <meta name="dc.modified" content="2023-11-20T01:28:29+00:00" />
-  <meta property="article:modified_time" content="2023-11-20T01:28:29+00:00" />
+  <meta name="dc.date" content="2023-11-21" />
+  <meta name="citation_publication_date" content="2023-11-21" />
+  <meta property="article:published_time" content="2023-11-21" />
+  <meta name="dc.modified" content="2023-11-21T17:04:59+00:00" />
+  <meta property="article:modified_time" content="2023-11-21T17:04:59+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -298,9 +298,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/f24c12087aff187ded08b836953ef110b4b7faed/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/f24c12087aff187ded08b836953ef110b4b7faed/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/f24c12087aff187ded08b836953ef110b4b7faed/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/04a9eb7f09be21b07f86135f0e4c4d0df51749ed/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/04a9eb7f09be21b07f86135f0e4c4d0df51749ed/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/04a9eb7f09be21b07f86135f0e4c4d0df51749ed/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -323,10 +323,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/f24c12087aff187ded08b836953ef110b4b7faed/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/04a9eb7f09be21b07f86135f0e4c4d0df51749ed/))
 was automatically generated
-from [yt-project/yt-4.0-paper@f24c120](https://github.com/yt-project/yt-4.0-paper/tree/f24c12087aff187ded08b836953ef110b4b7faed)
-on November 20, 2023.
+from [yt-project/yt-4.0-paper@04a9eb7](https://github.com/yt-project/yt-4.0-paper/tree/04a9eb7f09be21b07f86135f0e4c4d0df51749ed)
+on November 21, 2023.
 </em></small>
 
 
@@ -2296,10 +2296,14 @@ However, with SPH data, the selection methods in 2D and 3D will always include t
 This is somewhat counter to the expectations set by the grid codes, but aligns with the need to have a fully self-contained data-container for computing field values.
 For instance, this means that a "ray" object (often used to compute, for instance, the column density in a cosmological simulation) will in fact include a set of particles within a (potentially) varying impact parameter.
 This can be seen in diagram form in Figure @fig:sph_ray_tracing.
+We note that, as described in the SPLASH method paper [@doi:10.1071/AS07022], the kernel interpolation can be computed using the (dimensionless) ratio between the impact parameter of the ray and the smoothing length of the particle.
+
+<canvas id="sph-ray-figure" style="width:100%;height:100%;min-height: 500px;" hidpi="true"></canvas>
+<script type="text/paperscript" canvas="sph-ray-figure" src="images/sph_ray_tracing.js"></script>
 
 ![
-A cartoon diagram of a ray passing through a collection of particles.  The radius of the particle is indicative of its smoothing length (values should *not* be interpreted to be constant within these circles!).  As can be seen, the individual particles each contribute different amounts as a result of their smoothing length, the chord-length as the ray passes through the circle, and the values within each particle.
-](images/sph_ray_tracing_diagram.svg){#fig:sph_ray_tracing}
+A cartoon diagram of a ray passing through a collection of particles.  The radius of the particle is indicative of its smoothing length.  As can be seen, the individual particles each contribute different amounts as a result of their smoothing length, the chord-length as the ray passes through the circle, and the values within each particle.
+](images/blank.svg){#fig:sph_ray_tracing width="1px"}
 
 Other than these differences, which have been intentionally made to align the results with the expected results from the underlying discretization method, the APIs for access to particle data and finite volume data are identical, and they provide broadly identical functionality, where the disparities are typically in functionality such as volume rendering.
 This allows a single analysis script, or package (such as Trident), to utilize a high-level API to address both gridded and Lagrangian data while still ensuring that the results are high-fidelity and representative of the underlying methods.
