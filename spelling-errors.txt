@@ -4,7 +4,7 @@ ahf
 AIP
 Aitoff
 Alamos
-Alankar
+alankar
 Alpes
 Altay
 AMR
@@ -13,7 +13,7 @@ AMRKDTree
 AMRVAC
 Aperio
 APIs
-Arepo
+AREPO
 Arraki
 arraylike
 ARTIO
@@ -22,7 +22,7 @@ AST
 Astro
 astrojaz
 astrophysically
-AstroPy
+astropy
 astrosmith
 AthenaPK
 atmyers
@@ -41,7 +41,7 @@ Bitwise
 bookkeepping
 Bool
 Borro
-BoxLib
+boxlib
 Britton
 brittonsmith
 Bugfix
@@ -52,11 +52,11 @@ Cadair
 Cadiou
 candela
 Cartopy
-CGS
+cgs
 Champaign
 changeset
 changesets
-cholla
+CHOLLA
 chombo
 chrishavlin
 chummels
@@ -78,7 +78,7 @@ colorspace
 Comoving
 conda
 connectedness
-Coord
+coord
 Coords
 Corentin
 cosmosquark
@@ -215,7 +215,7 @@ LLC
 logarithmically
 LSST
 Madicken
-Matplotlib
+matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -256,7 +256,7 @@ numpy
 OAC
 octants
 octree
-Octrees
+octrees
 octs
 odowska
 olebole
@@ -281,7 +281,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -312,7 +312,7 @@ recursed
 redshifts
 reinstrumented
 renderer
-Resampling
+resampling
 responsivity
 RGBA
 Ritali
@@ -379,7 +379,7 @@ unyt
 Urbana
 userbase
 Volker
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Xarthisius
@@ -392,7 +392,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-YTEP
+ytep
 YTEPs
 ytini
 YTQuadTreeProj
