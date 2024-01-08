@@ -10,10 +10,10 @@ Altay
 AMR
 AMReX
 AMRKDTree
-amrvac
+AMRVAC
 Aperio
 APIs
-AREPO
+Arepo
 Arraki
 arraylike
 ARTIO
@@ -37,9 +37,9 @@ binarily
 Biondo
 Birla
 Bitbucket
-bitwise
+Bitwise
 bookkeepping
-bool
+Bool
 Borro
 boxlib
 Britton
@@ -75,7 +75,7 @@ colormap
 colormapping
 colormaps
 colorspace
-comoving
+Comoving
 conda
 connectedness
 coord
@@ -215,7 +215,7 @@ LLC
 logarithmically
 LSST
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -255,9 +255,9 @@ NumFOCUS
 NumPy
 OAC
 octants
-octree
+Octree
 octrees
-Octs
+octs
 odowska
 olebole
 OpenMP
@@ -298,9 +298,9 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyXSIM
+pyxsim
 qobilidop
-Quadtree
+quadtree
 radiative
 RADMC
 rasterizers
@@ -356,7 +356,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-sympy
+SymPy
 sytlistic
 TBD
 Tbytes
@@ -369,7 +369,7 @@ Triden
 Tsai
 UC
 unappropriate
-unitful
+Unitful
 unitless
 Université
 unmergeable
@@ -379,7 +379,7 @@ unyt
 Urbana
 userbase
 Volker
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Xarthisius
@@ -392,7 +392,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj
@@ -400,7 +400,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-zingale
+Zingale
 zorder
 Zuckerberg
 ZuHone
