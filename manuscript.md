@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2024-01-22'
+date-meta: '2024-01-24'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -68,6 +68,7 @@ author-meta:
 - Philipp Grete
 - John H. Wise
 - Shin-Rong Tsai
+- Nastasha Anna Wijers
 - Add Yourself
 manubot-fail-on-errors: true
 citekey-aliases:
@@ -84,11 +85,11 @@ header-includes: |
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2024-01-22" />
-  <meta name="citation_publication_date" content="2024-01-22" />
-  <meta property="article:published_time" content="2024-01-22" />
-  <meta name="dc.modified" content="2024-01-22T01:30:17+00:00" />
-  <meta property="article:modified_time" content="2024-01-22T01:30:17+00:00" />
+  <meta name="dc.date" content="2024-01-24" />
+  <meta name="citation_publication_date" content="2024-01-24" />
+  <meta property="article:published_time" content="2024-01-24" />
+  <meta name="dc.modified" content="2024-01-24T18:36:35+00:00" />
+  <meta property="article:modified_time" content="2024-01-24T18:36:35+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -289,6 +290,9 @@ header-includes: |
   <meta name="citation_author_institution" content="Department of Physics, National Taiwan University" />
   <meta name="citation_author_institution" content="School of Information Sciences, University of Illinois at Urbana-Champaign" />
   <meta name="citation_author_orcid" content="0000-0003-4635-6259" />
+  <meta name="citation_author" content="Nastasha Anna Wijers" />
+  <meta name="citation_author_institution" content="CIERA and Department of Physics and Astronomy, Northwestern University, 1800 Sherman Ave, Evanston, IL 60201, USA" />
+  <meta name="citation_author_orcid" content="0000-0001-6374-7185" />
   <meta name="citation_author" content="Add Yourself" />
   <meta name="citation_author_institution" content="Your University" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
@@ -298,9 +302,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/04a9eb7f09be21b07f86135f0e4c4d0df51749ed/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/04a9eb7f09be21b07f86135f0e4c4d0df51749ed/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/04a9eb7f09be21b07f86135f0e4c4d0df51749ed/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/ec2f73af348b75123dee575dd251b5015bdc953e/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ec2f73af348b75123dee575dd251b5015bdc953e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ec2f73af348b75123dee575dd251b5015bdc953e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -323,10 +327,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/04a9eb7f09be21b07f86135f0e4c4d0df51749ed/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/ec2f73af348b75123dee575dd251b5015bdc953e/))
 was automatically generated
-from [yt-project/yt-4.0-paper@04a9eb7](https://github.com/yt-project/yt-4.0-paper/tree/04a9eb7f09be21b07f86135f0e4c4d0df51749ed)
-on January 22, 2024.
+from [yt-project/yt-4.0-paper@ec2f73a](https://github.com/yt-project/yt-4.0-paper/tree/ec2f73af348b75123dee575dd251b5015bdc953e)
+on January 24, 2024.
 </em></small>
 
 
@@ -1013,6 +1017,18 @@ on January 22, 2024.
     <br>
   <small>
      Department of Physics, National Taiwan University; School of Information Sciences, University of Illinois at Urbana-Champaign
+  </small>
+
++ **Nastasha Anna Wijers**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0001-6374-7185](https://orcid.org/0000-0001-6374-7185)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [nastasha-w](https://github.com/nastasha-w)
+    <br>
+  <small>
+     CIERA and Department of Physics and Astronomy, Northwestern University, 1800 Sherman Ave, Evanston, IL 60201, USA
+     · Funded by CIERA Postdoctoral Fellowship
   </small>
 
 + **Add Yourself**
