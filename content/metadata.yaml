@@ -546,6 +546,16 @@ authors:
       - School of Information Sciences, University of Illinois at Urbana-Champaign
     funders: []
   -
+    github: nastasha-w
+    name: Nastasha Anna Wijers
+    initials: NAW
+    orcid: 0000-0001-6374-7185
+    email: nastasha.wijers@northwestern.edu
+    affiliations:
+      - CIERA and Department of Physics and Astronomy, Northwestern University, 1800 Sherman Ave, Evanston, IL 60201, USA
+    funders:
+      - CIERA Postdoctoral Fellowship
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
