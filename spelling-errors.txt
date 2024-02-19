@@ -4,7 +4,7 @@ ahf
 AIP
 Aitoff
 Alamos
-Alankar
+alankar
 Alpes
 Altay
 AMR
@@ -13,7 +13,7 @@ AMRKDTree
 AMRVAC
 Aperio
 APIs
-AREPO
+arepo
 Arraki
 arraylike
 ARTIO
@@ -37,11 +37,11 @@ binarily
 Biondo
 Birla
 Bitbucket
-Bitwise
+bitwise
 bookkeepping
 Bool
 Borro
-BoxLib
+boxlib
 Britton
 brittonsmith
 Bugfix
@@ -76,7 +76,7 @@ colormap
 colormapping
 colormaps
 colorspace
-comoving
+Comoving
 conda
 connectedness
 coord
@@ -88,7 +88,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-cython
+Cython
 dask
 d’Astrophysique
 dataframe
@@ -96,7 +96,7 @@ datapoint
 dataset
 datasetfrom
 dataset’s
-Datasets
+datasets
 datasetwere
 datatypes
 decomp
@@ -116,7 +116,7 @@ dobj
 DTU
 Duplicative
 durations
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
@@ -138,8 +138,8 @@ fisheye
 fof
 formatter
 formatters
-Frontend
-frontends
+frontend
+Frontends
 frontrow
 Gainesville
 galtay
@@ -233,14 +233,14 @@ moab
 Mollweide
 Monaghan
 mornkr
-MPI
+mpi
 mtryan
 Munk
 munkm
 Naiman
 namespace
 Narayanan
-Nastasha
+nastasha
 Navaneeth
 neper
 NetCDF
@@ -291,7 +291,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-Powderday
+powderday
 pre
 prefixable
 programmatically
@@ -301,7 +301,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyXSIM
+pyxsim
 qobilidop
 quadtree
 radiative
@@ -396,7 +396,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-YTEP
+ytep
 YTEPs
 ytini
 YTQuadTreeProj
@@ -404,7 +404,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-Zingale
+zingale
 zorder
 Zuckerberg
 ZuHone
