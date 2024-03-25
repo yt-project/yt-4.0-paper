@@ -4,7 +4,7 @@ ahf
 AIP
 Aitoff
 Alamos
-Alankar
+alankar
 Alpes
 Altay
 AMR
@@ -13,13 +13,13 @@ AMRKDTree
 AMRVAC
 Aperio
 APIs
-AREPO
+arepo
 Arraki
 arraylike
-ARTIO
+artio
 arwetzel
 AST
-astro
+Astro
 astrojaz
 astrophysically
 astropy
@@ -37,11 +37,11 @@ binarily
 Biondo
 Birla
 Bitbucket
-Bitwise
+bitwise
 bookkeepping
 Bool
 Borro
-boxlib
+BoxLib
 Britton
 brittonsmith
 Bugfix
@@ -52,7 +52,7 @@ Cadair
 Cadiou
 candela
 Cartopy
-CGS
+cgs
 Champaign
 changeset
 changesets
@@ -74,7 +74,7 @@ colorbar
 colorbars
 colormap
 colormapping
-colormaps
+Colormaps
 colorspace
 Comoving
 conda
@@ -116,7 +116,7 @@ dobj
 DTU
 Duplicative
 durations
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
@@ -160,7 +160,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-hexahedral
+Hexahedral
 HippoDraw
 histogramming
 Hix
@@ -217,7 +217,7 @@ LLC
 logarithmically
 LSST
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -240,7 +240,7 @@ munkm
 Naiman
 namespace
 Narayanan
-nastasha
+Nastasha
 Navaneeth
 neper
 NetCDF
@@ -255,12 +255,12 @@ NMSU
 nosetests
 NSSC
 NumFOCUS
-NumPy
+numpy
 OAC
 octants
 octree
 octrees
-Octs
+octs
 odowska
 olebole
 OpenMP
@@ -284,7 +284,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -303,7 +303,7 @@ pytest
 PyThreeJS
 pyxsim
 qobilidop
-Quadtree
+quadtree
 radiative
 RADMC
 rasterizers
@@ -404,7 +404,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-Zingale
+zingale
 zorder
 Zuckerberg
 ZuHone
