@@ -1185,7 +1185,7 @@
         [
           "2024",
           4,
-          7
+          14
         ]
       ]
     },
@@ -4378,12 +4378,14 @@
   },
   {
     "publisher": "SAGE Publications",
+    "issue": "5",
     "abstract": "<jats:p> On the path to exascale the landscape of computer device architectures and corresponding programming models has become much more diverse. While various low-level performance portable programming models are available, support at the application level lacks behind. To address this issue, we present the performance portable block-structured adaptive mesh refinement (AMR) framework Parthenon, derived from the well-tested and widely used Athena++ astrophysical magnetohydrodynamics code, but generalized to serve as the foundation for a variety of downstream multi-physics codes. Parthenon adopts the Kokkos programming model, and provides various levels of abstractions from multidimensional variables, to packages defining and separating components, to launching of parallel compute kernels. Parthenon allocates all data in device memory to reduce data movement, supports the logical packing of variables and mesh blocks to reduce kernel launch overhead, and employs one-sided, asynchronous MPI calls to reduce communication overhead in multi-node simulations. Using a hydrodynamics miniapp, we demonstrate weak and strong scaling on various architectures including AMD and NVIDIA GPUs, Intel and AMD x86 CPUs, IBM Power9 CPUs, as well as Fujitsu A64FX CPUs. At the largest scale on Frontier (the first TOP500 exascale machine), the miniapp reaches a total of 1.7 × 10<jats:sup>13</jats:sup> zone-cycles/s on 9216 nodes (73,728 logical GPUs) at [Formula: see text] weak scaling parallel efficiency (starting from a single node). In combination with being an open, collaborative project, this makes Parthenon an ideal framework to target exascale simulations in which the downstream developers can focus on their specific application rather than on the complexity of handling massively-parallel, device-accelerated AMR. </jats:p>",
     "DOI": "10.1177/10943420221143775",
     "type": "article-journal",
-    "page": "109434202211437",
+    "page": "465-486",
     "source": "Crossref",
     "title": "Parthenon—a performance portable block-structured adaptive mesh refinement framework",
+    "volume": "37",
     "author": [
       {
         "given": "Philipp",
@@ -4917,6 +4919,7 @@
   {
     "publisher": "American Astronomical Society",
     "issue": "2",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Stellar feedback in the form of radiation pressure and magnetically driven collimated outflows may limit the maximum mass that a star can achieve and affect the star formation efficiency of massive prestellar cores. Here we present a series of 3D adaptive mesh refinement radiation–magnetohydrodynamic simulations of the collapse of initially turbulent, massive prestellar cores. Our simulations include radiative feedback from both the direct stellar and dust-reprocessed radiation fields, and collimated outflow feedback from the accreting stars. We find that protostellar outflows punch holes in the dusty circumstellar gas along the star’s polar directions, thereby increasing the size of optically thin regions through which radiation can escape. Precession of the outflows as the star’s spin axis changes due to the turbulent accretion flow further broadens the outflow, and causes more material to be entrained. Additionally, the presence of magnetic fields in the entrained material leads to broader entrained outflows that escape the core. We compare the injected and entrained outflow properties and find that the entrained outflow mass is a factor of ∼3 larger than the injected mass and the momentum and energy contained in the entrained material are ∼25% and ∼5% of the injected momentum and energy, respectively. As a result, we find that, when one includes both outflows and radiation pressure, the former are a much more effective and important feedback mechanism, even for massive stars with significant radiative outputs.</jats:p>",
     "DOI": "10.3847/1538-3881/ab9abf",
     "type": "article-journal",
     "page": "78",
@@ -4951,6 +4954,7 @@
   {
     "publisher": "American Astronomical Society",
     "issue": "1",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>We investigate angular momentum acquisition in Milky Way-sized galaxies by comparing five high resolution zoom-in simulations, each implementing identical cosmological initial conditions but utilizing different hydrodynamic codes: <jats:monospace>Enzo</jats:monospace>, <jats:monospace>Art</jats:monospace>, <jats:monospace>Ramses</jats:monospace>, <jats:monospace>Arepo</jats:monospace>, and <jats:monospace>Gizmo-PSPH</jats:monospace>. Each code implements a distinct set of feedback and star formation prescriptions. We find that while many galaxy and halo properties vary between the different codes (and feedback prescriptions), there is qualitative agreement on the process of angular momentum acquisition in the galaxy’s halo. In all simulations, cold filamentary gas accretion to the halo results in ∼4 times more specific angular momentum in cold halo gas (<jats:italic>λ</jats:italic>\n                  <jats:sub>cold</jats:sub> ≳ 0.1) than in the dark matter halo. At <jats:italic>z</jats:italic> &gt; 1, this inflow takes the form of inspiraling cold streams that are co-directional in the halo of the galaxy and are fueled, aligned, and kinematically connected to filamentary gas infall along the cosmic web. Due to the qualitative agreement among disparate simulations, we conclude that the buildup of high angular momentum halo gas and the presence of these inspiraling cold streams are robust predictions of Lambda Cold Dark Matter galaxy formation, though the detailed morphology of these streams is significantly less certain. A growing body of observational evidence suggests that this process is borne out in the real universe.</jats:p>",
     "DOI": "10.3847/1538-4357/aa6dff",
     "type": "article-journal",
     "page": "47",
@@ -5017,6 +5021,7 @@
   {
     "publisher": "American Astronomical Society",
     "issue": "1",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Hydrodynamical simulations are increasingly able to accurately model physical systems on stellar, galactic, and cosmological scales; however, the utility of these simulations is often limited by our ability to directly compare them with the data sets produced by observers: spectra, photometry, etc. To address this problem, we have created <jats:sc>trident</jats:sc>, a Python-based open-source tool for post-processing hydrodynamical simulations to produce synthetic absorption spectra and related data. <jats:sc>trident</jats:sc> can (i) create absorption-line spectra for any trajectory through a simulated data set mimicking both background quasar and down-the-barrel configurations; (ii) reproduce the spectral characteristics of common instruments like the Cosmic Origins Spectrograph; (iii) operate across the ultraviolet, optical, and infrared using customizable absorption-line lists; (iv) trace simulated physical structures directly to spectral features; (v) approximate the presence of ion species absent from the simulation outputs; (vi) generate column density maps for any ion; and (vii) provide support for all major astrophysical hydrodynamical codes. <jats:sc>trident</jats:sc> was originally developed to aid in the interpretation of observations of the circumgalactic medium and intergalactic medium, but it remains a general tool applicable in other contexts.</jats:p>",
     "DOI": "10.3847/1538-4357/aa7e2d",
     "type": "article-journal",
     "page": "59",
@@ -5055,6 +5060,7 @@
   {
     "publisher": "American Astronomical Society",
     "issue": "2",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>We present an implementation of an adaptive ray-tracing (ART) module in the <jats:italic>Athena</jats:italic> hydrodynamics code that accurately and efficiently handles the radiative transfer involving multiple point sources on a three-dimensional Cartesian grid. We adopt a recently proposed parallel algorithm that uses nonblocking, asynchronous MPI communications to accelerate transport of rays across the computational domain. We validate our implementation through several standard test problems, including the propagation of radiation in vacuum and the expansions of various types of H <jats:sc>ii</jats:sc> regions. Additionally, scaling tests show that the cost of a full ray trace per source remains comparable to that of the hydrodynamics update on up to <jats:inline-formula>\n                     <jats:tex-math>\n<?CDATA $\\sim {10}^{3}$?>\n</jats:tex-math>\n                     <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" overflow=\"scroll\">\n                        <mml:mo>∼</mml:mo>\n                        <mml:msup>\n                           <mml:mrow>\n                              <mml:mn>10</mml:mn>\n                           </mml:mrow>\n                           <mml:mrow>\n                              <mml:mn>3</mml:mn>\n                           </mml:mrow>\n                        </mml:msup>\n                     </mml:math>\n                     <jats:inline-graphic xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"apjaa9b80ieqn1.gif\" xlink:type=\"simple\" />\n                  </jats:inline-formula> processors. To demonstrate application of our ART implementation, we perform a simulation of star cluster formation in a marginally bound, turbulent cloud, finding that its star formation efficiency is 12% when both radiation pressure forces and photoionization by UV radiation are treated. We directly compare the radiation forces computed from the ART scheme with those from the <jats:italic>M</jats:italic>\n                  <jats:sub>1</jats:sub> closure relation. Although the ART and <jats:italic>M</jats:italic>\n                  <jats:sub>1</jats:sub> schemes yield similar results on large scales, the latter is unable to resolve the radiation field accurately near individual point sources.</jats:p>",
     "DOI": "10.3847/1538-4357/aa9b80",
     "type": "article-journal",
     "page": "93",
@@ -5097,6 +5103,7 @@
   {
     "publisher": "American Astronomical Society",
     "issue": "2",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>The details of the physical mechanism that drives core-collapse supernovae (CCSNe) remain uncertain. While there is an emerging consensus on the qualitative outcome of detailed CCSN mechanism simulations in 2D, only recently have high-fidelity 3D simulations become possible. Here we present the results of an extensive set of 3D CCSN simulations using high-fidelity multidimensional neutrino transport, high-resolution hydrodynamics, and approximate general relativistic gravity. We employ a state-of-the-art 20 <jats:italic>M</jats:italic>\n                  <jats:sub>☉</jats:sub> progenitor generated using Modules for Experiments in Stellar Astrophysics, and the SFHo equation of state. While none of our 3D CCSN simulations explode within ∼500 ms after core bounce, we find that the presence of large-scale aspherical motion in the Si and O shells aid shock expansion and bring the models closer to the threshold of explosion. We also find some dependence on resolution and geometry (octant versus full 4<jats:italic>π</jats:italic>). As has been noted in other recent works, we find that the post-shock turbulence plays an important role in determining the overall dynamical evolution of our simulations. We find a strong standing accretion shock instability (SASI) that develops at late times. The SASI produces transient shock expansions, but these do not result in any explosions. We also report that for a subset of our simulations, we find conclusive evidence for the lepton-number emission self-sustained asymmetry, which until now has not been confirmed by independent simulation codes. Both the progenitor asphericities and the SASI-induced transient shock expansion phases generate transient gravitational waves and neutrino signal modulations via perturbations of the protoneutron star by turbulent motions.</jats:p>",
     "DOI": "10.3847/1538-4357/aadcf7",
     "type": "article-journal",
     "page": "81",
@@ -5131,6 +5138,7 @@
   {
     "publisher": "American Astronomical Society",
     "issue": "1",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>To adequately constrain the frequency of energy deposition in active region cores in the solar corona, systematic comparisons between detailed models and observational data are needed. In this paper, we describe a pipeline for forward modeling active region emission using magnetic field extrapolations and field-aligned hydrodynamic models. We use this pipeline to predict time-dependent emission from active region NOAA 1158 for low-, intermediate-, and high-frequency nanoflares. In each pixel of our predicted multi-wavelength, time-dependent images, we compute two commonly used diagnostics: the emission measure slope and the time lag. We find that signatures of the heating frequency persist in both of these diagnostics. In particular, our results show that the distribution of emission measure slopes narrows and the mean decreases with decreasing heating frequency and that the range of emission measure slopes is consistent with past observational and modeling work. Furthermore, we find that the time lag becomes increasingly spatially coherent with decreasing heating frequency while the distribution of time lags across the whole active region becomes more broad with increasing heating frequency. In a follow-up paper, we train a random forest classifier on these predicted diagnostics and use this model to classify real observations of NOAA 1158 in terms of the underlying heating frequency.</jats:p>",
     "DOI": "10.3847/1538-4357/ab290c",
     "type": "article-journal",
     "page": "56",
@@ -5157,7 +5165,7 @@
         [
           2019,
           7,
-          25
+          20
         ]
       ]
     },
@@ -5171,11 +5179,12 @@
   {
     "publisher": "American Astronomical Society",
     "issue": "1",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>We describe a star cluster formation model that includes individual star formation from self-gravitating, magnetized gas, coupled to collisional stellar dynamics. The model uses the Astrophysical Multi-purpose Software Environment to integrate an adaptive-mesh magnetohydrodynamics code (<jats:monospace>FLASH</jats:monospace>) with a fourth order Hermite <jats:italic>N</jats:italic>-body code (<jats:monospace>ph4</jats:monospace>), a stellar evolution code (<jats:monospace>SeBa</jats:monospace>), and a method for resolving binary evolution (<jats:monospace>multiples</jats:monospace>). This combination yields unique star-formation simulations that allow us to study binaries formed dynamically from interactions with both other stars and dense, magnetized gas subject to stellar feedback during the birth and early evolution of stellar clusters. We find that for massive stars, our simulations are consistent with the observed dynamical binary fractions and mass ratios. However, our binary fraction drops well below observed values for lower mass stars, presumably due to unincluded binary formation during initial star formation. Further, we observe a buildup of binaries near the hard-soft boundary that may be an important mechanism driving early cluster contraction.</jats:p>",
     "DOI": "10.3847/1538-4357/ab4db1",
     "type": "article-journal",
     "page": "62",
     "source": "Crossref",
-    "title": "Collisional <i>N</i>-body Dynamics Coupled to Self-gravitating Magnetohydrodynamics Reveals Dynamical Binary Formation",
+    "title": "Collisional N-body Dynamics Coupled to Self-gravitating Magnetohydrodynamics Reveals Dynamical Binary Formation",
     "volume": "887",
     "author": [
       {
@@ -5205,7 +5214,7 @@
         [
           2019,
           12,
-          11
+          10
         ]
       ]
     },
@@ -5259,7 +5268,7 @@
   {
     "publisher": "American Astronomical Society",
     "issue": "2",
-    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Understanding the formation of stellar clusters requires following the interplay between gas and newly formed stars accurately. We therefore couple the magnetohydrodynamics code <jats:monospace>FLASH</jats:monospace> to the <jats:italic>N</jats:italic>-body code <jats:monospace>ph4</jats:monospace> and the stellar evolution code <jats:monospace>SeBa</jats:monospace> using the Astrophysical Multipurpose Software Environment (<jats:monospace>AMUSE</jats:monospace>) to model stellar dynamics, evolution, and collisional <jats:italic>N</jats:italic>-body dynamics and the formation of binary and higher-order multiple systems, while implementing stellar feedback in the form of radiation, stellar winds, and supernovae in <jats:monospace>FLASH</jats:monospace>. We here describe the algorithms used for each of these processes. We denote this integrated package Torch. We then use this novel numerical method to simulate the formation and early evolution of several examples of open clusters of ∼1000 stars formed from clouds with a mass range of 10<jats:sup>3</jats:sup> \n                  <jats:italic>M</jats:italic>\n                  <jats:sub>⊙</jats:sub> to 10<jats:sup>5</jats:sup> \n                  <jats:italic>M</jats:italic>\n                  <jats:sub>⊙</jats:sub>. Analyzing the effects of stellar feedback on the gas and stars of the natal clusters, we find that in these examples, the stellar clusters are resilient to disruption, even in the presence of intense feedback. This can even slightly increase the amount of dense, Jeans unstable gas by sweeping up shells; thus, a stellar wind strong enough to trap its own H <jats:sc>ii</jats:sc> region shows modest triggering of star formation. Our clusters are born moderately mass segregated, an effect enhanced by feedback, and retained after the ejection of their natal gas, in agreement with observations.</jats:p>",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Understanding the formation of stellar clusters requires following the interplay between gas and newly formed stars accurately. We therefore couple the magnetohydrodynamics code <jats:monospace>FLASH</jats:monospace> to the <jats:italic>N</jats:italic>-body code <jats:monospace>ph4</jats:monospace> and the stellar evolution code <jats:monospace>SeBa</jats:monospace> using the Astrophysical Multipurpose Software Environment (<jats:monospace>AMUSE</jats:monospace>) to model stellar dynamics, evolution, and collisional <jats:italic>N</jats:italic>-body dynamics and the formation of binary and higher-order multiple systems, while implementing stellar feedback in the form of radiation, stellar winds, and supernovae in <jats:monospace>FLASH</jats:monospace>. We here describe the algorithms used for each of these processes. We denote this integrated package Torch. We then use this novel numerical method to simulate the formation and early evolution of several examples of open clusters of ∼1000 stars formed from clouds with a mass range of 10<jats:sup>3</jats:sup>\n                  <jats:italic>M</jats:italic>\n                  <jats:sub>⊙</jats:sub> to 10<jats:sup>5</jats:sup>\n                  <jats:italic>M</jats:italic>\n                  <jats:sub>⊙</jats:sub>. Analyzing the effects of stellar feedback on the gas and stars of the natal clusters, we find that in these examples, the stellar clusters are resilient to disruption, even in the presence of intense feedback. This can even slightly increase the amount of dense, Jeans unstable gas by sweeping up shells; thus, a stellar wind strong enough to trap its own H <jats:sc>ii</jats:sc> region shows modest triggering of star formation. Our clusters are born moderately mass segregated, an effect enhanced by feedback, and retained after the ejection of their natal gas, in agreement with observations.</jats:p>",
     "DOI": "10.3847/1538-4357/abc011",
     "type": "article-journal",
     "page": "192",
@@ -5310,6 +5319,7 @@
   {
     "publisher": "American Astronomical Society",
     "issue": "2",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>We present a suite of high-resolution cosmological zoom-in simulations to <jats:italic>z</jats:italic> = 4 of a 10<jats:sup>12</jats:sup>\n                  <jats:italic>M</jats:italic>\n                  <jats:sub>⊙</jats:sub> halo at <jats:italic>z</jats:italic> = 0, obtained using seven contemporary astrophysical simulation codes (A<jats:sc>rt-I</jats:sc>, E<jats:sc>nzo</jats:sc>, R<jats:sc>amses</jats:sc>, C<jats:sc>hanga</jats:sc>, G<jats:sc>adget-3</jats:sc>, G<jats:sc>ear</jats:sc>, and G<jats:sc>izmo</jats:sc>) widely used in the numerical galaxy formation community. The physics prescriptions for gas cooling and heating and star formation are the same as the ones used in our previous Assembling Galaxies of Resolved Anatomy (AGORA) disk comparison but now account for the effects of cosmological processes such as the expansion of the universe, intergalactic gas inflow, and the cosmic ultraviolet background radiation emitted by massive stars and quasars. In this work, we introduce the most careful comparison yet of galaxy formation simulations run by different code groups, together with a series of four calibration steps each of which is designed to reduce the number of tunable simulation parameters adopted in the final run. In the first two steps, we methodically calibrate the gas physics, such as cooling and heating, in simulations without star formation. In the third step, we seek agreement on the total stellar mass produced with the common star formation prescription used in the AGORA disk comparison, in stellar-feedback-free simulations. In the last calibration step, we activate stellar feedback, where each code group is asked to set the feedback prescription to as close to the most widely used one in its code community as possible, while aiming for convergence in the stellar mass at <jats:italic>z</jats:italic> = 4 to the values predicted by semiempirical models. After all the participating code groups successfully complete the calibration steps, we achieve a suite of cosmological simulations with similar mass assembly histories down to <jats:italic>z</jats:italic> = 4. With numerical accuracy that resolves the internal structure of a target halo (≲100 physical pc at <jats:italic>z</jats:italic> = 4), we find that the codes overall agree well with one another, e.g., in gas and stellar properties, but also show differences, e.g., in circumgalactic medium (CGM) properties. We argue that, if adequately tested in accordance with our proposed calibration steps and common parameters, high-resolution cosmological zoom-in simulations can have robust and reproducible results. New code groups are invited to join and enrich this comparison by generating equivalent models or to test the code’s compatibility on their own, by adopting the common initial conditions, the common easy-to-implement physics package, and the proposed calibration steps. Further analyses of the zoom-in simulations presented here will be presented in forthcoming reports from the AGORA Collaboration, including studies of the CGM, simulations by additional codes, and results at lower redshift.</jats:p>",
     "DOI": "10.3847/1538-4357/ac088a",
     "type": "article-journal",
     "page": "64",
@@ -5408,7 +5418,8 @@
       {
         "given": "Matthew J.",
         "family": "Turk"
-      }
+      },
+      {}
     ],
     "container-title": "The Astrophysical Journal",
     "issued": {
@@ -5601,7 +5612,7 @@
   {
     "publisher": "American Astronomical Society",
     "issue": "1",
-    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>We introduce the Phoenix Simulations, a suite of highly resolved cosmological simulations featuring hydrodynamics, primordial gas chemistry, primordial and enriched star formation and feedback, UV radiative transfer, and saved outputs with Δ<jats:italic>t</jats:italic> = 200 kyr. We observe 73,523 individual primordial stars within 3313 distinct regions forming 2110 second-generation enriched star clusters by <jats:italic>z</jats:italic> ≥ 12 within a combined 177.25 Mpc<jats:sup>3</jats:sup> volume across three simulations. The regions that lead to enriched star formation can contain ≳150 primordial stars, with 80% of regions having experienced combinations of primordial Type II, hypernovae, and/or pair-instability supernovae. Primordial supernovae enriched 0.8% of the volume, with 2% of enriched gas enriched by later-generation stars. We determine the extent of a primordial stellar region by its metal-rich or ionized hydrogen surrounding cloud; the metal-rich and ionized regions have time-dependent average radii <jats:italic>r</jats:italic> ≲ 3<jats:strike> </jats:strike>kpc. 7 and 17% of regions have <jats:italic>r</jats:italic> &gt; 7 kpc for metal-rich and ionized radii, respectively. We find that the metallicity distribution function of second-generation stars overlaps that of subsequent Population II star formation, spanning metal-deficient (∼7.94 × 10<jats:sup>−8</jats:sup> \n                  <jats:italic>Z</jats:italic>\n                  <jats:sub>⊙</jats:sub>) to supersolar (∼3.71 <jats:italic>Z</jats:italic>\n                  <jats:sub>⊙</jats:sub>), and that 30.5% of second-generation stars have <jats:italic>Z</jats:italic> &gt; 10<jats:sup>−2</jats:sup> \n                  <jats:italic>Z</jats:italic>\n                  <jats:sub>⊙</jats:sub>. We find that the metallicity of second-generation stars depends on progenitor configuration, with metals from pair-instability supernovae contributing to the most metal-rich clusters; these clusters form promptly after the supernova event. Finally, we create an interpretable regression model to predict the radius of the metal-rich influence of Population III star systems within the first 7–18 Myr after the first Population III stars form in the region.</jats:p>",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>We introduce the Phoenix Simulations, a suite of highly resolved cosmological simulations featuring hydrodynamics, primordial gas chemistry, primordial and enriched star formation and feedback, UV radiative transfer, and saved outputs with Δ<jats:italic>t</jats:italic> = 200 kyr. We observe 73,523 individual primordial stars within 3313 distinct regions forming 2110 second-generation enriched star clusters by <jats:italic>z</jats:italic> ≥ 12 within a combined 177.25 Mpc<jats:sup>3</jats:sup> volume across three simulations. The regions that lead to enriched star formation can contain ≳150 primordial stars, with 80% of regions having experienced combinations of primordial Type II, hypernovae, and/or pair-instability supernovae. Primordial supernovae enriched 0.8% of the volume, with 2% of enriched gas enriched by later-generation stars. We determine the extent of a primordial stellar region by its metal-rich or ionized hydrogen surrounding cloud; the metal-rich and ionized regions have time-dependent average radii <jats:italic>r</jats:italic> ≲ 3<jats:strike> </jats:strike>kpc. 7 and 17% of regions have <jats:italic>r</jats:italic> &gt; 7 kpc for metal-rich and ionized radii, respectively. We find that the metallicity distribution function of second-generation stars overlaps that of subsequent Population II star formation, spanning metal-deficient (∼7.94 × 10<jats:sup>−8</jats:sup>\n                  <jats:italic>Z</jats:italic>\n                  <jats:sub>⊙</jats:sub>) to supersolar (∼3.71 <jats:italic>Z</jats:italic>\n                  <jats:sub>⊙</jats:sub>), and that 30.5% of second-generation stars have <jats:italic>Z</jats:italic> &gt; 10<jats:sup>−2</jats:sup>\n                  <jats:italic>Z</jats:italic>\n                  <jats:sub>⊙</jats:sub>. We find that the metallicity of second-generation stars depends on progenitor configuration, with metals from pair-instability supernovae contributing to the most metal-rich clusters; these clusters form promptly after the supernova event. Finally, we create an interpretable regression model to predict the radius of the metal-rich influence of Population III star systems within the first 7–18 Myr after the first Population III stars form in the region.</jats:p>",
     "DOI": "10.3847/1538-4357/ac6c87",
     "type": "article-journal",
     "page": "71",
@@ -5636,6 +5647,7 @@
   {
     "publisher": "American Astronomical Society",
     "issue": "2",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>We report on the development of MPI-AMRVAC version 2.0, which is an open-source framework for parallel, grid-adaptive simulations of hydrodynamic and magnetohydrodynamic (MHD) astrophysical applications. The framework now supports radial grid stretching in combination with adaptive mesh refinement (AMR). The advantages of this combined approach are demonstrated with one-dimensional, two-dimensional, and three-dimensional examples of spherically symmetric Bondi accretion, steady planar Bondi–Hoyle–Lyttleton flows, and wind accretion in supergiant X-ray binaries. Another improvement is support for the generic splitting of any background magnetic field. We present several tests relevant for solar physics applications to demonstrate the advantages of field splitting on accuracy and robustness in extremely low-plasma <jats:italic>β</jats:italic> environments: a static magnetic flux rope, a magnetic null-point, and magnetic reconnection in a current sheet with either uniform or anomalous resistivity. Our implementation for treating anisotropic thermal conduction in multi-dimensional MHD applications is also described, which generalizes the original slope-limited symmetric scheme from two to three dimensions. We perform ring diffusion tests that demonstrate its accuracy and robustness, and show that it prevents the unphysical thermal flux present in traditional schemes. The improved parallel scaling of the code is demonstrated with three-dimensional AMR simulations of solar coronal rain, which show satisfactory strong scaling up to 2000 cores. Other framework improvements are also reported: the modernization and reorganization into a library, the handling of automatic regression tests, the use of inline/online Doxygen documentation, and a new future-proof data format for input/output.</jats:p>",
     "DOI": "10.3847/1538-4365/aaa6c8",
     "type": "article-journal",
     "page": "30",
@@ -5670,7 +5682,7 @@
         [
           2018,
           2,
-          5
+          1
         ]
       ]
     },
@@ -5682,6 +5694,7 @@
   {
     "publisher": "American Astronomical Society",
     "issue": "1",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>We present <jats:sc>powderday</jats:sc> (available at <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://github.com/dnarayanan/powderday\" xlink:type=\"simple\">https://github.com/dnarayanan/powderday</jats:ext-link>), a flexible, fast, open-source dust radiative transfer package designed to interface with both idealized and cosmological galaxy formation simulations. <jats:sc>powderday</jats:sc> builds on <jats:sc>fsps</jats:sc> stellar population synthesis models, and <jats:sc>hyperion</jats:sc> dust radiative transfer, and employs <jats:sc>yt</jats:sc> to interface between different software packages. We include our stellar population synthesis modeling on the fly, allowing significant flexibility in the assumed stellar physics and nebular line emission. The dust content follows either simple observationally motivated prescriptions (i.e., constant dust-to-metals ratios, or dust-to-gas ratios that vary with metallicity), direct modeling from galaxy formation simulations that include dust physics, as well as a novel approach that includes the dust content via learning-based algorithms from the <jats:sc>simba</jats:sc> cosmological galaxy formation simulation. Active galactic nuclei (AGNs) can additionally be included via a range of prescriptions. The output of these models are broadband (912 Å–1 mm) spectral energy distributions (SEDs), as well as filter-convolved monochromatic images. <jats:sc>powderday</jats:sc> is designed to eliminate last-mile efforts by researchers that employ different hydrodynamic galaxy formation models and seamlessly interfaces with <jats:sc>gizmo</jats:sc>, <jats:sc>arepo</jats:sc>, <jats:sc>gasoline</jats:sc>, <jats:sc>changa</jats:sc>, and <jats:sc>enzo</jats:sc>. We demonstrate the capabilities of the code via three applications: a model for the star formation rate–infrared luminosity relation in galaxies (including the impact of AGNs), the impact of circumstellar dust around AGB stars on the mid-infrared emission from galaxy SEDs, and the impact of galaxy inclination angle on dust attenuation laws.</jats:p>",
     "DOI": "10.3847/1538-4365/abc487",
     "type": "article-journal",
     "page": "12",
@@ -5780,7 +5793,7 @@
         [
           2021,
           1,
-          13
+          1
         ]
       ]
     },
@@ -5792,6 +5805,7 @@
   {
     "publisher": "American Astronomical Society",
     "issue": "2",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>We investigate applying 3D deep convolutional neural networks as fast surrogate models of the formation and feedback effects of primordial stars in hydrodynamic cosmological simulations of the first galaxies. Here, we present the surrogate model to predict localized primordial star formation; the feedback model will be presented in a subsequent paper. The star formation prediction model consists of two submodels: the first is a 3D volume classifier that predicts which (10 comoving kpc)<jats:sup>3</jats:sup> volumes will host star formation, followed by a 3D Inception-based U-net voxel segmentation model that predicts which voxels will form primordial stars. We find that the combined model predicts primordial star-forming volumes with high skill, with <jats:italic>F</jats:italic>\n                  <jats:sub>1</jats:sub> &gt; 0.995 and true skill score (TSS) &gt;0.994. The star formation is localized within the volume to ≲5<jats:sup>3</jats:sup> voxels (∼1.6 comoving kpc<jats:sup>3</jats:sup>) with <jats:italic>F</jats:italic>\n                  <jats:sub>1</jats:sub> &gt; 0.399 and TSS &gt;0.857. Applied to simulations with low spatial resolution, the model predicts star-forming regions in the same locations and at similar redshifts as sites in resolved full-physics simulations that explicitly model primordial star formation and feedback. When applied to simulations with lower mass resolution, we find that the model predicts star-forming regions at later redshift due to delayed structure formation resulting from lower mass resolution. Our model predicts primordial star formation without halo finding, so it will be useful in spatially under-resolved simulations that cannot resolve primordial star-forming halos. To our knowledge, this is the first model that can predict primordial star-forming regions that match highly resolved cosmological simulations.</jats:p>",
     "DOI": "10.3847/1538-4365/abfa17",
     "type": "article-journal",
     "page": "41",
@@ -5826,6 +5840,7 @@
   {
     "publisher": "American Astronomical Society",
     "issue": "2",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Intermediate and massive stars drive fast and powerful isotropic winds that interact with the winds of nearby stars in star clusters and the surrounding interstellar medium (ISM). Wind–ISM collisions generate astrospheres around these stars that contain hot <jats:italic>T</jats:italic> ∼ 10<jats:sup>7</jats:sup> K gas that adiabatically expands. As individual bubbles expand and collide they become unstable, potentially driving turbulence in star clusters. In this Letter we use hydrodynamic simulations to model a densely populated young star cluster within a homogeneous cloud to study stellar wind collisions with the surrounding ISM. We model a mass-segregated cluster of 20 B-type young main-sequence stars with masses ranging from 3 to 17 <jats:italic>M</jats:italic>\n                  <jats:sub>⊙</jats:sub>. We evolve the winds for ∼11 kyr and show that wind–ISM collisions and overlapping wind-blown bubbles around B-stars mix the hot gas and ISM material, generating Kolmogorov-like turbulence on small scales early in its evolution. We discuss how turbulence driven by stellar winds may impact the subsequent generation of star formation in the cluster.</jats:p>",
     "DOI": "10.3847/2041-8213/ababae",
     "type": "article-journal",
     "page": "L30",
@@ -5854,24 +5869,25 @@
         "family": "Ramirez-Ruiz"
       }
     ],
-    "container-title": "The Astrophysical Journal",
+    "container-title": "The Astrophysical Journal Letters",
     "issued": {
       "date-parts": [
         [
           2020,
           8,
-          19
+          1
         ]
       ]
     },
     "URL": "https://doi.org/grk7mg",
-    "container-title-short": "ApJ",
+    "container-title-short": "ApJL",
     "id": "wzYhh0PP",
     "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.3847/2041-8213/ababae"
   },
   {
     "publisher": "American Astronomical Society",
     "issue": "1",
+    "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>The Moon is believed to have formed in the aftermath of a giant impact between a planetary-mass body and the proto-Earth. In a typical giant impact scenario, a disk of vapor, liquid, and solid debris forms around the proto-Earth and—after possibly decades of evolution—condenses to form the Moon. Using state-of-the-art numerical simulations, we investigate the dynamical effects of magnetic fields on the Moon-forming giant impact. We show that turbulence generated by the collision itself, shear in the boundary layer between the post-impact debris field and the proto-Earth, and turbulence in the vapor component of the disk amplify the field to dynamically significant strengths. Magnetically driven turbulence promotes angular momentum transport in the protolunar disk. Debris material is accreted onto the proto-Earth, making Moon formation less efficient, while the disk is forced to spread to larger radii, cooling at its outer edge. Magnetic fields speed the evolution of the vapor component of the protolunar disk and hasten the formation of the Moon.</jats:p>",
     "DOI": "10.3847/2041-8213/abbffd",
     "type": "article-journal",
     "page": "L15",
@@ -5888,7 +5904,7 @@
         "family": "Gammie"
       }
     ],
-    "container-title": "The Astrophysical Journal",
+    "container-title": "The Astrophysical Journal Letters",
     "issued": {
       "date-parts": [
         [
@@ -5899,7 +5915,7 @@
       ]
     },
     "URL": "https://doi.org/gqsz6j",
-    "container-title-short": "ApJ",
+    "container-title-short": "ApJL",
     "id": "159ZGwZYu",
     "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.3847/2041-8213/abbffd"
   },
@@ -6574,7 +6590,7 @@
         [
           "2024",
           4,
-          7
+          14
         ]
       ]
     },

@@ -4,7 +4,7 @@ ahf
 AIP
 Aitoff
 Alamos
-Alankar
+alankar
 Alpes
 Altay
 AMR
@@ -39,7 +39,7 @@ Birla
 Bitbucket
 bitwise
 bookkeepping
-Bool
+bool
 Borro
 BoxLib
 Britton
@@ -52,7 +52,7 @@ Cadair
 Cadiou
 candela
 Cartopy
-CGS
+cgs
 Champaign
 changeset
 changesets
@@ -76,7 +76,7 @@ colormap
 colormapping
 colormaps
 colorspace
-comoving
+Comoving
 conda
 connectedness
 coord
@@ -116,11 +116,11 @@ dobj
 DTU
 Duplicative
 durations
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
-enzo
+Enzo
 Enzo’s
 ethlau
 Evanston
@@ -138,8 +138,8 @@ fisheye
 fof
 formatter
 formatters
-Frontend
-frontends
+frontend
+Frontends
 frontrow
 Gainesville
 galtay
@@ -217,7 +217,7 @@ LLC
 logarithmically
 LSST
 Madicken
-Matplotlib
+matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -240,7 +240,7 @@ munkm
 Naiman
 namespace
 Narayanan
-nastasha
+Nastasha
 Navaneeth
 neper
 NetCDF
@@ -259,8 +259,8 @@ NumPy
 OAC
 octants
 octree
-octrees
-Octs
+Octrees
+octs
 odowska
 olebole
 OpenMP
@@ -291,7 +291,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-powderday
+Powderday
 pre
 prefixable
 programmatically
@@ -359,7 +359,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-sympy
+SymPy
 sytlistic
 TBD
 Tbytes
@@ -382,7 +382,7 @@ unyt
 Urbana
 userbase
 Volker
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Wijers
@@ -404,7 +404,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-Zingale
+zingale
 zorder
 Zuckerberg
 ZuHone
