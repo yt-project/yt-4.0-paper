@@ -13,7 +13,7 @@ AMRKDTree
 AMRVAC
 Aperio
 APIs
-Arepo
+AREPO
 Arraki
 arraylike
 ARTIO
@@ -22,7 +22,7 @@ AST
 Astro
 astrojaz
 astrophysically
-AstroPy
+astropy
 astrosmith
 AthenaPK
 atmyers
@@ -39,9 +39,9 @@ Birla
 Bitbucket
 bitwise
 bookkeepping
-bool
+Bool
 Borro
-BoxLib
+boxlib
 Britton
 brittonsmith
 Bugfix
@@ -52,7 +52,7 @@ Cadair
 Cadiou
 candela
 Cartopy
-cgs
+CGS
 Champaign
 changeset
 changesets
@@ -116,7 +116,7 @@ dobj
 DTU
 Duplicative
 durations
-dutta
+Dutta
 easies
 elliottbiondo
 entrypoints
@@ -139,7 +139,7 @@ fof
 formatter
 formatters
 frontend
-Frontends
+frontends
 frontrow
 Gainesville
 galtay
@@ -240,7 +240,7 @@ munkm
 Naiman
 namespace
 Narayanan
-Nastasha
+nastasha
 Navaneeth
 neper
 NetCDF
@@ -255,11 +255,11 @@ NMSU
 nosetests
 NSSC
 NumFOCUS
-NumPy
+numpy
 OAC
 octants
 octree
-Octrees
+octrees
 octs
 odowska
 olebole
@@ -284,14 +284,14 @@ pixelization
 pixelize
 pixelized
 pixelizer
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
 PlotCollection
 pmd
 potentia
-Powderday
+powderday
 pre
 prefixable
 programmatically
@@ -315,7 +315,7 @@ recursed
 redshifts
 reinstrumented
 renderer
-resampling
+Resampling
 responsivity
 RGBA
 Ritali
@@ -359,7 +359,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-SymPy
+sympy
 sytlistic
 TBD
 Tbytes
@@ -372,7 +372,7 @@ Triden
 Tsai
 UC
 unappropriate
-unitful
+Unitful
 unitless
 Université
 unmergeable
@@ -396,7 +396,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-YTEP
+ytep
 YTEPs
 ytini
 YTQuadTreeProj
@@ -404,7 +404,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-zingale
+Zingale
 zorder
 Zuckerberg
 ZuHone
