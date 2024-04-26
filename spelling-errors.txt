@@ -1,4 +1,5 @@
 adaptahop
+affordances
 agurvich
 ahf
 AIP
@@ -16,10 +17,10 @@ APIs
 AREPO
 Arraki
 arraylike
-ARTIO
+artio
 arwetzel
 AST
-Astro
+astro
 astrojaz
 astrophysically
 astropy
@@ -41,7 +42,7 @@ bitwise
 bookkeepping
 Bool
 Borro
-boxlib
+BoxLib
 Britton
 brittonsmith
 Bugfix
@@ -56,7 +57,7 @@ CGS
 Champaign
 changeset
 changesets
-CHOLLA
+cholla
 chombo
 chrishavlin
 chummels
@@ -76,7 +77,7 @@ colormap
 colormapping
 colormaps
 colorspace
-Comoving
+comoving
 conda
 connectedness
 coord
@@ -88,7 +89,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-Cython
+cython
 dask
 d’Astrophysique
 dataframe
@@ -116,11 +117,11 @@ dobj
 DTU
 Duplicative
 durations
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
-Enzo
+enzo
 Enzo’s
 ethlau
 Evanston
@@ -138,7 +139,7 @@ fisheye
 fof
 formatter
 formatters
-frontend
+Frontend
 frontends
 frontrow
 Gainesville
@@ -147,6 +148,7 @@ gdf
 genrated
 geosciences
 Ghosh
+GLSL
 glyphs
 Gnedin
 Goldbaum
@@ -171,6 +173,7 @@ Huebl
 Hummels
 hydrodynamical
 hyschive
+ImGUI
 incrementing
 instantiation
 Institut
@@ -217,7 +220,7 @@ LLC
 logarithmically
 LSST
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -233,14 +236,14 @@ moab
 Mollweide
 Monaghan
 mornkr
-MPI
+mpi
 mtryan
 Munk
 munkm
 Naiman
 namespace
 Narayanan
-nastasha
+Nastasha
 Navaneeth
 neper
 NetCDF
@@ -255,14 +258,15 @@ NMSU
 nosetests
 NSSC
 NumFOCUS
-numpy
+NumPy
 OAC
 octants
 octree
-octrees
-octs
+Octrees
+Octs
 odowska
 olebole
+OpenGL
 OpenMP
 Orf
 Ortho
@@ -291,7 +295,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-powderday
+Powderday
 pre
 prefixable
 programmatically
@@ -301,7 +305,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyXSIM
+pyxsim
 qobilidop
 quadtree
 radiative
@@ -315,7 +319,7 @@ recursed
 redshifts
 reinstrumented
 renderer
-Resampling
+resampling
 responsivity
 RGBA
 Ritali
@@ -334,6 +338,8 @@ Schive
 Scopatz
 sdf
 SHA
+shader
+shaders
 Shaokun
 Shoshani
 Sinha
@@ -367,6 +373,7 @@ themousepotato
 Tonnesen
 toolkits
 tradeoff
+Traitlets
 transformative
 Triden
 Tsai
@@ -382,6 +389,7 @@ unyt
 Urbana
 userbase
 Volker
+Vulkan
 webassembly
 Wetzel
 Widgyts
@@ -396,7 +404,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj

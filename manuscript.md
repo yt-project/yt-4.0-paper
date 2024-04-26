@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2024-04-22'
+date-meta: '2024-04-26'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -85,11 +85,11 @@ header-includes: |
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2024-04-22" />
-  <meta name="citation_publication_date" content="2024-04-22" />
-  <meta property="article:published_time" content="2024-04-22" />
-  <meta name="dc.modified" content="2024-04-22T01:27:55+00:00" />
-  <meta property="article:modified_time" content="2024-04-22T01:27:55+00:00" />
+  <meta name="dc.date" content="2024-04-26" />
+  <meta name="citation_publication_date" content="2024-04-26" />
+  <meta property="article:published_time" content="2024-04-26" />
+  <meta name="dc.modified" content="2024-04-26T17:55:44+00:00" />
+  <meta property="article:modified_time" content="2024-04-26T17:55:44+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -302,9 +302,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/ec2f73af348b75123dee575dd251b5015bdc953e/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ec2f73af348b75123dee575dd251b5015bdc953e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ec2f73af348b75123dee575dd251b5015bdc953e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/715efc533809818a68c62767928e9b8e6b0af802/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/715efc533809818a68c62767928e9b8e6b0af802/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/715efc533809818a68c62767928e9b8e6b0af802/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -327,10 +327,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/ec2f73af348b75123dee575dd251b5015bdc953e/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/715efc533809818a68c62767928e9b8e6b0af802/))
 was automatically generated
-from [yt-project/yt-4.0-paper@ec2f73a](https://github.com/yt-project/yt-4.0-paper/tree/ec2f73af348b75123dee575dd251b5015bdc953e)
-on April 22, 2024.
+from [yt-project/yt-4.0-paper@715efc5](https://github.com/yt-project/yt-4.0-paper/tree/715efc533809818a68c62767928e9b8e6b0af802)
+on April 26, 2024.
 </em></small>
 
 
@@ -3503,7 +3503,26 @@ This particular set of transfer functions, with what amounts to multi-channel, m
 
 ### Hardware-accelerated Volume Rendering
 
+Software volume rendering, as described above, provides a number of affordances for careful visualization.
+Specifically, as the code and kernels are written in languages that are similar to more traditional languages such as C and C++, the barrier to entry for describing a new sampling system can be lower.
+That being said, when examining responsiveness, software volume rendering is rarely -- if ever -- competitive with hardware-based volume rendering, such as that accelerated through graphics processing units (GPUs) and using OpenGL, Metal, Vulkan, or one of the higher-level platforms for graphics.
+Fluid interactivity is essentially inaccessible for software volume rendering except on the smallest of datasets.
+And yet, fluid interactivity enables much deeper exploration of the parameter space of visualization, as well as the ability to immerse oneself in data.
 
+To support more interactive visualization (in addition to that described in @sec:jupyter_integration) a basic system for conducting hardware-accelerate, OpenGL-based visualization of `yt`-supported data has been developed in an external package, [`yt_idv`](https://github.com/yt-project/yt_idv/).
+`yt_idv` is built on `PyOpenGL` and provides support for grid-based, particle-based and finite element datasets, with a heavy emphasis on the grid-based datasets.
+While the process of volume rendering is interesting, with many different fascinating areas of inquiry and opportunities for optimization, `yt_idv` is notable for its architecture more than its algorithms and optimization.
+
+`yt_idv` is built using the Traitlets library, and utilizes the immediate-mode graphical user interface system "Dear ImGUI" for presenting a user interface.
+This allows for the system to be largely data-driven; frame redraws are only executed when a parameter changes (such as the camera path, transfer function, etc) and new parameters for the visualization can be easily exposed to the user interface.
+Furthermore, this allows shaders to be dynamically recompiled only as necessary.
+
+In addition to this, the shaders themselves are specified in a configuration file that links GLSL source files into multi-component shaders, allowing declarative construction of shader pipelines and improving interoperability.
+For ray-casting routines, only a small kernel needs to be modified to change the functionality.
+This allows the relatively complex process of casting rays through multiple volumes to be hidden, much as described in @sec:software-volume-rendering.
+Annotations can be added simply, and an event loop has been enabled so that users can interact with the running visualization interface through IPython.
+
+While this project includes a number of additional features designed for accessibility of data and in-depth coupling of visualization with quantitative analysis, they extend beyond the scope of this paper.
 
 
 ## Unitful Arrays and Quantities {#sec:units}
@@ -4206,7 +4225,7 @@ When loading a dataset, yt will attempt to determine what the format of the data
 
 While these may seem like simple, obvious changes to make, they can hide difficult technical challenges, and more importantly, have dramatically improved the user experience for people using yt.
 
-### Jupyter Integration
+### Jupyter Integration {#sec:jupyter_integrationt}
 
 Project Jupyter is an overarching term for a collection of related projects that provide an extensive, end-to-end suite for the user experience of developing code and narrative, as described in depth in (among other papers) @doi:10.1109/MCSE.2021.3059263 and @soton403913.
 While many in the yt community utilize yt through python scripts executed on the command line or through submission queues on high-performance computing resources, a large fraction utilize Jupyter Notebooks for their data exploration.

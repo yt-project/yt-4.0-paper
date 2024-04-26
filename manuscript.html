@@ -67,7 +67,7 @@
   <meta name="author" content="Shin-Rong Tsai" />
   <meta name="author" content="Nastasha Anna Wijers" />
   <meta name="author" content="Add Yourself" />
-  <meta name="dcterms.date" content="2024-04-22" />
+  <meta name="dcterms.date" content="2024-04-26" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Introducing yt 4.0: Analysis and Visualization of Volumetric Data</title>
   <style>
@@ -175,11 +175,11 @@
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2024-04-22" />
-  <meta name="citation_publication_date" content="2024-04-22" />
-  <meta property="article:published_time" content="2024-04-22" />
-  <meta name="dc.modified" content="2024-04-22T01:27:55+00:00" />
-  <meta property="article:modified_time" content="2024-04-22T01:27:55+00:00" />
+  <meta name="dc.date" content="2024-04-26" />
+  <meta name="citation_publication_date" content="2024-04-26" />
+  <meta property="article:published_time" content="2024-04-26" />
+  <meta name="dc.modified" content="2024-04-26T17:55:44+00:00" />
+  <meta property="article:modified_time" content="2024-04-26T17:55:44+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -392,9 +392,9 @@
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/ec2f73af348b75123dee575dd251b5015bdc953e/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ec2f73af348b75123dee575dd251b5015bdc953e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/ec2f73af348b75123dee575dd251b5015bdc953e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/715efc533809818a68c62767928e9b8e6b0af802/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/715efc533809818a68c62767928e9b8e6b0af802/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/715efc533809818a68c62767928e9b8e6b0af802/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -512,10 +512,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://yt-project.github.io/yt-4.0-paper/v/ec2f73af348b75123dee575dd251b5015bdc953e/">permalink</a>)
+(<a href="https://yt-project.github.io/yt-4.0-paper/v/715efc533809818a68c62767928e9b8e6b0af802/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/yt-project/yt-4.0-paper/tree/ec2f73af348b75123dee575dd251b5015bdc953e">yt-project/yt-4.0-paper@ec2f73a</a>
-on April 22, 2024.
+from <a href="https://github.com/yt-project/yt-4.0-paper/tree/715efc533809818a68c62767928e9b8e6b0af802">yt-project/yt-4.0-paper@715efc5</a>
+on April 26, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -3288,6 +3288,22 @@ In the use case of differing opacity for each channel, we modify this such that 
 <span class="math inline">\(a_t\)</span> is then defined individually for each output channel.</p>
 <p>This particular set of transfer functions, with what amounts to multi-channel, multi-field sampling in both output and opacity, can be specified to perform complex functions such as variable scattering, different weights for different channels, etc.</p>
 <h3 id="hardware-accelerated-volume-rendering">Hardware-accelerated Volume Rendering</h3>
+<p>Software volume rendering, as described above, provides a number of affordances for careful visualization.
+Specifically, as the code and kernels are written in languages that are similar to more traditional languages such as C and C++, the barrier to entry for describing a new sampling system can be lower.
+That being said, when examining responsiveness, software volume rendering is rarely – if ever – competitive with hardware-based volume rendering, such as that accelerated through graphics processing units (GPUs) and using OpenGL, Metal, Vulkan, or one of the higher-level platforms for graphics.
+Fluid interactivity is essentially inaccessible for software volume rendering except on the smallest of datasets.
+And yet, fluid interactivity enables much deeper exploration of the parameter space of visualization, as well as the ability to immerse oneself in data.</p>
+<p>To support more interactive visualization (in addition to that described in ??) a basic system for conducting hardware-accelerate, OpenGL-based visualization of <code>yt</code>-supported data has been developed in an external package, <a href="https://github.com/yt-project/yt_idv/"><code>yt_idv</code></a>.
+<code>yt_idv</code> is built on <code>PyOpenGL</code> and provides support for grid-based, particle-based and finite element datasets, with a heavy emphasis on the grid-based datasets.
+While the process of volume rendering is interesting, with many different fascinating areas of inquiry and opportunities for optimization, <code>yt_idv</code> is notable for its architecture more than its algorithms and optimization.</p>
+<p><code>yt_idv</code> is built using the Traitlets library, and utilizes the immediate-mode graphical user interface system “Dear ImGUI” for presenting a user interface.
+This allows for the system to be largely data-driven; frame redraws are only executed when a parameter changes (such as the camera path, transfer function, etc) and new parameters for the visualization can be easily exposed to the user interface.
+Furthermore, this allows shaders to be dynamically recompiled only as necessary.</p>
+<p>In addition to this, the shaders themselves are specified in a configuration file that links GLSL source files into multi-component shaders, allowing declarative construction of shader pipelines and improving interoperability.
+For ray-casting routines, only a small kernel needs to be modified to change the functionality.
+This allows the relatively complex process of casting rays through multiple volumes to be hidden, much as described in <a href="#sec:software-volume-rendering">1.11.41</a>.
+Annotations can be added simply, and an event loop has been enabled so that users can interact with the running visualization interface through IPython.</p>
+<p>While this project includes a number of additional features designed for accessibility of data and in-depth coupling of visualization with quantitative analysis, they extend beyond the scope of this paper.</p>
 <h2 id="sec:units">Unitful Arrays and Quantities</h2>
 <p>At a basic level, <code>yt</code> is an engine for converting data created by a simulation code into a physically meaningful result.
 Attaching physical units to simulation data makes it possible to perform dimensional analysis on the simulation data, adding new opportunities for catching errors in a data processing pipeline.
@@ -3844,7 +3860,7 @@ In recent development history, we have spent a considerable amount of effort att
 For instance, accessing the field <code>"x_velocity"</code> instead of <code>"velocity_x"</code> will produce an error, suggesting the <em>correct</em> field to access.
 When loading a dataset, yt will attempt to determine what the format of the data is; if it is unable to unambiguously identify the data format, it will provide an error message that shows the different options, and indicates how to disambiguate.</p>
 <p>While these may seem like simple, obvious changes to make, they can hide difficult technical challenges, and more importantly, have dramatically improved the user experience for people using yt.</p>
-<h3 id="jupyter-integration">Jupyter Integration</h3>
+<h3 id="sec:jupyter_integrationt">Jupyter Integration</h3>
 <p>Project Jupyter is an overarching term for a collection of related projects that provide an extensive, end-to-end suite for the user experience of developing code and narrative, as described in depth in (among other papers) <span class="citation" data-cites="lOgtbiQz">[<a href="#ref-lOgtbiQz" role="doc-biblioref">108</a>]</span> and <span class="citation" data-cites="16Nvi8gCt">[<a href="#ref-16Nvi8gCt" role="doc-biblioref">109</a>]</span>.
 While many in the yt community utilize yt through python scripts executed on the command line or through submission queues on high-performance computing resources, a large fraction utilize Jupyter Notebooks for their data exploration.
 In addition to enhancements in the user interface for unmodified Python libraries, Jupyter provides opportunities for libraries and applications to provide rich, enhanced interfaces with widgets, styling of text, complex layout and in-line visualizations.
@@ -4053,7 +4069,7 @@ The future development of <code>yt</code> will be focused on solidifying our exi
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
 <div id="ref-cTN2TQIL" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>manubot/manubot</strong> <div class="csl-block">Manubot</div> (2024-04-02) <a href="https://github.com/manubot/manubot">https://github.com/manubot/manubot</a></div>
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>manubot/manubot</strong> <div class="csl-block">Manubot</div> (2024-04-23) <a href="https://github.com/manubot/manubot">https://github.com/manubot/manubot</a></div>
 </div>
 <div id="ref-1GOm01ggN" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>yt: A MULTI-CODE ANALYSIS TOOLKIT FOR ASTROPHYSICAL SIMULATION DATA</strong> <div class="csl-block">Matthew J Turk, Britton D Smith, Jeffrey S Oishi, Stephen Skory, Samuel W Skillman, Tom Abel, Michael L Norman</div> <em>The Astrophysical Journal Supplement Series</em> (2010-12-28) <a href="https://doi.org/ft6md2">https://doi.org/ft6md2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1088/0067-0049/192/1/9">10.1088/0067-0049/192/1/9</a></div></div>
