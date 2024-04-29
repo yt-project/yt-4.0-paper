@@ -5,7 +5,7 @@ ahf
 AIP
 Aitoff
 Alamos
-alankar
+Alankar
 Alpes
 Altay
 AMR
@@ -14,7 +14,7 @@ AMRKDTree
 AMRVAC
 Aperio
 APIs
-AREPO
+arepo
 Arraki
 arraylike
 artio
@@ -23,7 +23,7 @@ AST
 astro
 astrojaz
 astrophysically
-astropy
+AstroPy
 astrosmith
 AthenaPK
 atmyers
@@ -57,7 +57,7 @@ CGS
 Champaign
 changeset
 changesets
-cholla
+CHOLLA
 chombo
 chrishavlin
 chummels
@@ -80,7 +80,7 @@ colorspace
 comoving
 conda
 connectedness
-coord
+Coord
 Coords
 Corentin
 cosmosquark
@@ -89,7 +89,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-cython
+Cython
 dask
 d’Astrophysique
 dataframe
@@ -117,11 +117,11 @@ dobj
 DTU
 Duplicative
 durations
-dutta
+Dutta
 easies
 elliottbiondo
 entrypoints
-enzo
+Enzo
 Enzo’s
 ethlau
 Evanston
@@ -139,7 +139,7 @@ fisheye
 fof
 formatter
 formatters
-Frontend
+frontend
 frontends
 frontrow
 Gainesville
@@ -191,7 +191,7 @@ Ji
 jisuoqing
 jnaiman
 Joana
-Jupyter
+jupyter
 Jupyterlab
 jwise
 jzuhone
@@ -220,7 +220,7 @@ LLC
 logarithmically
 LSST
 Madicken
-Matplotlib
+matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -258,11 +258,11 @@ NMSU
 nosetests
 NSSC
 NumFOCUS
-NumPy
+numpy
 OAC
 octants
 octree
-Octrees
+octrees
 Octs
 odowska
 olebole
@@ -288,14 +288,14 @@ pixelization
 pixelize
 pixelized
 pixelizer
-Pixelizers
+pixelizers
 pixelizes
 Pixelizing
 Planétologie
 PlotCollection
 pmd
 potentia
-Powderday
+powderday
 pre
 prefixable
 programmatically
@@ -305,7 +305,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyxsim
+pyXSIM
 qobilidop
 quadtree
 radiative
@@ -347,7 +347,7 @@ situ
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger
@@ -379,7 +379,7 @@ Triden
 Tsai
 UC
 unappropriate
-Unitful
+unitful
 unitless
 Université
 unmergeable
@@ -390,7 +390,7 @@ Urbana
 userbase
 Volker
 Vulkan
-webassembly
+WebAssembly
 Wetzel
 Widgyts
 Wijers
