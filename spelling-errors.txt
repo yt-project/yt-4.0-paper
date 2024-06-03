@@ -11,13 +11,13 @@ Altay
 AMR
 AMReX
 AMRKDTree
-amrvac
+AMRVAC
 Aperio
 APIs
 AREPO
 Arraki
 arraylike
-ARTIO
+artio
 arwetzel
 AST
 Astro
@@ -38,7 +38,7 @@ binarily
 Biondo
 Birla
 Bitbucket
-Bitwise
+bitwise
 bookkeepping
 Bool
 Borro
@@ -53,11 +53,11 @@ Cadair
 Cadiou
 candela
 Cartopy
-CGS
+cgs
 Champaign
 changeset
 changesets
-CHOLLA
+cholla
 chombo
 chrishavlin
 chummels
@@ -77,10 +77,10 @@ colormap
 colormapping
 Colormaps
 colorspace
-comoving
+Comoving
 conda
 connectedness
-coord
+Coord
 Coords
 Corentin
 cosmosquark
@@ -97,7 +97,7 @@ datapoint
 dataset
 datasetfrom
 dataset’s
-Datasets
+datasets
 datasetwere
 datatypes
 decomp
@@ -117,7 +117,7 @@ dobj
 DTU
 Duplicative
 durations
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
@@ -139,8 +139,8 @@ fisheye
 fof
 formatter
 formatters
-frontend
-Frontends
+Frontend
+frontends
 frontrow
 Gainesville
 galtay
@@ -162,7 +162,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-Hexahedral
+hexahedral
 HippoDraw
 histogramming
 Hix
@@ -191,7 +191,7 @@ Ji
 jisuoqing
 jnaiman
 Joana
-Jupyter
+jupyter
 Jupyterlab
 jwise
 jzuhone
@@ -220,7 +220,7 @@ LLC
 logarithmically
 LSST
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -261,9 +261,9 @@ NumFOCUS
 NumPy
 OAC
 octants
-octree
-Octrees
-Octs
+Octree
+octrees
+octs
 odowska
 olebole
 OpenGL
@@ -295,7 +295,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-Powderday
+powderday
 pre
 prefixable
 programmatically
@@ -307,7 +307,7 @@ pytest
 PyThreeJS
 pyxsim
 qobilidop
-quadtree
+Quadtree
 radiative
 RADMC
 rasterizers
@@ -319,7 +319,7 @@ recursed
 redshifts
 reinstrumented
 renderer
-Resampling
+resampling
 responsivity
 RGBA
 Ritali
@@ -347,7 +347,7 @@ situ
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger
@@ -379,7 +379,7 @@ Triden
 Tsai
 UC
 unappropriate
-unitful
+Unitful
 unitless
 Université
 unmergeable
@@ -390,7 +390,7 @@ Urbana
 userbase
 Volker
 Vulkan
-webassembly
+WebAssembly
 Wetzel
 Widgyts
 Wijers
@@ -404,7 +404,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj
@@ -412,7 +412,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-zingale
+Zingale
 zorder
 Zuckerberg
 ZuHone
