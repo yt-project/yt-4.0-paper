@@ -17,13 +17,13 @@ APIs
 AREPO
 Arraki
 arraylike
-artio
+ARTIO
 arwetzel
 AST
 Astro
 astrojaz
 astrophysically
-astropy
+AstroPy
 astrosmith
 AthenaPK
 atmyers
@@ -38,7 +38,7 @@ binarily
 Biondo
 Birla
 Bitbucket
-bitwise
+Bitwise
 bookkeepping
 Bool
 Borro
@@ -53,11 +53,11 @@ Cadair
 Cadiou
 candela
 Cartopy
-cgs
+CGS
 Champaign
 changeset
 changesets
-cholla
+CHOLLA
 chombo
 chrishavlin
 chummels
@@ -75,12 +75,12 @@ colorbar
 colorbars
 colormap
 colormapping
-Colormaps
+colormaps
 colorspace
 Comoving
 conda
 connectedness
-Coord
+coord
 Coords
 Corentin
 cosmosquark
@@ -89,7 +89,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-Cython
+cython
 dask
 d’Astrophysique
 dataframe
@@ -121,7 +121,7 @@ dutta
 easies
 elliottbiondo
 entrypoints
-enzo
+Enzo
 Enzo’s
 ethlau
 Evanston
@@ -139,7 +139,7 @@ fisheye
 fof
 formatter
 formatters
-Frontend
+frontend
 frontends
 frontrow
 Gainesville
@@ -191,7 +191,7 @@ Ji
 jisuoqing
 jnaiman
 Joana
-jupyter
+Jupyter
 Jupyterlab
 jwise
 jzuhone
@@ -220,7 +220,7 @@ LLC
 logarithmically
 LSST
 Madicken
-Matplotlib
+matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -243,7 +243,7 @@ munkm
 Naiman
 namespace
 Narayanan
-Nastasha
+nastasha
 Navaneeth
 neper
 NetCDF
@@ -261,8 +261,8 @@ NumFOCUS
 NumPy
 OAC
 octants
-Octree
-octrees
+octree
+Octrees
 octs
 odowska
 olebole
@@ -288,7 +288,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-Pixelizers
+pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -305,9 +305,9 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyxsim
+pyXSIM
 qobilidop
-Quadtree
+quadtree
 radiative
 RADMC
 rasterizers
@@ -347,7 +347,7 @@ situ
 Skillman
 SLAC
 soton
-sph
+SPH
 Springel
 STFC
 Stockinger
@@ -379,7 +379,7 @@ Triden
 Tsai
 UC
 unappropriate
-Unitful
+unitful
 unitless
 Université
 unmergeable
@@ -390,7 +390,7 @@ Urbana
 userbase
 Volker
 Vulkan
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Wijers
@@ -412,7 +412,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-Zingale
+zingale
 zorder
 Zuckerberg
 ZuHone
