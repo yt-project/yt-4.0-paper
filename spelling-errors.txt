@@ -11,13 +11,13 @@ Altay
 AMR
 AMReX
 AMRKDTree
-AMRVAC
+amrvac
 Aperio
 APIs
 AREPO
 Arraki
 arraylike
-ARTIO
+artio
 arwetzel
 AST
 Astro
@@ -38,11 +38,11 @@ binarily
 Biondo
 Birla
 Bitbucket
-Bitwise
+bitwise
 bookkeepping
-Bool
+bool
 Borro
-boxlib
+BoxLib
 Britton
 brittonsmith
 Bugfix
@@ -53,7 +53,7 @@ Cadair
 Cadiou
 candela
 Cartopy
-cgs
+CGS
 Champaign
 changeset
 changesets
@@ -97,7 +97,7 @@ datapoint
 dataset
 datasetfrom
 dataset’s
-datasets
+Datasets
 datasetwere
 datatypes
 decomp
@@ -121,7 +121,7 @@ dutta
 easies
 elliottbiondo
 entrypoints
-Enzo
+enzo
 Enzo’s
 ethlau
 Evanston
@@ -140,7 +140,7 @@ fof
 formatter
 formatters
 frontend
-Frontends
+frontends
 frontrow
 Gainesville
 galtay
@@ -162,7 +162,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-hexahedral
+Hexahedral
 HippoDraw
 histogramming
 Hix
@@ -220,7 +220,7 @@ LLC
 logarithmically
 LSST
 Madicken
-Matplotlib
+matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -258,12 +258,12 @@ NMSU
 nosetests
 NSSC
 NumFOCUS
-numpy
+NumPy
 OAC
 octants
 octree
 Octrees
-Octs
+octs
 odowska
 olebole
 OpenGL
@@ -288,7 +288,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -307,7 +307,7 @@ pytest
 PyThreeJS
 pyXSIM
 qobilidop
-quadtree
+Quadtree
 radiative
 RADMC
 rasterizers
@@ -319,7 +319,7 @@ recursed
 redshifts
 reinstrumented
 renderer
-Resampling
+resampling
 responsivity
 RGBA
 Ritali
@@ -347,7 +347,7 @@ situ
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger
@@ -390,7 +390,7 @@ Urbana
 userbase
 Volker
 Vulkan
-webassembly
+WebAssembly
 Wetzel
 Widgyts
 Wijers
@@ -404,7 +404,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj
