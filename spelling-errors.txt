@@ -11,10 +11,10 @@ Altay
 AMR
 AMReX
 AMRKDTree
-amrvac
+AMRVAC
 Aperio
 APIs
-AREPO
+arepo
 Arraki
 arraylike
 artio
@@ -42,7 +42,7 @@ Bitwise
 bookkeepping
 Bool
 Borro
-boxlib
+BoxLib
 Britton
 brittonsmith
 Bugfix
@@ -53,11 +53,11 @@ Cadair
 Cadiou
 candela
 Cartopy
-cgs
+CGS
 Champaign
 changeset
 changesets
-CHOLLA
+cholla
 chombo
 chrishavlin
 chummels
@@ -75,12 +75,12 @@ colorbar
 colorbars
 colormap
 colormapping
-colormaps
+Colormaps
 colorspace
 Comoving
 conda
 connectedness
-coord
+Coord
 Coords
 Corentin
 cosmosquark
@@ -117,7 +117,7 @@ dobj
 DTU
 Duplicative
 durations
-dutta
+Dutta
 easies
 elliottbiondo
 entrypoints
@@ -220,7 +220,7 @@ LLC
 logarithmically
 LSST
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -243,7 +243,7 @@ munkm
 Naiman
 namespace
 Narayanan
-Nastasha
+nastasha
 Navaneeth
 neper
 NetCDF
@@ -262,7 +262,7 @@ NumPy
 OAC
 octants
 octree
-octrees
+Octrees
 Octs
 odowska
 olebole
@@ -288,7 +288,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -305,7 +305,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyxsim
+pyXSIM
 qobilidop
 quadtree
 radiative
@@ -319,7 +319,7 @@ recursed
 redshifts
 reinstrumented
 renderer
-Resampling
+resampling
 responsivity
 RGBA
 Ritali
@@ -347,7 +347,7 @@ situ
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger
@@ -365,7 +365,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-SymPy
+sympy
 sytlistic
 TBD
 Tbytes
@@ -390,7 +390,7 @@ Urbana
 userbase
 Volker
 Vulkan
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Wijers
