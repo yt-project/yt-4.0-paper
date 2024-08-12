@@ -11,13 +11,13 @@ Altay
 AMR
 AMReX
 AMRKDTree
-AMRVAC
+amrvac
 Aperio
 APIs
-Arepo
+AREPO
 Arraki
 arraylike
-artio
+ARTIO
 arwetzel
 AST
 Astro
@@ -73,7 +73,7 @@ collisional
 colocation
 colorbar
 colorbars
-Colormap
+colormap
 colormapping
 colormaps
 colorspace
@@ -139,8 +139,8 @@ fisheye
 fof
 formatter
 formatters
-frontend
-frontends
+Frontend
+Frontends
 frontrow
 Gainesville
 galtay
@@ -162,7 +162,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-hexahedral
+Hexahedral
 HippoDraw
 histogramming
 Hix
@@ -191,7 +191,7 @@ Ji
 jisuoqing
 jnaiman
 Joana
-jupyter
+Jupyter
 Jupyterlab
 jwise
 jzuhone
@@ -220,7 +220,7 @@ LLC
 logarithmically
 LSST
 Madicken
-Matplotlib
+matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -262,7 +262,7 @@ numpy
 OAC
 octants
 octree
-Octrees
+octrees
 Octs
 odowska
 olebole
@@ -319,7 +319,7 @@ recursed
 redshifts
 reinstrumented
 renderer
-Resampling
+resampling
 responsivity
 RGBA
 Ritali
@@ -365,7 +365,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-SymPy
+sympy
 sytlistic
 TBD
 Tbytes
@@ -379,7 +379,7 @@ Triden
 Tsai
 UC
 unappropriate
-unitful
+Unitful
 unitless
 Université
 unmergeable
@@ -404,7 +404,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj
