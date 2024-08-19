@@ -17,7 +17,7 @@ APIs
 AREPO
 Arraki
 arraylike
-ARTIO
+artio
 arwetzel
 AST
 Astro
@@ -53,7 +53,7 @@ Cadair
 Cadiou
 candela
 Cartopy
-CGS
+cgs
 Champaign
 changeset
 changesets
@@ -80,7 +80,7 @@ colorspace
 Comoving
 conda
 connectedness
-coord
+Coord
 Coords
 Corentin
 cosmosquark
@@ -117,11 +117,11 @@ dobj
 DTU
 Duplicative
 durations
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
-Enzo
+enzo
 Enzo’s
 ethlau
 Evanston
@@ -139,8 +139,8 @@ fisheye
 fof
 formatter
 formatters
-Frontend
-Frontends
+frontend
+frontends
 frontrow
 Gainesville
 galtay
@@ -243,7 +243,7 @@ munkm
 Naiman
 namespace
 Narayanan
-Nastasha
+nastasha
 Navaneeth
 neper
 NetCDF
@@ -263,7 +263,7 @@ OAC
 octants
 octree
 octrees
-Octs
+octs
 odowska
 olebole
 OpenGL
@@ -295,7 +295,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-Powderday
+powderday
 pre
 prefixable
 programmatically
@@ -307,7 +307,7 @@ pytest
 PyThreeJS
 pyXSIM
 qobilidop
-quadtree
+Quadtree
 radiative
 RADMC
 rasterizers
@@ -379,7 +379,7 @@ Triden
 Tsai
 UC
 unappropriate
-Unitful
+unitful
 unitless
 Université
 unmergeable
@@ -412,7 +412,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-zingale
+Zingale
 zorder
 Zuckerberg
 ZuHone
