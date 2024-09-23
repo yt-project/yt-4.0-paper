@@ -5,7 +5,7 @@ ahf
 AIP
 Aitoff
 Alamos
-Alankar
+alankar
 Alpes
 Altay
 AMR
@@ -17,10 +17,10 @@ APIs
 Arepo
 Arraki
 arraylike
-ARTIO
+artio
 arwetzel
 AST
-astro
+Astro
 astrojaz
 astrophysically
 astropy
@@ -42,7 +42,7 @@ Bitwise
 bookkeepping
 Bool
 Borro
-boxlib
+BoxLib
 Britton
 brittonsmith
 Bugfix
@@ -89,7 +89,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-cython
+Cython
 dask
 d’Astrophysique
 dataframe
@@ -117,11 +117,11 @@ dobj
 DTU
 Duplicative
 durations
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
-enzo
+Enzo
 Enzo’s
 ethlau
 Evanston
@@ -139,7 +139,7 @@ fisheye
 fof
 formatter
 formatters
-Frontend
+frontend
 frontends
 frontrow
 Gainesville
@@ -243,7 +243,7 @@ munkm
 Naiman
 namespace
 Narayanan
-Nastasha
+nastasha
 Navaneeth
 neper
 NetCDF
@@ -262,8 +262,8 @@ numpy
 OAC
 octants
 octree
-Octrees
-Octs
+octrees
+octs
 odowska
 olebole
 OpenGL
@@ -305,7 +305,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyXSIM
+pyxsim
 qobilidop
 quadtree
 radiative
@@ -347,7 +347,7 @@ situ
 Skillman
 SLAC
 soton
-sph
+SPH
 Springel
 STFC
 Stockinger
@@ -379,7 +379,7 @@ Triden
 Tsai
 UC
 unappropriate
-Unitful
+unitful
 unitless
 Université
 unmergeable
@@ -390,7 +390,7 @@ Urbana
 userbase
 Volker
 Vulkan
-webassembly
+WebAssembly
 Wetzel
 Widgyts
 Wijers
@@ -412,7 +412,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-Zingale
+zingale
 zorder
 Zuckerberg
 ZuHone
