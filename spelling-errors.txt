@@ -5,16 +5,16 @@ ahf
 AIP
 Aitoff
 Alamos
-alankar
+Alankar
 Alpes
 Altay
 AMR
 AMReX
 AMRKDTree
-amrvac
+AMRVAC
 Aperio
 APIs
-AREPO
+Arepo
 Arraki
 arraylike
 artio
@@ -23,7 +23,7 @@ AST
 astro
 astrojaz
 astrophysically
-AstroPy
+astropy
 astrosmith
 AthenaPK
 atmyers
@@ -40,9 +40,9 @@ Birla
 Bitbucket
 Bitwise
 bookkeepping
-bool
+Bool
 Borro
-boxlib
+BoxLib
 Britton
 brittonsmith
 Bugfix
@@ -57,7 +57,7 @@ cgs
 Champaign
 changeset
 changesets
-cholla
+CHOLLA
 chombo
 chrishavlin
 chummels
@@ -80,7 +80,7 @@ colorspace
 Comoving
 conda
 connectedness
-coord
+Coord
 Coords
 Corentin
 cosmosquark
@@ -117,7 +117,7 @@ dobj
 DTU
 Duplicative
 durations
-dutta
+Dutta
 easies
 elliottbiondo
 entrypoints
@@ -139,7 +139,7 @@ fisheye
 fof
 formatter
 formatters
-Frontend
+frontend
 frontends
 frontrow
 Gainesville
@@ -162,7 +162,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-Hexahedral
+hexahedral
 HippoDraw
 histogramming
 Hix
@@ -191,7 +191,7 @@ Ji
 jisuoqing
 jnaiman
 Joana
-jupyter
+Jupyter
 Jupyterlab
 jwise
 jzuhone
@@ -236,14 +236,14 @@ moab
 Mollweide
 Monaghan
 mornkr
-mpi
+MPI
 mtryan
 Munk
 munkm
 Naiman
 namespace
 Narayanan
-Nastasha
+nastasha
 Navaneeth
 neper
 NetCDF
@@ -258,7 +258,7 @@ NMSU
 nosetests
 NSSC
 NumFOCUS
-numpy
+NumPy
 OAC
 octants
 octree
@@ -288,7 +288,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -307,7 +307,7 @@ pytest
 PyThreeJS
 pyXSIM
 qobilidop
-quadtree
+Quadtree
 radiative
 RADMC
 rasterizers
@@ -319,7 +319,7 @@ recursed
 redshifts
 reinstrumented
 renderer
-Resampling
+resampling
 responsivity
 RGBA
 Ritali
@@ -365,7 +365,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-sympy
+SymPy
 sytlistic
 TBD
 Tbytes
@@ -379,7 +379,7 @@ Triden
 Tsai
 UC
 unappropriate
-unitful
+Unitful
 unitless
 Université
 unmergeable
@@ -390,7 +390,7 @@ Urbana
 userbase
 Volker
 Vulkan
-webassembly
+WebAssembly
 Wetzel
 Widgyts
 Wijers
