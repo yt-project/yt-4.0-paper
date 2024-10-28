@@ -14,16 +14,16 @@ AMRKDTree
 AMRVAC
 Aperio
 APIs
-Arepo
+AREPO
 Arraki
 arraylike
-artio
+ARTIO
 arwetzel
 AST
 astro
 astrojaz
 astrophysically
-astropy
+AstroPy
 astrosmith
 AthenaPK
 atmyers
@@ -40,7 +40,7 @@ Birla
 Bitbucket
 Bitwise
 bookkeepping
-Bool
+bool
 Borro
 BoxLib
 Britton
@@ -117,7 +117,7 @@ dobj
 DTU
 Duplicative
 durations
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
@@ -139,7 +139,7 @@ fisheye
 fof
 formatter
 formatters
-frontend
+Frontend
 frontends
 frontrow
 Gainesville
@@ -162,7 +162,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-hexahedral
+Hexahedral
 HippoDraw
 histogramming
 Hix
@@ -220,7 +220,7 @@ LLC
 logarithmically
 LSST
 Madicken
-Matplotlib
+matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -243,7 +243,7 @@ munkm
 Naiman
 namespace
 Narayanan
-nastasha
+Nastasha
 Navaneeth
 neper
 NetCDF
@@ -263,7 +263,7 @@ OAC
 octants
 octree
 octrees
-Octs
+octs
 odowska
 olebole
 OpenGL
@@ -305,9 +305,9 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyXSIM
+pyxsim
 qobilidop
-Quadtree
+quadtree
 radiative
 RADMC
 rasterizers
@@ -319,7 +319,7 @@ recursed
 redshifts
 reinstrumented
 renderer
-resampling
+Resampling
 responsivity
 RGBA
 Ritali
@@ -347,7 +347,7 @@ situ
 Skillman
 SLAC
 soton
-sph
+SPH
 Springel
 STFC
 Stockinger
