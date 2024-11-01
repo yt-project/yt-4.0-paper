@@ -21,4 +21,4 @@ bounds = s2.xlim[0], s2.ylim[0], s2.xlim[1]-s2.xlim[0], s2.ylim[1]-s2.ylim[0]
 rect, conn = s1.plots["all", "ux"].axes.indicate_inset(bounds, s2_ax, edgecolor='k', linewidth=1.0)
 conn[0].set_visible(True)
 conn[1].set_visible(True)
-s1.plots["all", "ux"].savefig("fem_example.png")
+s1.plots["all", "ux"].figure.savefig("fem_example.png")
