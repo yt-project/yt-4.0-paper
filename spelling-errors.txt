@@ -5,7 +5,7 @@ ahf
 AIP
 Aitoff
 Alamos
-Alankar
+alankar
 Alpes
 Altay
 AMR
@@ -14,16 +14,16 @@ AMRKDTree
 AMRVAC
 Aperio
 APIs
-AREPO
+Arepo
 Arraki
 arraylike
-ARTIO
+artio
 arwetzel
 AST
-astro
+Astro
 astrojaz
 astrophysically
-AstroPy
+astropy
 astrosmith
 AthenaPK
 atmyers
@@ -38,9 +38,9 @@ binarily
 Biondo
 Birla
 Bitbucket
-Bitwise
+bitwise
 bookkeepping
-bool
+Bool
 Borro
 BoxLib
 Britton
@@ -53,7 +53,7 @@ Cadair
 Cadiou
 candela
 Cartopy
-cgs
+CGS
 Champaign
 changeset
 changesets
@@ -73,9 +73,9 @@ collisional
 colocation
 colorbar
 colorbars
-colormap
+Colormap
 colormapping
-colormaps
+Colormaps
 colorspace
 Comoving
 conda
@@ -117,7 +117,7 @@ dobj
 DTU
 Duplicative
 durations
-dutta
+Dutta
 easies
 elliottbiondo
 entrypoints
@@ -139,7 +139,7 @@ fisheye
 fof
 formatter
 formatters
-Frontend
+frontend
 frontends
 frontrow
 Gainesville
@@ -243,7 +243,7 @@ munkm
 Naiman
 namespace
 Narayanan
-Nastasha
+nastasha
 Navaneeth
 neper
 NetCDF
@@ -263,7 +263,7 @@ OAC
 octants
 octree
 octrees
-octs
+Octs
 odowska
 olebole
 OpenGL
@@ -295,7 +295,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-powderday
+Powderday
 pre
 prefixable
 programmatically
@@ -305,9 +305,9 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyxsim
+pyXSIM
 qobilidop
-quadtree
+Quadtree
 radiative
 RADMC
 rasterizers
@@ -347,7 +347,7 @@ situ
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger
@@ -365,7 +365,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-SymPy
+sympy
 sytlistic
 TBD
 Tbytes
@@ -379,7 +379,7 @@ Triden
 Tsai
 UC
 unappropriate
-Unitful
+unitful
 unitless
 Université
 unmergeable
@@ -390,7 +390,7 @@ Urbana
 userbase
 Volker
 Vulkan
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Wijers
