@@ -5,7 +5,7 @@ ahf
 AIP
 Aitoff
 Alamos
-Alankar
+alankar
 Alpes
 Altay
 AMR
@@ -14,7 +14,7 @@ AMRKDTree
 AMRVAC
 Aperio
 APIs
-AREPO
+arepo
 Arraki
 arraylike
 ARTIO
@@ -23,7 +23,7 @@ AST
 Astro
 astrojaz
 astrophysically
-astropy
+AstroPy
 astrosmith
 AthenaPK
 atmyers
@@ -40,9 +40,9 @@ Birla
 Bitbucket
 bitwise
 bookkeepping
-Bool
+bool
 Borro
-BoxLib
+boxlib
 Britton
 brittonsmith
 Bugfix
@@ -57,7 +57,7 @@ CGS
 Champaign
 changeset
 changesets
-CHOLLA
+cholla
 chombo
 chrishavlin
 chummels
@@ -75,9 +75,9 @@ colorbar
 colorbars
 colormap
 colormapping
-colormaps
+Colormaps
 colorspace
-Comoving
+comoving
 conda
 connectedness
 coord
@@ -117,7 +117,7 @@ dobj
 DTU
 Duplicative
 durations
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
@@ -140,7 +140,7 @@ fof
 formatter
 formatters
 frontend
-frontends
+Frontends
 frontrow
 Gainesville
 galtay
@@ -162,7 +162,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-Hexahedral
+hexahedral
 HippoDraw
 histogramming
 Hix
@@ -191,7 +191,7 @@ Ji
 jisuoqing
 jnaiman
 Joana
-Jupyter
+jupyter
 Jupyterlab
 jwise
 jzuhone
@@ -220,7 +220,7 @@ LLC
 logarithmically
 LSST
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -243,7 +243,7 @@ munkm
 Naiman
 namespace
 Narayanan
-Nastasha
+nastasha
 Navaneeth
 neper
 NetCDF
@@ -263,7 +263,7 @@ OAC
 octants
 octree
 octrees
-Octs
+octs
 odowska
 olebole
 OpenGL
@@ -288,7 +288,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -347,7 +347,7 @@ situ
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger
@@ -404,7 +404,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-YTEP
+ytep
 YTEPs
 ytini
 YTQuadTreeProj

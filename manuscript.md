@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2024-12-02'
+date-meta: '2024-12-09'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -85,11 +85,11 @@ header-includes: |
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2024-12-02" />
-  <meta name="citation_publication_date" content="2024-12-02" />
-  <meta property="article:published_time" content="2024-12-02" />
-  <meta name="dc.modified" content="2024-12-02T01:32:05+00:00" />
-  <meta property="article:modified_time" content="2024-12-02T01:32:05+00:00" />
+  <meta name="dc.date" content="2024-12-09" />
+  <meta name="citation_publication_date" content="2024-12-09" />
+  <meta property="article:published_time" content="2024-12-09" />
+  <meta name="dc.modified" content="2024-12-09T01:32:04+00:00" />
+  <meta property="article:modified_time" content="2024-12-09T01:32:04+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -330,7 +330,7 @@ This manuscript
 ([permalink](https://yt-project.github.io/yt-4.0-paper/v/530bb61e68819f0b6b7f000cd07a1e381d598921/))
 was automatically generated
 from [yt-project/yt-4.0-paper@530bb61](https://github.com/yt-project/yt-4.0-paper/tree/530bb61e68819f0b6b7f000cd07a1e381d598921)
-on December 2, 2024.
+on December 9, 2024.
 </em></small>
 
 
