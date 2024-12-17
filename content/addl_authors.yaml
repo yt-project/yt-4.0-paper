@@ -242,3 +242,19 @@
   initials: SX
   name: Shaokun Xie
   orcid: 0000-0001-5624-6008
+- affiliations:
+  - Posit PBC
+  email: tkteal@gmail.com
+  funders: []
+  github: tracykteal
+  initial: TKT
+  name: Tracy K. Teal
+  orcid: 0000-0002-9180-9598
+- affiliations:
+  - University of California San Diego, San Diego Supercomputer Center
+  email: rpwagner@ucsd.edu
+  funders: []
+  github: rpwagner
+  initials: RPW
+  name: Rick Wagner
+  orcid: 0000-0003-1291-5876
