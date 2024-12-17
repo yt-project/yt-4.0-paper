@@ -23,9 +23,8 @@ dependencies:
   - pip:
     - cffi==1.15.0
     - errorhandler==2.0.1
-      #- git+https://github.com/manubot/manubot@90925eeff90e3aaacaa504fc9a47107609cffc17
-      #- git+https://github.com/matthewturk/manubot@5ab91d2c90a1fa60e1b78d2658c6bcf35389e249
-    - git+https://github.com/manubot/manubot@d4242ffa4194e4a13a68c5f6466feff559d3f9d5
+    - git+https://github.com/manubot/manubot@2914d720dfe02d2bda8781f8f784bc14d461e2e3
+      #- git+https://github.com/matthewturk/manubot@5af1ed2c790924190597683da5f58646c0740f72
     - isbnlib==3.10.10
     - opentimestamps-client==0.7.1
     - opentimestamps==0.4.3
