@@ -23,6 +23,7 @@ authors:
     affiliations:
       - NumFOCUS
     funders: []
+    corresponding: false
   -
     github: MatthewTurk
     name: Matthew Turk
