@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2024-12-09'
+date-meta: '2024-12-18'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -85,11 +85,11 @@ header-includes: |
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2024-12-09" />
-  <meta name="citation_publication_date" content="2024-12-09" />
-  <meta property="article:published_time" content="2024-12-09" />
-  <meta name="dc.modified" content="2024-12-09T01:32:04+00:00" />
-  <meta property="article:modified_time" content="2024-12-09T01:32:04+00:00" />
+  <meta name="dc.date" content="2024-12-18" />
+  <meta name="citation_publication_date" content="2024-12-18" />
+  <meta property="article:published_time" content="2024-12-18" />
+  <meta name="dc.modified" content="2024-12-18T17:29:37+00:00" />
+  <meta property="article:modified_time" content="2024-12-18T17:29:37+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -137,7 +137,7 @@ header-includes: |
   <meta name="citation_author_institution" content="National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign" />
   <meta name="citation_author_orcid" content="0000-0002-4373-4114" />
   <meta name="citation_author" content="Corentin Cadiou" />
-  <meta name="citation_author_institution" content="Department of Physics and Astrophysics, University College London" />
+  <meta name="citation_author_institution" content="Department of Physics, division of Astrophysics, Lund University" />
   <meta name="citation_author_institution" content="Institut d&#39;Astrophysique de Paris" />
   <meta name="citation_author_orcid" content="0000-0003-2285-0332" />
   <meta name="twitter:creator" content="@cphyc" />
@@ -302,9 +302,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/530bb61e68819f0b6b7f000cd07a1e381d598921/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/530bb61e68819f0b6b7f000cd07a1e381d598921/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/530bb61e68819f0b6b7f000cd07a1e381d598921/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/d4a957c9370c8780f1d5c6b691a2a316b2bfcdb5/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/d4a957c9370c8780f1d5c6b691a2a316b2bfcdb5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/d4a957c9370c8780f1d5c6b691a2a316b2bfcdb5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -327,10 +327,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/530bb61e68819f0b6b7f000cd07a1e381d598921/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/d4a957c9370c8780f1d5c6b691a2a316b2bfcdb5/))
 was automatically generated
-from [yt-project/yt-4.0-paper@530bb61](https://github.com/yt-project/yt-4.0-paper/tree/530bb61e68819f0b6b7f000cd07a1e381d598921)
-on December 9, 2024.
+from [yt-project/yt-4.0-paper@d4a957c](https://github.com/yt-project/yt-4.0-paper/tree/d4a957c9370c8780f1d5c6b691a2a316b2bfcdb5)
+on December 18, 2024.
 </em></small>
 
 
@@ -487,7 +487,7 @@ on December 9, 2024.
     [cphyc](https://twitter.com/cphyc)
     <br>
   <small>
-     Department of Physics and Astrophysics, University College London; Institut d'Astrophysique de Paris
+     Department of Physics, division of Astrophysics, Lund University; Institut d'Astrophysique de Paris
   </small>
 
 + **Michael Zingale**
@@ -2233,7 +2233,6 @@ The procedure is easily generalized in 3D.
 
 ![
 Scheme of the AMR structure used to estimate the gradient of a quantity in the central oct (red). Octs are represented in thick lines, cells in thin lines and virtual cells in dashed lines. _Left panel:_ The virtual cell values on a $4^3$ grid are interpolated from the nearest cell in the AMR grid. If the nearest cell is at the same (or coarser) level, its value is used directly. Note that virtual cells $f_{31}$ and $f_{32}$ have the value of the the actual coarser cell (green). If the cell is refined, the mean of its children is used (for example $f_{20}$ is the mean of all the blue cells). _Right panel:_ Gradients are estimated using a first-order finite difference centered scheme on the $4^3$ virtual cells, here illustrated for a gradient along the $x$ direction.
-**NOTE: the blue cell should be used in the example (for instance make it the $f_{01}$ cell, rather than the $f_{20}$ one since the $y$ direction ends up not being used in the actual computation**
 ](images/octree/gradient_computation.svg){#fig:octree-gradient}
 
 ### SPH Analysis {#sec:sph-analysis}
@@ -3216,7 +3215,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-**Usage Citations:** [@doi:10.3847/1538-4357/aa6dff; @doi:10.48550/arXiv.2206.11913; @doi:10.1051/0004-6361/201834496; @doi:10.1093/mnras/stac1663; @doi:10.1051/0004-6361/201936188; @doi:10.1093/mnras/stac2963; @doi:10.1093/mnras/stx2316; @doi:10.1093/mnras/stac2963]
+**Usage Citations:** [@doi:10.1051/0004-6361/202243170; @doi:10.1051/0004-6361/202037698; @doi:10.1051/0004-6361/201936188; @doi:10.1051/0004-6361/201935504; @doi:10.1093/mnras/sty2859; @doi:10.1093/mnras/sty024; @doi:10.3847/1538-4357/aa989a; @doi:10.1093/mnras/stx1706; @doi:10.3847/1538-4357/833/2/202; @doi:10.3847/0004-637X/826/1/22; @doi:10.1088/0004-637X/807/1/67; @doi:10.1088/0067-0049/210/1/14; @doi:10.1093/mnras/stt1789; @doi:10.1088/0004-637X/765/1/39; @doi:10.3847/1538-4357/aa6dff; @doi:10.48550/arXiv.2206.11913; @doi:10.1051/0004-6361/201834496; @doi:10.1093/mnras/stac1663; @doi:10.1051/0004-6361/201936188; @doi:10.1093/mnras/stac2963; @doi:10.1093/mnras/stx2316; @doi:10.1093/mnras/stac2963]
 
 
 
@@ -4225,7 +4224,7 @@ When loading a dataset, yt will attempt to determine what the format of the data
 
 While these may seem like simple, obvious changes to make, they can hide difficult technical challenges, and more importantly, have dramatically improved the user experience for people using yt.
 
-### Jupyter Integration {#sec:jupyter_integrationt}
+### Jupyter Integration {#sec:jupyter_integration}
 
 Project Jupyter is an overarching term for a collection of related projects that provide an extensive, end-to-end suite for the user experience of developing code and narrative, as described in depth in (among other papers) @doi:10.1109/MCSE.2021.3059263 and @soton403913.
 While many in the yt community utilize yt through python scripts executed on the command line or through submission queues on high-performance computing resources, a large fraction utilize Jupyter Notebooks for their data exploration.
@@ -4265,8 +4264,29 @@ We are exploring options for encouraging its uptake, particularly as we anticipa
 
 ## Halo-Finding and Catalogs {#sec:halo_finding}
 
+In cosmological simulations, dark matter is nearly always represented as a collection of collisionless particles. **CITE SOMETHING ABOUT VLASOV GRID SOLUTIONS**
+This is well-suited to approximating it as a collisionless fluid; however, the identification of structures within that collection of particles can take on several forms, addressing different use cases to different degrees of accuracy. **CITE HALO FINDING COMPARISON PAPER**
+Being able to identify halos, as well as their associated baryonic content, is necessary for rapid analysis of cosmological simulations.
+Furthermore, convergence studies and cross-simulation comparisons requires a consistent method for identifying dark matter halos, as well as the ability to track their growth over time.
 
-## Scaling and Parallelism 
+In past versions of `yt`, several specific halo finders were bundled and made available to work on any class of data `yt` was able to read.
+These included the HOP halo finder, the classic Friends-of-Friends (FOF) halo finder [@doi:10.1086/191003], a scalable and Parallel HOP [@doi:10.1086/305535], and a wrapping of the ORIGAMI code [@doi:10.1142/9789814623995_0378] for filament identification.
+To do so, `yt` would utilize direct in-memory connectors with these implementations; whereas typically data connectors are written for each individual dataset format for individual halo finding methods, this enabled a single connector to be written from `yt` to the halo finder.
+In addition to these bundled halo finders, a direct in-memory interface with Rockstar [@doi:10.1088/0004-637X/762/2/109] was developed that sidestepped Rockstar's built in load-balancing to minimize data duplication and transfer.
+
+`yt` provides a unique set of functionality for accessing halo catalogs, as it provides the ability to query their values both *as* catalogs and as the original, underlying datasets.
+This means that the same selection and analysis operations that can be conducted on a "primary" dataset can also be conducted on the halo catalog; furthermore, the halo catalog can be used as input to data selection operations.
+This enables, for instance, querying original dark matter particle values in a halo (as defined by any characteristic radius of that halo) simultaneously with querying baryonic cells or particles included within.
+
+As discussed in [@doi:10.5281/zenodo.8349044], this can be used as input into other tools to provide sophisticated, graph-based queries of datasets and halo merger trees over cosmological time, such as with the `ytree` package.
+
+`yt` also includes an internal halo finding tool that is not widely exposed, built on its implementation of a union-find data structure for identifying topologically connected sets.
+This implementation, a "particle contour tree," uses this union-find data structure to connect (via percolation) particles into simple Friends-of-Friends collections.
+These can then be used as input into more sophisticated phase-space finders, such as Rockstar, and as done in [@doi:10.48550/arXiv.1407.2600].
+
+
+
+## Scaling and Parallelism
 
 To support cases where data volume results in long processing time or large memory requirements, yt operations have been parallelized using the Message Passing Interface (MPI; @mpi40).
 When designing the parallel interface for yt, as discussed in [@doi:10.1088/0067-0049/192/1/9], the design goals included ensuring that scripts required little to no adjustments to be run in parallel.
@@ -4276,18 +4296,17 @@ In the intervening time, the parallel operation infrastructure has been rewritte
 
 Almost all of the operations in yt that are conducted in parallel follow a straightforward method of decomposing work and consolidating results:
 
- 1. Identify which chunking method (see @sec:chunking) is most appropriate for the operation.
- 2. Consolidate chunks according to IO minimization and assign to individual MPI tasks
- 3. Join (potentially applying reduction operations) final results to provide solution to *all tasks* in the group
+1.  Identify which chunking method (see @sec:chunking) is most appropriate for the operation.
+2.  Consolidate chunks according to IO minimization and assign to individual MPI tasks
+3.  Join (potentially applying reduction operations) final results to provide solution to _all tasks_ in the group
 
 The final step, of joining across tasks, results in the final set of values being accessible to all tasks; this is not a universal "final step" in parallel operations, and in some cases results in substantial duplication of memory.
 This compromise was accepted as a result of the design goals of ensuring that scripts can run unmodified.
 
-The parallelism in yt heavily leans upon the "index" for a dataset either being available *already* at initiation time on all tasks, or that index being *accessible* through IO operations or fast generation.
+The parallelism in yt heavily leans upon the "index" for a dataset either being available _already_ at initiation time on all tasks, or that index being _accessible_ through IO operations or fast generation.
 This provides a degree of load-balancing that can be conducted, as estimates of memory and processing requirements are available on all tasks (and thus the load-balancing calculations are deterministic across all tasks).
 In essence, this means that for grid-based datasets, the entire grid hierarchy is available on all processors; for octrees or particle datasets, it means that at least a rough estimate of the distribution of values must be available (and identical) on all processors.
 This doesn't prevent opaquely distributed datasets from being decomposed, but it does allow datasets whose distribution is well-described to be decomposed with greater precision.
-
 
 ### Multi-Level Parallelism
 
@@ -4299,7 +4318,7 @@ For example, when conducting halo finding and analysis (see @sec:halo_finding) y
 This takes place by specifying a task size at the top level (or allowing yt's internal heuristics to determine it) and then distributing work to sub-communicators, each of which is then used for decomposition inside that top-level task.
 
 In addition to multi-level communicators, yt utilizes OpenMP constructs exposed in Cython in several places.
-This includes in the software volume rendering (see @sec:software-volume-rendering), in the pixelization operations for SPH data (see @sec:sph-analysis), calculation of gravitational binding energy (see @sec:analysis-modules) and for computing the bounding volume hierarchy for rendering finite element meshes (see @sec:unstructured-mesh).
+This includes in the software volume rendering (see @sec:software-volume-rendering), in the pixelization operations for SPH data (see @sec:sph-analysis), calculation of gravitational binding energy (see @sec:analysis-modules) and for computing the bounding volume hierarchy for rendering finite element meshes (see @sec:unstructured_mesh).
 In some instances, the Cython interface to OpenMP has had unpredictable performance implications; owing to this, the usage of OpenMP within yt has been somewhat conservative.
 
 ### Parallelism Interfaces
@@ -4310,7 +4329,7 @@ This parallelism is instrumented through the use of the yt "chunking" interface,
 The high-level interface to the `DerivedQuantity` subclasses computes the data chunks in the source data object and then assigns these to individual MPI tasks in the current top-level communicator.
 Each initializes storage space for the intermediate values, iterates over its assigned chunks and constructs intermediate reductions, and then the finalization step involves broadcasting the values to all other tasks and completing the final set of operations.
 For projections, the procedure is very similar; those datasets with an index duplicated across MPI tasks (such as patch-based grid datasets) are collapsed along a dimension and each MPI task fills in the values, which are then reduced through a broadcast operation.
-Utilizing these operations requires *no* modifications to user-facing code other than a call to `yt.enable_parallelism()` at the start of the script.
+Utilizing these operations requires _no_ modifications to user-facing code other than a call to `yt.enable_parallelism()` at the start of the script.
 
 The user-facing parallel constructs allow for somewhat greater flexibility in defining parallel task decomposition.
 Many objects in yt, particularly those such as the `DatasetSeries` object, have constituent data objects on which analysis can be conducted.
@@ -4340,8 +4359,6 @@ For many types of data analysis, particularly those operations conducted across 
 
 ### Performance of Operations
 
-
-
 ### Inline Analysis
 
 It is possible to instrument a simulation code to call Python routines inline during its execution.
@@ -4352,12 +4369,11 @@ In these cases, `yt` did not pass around datasets between MPI tasks, but rather 
 Within Enzo, all of the communication between Python and C++ was managed through Enzo's usage of the C API.
 This required some knowledge of how Python conducts garbage collection, and required ensuring that reference counting was managed correctly to avoid memory leaks.
 
-This non-standardized approach to conducting *in situ* visualization led to the creation and development of the library `libyt` which serves as an intermediary layer between simulation codes and `yt` (and Python in general.)
+This non-standardized approach to conducting _in situ_ visualization led to the creation and development of the library `libyt` which serves as an intermediary layer between simulation codes and `yt` (and Python in general.)
 This library encapsulates all Python API calls, manages references, and provides a systematic method for providing data pointers to Python.
 `libyt` provides a stable C-based API, and is accessible from numerous different languages.
 It also provides a custom-built `yt` frontend for accepting data.
 A more complete description is outside the scope of this paper, and we refer the reader to (**MJT: cite in prep manuscript**).
-
 
 
 ## Analysis Modules {#sec:analysis-modules}
@@ -4365,8 +4381,8 @@ A more complete description is outside the scope of this paper, and we refer the
 For much of its development history, `yt` took the approach of bundling as many analysis modules as possible in the primary repository.
 This provided the advantage of having all work be centralized, and ensuring that each download or installation of `yt` was a fully-featured system for analyzing a large swath of data, but it brought with it the development overhead of the entire `yt` package for what in many cases were isolated pieces of functionality with separable responsibilities.
 
-As a result of the slowing in speed of development as a result of review requirements (and limited personnel to conduct those reviews), some of the analysis modules that were bundled with `yt` have been "spun out" into their own repository, `yt_astro_analysis`.
-This repository, which is developed, released and installed separately from `yt`, includes modules for cosmological observation (upon which Triden, which is discussed in @sec:trident, is based), dark matter halo finding and analysis, tools for interacting with position-position-velocity cubes, and a system for exporting from `yt` to RADMC-3D [@ascl:1202.015].
+As a result of the slowing in speed of development as a result of review requirements (and limited personnel to conduct those reviews), some of the analysis modules that were bundled with `yt` have been "spun out" into their own repository, `yt_astro_analysis` [@doi:10.5281/zenodo.8431185].
+This repository, which is developed, released and installed separately from `yt`, includes modules for cosmological observation (upon which Triden, which is discussed in @sec:trident, is based), dark matter halo finding and analysis, tools for interacting with position-position-velocity cubes, light cone generation [@doi:10.1088/0004-637X/698/2/1795] and a system for exporting from `yt` to RADMC-3D [@ascl:1202.015].
 
 
 ## Ecosystem of Packages
@@ -4411,6 +4427,15 @@ ytini was developed to ease the process of converting data from simulation forma
 
 ## Future Directions
 
+- More integration with _in situ_ analysis systems like `libyt`
+- Much improved optimization
+- Integration with other domains besides astronomy
+- Refactoring for the long term
+- Static typing
+- Improving visual representation of `yt` objects
+- Testing infrastructure
+- Integration with external libraries such as pytorch-spatial, etc
+
 
 ## Sustainability {#sec:sustainability}
 
@@ -4425,7 +4450,7 @@ However, at the risk of belaboring a point that has been well-explored elsewhere
 A tension exists, however, between support of an existing project and the support of new projects in an ecosystem.
 By supporting an existing project, resources can tend to become concentrated; conversely, if a project supports a broader research agenda, that resource concentration can result in greater effort-multipliers for individuals who utilize the project.
 We're aware of this tension in yt; in fact, while yt has been grant-supported, most of the grant development has gone to a very small number of groups.
-This grant funding has been provided through the National Science Foundation, the Gordon and Betty Moore Foundation, the Department of Energy, the Chan Zuckerberg Initiative and other sources. [@doi:10.6084/m9.figshare.2061465.v1, [@doi:10.6084/m9.figshare.909413.v1], [@doi:10.5281/zenodo.4158589].
+This grant funding has been provided through the National Science Foundation, the Gordon and Betty Moore Foundation, the Department of Energy, the Chan Zuckerberg Initiative and other sources. [@doi:10.6084/m9.figshare.2061465.v1], [@doi:10.6084/m9.figshare.909413.v1], [@doi:10.5281/zenodo.4158589].
 Grants have supported the development of new features, including specific functionality for analysis routines and support for non-astronomical domains.
 
 Into each of these grants has been explicit support for community building, constituted by the development of documentation, videos, and tutorials, as well as mentoring of new contributors and shepherding the growth of the project through code review and issue management.
