@@ -8,6 +8,7 @@
   initials: DN
   name: Desika Narayanan
   orcid: 0000-0002-7064-4309
+  corresponding: false
 - affiliations:
   - Outer Loop LLC
   email: samskillman@gmail.com
@@ -16,6 +17,7 @@
   initials: SWS
   name: Samuel W. Skillman
   orcid: 0000-0002-7626-522X
+  corresponding: false
 - affiliations:
   - Lawrence Berkeley National Laboratory
   email: axelhuebl@lbl.gov
@@ -24,6 +26,7 @@
   initials: AH
   name: Axel Huebl
   orcid: 0000-0003-1943-7141
+  corresponding: false
 - affiliations:
   - Oak Ridge National Laboratory
   email: veb@ornl.gov
@@ -32,6 +35,7 @@
   initials: EB
   name: Elliott Biondo
   orcid: 0000-0002-9088-1360
+  corresponding: false
 - affiliations:
   - University of California, Davis
   email: awetzel@ucdavis.edu
@@ -40,6 +44,7 @@
   initials: AW
   name: Andrew Wetzel
   orcid: 0000-0003-0603-8942
+  corresponding: false
 - affiliations:
   - UC Santa Cruz
   email: cjstrawn@ucsc.edu
@@ -48,6 +53,7 @@
   initials: CS
   name: Clayton Strawn
   orcid: 0000-0001-9695-4017
+  corresponding: false
 - affiliations:
   - Idaho National Laboratory
   email: alexander.lindsay@inl.gov
@@ -56,6 +62,7 @@
   initials: AL
   name: Alexander Lindsay
   orcid: 0000-0002-6988-2123
+  corresponding: false
 - affiliations:
   - Free Agent
   email: gabriel.altay@gmail.com
@@ -64,6 +71,7 @@
   initials: GA
   name: Gabriel Altay
   orcid: 0000-0002-4120-2907
+  corresponding: false
 - affiliations:
   - Center for Astrophysics - Harvard & Smithsonian
   - University of Miami
@@ -73,6 +81,7 @@
   initials: ETL
   name: Erwin T. Lau
   orcid: 0000-0001-8914-8885
+  corresponding: false
 - affiliations:
   - Center for Astrophysics - Harvard & Smithsonian
   email: aaron.smith@cfa.harvard.edu
@@ -81,6 +90,7 @@
   initials: AS
   name: Aaron Smith
   orcid: 0000-0002-2838-9033
+  corresponding: false
 - affiliations:
   - Center for Theoretical Physics, Seoul National University
   email: mornkr@snu.ac.kr
@@ -89,6 +99,7 @@
   initials: JK
   name: Ji-hoon Kim
   orcid: 0000-0003-4464-1160
+  corresponding: false
 - affiliations:
   - Institute of Astrophysics, National Taiwan University, Taipei 10617, Taiwan
   - Physics Division, National Center for Theoretical Sciences, Taipei 10617, Taiwan
@@ -98,6 +109,7 @@
   initials: HS
   name: Hsi-Yu Schive
   orcid: 0000-0002-1249-279X
+  corresponding: false
 - affiliations:
   - Indian Institute of Technology Kharagpur
   email: navaneeths1998@gmail.com
@@ -106,6 +118,7 @@
   initials: NS
   name: Navaneeth S
   orcid: 0009-0007-6922-0369
+  corresponding: false
 - affiliations:
   - Michigan State University
   email: oshea@msu.edu
@@ -114,6 +127,7 @@
   initials: BWO
   name: Brian W. O'Shea
   orcid: 0000-0002-2786-0348
+  corresponding: false
 - affiliations:
   - Kavli Institute for Particle Astrophysics and Cosmology, Stanford University
   email: tabel@stanford.edu
@@ -122,6 +136,7 @@
   initials: TA
   name: Tom Abel
   orcid: 0000-0002-5969-1251
+  corresponding: false
 - affiliations:
   - Birla Institute of Technology and Science, Pilani, Sancoale, Goa 403726, India
   email: yashgondhalekar567@gmail.com
@@ -130,6 +145,7 @@
   initials: YG
   name: Yash Gondhalekar
   orcid: 0000-0002-6646-4225
+  corresponding: false
 - affiliations: []
   email: graywilliamj@gmail.com
   funders: []
@@ -137,6 +153,7 @@
   initials: WJG
   name: William J Gray
   orcid: 0000-0001-9014-3125
+  corresponding: false
 - affiliations:
   - Fermilab
   email: gnedin@fnal.gov
@@ -145,6 +162,7 @@
   initials: NYG
   name: Nickolay Y. Gnedin
   orcid: 0000-0001-5925-4580
+  corresponding: false
 - affiliations:
   - Institute of theoretical physics, Chinese Academy of Science
   email: cristian.joana@itp.ac.cn
@@ -153,6 +171,7 @@
   initials: CJ
   name: Cristian Joana
   orcid: 0000-0003-4642-3028
+  corresponding: false
 - affiliations:
   - 'University of Central Lancashire '
   email: bthompson2090@gmail.com
@@ -161,6 +180,7 @@
   initials: BBT
   name: 'Benjamin B Thompson '
   orcid: 0000-0003-4383-9183
+  corresponding: false
 - affiliations:
   - University of North Texas
   email: yuan.astro@gmail.com
@@ -169,6 +189,7 @@
   initials: YL
   name: Yuan Li
   orcid: 0000-0001-5262-6150
+  corresponding: false
 - affiliations:
   - Max Planck Institute for Astrophysics
   email: rjfarber@umich.edu
@@ -177,6 +198,7 @@
   initials: RJF
   name: Ryan Jeffrey Farber
   orcid: 0000-0002-0649-9055
+  corresponding: false
 - affiliations:
   - Los Alamos National Laboratory
   email: jonahm@lanl.gov
@@ -185,6 +207,7 @@
   initials: JMM
   name: Jonah M Miller
   orcid: 0000-0001-6432-7860
+  corresponding: false
 - affiliations:
   - Penn State University
   email: mzr55@psu.edu
@@ -193,6 +216,7 @@
   initials: MR
   name: Michael Ryan
   orcid: 0000-0002-0378-5195
+  corresponding: false
 - affiliations:
   - Michigan State University
   email: dsilvia@msu.edu
@@ -201,6 +225,7 @@
   initials: DWS
   name: Devin W. Silvia
   orcid: 0000-0002-4109-9313
+  corresponding: false
 - affiliations:
   - Argonne National Laboratory
   email: rjackson@anl.gov
@@ -209,6 +234,7 @@
   initials: RJ
   name: Robert Jackson
   orcid: 0000-0003-2518-1234
+  corresponding: false
 - affiliations:
   - none
   email: karraki@gmail.com
@@ -217,6 +243,7 @@
   initials: KA
   name: Kenz Arraki
   orcid: 0000-0002-3012-1167
+  corresponding: false
 - affiliations:
   - Indian Institute of Science, Bangalore, India
   email: alankardutta@iisc.ac.in
@@ -225,6 +252,7 @@
   initials: AD
   name: Alankar Dutta
   orcid: 0000-0002-9287-4033
+  corresponding: false
 - affiliations:
   - 'Indian Institute of Science'
   email: ritalighosh@iisc.ac.in
@@ -233,6 +261,7 @@
   initials: RG
   name: Ritali Ghosh
   orcid: 0000-0001-8643-7104
+  corresponding: false
 - affiliations:
   - Shanghai Astronomical Observatory, Chinese Academy of Sciences
   - School of Astronomy and Space Sciences, University of Chinese Academy of Sciences
@@ -242,6 +271,7 @@
   initials: SX
   name: Shaokun Xie
   orcid: 0000-0001-5624-6008
+  corresponding: false
 - affiliations:
   - Posit PBC
   email: tkteal@gmail.com
@@ -250,6 +280,7 @@
   initial: TKT
   name: Tracy K. Teal
   orcid: 0000-0002-9180-9598
+  corresponding: false
 - affiliations:
   - University of California San Diego, San Diego Supercomputer Center
   email: rpwagner@ucsd.edu
@@ -258,3 +289,4 @@
   initials: RPW
   name: Rick Wagner
   orcid: 0000-0003-1291-5876
+  corresponding: false

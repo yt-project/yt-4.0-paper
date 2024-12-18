@@ -23,11 +23,13 @@ authors:
     affiliations:
       - NumFOCUS
     funders: []
+    corresponding: false
   -
     github: MatthewTurk
     name: Matthew Turk
     initials: MJT
     orcid: 0000-0002-5294-0198
+    corresponding: true
     mastodon: powersoffour
     mastodon-server: mastodon.social
     email: mjturk@illinois.edu
@@ -36,12 +38,12 @@ authors:
       - Department of Astronomy, University of Illinois at Urbana-Champaign
       - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
     funders: []
-    corresponding: true
   -
     github: ngoldbaum
     name: Nathan J Goldbaum
     initial: NJG
     orcid: 0000-0001-5557-267X
+    corresponding: false
     twitter: njgoldbaum
     email: ngoldbau@illinois.edu
     affiliations:
@@ -52,6 +54,7 @@ authors:
     name: John A. ZuHone
     initials: JAZ
     orcid: 0000-0003-3175-2347
+    corresponding: false
     email: john.zuhone@cfa.harvard.edu
     twitter: astrojaz
     affiliations:
@@ -61,6 +64,7 @@ authors:
     name: Cameron Hummels
     initials: CBH
     orcid: 0000-0002-3817-8133
+    corresponding: false
     email: chummels@gmail.com
     affiliations:
       - Department of Theoretical Astrophysics, California Institute of Technology
@@ -70,6 +74,7 @@ authors:
     name: Suoqing Ji
     initials: SJ
     orcid: 0000-0001-9658-0588
+    corresponding: false
     email: suoqing@physics.ucsb.edu
     affiliations:
       - Physics Department, University of California Santa Barbara
@@ -79,6 +84,7 @@ authors:
     name: Meagan Lang
     initial: ML
     orcid: 0000-0002-2058-2816
+    corresponding: false
     email: langmm@illinois.edu
     affiliations:
       - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
@@ -88,6 +94,7 @@ authors:
     name: Madicken Munk
     initials: MM
     orcid: 0000-0003-0117-5366
+    corresponding: false
     email: mmunk2@illinois.edu
     affiliations:
       - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
@@ -97,6 +104,7 @@ authors:
     name: Britton Smith
     initials: BDS
     orcid: 0000-0002-6804-630X
+    corresponding: false
     email: britton.smith@ed.ac.uk
     affiliations:
       - University of Edinburgh
@@ -105,6 +113,7 @@ authors:
     name: Kacper Kowalik
     initial: KK
     orcid: 0000-0003-1709-3744
+    corresponding: false
     email: kowalikk@illinois.edu
     affiliations:
       - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
@@ -114,6 +123,7 @@ authors:
     name: Miguel de Val-Borro
     initials: MVB
     orcid: 000-0002-0455-9384
+    corresponding: false
     email: mdeval@psi.edu
     affiliations:
       - Planetary Science Institute
@@ -122,6 +132,7 @@ authors:
     name: Jared W. Coughlin
     initials: JWC
     orcid: 0000-0002-4373-4114
+    corresponding: false
     email: jcoughl3@illinois.edu
     affiliations:
       - National Center for Supercomputing Applications, University of Illinois at Urbana-Champaign
@@ -131,6 +142,7 @@ authors:
     name: Corentin Cadiou
     initials: CC
     orcid: 0000-0003-2285-0332
+    corresponding: false
     twitter: cphyc
     email: cadiou@iap.fr
     affiliations:
@@ -141,6 +153,7 @@ authors:
     name: Michael Zingale
     initials: MZ
     orcid: 0000-0001-8401-030X
+    corresponding: false
     email: michael.zingale@stonybrook.edu
     affiliations:
       - Stony Brook University
@@ -149,6 +162,7 @@ authors:
     name: Leigh Orf
     initials: ORF
     orcid: 0000-0002-2677-6427
+    corresponding: false
     email: leigh.orf@ssec.wisc.edu
     affiliations:
       - Space Science and Engineering Center, University of Wisconsin - Madison
@@ -157,6 +171,7 @@ authors:
     name: Kelton Halbert
     initials: KTH
     orcid: 0000-0001-6898-2731
+    corresponding: false
     email: kthalbert@wisc.edu
     affiliations:
       - Cooperative Institute for Meteorological Satellite Studies, The University of Wisconsin, Madison
@@ -165,6 +180,7 @@ authors:
     name: Clément Robert
     initials: CMTR
     orcid: 0000-0001-8629-7068
+    corresponding: false
     email: cmt.robert@univ-grenoble-alpes.fr
     affiliations:
       - Institut de Planétologie et d'Astrophysique de Grenoble (IPAG), Université Grenoble Alpes, France
@@ -173,6 +189,7 @@ authors:
     name: Christopher Havlin
     initials: CH
     orcid: 0000-0003-0585-8236
+    corresponding: false
     email: chavlin@illinois.edu
     affiliations:
       - School of Information Sciences, University of Illinois at Urbana-Champaign
@@ -182,6 +199,7 @@ authors:
     name: Stephanie Tonnesen
     initials: ST
     orcid: 0000-0002-8710-9206
+    corresponding: false
     email: stonnesen@flatironinstitute.org
     affiliations:
       - Center for Computational Astrophysics, Flatiron Institute
@@ -190,6 +208,7 @@ authors:
     name: Andrew Myers
     initials: AM
     orcid: 0000-0001-8427-8330
+    corresponding: false
     email: atmyers@lbl.gov
     affiliations:
       - Lawrence Berkeley National Laboratory
@@ -199,6 +218,7 @@ authors:
     name: Alex Gurvich
     initials: AG
     orcid: 0000-0002-6145-3674
+    corresponding: false
     email: alex.b.gurvich@gmail.com
     affiliations: []
     funders: []
@@ -213,6 +233,7 @@ authors:
     initials: DN
     name: Desika Narayanan
     orcid: 0000-0002-7064-4309
+    corresponding: false
   - affiliations:
       - Outer Loop LLC
     email: samskillman@gmail.com
@@ -221,6 +242,7 @@ authors:
     initials: SWS
     name: Samuel W. Skillman
     orcid: 0000-0002-7626-522X
+    corresponding: false
   - affiliations:
       - Lawrence Berkeley National Laboratory
     email: axelhuebl@lbl.gov
@@ -229,6 +251,7 @@ authors:
     initials: AH
     name: Axel Huebl
     orcid: 0000-0003-1943-7141
+    corresponding: false
   - affiliations:
       - Oak Ridge National Laboratory
     email: veb@ornl.gov
@@ -237,6 +260,7 @@ authors:
     initials: EB
     name: Elliott Biondo
     orcid: 0000-0002-9088-1360
+    corresponding: false
   - affiliations:
       - University of California, Davis
     email: awetzel@ucdavis.edu
@@ -245,6 +269,7 @@ authors:
     initials: AW
     name: Andrew Wetzel
     orcid: 0000-0003-0603-8942
+    corresponding: false
   - affiliations:
       - UC Santa Cruz
     email: cjstrawn@ucsc.edu
@@ -253,6 +278,7 @@ authors:
     initials: CS
     name: Clayton Strawn
     orcid: 0000-0001-9695-4017
+    corresponding: false
   - affiliations:
       - Idaho National Laboratory
     email: alexander.lindsay@inl.gov
@@ -261,6 +287,7 @@ authors:
     initials: AL
     name: Alexander Lindsay
     orcid: 0000-0002-6988-2123
+    corresponding: false
   - affiliations:
       - Free Agent
     email: gabriel.altay@gmail.com
@@ -269,6 +296,7 @@ authors:
     initials: GA
     name: Gabriel Altay
     orcid: 0000-0002-4120-2907
+    corresponding: false
   - affiliations:
       - Center for Astrophysics - Harvard & Smithsonian
       - University of Miami
@@ -278,6 +306,7 @@ authors:
     initials: ETL
     name: Erwin T. Lau
     orcid: 0000-0001-8914-8885
+    corresponding: false
   - affiliations:
       - Center for Astrophysics - Harvard & Smithsonian
     email: aaron.smith@cfa.harvard.edu
@@ -286,6 +315,7 @@ authors:
     initials: AS
     name: Aaron Smith
     orcid: 0000-0002-2838-9033
+    corresponding: false
   - affiliations:
       - Center for Theoretical Physics, Seoul National University
     email: mornkr@snu.ac.kr
@@ -294,6 +324,7 @@ authors:
     initials: JK
     name: Ji-hoon Kim
     orcid: 0000-0003-4464-1160
+    corresponding: false
   - affiliations:
       - Institute of Astrophysics, National Taiwan University, Taipei 10617, Taiwan
       - Physics Division, National Center for Theoretical Sciences, Taipei 10617, Taiwan
@@ -303,6 +334,7 @@ authors:
     initials: HS
     name: Hsi-Yu Schive
     orcid: 0000-0002-1249-279X
+    corresponding: false
   - affiliations:
       - Indian Institute of Technology Kharagpur
     email: navaneeths1998@gmail.com
@@ -311,6 +343,7 @@ authors:
     initials: NS
     name: Navaneeth S
     orcid: 0009-0007-6922-0369
+    corresponding: false
   - affiliations:
       - Michigan State University
     email: oshea@msu.edu
@@ -319,6 +352,7 @@ authors:
     initials: BWO
     name: Brian W. O'Shea
     orcid: 0000-0002-2786-0348
+    corresponding: false
   - affiliations:
       - Kavli Institute for Particle Astrophysics and Cosmology, Stanford University
     email: tabel@stanford.edu
@@ -327,6 +361,7 @@ authors:
     initials: TA
     name: Tom Abel
     orcid: 0000-0002-5969-1251
+    corresponding: false
   - affiliations:
       - Birla Institute of Technology and Science, Pilani, Sancoale, Goa 403726, India
     email: yashgondhalekar567@gmail.com
@@ -335,6 +370,7 @@ authors:
     initials: YG
     name: Yash Gondhalekar
     orcid: 0000-0002-6646-4225
+    corresponding: false
   - affiliations: []
     email: graywilliamj@gmail.com
     funders: []
@@ -342,6 +378,7 @@ authors:
     initials: WJG
     name: William J Gray
     orcid: 0000-0001-9014-3125
+    corresponding: false
   - affiliations:
       - Fermilab
     email: gnedin@fnal.gov
@@ -350,6 +387,7 @@ authors:
     initials: NYG
     name: Nickolay Y. Gnedin
     orcid: 0000-0001-5925-4580
+    corresponding: false
   - affiliations:
       - Institute of theoretical physics, Chinese Academy of Science
     email: cristian.joana@itp.ac.cn
@@ -358,6 +396,7 @@ authors:
     initials: CJ
     name: Cristian Joana
     orcid: 0000-0003-4642-3028
+    corresponding: false
   - affiliations:
       - University of North Texas
     email: yuan.astro@gmail.com
@@ -366,6 +405,7 @@ authors:
     initials: YL
     name: Yuan Li
     orcid: 0000-0001-5262-6150
+    corresponding: false
   - affiliations:
       - Max Planck Institute for Astrophysics
     email: rjfarber@umich.edu
@@ -374,6 +414,7 @@ authors:
     initials: RJF
     name: Ryan Jeffrey Farber
     orcid: 0000-0002-0649-9055
+    corresponding: false
   - affiliations:
       - Los Alamos National Laboratory
     email: jonahm@lanl.gov
@@ -382,6 +423,7 @@ authors:
     initials: JMM
     name: Jonah M Miller
     orcid: 0000-0001-6432-7860
+    corresponding: false
   - affiliations:
       - Penn State University
     email: mzr55@psu.edu
@@ -390,6 +432,7 @@ authors:
     initials: MR
     name: Michael Ryan
     orcid: 0000-0002-0378-5195
+    corresponding: false
   - affiliations:
       - Michigan State University
     email: dsilvia@msu.edu
@@ -398,6 +441,7 @@ authors:
     initials: DWS
     name: Devin W. Silvia
     orcid: 0000-0002-4109-9313
+    corresponding: false
   - affiliations:
       - Argonne National Laboratory
     email: rjackson@anl.gov
@@ -406,6 +450,7 @@ authors:
     initials: RJ
     name: Robert Jackson
     orcid: 0000-0003-2518-1234
+    corresponding: false
   - affiliations:
       - none
     email: karraki@gmail.com
@@ -414,6 +459,7 @@ authors:
     initials: KA
     name: Kenz Arraki
     orcid: 0000-0002-3012-1167
+    corresponding: false
   - affiliations:
       - Indian Institute of Science, Bangalore, India
     email: alankardutta@iisc.ac.in
@@ -422,6 +468,7 @@ authors:
     initials: AD
     name: Alankar Dutta
     orcid: 0000-0002-9287-4033
+    corresponding: false
   - affiliations:
       - 'Indian Institute of Science'
     email: ritalighosh@iisc.ac.in
@@ -430,6 +477,7 @@ authors:
     initials: RG
     name: Ritali Ghosh
     orcid: 0000-0001-8643-7104
+    corresponding: false
   - affiliations:
       - Shanghai Astronomical Observatory, Chinese Academy of Sciences
       - School of Astronomy and Space Sciences, University of Chinese Academy of Sciences
@@ -439,11 +487,13 @@ authors:
     initials: SX
     name: Shaokun Xie
     orcid: 0000-0001-5624-6008
+    corresponding: false
   -
     github: jnaiman
     name: Jill P. Naiman
     initials: JPN
     orcid: 0000-0002-9397-6189
+    corresponding: false
     email: jnaiman@illinois.edu
     affiliations:
       - School of Information Sciences, University of Illinois, Urbana-Champaign
@@ -453,6 +503,7 @@ authors:
     name: Ronan Hix
     initials: RH
     orcid: 0000-0002-7047-3730
+    corresponding: false
     email: hixronan@gmail.com
     affiliations:
       - University of Maryland, Oak Ridge National Lab
@@ -463,6 +514,7 @@ authors:
     name: Josh Borrow
     initials: JB
     orcid: 0000-0002-1327-1921
+    corresponding: false
     email: josh@joshborrow.com
     affiliations:
       - Department of Physics, Kavli Institute for Astrophysics and Space Research, Massachusetts Institute of Technology, Cambridge, MA 02139, USA
@@ -472,6 +524,7 @@ authors:
     name: Bili Dong
     initials: BD
     orcid: 0000-0001-5081-9039
+    corresponding: false
     email: qobilidop@gmail.com
     affiliations:
       - Department of Physics, Center for Astrophysics and Space Sciences, University of California at San Diego
@@ -481,6 +534,7 @@ authors:
     name: Ole Streicher
     initials: OS
     orcid: 0000-0001-7751-1843
+    corresponding: false
     email: ole@aip.de
     affiliations:
       - Leibniz Institute for Astrophysics Potsdam (AIP)
@@ -490,6 +544,7 @@ authors:
     name: Stuart Mumford
     initials: SM
     orcid: 0000-0003-4217-4642
+    corresponding: false
     email: stuart@cadair.com
     affiliations:
       - Aperio Software Ltd, UK
@@ -499,6 +554,7 @@ authors:
     name: Benjamin Keller
     initials: BWK
     orcid: 0000-0002-9642-7193
+    corresponding: false
     email: bkeller1@memphis.edu
     affiliations:
       - Department of Physics and Materials Science, University of Memphis
@@ -508,6 +564,7 @@ authors:
     name: Benjamin Thompson
     initials: BBT
     orcid: 0000-0003-4383-9183
+    corresponding: false
     email: ben@benjaminbthompson.com
     affiliations:
       - Jeremiah Horrocks Institute, University of Central Lancashire, Preston, Lancashire, PR1 2HE, UK
@@ -519,6 +576,7 @@ authors:
     name: Philipp Grete
     initials: PG
     orcid: 0000-0003-3555-9886
+    corresponding: false
     email: pgrete@hs.uni-hamburg.de
     affiliations:
       - University of Hamburg
@@ -529,6 +587,7 @@ authors:
     name: John H. Wise
     initials: JHW
     orcid: 0000-0003-1173-8847
+    corresponding: false
     email: jwise@physics.gatech.edu
     affiliations:
       - Center for Relativistic Astrophysics, School of Physics, Georgia Institute of Technology, Atlanta, GA 30332, USA
@@ -540,6 +599,7 @@ authors:
     name: Shin-Rong Tsai
     initials: SRT
     orcid: 0000-0003-4635-6259
+    corresponding: false
     email: srtsai@illinois.edu
     affiliations:
       - Department of Physics, National Taiwan University
@@ -555,11 +615,13 @@ authors:
       - CIERA and Department of Physics and Astronomy, Northwestern University, 1800 Sherman Ave, Evanston, IL 60201, USA
     funders:
       - CIERA Postdoctoral Fellowship
+    corresponding: false
   -
     github: yournamehere
     name: Add Yourself
     initials: YOU
     orcid: XXXX-XXXX-XXXX-XXXX
+    corresponding: false
     email: you@example.com
     affiliations:
       - Your University
