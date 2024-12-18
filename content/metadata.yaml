@@ -615,6 +615,7 @@ authors:
       - CIERA and Department of Physics and Astronomy, Northwestern University, 1800 Sherman Ave, Evanston, IL 60201, USA
     funders:
       - CIERA Postdoctoral Fellowship
+    corresponding: false
   -
     github: yournamehere
     name: Add Yourself
