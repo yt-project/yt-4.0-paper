@@ -50,7 +50,7 @@
             "y2": {"field": "x2"},
             "x": {
               "aggregate": "count",
-              "scale": {"type": "linear", "domain": [0, 250]}
+              "scale": {"type": "linear", "domain": [0, 500]}
             }
           }
         },
