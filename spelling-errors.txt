@@ -14,16 +14,16 @@ AMRKDTree
 amrvac
 Aperio
 APIs
-AREPO
+Arepo
 Arraki
 arraylike
 ARTIO
 arwetzel
 AST
-Astro
+astro
 astrojaz
 astrophysically
-astropy
+AstroPy
 astrosmith
 AthenaPK
 atmyers
@@ -39,9 +39,9 @@ binarily
 Biondo
 Birla
 Bitbucket
-bitwise
+Bitwise
 bookkeepping
-bool
+Bool
 Borro
 boxlib
 Britton
@@ -54,7 +54,7 @@ Cadair
 Cadiou
 candela
 Cartopy
-CGS
+cgs
 Champaign
 changeset
 changesets
@@ -75,14 +75,14 @@ collisionless
 colocation
 colorbar
 colorbars
-colormap
+Colormap
 colormapping
 colormaps
 colorspace
 comoving
 conda
 connectedness
-Coord
+coord
 Coords
 Corentin
 cosmosquark
@@ -91,7 +91,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-Cython
+cython
 dask
 d’Astrophysique
 dataframe
@@ -119,7 +119,7 @@ dobj
 DTU
 Duplicative
 durations
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
@@ -193,7 +193,7 @@ Ji
 jisuoqing
 jnaiman
 Joana
-Jupyter
+jupyter
 Jupyterlab
 jwise
 jzuhone
@@ -223,7 +223,7 @@ logarithmically
 LSST
 Lund
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -246,7 +246,7 @@ munkm
 Naiman
 namespace
 Narayanan
-nastasha
+Nastasha
 Navaneeth
 neper
 NetCDF
@@ -261,7 +261,7 @@ NMSU
 nosetests
 NSSC
 NumFOCUS
-NumPy
+numpy
 OAC
 octants
 octree
@@ -310,7 +310,7 @@ pytest
 PyThreeJS
 pyXSIM
 qobilidop
-quadtree
+Quadtree
 radiative
 RADMC
 rasterizers
@@ -322,7 +322,7 @@ recursed
 redshifts
 reinstrumented
 renderer
-Resampling
+resampling
 responsivity
 RGBA
 Ritali
@@ -410,7 +410,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj
@@ -418,7 +418,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-zingale
+Zingale
 zorder
 Zuckerberg
 ZuHone
