@@ -5,7 +5,7 @@ ahf
 AIP
 Aitoff
 Alamos
-Alankar
+alankar
 Alpes
 Altay
 AMR
@@ -17,10 +17,10 @@ APIs
 AREPO
 Arraki
 arraylike
-artio
+ARTIO
 arwetzel
 AST
-Astro
+astro
 astrojaz
 astrophysically
 astropy
@@ -39,11 +39,11 @@ binarily
 Biondo
 Birla
 Bitbucket
-Bitwise
+bitwise
 bookkeepping
 Bool
 Borro
-boxlib
+BoxLib
 Britton
 brittonsmith
 Bugfix
@@ -54,7 +54,7 @@ Cadair
 Cadiou
 candela
 Cartopy
-CGS
+cgs
 changeset
 changesets
 CHOLLA
@@ -76,7 +76,7 @@ colorbar
 colorbars
 colormap
 colormapping
-colormaps
+Colormaps
 colorspace
 Comoving
 conda
@@ -115,7 +115,7 @@ dobj
 DTU
 Duplicative
 durations
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
@@ -133,7 +133,7 @@ featureset
 Fermilab
 filesystem
 fisheye
-fof
+FOF
 formatter
 formatters
 frontend
@@ -158,7 +158,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-Hexahedral
+hexahedral
 HippoDraw
 histogramming
 Hix
@@ -186,7 +186,7 @@ Ji
 jisuoqing
 jnaiman
 Joana
-Jupyter
+jupyter
 Jupyterlab
 jwise
 jzuhone
@@ -257,8 +257,8 @@ numpy
 OAC
 octants
 Octree
-Octrees
-octs
+octrees
+Octs
 odowska
 olebole
 OpenGL
@@ -299,7 +299,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyxsim
+pyXSIM
 qobilidop
 quadtree
 radiative
@@ -318,7 +318,7 @@ RGBA
 Ritali
 RitaliG
 rjfarber
-Rockstar
+rockstar
 Rockstar’s
 Ronan
 Rong
@@ -339,7 +339,7 @@ Sinha
 Skillman
 SLAC
 soton
-sph
+SPH
 Springel
 STFC
 Stockinger
@@ -357,7 +357,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-sympy
+SymPy
 sytlistic
 TBD
 Tbytes
@@ -397,7 +397,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj
