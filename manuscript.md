@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2025-03-03'
+date-meta: '2025-03-28'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -85,11 +85,11 @@ header-includes: |
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2025-03-03" />
-  <meta name="citation_publication_date" content="2025-03-03" />
-  <meta property="article:published_time" content="2025-03-03" />
-  <meta name="dc.modified" content="2025-03-03T01:31:33+00:00" />
-  <meta property="article:modified_time" content="2025-03-03T01:31:33+00:00" />
+  <meta name="dc.date" content="2025-03-28" />
+  <meta name="citation_publication_date" content="2025-03-28" />
+  <meta property="article:published_time" content="2025-03-28" />
+  <meta name="dc.modified" content="2025-03-28T19:49:50+00:00" />
+  <meta property="article:modified_time" content="2025-03-28T19:49:50+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -302,9 +302,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/d4a957c9370c8780f1d5c6b691a2a316b2bfcdb5/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/d4a957c9370c8780f1d5c6b691a2a316b2bfcdb5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/d4a957c9370c8780f1d5c6b691a2a316b2bfcdb5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/bc7b005b4f20a443b3e1880fafff5a7c3f6c4836/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/bc7b005b4f20a443b3e1880fafff5a7c3f6c4836/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/bc7b005b4f20a443b3e1880fafff5a7c3f6c4836/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -327,10 +327,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/d4a957c9370c8780f1d5c6b691a2a316b2bfcdb5/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/bc7b005b4f20a443b3e1880fafff5a7c3f6c4836/))
 was automatically generated
-from [yt-project/yt-4.0-paper@d4a957c](https://github.com/yt-project/yt-4.0-paper/tree/d4a957c9370c8780f1d5c6b691a2a316b2bfcdb5)
-on March 3, 2025.
+from [yt-project/yt-4.0-paper@bc7b005](https://github.com/yt-project/yt-4.0-paper/tree/bc7b005b4f20a443b3e1880fafff5a7c3f6c4836)
+on March 28, 2025.
 </em></small>
 
 
@@ -1091,11 +1091,11 @@ When viewing this from the perspective of the landscape of inquiry, the most sta
 
 In [@doi:10.1088/0067-0049/192/1/9], the analysis platform `yt` was described.
 At the time, `yt` was focused on analyzing and visualizing the output of grid-based adaptive mesh refinement hydrodynamic simulations; while these were used to study many different physical phenomena, they all were laid out in roughly the same way, in rectilinear meshes of data.
-In this paper, we present the current version of `yt`, which enables identical scripts to analyze and visualize data stored as rectilinear grids as before, but additionally particle or discrete data, octree-based data, and data stored as unstructured meshes.
+In this paper, we present the current version of `yt`, which enables identical scripts to analyze and visualize data stored as [rectilinear grids](#sec:grid_analysis) as before, but additionally [particle or discrete data](#sec:sph-analysis), [octree-based data](#sec:octree_analysis), and data stored as [unstructured meshes](#sec:unstructured_mesh).
 This has been the result of a large-scale effort to rewrite the underlying machinery within `yt` for accessing data, indexing that data, and providing it in efficient ways to higher-level routines, as discussed in Section Something.
 While this was underway, `yt` has also been considerably reinstrumented with [metadata-aware array infrastructure](#sec:units), the [volume rendering infrastructure](#sec:vr) has been rewritten to be more user-friendly and capable, and support for [non-Cartesian geometries](#sec:noncartesian) has been added.
 
-The single biggest update/addition to `yt` since that paper was published has not been technical in nature.
+The single biggest update or addition to `yt` since that paper was published has not been technical in nature.
 In the intervening years, a directed and intense community-building effort has resulted in the contributions from over a hundred different individuals, many of them early-stage researchers, and a [thriving community of both users and developers](#sec:community).
 This is the crowning achievement of development, as we have attempted to build `yt` into a tool that enables inquiry from a technical level as well as fosters a supportive, friendly community of individuals engaged in self-directed inquiry.
 
@@ -1149,13 +1149,15 @@ Participation in code review, providing comments, feedback and suggestions to ot
 But, it does arise from a pragmatic (ensuring code reliability) or altruistic (the public good of the software) motivation, and is thus a deeper level of engagement.
 
 The final two activities, drafting enhancement proposals and closing bug reports, are the most engaged, and often the most removed from the academic motivation structure.
-Developing an [enhancement proposal](#sec:ytep)  for `yt` means iterating with other developers on the motivation behind and implementation of a large piece of functionality; it requires both motivation to engage with the community and the patience to build consensus among stakeholders.
+Developing an [enhancement proposal](#sec:ytep) for `yt` means iterating with other developers on the motivation behind and implementation of a large piece of functionality; it requires both motivation to engage with the community and the patience to build consensus among stakeholders.
 Closing bug reports -- and the development work associated with identifying, tracking and fixing bugs -- requires patience and often repeated engagement with stakeholders.
 
 ### Engagement Metrics
 
-We include here plots of the level of engagement on mailing list discussions and the citation count of the original method paper.
-
+Typically, measuring the degree of engagement in a project is done by examining the amount of activity that surrounds it; this can be through development, mailing list or other discussion forum engagement, or through citations of a paper.
+These metrics are valuable, but incomplete.
+Furthermore, their quantification presents challenges: how does migration of a project (and a community) from one form of interaction (such as a mailing list) to another (such as Slack or Github Issues) impact the perceived growth or health of that project?
+As such, we have attempted to build a proxy for the development metrics by examining activity around pull requests (as below in Figure #fig:pr-closing-time) and have opted to elide discussion of the activity of the project through the currently dominant medium of Slack.
 
 
 ## Project Governance {#sec:governance}
@@ -1241,7 +1243,7 @@ For further details, the [voting process](https://yt-project.github.io/governanc
 `yt` is developed openly.
 During the Spring of 2017, development transitioned from occurring on [Bitbucket](https://bitbucket.org/yt_analysis/) to [GitHub](https://github.com/yt-project/), and the source code management system was changed from [Mercurial](https://www.mercurial-scm.org/) to [git](https://git-scm.org/).
 Development occurs through the "pull request" model, wherein changes to the codebase are made and then requested to be included in the primary repository.
-Typically, there are two branches of development, and occasionally three.  The first of these is the "stable" branch, which is much slower-paced, and typically only modified during the release periods.
+Typically, there are two branches of development, and occasionally three. The first of these is the "stable" branch, which is much slower-paced, and typically only modified during the release periods.
 The second is that of "main" (formerly "master", which is the conventional term in git terminology, and renamed in early 2021; the corresponding mercurial term would be "default") which is where current development takes place.
 The "main" branch is meant to be for development proceeding that does not drastically disrupt usage patterns.
 Occasionally, such as during the development of `yt` 4.0, a third branch is included in the primary repository.
@@ -1287,7 +1289,6 @@ The distribution of pull requests as a function of how long it took to close the
 vegaEmbed('#figure-pr-closing-time', "images/pr_times.vl", {"actions": false});
 </script>
 
-
 ### Unit Testing {#sec:unit_testing}
 
 The `yt` codebase includes a number of unit tests; although extensive, their existence post-dates the initial development of the code, and they largely work around the extant APIs at the time of their creation.
@@ -1295,7 +1296,7 @@ Most modern recommendations for developing scientific software emphasize isolate
 While the development process attempts to emphasize development of isolated APIs and well-constrained unit tests, the balance struck between enabling contribution from junior developers and ensuring the (subjective) standards of the code base does not always fall on the side of rigid design.
 
 Many of the `yt` APIs that are tested require the existence of a "dataset."
-For instance, the testing of whether objects are correctly selected by a sphere selector (which absolutely *could* be tested in isolation, were the APIs more separable) is done via creating several different sets of mock datasets of different organizations and shapes and testing whether or not they correctly choose the data points to be included.
+For instance, the testing of whether objects are correctly selected by a sphere selector (which absolutely _could_ be tested in isolation, were the APIs more separable) is done via creating several different sets of mock datasets of different organizations and shapes and testing whether or not they correctly choose the data points to be included.
 To support these operations, the `yt` testing utilities provide helper functions for creating mock datasets that have different geometric configurations and different collections of "fields" included in their set of primitive values.
 Many of the tests are parameterized against the types and organizations of the datasets, the decomposition across mock processors, and the underlying values of the fields.
 This ensures that we check against errors and bugs that may depend on behavior that varies as the number of processors or the organization of the data changes.
@@ -1316,7 +1317,7 @@ For processes like surface extraction, this might include ensuring that fixed ra
 For streamlines, it might include computing the analytical solution to an integration along a known vector field.
 And for projections, it would mean that integrating the path with a weight of "one" should result in a uniform set of values equal to the path length across the domain.
 
-At present, the unit tests in `yt` take a considerable amount of time to run, and are using the nosetests framework.  Modern Python practice is to use the newer pytest framework, and efforts are underway to port `yt` to utilize pytest, and in the process, attempt to reduce overall runtime.
+At present, the unit tests in `yt` take a considerable amount of time to run; recent efforts have moved these from using the nosetest framework to utilizing the more modern and supported pytest framework.
 
 ### Answer Testing {#sec:answer_testing}
 
@@ -1325,9 +1326,9 @@ Because so much of `yt` is focused on computing analysis results, and because so
 
 In general, we allow three different classes of answers, against which we compare results from the current version of the code:
 
- 1. Data values which should not ever change unless an explicit decision is made (i.e., raw data values accessed from on-disk fields)
- 2. Lightly-processed data values which we do not anticipate any deviation from exact, ordered values (i.e., averages, extrema, etc.)
- 3. Higher-level processed values which may differently accumulate error across platforms and architectures but are still within fine-grained ($\equiv 10^{-7}$) tolerance (i.e., images, pixelized projections, etc.)
+1.  Data values which should not ever change unless an explicit decision is made (i.e., raw data values accessed from on-disk fields)
+2.  Lightly-processed data values which we do not anticipate any deviation from exact, ordered values (i.e., averages, extrema, etc.)
+3.  Higher-level processed values which may differently accumulate error across platforms and architectures but are still within fine-grained ($\equiv 10^{-7}$) tolerance (i.e., images, pixelized projections, etc.)
 
 In the first case, we can utilize hashing functions (such as MD5 and SHA) to guarantee consistency across executions.
 Typically, however, we store the full set of values to facilitate easy comparison.
@@ -1335,53 +1336,55 @@ In the latter two cases, we apply unit-aware relative tolerances.
 This allows for changes in unit assignment to be isolated from changes in value, and furthermore allows minor migration of values.
 A recent incident in which these tests needed to be changed resulted from minor differences as a result of consolidating operations within a loop to conserve memory; the code in question was converted to Cython and the drift was on the scale of $10^{-10}$.
 
-For small-scale answer tests, results are stored in a separate repository that is cloned as a subrepository of the principle ``yt`` repository.
+For small-scale answer tests, results are stored in a separate repository that is cloned as a subrepository of the principle `yt` repository.
 When a new set of answers are needed, they are submitted via pull request, and the changeset hash used for answer validation is updated in the main repository.
-This allows a different cadence, and also enables individuals *not* interested in updating answer values to avoid cloning the subrepository and its full history.
-Larger dataset answers are stored in on our continuous integration servers; a YAML file in the main ``yt`` repository stores the current version number for those answers, which is incremented (via a pull request) when needed.
+This allows a different cadence, and also enables individuals _not_ interested in updating answer values to avoid cloning the subrepository and its full history.
+Larger dataset answers are stored in on our continuous integration servers; a YAML file in the main `yt` repository stores the current version number for those answers, which is incremented (via a pull request) when needed.
 Requiring this clear decision-making process allows for both collaborative discussion and community governance over the degree of answer drift allowed.
+In contrast to the unit tests, answer tests rely on a custom-built legacy plugin that has not been ported to pytest; efforts have stalled to complete this porting, and at the present the answer-testing framework still utilizes the nosetests library.
+This is discussed somewhat further in #sec:future_directions.
 
 ### Code Review
 
 Code review in `yt` is conducted on a line-by-line basis, as well as on a higher-level regarding pull requests.
 The workflow for code review roughly follows this outline:
 
- 1. A pull request is issued.  When a new pull request is issued, a template is provided that includes a description of the change, requesting information about its compliance with coding standards, etc.
- 2. The pull request is automatically marked as unmergeable until a team member applies the correct component label.
- 3. Code is reviewed, line-by-line, and suggestions are made by humans. Code linting, where specific behaviors are identified (such as inconsistent naming, unused variables, unreachable code sections, etc) is automated.
- 4. This process is iterated, ensuring that tests, results accuracy and coding standards are maintained.
+1.  A pull request is issued. When a new pull request is issued, a template is provided that includes a description of the change, requesting information about its compliance with coding standards, etc.
+2.  The pull request is automatically marked as unmergeable until a team member applies the correct component label.
+3.  Code is reviewed, line-by-line, and suggestions are made by humans. Code linting, where specific behaviors are identified (such as inconsistent naming, unused variables, unreachable code sections, etc) is automated.
+4.  This process is iterated, ensuring that tests, results accuracy and coding standards are maintained.
 
 One increasing issue with the code review process is ensuring that changes are reviewed with appropriate urgency; larger pull requests tend to languish without review, as the requirements for review necessarily add burden to the maintainers.
 "Bugfix" changes formally require only one reviewer, whereas the `yt` guidelines suggest that larger changes require review from two different team members.
 
 One of the most pressing bottlenecks with code review is that the time it takes for tests to pass is much longer than the typical time span during which code review takes place.
-Because tests are often required to be run on the *current* version of the code, not the version of the code against which the pull request has been issued, they are often re-initiated following a merge.
+Because tests are often required to be run on the _current_ version of the code, not the version of the code against which the pull request has been issued, they are often re-initiated following a merge.
 This results in a pull request being merged, and then whatever pull request is next to be reviewed has to wait until the tests (now updated with the newly accepted pull request) pass.
-To alleviate this, we have recently begun utilizing the ["auto-merge" feature](https://github.blog/changelog/2021-02-04-pull-request-auto-merge-is-now-generally-available/) provided by GitHub.
+To alleviate this, project maintainers utilize the ["auto-merge" feature](https://github.blog/changelog/2021-02-04-pull-request-auto-merge-is-now-generally-available/) provided by GitHub.
 This allows a maintainer to mark a pull request as "queued" to be merged once a set of requirements -- such as tests passing, approval messages, comment resolution and so forth -- are met.
 By queuing up pull requests for merging, it allows maintainers to mark a set of pull requests as ready to be merged, and then when they meet the appropriate (automated and asynchronous) criteria, they will be merged.
 
 ### Code Styling and Linting
 
-For code included in ``yt``, a set of styles are enforced.
+For code included in `yt`, a set of styles are enforced.
 The term "linting" is used to describe applying automated checks to enforce sytlistic consistency, as well as to flag potential errors that can be detected through static analysis of the code.
 
-We rely on the [``pre-commit``](https://pre-commit.com) framework, which enables automated checks as well as automatic fixes at commit time.
+We rely on the [`pre-commit`](https://pre-commit.com) framework, which enables automated checks as well as automatic fixes at commit time.
 This tool is an opt-in so not every "drive-by" contributor has to learn and install it, but continuous linting is provided by [pre-commit.ci](https://pre-commit.ci) so styling errors cannot slip in.
 
 We configure `pre-commit` to run a mixture of formatters and static checkers.
 The former modify the code in place, while the latter only report errors and so-called "code smells" (such as undefined variables, unused imports, bare `except` statements...) but require human developers fix them.
 
-Our suite of formatter most prominently includes
-[``black``](https://black.readthedocs.io/en/stable/),
-[``isort``](https://pycqa.github.io/isort/) and
-[``pyupgrade``](https://github.com/asottile/pyupgrade).
-``black`` has been designed to maximize readability with as few free parameters as possible
-(In many ways, the fact that most of the ``yt`` code developers did not utilize this style before it was enforced likely enabled its uptake, as it was seen as a choice that "made everyone compromise."),
-while ``isort`` ensures that all ``import`` statements are sorted (according to alphabetical order within a first/second/third-party categorization), and ``pyupgrade`` modernizes some Python idioms according to our minimal support version of the language.
-In particular, ``pyupgrade`` enforces the usage of modern Python ["f-strings"](https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals) since we do not support Python version older than 3.6.
+Our suite of formatters most prominently includes
+[`black`](https://black.readthedocs.io/en/stable/),
+[`isort`](https://pycqa.github.io/isort/) and
+[`pyupgrade`](https://github.com/asottile/pyupgrade).
+`black` has been designed to maximize readability with as few free parameters as possible
+(In many ways, the fact that most of the `yt` code developers did not utilize this style before it was enforced likely enabled its uptake, as it was seen as a choice that "made everyone compromise."),
+while `isort` ensures that all `import` statements are sorted (according to alphabetical order within a first/second/third-party categorization), and `pyupgrade` modernizes some Python idioms according to our minimal support version of the language.
+In particular, `pyupgrade` enforces the usage of modern Python ["f-strings"](https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals) since we do not support Python version older than 3.6.
 
-For static code analysis we rely on the [``flake8``](https://flake8.pycqa.org/en/latest/) framework.
+For static code analysis we rely on the [`flake8`](https://flake8.pycqa.org/en/latest/) framework.
 Effort is underway to enable using `mypy` for the specialized task of type checking.
 
 All changes that can be applied via automation (specifically, code formatting) are accessible from within the GitHub pull request interface, and are again provided by [pre-commit.ci](https://pre-commit.ci).
@@ -1392,7 +1395,7 @@ While yt is not necessarily the perfect laboratory for this, as the project as a
 
 ### Type Hinting
 
-Code included in ``yt`` is not required to utilize [type hinting](https://docs.python.org/3/library/typing.html).
+Code included in `yt` is not required to utilize [type hinting](https://docs.python.org/3/library/typing.html).
 However, new contributions are allowed to include type hinting, and work is underway to develop an ontology of types as well as a base set of utilities and types that would be used both internally, and possibly be made available to external package developers.
 
 ### YTEP Process {#sec:ytep}
@@ -1407,45 +1410,45 @@ Implemented shortly after the first paper on `yt` was released, the YTEP process
 The accepted YTEPs have included implementing the chunking system, developing a units system, removing legacy components, and implementing a code of conduct.
 Below, we include a table of current YTEPs as of this writing.
 
-| Number   | YTEP Title                                            | Created            | Authors                                                             |
-|----------|-------------------------------------------------------|--------------------|---------------------------------------------------------------------|
-| 0001     | IO Chunking                                           | November 26, 2012  | Matthew Turk                                                        |
-| 0002     | Profile Plotter                                       | December 5, 2012   | Matthew Turk                                                        |
-| 0003     | Standardizing field names                             | December 11, 2012  | Casey Stark, Nathan Goldbaum, Matthew Turk                          |
-| 0005     | Octrees for Fluids and Particles                      | December 24, 2012  | Matthew Turk                                                        |
-| 0006     | Periodicity                                           | January 10, 2013   | Matthew Turk, Nathan Goldbaum                                       |
-| 0007     | Automatic Pull Requests' validation                   | February 21, 2013  | Kacper Kowalik                                                      |
-| 0008     | Release Schedule                                      | February 21, 2013  | Matthew Turk                                                        |
-| 0009     | AMRKDTree for Data Sources                            | February 28, 2012  | Sam Skillman                                                        |
-| 0010     | Refactoring for Volume Rendering and Movie Generation | March 3, 2013      | Cameron Hummels                                                     |
-| 0011     | Symbol units in yt                                    | March 7, 2013      | Nathan Goldbaum, Casey Stark, Anna Rosen, Matthew Turk              |
-| 0012     | Halo Redesign                                         | March 7, 2013      | Britton Smith, Cameron Hummels, Chris Moody, Mark Richardson, Yu Lu |
-| 0013     | Deposited Particle Fields                             | April 25, 2013     | Chris Moody, Matthew Turk, Britton Smith, Doug Rudd, Sam Leitner    |
-| 0014     | Field Filters                                         | July 2nd, 2013     | Matthew Turk                                                        |
-| 0015     | Transfer Function Refactor                            | August 13, 2013    | Sam Skillman                                                        |
-| 0016     | Volume Traversal                                      | September 10, 2013 | Matthew Turk                                                        |
-| 0017     | Domain-Specific Output Types                          | September 18, 2013 | Matthew Turk and Anthony Scopatz                                    |
-| 0018     | Changing dict-like access to Static Output            | September 18, 2013 | Matthew Turk                                                        |
-| 0019     | Reduce items in main import                           | October 2, 2013    | Matthew Turk                                                        |
-| 0020     | Removing PlotCollection                               | March 18, 2014     | Matthew Turk                                                        |
-| 0021     | Particle-Only Plots                                   | August 29, 2014    | Andrew Myers                                                        |
-| 0022     | Benchmarks                                            | January 19, 2015   | Matthew Turk                                                        |
-| 0023     | yt Community Code of Conduct                          | July 11, 2015      | Britton Smith                                                       |
-| 0024     | Alternative Smoothing Kernels                         | August 1, 2015     | Bili Dong                                                           |
-| 0025     | The ytdata Frontend                                   | August 31, 2015    | Britton Smith                                                       |
-| 0026     | NumPy-like Operations                                 | September 21, 2015 | Matthew Turk                                                        |
-| 0027     | Non-Spatial Data                                      | December 1, 2015   | Matthew Turk, Nathan Goldbaum, John ZuHone                          |
-| 0028     | Alternative Unit Systems                              | December 8, 2015   | John ZuHone, Nathan Goldbaum, Matthew Turk                          |
-| 0029     | Extension Packages                                    | January 25, 2016   | Matthew Turk                                                        |
-| 0031     | Unstructured Mesh                                     | December 18, 2014  | Matthew Turk                                                        |
-| 0032     | Removing the global octree mesh for particle data     | February 9 2017    | Nathan Goldbaum, Meagan Lang, Matthew Turk                          |
-| 0033     | Dropping Python2 Support                              | November 28, 2017  | Nathan Goldbaum                                                     |
-| 0034     | yt FITS Image Standard                                | September 9, 2018  | John ZuHone                                                         |
-| 0036     | Migrating from nose to pytest                         | September 30, 2019 | Jared Coughlin                                                      |
-| 0037     | Code Styling                                          | May 18, 2020       | Clément Robert                                                      |
-| 1000     | GitHub Migration                                      | March 25, 2017     | Lots of folks                                                       |
-| 1776     | Team Infrastructure                                   | August 24, 2014    | Britton Smith                                                       |
-| 3000     | Let's all start using yt 3.0!                         | October 30, 2013   | Matthew Turk                                                        |
+| Number | YTEP Title                                            | Created            | Authors                                                             |
+| ------ | ----------------------------------------------------- | ------------------ | ------------------------------------------------------------------- |
+| 0001   | IO Chunking                                           | November 26, 2012  | Matthew Turk                                                        |
+| 0002   | Profile Plotter                                       | December 5, 2012   | Matthew Turk                                                        |
+| 0003   | Standardizing field names                             | December 11, 2012  | Casey Stark, Nathan Goldbaum, Matthew Turk                          |
+| 0005   | Octrees for Fluids and Particles                      | December 24, 2012  | Matthew Turk                                                        |
+| 0006   | Periodicity                                           | January 10, 2013   | Matthew Turk, Nathan Goldbaum                                       |
+| 0007   | Automatic Pull Requests' validation                   | February 21, 2013  | Kacper Kowalik                                                      |
+| 0008   | Release Schedule                                      | February 21, 2013  | Matthew Turk                                                        |
+| 0009   | AMRKDTree for Data Sources                            | February 28, 2012  | Sam Skillman                                                        |
+| 0010   | Refactoring for Volume Rendering and Movie Generation | March 3, 2013      | Cameron Hummels                                                     |
+| 0011   | Symbol units in yt                                    | March 7, 2013      | Nathan Goldbaum, Casey Stark, Anna Rosen, Matthew Turk              |
+| 0012   | Halo Redesign                                         | March 7, 2013      | Britton Smith, Cameron Hummels, Chris Moody, Mark Richardson, Yu Lu |
+| 0013   | Deposited Particle Fields                             | April 25, 2013     | Chris Moody, Matthew Turk, Britton Smith, Doug Rudd, Sam Leitner    |
+| 0014   | Field Filters                                         | July 2nd, 2013     | Matthew Turk                                                        |
+| 0015   | Transfer Function Refactor                            | August 13, 2013    | Sam Skillman                                                        |
+| 0016   | Volume Traversal                                      | September 10, 2013 | Matthew Turk                                                        |
+| 0017   | Domain-Specific Output Types                          | September 18, 2013 | Matthew Turk and Anthony Scopatz                                    |
+| 0018   | Changing dict-like access to Static Output            | September 18, 2013 | Matthew Turk                                                        |
+| 0019   | Reduce items in main import                           | October 2, 2013    | Matthew Turk                                                        |
+| 0020   | Removing PlotCollection                               | March 18, 2014     | Matthew Turk                                                        |
+| 0021   | Particle-Only Plots                                   | August 29, 2014    | Andrew Myers                                                        |
+| 0022   | Benchmarks                                            | January 19, 2015   | Matthew Turk                                                        |
+| 0023   | yt Community Code of Conduct                          | July 11, 2015      | Britton Smith                                                       |
+| 0024   | Alternative Smoothing Kernels                         | August 1, 2015     | Bili Dong                                                           |
+| 0025   | The ytdata Frontend                                   | August 31, 2015    | Britton Smith                                                       |
+| 0026   | NumPy-like Operations                                 | September 21, 2015 | Matthew Turk                                                        |
+| 0027   | Non-Spatial Data                                      | December 1, 2015   | Matthew Turk, Nathan Goldbaum, John ZuHone                          |
+| 0028   | Alternative Unit Systems                              | December 8, 2015   | John ZuHone, Nathan Goldbaum, Matthew Turk                          |
+| 0029   | Extension Packages                                    | January 25, 2016   | Matthew Turk                                                        |
+| 0031   | Unstructured Mesh                                     | December 18, 2014  | Matthew Turk                                                        |
+| 0032   | Removing the global octree mesh for particle data     | February 9 2017    | Nathan Goldbaum, Meagan Lang, Matthew Turk                          |
+| 0033   | Dropping Python2 Support                              | November 28, 2017  | Nathan Goldbaum                                                     |
+| 0034   | yt FITS Image Standard                                | September 9, 2018  | John ZuHone                                                         |
+| 0036   | Migrating from nose to pytest                         | September 30, 2019 | Jared Coughlin                                                      |
+| 0037   | Code Styling                                          | May 18, 2020       | Clément Robert                                                      |
+| 1000   | GitHub Migration                                      | March 25, 2017     | Lots of folks                                                       |
+| 1776   | Team Infrastructure                                   | August 24, 2014    | Britton Smith                                                       |
+| 3000   | Let's all start using yt 3.0!                         | October 30, 2013   | Matthew Turk                                                        |
 
 
 ## Indexing and Geometry
@@ -1518,16 +1521,17 @@ The basic principles by which `yt` operates are built on the notion of selecting
 Selections in `yt` are usually spatial in nature, although several non-spatial mechanisms focused on queries can be utilized as well.
 These objects which conduct selection are selectors, and are designed to provide as small of an API as possible, to enable ease of development and deployment of new selectors.
 
-Selectors require defining several functions, with the option of defining additional functions for optimization, that return true or false whether a given point is or is not included in the selected region.
+Implementing a new "selector" in `yt` requires defining several functions, with the option of defining additional functions for optimization, that return true or false whether a given point is or is not included in the selected region.
 These functions include selection of a rectilinear grid (or any point within that grid), selection of a point with zero extent and selection of a point with a non-zero spherical radius.
+Implementing new selectors is uncommon, as many basic selectors have been defined, along with the ability to combine these through boolean operations.
 
 The base selector object utilizes these routines during a selection operation to maximize the amount of code reused between particle, patch, and octree selection of data.
 These three types of data are selected through specific routines designed to minimize the number of times that the selection function must be called, as they can be quite expensive.
 
-Selecting data from a grid is a two-step process.
+Selecting data from a dataset composed of grids is a two-step process.
 The first step is identifying which grids intersect a given data selector; this is done through a sequence of bounding box intersection checks.
 Within a given grid, the cells which are intersected are identified.
-This results in the selection routine being called once for each grid object in the simulation and once for each cell located within an intersecting grid.
+This results in the selection routine being called once for each grid object in the simulation and once for each cell located within an intersecting grid (unless additional short-circuit paths, specific to the selector, are available).
 This can be conducted hierarchically, but due to implementation details around how the grid index is stored this is not yet cost effective.
 
 Selecting data from an octree-organized dataset utilizes a recursive scheme that selects individual oct nodes, then for each cell within that oct, determining which cells must be selected or child nodes recursed into.
@@ -1535,12 +1539,13 @@ This system is designed to allow for having leaf nodes of varying cells-per-side
 However, the number of nodes is fixed at 8, with subdivision always occurring at the midplane.
 
 The final mechanism by which data is selected is for discrete data points, typically particles in astrophysical simulations.
-At present, this is done by first identifying which data files intersect with a given selector, then selecting individual points.
-There is no hierarchical data selection conducted in this system, as we do not yet allow for re-ordering of data on disk or in-memory which would facilitate hierarchical selection through the use of operations such as Morton indices.
+Often these particles are stored in multiple files, or multiple _virtual_ files can be identified by `yt` through applying range or subsetting to the full dataset.
+Selection is conducted by first identifying which data files (or data file subsets) intersect with a given selector, then selecting individual points in those data files.
+There is only a single level of hierarchical data selection in this system, as we do not yet allow for re-ordering of data on disk or in-memory which would facilitate multi-level hierarchical selection through the use of operations such as Morton indices.
 
-### Selection Routines
+### Selection Routines {#sec:selection_routines}
 
-Given these set of hierarchical selection methods, all of which are designed to provide opportunities for early-termination, each *geometric* selector object is required to implement a small set of methods to expose its functionality to the hierarchical selection process.
+Given these set of hierarchical selection methods, all of which are designed to provide opportunities for early-termination, each _geometric_ selector object is required to implement a small set of methods to expose its functionality to the hierarchical selection process.
 Duplicative functions often result from attempts to avoid expensive calculations that take into account boundary conditions such as periodicity and reflectivity unless necessary.
 Additionally, by providing some routines as options, we can in some instances specialize them for the specific geometric operation.
 
@@ -1569,13 +1574,12 @@ A selection of data in a low-resolution simulation from a sphere.
 The logical `A AND NOT B` for regions `A` and `B` from Figures @fig:reg2 and @fig:sp2 respectively.
 ](images/selectors/reg2_not_sp2.svg){#fig:reg2_not_sp2}
 
-
 ### Fast and Slow Paths
 
 Given an ensemble of objects, the simplest way of testing for inclusion in a selector is to call the operation `select_cell` on each individual object.
 Where the objects are organized in a regular fashion, for instance a "grid" that contains many "cells," we can apply both "first pass" and "second pass" fast-path operations.
 The "first pass" checks whether or not the given ensemble of objects is included, and only iterates inward if there is partial or total inclusion.
-The "second pass" fast pass is specialized to both the organization of the objects *and* the selector itself, and is used to determine whether either only a specific (and well-defined) subset of the objects is included or the entirety of them.
+The "second pass" fast pass is specialized to both the organization of the objects _and_ the selector itself, and is used to determine whether either only a specific (and well-defined) subset of the objects is included or the entirety of them.
 
 For instance, we can examine the specific case of selecting grid cells within a rectangular prism.
 When we select a "grid" of cells within a rectangular prism, we can have either total inclusion, partial inclusion, or full exclusion.
@@ -1592,34 +1596,32 @@ We do make a distinction between "selection" operations and "reduction" or "cons
 Additionally, some have been marked as not "user-facing," in the sense that they are not expected to be constructed directly by users, but instead are utilized internally for indexing purposes.
 In columns to the right, we provide information as to whether there is an available "fast" path for grid objects.
 
-| Object Name              | Object Type              |
-| ------------------------ | ------------------------ |
-| Arbitrary grid           | Resampling               |
-| Boolean object           | Selection (Base Class)   |
-| Covering grid            | Resampling               |
-| Cut region               | Selection                |
-| Cutting plane            | Selection                |
-| Data collection          | Selection                |
-| Disk                     | Selection                |
-| Ellipsoid                | Selection                |
-| Intersection             | Selection (Bool)         |
-| Octree                   | Internal index           |
-| Orthogonal ray           | Selection                |
-| Particle projection      | Reduction                |
-| Point                    | Selection                |
-| Quadtree projection      | Reduction                |
-| Ray                      | Selection                |
-| Rectangular Prism        | Selection                |
-| Slice                    | Selection                |
-| Smoothed covering grid   | Resampling               |
-| Sphere                   | Selection                |
-| Streamline               | Selection                |
-| Surface                  | Selection                |
-| Union                    | Selection (Bool)         |
+| Object Name            | Object Type            |
+| ---------------------- | ---------------------- |
+| Arbitrary grid         | Resampling             |
+| Boolean object         | Selection (Base Class) |
+| Covering grid          | Resampling             |
+| Cut region             | Selection              |
+| Cutting plane          | Selection              |
+| Data collection        | Selection              |
+| Disk                   | Selection              |
+| Ellipsoid              | Selection              |
+| Intersection           | Selection (Bool)       |
+| Octree                 | Internal index         |
+| Orthogonal ray         | Selection              |
+| Particle projection    | Reduction              |
+| Point                  | Selection              |
+| Quadtree projection    | Reduction              |
+| Ray                    | Selection              |
+| Rectangular Prism      | Selection              |
+| Slice                  | Selection              |
+| Smoothed covering grid | Resampling             |
+| Sphere                 | Selection              |
+| Streamline             | Selection              |
+| Surface                | Selection              |
+| Union                  | Selection (Bool)       |
 
 Table: Selection objects and their types. {#tbl:selection-objects}
-
-
 
 
 #### Arbitrary grid {#sec:dobj-arbitrary_grid}
@@ -1981,6 +1983,10 @@ Derived fields are an extremely integral component of `yt` and are the gateway t
 In addition, `yt` includes a large number of fields available, many of which are dynamically constructed according to metadata available in the dataset, to jump-start analysis.
 Researchers using `yt` can load a dataset and immediately compute, for instance, the velocity divergence and `yt` will construct the appropriate finite different stencil, fill in any missing zones at the edge of individual boundaries, and return an array that can be accessed, visualized or processed.
 
+`yt` also provides, and utilizes internally, methods for constructing derived fields from "templates."
+For instance, generation of mass fraction fields (as demonstrated above) is conducted internally by `yt` through iterating over all known fields of type density and applying the same function template to them.
+This is applied for quantities such as atomic and molecular species as well as for vector fields, where operators such as divergence and gradient are available through templated field operations.
+
 #### Particle Filters {#sec:particle_filters}
 
 Many of the data formats that `yt` accepts define particles as mixtures of a single set of attributes (such as position, velocity, etc) and then a "type" -- for instance, intermingling dark matter particles with "star" particles.
@@ -2072,13 +2078,13 @@ The array-like operations utilized in `yt` attempt to map to conceptually simila
 Unlike numpy, however, these utilize `yt`'s dataset-aware "chunking" operations, in a manner philosophically similar to the chunking operations used in the parallel computation library dask.
 Below, we outline the three classes of operations that are available, based on the type of their return value.
 
-#### Reduction to Scalars  {#sec:arrayops-scalar}
+#### Reduction to Scalars {#sec:arrayops-scalar}
 
-Traditional array operations that map from an array to a scalar are accessible utilizing familiar syntax.  These include:
+Traditional array operations that map from an array to a scalar are accessible utilizing familiar syntax. These include:
 
- * `min(field_specification)`, `max(field_specification)`, and `ptp(field_specification)`
- * `argmin(field_specification, axis)`, and `argmax(field_specification, axis)`
- * `mean(field_specification, weight)`, `std(field_specification, weight)`, and `sum(field_specification)`
+- `min(field_specification)`, `max(field_specification)`, and `ptp(field_specification)`
+- `argmin(field_specification, axis)`, and `argmax(field_specification, axis)`
+- `mean(field_specification, weight)`, `std(field_specification, weight)`, and `sum(field_specification)`
 
 In addition to the advantages of allowing the parallelism and memory management be handled by `yt`, these operations are also able to accept multiple fields.
 This allows multiple fields to be queried in a single pass over the data, rather than multiple passes.
@@ -2091,7 +2097,7 @@ The operations `mean` and `sum` are available here in a non-spatial form, where 
 
 #### Reduction to Vectors {#sec:arrayops-vector}
 
- * `profile(axes, fields, profile_specification)`
+- `profile(axes, fields, profile_specification)`
 
 The `profile` operation provides weighted or unweighted histogramming in one or two dimensions.
 This function accepts the axes along which to compute the histogram as well as the fields to compute, and information about whether the binning should be an accumulation, an average, or a weighted average.
@@ -2099,16 +2105,16 @@ These operations are described in more detail in **reference profile section**.
 
 #### Remapping Operations {#sec:arrayops-remap}
 
- * `mean(field_specification, weight, axis)`
- * `sum(field_specification, axis)`
- * `integrate(field_specification, weight, axis)`
+- `mean(field_specification, weight, axis)`
+- `sum(field_specification, axis)`
+- `integrate(field_specification, weight, axis)`
 
 These functions map directly to different methods used by the projection data object.
 Both `mean` and `sum`, when supplied a spatial axis, will compute a dimensionally-reduced projection, remapped into a pixel coordinate plane.
 Importantly, if the dataset is a finite-volume dataset (grid, octree, etc), the results of these operations will be a variable-resolution mesh, rather than a fixed resolution image buffer.
 
 
-## Abstracting Simulation Types
+## Abstracting Simulation Types {#sec:abstracting_simulation_types}
 
 ### Chunking and Decomposition Strategies {#sec:chunking}
 
@@ -2129,7 +2135,7 @@ This chunking type is the most common strategy for parallel-decomposition.
 Necessarily, both indexing and selection methods must be implemented to expose these different chunking interfaces; `yt` utilizes specific methods for each of the primary data types that it can access.
 We detail these below, specifically describing how they are implemented and how they can be improved in future iterations.
 
-### Grid Analysis
+### Grid Analysis {#sec:grid_analysis}
 
 ![The grid structure of the simulation `IsolatedGalaxy`](){#fig:grid_organization}
 
@@ -2359,7 +2365,7 @@ Where hand-written optimizations for these functions are not available, classes 
 In @tbl:finite_element_types we enumerate the types of finite elements supported at present.
 
 | Type   | # Dims | # Vertices | Description             |
-| -      | -      | -          | -                       |
+| ------ | ------ | ---------- | ----------------------- |
 | `P1`   | 1      | 2          | Linear                  |
 | `P1`   | 2      | 4          | Linear Triangular       |
 | `Q1`   | 2      | 4          | Linear Quadrilateral    |
@@ -2375,7 +2381,7 @@ Table: Finite element types supported in `yt`. {#tbl:finite_element_types}
 
 To conduct pixelization of a slice or to compute values for volume rendering, `yt` first computes bounding boxes for the individual values.
 Once a pixel has been identified as being "within" a particular element (which also takes into account the shape of higher-order elements, rather than assuming a flat set of planes) the pixelizer has to compute the value at that location.
-In order to compute intra-element values at a position $(x, y, z)$ the position within a *reference* element $(x', y', z')$ must first be computed, and then the value solved for given the values at the vertices.
+In order to compute intra-element values at a position $(x, y, z)$ the position within a _reference_ element $(x', y', z')$ must first be computed, and then the value solved for given the values at the vertices.
 This is conducted within the function `sample_at_real_point`, which is defined for each `ElementMapper`.
 
 ![Example of a finite element mesh with higher-order tetrahedral elements, including a zoom-in on one of the elements](images/fem_example.png){#fig:finite_element_higher_order}
@@ -2392,7 +2398,7 @@ As is clearly visible in the second plot, `yt` is applying higher-order methods 
 In Section @sec:abstraction-coordinates, we describe the relationship between the internal 'index' space that `yt` uses for referencing values and the natural 'data' space that the values represent.
 The abstraction of the coordinate systems and the relationship between index-space and data-space provides the ability to convert between the two; however, constructing visualizations and annotations requires an additional level of complexity.
 
-The single most important shortcoming in the analysis of non-cartesian datasets in `yt` is that the data selection operators almost exclusively function on the coordinates in *index* space, rather than in *data* space.
+The single most important shortcoming in the analysis of non-cartesian datasets in `yt` is that the data selection operators almost exclusively function on the coordinates in _index_ space, rather than in _data_ space.
 As such, subselecting datasets by utilizing traditional geometric selectors in `yt` is much less useful than it should be; for example, selecting a sphere (see @sec:dobj-sphere) applies spherical selections in index space, which result in a decidedly non-spherical object.
 Selections of objects such as @sec:dobj-region do make considerably more sense, however, as they are often thought of as sweeping data along coordinate axes; the region object itself will naturally select wedges in a spherical domain, for instance.
 Future versions of `yt` will likely introduce means of more clearly selecting objects in coordinate space, for more natural subsetting of data.
@@ -4264,8 +4270,8 @@ We are exploring options for encouraging its uptake, particularly as we anticipa
 
 ## Halo-Finding and Catalogs {#sec:halo_finding}
 
-In cosmological simulations, dark matter is nearly always represented as a collection of collisionless particles. **CITE SOMETHING ABOUT VLASOV GRID SOLUTIONS**
-This is well-suited to approximating it as a collisionless fluid; however, the identification of structures within that collection of particles can take on several forms, addressing different use cases to different degrees of accuracy. **CITE HALO FINDING COMPARISON PAPER**
+In cosmological simulations, dark matter is nearly always represented as a collection of collisionless particles.
+This is well-suited to approximating it as a collisionless fluid; however, the identification of structures within that collection of particles can take on several forms, addressing different use cases to different degrees of accuracy. [@doi:10.1111/j.1365-2966.2011.18858.x]
 Being able to identify halos, as well as their associated baryonic content, is necessary for rapid analysis of cosmological simulations.
 Furthermore, convergence studies and cross-simulation comparisons requires a consistent method for identifying dark matter halos, as well as the ability to track their growth over time.
 
@@ -4357,9 +4363,7 @@ Common applications of this include iterating over datasets to identify quantiti
 Using multiple levels of parallelism allows researchers to allocate a large processor count job on an HPC resource and dedicate individual portions of it to each dataset in a set of data outputs.
 For many types of data analysis, particularly those operations conducted across a range of outputs, this allows much easier strong scaling.
 
-### Performance of Operations
-
-### Inline Analysis
+### Inline Analysis {#sec:inline_analysis}
 
 It is possible to instrument a simulation code to call Python routines inline during its execution.
 Enzo has been instrumented in such a fashion; it accepts parameters that govern when and how frequently Python is called.
@@ -4373,7 +4377,7 @@ This non-standardized approach to conducting _in situ_ visualization led to the 
 This library encapsulates all Python API calls, manages references, and provides a systematic method for providing data pointers to Python.
 `libyt` provides a stable C-based API, and is accessible from numerous different languages.
 It also provides a custom-built `yt` frontend for accepting data.
-A more complete description is outside the scope of this paper, and we refer the reader to (**MJT: cite in prep manuscript**).
+A more complete description is outside the scope of this paper, and we refer the reader to Tsai, et al, in prep (2025).
 
 
 ## Analysis Modules {#sec:analysis-modules}
@@ -4425,16 +4429,80 @@ The tool ytini [@doi:10.1088/1538-3873/aa51b3] serves as an intermediary between
 ytini was developed to ease the process of converting data from simulation format into one suitable for production teams to utilize in Houdini and other visual effects software, and has been designed to enable deeper collaboration between researchers and visualization and outreach experts.
 
 
-## Future Directions
+## Future Directions {#sec:future_directions}
 
-- More integration with _in situ_ analysis systems like `libyt`
-- Much improved optimization
-- Integration with other domains besides astronomy
-- Refactoring for the long term
-- Static typing
-- Improving visual representation of `yt` objects
-- Testing infrastructure
-- Integration with external libraries such as pytorch-spatial, etc
+The development of `yt` has changed over time, as it has increasingly served as a stable platform for analysis of data and maintenance efforts have taken greater resources.
+However, despite that, there are a number of exciting areas within `yt` that could serve as targets of future development.
+In addition to these technical areas, expanding the user-base and developer-base of `yt` can serve to better support diverse use cases and applications.
+
+### Improvements to Internal Systems {#sec:improvements_to_internal_systems}
+
+**Optimization**
+
+The internal systems that conduct selection, caching and IO optimization, data processing and parallel load distribution have been designed for general purpose application.
+While this enables code reuse as well as consistent API patterns, the methods used to implement these systems internally in `yt` have not always kept up with the optimizations available.
+For example, the data selection routines (described in @sec:selection_routines) are not uniformly optimized to take advantage of built-in organizational information from grid, octree and particle data.
+A particular example is the [quad-tree projection](#sec:dobj-quad_proj).
+This projection method can be optimized for octree datasets for some speedups and memory improvements (which would likely then be shared with grid patch datasets) but the maintenance and implementation costs are not currently balanced in favor of that change.
+Future iterations on `yt` will necessarily need to take these possible optimizations into account in order to meet the needs of increasing dataset size and complexity.
+
+Other, more mundane optimizations can also be applied.
+While utilizing units for all array-based operations (see @sec:units) provides safety and clarity of the quantities being manipulated, it also introduces overhead from the symbolic manipulation of those units.
+For example, typically the units used for position inside `yt` are all in the internal "index" space of the dataset.
+For some cosmological simulations, these are normalized to 1.0; for other simulations, they may be in centimeters or kilometers.
+(And often in cosmology there is some factor of the Hubble constant somewhere in the units, which is typically *also* an input parameter to the simulation.)
+However, we cannot guarantee that all input coordinates to selection routines match this index space; in fact, doing so would render utilizing a unit library unnecessary.
+As a result, `yt` conducts as regularization of units inside selection routines to ensure that they are the same in the quantities being compared or evaluated.
+This requires symbolic math operations in SymPy, which can at times carry with them substantial overhead.
+Often, even verifying that units are identical requires expensive operations to be conducted.
+To alleviate this, providing some measure of immutable units or index-guaranteed units (and thus enabling the unit comparison process to be elided) would eliminate many expensive operations inside selection routines.
+This would likely have the biggest impact on operations like ghost-zone generation, which can be quite expensive.
+
+Another high-impact possible optimization is a conversion of the underlying infrastructure used for grids (@sec:grid_analysis) into a more compact and spatially-aware data structure.
+Specifically, utilizing an approach that uses the inherent spatial organization of a patch-based grid dataset (often in the form of an R-tree) can reduce the memory overhead of grid storage.
+While work has begun on this, modeling the grid-infrastructure after the "visitor" pattern used in the octree infrastructure, differences between the two (such as irregular sizes, different refinement patterns per level, etc) has presented some difficulties.
+However, given a successful implementation, much of the code that provides access to IO and selection (i.e., @sec:chunking) should be able to be moved into optimized, tight-loop routines written in Cython, Rust or other lower-level languages.
+Utilizing these data structures will also enable access to bitmap-arrays for caching of data selection results, reducing overall memory usage and improving performance.
+
+**Testing infrastructure**
+
+As dicussed in [[#sec:unit_testing]] and [[#sec:answer_testing]], the `yt` testing infrastructure is prone to time-consuming and memory-intense operations.
+Additionally, the bifurcation between those tests executable using nose and those executable using pytest presents a challenge for new contributors.
+Future development focused on unifying these two test suites, while also reducing the barriers to entry for executing a full test suite, will promote better test "hygiene" and enable contributors to rely on the underlying testing infrastructure run locally on their machines.
+
+Reducing the requirements for running and examining answer tests, more specifically examining the *results* of answer tests, could take the form of comparisons against hashes, or application of locality-sensitive hashing techniques.
+At present, comparing test results to a fixed "gold standard" requires downloading substantial amounts of data to local development workstations -- both the input data and the certified results.
+
+### Quality of Life {#sec:quality_of_life}
+
+Improving the "quality of life" of using `yt` can provide a more comfortable analysis environment and reduce friction between researchers and inquiry.
+Since the development of `yt`, the Python language has enabled and expanded support for type "hinting," wherein the types of variables are indicated by the code itself in (non-binding) annotations.
+For instance, declaring that the "center" argument to a constructing a sphere selector must be a 3-element tuple or the strings "c" can enable integrated development environments (IDEs) such as VS Code to supply helpful information when a user has incorrectly specified the argument.
+This also helps with automated testing, where a properly type-hinted codebase can be examined for violations of these input and return types.
+While much of `yt` has been annotated with type hints, there is still a considerable amount of the code base that has not.
+Improving the coverage of type hinting could potentially improve the development experience as well as the experience of using `yt`.
+
+As discussed in [[#sec:jupyter_integration]], objects in Python can be provided with special methods that enhance their visual representation in the Jupyter Notebook.
+Other libraries, including Pandas, have leveraged this to provide nicer, more informative visual representations of datasets that facilitate at-a-glance understanding of their layout and contents.
+At present, `yt` does not have an extensive set of objects that provide user-friendly representations in this way.
+A reasonable amount of effort in this area could bring a great deal of additional information and orientation to users, particularly those that are new to the project.
+For instance, visual representations of dataset layout, format, size, etc would be appropriate enhancements.
+
+### New Features {#sec:new_features}
+
+New feature development centers on two main areas: connecting with new and emerging ecosystems of libraries and packages, and development of features to support external communities of researchers.
+The rapid evolution of toolchains and projects related to machine learning and AI has presented numerous, currently somewhat underexplored, opportunities for integration with `yt`.
+Development of high-level and meaningful connections with libraries such as `pytorch-spatial` may unlock functionality and new discovery spaces for researchers seeking to apply AI techniques to simulation data from astronomy and other communities.
+
+Additional high-priority areas of new feature development include deeper connections with _in situ_ analysis and visualization systems such as `libyt`.
+`libyt`, while initially created as a `yt`-specific platform to connect MPI-parallel applications to `yt`, provides flexible, Python-centric means of communicating between simulation platforms and Python scripts as well as running Jupyter kernels.
+Further developments in `yt` to better support flexible data decomposition and arrangement would benefit `libyt` as it scales to higher processor count and data volume.
+
+Finally, the biggest realm of new feature development that is available to `yt` is the addition of algorithms and methods from different domains outside of astronomy.
+While `yt` has been applied outside of astrophysical simulations, there is a wealth of algorithms and techniques that have not been made accessible.
+These span tasks such as feature identification, visualization, dimensionality reduction, and other domain-specific techniques.
+One of the most important goals we have with `yt` is to provide a platform that enables these domain-specific techniques to be applied more generally and to facilitate direct technology transfer between domains.
+
 
 
 ## Sustainability {#sec:sustainability}
