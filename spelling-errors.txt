@@ -5,7 +5,7 @@ ahf
 AIP
 Aitoff
 Alamos
-Alankar
+alankar
 Alpes
 Altay
 AMR
@@ -14,16 +14,16 @@ AMRKDTree
 AMRVAC
 Aperio
 APIs
-Arepo
+arepo
 Arraki
 arraylike
-artio
+ARTIO
 arwetzel
 AST
 Astro
 astrojaz
 astrophysically
-astropy
+AstroPy
 astrosmith
 AthenaPK
 atmyers
@@ -41,9 +41,9 @@ Birla
 Bitbucket
 Bitwise
 bookkeepping
-bool
+Bool
 Borro
-BoxLib
+boxlib
 Britton
 brittonsmith
 Bugfix
@@ -77,12 +77,12 @@ colorbar
 colorbars
 colormap
 colormapping
-Colormaps
+colormaps
 colorspace
 comoving
 conda
 connectedness
-coord
+Coord
 Coords
 Corentin
 cosmosquark
@@ -117,7 +117,7 @@ dobj
 DTU
 Duplicative
 durations
-dutta
+Dutta
 easies
 elliottbiondo
 entrypoints
@@ -135,7 +135,7 @@ featureset
 Fermilab
 filesystem
 fisheye
-FOF
+fof
 formatters
 frontend
 frontends
@@ -159,7 +159,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-Hexahedral
+hexahedral
 HippoDraw
 histogramming
 Hix
@@ -217,7 +217,7 @@ logarithmically
 LSST
 Lund
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -238,7 +238,7 @@ munkm
 Naiman
 namespace
 Narayanan
-Nastasha
+nastasha
 Navaneeth
 neper
 NetCDF
@@ -254,7 +254,7 @@ nosetest
 nosetests
 NSSC
 NumFOCUS
-NumPy
+numpy
 OAC
 octants
 octree
@@ -283,7 +283,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -300,7 +300,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyxsim
+pyXSIM
 qobilidop
 Quadtree
 radiative
@@ -319,7 +319,7 @@ RGBA
 Ritali
 RitaliG
 rjfarber
-Rockstar
+rockstar
 Rockstar’s
 Ronan
 Rong
@@ -340,7 +340,7 @@ Sinha
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger
@@ -358,7 +358,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-SymPy
+sympy
 sytlistic
 TBD
 Tbytes
@@ -408,7 +408,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-Zingale
+zingale
 zorder
 Zuckerberg
 ZuHone
