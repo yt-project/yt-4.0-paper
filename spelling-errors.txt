@@ -5,16 +5,16 @@ ahf
 AIP
 Aitoff
 Alamos
-alankar
+Alankar
 Alpes
 Altay
 AMR
 AMReX
 AMRKDTree
-AMRVAC
+amrvac
 Aperio
 APIs
-arepo
+Arepo
 Arraki
 arraylike
 ARTIO
@@ -41,9 +41,9 @@ Birla
 Bitbucket
 Bitwise
 bookkeepping
-Bool
+bool
 Borro
-boxlib
+BoxLib
 Britton
 brittonsmith
 Bugfix
@@ -55,7 +55,7 @@ Cadiou
 candela
 Cartopy
 centric
-cgs
+CGS
 changeset
 changesets
 cholla
@@ -91,7 +91,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-cython
+Cython
 dask
 d’Astrophysique
 dataframe
@@ -117,7 +117,7 @@ dobj
 DTU
 Duplicative
 durations
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
@@ -135,10 +135,10 @@ featureset
 Fermilab
 filesystem
 fisheye
-fof
+FOF
 formatters
 frontend
-frontends
+Frontends
 frontrow
 galtay
 gdf
@@ -159,7 +159,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-hexahedral
+Hexahedral
 HippoDraw
 histogramming
 Hix
@@ -187,7 +187,7 @@ Ji
 jisuoqing
 jnaiman
 Joana
-Jupyter
+jupyter
 Jupyterlab
 jwise
 jzuhone
@@ -217,7 +217,7 @@ logarithmically
 LSST
 Lund
 Madicken
-Matplotlib
+matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -258,8 +258,8 @@ numpy
 OAC
 octants
 octree
-Octrees
-octs
+octrees
+Octs
 odowska
 olebole
 OpenGL
@@ -283,7 +283,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-Pixelizers
+pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -340,7 +340,7 @@ Sinha
 Skillman
 SLAC
 soton
-sph
+SPH
 Springel
 STFC
 Stockinger
@@ -358,7 +358,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-sympy
+SymPy
 sytlistic
 TBD
 Tbytes
@@ -408,7 +408,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-zingale
+Zingale
 zorder
 Zuckerberg
 ZuHone
