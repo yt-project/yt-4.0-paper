@@ -5,7 +5,7 @@ ahf
 AIP
 Aitoff
 Alamos
-alankar
+Alankar
 Alpes
 Altay
 AMR
@@ -14,13 +14,13 @@ AMRKDTree
 amrvac
 Aperio
 APIs
-Arepo
+arepo
 Arraki
 arraylike
 artio
 arwetzel
 AST
-astro
+Astro
 astrojaz
 astrophysically
 AstroPy
@@ -39,7 +39,7 @@ binarily
 Biondo
 Birla
 Bitbucket
-bitwise
+Bitwise
 bookkeepping
 bool
 Borro
@@ -58,7 +58,7 @@ centric
 CGS
 changeset
 changesets
-cholla
+CHOLLA
 chombo
 chrishavlin
 chummels
@@ -77,9 +77,9 @@ colorbar
 colorbars
 Colormap
 colormapping
-colormaps
+Colormaps
 colorspace
-Comoving
+comoving
 conda
 connectedness
 coord
@@ -91,7 +91,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-cython
+Cython
 dask
 d’Astrophysique
 dataframe
@@ -117,7 +117,7 @@ dobj
 DTU
 Duplicative
 durations
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
@@ -135,7 +135,7 @@ featureset
 Fermilab
 filesystem
 fisheye
-FOF
+fof
 formatters
 frontend
 frontends
@@ -259,7 +259,7 @@ OAC
 octants
 octree
 octrees
-octs
+Octs
 odowska
 olebole
 OpenGL
@@ -283,14 +283,14 @@ pixelization
 pixelize
 pixelized
 pixelizer
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
 PlotCollection
 pmd
 potentia
-powderday
+Powderday
 pre
 prefixable
 programmatically
@@ -300,7 +300,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyxsim
+pyXSIM
 qobilidop
 quadtree
 radiative
@@ -340,7 +340,7 @@ Sinha
 Skillman
 SLAC
 soton
-sph
+SPH
 Springel
 STFC
 Stockinger
@@ -386,7 +386,7 @@ Urbana
 userbase
 Volker
 Vulkan
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Wijers
@@ -400,7 +400,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj
@@ -408,7 +408,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-zingale
+Zingale
 zorder
 Zuckerberg
 ZuHone
