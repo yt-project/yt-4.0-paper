@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2025-06-02'
+date-meta: '2025-06-09'
 author-meta:
 - The yt Project
 - Matthew Turk
@@ -85,11 +85,11 @@ header-includes: |
   <meta name="citation_title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="og:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
   <meta property="twitter:title" content="Introducing yt 4.0: Analysis and Visualization of Volumetric Data" />
-  <meta name="dc.date" content="2025-06-02" />
-  <meta name="citation_publication_date" content="2025-06-02" />
-  <meta property="article:published_time" content="2025-06-02" />
-  <meta name="dc.modified" content="2025-06-02T01:32:49+00:00" />
-  <meta property="article:modified_time" content="2025-06-02T01:32:49+00:00" />
+  <meta name="dc.date" content="2025-06-09" />
+  <meta name="citation_publication_date" content="2025-06-09" />
+  <meta property="article:published_time" content="2025-06-09" />
+  <meta name="dc.modified" content="2025-06-09T01:33:02+00:00" />
+  <meta property="article:modified_time" content="2025-06-09T01:33:02+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -330,7 +330,7 @@ This manuscript
 ([permalink](https://yt-project.github.io/yt-4.0-paper/v/bc7b005b4f20a443b3e1880fafff5a7c3f6c4836/))
 was automatically generated
 from [yt-project/yt-4.0-paper@bc7b005](https://github.com/yt-project/yt-4.0-paper/tree/bc7b005b4f20a443b3e1880fafff5a7c3f6c4836)
-on June 2, 2025.
+on June 9, 2025.
 </em></small>
 
 
