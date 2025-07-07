@@ -5,13 +5,13 @@ ahf
 AIP
 Aitoff
 Alamos
-Alankar
+alankar
 Alpes
 Altay
 AMR
 AMReX
 AMRKDTree
-AMRVAC
+amrvac
 Aperio
 APIs
 AREPO
@@ -75,7 +75,7 @@ collisionless
 colocation
 colorbar
 colorbars
-colormap
+Colormap
 colormapping
 colormaps
 colorspace
@@ -121,7 +121,7 @@ dutta
 easies
 elliottbiondo
 entrypoints
-Enzo
+enzo
 Enzo’s
 ethlau
 Evanston
@@ -135,7 +135,7 @@ featureset
 Fermilab
 filesystem
 fisheye
-fof
+FOF
 formatters
 frontend
 frontends
@@ -217,7 +217,7 @@ logarithmically
 LSST
 Lund
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -259,7 +259,7 @@ OAC
 octants
 octree
 Octrees
-Octs
+octs
 odowska
 olebole
 OpenGL
@@ -290,7 +290,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-powderday
+Powderday
 pre
 prefixable
 programmatically
@@ -300,7 +300,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyXSIM
+pyxsim
 qobilidop
 quadtree
 radiative
@@ -375,7 +375,7 @@ Tsai
 UC
 unappropriate
 underexplored
-unitful
+Unitful
 unitless
 Université
 unmergeable
@@ -400,7 +400,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj
@@ -408,7 +408,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-Zingale
+zingale
 zorder
 Zuckerberg
 ZuHone
