@@ -11,13 +11,13 @@ Altay
 AMR
 AMReX
 AMRKDTree
-AMRVAC
+amrvac
 Aperio
 APIs
-arepo
+Arepo
 Arraki
 arraylike
-ARTIO
+artio
 arwetzel
 AST
 astro
@@ -55,10 +55,10 @@ Cadiou
 candela
 Cartopy
 centric
-cgs
+CGS
 changeset
 changesets
-cholla
+CHOLLA
 chombo
 chrishavlin
 chummels
@@ -75,9 +75,9 @@ collisionless
 colocation
 colorbar
 colorbars
-Colormap
+colormap
 colormapping
-colormaps
+Colormaps
 colorspace
 comoving
 conda
@@ -91,7 +91,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-cython
+Cython
 dask
 d’Astrophysique
 dataframe
@@ -137,7 +137,7 @@ filesystem
 fisheye
 fof
 formatters
-frontend
+Frontend
 Frontends
 frontrow
 galtay
@@ -187,7 +187,7 @@ Ji
 jisuoqing
 jnaiman
 Joana
-jupyter
+Jupyter
 Jupyterlab
 jwise
 jzuhone
@@ -217,7 +217,7 @@ logarithmically
 LSST
 Lund
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -238,7 +238,7 @@ munkm
 Naiman
 namespace
 Narayanan
-Nastasha
+nastasha
 Navaneeth
 neper
 NetCDF
@@ -254,11 +254,11 @@ nosetest
 nosetests
 NSSC
 NumFOCUS
-numpy
+NumPy
 OAC
 octants
-octree
-octrees
+Octree
+Octrees
 Octs
 odowska
 olebole
@@ -319,7 +319,7 @@ RGBA
 Ritali
 RitaliG
 rjfarber
-rockstar
+Rockstar
 Rockstar’s
 Ronan
 Rong
@@ -340,7 +340,7 @@ Sinha
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger
@@ -386,7 +386,7 @@ Urbana
 userbase
 Volker
 Vulkan
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Wijers
@@ -400,7 +400,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj
