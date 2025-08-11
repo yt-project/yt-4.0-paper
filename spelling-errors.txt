@@ -5,7 +5,7 @@ ahf
 AIP
 Aitoff
 Alamos
-alankar
+Alankar
 Alpes
 Altay
 AMR
@@ -14,7 +14,7 @@ AMRKDTree
 amrvac
 Aperio
 APIs
-Arepo
+arepo
 Arraki
 arraylike
 artio
@@ -39,9 +39,9 @@ binarily
 Biondo
 Birla
 Bitbucket
-bitwise
+Bitwise
 bookkeepping
-Bool
+bool
 Borro
 BoxLib
 Britton
@@ -55,10 +55,10 @@ Cadiou
 candela
 Cartopy
 centric
-CGS
+cgs
 changeset
 changesets
-CHOLLA
+cholla
 chombo
 chrishavlin
 chummels
@@ -121,7 +121,7 @@ Dutta
 easies
 elliottbiondo
 entrypoints
-enzo
+Enzo
 Enzo’s
 ethlau
 Evanston
@@ -135,10 +135,10 @@ featureset
 Fermilab
 filesystem
 fisheye
-fof
+FOF
 formatters
-Frontend
-Frontends
+frontend
+frontends
 frontrow
 galtay
 gdf
@@ -159,7 +159,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-Hexahedral
+hexahedral
 HippoDraw
 histogramming
 Hix
@@ -187,7 +187,7 @@ Ji
 jisuoqing
 jnaiman
 Joana
-Jupyter
+jupyter
 Jupyterlab
 jwise
 jzuhone
@@ -231,7 +231,7 @@ moab
 Mollweide
 Monaghan
 mornkr
-MPI
+mpi
 mtryan
 Munk
 munkm
@@ -257,8 +257,8 @@ NumFOCUS
 NumPy
 OAC
 octants
-Octree
-Octrees
+octree
+octrees
 Octs
 odowska
 olebole
@@ -290,7 +290,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-powderday
+Powderday
 pre
 prefixable
 programmatically
@@ -319,7 +319,7 @@ RGBA
 Ritali
 RitaliG
 rjfarber
-Rockstar
+rockstar
 Rockstar’s
 Ronan
 Rong
@@ -340,7 +340,7 @@ Sinha
 Skillman
 SLAC
 soton
-sph
+SPH
 Springel
 STFC
 Stockinger
@@ -358,7 +358,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-sympy
+SymPy
 sytlistic
 TBD
 Tbytes
@@ -400,7 +400,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-YTEP
+ytep
 YTEPs
 ytini
 YTQuadTreeProj
