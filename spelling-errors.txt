@@ -5,7 +5,7 @@ ahf
 AIP
 Aitoff
 Alamos
-alankar
+Alankar
 Alpes
 Altay
 AMR
@@ -14,16 +14,16 @@ AMRKDTree
 AMRVAC
 Aperio
 APIs
-arepo
+AREPO
 Arraki
 arraylike
-artio
+ARTIO
 arwetzel
 AST
 Astro
 astrojaz
 astrophysically
-AstroPy
+astropy
 astrosmith
 AthenaPK
 atmyers
@@ -41,7 +41,7 @@ Birla
 Bitbucket
 Bitwise
 bookkeepping
-Bool
+bool
 Borro
 BoxLib
 Britton
@@ -55,10 +55,10 @@ Cadiou
 candela
 Cartopy
 centric
-CGS
+cgs
 changeset
 changesets
-CHOLLA
+cholla
 chombo
 chrishavlin
 chummels
@@ -82,7 +82,7 @@ colorspace
 Comoving
 conda
 connectedness
-Coord
+coord
 Coords
 Corentin
 cosmosquark
@@ -117,11 +117,11 @@ dobj
 DTU
 Duplicative
 durations
-Dutta
+dutta
 easies
 elliottbiondo
 entrypoints
-enzo
+Enzo
 Enzo’s
 ethlau
 Evanston
@@ -135,7 +135,7 @@ featureset
 Fermilab
 filesystem
 fisheye
-FOF
+fof
 formatters
 Frontend
 frontends
@@ -159,7 +159,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-Hexahedral
+hexahedral
 HippoDraw
 histogramming
 Hix
@@ -187,7 +187,7 @@ Ji
 jisuoqing
 jnaiman
 Joana
-jupyter
+Jupyter
 Jupyterlab
 jwise
 jzuhone
@@ -217,7 +217,7 @@ logarithmically
 LSST
 Lund
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -238,7 +238,7 @@ munkm
 Naiman
 namespace
 Narayanan
-Nastasha
+nastasha
 Navaneeth
 neper
 NetCDF
@@ -254,7 +254,7 @@ nosetest
 nosetests
 NSSC
 NumFOCUS
-numpy
+NumPy
 OAC
 octants
 octree
@@ -290,7 +290,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-Powderday
+powderday
 pre
 prefixable
 programmatically
@@ -319,7 +319,7 @@ RGBA
 Ritali
 RitaliG
 rjfarber
-rockstar
+Rockstar
 Rockstar’s
 Ronan
 Rong
@@ -358,7 +358,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-SymPy
+sympy
 sytlistic
 TBD
 Tbytes
@@ -375,7 +375,7 @@ Tsai
 UC
 unappropriate
 underexplored
-unitful
+Unitful
 unitless
 Université
 unmergeable
