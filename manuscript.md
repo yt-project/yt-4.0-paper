@@ -88,8 +88,8 @@ header-includes: |
   <meta name="dc.date" content="2025-09-29" />
   <meta name="citation_publication_date" content="2025-09-29" />
   <meta property="article:published_time" content="2025-09-29" />
-  <meta name="dc.modified" content="2025-09-29T18:16:26+00:00" />
-  <meta property="article:modified_time" content="2025-09-29T18:16:26+00:00" />
+  <meta name="dc.modified" content="2025-09-29T18:20:51+00:00" />
+  <meta property="article:modified_time" content="2025-09-29T18:20:51+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -302,9 +302,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/240026d8c6b235e0cd0a68aa3ba7e27e3f4e0db2/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/240026d8c6b235e0cd0a68aa3ba7e27e3f4e0db2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/240026d8c6b235e0cd0a68aa3ba7e27e3f4e0db2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/fa5fc6a4feed182e77361fedeaee1f608d6b1063/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/fa5fc6a4feed182e77361fedeaee1f608d6b1063/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/fa5fc6a4feed182e77361fedeaee1f608d6b1063/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -327,9 +327,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/240026d8c6b235e0cd0a68aa3ba7e27e3f4e0db2/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/fa5fc6a4feed182e77361fedeaee1f608d6b1063/))
 was automatically generated
-from [yt-project/yt-4.0-paper@240026d](https://github.com/yt-project/yt-4.0-paper/tree/240026d8c6b235e0cd0a68aa3ba7e27e3f4e0db2)
+from [yt-project/yt-4.0-paper@fa5fc6a](https://github.com/yt-project/yt-4.0-paper/tree/fa5fc6a4feed182e77361fedeaee1f608d6b1063)
 on September 29, 2025.
 </em></small>
 
@@ -1098,357 +1098,6 @@ While this was underway, `yt` has also been considerably reinstrumented with [me
 The single biggest update or addition to `yt` since that paper was published has not been technical in nature.
 In the intervening years, a directed and intense community-building effort has resulted in the contributions from over a hundred different individuals, many of them early-stage researchers, and a [thriving community of both users and developers](#sec:community).
 This is the crowning achievement of development, as we have attempted to build `yt` into a tool that enables inquiry from a technical level as well as fosters a supportive, friendly community of individuals engaged in self-directed inquiry.
-
-
-## Community Building {#sec:community}
-
-Choosing a software package for a particular purpose involves evaluating several differentiating factors; these factors include the functionality of a package, the performance of a package, the user-friendliness, and even the ability of an individual to find help, engage with others and feel a sense of participation [@doi:10.1371/journal.pcbi.1007296].
-The development, fostering and design of the community around `yt` is deemed to be both crucial to the success or failure of `yt`, and in many ways inseparable from its functionality.
-
-### Composition
-
-There are several rough categories of individuals engaged in development and utilization of `yt`.
-As a result of its API-first design, there are few if any individuals who use `yt` that do not do so through the scripting interface; this means that the vast (if not exclusive) majority of individuals who interact with the functionality in `yt` are doing so by writing their own scripts, modules, and code, and arguably engaging in a value-added development process of their own.
-The majority of individuals using `yt` at present are in astronomy and astrophysics, typically fields of simulation, although representatives from other domains are increasingly participating in development and using yt for their own domain-specific problems
-
-Making the distinction somewhat more clearly, there are individuals who have built their own scripts and utilized them as well as individuals who have contributed changes or modules to the primary `yt` codebase.
-In addition, there is an emerging set of projects that build on `yt` as infrastructure to conduct scientific analysis.
-These developers are largely driven by their own pragmatic scientific needs, and they constitute the majority of developers (by number) that contribute to the code base.
-The majority of these individuals are early- to mid-career researchers, typically graduate students, postdocs, and assistant professors.
-
-In recent years, there has emerged a more coherent contingency of individuals who participate in both pragmatically-focused development of modules and functionality for their own benefit as well as modules or overall improvement that is supplemental or even external to their own research agenda.
-Sections of the code base receiving such improvements include unit handling, plotting code, infrastructure for loading disparate datasets, and so on.
-At this time we do not know of any individuals funded to work on `yt` completely independent of a scientific or scholarly goal.
-
-The composition of the community, particularly with a mixture of timelines for goal-setting and completion, can at times cause frustrations and difficulties.
-For instance, the response to "Can this feature be implemented?" often includes an invitation for the questioner to collaborate on developing that feature and submitting it to the codebase.
-Developing a schedule of releases is an act of consensus building, both deciding what bugs are critical to fix in the timeline of a release as well as building consensus on what features should be considered blockers for a new release.
-The intersection of this with academic deadlines (for instance job application season) requires balance and care.
-
-### Types of Tasks
-
-When evaluating the level of engagement, we consider a few different classifications of tasks that are performed by individuals in the community, and evaluate these based on how they flow into greater engagement.
-
- * Filing issues
- * Participating in mailing list discussions
- * Issuing a pull request
- * Writing documentation
- * Participating in code review
- * Closing bug reports
- * Drafting an enhancement proposal
-
-While there are other activities that individuals can participate in, these are the typical activities we see among participants in the community.
-The order, flowing from the first to the last, is the typical flow we see for an individual coming to participate in the community.
-The first step is typically to file an issue or bug report (occasionally these are requests for new features), followed by participating in development-focused discussion on mailing lists.
-The next level of engagement typically involves the development of a new piece of functionality, refinement of existing code, or issuing a fix for a bug or issue.
-These take the form of pull requests (described in greater detail [here](#sec:development)) that can be reviewed and added to the code base.
-
-The next level of engagement centers around tasks that are not fully-aligned with pragmatic, code-driven scientific inquiry.
-The development of documentation is often viewed as orthogonal to the scientific process, and typically requires an iterative writing process.
-Participation in code review, providing comments, feedback and suggestions to other authors, is another somewhat orthogonal task; it doesn't necessarily directly benefit the developer doing the reviewing (although it might) and it does not necessarily result in academic rewards (citations, authorship, etc).
-But, it does arise from a pragmatic (ensuring code reliability) or altruistic (the public good of the software) motivation, and is thus a deeper level of engagement.
-
-The final two activities, drafting enhancement proposals and closing bug reports, are the most engaged, and often the most removed from the academic motivation structure.
-Developing an [enhancement proposal](#sec:ytep) for `yt` means iterating with other developers on the motivation behind and implementation of a large piece of functionality; it requires both motivation to engage with the community and the patience to build consensus among stakeholders.
-Closing bug reports -- and the development work associated with identifying, tracking and fixing bugs -- requires patience and often repeated engagement with stakeholders.
-
-### Engagement Metrics
-
-Typically, measuring the degree of engagement in a project is done by examining the amount of activity that surrounds it; this can be through development, mailing list or other discussion forum engagement, or through citations of a paper.
-These metrics are valuable, but incomplete.
-Furthermore, their quantification presents challenges: how does migration of a project (and a community) from one form of interaction (such as a mailing list) to another (such as Slack or Github Issues) impact the perceived growth or health of that project?
-As such, we have attempted to build a proxy for the development metrics by examining activity around pull requests (as below in Figure #fig:pr-closing-time) and have opted to elide discussion of the activity of the project through the currently dominant medium of Slack.
-
-
-## Project Governance {#sec:governance}
-
-Between the publication of the first paper and this paper, the `yt` project instituted a form of governance involving a steering committee, a set of "members" of the project, and a defined process for developing improvements and enhancements (the YTEP, or `yt`-enhancement-proposal process).
-YTEPs are discussed in @sec:ytep.
-The systems developed account for a number of important procedures, mostly related to decision-making, but do not address pressing community needs such as community standards for conduct, changes in committee composition, sub-project coordination, or the transition of members and developers to "emeritus" status.
-
-This governance structure, however, serves as a process for the `yt` *project*, rather than just the software itself.
-Much like other software projects with community-building as core goals, the `yt` project encompasses the core package itself (largely the subject of this paper), affiliated software projects (such as @doi:10.21105/joss.01774 ) but also, crucially, the broader community and the spaces in which discussions, tutorials, inquiries and development take place.
-As such, the governance structure was designed to be more holistic than addressing so-called "Commit Privileges" and access control.
-
-There are several components of the yt governance structure that we highlight here, but direct the interested reader to our [governance source repository](https://github.com/yt-project/governance) for a more detailed understanding.
-
-### Conflicts of Interest
-
-`yt` project development is distributed across universities and organizations, where in some cases different members of the development team may find themselves collaborating, or even applying for similar funding or academic positions.
-To minimize real or perceived conflicts of interest among the community, a policy regarding conflicts of interest is applied to members of the `yt` steering committee.
-
-> It is expected that the Steering Committee Members will be
-> employed at a wide range of companies, universities and non-profit
-> organizations.
-> Because of this, it is possible that Members will have conflict
-> of interests.
-> Such conflict of interests include, but are not limited to:
->
-> * Financial interests, such as investments, employment or contracting work, outside of The Project that may influence their work on The Project.
-> * Access to proprietary information of their employer that could potentially leak into their work with the Project.
->
-> All members of the Steering Committee shall disclose to the rest of the Council any conflict of interest they may have.
-> Members with a conflict of interest in a particular issue may participate in Committee discussions on that issue, but must recuse themselves from voting on the issue.
-
-This also addresses the possibility of funded work conflicting with the development of `yt` as a whole, or project wellness.
-As of the time of writing, this policy has not been exercised, but providing it in writing will ensure that the conduct of the steering committee is appropriate.
-
-### Project Members and Groups
-
-Individuals interact with projects in different ways at different times; as careers progress and personal lives shift, the degree of engagement that one can expect will change as well.
-To reflect this, as well as to codify the different means by which people can participate in the community, the `yt` governance structure allows for "members" to transition between different levels of activity.
-
-The base level of "membership" in the `yt` project is that of "project members."
-This is, by design, a broad category of individuals who have demonstrated their willingness to participate in the community, either through participating in community discussions, helping other members, contributing code or documentation, or reviewing the contributions of others.
-The initial seed of the project members was chosen by a flat cutoff of 50 changesets included in the repository; since that time, members are nominated by other members and must receive at least three positive votes.
-This membership, unless either explicitly revoked (via five supporting member votes and a steering council vote) lasts for life, although may be transitioned into "emeritus" status.
-Within the "members" group, a set of several sub-groups are identified that follow a rough, orchard-like metaphor.
-
-The first of these groups is the **fertilizer** group.
-(We whimsically note that the choice of name is not meant as a value judgment!)
-This is the high-level organizer group, including the steering committee and any other leadership roles.
-This group tends to the growth of the community, ensuring that there are opportunities for new members, and that the project continues as expected.
-Explicitly identified in the governance structure is that this is a group meant to train new members and to facilitate its membership to grow and change over time.
-
-The **arboretum** is the largest group, and is the starting point for new members of the project.
-The arboretum includes all project members and steering committee members.
-This group facilitates and develops contributions to the code base, encouraging diversity of participation.
-
-The **greenhouse** group includes those new members of the project, who are still developing their participation but have contributed to the community (for instance with a bug fix or documentation enhancement.)
-Members of the greenhouse group do not necessarily have high-level project responsibilities, but are encouraged to seek involvement and participate in triage meetings and other discussions.
-
-In recognition that temporary obligations, changes in activity level and other interest migrations happen, there is a group entitled the **fallow fields** for members who wish to temporarily step back from their responsibilities.
-Many different reasons exist for stepping into the fallow fields -- burnout, new or enhanced work responsibilities, family or care duties, or even simply a desire to do other things.
-Transitioning to the fallow fields is not permanent, and participation in the project can either resume or the individual can choose to move on.
-
-Finally, we have designated a class of project members as **emeritus** (the only non-orchard name utilized!) for individuals who have moved on to other interests or activities.
-The yt project has had a number of individuals and contributors who have later gone on to work in industry or non-profits, or who simply have opted to leave the community.
-The emeritus designation is a manner by which their previous contributions can still be recognized and honored, while also recognizing that they are no longer active participants.
-
-### Decision Making
-
-The majority of decisions in the yt project are small, day-to-day decisions about code quality, merging pull requests, how to respond to questions and other items for which it is typically quite easy to identify  a consensus.
-For those situations where consensus is not possible, deciding upon and implementing a course of action can be one of the more difficult issues in a project; members of the community each bring their own preferences, requirements, needs and desires to a project.
-These decisions might be regarding the future of specific areas of the project's code base -- for instance, "should the software volume rendering be split into a separate repository?" or "how should we decide the line to draw for excising old frontends?"
-Typically, the YTEP process is sufficient, even in cases where a consensus cannot be reached, as it allows a large amount of discussion.
-In cases where it cannot, the decision making process utilizes a multi-tier system of votes, including the YTEP and mailing list as venues.
-If a 2/3 majority is unable to be reached, the steering committee is allowed approximately a month to identify a consensus among themselves; failing this, a majority vote will be reached.
-
-While the full mechanism of the yt project decision making process has not been exercised in its entirety, its presence has provided a "safety net" for discussion.
-For further details, the [voting process](https://yt-project.github.io/governance/voting.html) section of the [governance documents](https://yt-project.github.io/governance/) lay out the steps, involved groups and timeline.
-
-
-## Development Procedure {#sec:development}
-
-`yt` is developed openly.
-During the Spring of 2017, development transitioned from occurring on [Bitbucket](https://bitbucket.org/yt_analysis/) to [GitHub](https://github.com/yt-project/), and the source code management system was changed from [Mercurial](https://www.mercurial-scm.org/) to [git](https://git-scm.org/).
-Development occurs through the "pull request" model, wherein changes to the codebase are made and then requested to be included in the primary repository.
-Typically, there are two branches of development, and occasionally three. The first of these is the "stable" branch, which is much slower-paced, and typically only modified during the release periods.
-The second is that of "main" (formerly "master", which is the conventional term in git terminology, and renamed in early 2021; the corresponding mercurial term would be "default") which is where current development takes place.
-The "main" branch is meant to be for development proceeding that does not drastically disrupt usage patterns.
-Occasionally, such as during the development of `yt` 4.0, a third branch is included in the primary repository.
-This development branch is open for large and potentially disruptive changes, but in order to centralize code review and developer attention it takes place there.
-For instance, during the development of `yt` 4.0, the branch `yt-4.0` was where the global mesh was removed and where the units subsystem was removed and replaced with `unyt`.
-
-This three-pronged approach generally has suited the community; the process of backporting changes from the "main" branch to the "stable" branch can be time-consuming.
-However, balancing the needs of a community requiring stable methods for analyzing data against the ease of development suggests that this is a toll worth paying.
-
-In general, the development of `yt` is reasonably top-heavy, with the majority of contributions coming from a core group of individuals.
-We discuss the implications of this on sustainability in Section @sec:sustainability, and provide here a graph of the contributions over time.
-Of particular note is that the development history of yt is also highly bifurcated between version control systems and developer practice.
-In the past, yt developers tended to commit frequently and include all of the individual development history of individual features or bug fixes.
-Recent practice, however, is more inclined toward commit "squashing," where multiple commits are combined into a single commit with the same net effect, or commit rebasing, where changes are included linearly rather than through a branched history.
-One result of this is in figures such as the top row of Figure @fig:commit-graph, some contributors appear to have made a smaller quantity of contributions than an informed observer would recognize.
-Specifically, this applies to Clément Robert, who has contributed a considerable amount of change to the code base but has done so in a way that does not maximize the "statistics" presented below.
-This particular bias, toward contributions measured in count, is one that affects other members of the community as well, especially those whose participation is through community engagement, documentation, tutorials, and mentoring, rather than through direct modifications of the code base.
-To mitigate this shortcoming, we present the number of pull requests merged into the code base, as a function of time, as well as the time between their creation and their merge, in the lower row of Figure @fig:commit-graph.
-This demonstrates that in many cases, the number of discrete contributions to the codebase varies greatly depending on the developer, and we believe gives a more informed perception of the activity in the code base.
-
-<div id="figure-commit-graph" class="center"></div>
-
-![
-Commits and pull requests to the source code as a function of time.
-](images/blank.svg){#fig:commit-graph width="1px"}
-
-<script>
-vegaEmbed('#figure-commit-graph', "images/yt_repo.vl", {"actions": false});
-</script>
-
-In Figure @fig:pr-closing-time we have plotted distribution of pull requests based on the time between their creation and their merge.
-The longest time between opening a pull request and merging it was nearly four years; this was the addition of the `cf_radial` frontend, which occurred in fits and starts over a very long period of time.
-The next longest pull request durations are for splitting the code used for bitmap indexing (see @sec:point_indexing) and a per-field configuration system.
-This includes only those pull requests that occurred on GitHub.
-
-<div id="figure-pr-closing-time" class="center"></div>
-
-![
-The distribution of pull requests as a function of how long it took to close them.
-](images/blank.svg){#fig:pr-closing-time width="1px"}
-
-<script>
-vegaEmbed('#figure-pr-closing-time', "images/pr_times.vl", {"actions": false});
-</script>
-
-### Unit Testing {#sec:unit_testing}
-
-The `yt` codebase includes a number of unit tests; although extensive, their existence post-dates the initial development of the code, and they largely work around the extant APIs at the time of their creation.
-Most modern recommendations for developing scientific software emphasize isolated components, well-structured interfaces, and few side effects.
-While the development process attempts to emphasize development of isolated APIs and well-constrained unit tests, the balance struck between enabling contribution from junior developers and ensuring the (subjective) standards of the code base does not always fall on the side of rigid design.
-
-Many of the `yt` APIs that are tested require the existence of a "dataset."
-For instance, the testing of whether objects are correctly selected by a sphere selector (which absolutely _could_ be tested in isolation, were the APIs more separable) is done via creating several different sets of mock datasets of different organizations and shapes and testing whether or not they correctly choose the data points to be included.
-To support these operations, the `yt` testing utilities provide helper functions for creating mock datasets that have different geometric configurations and different collections of "fields" included in their set of primitive values.
-Many of the tests are parameterized against the types and organizations of the datasets, the decomposition across mock processors, and the underlying values of the fields.
-This ensures that we check against errors and bugs that may depend on behavior that varies as the number of processors or the organization of the data changes.
-One example of this would be in the selection of grid values for a single grid of size $128^3$.
-The values selected in this should match the values selected in the same grid decomposed into eight sets of $64^3$ cells, or 64 sets of $32^3$ cells.
-
-The mechanism by which fields are tested is somewhat more extensive, touching on two different needs.
-The first need is that of accuracy -- fields with known answers, or fields that can be written to be decomposed into primitive, non-optimized operations, are tested for correctness.
-The second need is that of dependency calculation; all fields should have their dependencies correctly detected.
-For example, if a dataset has primitive fields for "mass" and "velocity," the calculation of momentum should require both.
-If the dataset includes a "momentum" field, then that should be detected as well.
-This dependency calculation enables `yt` to consolidate IO tasks and read as much data as possible in each pass over the full dataset.
-In addition to this, fields are tested to ensure that the values generated for them are independent of the organization of the dataset.
-Like in the example above, the "momentum" field for a fixed set of values should be identical regardless of the decomposition of the individual cell elements.
-
-Wherever possible, analytical solutions are preferred.
-For processes like surface extraction, this might include ensuring that fixed radii extraction produce the correct spherical region.
-For streamlines, it might include computing the analytical solution to an integration along a known vector field.
-And for projections, it would mean that integrating the path with a weight of "one" should result in a uniform set of values equal to the path length across the domain.
-
-At present, the unit tests in `yt` take a considerable amount of time to run; recent efforts have moved these from using the nosetest framework to utilizing the more modern and supported pytest framework.
-
-### Answer Testing {#sec:answer_testing}
-
-The most time-consuming part of the testing process is what we refer to as "answer testing."
-Because so much of `yt` is focused on computing analysis results, and because some of these analysis results simultaneously depend on specific IO routines, selection routines, and many "frontend-specific" pieces of code, we have built a system for ensuring that for a given set of analysis operations, the result of a set of operations does not change beyond a fixed (typically quite small) tolerance.
-
-In general, we allow three different classes of answers, against which we compare results from the current version of the code:
-
-1.  Data values which should not ever change unless an explicit decision is made (i.e., raw data values accessed from on-disk fields)
-2.  Lightly-processed data values which we do not anticipate any deviation from exact, ordered values (i.e., averages, extrema, etc.)
-3.  Higher-level processed values which may differently accumulate error across platforms and architectures but are still within fine-grained ($\equiv 10^{-7}$) tolerance (i.e., images, pixelized projections, etc.)
-
-In the first case, we can utilize hashing functions (such as MD5 and SHA) to guarantee consistency across executions.
-Typically, however, we store the full set of values to facilitate easy comparison.
-In the latter two cases, we apply unit-aware relative tolerances.
-This allows for changes in unit assignment to be isolated from changes in value, and furthermore allows minor migration of values.
-A recent incident in which these tests needed to be changed resulted from minor differences as a result of consolidating operations within a loop to conserve memory; the code in question was converted to Cython and the drift was on the scale of $10^{-10}$.
-
-For small-scale answer tests, results are stored in a separate repository that is cloned as a subrepository of the principle `yt` repository.
-When a new set of answers are needed, they are submitted via pull request, and the changeset hash used for answer validation is updated in the main repository.
-This allows a different cadence, and also enables individuals _not_ interested in updating answer values to avoid cloning the subrepository and its full history.
-Larger dataset answers are stored in on our continuous integration servers; a YAML file in the main `yt` repository stores the current version number for those answers, which is incremented (via a pull request) when needed.
-Requiring this clear decision-making process allows for both collaborative discussion and community governance over the degree of answer drift allowed.
-In contrast to the unit tests, answer tests rely on a custom-built legacy plugin that has not been ported to pytest; efforts have stalled to complete this porting, and at the present the answer-testing framework still utilizes the nosetests library.
-This is discussed somewhat further in #sec:future_directions.
-
-### Code Review
-
-Code review in `yt` is conducted on a line-by-line basis, as well as on a higher-level regarding pull requests.
-The workflow for code review roughly follows this outline:
-
-1.  A pull request is issued. When a new pull request is issued, a template is provided that includes a description of the change, requesting information about its compliance with coding standards, etc.
-2.  The pull request is automatically marked as unmergeable until a team member applies the correct component label.
-3.  Code is reviewed, line-by-line, and suggestions are made by humans. Code linting, where specific behaviors are identified (such as inconsistent naming, unused variables, unreachable code sections, etc) is automated.
-4.  This process is iterated, ensuring that tests, results accuracy and coding standards are maintained.
-
-One increasing issue with the code review process is ensuring that changes are reviewed with appropriate urgency; larger pull requests tend to languish without review, as the requirements for review necessarily add burden to the maintainers.
-"Bugfix" changes formally require only one reviewer, whereas the `yt` guidelines suggest that larger changes require review from two different team members.
-
-One of the most pressing bottlenecks with code review is that the time it takes for tests to pass is much longer than the typical time span during which code review takes place.
-Because tests are often required to be run on the _current_ version of the code, not the version of the code against which the pull request has been issued, they are often re-initiated following a merge.
-This results in a pull request being merged, and then whatever pull request is next to be reviewed has to wait until the tests (now updated with the newly accepted pull request) pass.
-To alleviate this, project maintainers utilize the ["auto-merge" feature](https://github.blog/changelog/2021-02-04-pull-request-auto-merge-is-now-generally-available/) provided by GitHub.
-This allows a maintainer to mark a pull request as "queued" to be merged once a set of requirements -- such as tests passing, approval messages, comment resolution and so forth -- are met.
-By queuing up pull requests for merging, it allows maintainers to mark a set of pull requests as ready to be merged, and then when they meet the appropriate (automated and asynchronous) criteria, they will be merged.
-
-### Code Styling and Linting
-
-For code included in `yt`, a set of styles are enforced.
-The term "linting" is used to describe applying automated checks to enforce sytlistic consistency, as well as to flag potential errors that can be detected through static analysis of the code.
-
-We rely on the [`pre-commit`](https://pre-commit.com) framework, which enables automated checks as well as automatic fixes at commit time.
-This tool is an opt-in so not every "drive-by" contributor has to learn and install it, but continuous linting is provided by [pre-commit.ci](https://pre-commit.ci) so styling errors cannot slip in.
-
-We configure `pre-commit` to run a mixture of formatters and static checkers.
-The former modify the code in place, while the latter only report errors and so-called "code smells" (such as undefined variables, unused imports, bare `except` statements...) but require human developers fix them.
-
-Our suite of formatters most prominently includes
-[`black`](https://black.readthedocs.io/en/stable/),
-[`isort`](https://pycqa.github.io/isort/) and
-[`pyupgrade`](https://github.com/asottile/pyupgrade).
-`black` has been designed to maximize readability with as few free parameters as possible
-(In many ways, the fact that most of the `yt` code developers did not utilize this style before it was enforced likely enabled its uptake, as it was seen as a choice that "made everyone compromise."),
-while `isort` ensures that all `import` statements are sorted (according to alphabetical order within a first/second/third-party categorization), and `pyupgrade` modernizes some Python idioms according to our minimal support version of the language.
-In particular, `pyupgrade` enforces the usage of modern Python ["f-strings"](https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals) since we do not support Python version older than 3.6.
-
-For static code analysis we rely on the [`flake8`](https://flake8.pycqa.org/en/latest/) framework.
-Effort is underway to enable using `mypy` for the specialized task of type checking.
-
-All changes that can be applied via automation (specifically, code formatting) are accessible from within the GitHub pull request interface, and are again provided by [pre-commit.ci](https://pre-commit.ci).
-This allows drive-by contributions to have their pull requests updated inline by an automated process, reducing the need to manually install packages to apply the changes.
-
-We note that in @doi:10.1109/icsme46990.2020.00011 evidence is presented that code review bots can lead to a reduction in rejected pull requests, as well as decreased communication among developers.
-While yt is not necessarily the perfect laboratory for this, as the project as a whole does not have an extensive history of declining pull requests, we have anecdotally noted that discussion around 'code nits' and stylistic issues has been considerably reduced, leading to what developers describe as expedited pull requests.
-
-### Type Hinting
-
-Code included in `yt` is not required to utilize [type hinting](https://docs.python.org/3/library/typing.html).
-However, new contributions are allowed to include type hinting, and work is underway to develop an ontology of types as well as a base set of utilities and types that would be used both internally, and possibly be made available to external package developers.
-
-### YTEP Process {#sec:ytep}
-
-YTEPs, or "`yt`-enhancement proposal" are vehicles for collaborative decision-making in the project.
-During periods of rapid development, the needs of the community for stability have to be balanced against desires for change; the YTEP process was implemented to facilitate stakeholder feedback, allow for discussion of design decisions, and to prompt detailed thinking about how and why things should be implemented.
-We have modeled this process against that used in the AstroPy community ("APE").
-To create a new proposal for a large change to `yt`, or to document a decision-making process, individuals prepare a description of the background, motivation for the change, the steps to implementation, and potential alternative approaches.
-The proposal is discussed through the pull-request process, and once discussion has concluded it is added to the [repository](https://github.com/yt-project/ytep) of YTEPs that is auto-built and [deployed](https://ytep.readthedocs.org/).
-
-Implemented shortly after the first paper on `yt` was released, the YTEP process experienced a fairly pronounced period of usage during the transition between versions 2.0 and 3.0 of `yt`, and has since been utilized considerably less.
-The accepted YTEPs have included implementing the chunking system, developing a units system, removing legacy components, and implementing a code of conduct.
-Below, we include a table of current YTEPs as of this writing.
-
-| Number | YTEP Title                                            | Created            | Authors                                                             |
-| ------ | ----------------------------------------------------- | ------------------ | ------------------------------------------------------------------- |
-| 0001   | IO Chunking                                           | November 26, 2012  | Matthew Turk                                                        |
-| 0002   | Profile Plotter                                       | December 5, 2012   | Matthew Turk                                                        |
-| 0003   | Standardizing field names                             | December 11, 2012  | Casey Stark, Nathan Goldbaum, Matthew Turk                          |
-| 0005   | Octrees for Fluids and Particles                      | December 24, 2012  | Matthew Turk                                                        |
-| 0006   | Periodicity                                           | January 10, 2013   | Matthew Turk, Nathan Goldbaum                                       |
-| 0007   | Automatic Pull Requests' validation                   | February 21, 2013  | Kacper Kowalik                                                      |
-| 0008   | Release Schedule                                      | February 21, 2013  | Matthew Turk                                                        |
-| 0009   | AMRKDTree for Data Sources                            | February 28, 2012  | Sam Skillman                                                        |
-| 0010   | Refactoring for Volume Rendering and Movie Generation | March 3, 2013      | Cameron Hummels                                                     |
-| 0011   | Symbol units in yt                                    | March 7, 2013      | Nathan Goldbaum, Casey Stark, Anna Rosen, Matthew Turk              |
-| 0012   | Halo Redesign                                         | March 7, 2013      | Britton Smith, Cameron Hummels, Chris Moody, Mark Richardson, Yu Lu |
-| 0013   | Deposited Particle Fields                             | April 25, 2013     | Chris Moody, Matthew Turk, Britton Smith, Doug Rudd, Sam Leitner    |
-| 0014   | Field Filters                                         | July 2nd, 2013     | Matthew Turk                                                        |
-| 0015   | Transfer Function Refactor                            | August 13, 2013    | Sam Skillman                                                        |
-| 0016   | Volume Traversal                                      | September 10, 2013 | Matthew Turk                                                        |
-| 0017   | Domain-Specific Output Types                          | September 18, 2013 | Matthew Turk and Anthony Scopatz                                    |
-| 0018   | Changing dict-like access to Static Output            | September 18, 2013 | Matthew Turk                                                        |
-| 0019   | Reduce items in main import                           | October 2, 2013    | Matthew Turk                                                        |
-| 0020   | Removing PlotCollection                               | March 18, 2014     | Matthew Turk                                                        |
-| 0021   | Particle-Only Plots                                   | August 29, 2014    | Andrew Myers                                                        |
-| 0022   | Benchmarks                                            | January 19, 2015   | Matthew Turk                                                        |
-| 0023   | yt Community Code of Conduct                          | July 11, 2015      | Britton Smith                                                       |
-| 0024   | Alternative Smoothing Kernels                         | August 1, 2015     | Bili Dong                                                           |
-| 0025   | The ytdata Frontend                                   | August 31, 2015    | Britton Smith                                                       |
-| 0026   | NumPy-like Operations                                 | September 21, 2015 | Matthew Turk                                                        |
-| 0027   | Non-Spatial Data                                      | December 1, 2015   | Matthew Turk, Nathan Goldbaum, John ZuHone                          |
-| 0028   | Alternative Unit Systems                              | December 8, 2015   | John ZuHone, Nathan Goldbaum, Matthew Turk                          |
-| 0029   | Extension Packages                                    | January 25, 2016   | Matthew Turk                                                        |
-| 0031   | Unstructured Mesh                                     | December 18, 2014  | Matthew Turk                                                        |
-| 0032   | Removing the global octree mesh for particle data     | February 9 2017    | Nathan Goldbaum, Meagan Lang, Matthew Turk                          |
-| 0033   | Dropping Python2 Support                              | November 28, 2017  | Nathan Goldbaum                                                     |
-| 0034   | yt FITS Image Standard                                | September 9, 2018  | John ZuHone                                                         |
-| 0036   | Migrating from nose to pytest                         | September 30, 2019 | Jared Coughlin                                                      |
-| 0037   | Code Styling                                          | May 18, 2020       | Clément Robert                                                      |
-| 1000   | GitHub Migration                                      | March 25, 2017     | Lots of folks                                                       |
-| 1776   | Team Infrastructure                                   | August 24, 2014    | Britton Smith                                                       |
-| 3000   | Let's all start using yt 3.0!                         | October 30, 2013   | Matthew Turk                                                        |
 
 
 ## Indexing and Geometry
@@ -4380,16 +4029,228 @@ It also provides a custom-built `yt` frontend for accepting data.
 A more complete description is outside the scope of this paper, and we refer the reader to Tsai, et al, in prep (2025).
 
 
-## Analysis Modules {#sec:analysis-modules}
+## Development Procedure {#sec:development}
+
+`yt` is developed openly.
+During the Spring of 2017, development transitioned from occurring on [Bitbucket](https://bitbucket.org/yt_analysis/) to [GitHub](https://github.com/yt-project/), and the source code management system was changed from [Mercurial](https://www.mercurial-scm.org/) to [git](https://git-scm.org/).
+Development occurs through the "pull request" model, wherein changes to the codebase are made and then requested to be included in the primary repository.
+Typically, there are two branches of development, and occasionally three. The first of these is the "stable" branch, which is much slower-paced, and typically only modified during the release periods.
+The second is that of "main" (formerly "master", which is the conventional term in git terminology, and renamed in early 2021; the corresponding mercurial term would be "default") which is where current development takes place.
+The "main" branch is meant to be for development proceeding that does not drastically disrupt usage patterns.
+Occasionally, such as during the development of `yt` 4.0, a third branch is included in the primary repository.
+This development branch is open for large and potentially disruptive changes, but in order to centralize code review and developer attention it takes place there.
+For instance, during the development of `yt` 4.0, the branch `yt-4.0` was where the global mesh was removed and where the units subsystem was removed and replaced with `unyt`.
+
+This three-pronged approach generally has suited the community; the process of backporting changes from the "main" branch to the "stable" branch can be time-consuming.
+However, balancing the needs of a community requiring stable methods for analyzing data against the ease of development suggests that this is a toll worth paying.
+
+In general, the development of `yt` is reasonably top-heavy, with the majority of contributions coming from a core group of individuals.
+We discuss the implications of this on sustainability in Section @sec:sustainability, and provide here a graph of the contributions over time.
+Of particular note is that the development history of yt is also highly bifurcated between version control systems and developer practice.
+In the past, yt developers tended to commit frequently and include all of the individual development history of individual features or bug fixes.
+Recent practice, however, is more inclined toward commit "squashing," where multiple commits are combined into a single commit with the same net effect, or commit rebasing, where changes are included linearly rather than through a branched history.
+One result of this is in figures such as the top row of Figure @fig:commit-graph, some contributors appear to have made a smaller quantity of contributions than an informed observer would recognize.
+Specifically, this applies to Clément Robert, who has contributed a considerable amount of change to the code base but has done so in a way that does not maximize the "statistics" presented below.
+This particular bias, toward contributions measured in count, is one that affects other members of the community as well, especially those whose participation is through community engagement, documentation, tutorials, and mentoring, rather than through direct modifications of the code base.
+To mitigate this shortcoming, we present the number of pull requests merged into the code base, as a function of time, as well as the time between their creation and their merge, in the lower row of Figure @fig:commit-graph.
+This demonstrates that in many cases, the number of discrete contributions to the codebase varies greatly depending on the developer, and we believe gives a more informed perception of the activity in the code base.
+
+<div id="figure-commit-graph" class="center"></div>
+
+![
+Commits and pull requests to the source code as a function of time.
+](images/blank.svg){#fig:commit-graph width="1px"}
+
+<script>
+vegaEmbed('#figure-commit-graph', "images/yt_repo.vl", {"actions": false});
+</script>
+
+In Figure @fig:pr-closing-time we have plotted distribution of pull requests based on the time between their creation and their merge.
+The longest time between opening a pull request and merging it was nearly four years; this was the addition of the `cf_radial` frontend, which occurred in fits and starts over a very long period of time.
+The next longest pull request durations are for splitting the code used for bitmap indexing (see @sec:point_indexing) and a per-field configuration system.
+This includes only those pull requests that occurred on GitHub.
+
+<div id="figure-pr-closing-time" class="center"></div>
+
+![
+The distribution of pull requests as a function of how long it took to close them.
+](images/blank.svg){#fig:pr-closing-time width="1px"}
+
+<script>
+vegaEmbed('#figure-pr-closing-time', "images/pr_times.vl", {"actions": false});
+</script>
+
+### Unit Testing {#sec:unit_testing}
+
+The `yt` codebase includes a number of unit tests; although extensive, their existence post-dates the initial development of the code, and they largely work around the extant APIs at the time of their creation.
+Most modern recommendations for developing scientific software emphasize isolated components, well-structured interfaces, and few side effects.
+While the development process attempts to emphasize development of isolated APIs and well-constrained unit tests, the balance struck between enabling contribution from junior developers and ensuring the (subjective) standards of the code base does not always fall on the side of rigid design.
+
+Many of the `yt` APIs that are tested require the existence of a "dataset."
+For instance, the testing of whether objects are correctly selected by a sphere selector (which absolutely _could_ be tested in isolation, were the APIs more separable) is done via creating several different sets of mock datasets of different organizations and shapes and testing whether or not they correctly choose the data points to be included.
+To support these operations, the `yt` testing utilities provide helper functions for creating mock datasets that have different geometric configurations and different collections of "fields" included in their set of primitive values.
+Many of the tests are parameterized against the types and organizations of the datasets, the decomposition across mock processors, and the underlying values of the fields.
+This ensures that we check against errors and bugs that may depend on behavior that varies as the number of processors or the organization of the data changes.
+One example of this would be in the selection of grid values for a single grid of size $128^3$.
+The values selected in this should match the values selected in the same grid decomposed into eight sets of $64^3$ cells, or 64 sets of $32^3$ cells.
+
+The mechanism by which fields are tested is somewhat more extensive, touching on two different needs.
+The first need is that of accuracy -- fields with known answers, or fields that can be written to be decomposed into primitive, non-optimized operations, are tested for correctness.
+The second need is that of dependency calculation; all fields should have their dependencies correctly detected.
+For example, if a dataset has primitive fields for "mass" and "velocity," the calculation of momentum should require both.
+If the dataset includes a "momentum" field, then that should be detected as well.
+This dependency calculation enables `yt` to consolidate IO tasks and read as much data as possible in each pass over the full dataset.
+In addition to this, fields are tested to ensure that the values generated for them are independent of the organization of the dataset.
+Like in the example above, the "momentum" field for a fixed set of values should be identical regardless of the decomposition of the individual cell elements.
+
+Wherever possible, analytical solutions are preferred.
+For processes like surface extraction, this might include ensuring that fixed radii extraction produce the correct spherical region.
+For streamlines, it might include computing the analytical solution to an integration along a known vector field.
+And for projections, it would mean that integrating the path with a weight of "one" should result in a uniform set of values equal to the path length across the domain.
+
+At present, the unit tests in `yt` take a considerable amount of time to run; recent efforts have moved these from using the nosetest framework to utilizing the more modern and supported pytest framework.
+
+### Answer Testing {#sec:answer_testing}
+
+The most time-consuming part of the testing process is what we refer to as "answer testing."
+Because so much of `yt` is focused on computing analysis results, and because some of these analysis results simultaneously depend on specific IO routines, selection routines, and many "frontend-specific" pieces of code, we have built a system for ensuring that for a given set of analysis operations, the result of a set of operations does not change beyond a fixed (typically quite small) tolerance.
+
+In general, we allow three different classes of answers, against which we compare results from the current version of the code:
+
+1.  Data values which should not ever change unless an explicit decision is made (i.e., raw data values accessed from on-disk fields)
+2.  Lightly-processed data values which we do not anticipate any deviation from exact, ordered values (i.e., averages, extrema, etc.)
+3.  Higher-level processed values which may differently accumulate error across platforms and architectures but are still within fine-grained ($\equiv 10^{-7}$) tolerance (i.e., images, pixelized projections, etc.)
+
+In the first case, we can utilize hashing functions (such as MD5 and SHA) to guarantee consistency across executions.
+Typically, however, we store the full set of values to facilitate easy comparison.
+In the latter two cases, we apply unit-aware relative tolerances.
+This allows for changes in unit assignment to be isolated from changes in value, and furthermore allows minor migration of values.
+A recent incident in which these tests needed to be changed resulted from minor differences as a result of consolidating operations within a loop to conserve memory; the code in question was converted to Cython and the drift was on the scale of $10^{-10}$.
+
+For small-scale answer tests, results are stored in a separate repository that is cloned as a subrepository of the principle `yt` repository.
+When a new set of answers are needed, they are submitted via pull request, and the changeset hash used for answer validation is updated in the main repository.
+This allows a different cadence, and also enables individuals _not_ interested in updating answer values to avoid cloning the subrepository and its full history.
+Larger dataset answers are stored in on our continuous integration servers; a YAML file in the main `yt` repository stores the current version number for those answers, which is incremented (via a pull request) when needed.
+Requiring this clear decision-making process allows for both collaborative discussion and community governance over the degree of answer drift allowed.
+In contrast to the unit tests, answer tests rely on a custom-built legacy plugin that has not been ported to pytest; efforts have stalled to complete this porting, and at the present the answer-testing framework still utilizes the nosetests library.
+This is discussed somewhat further in #sec:future_directions.
+
+### Code Review
+
+Code review in `yt` is conducted on a line-by-line basis, as well as on a higher-level regarding pull requests.
+The workflow for code review roughly follows this outline:
+
+1.  A pull request is issued. When a new pull request is issued, a template is provided that includes a description of the change, requesting information about its compliance with coding standards, etc.
+2.  The pull request is automatically marked as unmergeable until a team member applies the correct component label.
+3.  Code is reviewed, line-by-line, and suggestions are made by humans. Code linting, where specific behaviors are identified (such as inconsistent naming, unused variables, unreachable code sections, etc) is automated.
+4.  This process is iterated, ensuring that tests, results accuracy and coding standards are maintained.
+
+One increasing issue with the code review process is ensuring that changes are reviewed with appropriate urgency; larger pull requests tend to languish without review, as the requirements for review necessarily add burden to the maintainers.
+"Bugfix" changes formally require only one reviewer, whereas the `yt` guidelines suggest that larger changes require review from two different team members.
+
+One of the most pressing bottlenecks with code review is that the time it takes for tests to pass is much longer than the typical time span during which code review takes place.
+Because tests are often required to be run on the _current_ version of the code, not the version of the code against which the pull request has been issued, they are often re-initiated following a merge.
+This results in a pull request being merged, and then whatever pull request is next to be reviewed has to wait until the tests (now updated with the newly accepted pull request) pass.
+To alleviate this, project maintainers utilize the ["auto-merge" feature](https://github.blog/changelog/2021-02-04-pull-request-auto-merge-is-now-generally-available/) provided by GitHub.
+This allows a maintainer to mark a pull request as "queued" to be merged once a set of requirements -- such as tests passing, approval messages, comment resolution and so forth -- are met.
+By queuing up pull requests for merging, it allows maintainers to mark a set of pull requests as ready to be merged, and then when they meet the appropriate (automated and asynchronous) criteria, they will be merged.
+
+### Code Styling and Linting
+
+For code included in `yt`, a set of styles are enforced.
+The term "linting" is used to describe applying automated checks to enforce sytlistic consistency, as well as to flag potential errors that can be detected through static analysis of the code.
+
+We rely on the [`pre-commit`](https://pre-commit.com) framework, which enables automated checks as well as automatic fixes at commit time.
+This tool is an opt-in so not every "drive-by" contributor has to learn and install it, but continuous linting is provided by [pre-commit.ci](https://pre-commit.ci) so styling errors cannot slip in.
+
+We configure `pre-commit` to run a mixture of formatters and static checkers.
+The former modify the code in place, while the latter only report errors and so-called "code smells" (such as undefined variables, unused imports, bare `except` statements...) but require human developers fix them.
+
+Our suite of formatters most prominently includes
+[`black`](https://black.readthedocs.io/en/stable/),
+[`isort`](https://pycqa.github.io/isort/) and
+[`pyupgrade`](https://github.com/asottile/pyupgrade).
+`black` has been designed to maximize readability with as few free parameters as possible
+(In many ways, the fact that most of the `yt` code developers did not utilize this style before it was enforced likely enabled its uptake, as it was seen as a choice that "made everyone compromise."),
+while `isort` ensures that all `import` statements are sorted (according to alphabetical order within a first/second/third-party categorization), and `pyupgrade` modernizes some Python idioms according to our minimal support version of the language.
+In particular, `pyupgrade` enforces the usage of modern Python ["f-strings"](https://docs.python.org/3/tutorial/inputoutput.html#formatted-string-literals) since we do not support Python version older than 3.6.
+
+For static code analysis we rely on the [`flake8`](https://flake8.pycqa.org/en/latest/) framework.
+Effort is underway to enable using `mypy` for the specialized task of type checking.
+
+All changes that can be applied via automation (specifically, code formatting) are accessible from within the GitHub pull request interface, and are again provided by [pre-commit.ci](https://pre-commit.ci).
+This allows drive-by contributions to have their pull requests updated inline by an automated process, reducing the need to manually install packages to apply the changes.
+
+We note that in @doi:10.1109/icsme46990.2020.00011 evidence is presented that code review bots can lead to a reduction in rejected pull requests, as well as decreased communication among developers.
+While yt is not necessarily the perfect laboratory for this, as the project as a whole does not have an extensive history of declining pull requests, we have anecdotally noted that discussion around 'code nits' and stylistic issues has been considerably reduced, leading to what developers describe as expedited pull requests.
+
+### Type Hinting
+
+Code included in `yt` is not required to utilize [type hinting](https://docs.python.org/3/library/typing.html).
+However, new contributions are allowed to include type hinting, and work is underway to develop an ontology of types as well as a base set of utilities and types that would be used both internally, and possibly be made available to external package developers.
+
+### YTEP Process {#sec:ytep}
+
+YTEPs, or "`yt`-enhancement proposal" are vehicles for collaborative decision-making in the project.
+During periods of rapid development, the needs of the community for stability have to be balanced against desires for change; the YTEP process was implemented to facilitate stakeholder feedback, allow for discussion of design decisions, and to prompt detailed thinking about how and why things should be implemented.
+We have modeled this process against that used in the AstroPy community ("APE").
+To create a new proposal for a large change to `yt`, or to document a decision-making process, individuals prepare a description of the background, motivation for the change, the steps to implementation, and potential alternative approaches.
+The proposal is discussed through the pull-request process, and once discussion has concluded it is added to the [repository](https://github.com/yt-project/ytep) of YTEPs that is auto-built and [deployed](https://ytep.readthedocs.org/).
+
+Implemented shortly after the first paper on `yt` was released, the YTEP process experienced a fairly pronounced period of usage during the transition between versions 2.0 and 3.0 of `yt`, and has since been utilized considerably less.
+The accepted YTEPs have included implementing the chunking system, developing a units system, removing legacy components, and implementing a code of conduct.
+Below, we include a table of current YTEPs as of this writing.
+
+| Number | YTEP Title                                            | Created            | Authors                                                             |
+| ------ | ----------------------------------------------------- | ------------------ | ------------------------------------------------------------------- |
+| 0001   | IO Chunking                                           | November 26, 2012  | Matthew Turk                                                        |
+| 0002   | Profile Plotter                                       | December 5, 2012   | Matthew Turk                                                        |
+| 0003   | Standardizing field names                             | December 11, 2012  | Casey Stark, Nathan Goldbaum, Matthew Turk                          |
+| 0005   | Octrees for Fluids and Particles                      | December 24, 2012  | Matthew Turk                                                        |
+| 0006   | Periodicity                                           | January 10, 2013   | Matthew Turk, Nathan Goldbaum                                       |
+| 0007   | Automatic Pull Requests' validation                   | February 21, 2013  | Kacper Kowalik                                                      |
+| 0008   | Release Schedule                                      | February 21, 2013  | Matthew Turk                                                        |
+| 0009   | AMRKDTree for Data Sources                            | February 28, 2012  | Sam Skillman                                                        |
+| 0010   | Refactoring for Volume Rendering and Movie Generation | March 3, 2013      | Cameron Hummels                                                     |
+| 0011   | Symbol units in yt                                    | March 7, 2013      | Nathan Goldbaum, Casey Stark, Anna Rosen, Matthew Turk              |
+| 0012   | Halo Redesign                                         | March 7, 2013      | Britton Smith, Cameron Hummels, Chris Moody, Mark Richardson, Yu Lu |
+| 0013   | Deposited Particle Fields                             | April 25, 2013     | Chris Moody, Matthew Turk, Britton Smith, Doug Rudd, Sam Leitner    |
+| 0014   | Field Filters                                         | July 2nd, 2013     | Matthew Turk                                                        |
+| 0015   | Transfer Function Refactor                            | August 13, 2013    | Sam Skillman                                                        |
+| 0016   | Volume Traversal                                      | September 10, 2013 | Matthew Turk                                                        |
+| 0017   | Domain-Specific Output Types                          | September 18, 2013 | Matthew Turk and Anthony Scopatz                                    |
+| 0018   | Changing dict-like access to Static Output            | September 18, 2013 | Matthew Turk                                                        |
+| 0019   | Reduce items in main import                           | October 2, 2013    | Matthew Turk                                                        |
+| 0020   | Removing PlotCollection                               | March 18, 2014     | Matthew Turk                                                        |
+| 0021   | Particle-Only Plots                                   | August 29, 2014    | Andrew Myers                                                        |
+| 0022   | Benchmarks                                            | January 19, 2015   | Matthew Turk                                                        |
+| 0023   | yt Community Code of Conduct                          | July 11, 2015      | Britton Smith                                                       |
+| 0024   | Alternative Smoothing Kernels                         | August 1, 2015     | Bili Dong                                                           |
+| 0025   | The ytdata Frontend                                   | August 31, 2015    | Britton Smith                                                       |
+| 0026   | NumPy-like Operations                                 | September 21, 2015 | Matthew Turk                                                        |
+| 0027   | Non-Spatial Data                                      | December 1, 2015   | Matthew Turk, Nathan Goldbaum, John ZuHone                          |
+| 0028   | Alternative Unit Systems                              | December 8, 2015   | John ZuHone, Nathan Goldbaum, Matthew Turk                          |
+| 0029   | Extension Packages                                    | January 25, 2016   | Matthew Turk                                                        |
+| 0031   | Unstructured Mesh                                     | December 18, 2014  | Matthew Turk                                                        |
+| 0032   | Removing the global octree mesh for particle data     | February 9 2017    | Nathan Goldbaum, Meagan Lang, Matthew Turk                          |
+| 0033   | Dropping Python2 Support                              | November 28, 2017  | Nathan Goldbaum                                                     |
+| 0034   | yt FITS Image Standard                                | September 9, 2018  | John ZuHone                                                         |
+| 0036   | Migrating from nose to pytest                         | September 30, 2019 | Jared Coughlin                                                      |
+| 0037   | Code Styling                                          | May 18, 2020       | Clément Robert                                                      |
+| 1000   | GitHub Migration                                      | March 25, 2017     | Lots of folks                                                       |
+| 1776   | Team Infrastructure                                   | August 24, 2014    | Britton Smith                                                       |
+| 3000   | Let's all start using yt 3.0!                         | October 30, 2013   | Matthew Turk                                                        |
+
+
+## Ecosystem of Packages
+
+### Analysis Modules
 
 For much of its development history, `yt` took the approach of bundling as many analysis modules as possible in the primary repository.
 This provided the advantage of having all work be centralized, and ensuring that each download or installation of `yt` was a fully-featured system for analyzing a large swath of data, but it brought with it the development overhead of the entire `yt` package for what in many cases were isolated pieces of functionality with separable responsibilities.
 
 As a result of the slowing in speed of development as a result of review requirements (and limited personnel to conduct those reviews), some of the analysis modules that were bundled with `yt` have been "spun out" into their own repository, `yt_astro_analysis` [@doi:10.5281/zenodo.8431185].
 This repository, which is developed, released and installed separately from `yt`, includes modules for cosmological observation (upon which Triden, which is discussed in @sec:trident, is based), dark matter halo finding and analysis, tools for interacting with position-position-velocity cubes, light cone generation [@doi:10.1088/0004-637X/698/2/1795] and a system for exporting from `yt` to RADMC-3D [@ascl:1202.015].
-
-
-## Ecosystem of Packages
 
 Several packages have been developed that utilize `yt` as an infrastructural component.
 In contrast to the analysis modules, which have typically been built as extensions of `yt`, these extensions utilize `yt` as a framework and typically only rely upon public APIs, often with no changes necessary to upstream `yt`.
@@ -4429,80 +4290,142 @@ The tool ytini [@doi:10.1088/1538-3873/aa51b3] serves as an intermediary between
 ytini was developed to ease the process of converting data from simulation format into one suitable for production teams to utilize in Houdini and other visual effects software, and has been designed to enable deeper collaboration between researchers and visualization and outreach experts.
 
 
-## Future Directions {#sec:future_directions}
+## Community Building {#sec:community}
 
-The development of `yt` has changed over time, as it has increasingly served as a stable platform for analysis of data and maintenance efforts have taken greater resources.
-However, despite that, there are a number of exciting areas within `yt` that could serve as targets of future development.
-In addition to these technical areas, expanding the user-base and developer-base of `yt` can serve to better support diverse use cases and applications.
+Choosing a software package for a particular purpose involves evaluating several differentiating factors; these factors include the functionality of a package, the performance of a package, the user-friendliness, and even the ability of an individual to find help, engage with others and feel a sense of participation [@doi:10.1371/journal.pcbi.1007296].
+The development, fostering and design of the community around `yt` is deemed to be both crucial to the success or failure of `yt`, and in many ways inseparable from its functionality.
 
-### Improvements to Internal Systems {#sec:improvements_to_internal_systems}
+### Composition
 
-**Optimization**
+There are several rough categories of individuals engaged in development and utilization of `yt`.
+As a result of its API-first design, there are few if any individuals who use `yt` that do not do so through the scripting interface; this means that the vast (if not exclusive) majority of individuals who interact with the functionality in `yt` are doing so by writing their own scripts, modules, and code, and arguably engaging in a value-added development process of their own.
+The majority of individuals using `yt` at present are in astronomy and astrophysics, typically fields of simulation, although representatives from other domains are increasingly participating in development and using yt for their own domain-specific problems
 
-The internal systems that conduct selection, caching and IO optimization, data processing and parallel load distribution have been designed for general purpose application.
-While this enables code reuse as well as consistent API patterns, the methods used to implement these systems internally in `yt` have not always kept up with the optimizations available.
-For example, the data selection routines (described in @sec:selection_routines) are not uniformly optimized to take advantage of built-in organizational information from grid, octree and particle data.
-A particular example is the [quad-tree projection](#sec:dobj-quad_proj).
-This projection method can be optimized for octree datasets for some speedups and memory improvements (which would likely then be shared with grid patch datasets) but the maintenance and implementation costs are not currently balanced in favor of that change.
-Future iterations on `yt` will necessarily need to take these possible optimizations into account in order to meet the needs of increasing dataset size and complexity.
+Making the distinction somewhat more clearly, there are individuals who have built their own scripts and utilized them as well as individuals who have contributed changes or modules to the primary `yt` codebase.
+In addition, there is an emerging set of projects that build on `yt` as infrastructure to conduct scientific analysis.
+These developers are largely driven by their own pragmatic scientific needs, and they constitute the majority of developers (by number) that contribute to the code base.
+The majority of these individuals are early- to mid-career researchers, typically graduate students, postdocs, and assistant professors.
 
-Other, more mundane optimizations can also be applied.
-While utilizing units for all array-based operations (see @sec:units) provides safety and clarity of the quantities being manipulated, it also introduces overhead from the symbolic manipulation of those units.
-For example, typically the units used for position inside `yt` are all in the internal "index" space of the dataset.
-For some cosmological simulations, these are normalized to 1.0; for other simulations, they may be in centimeters or kilometers.
-(And often in cosmology there is some factor of the Hubble constant somewhere in the units, which is typically *also* an input parameter to the simulation.)
-However, we cannot guarantee that all input coordinates to selection routines match this index space; in fact, doing so would render utilizing a unit library unnecessary.
-As a result, `yt` conducts as regularization of units inside selection routines to ensure that they are the same in the quantities being compared or evaluated.
-This requires symbolic math operations in SymPy, which can at times carry with them substantial overhead.
-Often, even verifying that units are identical requires expensive operations to be conducted.
-To alleviate this, providing some measure of immutable units or index-guaranteed units (and thus enabling the unit comparison process to be elided) would eliminate many expensive operations inside selection routines.
-This would likely have the biggest impact on operations like ghost-zone generation, which can be quite expensive.
+In recent years, there has emerged a more coherent contingency of individuals who participate in both pragmatically-focused development of modules and functionality for their own benefit as well as modules or overall improvement that is supplemental or even external to their own research agenda.
+Sections of the code base receiving such improvements include unit handling, plotting code, infrastructure for loading disparate datasets, and so on.
+At this time we do not know of any individuals funded to work on `yt` completely independent of a scientific or scholarly goal.
 
-Another high-impact possible optimization is a conversion of the underlying infrastructure used for grids (@sec:grid_analysis) into a more compact and spatially-aware data structure.
-Specifically, utilizing an approach that uses the inherent spatial organization of a patch-based grid dataset (often in the form of an R-tree) can reduce the memory overhead of grid storage.
-While work has begun on this, modeling the grid-infrastructure after the "visitor" pattern used in the octree infrastructure, differences between the two (such as irregular sizes, different refinement patterns per level, etc) has presented some difficulties.
-However, given a successful implementation, much of the code that provides access to IO and selection (i.e., @sec:chunking) should be able to be moved into optimized, tight-loop routines written in Cython, Rust or other lower-level languages.
-Utilizing these data structures will also enable access to bitmap-arrays for caching of data selection results, reducing overall memory usage and improving performance.
+The composition of the community, particularly with a mixture of timelines for goal-setting and completion, can at times cause frustrations and difficulties.
+For instance, the response to "Can this feature be implemented?" often includes an invitation for the questioner to collaborate on developing that feature and submitting it to the codebase.
+Developing a schedule of releases is an act of consensus building, both deciding what bugs are critical to fix in the timeline of a release as well as building consensus on what features should be considered blockers for a new release.
+The intersection of this with academic deadlines (for instance job application season) requires balance and care.
 
-**Testing infrastructure**
+### Types of Tasks
 
-As dicussed in [[#sec:unit_testing]] and [[#sec:answer_testing]], the `yt` testing infrastructure is prone to time-consuming and memory-intense operations.
-Additionally, the bifurcation between those tests executable using nose and those executable using pytest presents a challenge for new contributors.
-Future development focused on unifying these two test suites, while also reducing the barriers to entry for executing a full test suite, will promote better test "hygiene" and enable contributors to rely on the underlying testing infrastructure run locally on their machines.
+When evaluating the level of engagement, we consider a few different classifications of tasks that are performed by individuals in the community, and evaluate these based on how they flow into greater engagement.
 
-Reducing the requirements for running and examining answer tests, more specifically examining the *results* of answer tests, could take the form of comparisons against hashes, or application of locality-sensitive hashing techniques.
-At present, comparing test results to a fixed "gold standard" requires downloading substantial amounts of data to local development workstations -- both the input data and the certified results.
+ * Filing issues
+ * Participating in mailing list discussions
+ * Issuing a pull request
+ * Writing documentation
+ * Participating in code review
+ * Closing bug reports
+ * Drafting an enhancement proposal
 
-### Quality of Life {#sec:quality_of_life}
+While there are other activities that individuals can participate in, these are the typical activities we see among participants in the community.
+The order, flowing from the first to the last, is the typical flow we see for an individual coming to participate in the community.
+The first step is typically to file an issue or bug report (occasionally these are requests for new features), followed by participating in development-focused discussion on mailing lists.
+The next level of engagement typically involves the development of a new piece of functionality, refinement of existing code, or issuing a fix for a bug or issue.
+These take the form of pull requests (described in greater detail [here](#sec:development)) that can be reviewed and added to the code base.
 
-Improving the "quality of life" of using `yt` can provide a more comfortable analysis environment and reduce friction between researchers and inquiry.
-Since the development of `yt`, the Python language has enabled and expanded support for type "hinting," wherein the types of variables are indicated by the code itself in (non-binding) annotations.
-For instance, declaring that the "center" argument to a constructing a sphere selector must be a 3-element tuple or the strings "c" can enable integrated development environments (IDEs) such as VS Code to supply helpful information when a user has incorrectly specified the argument.
-This also helps with automated testing, where a properly type-hinted codebase can be examined for violations of these input and return types.
-While much of `yt` has been annotated with type hints, there is still a considerable amount of the code base that has not.
-Improving the coverage of type hinting could potentially improve the development experience as well as the experience of using `yt`.
+The next level of engagement centers around tasks that are not fully-aligned with pragmatic, code-driven scientific inquiry.
+The development of documentation is often viewed as orthogonal to the scientific process, and typically requires an iterative writing process.
+Participation in code review, providing comments, feedback and suggestions to other authors, is another somewhat orthogonal task; it doesn't necessarily directly benefit the developer doing the reviewing (although it might) and it does not necessarily result in academic rewards (citations, authorship, etc).
+But, it does arise from a pragmatic (ensuring code reliability) or altruistic (the public good of the software) motivation, and is thus a deeper level of engagement.
 
-As discussed in [[#sec:jupyter_integration]], objects in Python can be provided with special methods that enhance their visual representation in the Jupyter Notebook.
-Other libraries, including Pandas, have leveraged this to provide nicer, more informative visual representations of datasets that facilitate at-a-glance understanding of their layout and contents.
-At present, `yt` does not have an extensive set of objects that provide user-friendly representations in this way.
-A reasonable amount of effort in this area could bring a great deal of additional information and orientation to users, particularly those that are new to the project.
-For instance, visual representations of dataset layout, format, size, etc would be appropriate enhancements.
+The final two activities, drafting enhancement proposals and closing bug reports, are the most engaged, and often the most removed from the academic motivation structure.
+Developing an [enhancement proposal](#sec:ytep) for `yt` means iterating with other developers on the motivation behind and implementation of a large piece of functionality; it requires both motivation to engage with the community and the patience to build consensus among stakeholders.
+Closing bug reports -- and the development work associated with identifying, tracking and fixing bugs -- requires patience and often repeated engagement with stakeholders.
 
-### New Features {#sec:new_features}
+### Engagement Metrics
 
-New feature development centers on two main areas: connecting with new and emerging ecosystems of libraries and packages, and development of features to support external communities of researchers.
-The rapid evolution of toolchains and projects related to machine learning and AI has presented numerous, currently somewhat underexplored, opportunities for integration with `yt`.
-Development of high-level and meaningful connections with libraries such as `pytorch-spatial` may unlock functionality and new discovery spaces for researchers seeking to apply AI techniques to simulation data from astronomy and other communities.
+Typically, measuring the degree of engagement in a project is done by examining the amount of activity that surrounds it; this can be through development, mailing list or other discussion forum engagement, or through citations of a paper.
+These metrics are valuable, but incomplete.
+Furthermore, their quantification presents challenges: how does migration of a project (and a community) from one form of interaction (such as a mailing list) to another (such as Slack or Github Issues) impact the perceived growth or health of that project?
+As such, we have attempted to build a proxy for the development metrics by examining activity around pull requests (as below in Figure #fig:pr-closing-time) and have opted to elide discussion of the activity of the project through the currently dominant medium of Slack.
 
-Additional high-priority areas of new feature development include deeper connections with _in situ_ analysis and visualization systems such as `libyt`.
-`libyt`, while initially created as a `yt`-specific platform to connect MPI-parallel applications to `yt`, provides flexible, Python-centric means of communicating between simulation platforms and Python scripts as well as running Jupyter kernels.
-Further developments in `yt` to better support flexible data decomposition and arrangement would benefit `libyt` as it scales to higher processor count and data volume.
 
-Finally, the biggest realm of new feature development that is available to `yt` is the addition of algorithms and methods from different domains outside of astronomy.
-While `yt` has been applied outside of astrophysical simulations, there is a wealth of algorithms and techniques that have not been made accessible.
-These span tasks such as feature identification, visualization, dimensionality reduction, and other domain-specific techniques.
-One of the most important goals we have with `yt` is to provide a platform that enables these domain-specific techniques to be applied more generally and to facilitate direct technology transfer between domains.
+## Project Governance {#sec:governance}
 
+Between the publication of the first paper and this paper, the `yt` project instituted a form of governance involving a steering committee, a set of "members" of the project, and a defined process for developing improvements and enhancements (the YTEP, or `yt`-enhancement-proposal process).
+YTEPs are discussed in @sec:ytep.
+The systems developed account for a number of important procedures, mostly related to decision-making, but do not address pressing community needs such as community standards for conduct, changes in committee composition, sub-project coordination, or the transition of members and developers to "emeritus" status.
+
+This governance structure, however, serves as a process for the `yt` *project*, rather than just the software itself.
+Much like other software projects with community-building as core goals, the `yt` project encompasses the core package itself (largely the subject of this paper), affiliated software projects (such as @doi:10.21105/joss.01774 ) but also, crucially, the broader community and the spaces in which discussions, tutorials, inquiries and development take place.
+As such, the governance structure was designed to be more holistic than addressing so-called "Commit Privileges" and access control.
+
+There are several components of the yt governance structure that we highlight here, but direct the interested reader to our [governance source repository](https://github.com/yt-project/governance) for a more detailed understanding.
+
+### Conflicts of Interest
+
+`yt` project development is distributed across universities and organizations, where in some cases different members of the development team may find themselves collaborating, or even applying for similar funding or academic positions.
+To minimize real or perceived conflicts of interest among the community, a policy regarding conflicts of interest is applied to members of the `yt` steering committee.
+
+> It is expected that the Steering Committee Members will be
+> employed at a wide range of companies, universities and non-profit
+> organizations.
+> Because of this, it is possible that Members will have conflict
+> of interests.
+> Such conflict of interests include, but are not limited to:
+>
+> * Financial interests, such as investments, employment or contracting work, outside of The Project that may influence their work on The Project.
+> * Access to proprietary information of their employer that could potentially leak into their work with the Project.
+>
+> All members of the Steering Committee shall disclose to the rest of the Council any conflict of interest they may have.
+> Members with a conflict of interest in a particular issue may participate in Committee discussions on that issue, but must recuse themselves from voting on the issue.
+
+This also addresses the possibility of funded work conflicting with the development of `yt` as a whole, or project wellness.
+As of the time of writing, this policy has not been exercised, but providing it in writing will ensure that the conduct of the steering committee is appropriate.
+
+### Project Members and Groups
+
+Individuals interact with projects in different ways at different times; as careers progress and personal lives shift, the degree of engagement that one can expect will change as well.
+To reflect this, as well as to codify the different means by which people can participate in the community, the `yt` governance structure allows for "members" to transition between different levels of activity.
+
+The base level of "membership" in the `yt` project is that of "project members."
+This is, by design, a broad category of individuals who have demonstrated their willingness to participate in the community, either through participating in community discussions, helping other members, contributing code or documentation, or reviewing the contributions of others.
+The initial seed of the project members was chosen by a flat cutoff of 50 changesets included in the repository; since that time, members are nominated by other members and must receive at least three positive votes.
+This membership, unless either explicitly revoked (via five supporting member votes and a steering council vote) lasts for life, although may be transitioned into "emeritus" status.
+Within the "members" group, a set of several sub-groups are identified that follow a rough, orchard-like metaphor.
+
+The first of these groups is the **fertilizer** group.
+(We whimsically note that the choice of name is not meant as a value judgment!)
+This is the high-level organizer group, including the steering committee and any other leadership roles.
+This group tends to the growth of the community, ensuring that there are opportunities for new members, and that the project continues as expected.
+Explicitly identified in the governance structure is that this is a group meant to train new members and to facilitate its membership to grow and change over time.
+
+The **arboretum** is the largest group, and is the starting point for new members of the project.
+The arboretum includes all project members and steering committee members.
+This group facilitates and develops contributions to the code base, encouraging diversity of participation.
+
+The **greenhouse** group includes those new members of the project, who are still developing their participation but have contributed to the community (for instance with a bug fix or documentation enhancement.)
+Members of the greenhouse group do not necessarily have high-level project responsibilities, but are encouraged to seek involvement and participate in triage meetings and other discussions.
+
+In recognition that temporary obligations, changes in activity level and other interest migrations happen, there is a group entitled the **fallow fields** for members who wish to temporarily step back from their responsibilities.
+Many different reasons exist for stepping into the fallow fields -- burnout, new or enhanced work responsibilities, family or care duties, or even simply a desire to do other things.
+Transitioning to the fallow fields is not permanent, and participation in the project can either resume or the individual can choose to move on.
+
+Finally, we have designated a class of project members as **emeritus** (the only non-orchard name utilized!) for individuals who have moved on to other interests or activities.
+The yt project has had a number of individuals and contributors who have later gone on to work in industry or non-profits, or who simply have opted to leave the community.
+The emeritus designation is a manner by which their previous contributions can still be recognized and honored, while also recognizing that they are no longer active participants.
+
+### Decision Making
+
+The majority of decisions in the yt project are small, day-to-day decisions about code quality, merging pull requests, how to respond to questions and other items for which it is typically quite easy to identify  a consensus.
+For those situations where consensus is not possible, deciding upon and implementing a course of action can be one of the more difficult issues in a project; members of the community each bring their own preferences, requirements, needs and desires to a project.
+These decisions might be regarding the future of specific areas of the project's code base -- for instance, "should the software volume rendering be split into a separate repository?" or "how should we decide the line to draw for excising old frontends?"
+Typically, the YTEP process is sufficient, even in cases where a consensus cannot be reached, as it allows a large amount of discussion.
+In cases where it cannot, the decision making process utilizes a multi-tier system of votes, including the YTEP and mailing list as venues.
+If a 2/3 majority is unable to be reached, the steering committee is allowed approximately a month to identify a consensus among themselves; failing this, a majority vote will be reached.
+
+While the full mechanism of the yt project decision making process has not been exercised in its entirety, its presence has provided a "safety net" for discussion.
+For further details, the [voting process](https://yt-project.github.io/governance/voting.html) section of the [governance documents](https://yt-project.github.io/governance/) lay out the steps, involved groups and timeline.
 
 
 ## Sustainability {#sec:sustainability}
@@ -4591,6 +4514,82 @@ Accepting changes into the yt codebase requires careful review, and dedication o
 Furthermore, not everyone derives pleasure from the same types of development.
 Some individuals love to build new things and scaffold out plugins or visualization types; others have great satisfaction from optimization or documentation.
 Accepting and supporting these different types of development is critical for a community built on respect, trust and gratitude.
+
+
+## Future Directions {#sec:future_directions}
+
+The development of `yt` has changed over time, as it has increasingly served as a stable platform for analysis of data and maintenance efforts have taken greater resources.
+However, despite that, there are a number of exciting areas within `yt` that could serve as targets of future development.
+In addition to these technical areas, expanding the user-base and developer-base of `yt` can serve to better support diverse use cases and applications.
+
+### Improvements to Internal Systems {#sec:improvements_to_internal_systems}
+
+**Optimization**
+
+The internal systems that conduct selection, caching and IO optimization, data processing and parallel load distribution have been designed for general purpose application.
+While this enables code reuse as well as consistent API patterns, the methods used to implement these systems internally in `yt` have not always kept up with the optimizations available.
+For example, the data selection routines (described in @sec:selection_routines) are not uniformly optimized to take advantage of built-in organizational information from grid, octree and particle data.
+A particular example is the [quad-tree projection](#sec:dobj-quad_proj).
+This projection method can be optimized for octree datasets for some speedups and memory improvements (which would likely then be shared with grid patch datasets) but the maintenance and implementation costs are not currently balanced in favor of that change.
+Future iterations on `yt` will necessarily need to take these possible optimizations into account in order to meet the needs of increasing dataset size and complexity.
+
+Other, more mundane optimizations can also be applied.
+While utilizing units for all array-based operations (see @sec:units) provides safety and clarity of the quantities being manipulated, it also introduces overhead from the symbolic manipulation of those units.
+For example, typically the units used for position inside `yt` are all in the internal "index" space of the dataset.
+For some cosmological simulations, these are normalized to 1.0; for other simulations, they may be in centimeters or kilometers.
+(And often in cosmology there is some factor of the Hubble constant somewhere in the units, which is typically *also* an input parameter to the simulation.)
+However, we cannot guarantee that all input coordinates to selection routines match this index space; in fact, doing so would render utilizing a unit library unnecessary.
+As a result, `yt` conducts as regularization of units inside selection routines to ensure that they are the same in the quantities being compared or evaluated.
+This requires symbolic math operations in SymPy, which can at times carry with them substantial overhead.
+Often, even verifying that units are identical requires expensive operations to be conducted.
+To alleviate this, providing some measure of immutable units or index-guaranteed units (and thus enabling the unit comparison process to be elided) would eliminate many expensive operations inside selection routines.
+This would likely have the biggest impact on operations like ghost-zone generation, which can be quite expensive.
+
+Another high-impact possible optimization is a conversion of the underlying infrastructure used for grids (@sec:grid_analysis) into a more compact and spatially-aware data structure.
+Specifically, utilizing an approach that uses the inherent spatial organization of a patch-based grid dataset (often in the form of an R-tree) can reduce the memory overhead of grid storage.
+While work has begun on this, modeling the grid-infrastructure after the "visitor" pattern used in the octree infrastructure, differences between the two (such as irregular sizes, different refinement patterns per level, etc) has presented some difficulties.
+However, given a successful implementation, much of the code that provides access to IO and selection (i.e., @sec:chunking) should be able to be moved into optimized, tight-loop routines written in Cython, Rust or other lower-level languages.
+Utilizing these data structures will also enable access to bitmap-arrays for caching of data selection results, reducing overall memory usage and improving performance.
+
+**Testing infrastructure**
+
+As dicussed in [[#sec:unit_testing]] and [[#sec:answer_testing]], the `yt` testing infrastructure is prone to time-consuming and memory-intense operations.
+Additionally, the bifurcation between those tests executable using nose and those executable using pytest presents a challenge for new contributors.
+Future development focused on unifying these two test suites, while also reducing the barriers to entry for executing a full test suite, will promote better test "hygiene" and enable contributors to rely on the underlying testing infrastructure run locally on their machines.
+
+Reducing the requirements for running and examining answer tests, more specifically examining the *results* of answer tests, could take the form of comparisons against hashes, or application of locality-sensitive hashing techniques.
+At present, comparing test results to a fixed "gold standard" requires downloading substantial amounts of data to local development workstations -- both the input data and the certified results.
+
+### Quality of Life {#sec:quality_of_life}
+
+Improving the "quality of life" of using `yt` can provide a more comfortable analysis environment and reduce friction between researchers and inquiry.
+Since the development of `yt`, the Python language has enabled and expanded support for type "hinting," wherein the types of variables are indicated by the code itself in (non-binding) annotations.
+For instance, declaring that the "center" argument to a constructing a sphere selector must be a 3-element tuple or the strings "c" can enable integrated development environments (IDEs) such as VS Code to supply helpful information when a user has incorrectly specified the argument.
+This also helps with automated testing, where a properly type-hinted codebase can be examined for violations of these input and return types.
+While much of `yt` has been annotated with type hints, there is still a considerable amount of the code base that has not.
+Improving the coverage of type hinting could potentially improve the development experience as well as the experience of using `yt`.
+
+As discussed in [[#sec:jupyter_integration]], objects in Python can be provided with special methods that enhance their visual representation in the Jupyter Notebook.
+Other libraries, including Pandas, have leveraged this to provide nicer, more informative visual representations of datasets that facilitate at-a-glance understanding of their layout and contents.
+At present, `yt` does not have an extensive set of objects that provide user-friendly representations in this way.
+A reasonable amount of effort in this area could bring a great deal of additional information and orientation to users, particularly those that are new to the project.
+For instance, visual representations of dataset layout, format, size, etc would be appropriate enhancements.
+
+### New Features {#sec:new_features}
+
+New feature development centers on two main areas: connecting with new and emerging ecosystems of libraries and packages, and development of features to support external communities of researchers.
+The rapid evolution of toolchains and projects related to machine learning and AI has presented numerous, currently somewhat underexplored, opportunities for integration with `yt`.
+Development of high-level and meaningful connections with libraries such as `pytorch-spatial` may unlock functionality and new discovery spaces for researchers seeking to apply AI techniques to simulation data from astronomy and other communities.
+
+Additional high-priority areas of new feature development include deeper connections with _in situ_ analysis and visualization systems such as `libyt`.
+`libyt`, while initially created as a `yt`-specific platform to connect MPI-parallel applications to `yt`, provides flexible, Python-centric means of communicating between simulation platforms and Python scripts as well as running Jupyter kernels.
+Further developments in `yt` to better support flexible data decomposition and arrangement would benefit `libyt` as it scales to higher processor count and data volume.
+
+Finally, the biggest realm of new feature development that is available to `yt` is the addition of algorithms and methods from different domains outside of astronomy.
+While `yt` has been applied outside of astrophysical simulations, there is a wealth of algorithms and techniques that have not been made accessible.
+These span tasks such as feature identification, visualization, dimensionality reduction, and other domain-specific techniques.
+One of the most important goals we have with `yt` is to provide a platform that enables these domain-specific techniques to be applied more generally and to facilitate direct technology transfer between domains.
+
 
 
 ## Conclusions
