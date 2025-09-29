@@ -88,8 +88,8 @@ header-includes: |
   <meta name="dc.date" content="2025-09-29" />
   <meta name="citation_publication_date" content="2025-09-29" />
   <meta property="article:published_time" content="2025-09-29" />
-  <meta name="dc.modified" content="2025-09-29T01:34:30+00:00" />
-  <meta property="article:modified_time" content="2025-09-29T01:34:30+00:00" />
+  <meta name="dc.modified" content="2025-09-29T18:16:26+00:00" />
+  <meta property="article:modified_time" content="2025-09-29T18:16:26+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -302,9 +302,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/bc7b005b4f20a443b3e1880fafff5a7c3f6c4836/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/bc7b005b4f20a443b3e1880fafff5a7c3f6c4836/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/bc7b005b4f20a443b3e1880fafff5a7c3f6c4836/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/240026d8c6b235e0cd0a68aa3ba7e27e3f4e0db2/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/240026d8c6b235e0cd0a68aa3ba7e27e3f4e0db2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/240026d8c6b235e0cd0a68aa3ba7e27e3f4e0db2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -327,9 +327,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/bc7b005b4f20a443b3e1880fafff5a7c3f6c4836/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/240026d8c6b235e0cd0a68aa3ba7e27e3f4e0db2/))
 was automatically generated
-from [yt-project/yt-4.0-paper@bc7b005](https://github.com/yt-project/yt-4.0-paper/tree/bc7b005b4f20a443b3e1880fafff5a7c3f6c4836)
+from [yt-project/yt-4.0-paper@240026d](https://github.com/yt-project/yt-4.0-paper/tree/240026d8c6b235e0cd0a68aa3ba7e27e3f4e0db2)
 on September 29, 2025.
 </em></small>
 
@@ -1060,7 +1060,7 @@ We present the current version of the `yt` software package.
 We describe the systems implemented in `yt` to facilitate a "science-first" approach to data analysis, wherein the emphasis is on the meaning and interpretation of the data as opposed to its discretization or layout.
 
 
-# Authorship Policy
+## Authorship Policy
 
 We note that the author list for this paper is, by design, extensive.
 We have separated the authors into those that contributed to the text (whose names are ordered **somehow TBD**) and those that are members of the `yt` community.
@@ -1068,10 +1068,10 @@ The authors from each group have been indicated in the respective author affilia
 
 This paper was developed collaboratively, using the Manubot [@url:https://github.com/greenelab/manubot] system for collaborating on and reviewing contributed text.
 
-> 
+>
 > To add yourself to the author list, please follow the instructions in our
 > [README](https://github.com/yt-project/yt-4.0-paper/blob/master/README.md#authorship-policy).
-> 
+>
 
 
 ## Introduction {#sec:introduction}
