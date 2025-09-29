@@ -1,0 +1,115 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "images/yt_repo.csv"
+  },
+  "transform": [
+    {"timeUnit": "yearquarter", "field": "datetime", "as": "quarter"},
+    {
+      "aggregate": [{"op": "count", "as": "count"}],
+      "groupby": ["type", "quarter", "author"]
+    }
+  ],
+  "hconcat": [
+    {
+      "params": [
+        {
+          "name": "commit_range",
+          "select": {"type": "interval", "encodings": ["x"]}
+        }
+      ],
+      "mark": {"type": "bar", "binSpacing": 0},
+      "height": 200,
+      "width": 200,
+      "resolve": {"scale": {"y": "independent"}, "axis": {"x": "independent"}},
+      "encoding": {
+        "row": {
+          "field": "type",
+          "title": null,
+          "header": {
+            "labelExpr": "datum.value == 'pull-request' ? 'Pull Requests' : 'Commits'",
+            "labelFontWeight": "bold",
+            "labelFontSize": 14
+          }
+        },
+        "y": {"aggregate": "sum", "field": "count", "title": null},
+        "x": {
+          "bin": true,
+          "field": "quarter",
+          "timeUnit": "yearquarter",
+          "type": "temporal",
+          "axis": {
+            "tickCount": {"interval": "year", "step": 1},
+            "labelExpr": "timeFormat(datum.value, '%Y')",
+            "title": "Date"
+          }
+        },
+        "color": {
+          "value": "gray",
+          "condition": {"param": "commit_range", "field": "type"}
+        },
+        "tooltip": [
+          {
+            "field": "quarter",
+            "timeUnit": "yearquarter",
+            "type": "temporal",
+            "title": "Quarter"
+          },
+          {"field": "sum_count", "type": "quantitative", "title": "Count"}
+        ]
+      }
+    },
+    {
+      "transform": [
+        {"filter": {"param": "commit_range"}},
+        {
+          "aggregate": [{"op": "sum", "field": "count", "as": "author_count"}],
+          "groupby": ["author", "type"]
+        },
+        {
+          "window": [{"op": "rank", "as": "rank"}],
+          "groupby": ["type"],
+          "sort": [
+            {"order": "descending", "field": "author_count"},
+            {"order": "ascending", "field": "author"}
+          ]
+        },
+        {"filter": {"field": "rank", "lte": 10}}
+      ],
+      "mark": {"type": "bar"},
+      "height": 200,
+      "width": 200,
+      "resolve": {"scale": {"x": "independent", "y": "independent"}},
+      "encoding": {
+        "row": {"field": "type", "title": null, "header": {"labelExpr": "''"}},
+        "y": {
+          "field": "author",
+          "type": "nominal",
+          "axis": {
+            "title": "Top 10 authors",
+            "orient": "right",
+            "maxExtent": 110,
+            "minExtent": 110
+          },
+          "sort": {"order": "ascending", "field": "rank"}
+        },
+        "x": {
+          "type": "quantitative",
+          "field": "author_count",
+          "axis": {"title": "Count"}
+        },
+        "color": {"field": "type", "legend": null},
+        "tooltip": [
+          {"field": "author", "title": "Name"},
+          {"field": "author_count", "type": "quantitative", "title": "Count"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "concat": {"spacing": 30},
+    "facet": {"spacing": 20},
+    "countTitle": "Count",
+    "axisX": {"titleLimit": 100}
+  }
+}
