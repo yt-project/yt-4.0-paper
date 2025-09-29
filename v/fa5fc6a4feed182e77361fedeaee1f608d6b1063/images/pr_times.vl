@@ -1,0 +1,101 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "images/yt_repo.csv"
+  },
+  "transform": [
+    {"filter": {"field": "type", "equal": "pull-request"}},
+    {"timeUnit": "yearquarter", "field": "datetime", "as": "quarter"}
+  ],
+  "vconcat": [
+    {
+      "mark": "tick",
+      "params": [
+        {
+          "name": "commit_range",
+          "select": {"type": "interval", "encodings": ["x"]}
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "datetime",
+          "type": "temporal",
+          "axis": {"title": null, "orient": "top"}
+        },
+        "opacity": {"value": 0.05}
+      }
+    },
+    {
+      "transform": [
+        {"filter": {"param": "commit_range"}},
+        {"calculate": "log(datum.duration)/log(10)", "as": "log_duration"},
+        {
+          "bin": {"base": 10, "extent": [2, 8.2], "step": 0.25},
+          "field": "log_duration",
+          "as": "bin_log_duration"
+        },
+        {"calculate": "pow(10, datum.bin_log_duration)", "as": "x1"},
+        {"calculate": "pow(10, datum.bin_log_duration_end)", "as": "x2"}
+      ],
+      "layer": [
+        {
+          "mark": "bar",
+          "encoding": {
+            "y": {
+              "field": "x1",
+              "scale": {"type": "log", "base": 10, "domain": [100, 100000000]},
+              "axis": {"tickCount": 5, "title": "Seconds to Merge"},
+              "type": "quantitative"
+            },
+            "y2": {"field": "x2"},
+            "x": {
+              "aggregate": "count",
+              "scale": {"type": "linear", "domain": [0, 500]}
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {"t": 3600, "label": "1h", "y": 1},
+              {"t": 86400, "label": "1d", "y": 1},
+              {"t": 604800, "label": "1w", "y": 1},
+              {"t": 2592000, "label": "1m", "y": 1},
+              {"t": 31536000, "label": "1y", "y": 1}
+            ]
+          },
+          "resolve": {"scale": {"x": "independent"}},
+          "layer": [
+            {
+              "mark": "rule",
+              "encoding": {
+                "y": {"field": "t", "type": "quantitative"},
+                "color": {"value": "black"}
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "angle": 0,
+                "align": "left",
+                "dy": 0,
+                "dx": 5,
+                "baseline": "middle"
+              },
+              "encoding": {
+                "y": {"field": "t", "type": "quantitative"},
+                "text": {"field": "label"},
+                "x": {
+                  "field": "y",
+                  "scale": {"domain": [0, 1]},
+                  "type": "quantitative",
+                  "axis": {"title": "# of merged pull requests"}
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
