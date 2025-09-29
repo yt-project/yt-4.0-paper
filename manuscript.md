@@ -88,8 +88,8 @@ header-includes: |
   <meta name="dc.date" content="2025-09-29" />
   <meta name="citation_publication_date" content="2025-09-29" />
   <meta property="article:published_time" content="2025-09-29" />
-  <meta name="dc.modified" content="2025-09-29T18:54:16+00:00" />
-  <meta property="article:modified_time" content="2025-09-29T18:54:16+00:00" />
+  <meta name="dc.modified" content="2025-09-29T19:40:30+00:00" />
+  <meta property="article:modified_time" content="2025-09-29T19:40:30+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -302,9 +302,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/1bde26a38c8e3975ba6410cee7fd4f79e4178c69/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/1bde26a38c8e3975ba6410cee7fd4f79e4178c69/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/1bde26a38c8e3975ba6410cee7fd4f79e4178c69/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/1f977bc4f693489a2ed214b43a4db83c9acfd555/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/1f977bc4f693489a2ed214b43a4db83c9acfd555/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/1f977bc4f693489a2ed214b43a4db83c9acfd555/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -327,9 +327,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/1bde26a38c8e3975ba6410cee7fd4f79e4178c69/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/1f977bc4f693489a2ed214b43a4db83c9acfd555/))
 was automatically generated
-from [yt-project/yt-4.0-paper@1bde26a](https://github.com/yt-project/yt-4.0-paper/tree/1bde26a38c8e3975ba6410cee7fd4f79e4178c69)
+from [yt-project/yt-4.0-paper@1f977bc](https://github.com/yt-project/yt-4.0-paper/tree/1f977bc4f693489a2ed214b43a4db83c9acfd555)
 on September 29, 2025.
 </em></small>
 
@@ -2453,7 +2453,7 @@ The authors would like to thank Daniel Lemire for his open source EWAH implement
 
 
 
-### adaptahop
+**adaptahop**
 
 **Index Type:** particle
 
@@ -2465,7 +2465,7 @@ The authors would like to thank Daniel Lemire for his open source EWAH implement
 
 
 
-### ahf
+**ahf**
 
 **Index Type:** particle
 
@@ -2477,7 +2477,7 @@ The authors would like to thank Daniel Lemire for his open source EWAH implement
 
 
 
-### amrvac
+**amrvac**
 
 **Index Type:** grid
 
@@ -2495,7 +2495,7 @@ The emphasis is on (near) conservation laws and on shock-dominated problems in p
 
 
 
-### arepo
+**arepo**
 
 **Index Type:** particle
 
@@ -2511,7 +2511,7 @@ For visualization purposes, yt treats it similarly to an SPH dataset; some effor
 
 
 
-### art
+**art**
 
 **Index Type:** octree, particle
 
@@ -2530,7 +2530,7 @@ Each of these constitutes a different indexing system, sharing similar datatypes
 
 
 
-### artio
+**artio**
 
 **Index Type:** octree
 
@@ -2549,7 +2549,7 @@ Reducing the amount of internal bookkeepping that yt had to do provided a lighte
 
 
 
-### athena
+**athena**
 
 **Index Type:** grid
 
@@ -2563,7 +2563,7 @@ Reducing the amount of internal bookkeepping that yt had to do provided a lighte
 
 
 
-### athena_pp
+**athena_pp**
 
 **Index Type:** grid
 
@@ -2577,7 +2577,7 @@ Reducing the amount of internal bookkeepping that yt had to do provided a lighte
 
 
 
-### boxlib
+**boxlib**
 
 **Index Type:** grid
 
@@ -2593,7 +2593,7 @@ Reducing the amount of internal bookkeepping that yt had to do provided a lighte
 
 
 
-### cholla
+**cholla**
 
 **Index Type:** grid
 
@@ -2607,7 +2607,7 @@ Reducing the amount of internal bookkeepping that yt had to do provided a lighte
 
 
 
-### chombo
+**chombo**
 
 **Index Type:** grid
 
@@ -2621,7 +2621,7 @@ Reducing the amount of internal bookkeepping that yt had to do provided a lighte
 
 
 
-### eagle
+**eagle**
 
 **Index Type:** particle
 
@@ -2635,7 +2635,7 @@ Reducing the amount of internal bookkeepping that yt had to do provided a lighte
 
 
 
-### enzo
+**enzo**
 
 **Index Type:** grid
 
@@ -2656,7 +2656,7 @@ There are several 'sub-frontends' within the Enzo frontend; these include dedica
 
 
 
-### enzo_e
+**enzo_e**
 
 **Index Type:** grid
 
@@ -2671,7 +2671,7 @@ There are several 'sub-frontends' within the Enzo frontend; these include dedica
 
 
 
-### exodus_ii
+**exodus_ii**
 
 **Index Type:** unstructured mesh
 
@@ -2685,7 +2685,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### fits
+**fits**
 
 **Index Type:** grid
 
@@ -2697,7 +2697,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### flash
+**flash**
 
 **Index Type:** grid
 
@@ -2711,7 +2711,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### gadget
+**gadget**
 
 **Index Type:** particle
 
@@ -2725,7 +2725,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### gadget_fof
+**gadget_fof**
 
 **Index Type:** particle
 
@@ -2737,7 +2737,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### gamer
+**gamer**
 
 **Index Type:** grid
 
@@ -2751,7 +2751,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### gdf
+**gdf**
 
 **Index Type:** grid
 
@@ -2763,7 +2763,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### gizmo
+**gizmo**
 
 **Index Type:** particle
 
@@ -2777,7 +2777,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### halo_catalog
+**halo_catalog**
 
 **Index Type:** particle
 
@@ -2789,7 +2789,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### http_stream
+**http_stream**
 
 **Index Type:** particle
 
@@ -2801,7 +2801,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### moab
+**moab**
 
 **Index Type:** unstructured mesh
 
@@ -2813,7 +2813,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### nc4_cm1
+**nc4_cm1**
 
 **Index Type:** grid
 
@@ -2825,7 +2825,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### open_pmd
+**open_pmd**
 
 **Index Type:** particle
 
@@ -2837,7 +2837,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### owls
+**owls**
 
 **Index Type:** particle
 
@@ -2849,7 +2849,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### owls_subfind
+**owls_subfind**
 
 **Index Type:** particle
 
@@ -2861,7 +2861,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### ramses
+**ramses**
 
 **Index Type:** octree
 
@@ -2875,7 +2875,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### rockstar
+**rockstar**
 
 **Index Type:** particle
 
@@ -2887,7 +2887,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### sdf
+**sdf**
 
 **Index Type:** particle
 
@@ -2901,7 +2901,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### sph
+**sph**
 
 **Index Type:** particle
 
@@ -2913,7 +2913,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### stream
+**stream**
 
 **Index Type:** multi
 
@@ -2927,7 +2927,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### swift
+**swift**
 
 **Index Type:** particle
 
@@ -2943,7 +2943,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### tipsy
+**tipsy**
 
 **Index Type:** particle
 
@@ -2957,7 +2957,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### ytdata
+**ytdata**
 
 **Index Type:** particle
 
@@ -2971,7 +2971,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
-### parthenon
+**parthenon**
 
 **Index Type:** grid
 
@@ -2987,6 +2987,7 @@ The original driver for developing this format was for simulations of nuclear re
 
 
 
+## Visualization and Volume Rendering {#sec:viz_and_volrendering}
 
 The primary method by which researchers interact with their data in `yt` is via visualization; from the standpoint of the library, however, this is a side-effect of the various analysis, regularization and data-processing algorithms that are implemented within `yt`.
 Nearly all of the visualization that is done using `yt` utilizes the matplotlib library for actual deposition of pixels into an image format, although all of the *input* to that deposition is conducted by `yt`.
@@ -3020,6 +3021,77 @@ Widgyts provides a browser-side Jupyterlab interface to the pixelization routine
 
 ### Higher-Order Unstructured Mesh Elements
 
+`yt` supports the rendering of higher-order mesh elements in finite element simulations.
+This includes both distortion of elements based on their shape as well as using additional points for internal interpolation of values.
+To provide generic support for higher-order interpolation functions, `yt` uses a YAML specification that is interpreted at release-time and included in the source in Cython.
+
+Inside the file `mesh_types.yaml`, different classes of elements are defined by specifying their mesh type (see [periodic table of finite elements](https://www-users.cse.umn.edu/~arnold/femtable/)), the number of vertices, the dimensionality, the number of mapped coordinates, and a shape function.
+The shape function is interpreted as an array of maps between reference space and element space; at release-time this is interpreted as symbolic code and stored in sympy objects.
+
+Sympy generates Jacobians for these functions, and generated code is emitted (in Cython) to the file `autogenerated_element_samplers.pyx`.
+These are applied for both higher-order and first-order elements, ensuring regularized usage of the element sampling.
+For example, the symbolic definition of the Q1 shape function in 2D is reasonably short:
+
+```
+Quad4:
+  mesh_type: Q1
+  num_dim: 2
+  num_vertices: 4
+  num_mapped_coords: 2
+  shape_functions: |
+    [(1 - x[0])*(1 - x[1])/4.,
+     (1 + x[0])*(1 - x[1])/4.,
+     (1 + x[0])*(1 + x[1])/4.,
+     (1 - x[0])*(1 + x[1])/4.]
+```
+
+And from this, the Q1 function and its Jacobian are autogenerated:
+
+```
+@cython.boundscheck(False)
+@cython.wraparound(False)
+@cython.cdivision(True)
+cdef void q1Function2D(double* fx,
+                       double* x,
+                       double* vertices,
+                       double* phys_x) noexcept nogil:
+	fx[0] = 0.25*(1 - x[0])*(1 - x[1])*vertices[0] \
+          + 0.25*(1 - x[0])*(1 + x[1])*vertices[6] \
+          + 0.25*(1 + x[0])*(1 - x[1])*vertices[2] \
+          + 0.25*(1 + x[0])*(1 + x[1])*vertices[4] - phys_x[0]
+	fx[1] = 0.25*(1 - x[0])*(1 - x[1])*vertices[1] \
+          + 0.25*(1 - x[0])*(1 + x[1])*vertices[7] \
+          + 0.25*(1 + x[0])*(1 - x[1])*vertices[3] \
+          + 0.25*(1 + x[0])*(1 + x[1])*vertices[5] - phys_x[1]
+
+@cython.boundscheck(False)
+@cython.wraparound(False)
+@cython.cdivision(True)
+cdef void Q1Jacobian2D(double* rcol,
+                       double* scol,
+                       double* x,
+                       double* vertices,
+                       double* phys_x) noexcept nogil:
+	rcol[0] = -0.25*(1 - x[1])*vertices[0] \
+            +  0.25*(1 - x[1])*vertices[2] \
+            +  0.25*(1 + x[1])*vertices[4] \
+            -  0.25*(1 + x[1])*vertices[6]
+	scol[0] = -0.25*(1 - x[0])*vertices[0] \
+            +  0.25*(1 - x[0])*vertices[6] \
+            -  0.25*(1 + x[0])*vertices[2] \
+            +  0.25*(1 + x[0])*vertices[4]
+	rcol[1] = -0.25*(1 - x[1])*vertices[1] \
+            +  0.25*(1 - x[1])*vertices[3] \
+            +  0.25*(1 + x[1])*vertices[5] \
+            -  0.25*(1 + x[1])*vertices[7]
+	scol[1] = -0.25*(1 - x[0])*vertices[1] \
+            +  0.25*(1 - x[0])*vertices[7] \
+            -  0.25*(1 + x[0])*vertices[3] \
+            +  0.25*(1 + x[0])*vertices[5]
+```
+
+While the number of functions that are *required* is not necessarily without bound, this provides `yt` the ability to dynamically add, modify or adjust them as necessary.
+It also allows us to consolidate code and apply uniform optimizations (if necessary) in one location, and to ensure the API is completely regularized.
 
 ### Software Volume Rendering {#sec:software-volume-rendering}
 
@@ -4250,7 +4322,7 @@ For much of its development history, `yt` took the approach of bundling as many 
 This provided the advantage of having all work be centralized, and ensuring that each download or installation of `yt` was a fully-featured system for analyzing a large swath of data, but it brought with it the development overhead of the entire `yt` package for what in many cases were isolated pieces of functionality with separable responsibilities.
 
 As a result of the slowing in speed of development as a result of review requirements (and limited personnel to conduct those reviews), some of the analysis modules that were bundled with `yt` have been "spun out" into their own repository, `yt_astro_analysis` [@doi:10.5281/zenodo.8431185].
-This repository, which is developed, released and installed separately from `yt`, includes modules for cosmological observation (upon which Triden, which is discussed in @sec:trident, is based), dark matter halo finding and analysis, tools for interacting with position-position-velocity cubes, light cone generation [@doi:10.1088/0004-637X/698/2/1795] and a system for exporting from `yt` to RADMC-3D [@ascl:1202.015].
+This repository, which is developed, released and installed separately from `yt`, includes modules for cosmological observation (upon which Triden, which is discussed in @sec:trident, is based), dark matter halo finding and analysis, tools for interacting with position-position-velocity cubes, light cone generation [@doi:10.1088/0004-637X/698/2/1795] and a system for exporting from `yt` to RADMC-3D [@2012ascl.soft02015D].
 
 Several packages have been developed that utilize `yt` as an infrastructural component.
 In contrast to the analysis modules, which have typically been built as extensions of `yt`, these extensions utilize `yt` as a framework and typically only rely upon public APIs, often with no changes necessary to upstream `yt`.
