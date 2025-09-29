@@ -88,8 +88,8 @@ header-includes: |
   <meta name="dc.date" content="2025-09-29" />
   <meta name="citation_publication_date" content="2025-09-29" />
   <meta property="article:published_time" content="2025-09-29" />
-  <meta name="dc.modified" content="2025-09-29T18:20:51+00:00" />
-  <meta property="article:modified_time" content="2025-09-29T18:20:51+00:00" />
+  <meta name="dc.modified" content="2025-09-29T18:54:16+00:00" />
+  <meta property="article:modified_time" content="2025-09-29T18:54:16+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -302,9 +302,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://yt-project.github.io/yt-4.0-paper/" />
   <meta name="citation_pdf_url" content="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://yt-project.github.io/yt-4.0-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/fa5fc6a4feed182e77361fedeaee1f608d6b1063/" />
-  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/fa5fc6a4feed182e77361fedeaee1f608d6b1063/" />
-  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/fa5fc6a4feed182e77361fedeaee1f608d6b1063/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://yt-project.github.io/yt-4.0-paper/v/1bde26a38c8e3975ba6410cee7fd4f79e4178c69/" />
+  <meta name="manubot_html_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/1bde26a38c8e3975ba6410cee7fd4f79e4178c69/" />
+  <meta name="manubot_pdf_url_versioned" content="https://yt-project.github.io/yt-4.0-paper/v/1bde26a38c8e3975ba6410cee7fd4f79e4178c69/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -327,9 +327,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://yt-project.github.io/yt-4.0-paper/v/fa5fc6a4feed182e77361fedeaee1f608d6b1063/))
+([permalink](https://yt-project.github.io/yt-4.0-paper/v/1bde26a38c8e3975ba6410cee7fd4f79e4178c69/))
 was automatically generated
-from [yt-project/yt-4.0-paper@fa5fc6a](https://github.com/yt-project/yt-4.0-paper/tree/fa5fc6a4feed182e77361fedeaee1f608d6b1063)
+from [yt-project/yt-4.0-paper@1bde26a](https://github.com/yt-project/yt-4.0-paper/tree/1bde26a38c8e3975ba6410cee7fd4f79e4178c69)
 on September 29, 2025.
 </em></small>
 
@@ -1850,7 +1850,7 @@ Indexing grid data in `yt` is optimized for systems of grids that tend to have l
 In the limit of many more cells than grid objects, this overhead is small, but in cases where the number of grids is $\sim 10^7$ this can become prohibitive.
 These cases are becoming more common even for medium-scale simulations.
 
-To address both the memory overhead and the Python overhead, as well as more generally address potential scalability issues with grid selection, several tentative explorations have been made into an implementation of a more sophisticated "grid visitors" indexing and selection method, drawing on the approach used by the oct-visitors (described below in Section #sec:octree_analysis).
+To address both the memory overhead and the Python overhead, as well as more generally address potential scalability issues with grid selection, several tentative explorations have been made into an implementation of a more sophisticated "grid visitors" indexing and selection method, drawing on the approach used by the oct-visitors (described below in Section @sec:octree_analysis).
 These were an attempt to unify the selection methods between octrees and grids, to reduce the overall code duplication and implementation overhead.
 Each process -- selection, copying of data, generation of coordinates -- is represented by an instance of a `GridVisitor` object.
 A spatial tree is constructed, wherein parent/child relationships are established between grids.
@@ -4133,7 +4133,7 @@ This allows a different cadence, and also enables individuals _not_ interested i
 Larger dataset answers are stored in on our continuous integration servers; a YAML file in the main `yt` repository stores the current version number for those answers, which is incremented (via a pull request) when needed.
 Requiring this clear decision-making process allows for both collaborative discussion and community governance over the degree of answer drift allowed.
 In contrast to the unit tests, answer tests rely on a custom-built legacy plugin that has not been ported to pytest; efforts have stalled to complete this porting, and at the present the answer-testing framework still utilizes the nosetests library.
-This is discussed somewhat further in #sec:future_directions.
+This is discussed somewhat further in @sec:future_directions.
 
 ### Code Review
 
@@ -4347,7 +4347,7 @@ Closing bug reports -- and the development work associated with identifying, tra
 Typically, measuring the degree of engagement in a project is done by examining the amount of activity that surrounds it; this can be through development, mailing list or other discussion forum engagement, or through citations of a paper.
 These metrics are valuable, but incomplete.
 Furthermore, their quantification presents challenges: how does migration of a project (and a community) from one form of interaction (such as a mailing list) to another (such as Slack or Github Issues) impact the perceived growth or health of that project?
-As such, we have attempted to build a proxy for the development metrics by examining activity around pull requests (as below in Figure #fig:pr-closing-time) and have opted to elide discussion of the activity of the project through the currently dominant medium of Slack.
+As such, we have attempted to build a proxy for the development metrics by examining activity around pull requests (as below in Figure @fig:pr-closing-time) and have opted to elide discussion of the activity of the project through the currently dominant medium of Slack.
 
 
 ## Project Governance {#sec:governance}
@@ -4553,7 +4553,7 @@ Utilizing these data structures will also enable access to bitmap-arrays for cac
 
 **Testing infrastructure**
 
-As dicussed in [[#sec:unit_testing]] and [[#sec:answer_testing]], the `yt` testing infrastructure is prone to time-consuming and memory-intense operations.
+As dicussed in @sec:unit_testing and @sec:answer_testing, the `yt` testing infrastructure is prone to time-consuming and memory-intense operations.
 Additionally, the bifurcation between those tests executable using nose and those executable using pytest presents a challenge for new contributors.
 Future development focused on unifying these two test suites, while also reducing the barriers to entry for executing a full test suite, will promote better test "hygiene" and enable contributors to rely on the underlying testing infrastructure run locally on their machines.
 
@@ -4569,7 +4569,7 @@ This also helps with automated testing, where a properly type-hinted codebase ca
 While much of `yt` has been annotated with type hints, there is still a considerable amount of the code base that has not.
 Improving the coverage of type hinting could potentially improve the development experience as well as the experience of using `yt`.
 
-As discussed in [[#sec:jupyter_integration]], objects in Python can be provided with special methods that enhance their visual representation in the Jupyter Notebook.
+As discussed in @sec:jupyter_integration, objects in Python can be provided with special methods that enhance their visual representation in the Jupyter Notebook.
 Other libraries, including Pandas, have leveraged this to provide nicer, more informative visual representations of datasets that facilitate at-a-glance understanding of their layout and contents.
 At present, `yt` does not have an extensive set of objects that provide user-friendly representations in this way.
 A reasonable amount of effort in this area could bring a great deal of additional information and orientation to users, particularly those that are new to the project.
