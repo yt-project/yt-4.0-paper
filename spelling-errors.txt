@@ -5,7 +5,7 @@ ahf
 AIP
 Aitoff
 Alamos
-alankar
+Alankar
 Alpes
 Altay
 AMR
@@ -14,16 +14,16 @@ AMRKDTree
 amrvac
 Aperio
 APIs
-arepo
+AREPO
 Arraki
 arraylike
-ARTIO
+artio
 arwetzel
 AST
 Astro
 astrojaz
 astrophysically
-AstroPy
+astropy
 astrosmith
 AthenaPK
 atmyers
@@ -39,11 +39,11 @@ binarily
 Biondo
 Birla
 Bitbucket
-Bitwise
+bitwise
 bookkeepping
 Bool
 Borro
-BoxLib
+boxlib
 Britton
 brittonsmith
 Bugfix
@@ -117,7 +117,7 @@ dobj
 DTU
 Duplicative
 durations
-dutta
+Dutta
 easies
 elliottbiondo
 entrypoints
@@ -137,7 +137,7 @@ filesystem
 fisheye
 fof
 formatters
-Frontend
+frontend
 frontends
 frontrow
 galtay
@@ -218,7 +218,7 @@ logarithmically
 LSST
 Lund
 Madicken
-matplotlib
+Matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -341,7 +341,7 @@ Sinha
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger
@@ -359,7 +359,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-SymPy
+Sympy
 sytlistic
 TBD
 Tbytes
@@ -387,7 +387,7 @@ Urbana
 userbase
 Volker
 Vulkan
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Wijers
@@ -401,7 +401,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-YTEP
+ytep
 YTEPs
 ytini
 YTQuadTreeProj
