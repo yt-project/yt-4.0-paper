@@ -5,7 +5,7 @@ ahf
 AIP
 Aitoff
 Alamos
-alankar
+Alankar
 Alpes
 Altay
 AMR
@@ -23,7 +23,7 @@ AST
 Astro
 astrojaz
 astrophysically
-astropy
+AstroPy
 astrosmith
 AthenaPK
 atmyers
@@ -41,7 +41,7 @@ Birla
 Bitbucket
 bitwise
 bookkeepping
-bool
+Bool
 Borro
 BoxLib
 Britton
@@ -82,7 +82,7 @@ colorspace
 comoving
 conda
 connectedness
-Coord
+coord
 Coords
 Corentin
 cosmosquark
@@ -121,7 +121,7 @@ Dutta
 easies
 elliottbiondo
 entrypoints
-enzo
+Enzo
 Enzo’s
 ethlau
 Evanston
@@ -138,7 +138,7 @@ fisheye
 FOF
 formatters
 frontend
-frontends
+Frontends
 frontrow
 galtay
 gdf
@@ -188,7 +188,7 @@ Ji
 jisuoqing
 jnaiman
 Joana
-Jupyter
+jupyter
 Jupyterlab
 jwise
 jzuhone
@@ -218,7 +218,7 @@ logarithmically
 LSST
 Lund
 Madicken
-Matplotlib
+matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -255,11 +255,11 @@ nosetest
 nosetests
 NSSC
 NumFOCUS
-NumPy
+numpy
 OAC
 octants
-octree
-Octrees
+Octree
+octrees
 octs
 odowska
 olebole
@@ -301,7 +301,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyxsim
+pyXSIM
 qobilidop
 quadtree
 radiative
@@ -341,7 +341,7 @@ Sinha
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger
@@ -387,7 +387,7 @@ Urbana
 userbase
 Volker
 Vulkan
-webassembly
+WebAssembly
 Wetzel
 Widgyts
 Wijers
@@ -409,7 +409,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-Zingale
+zingale
 zorder
 Zuckerberg
 ZuHone
