@@ -617,6 +617,16 @@ authors:
       - CIERA Postdoctoral Fellowship
     corresponding: false
   -
+    github: yaochengchen
+    name: Yaocheng Chen
+    initials: YC
+    orcid: 0000-0002-8967-4911
+    corresponding: false
+    email: yaocheng.chencyc@gmail.com
+    affiliations:
+      - Korea Astronomy and Space Science Institute
+    funders: []
+  -
     github: yournamehere
     name: Add Yourself
     initials: YOU
