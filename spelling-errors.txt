@@ -11,7 +11,7 @@ Altay
 AMR
 AMReX
 AMRKDTree
-AMRVAC
+amrvac
 Aperio
 APIs
 AREPO
@@ -20,7 +20,7 @@ arraylike
 artio
 arwetzel
 AST
-Astro
+astro
 astrojaz
 astrophysically
 AstroPy
@@ -121,7 +121,7 @@ Dutta
 easies
 elliottbiondo
 entrypoints
-Enzo
+enzo
 Enzo’s
 ethlau
 Evanston
@@ -135,10 +135,10 @@ featureset
 Fermilab
 filesystem
 fisheye
-FOF
+fof
 formatters
 frontend
-Frontends
+frontends
 frontrow
 galtay
 gdf
@@ -239,7 +239,7 @@ munkm
 Naiman
 namespace
 Narayanan
-Nastasha
+nastasha
 Navaneeth
 neper
 NetCDF
@@ -258,9 +258,9 @@ NumFOCUS
 numpy
 OAC
 octants
-Octree
+octree
 octrees
-octs
+Octs
 odowska
 olebole
 OpenGL
@@ -291,7 +291,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-powderday
+Powderday
 pre
 prefixable
 programmatically
@@ -303,7 +303,7 @@ pytest
 PyThreeJS
 pyXSIM
 qobilidop
-quadtree
+Quadtree
 radiative
 RADMC
 rasterizers
@@ -320,7 +320,7 @@ RGBA
 Ritali
 RitaliG
 rjfarber
-rockstar
+Rockstar
 Rockstar’s
 Ronan
 Rong
@@ -359,7 +359,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-SymPy
+sympy
 sytlistic
 TBD
 Tbytes
@@ -387,7 +387,7 @@ Urbana
 userbase
 Volker
 Vulkan
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Wijers
@@ -409,7 +409,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-zingale
+Zingale
 zorder
 Zuckerberg
 ZuHone
