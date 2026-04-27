@@ -11,13 +11,13 @@ Altay
 AMR
 AMReX
 AMRKDTree
-amrvac
+AMRVAC
 Aperio
 APIs
 AREPO
 Arraki
 arraylike
-ARTIO
+artio
 arwetzel
 AST
 astro
@@ -39,11 +39,11 @@ binarily
 Biondo
 Birla
 Bitbucket
-Bitwise
+bitwise
 bookkeepping
 Bool
 Borro
-BoxLib
+boxlib
 Britton
 brittonsmith
 Bugfix
@@ -77,7 +77,7 @@ colorbar
 colorbars
 colormap
 colormapping
-Colormaps
+colormaps
 colorspace
 Comoving
 conda
@@ -91,7 +91,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-cython
+Cython
 dask
 d’Astrophysique
 dataframe
@@ -121,7 +121,7 @@ Dutta
 easies
 elliottbiondo
 entrypoints
-Enzo
+enzo
 Enzo’s
 ethlau
 Evanston
@@ -135,7 +135,7 @@ featureset
 Fermilab
 filesystem
 fisheye
-fof
+FOF
 formatters
 frontend
 frontends
@@ -159,7 +159,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-hexahedral
+Hexahedral
 HippoDraw
 histogramming
 Hix
@@ -188,7 +188,7 @@ Ji
 jisuoqing
 jnaiman
 Joana
-Jupyter
+jupyter
 Jupyterlab
 jwise
 jzuhone
@@ -255,10 +255,10 @@ nosetest
 nosetests
 NSSC
 NumFOCUS
-numpy
+NumPy
 OAC
 octants
-Octree
+octree
 Octrees
 octs
 odowska
@@ -291,7 +291,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-powderday
+Powderday
 pre
 prefixable
 programmatically
@@ -301,9 +301,9 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyXSIM
+pyxsim
 qobilidop
-quadtree
+Quadtree
 radiative
 RADMC
 rasterizers
@@ -320,7 +320,7 @@ RGBA
 Ritali
 RitaliG
 rjfarber
-rockstar
+Rockstar
 Rockstar’s
 Ronan
 Rong
@@ -341,7 +341,7 @@ Sinha
 Skillman
 SLAC
 soton
-sph
+SPH
 Springel
 STFC
 Stockinger
@@ -359,7 +359,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-SymPy
+Sympy
 sytlistic
 TBD
 Tbytes
@@ -376,7 +376,7 @@ Tsai
 UC
 unappropriate
 underexplored
-Unitful
+unitful
 unitless
 Université
 unmergeable
@@ -387,7 +387,7 @@ Urbana
 userbase
 Volker
 Vulkan
-webassembly
+WebAssembly
 Wetzel
 Widgyts
 Wijers
@@ -401,7 +401,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj
