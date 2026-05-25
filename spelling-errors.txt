@@ -5,7 +5,7 @@ ahf
 AIP
 Aitoff
 Alamos
-Alankar
+alankar
 Alpes
 Altay
 AMR
@@ -14,16 +14,16 @@ AMRKDTree
 AMRVAC
 Aperio
 APIs
-AREPO
+arepo
 Arraki
 arraylike
-artio
+ARTIO
 arwetzel
 AST
-Astro
+astro
 astrojaz
 astrophysically
-astropy
+AstroPy
 astrosmith
 AthenaPK
 atmyers
@@ -41,7 +41,7 @@ Birla
 Bitbucket
 bitwise
 bookkeepping
-Bool
+bool
 Borro
 BoxLib
 Britton
@@ -117,7 +117,7 @@ dobj
 DTU
 Duplicative
 durations
-dutta
+Dutta
 easies
 elliottbiondo
 entrypoints
@@ -135,7 +135,7 @@ featureset
 Fermilab
 filesystem
 fisheye
-FOF
+fof
 formatters
 frontend
 frontends
@@ -159,7 +159,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-Hexahedral
+hexahedral
 HippoDraw
 histogramming
 Hix
@@ -239,7 +239,7 @@ munkm
 Naiman
 namespace
 Narayanan
-Nastasha
+nastasha
 Navaneeth
 neper
 NetCDF
@@ -255,11 +255,11 @@ nosetest
 nosetests
 NSSC
 NumFOCUS
-numpy
+NumPy
 OAC
 octants
 octree
-Octrees
+octrees
 octs
 odowska
 olebole
@@ -291,7 +291,7 @@ Planétologie
 PlotCollection
 pmd
 potentia
-Powderday
+powderday
 pre
 prefixable
 programmatically
@@ -376,7 +376,7 @@ Tsai
 UC
 unappropriate
 underexplored
-Unitful
+unitful
 unitless
 Université
 unmergeable
@@ -387,7 +387,7 @@ Urbana
 userbase
 Volker
 Vulkan
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Wijers
@@ -401,7 +401,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-YTEP
+ytep
 YTEPs
 ytini
 YTQuadTreeProj
@@ -409,7 +409,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-zingale
+Zingale
 zorder
 Zuckerberg
 ZuHone
