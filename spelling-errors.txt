@@ -17,13 +17,13 @@ APIs
 AREPO
 Arraki
 arraylike
-artio
+ARTIO
 arwetzel
 AST
 Astro
 astrojaz
 astrophysically
-astropy
+AstroPy
 astrosmith
 AthenaPK
 atmyers
@@ -41,7 +41,7 @@ Birla
 Bitbucket
 bitwise
 bookkeepping
-Bool
+bool
 Borro
 boxlib
 Britton
@@ -58,7 +58,7 @@ centric
 CGS
 changeset
 changesets
-CHOLLA
+cholla
 chombo
 chrishavlin
 chummels
@@ -82,7 +82,7 @@ colorspace
 Comoving
 conda
 connectedness
-coord
+Coord
 Coords
 Corentin
 cosmosquark
@@ -117,11 +117,11 @@ dobj
 DTU
 Duplicative
 durations
-dutta
+Dutta
 easies
 elliottbiondo
 entrypoints
-Enzo
+enzo
 Enzo’s
 ethlau
 Evanston
@@ -218,7 +218,7 @@ logarithmically
 LSST
 Lund
 Madicken
-Matplotlib
+matplotlib
 Matplotlib’s
 MatthewTurk
 megaparsec
@@ -239,7 +239,7 @@ munkm
 Naiman
 namespace
 Narayanan
-Nastasha
+nastasha
 Navaneeth
 neper
 NetCDF
@@ -260,7 +260,7 @@ OAC
 octants
 octree
 Octrees
-octs
+Octs
 odowska
 olebole
 OpenGL
@@ -301,7 +301,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyxsim
+pyXSIM
 qobilidop
 quadtree
 radiative
@@ -359,7 +359,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-sympy
+SymPy
 sytlistic
 TBD
 Tbytes
@@ -376,7 +376,7 @@ Tsai
 UC
 unappropriate
 underexplored
-Unitful
+unitful
 unitless
 Université
 unmergeable
@@ -387,7 +387,7 @@ Urbana
 userbase
 Volker
 Vulkan
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Wijers
