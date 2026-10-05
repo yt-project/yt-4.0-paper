@@ -14,7 +14,7 @@ AMRKDTree
 AMRVAC
 Aperio
 APIs
-Arepo
+AREPO
 Arraki
 arraylike
 artio
@@ -43,7 +43,7 @@ bitwise
 bookkeepping
 bool
 Borro
-BoxLib
+boxlib
 Britton
 brittonsmith
 Bugfix
@@ -58,7 +58,7 @@ centric
 CGS
 changeset
 changesets
-CHOLLA
+cholla
 chombo
 chrishavlin
 chummels
@@ -82,7 +82,7 @@ colorspace
 Comoving
 conda
 connectedness
-coord
+Coord
 Coords
 Corentin
 cosmosquark
@@ -91,7 +91,7 @@ cphyc
 Cristian
 curvilinear
 cylindrically
-cython
+Cython
 dask
 d’Astrophysique
 dataframe
@@ -135,7 +135,7 @@ featureset
 Fermilab
 filesystem
 fisheye
-fof
+FOF
 formatters
 frontend
 frontends
@@ -159,7 +159,7 @@ Gurvich
 Halbert
 Havlin
 HDF
-hexahedral
+Hexahedral
 HippoDraw
 histogramming
 Hix
@@ -255,12 +255,12 @@ nosetest
 nosetests
 NSSC
 NumFOCUS
-NumPy
+numpy
 OAC
 octants
 octree
 Octrees
-Octs
+octs
 odowska
 olebole
 OpenGL
@@ -284,7 +284,7 @@ pixelization
 pixelize
 pixelized
 pixelizer
-pixelizers
+Pixelizers
 pixelizes
 Pixelizing
 Planétologie
@@ -320,7 +320,7 @@ RGBA
 Ritali
 RitaliG
 rjfarber
-rockstar
+Rockstar
 Rockstar’s
 Ronan
 Rong
@@ -341,7 +341,7 @@ Sinha
 Skillman
 SLAC
 soton
-SPH
+sph
 Springel
 STFC
 Stockinger
@@ -359,7 +359,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-SymPy
+Sympy
 sytlistic
 TBD
 Tbytes
@@ -387,7 +387,7 @@ Urbana
 userbase
 Volker
 Vulkan
-WebAssembly
+webassembly
 Wetzel
 Widgyts
 Wijers
