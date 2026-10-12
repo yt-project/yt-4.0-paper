@@ -11,7 +11,7 @@ Altay
 AMR
 AMReX
 AMRKDTree
-AMRVAC
+amrvac
 Aperio
 APIs
 AREPO
@@ -23,7 +23,7 @@ AST
 Astro
 astrojaz
 astrophysically
-astropy
+AstroPy
 astrosmith
 AthenaPK
 atmyers
@@ -41,7 +41,7 @@ Birla
 Bitbucket
 bitwise
 bookkeepping
-bool
+Bool
 Borro
 boxlib
 Britton
@@ -58,7 +58,7 @@ centric
 CGS
 changeset
 changesets
-cholla
+CHOLLA
 chombo
 chrishavlin
 chummels
@@ -77,7 +77,7 @@ colorbar
 colorbars
 colormap
 colormapping
-colormaps
+Colormaps
 colorspace
 Comoving
 conda
@@ -121,7 +121,7 @@ Dutta
 easies
 elliottbiondo
 entrypoints
-enzo
+Enzo
 Enzo’s
 ethlau
 Evanston
@@ -135,7 +135,7 @@ featureset
 Fermilab
 filesystem
 fisheye
-FOF
+fof
 formatters
 frontend
 frontends
@@ -188,7 +188,7 @@ Ji
 jisuoqing
 jnaiman
 Joana
-jupyter
+Jupyter
 Jupyterlab
 jwise
 jzuhone
@@ -239,7 +239,7 @@ munkm
 Naiman
 namespace
 Narayanan
-Nastasha
+nastasha
 Navaneeth
 neper
 NetCDF
@@ -301,7 +301,7 @@ protoplanetary
 pydata
 pytest
 PyThreeJS
-pyxsim
+pyXSIM
 qobilidop
 Quadtree
 radiative
@@ -359,7 +359,7 @@ subselection
 subsetting
 Suoqing
 Supercomputing
-Sympy
+sympy
 sytlistic
 TBD
 Tbytes
@@ -401,7 +401,7 @@ Yash
 yipihey
 yournamehere
 ytdata
-ytep
+YTEP
 YTEPs
 ytini
 YTQuadTreeProj
@@ -409,7 +409,7 @@ ytree
 yt’s
 Yu
 Yurlungur
-zingale
+Zingale
 zorder
 Zuckerberg
 ZuHone
